@@ -1,9 +1,13 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="1b357d25-b641-458c-8a8c-24064c31616e" name="Default" comment="updated UML to reflect current progress">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Milestone_1_UML.png" />
+    <list default="true" id="1b357d25-b641-458c-8a8c-24064c31616e" name="Default" comment="added picture of UML">
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Docs/Actual/Lab1-3_Actual.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Docs/Generated/Lab1-3_Generated.jpg" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Docs/Generated/Project_Generated.jpg" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/Milestone_1_UML.png" afterPath="$PROJECT_DIR$/Docs/Actual/Milestone_1_UML.png" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/UMLCreator.iml" afterPath="$PROJECT_DIR$/UMLCreator.iml" />
     </list>
     <ignored path="UMLCreator.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -55,8 +59,8 @@
       <file leaf-file-name="DesignParser.java" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/Visitor/DesignParser.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.8148148">
-              <caret line="39" column="16" selection-start-line="39" selection-start-column="16" selection-end-line="39" selection-end-column="16" />
+            <state vertical-scroll-proportion="0.5555556">
+              <caret line="39" column="68" selection-start-line="39" selection-start-column="68" selection-end-line="39" selection-end-column="68" />
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
@@ -263,6 +267,20 @@
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="UMLCreator" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="UMLCreator" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="Docs" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
         </subPane>
       </pane>
       <pane id="PackagesPane" />
@@ -295,7 +313,12 @@
     <property name="FileHistory.git4idea.history.GitHistoryProvider_treeOrder3" value="3" />
   </component>
   <component name="RecentsManager">
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="C:\Users\budocf\Documents\Courses\Junior\CSSE374\Project\UMLCreator\Docs\Actual" />
+    </key>
     <key name="CopyFile.RECENT_KEYS">
+      <recent name="C:\Users\budocf\Documents\Courses\Junior\CSSE374\Project\UMLCreator\Docs\Actual" />
+      <recent name="C:\Users\budocf\Documents\Courses\Junior\CSSE374\Project\UMLCreator\Docs\Generated" />
       <recent name="C:\Users\budocf\Documents\Courses\Junior\CSSE374\Project\UMLCreator\src\Visitor" />
     </key>
   </component>
@@ -768,7 +791,7 @@
       <workItem from="1451964853623" duration="4284000" />
       <workItem from="1451969398830" duration="6914000" />
       <workItem from="1451978368516" duration="7333000" />
-      <workItem from="1451985740797" duration="961000" />
+      <workItem from="1451985740797" duration="1871000" />
     </task>
     <task id="LOCAL-00001" summary="added asm libraries and visitor package">
       <created>1451953507803</created>
@@ -860,11 +883,17 @@
       <option name="project" value="LOCAL" />
       <updated>1451986615202</updated>
     </task>
-    <option name="localTasksCounter" value="16" />
+    <task id="LOCAL-00016" summary="added picture of UML">
+      <created>1451986714275</created>
+      <option name="number" value="00016" />
+      <option name="project" value="LOCAL" />
+      <updated>1451986714275</updated>
+    </task>
+    <option name="localTasksCounter" value="17" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="33743000" />
+    <option name="totallyTimeSpent" value="34653000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -877,7 +906,7 @@
   </component>
   <component name="ToolWindowManager">
     <frame x="-9" y="-9" width="1938" height="1050" extended-state="6" />
-    <editor active="true" />
+    <editor active="false" />
     <layout>
       <window_info id="Palette" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32800853" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
@@ -889,7 +918,7 @@
       <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.2962963" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.30415264" sideWeight="0.5" order="8" side_tool="false" content_ui="tabs" />
       <window_info id="Designer" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.23097534" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Project" active="true" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.23097534" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
       <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.24973205" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
@@ -930,7 +959,8 @@
     <MESSAGE value="bug with classes not displaying methods" />
     <MESSAGE value="fixed changes in tostrings, added change to className passed to visitors, should make inheritence work" />
     <MESSAGE value="updated UML to reflect current progress" />
-    <option name="LAST_COMMIT_MESSAGE" value="updated UML to reflect current progress" />
+    <MESSAGE value="added picture of UML" />
+    <option name="LAST_COMMIT_MESSAGE" value="added picture of UML" />
     <option name="OPTIMIZE_IMPORTS_BEFORE_PROJECT_COMMIT" value="true" />
     <option name="REFORMAT_BEFORE_PROJECT_COMMIT" value="true" />
     <option name="REARRANGE_BEFORE_PROJECT_COMMIT" value="true" />
@@ -1367,15 +1397,15 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/Milestone_1_UML.png">
+    <entry file="file://$PROJECT_DIR$/Docs/Actual/Milestone_1_UML.png">
       <provider selected="true" editor-type-id="images">
         <state />
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/Visitor/DesignParser.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.8148148">
-          <caret line="39" column="16" selection-start-line="39" selection-start-column="16" selection-end-line="39" selection-end-column="16" />
+        <state vertical-scroll-proportion="0.5555556">
+          <caret line="39" column="68" selection-start-line="39" selection-start-column="68" selection-end-line="39" selection-end-column="68" />
           <folding>
             <element signature="imports" expanded="true" />
           </folding>
