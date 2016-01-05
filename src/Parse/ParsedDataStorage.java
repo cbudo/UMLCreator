@@ -50,6 +50,7 @@ public class ParsedDataStorage implements IDataStorage {
 
     @Override
     public void addField(String cName, IData field) {
+        System.out.println(cName);
         ((IClass) classes.get(cName)).addField(field.name, field);
     }
 

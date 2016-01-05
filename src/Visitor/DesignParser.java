@@ -8,6 +8,8 @@ import org.objectweb.asm.ClassVisitor;
 import org.objectweb.asm.Opcodes;
 
 import java.io.IOException;
+import java.util.ArrayList;
+import java.util.List;
 
 public class DesignParser {
 
@@ -38,20 +40,22 @@ public class DesignParser {
         projectData.addInterfaces("fuck", i);
         projectData.addAbstractClass("fuck", a);
 
-        System.out.println(GraphCreator.setupGraph(projectData));
 
         for (String className : args) {
+            List<IData> fields = new ArrayList<>();
+            List<IData> methods = new ArrayList<>();
+
             // ASM's ClassReader does the heavy lifting of parsing the compiled Java class
             ClassReader reader = new ClassReader(className);
 
             // make class declaration visitor to get superclass and interfaces
-            ClassVisitor decVisitor = new ClassDeclarationVisitor(Opcodes.ASM5);
+            ClassVisitor decVisitor = new ClassDeclarationVisitor(Opcodes.ASM5, className);
 
             // DECORATE declaration visitor with field visitor
-            ClassVisitor fieldVisitor = new ClassFieldVisitor(Opcodes.ASM5, decVisitor, projectData);
+            ClassVisitor fieldVisitor = new ClassFieldVisitor(Opcodes.ASM5, decVisitor, className);
 
             // DECORATE field visitor with method visitor
-            ClassVisitor methodVisitor = new ClassMethodVisitor(Opcodes.ASM5, fieldVisitor, projectData);
+            ClassVisitor methodVisitor = new ClassMethodVisitor(Opcodes.ASM5, fieldVisitor, className);
 
             // TODO: add more DECORATORS here in later milestones to accomplish specific tasks
 
@@ -59,6 +63,10 @@ public class DesignParser {
             // Tell the Reader to use our (heavily decorated) ClassVisitor to visit the class
             reader.accept(methodVisitor, ClassReader.EXPAND_FRAMES);
 
+
+            System.out.println("Done");
         }
+
+        System.out.println(GraphCreator.setupGraph(projectData));
     }
 }

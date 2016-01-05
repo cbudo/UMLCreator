@@ -1,7 +1,6 @@
 package Visitor;
 
 import Parse.IData;
-import Parse.IDataStorage;
 import Parse.IField;
 import org.objectweb.asm.ClassVisitor;
 import org.objectweb.asm.FieldVisitor;
@@ -17,9 +16,9 @@ public class ClassFieldVisitor extends ClassVisitor {
         className = null;
     }
 
-	public ClassFieldVisitor(int api, ClassVisitor decorated, IDataStorage storage) {
-		super(api, decorated);
-        this.className = ((ClassDeclarationVisitor) decorated).className;
+    public ClassFieldVisitor(int api, ClassVisitor decorated, String className) {
+        super(api, decorated);
+        this.className = className;
     }
 
     public static String GetAccess(int access) {
