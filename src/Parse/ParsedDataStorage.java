@@ -45,12 +45,20 @@ public class ParsedDataStorage implements IDataStorage {
 
     @Override
     public void addMethod(String cName, IData method) {
-        ((IClass) classes.get(cName)).addMethod(method.name, method);
+        try {
+            ((IClass) classes.get(cName)).addMethod(method.name, method);
+        } catch (Exception e) {
+            ((IClass) interfaces.get(cName)).addMethod(method.name, method);
+        }
     }
 
     @Override
     public void addField(String cName, IData field) {
-        ((IClass) classes.get(cName)).addField(field.name, field);
+        try {
+            ((IClass) classes.get(cName)).addField(field.name, field);
+        } catch (Exception e) {
+            ((IClass) interfaces.get(cName)).addField(field.name, field);
+        }
     }
 
     public void addAbstractClass(String name, IData abstractClass) {
@@ -61,7 +69,7 @@ public class ParsedDataStorage implements IDataStorage {
         return abstractClasses.get(className);
     }
 
-    public IData getInterfaces(String interfaceName) {
+    public IData getInterface(String interfaceName) {
         return interfaces.get(interfaceName);
     }
 

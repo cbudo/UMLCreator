@@ -1,47 +1,46 @@
 package ParseTests;
 
+import Parse.Class;
+import Parse.*;
 import org.junit.After;
 import org.junit.Before;
 import org.junit.Test;
+
+import static org.junit.Assert.assertEquals;
+import static org.junit.Assert.assertTrue;
 
 /**
  * Created by budocf on 1/5/2016.
  */
 public class ParsedDataStorageTest {
-
+    IDataStorage storage = new ParsedDataStorage();
     @Before
     public void setUp() throws Exception {
-
+        storage = new ParsedDataStorage();
     }
 
     @After
     public void tearDown() throws Exception {
-
+        storage = null;
     }
 
     @Test
-    public void testAddClass() throws Exception {
-
+    public void testAddGetClass() throws Exception {
+        String[] empty = new String[0];
+        Class clazz = new Class("Test", "private", "", empty);
+        storage.addClass("Test", clazz);
+        assertTrue(storage.getClasses().contains(clazz));
+        assertEquals(clazz, storage.getClazz("Test"));
     }
 
-    @Test
-    public void testGetClazz() throws Exception {
-
-    }
 
     @Test
     public void testAddInterfaces() throws Exception {
-
-    }
-
-    @Test
-    public void testGetClasses() throws Exception {
-
-    }
-
-    @Test
-    public void testGetInterfaces() throws Exception {
-
+        String[] empty = new String[0];
+        Interface clazz = new Interface("Test", "private", "", empty);
+        storage.addInterfaces("Test", clazz);
+        assertTrue(storage.getInterfaces().contains(clazz));
+        assertEquals(clazz, storage.getInterface("Test"));
     }
 
     @Test
@@ -51,6 +50,11 @@ public class ParsedDataStorageTest {
 
     @Test
     public void testAddMethod() throws Exception {
+        String[] empty = new String[0];
+        Class clazz = new Class("Test", "private", "", empty);
+        storage.addClass("Test", clazz);
+        IData method = new IMethod("test", "boolean", "private", empty);
+        storage.addField("Test", method);
 
     }
 
@@ -66,11 +70,6 @@ public class ParsedDataStorageTest {
 
     @Test
     public void testGetAbstractClass() throws Exception {
-
-    }
-
-    @Test
-    public void testGetInterfaces1() throws Exception {
 
     }
 }

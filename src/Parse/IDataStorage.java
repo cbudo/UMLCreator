@@ -23,4 +23,6 @@ public interface IDataStorage {
     Collection<IData> getClasses();
 
     Collection<IData> getInterfaces();
+
+    IData getInterface(String test);
 }
