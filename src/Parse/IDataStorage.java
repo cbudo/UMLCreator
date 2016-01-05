@@ -18,6 +18,8 @@ public interface IDataStorage {
 
     void addInterfaces(String name, IData interfacade);
 
+    IData getInterfacade(String interfaceName);
+
     Collection<IData> getAbstractClasses();
 
     Collection<IData> getClasses();

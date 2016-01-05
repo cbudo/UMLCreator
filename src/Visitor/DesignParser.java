@@ -1,12 +1,14 @@
 package Visitor;
 
 import GraphMaker.GraphCreator;
-import Parse.*;
-import Parse.Class;
+import Parse.IData;
+import Parse.IDataStorage;
+import Parse.ParsedDataStorage;
 import org.objectweb.asm.ClassReader;
 import org.objectweb.asm.ClassVisitor;
 import org.objectweb.asm.Opcodes;
 
+import java.io.FileOutputStream;
 import java.io.IOException;
 import java.util.ArrayList;
 import java.util.List;
@@ -22,24 +24,6 @@ public class DesignParser {
      * @throws IOException
      */
     public static void main(String[] args) throws IOException {
-
-        //String[] s = {"fuck", "fuck"};
-        String[] s = {};
-
-        IClass c = new Class("fuck", "public", "fuck", s);
-        IData f = new IField("fuckTheField", "String", "private");
-        IData m = new IMethod("fuckTheMethod", "void", "public", s);
-
-        c.addField("fieldn", f);
-        c.addMethod("methodn", m);
-
-        IClass i = new Interface();
-        IClass a = new AbstractClass();
-
-        projectData.addClass("fuck", c);
-        projectData.addInterfaces("fuck", i);
-        projectData.addAbstractClass("fuck", a);
-
 
         for (String className : args) {
             List<IData> fields = new ArrayList<>();
@@ -62,10 +46,47 @@ public class DesignParser {
 
             // Tell the Reader to use our (heavily decorated) ClassVisitor to visit the class
             reader.accept(methodVisitor, ClassReader.EXPAND_FRAMES);
-
-
         }
 
+//            String[] empty = {};
+//            String[] inh1 = {"i1", "i2"};
+//
+//            IClass c2 = new Class("you", "private", "", inh1);
+//            IData f2 = new IField("afield", "String", "protected");
+//            IData m2 = new IMethod("amethod", "void", "public", empty);
+//            c2.addField("fieldn2", f2);
+//            c2.addMethod("methodn2", m2);
+//
+//            IClass c1 = new Class("fuck", "public", "you", empty);
+//            IData f1 = new IField("fuckTheField", "String", "private");
+//            IData m1 = new IMethod("fuckTheMethod", "void", "public", empty);
+//            c1.addField("fieldn", f1);
+//            c1.addMethod("methodn", m1);
+//
+//            IClass i1 = new Interface("i1", "public", "", empty);
+//            IData f3 = new IField("f3", "String", "protected");
+//            IData m3 = new IMethod("m3", "void", "public", empty);
+//            i1.addField("f3", f3);
+//            i1.addMethod("m3", m3);
+//
+//            IClass i2 = new Interface("i2", "public", "", empty);
+//            IData f4 = new IField("f4", "String", "protected");
+//            IData m4 = new IMethod("m4", "void", "public", empty);
+//            i2.addField("f4", f4);
+//            i2.addMethod("m4", m4);
+//
+//            IClass a1 = new AbstractClass();
+//
+//            projectData.addClass("fuck", c1);
+//            projectData.addClass("you", c2);
+//            projectData.addInterfaces("i1", i1);
+//            projectData.addInterfaces("i2", i2);
+//            projectData.addAbstractClass("a1", a1);
+
         System.out.println(GraphCreator.setupGraph(projectData));
+
+        FileOutputStream out = new FileOutputStream("graph_text\\generated_graph.gv");
+        out.write(GraphCreator.setupGraph(projectData).getBytes());
+        out.close();
     }
 }

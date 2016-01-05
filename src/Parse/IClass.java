@@ -1,5 +1,6 @@
 package Parse;
 
+import java.util.ArrayList;
 import java.util.Collection;
 import java.util.Map;
 
@@ -8,6 +9,7 @@ import java.util.Map;
  */
 public abstract class IClass extends IData {
 
+    public ArrayList<IClass> implement;
     protected Map<String, IData> _methods = null;
     protected Map<String, IData> _fields = null;
 

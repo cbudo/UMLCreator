@@ -14,4 +14,5 @@ public abstract class IData {
     public void setName(String name) {
         this.name = name;
     }
+
 }

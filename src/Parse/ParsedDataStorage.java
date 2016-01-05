@@ -31,6 +31,10 @@ public class ParsedDataStorage implements IDataStorage {
         interfaces.put(name, interfacade);
     }
 
+    public IData getInterfacade(String interfaceName) {
+        return interfaces.get(interfaceName);
+    }
+
     public Collection<IData> getClasses() {
         return classes.values();
     }

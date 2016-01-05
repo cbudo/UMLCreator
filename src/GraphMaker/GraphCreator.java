@@ -35,7 +35,7 @@ public class GraphCreator {
         }
 
         for (IData val : data.getInterfaces()) {
-            //s.append(val.toString());
+            s.append(val.toString());
         }
 
         for (IData val : data.getClasses()) {
@@ -47,16 +47,24 @@ public class GraphCreator {
 
     //This class draws all of the code between boxes
     private static void createArrows(StringBuilder s, IDataStorage data) {
-        //TODO impelement 'implements'. Currently only does extends
+        //TODO impelement 'implements' and forms of 'uses'. Currently only does extends
         for (IData val : data.getClasses()) {
-            IData extendedClass = data.getClazz(((IClass) val).getExtends());
-            if (extendedClass == null) {
-                continue;
-            }
-            String name2 = ((IClass) extendedClass).getName();
             String name1 = ((IClass) val).getName();
 
-            s.append(name1 + " -> " + name2 + " [arrowhead=\"onormal\", style=\"solid\"];\n");
+            //extends superclass
+            IData extendedClass = data.getClazz(((IClass) val).getExtends());
+            if (extendedClass != null) {
+                String name2 = ((IClass) extendedClass).getName();
+                s.append(name1 + " -> " + name2 + " [arrowhead=\"onormal\", style=\"solid\"];\n");
+            }
+
+//          implements interface
+            for (String inter : ((IClass) val).getImplements()) {
+                System.out.println("on interface " + inter);
+                String iname = inter;//((IClass) data.getInterfacade(inter)).getName();
+                s.append(name1 + " -> " + iname + " [arrowhead=\"onormal\", style=\"dashed\"];\n");
+            }
+
         }
     }
 }

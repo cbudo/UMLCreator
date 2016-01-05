@@ -1,5 +1,4 @@
 package Parse;
-
 import java.util.ArrayList;
 import java.util.Collections;
 import java.util.HashMap;
@@ -18,9 +17,7 @@ public class Class extends IClass {
         this._methods = new HashMap<>();
         this._fields = new HashMap<>();
         this.extend = extend;
-        this.implement = new ArrayList<>();
-        Collections.addAll(implement, implementing);
-        this.implement = new ArrayList<>();
+        this.implement = new ArrayList<String>();
         Collections.addAll(implement, implementing);
     }
 
@@ -39,8 +36,8 @@ public class Class extends IClass {
     @Override
     public String toString() {
         StringBuilder s = new StringBuilder();
-        s.append("\n").append(this.name).append(" [\nshape = \"record\",\nlabel = \"{");
-        s.append(this.name).append(" | ");
+        s.append("\n" + this.name + " [\nshape = \"record\",\nlabel = \"{");
+        s.append(this.name + " | ");
         for (IData f : this.getFields()) {
             s.append(f.toString());
         }
