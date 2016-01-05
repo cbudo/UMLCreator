@@ -27,5 +27,11 @@ public abstract class IClass extends IData {
         return _fields.values();
     }
 
+    public abstract String getName();
+
+    public abstract String getExtends();
+
+    public abstract Collection<String> getImplements();
+
     public abstract String toString();
 }

@@ -1,5 +1,6 @@
 package Parse;
 
+import java.util.Collection;
 import java.util.HashMap;
 
 /**
@@ -18,6 +19,21 @@ public class Interface extends IClass {
 
     public Interface() {
 
+    }
+
+    @Override
+    public String getName() {
+        return null;
+    }
+
+    @Override
+    public String getExtends() {
+        return null;
+    }
+
+    @Override
+    public Collection<String> getImplements() {
+        return null;
     }
 
     @Override

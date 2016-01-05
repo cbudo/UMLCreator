@@ -3,10 +3,8 @@ package Visitor;
 import GraphMaker.GraphCreator;
 import Parse.*;
 import Parse.Class;
-import org.objectweb.asm.ClassReader;
-import org.objectweb.asm.ClassVisitor;
-import org.objectweb.asm.Opcodes;
 
+import java.io.FileOutputStream;
 import java.io.IOException;
 
 public class DesignParser {
@@ -20,26 +18,7 @@ public class DesignParser {
      * @throws IOException
      */
     public static void main(String[] args) throws IOException {
-
-        //String[] s = {"fuck", "fuck"};
-        String[] s = {};
-
-        IClass c = new Class("fuck", "public", "fuck", s);
-        IData f = new IField("fuckTheField", "String", "private");
-        IData m = new IMethod("fuckTheMethod", "void", "public", s);
-
-        c.addField("fieldn", f);
-        c.addMethod("methodn", m);
-
-        IClass i = new Interface();
-        IClass a = new AbstractClass();
-
-        projectData.addClass("fuck", c);
-        projectData.addInterfaces("fuck", i);
-        projectData.addAbstractClass("fuck", a);
-
-        System.out.println(GraphCreator.setupGraph(projectData));
-
+        /*
         for (String className : args) {
             // ASM's ClassReader does the heavy lifting of parsing the compiled Java class
             ClassReader reader = new ClassReader(className);
@@ -59,6 +38,34 @@ public class DesignParser {
             // Tell the Reader to use our (heavily decorated) ClassVisitor to visit the class
             reader.accept(methodVisitor, ClassReader.EXPAND_FRAMES);
 
-        }
+        } */
+
+        String[] s = {};
+
+        IClass c2 = new Class("you", "private", "", s);
+        IData f2 = new IField("afield", "String", "protexted");
+        IData m2 = new IMethod("amethod", "void", "public", s);
+        c2.addField("fieldn2", f2);
+        c2.addMethod("methodn2", m2);
+
+        IClass c1 = new Class("fuck", "public", "you", s);
+        IData f1 = new IField("fuckTheField", "String", "private");
+        IData m1 = new IMethod("fuckTheMethod", "void", "public", s);
+        c1.addField("fieldn", f1);
+        c1.addMethod("methodn", m1);
+
+        IClass i = new Interface();
+        IClass a = new AbstractClass();
+
+        projectData.addClass("fuck", c1);
+        projectData.addClass("you", c2);
+        projectData.addInterfaces("fuck", i);
+        projectData.addAbstractClass("fuck", a);
+
+        System.out.println(GraphCreator.setupGraph(projectData));
+
+        FileOutputStream out = new FileOutputStream("graph_text\\generated_graph.gv");
+        out.write(GraphCreator.setupGraph(projectData).getBytes());
+        out.close();
     }
 }

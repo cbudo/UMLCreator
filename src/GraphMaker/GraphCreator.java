@@ -1,5 +1,6 @@
 package GraphMaker;
 
+import Parse.IClass;
 import Parse.IData;
 import Parse.IDataStorage;
 
@@ -12,6 +13,7 @@ public class GraphCreator {
         StringBuilder s = new StringBuilder();
         stringPrefix(s);
         buildBoxes(s, data);
+        createArrows(s, data);
         stringSuffixes(s);
         return s.toString();
     }
@@ -26,6 +28,7 @@ public class GraphCreator {
         s.append("\n}\n");
     }
 
+    //This class creates all of the boxes that will go in the UML Diagram
     private static void buildBoxes(StringBuilder s, IDataStorage data) {
         for (IData val : data.getAbstractClasses()) {
             //s.append(val.toString());
@@ -37,6 +40,23 @@ public class GraphCreator {
 
         for (IData val : data.getClasses()) {
             s.append(val.toString());
+        }
+
+        s.append("\n");
+    }
+
+    //This class draws all of the code between boxes
+    private static void createArrows(StringBuilder s, IDataStorage data) {
+        //TODO impelement 'implements'. Currently only does extends
+        for (IData val : data.getClasses()) {
+            IData extendedClass = data.getClazz(((IClass) val).getExtends());
+            if (extendedClass == null) {
+                continue;
+            }
+            String name2 = ((IClass) extendedClass).getName();
+            String name1 = ((IClass) val).getName();
+
+            s.append(name1 + " -> " + name2 + " [arrowhead=\"onormal\", style=\"solid\"];\n");
         }
     }
 }

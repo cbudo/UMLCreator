@@ -1,6 +1,5 @@
 package Parse;
 
-import java.util.Collections;
 import java.util.HashMap;
 import java.util.List;
 
@@ -17,7 +16,20 @@ public class Class extends IClass {
         this._methods = new HashMap<>();
         this._fields = new HashMap<>();
         this.extend = extend;
-        Collections.addAll(this.implement, implementing);
+        for (String implement : implementing)
+            this.implement.add(implement);
+    }
+
+    public String getName() {
+        return this.name;
+    }
+
+    public String getExtends() {
+        return this.extend;
+    }
+
+    public List<String> getImplements() {
+        return this.implement;
     }
 
     @Override
