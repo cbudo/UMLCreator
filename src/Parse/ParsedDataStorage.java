@@ -1,5 +1,6 @@
 package Parse;
 
+import java.util.Collection;
 import java.util.HashMap;
 import java.util.Map;
 
@@ -28,6 +29,18 @@ public class ParsedDataStorage implements IDataStorage {
 
     public void addInterfaces(String name, IData interfacade) {
         interfaces.put(name, interfacade);
+    }
+
+    public Collection<IData> getClasses() {
+        return classes.values();
+    }
+
+    public Collection<IData> getInterfaces() {
+        return interfaces.values();
+    }
+
+    public Collection<IData> getabstractClasses() {
+        return abstractClasses.values();
     }
 
     @Override

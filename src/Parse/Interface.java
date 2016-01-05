@@ -5,4 +5,9 @@ package Parse;
  */
 public class Interface extends IClass {
     IData extend;
+
+    @Override
+    public String toString() {
+        return "this is an interface\n";
+    }
 }

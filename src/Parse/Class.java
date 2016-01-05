@@ -21,4 +21,9 @@ public class Class extends IClass {
         for (String implement : implementing)
             this.implement.add(DesignParser.projectData.getClazz(implement));
     }
+
+    @Override
+    public String toString() {
+        return "this is a class muthafucka\n";
+    }
 }

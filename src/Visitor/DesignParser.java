@@ -1,10 +1,9 @@
 package Visitor;
 
+import Parse.Class;
+import Parse.IClass;
 import Parse.IDataStorage;
 import Parse.ParsedDataStorage;
-import org.objectweb.asm.ClassReader;
-import org.objectweb.asm.ClassVisitor;
-import org.objectweb.asm.Opcodes;
 
 import java.io.IOException;
 
@@ -19,7 +18,13 @@ public class DesignParser {
      * @throws IOException
      */
     public static void main(String[] args) throws IOException {
-        for (String className : args) {
+
+        IDataStorage data = new ParsedDataStorage();
+        String[] s = new String[10];
+        IClass c = new Class("fuck", "fuck", "fuck", s);
+        IClass
+
+        /*for (String className : args) {
             // ASM's ClassReader does the heavy lifting of parsing the compiled Java class
             ClassReader reader = new ClassReader(className);
 
@@ -37,6 +42,7 @@ public class DesignParser {
 
             // Tell the Reader to use our (heavily decorated) ClassVisitor to visit the class
             reader.accept(methodVisitor, ClassReader.EXPAND_FRAMES);
+           */
         }
     }
 }
