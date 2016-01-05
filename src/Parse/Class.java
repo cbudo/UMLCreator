@@ -20,6 +20,20 @@ public class Class extends IClass {
         this.extend = extend;
         this.implement = new ArrayList<>();
         Collections.addAll(implement, implementing);
+        this.implement = new ArrayList<>();
+        Collections.addAll(implement, implementing);
+    }
+
+    public String getName() {
+        return this.name;
+    }
+
+    public String getExtends() {
+        return this.extend;
+    }
+
+    public List<String> getImplements() {
+        return this.implement;
     }
 
     @Override
