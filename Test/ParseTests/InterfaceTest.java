@@ -36,6 +36,6 @@ public class InterfaceTest {
 
     @Test
     public void testToString() throws Exception {
-        assertEquals("\nTest [\nshape = \"record\",\nlabel = \"{\\<\\<interface\\>\\>\\lTest | |}\"];", interfacade.toString());
+        assertEquals("\nTest [\nshape = \"record\",\nlabel = \"{\\<\\<interface\\>\\>\\lTest | }\"];", interfacade.toString());
     }
 }

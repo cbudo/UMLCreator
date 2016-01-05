@@ -55,7 +55,7 @@ IDataStorage
       <x>99</x>
       <y>414</y>
       <w>279</w>
-      <h>135</h>
+      <h>153</h>
     </coordinates>
     <panel_attributes>ParsedDataStorage
 --
@@ -79,13 +79,12 @@ Map&lt;String, IData&gt; abstractClasses
       <w>243</w>
       <h>108</h>
     </coordinates>
-    <panel_attributes>&lt;&lt;interface&gt;&gt;
-IMethod
+    <panel_attributes>IMethod
 --
 String name
 String returnType
 String accessability
-Map&lt;String, String&gt; paramNameToType
+List&lt;String&gt; parameters
 --
 
 </panel_attributes>
@@ -99,8 +98,7 @@ Map&lt;String, String&gt; paramNameToType
       <w>180</w>
       <h>99</h>
     </coordinates>
-    <panel_attributes>&lt;&lt;interface&gt;&gt;
-IField
+    <panel_attributes>IField
 --
 String name
 String type
@@ -144,16 +142,14 @@ IDataStorage
       <w>198</w>
       <h>108</h>
     </coordinates>
-    <panel_attributes>&lt;&lt;interface&gt;&gt;
-IData
+    <panel_attributes>/IData/
 --
 String name
 String accessibility
-Map&lt;String, IMethod&gt;
-Map&lt;String, IField&gt;
 --
-
-
++getName():String
++setName(String name):void
++SetAccess(String access):void
 
 </panel_attributes>
     <additional_attributes/>

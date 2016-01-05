@@ -45,6 +45,6 @@ public class ClassTest {
 
     @Test
     public void testToString() throws Exception {
-        assertEquals("\nTest [\nshape = \"record\",\nlabel = \"{Test | |}\"];", clazz.toString());
+        assertEquals("\nTest [\nshape = \"record\",\nlabel = \"{Test| | }\"];", clazz.toString());
     }
 }
