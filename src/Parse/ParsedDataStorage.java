@@ -1,5 +1,6 @@
 package Parse;
 
+import java.util.HashMap;
 import java.util.Map;
 
 /**
@@ -7,16 +8,33 @@ import java.util.Map;
  */
 public class ParsedDataStorage implements IDataStorage {
 
-    Map<String, IData> classes = null;
-    Map<String, IData> interfaces = null;
+    Map<String, IData> classes;
+    Map<String, IData> interfaces;
+
+    public ParsedDataStorage() {
+        this.classes = new HashMap<>();
+        this.interfaces = new HashMap<>();
+    }
+
+    public void addClass(String name, IData clazz) {
+        classes.put(name, clazz);
+    }
+
+    public IData getClazz(String className) {
+        return classes.get(className);
+    }
+
+    public void addInterfaces(String name, IData interfacade) {
+        interfaces.put(name, interfacade);
+    }
 
     @Override
     public void addMethod(String cName, IMethod method) {
-
+        ((IClass) classes.get(cName)).addMethod(method.name, method);
     }
 
     @Override
     public void addField(String cName, IField field) {
-
+        ((IClass) classes.get(cName)).addField(field.name, field);
     }
 }

@@ -9,6 +9,8 @@ import org.objectweb.asm.Opcodes;
 import java.io.IOException;
 
 public class DesignParser {
+
+    public static IDataStorage projectData = new ParsedDataStorage();
     /**
      * Reads in a list of Java Classes and reverse engineers their design.
      *
@@ -17,7 +19,6 @@ public class DesignParser {
      * @throws IOException
      */
     public static void main(String[] args) throws IOException {
-        IDataStorage projectData = new ParsedDataStorage();
         for (String className : args) {
             // ASM's ClassReader does the heavy lifting of parsing the compiled Java class
             ClassReader reader = new ClassReader(className);

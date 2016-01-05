@@ -1,5 +1,7 @@
 package Visitor;
 
+import Parse.Class;
+import Parse.IData;
 import org.objectweb.asm.ClassVisitor;
 
 import java.util.Arrays;
@@ -13,7 +15,8 @@ public class ClassDeclarationVisitor extends ClassVisitor {
     public void visit(int version, int access, String name, String signature, String superName, String[] interfaces) {
         System.out.println("Class: " + name + " extends " + superName + " implements " + Arrays.toString(interfaces));
         // TODO: construct an internal representation of the class for later use by decorators
-
+        IData clazz = new Class(name, signature, superName, interfaces);
+        DesignParser.projectData.addClass(name, clazz);
         super.visit(version, access, name, signature, superName, interfaces);
 
     }

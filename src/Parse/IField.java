@@ -3,8 +3,12 @@ package Parse;
 /**
  * Created by budocf on 12/17/2015.
  */
-public interface IField extends IData {
-    String name = null;
+public class IField extends IData {
     String type = null;
-    String accessability = null;
+
+    public IField(String name, String type, String accessibility) {
+        this.name = name;
+        this.type = type;
+        this.accessibility = accessibility;
+    }
 }
