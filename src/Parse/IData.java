@@ -11,8 +11,11 @@ public abstract class IData {
         this.accessibility = access;
     }
 
+    public String getName() {
+        return name;
+    }
+
     public void setName(String name) {
         this.name = name;
     }
-
 }

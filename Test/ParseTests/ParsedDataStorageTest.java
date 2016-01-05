@@ -37,7 +37,7 @@ public class ParsedDataStorageTest {
     @Test
     public void testAddInterfaces() throws Exception {
         String[] empty = new String[0];
-        Interface clazz = new Interface("Test", "private", "", empty);
+        Interface clazz = new Interface("Test", "private", "");
         storage.addInterfaces("Test", clazz);
         assertTrue(storage.getInterfaces().contains(clazz));
         assertEquals(clazz, storage.getInterface("Test"));

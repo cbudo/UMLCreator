@@ -17,7 +17,7 @@ public class ClassDeclarationVisitor extends ClassVisitor {
     public void visit(int version, int access, String name, String signature, String superName, String[] interfaces) {
         // DONE: construct an internal representation of the class for later use by decorators
         if ((access & Opcodes.ACC_INTERFACE) != 0) {
-            DesignParser.projectData.addInterfaces(className, new Interface(name, ClassFieldVisitor.GetAccess(access), superName, interfaces));
+            DesignParser.projectData.addInterfaces(className, new Interface(name, ClassFieldVisitor.GetAccess(access), superName));
         } else {
             DesignParser.projectData.addClass(className, new Class(name, signature, superName, interfaces));
         }

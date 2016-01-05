@@ -29,12 +29,4 @@ public class IMethod extends IData {
         return Translator.translateAccessibility(accessibility) + " " + this.name + " : " + this.returnType + "\\l";
     }
 
-    public void setReturnType(String returnType) {
-        this.returnType = returnType;
-    }
-
-    public void setArgs(String[] args) {
-        parameters = new ArrayList<>();
-        Collections.addAll(parameters, args);
-    }
 }

@@ -9,7 +9,7 @@ import java.util.HashMap;
 public class Interface extends IClass {
     String extend;
 
-    public Interface(String name, String accessibility, String extend, String[] implementing) {
+    public Interface(String name, String accessibility, String extend) {
         this.name = name;
         this.accessibility = accessibility;
         this._methods = new HashMap<>();
@@ -28,7 +28,7 @@ public class Interface extends IClass {
 
     @Override
     public String getExtends() {
-        return null;
+        return extend;
     }
 
     @Override
