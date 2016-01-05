@@ -1,22 +1,8 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="1b357d25-b641-458c-8a8c-24064c31616e" name="Default" comment="parsing of code working, next step is making it go on to parse classes that it extends or implements">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Test/ParseTests/AbstractClassTest.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Test/ParseTests/ClassTest.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Test/ParseTests/IClassTest.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Test/ParseTests/IDataTest.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Test/ParseTests/IFieldTest.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Test/ParseTests/IMethodTest.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Test/ParseTests/InterfaceTest.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Test/ParseTests/ParsedDataStorageTest.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Test/VisitorTests/ClassFieldVisitorTest.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Test/VisitorTests/ClassMethodVisitorTest.java" />
+    <list default="true" id="1b357d25-b641-458c-8a8c-24064c31616e" name="Default" comment="added test methods for parse and visitor packages, still need implementation">
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/Parse/IDataStorage.java" afterPath="$PROJECT_DIR$/src/Parse/IDataStorage.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/Parse/ParsedDataStorage.java" afterPath="$PROJECT_DIR$/src/Parse/ParsedDataStorage.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/Visitor/ClassDeclarationVisitor.java" afterPath="$PROJECT_DIR$/src/Visitor/ClassDeclarationVisitor.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/Visitor/DesignParser.java" afterPath="$PROJECT_DIR$/src/Visitor/DesignParser.java" />
     </list>
     <ignored path="UMLCreator.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -60,8 +46,10 @@
         <entry file="file://$PROJECT_DIR$/Test/ParseTests/IDataTest.java">
           <provider selected="true" editor-type-id="text-editor">
             <state vertical-scroll-proportion="0.0">
-              <caret line="31" column="5" selection-start-line="31" selection-start-column="5" selection-end-line="31" selection-end-column="5" />
-              <folding />
+              <caret line="29" column="5" selection-start-line="29" selection-start-column="5" selection-end-line="29" selection-end-column="5" />
+              <folding>
+                <element signature="imports" expanded="false" />
+              </folding>
             </state>
           </provider>
         </entry>
@@ -80,8 +68,10 @@
         <entry file="file://$PROJECT_DIR$/Test/VisitorTests/ClassFieldVisitorTest.java">
           <provider selected="true" editor-type-id="text-editor">
             <state vertical-scroll-proportion="0.0">
-              <caret line="26" column="5" selection-start-line="26" selection-start-column="5" selection-end-line="26" selection-end-column="5" />
-              <folding />
+              <caret line="24" column="5" selection-start-line="24" selection-start-column="5" selection-end-line="24" selection-end-column="5" />
+              <folding>
+                <element signature="imports" expanded="false" />
+              </folding>
             </state>
           </provider>
         </entry>
@@ -103,10 +93,8 @@
         <entry file="file://$PROJECT_DIR$/src/Visitor/ClassDeclarationVisitor.java">
           <provider selected="true" editor-type-id="text-editor">
             <state vertical-scroll-proportion="0.0">
-              <caret line="18" column="118" selection-start-line="18" selection-start-column="118" selection-end-line="18" selection-end-column="118" />
-              <folding>
-                <element signature="imports" expanded="true" />
-              </folding>
+              <caret line="16" column="118" selection-start-line="16" selection-start-column="118" selection-end-line="16" selection-end-column="118" />
+              <folding />
             </state>
           </provider>
         </entry>
@@ -127,7 +115,7 @@
         <entry file="file://$PROJECT_DIR$/Test/VisitorTests/ClassMethodVisitorTest.java">
           <provider selected="true" editor-type-id="text-editor">
             <state vertical-scroll-proportion="0.7403035">
-              <caret line="31" column="5" selection-start-line="31" selection-start-column="5" selection-end-line="31" selection-end-column="5" />
+              <caret line="29" column="5" selection-start-line="29" selection-start-column="5" selection-end-line="29" selection-end-column="5" />
               <folding />
             </state>
           </provider>
@@ -137,8 +125,10 @@
         <entry file="file://$PROJECT_DIR$/Test/ParseTests/ParsedDataStorageTest.java">
           <provider selected="true" editor-type-id="text-editor">
             <state vertical-scroll-proportion="0.0">
-              <caret line="76" column="5" selection-start-line="76" selection-start-column="5" selection-end-line="76" selection-end-column="5" />
-              <folding />
+              <caret line="74" column="5" selection-start-line="74" selection-start-column="5" selection-end-line="74" selection-end-column="5" />
+              <folding>
+                <element signature="imports" expanded="false" />
+              </folding>
             </state>
           </provider>
         </entry>
@@ -147,8 +137,10 @@
         <entry file="file://$PROJECT_DIR$/Test/ParseTests/IClassTest.java">
           <provider selected="true" editor-type-id="text-editor">
             <state vertical-scroll-proportion="0.0">
-              <caret line="41" column="5" selection-start-line="41" selection-start-column="5" selection-end-line="41" selection-end-column="5" />
-              <folding />
+              <caret line="39" column="5" selection-start-line="39" selection-start-column="5" selection-end-line="39" selection-end-column="5" />
+              <folding>
+                <element signature="imports" expanded="false" />
+              </folding>
             </state>
           </provider>
         </entry>
@@ -900,7 +892,7 @@
       <workItem from="1450378283479" duration="848000" />
       <workItem from="1451946401170" duration="12777000" />
       <workItem from="1451964853623" duration="4284000" />
-      <workItem from="1451969398830" duration="8913000" />
+      <workItem from="1451969398830" duration="8957000" />
     </task>
     <task id="LOCAL-00001" summary="added asm libraries and visitor package">
       <created>1451953507803</created>
@@ -968,11 +960,17 @@
       <option name="project" value="LOCAL" />
       <updated>1451977595237</updated>
     </task>
-    <option name="localTasksCounter" value="12" />
+    <task id="LOCAL-00012" summary="added test methods for parse and visitor packages, still need implementation">
+      <created>1451979636703</created>
+      <option name="number" value="00012" />
+      <option name="project" value="LOCAL" />
+      <updated>1451979636703</updated>
+    </task>
+    <option name="localTasksCounter" value="13" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="27448000" />
+    <option name="totallyTimeSpent" value="27492000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -1059,7 +1057,8 @@
     <MESSAGE value="fixed how classes and interfaces were storing info about superclass and implemented classes" />
     <MESSAGE value="added empty constructor to interface for testing" />
     <MESSAGE value="parsing of code working, next step is making it go on to parse classes that it extends or implements" />
-    <option name="LAST_COMMIT_MESSAGE" value="parsing of code working, next step is making it go on to parse classes that it extends or implements" />
+    <MESSAGE value="added test methods for parse and visitor packages, still need implementation" />
+    <option name="LAST_COMMIT_MESSAGE" value="added test methods for parse and visitor packages, still need implementation" />
     <option name="OPTIMIZE_IMPORTS_BEFORE_PROJECT_COMMIT" value="true" />
     <option name="REFORMAT_BEFORE_PROJECT_COMMIT" value="true" />
     <option name="REARRANGE_BEFORE_PROJECT_COMMIT" value="true" />
@@ -1202,9 +1201,7 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
           <caret line="17" column="26" selection-start-line="17" selection-start-column="26" selection-end-line="17" selection-end-column="26" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
+          <folding />
         </state>
       </provider>
     </entry>
@@ -1435,8 +1432,10 @@
     <entry file="file://$PROJECT_DIR$/Test/ParseTests/IClassTest.java">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
-          <caret line="41" column="5" selection-start-line="41" selection-start-column="5" selection-end-line="41" selection-end-column="5" />
-          <folding />
+          <caret line="39" column="5" selection-start-line="39" selection-start-column="5" selection-end-line="39" selection-end-column="5" />
+          <folding>
+            <element signature="imports" expanded="false" />
+          </folding>
         </state>
       </provider>
     </entry>
@@ -1454,8 +1453,10 @@
     <entry file="file://$PROJECT_DIR$/Test/ParseTests/IDataTest.java">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
-          <caret line="31" column="5" selection-start-line="31" selection-start-column="5" selection-end-line="31" selection-end-column="5" />
-          <folding />
+          <caret line="29" column="5" selection-start-line="29" selection-start-column="5" selection-end-line="29" selection-end-column="5" />
+          <folding>
+            <element signature="imports" expanded="false" />
+          </folding>
         </state>
       </provider>
     </entry>
@@ -1473,18 +1474,18 @@
     <entry file="file://$PROJECT_DIR$/Test/ParseTests/ParsedDataStorageTest.java">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
-          <caret line="76" column="5" selection-start-line="76" selection-start-column="5" selection-end-line="76" selection-end-column="5" />
-          <folding />
+          <caret line="74" column="5" selection-start-line="74" selection-start-column="5" selection-end-line="74" selection-end-column="5" />
+          <folding>
+            <element signature="imports" expanded="false" />
+          </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/Visitor/ClassDeclarationVisitor.java">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
-          <caret line="18" column="118" selection-start-line="18" selection-start-column="118" selection-end-line="18" selection-end-column="118" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
+          <caret line="16" column="118" selection-start-line="16" selection-start-column="118" selection-end-line="16" selection-end-column="118" />
+          <folding />
         </state>
       </provider>
     </entry>
@@ -1499,8 +1500,10 @@
     <entry file="file://$PROJECT_DIR$/Test/VisitorTests/ClassFieldVisitorTest.java">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
-          <caret line="26" column="5" selection-start-line="26" selection-start-column="5" selection-end-line="26" selection-end-column="5" />
-          <folding />
+          <caret line="24" column="5" selection-start-line="24" selection-start-column="5" selection-end-line="24" selection-end-column="5" />
+          <folding>
+            <element signature="imports" expanded="false" />
+          </folding>
         </state>
       </provider>
     </entry>
@@ -1517,7 +1520,7 @@
     <entry file="file://$PROJECT_DIR$/Test/VisitorTests/ClassMethodVisitorTest.java">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.7403035">
-          <caret line="31" column="5" selection-start-line="31" selection-start-column="5" selection-end-line="31" selection-end-column="5" />
+          <caret line="29" column="5" selection-start-line="29" selection-start-column="5" selection-end-line="29" selection-end-column="5" />
           <folding />
         </state>
       </provider>
