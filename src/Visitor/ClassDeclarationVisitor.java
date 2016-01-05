@@ -5,8 +5,6 @@ import Parse.Interface;
 import org.objectweb.asm.ClassVisitor;
 import org.objectweb.asm.Opcodes;
 
-import java.util.Arrays;
-
 public class ClassDeclarationVisitor extends ClassVisitor {
     protected String className;
 
@@ -17,7 +15,6 @@ public class ClassDeclarationVisitor extends ClassVisitor {
 
     @Override
     public void visit(int version, int access, String name, String signature, String superName, String[] interfaces) {
-        System.out.println("Class: " + name + " extends " + superName + " implements " + Arrays.toString(interfaces));
         // DONE: construct an internal representation of the class for later use by decorators
         if ((access & Opcodes.ACC_INTERFACE) != 0) {
             DesignParser.projectData.addInterfaces(className, new Interface(name, ClassFieldVisitor.GetAccess(access), superName, interfaces));

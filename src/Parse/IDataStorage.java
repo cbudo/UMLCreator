@@ -9,6 +9,7 @@ public interface IDataStorage {
     void addMethod(String cName, IData method);
 
     void addField(String cName, IData field);
+
     void addClass(String name, IData clazz);
 
     void addAbstractClass(String name, IData abstractClass);

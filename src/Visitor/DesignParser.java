@@ -64,7 +64,6 @@ public class DesignParser {
             reader.accept(methodVisitor, ClassReader.EXPAND_FRAMES);
 
 
-            System.out.println("Done");
         }
 
         System.out.println(GraphCreator.setupGraph(projectData));
