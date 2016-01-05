@@ -21,12 +21,4 @@ public class Class extends IClass {
         for (String implement : implementing)
             this.implement.add(DesignParser.projectData.getClazz(implement));
     }
-
-    public void addMethod(String name, IMethod method) {
-        _methods.put(name, method);
-    }
-
-    public void addField(String name, IField field) {
-        _fields.put(name, field);
-    }
 }

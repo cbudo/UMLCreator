@@ -10,10 +10,12 @@ public class ParsedDataStorage implements IDataStorage {
 
     Map<String, IData> classes;
     Map<String, IData> interfaces;
+    Map<String, IData> abstractClasses;
 
     public ParsedDataStorage() {
         this.classes = new HashMap<>();
         this.interfaces = new HashMap<>();
+        this.abstractClasses = new HashMap<>();
     }
 
     public void addClass(String name, IData clazz) {
