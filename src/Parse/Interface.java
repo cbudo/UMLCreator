@@ -40,7 +40,7 @@ public class Interface extends IClass {
     public String toString() {
         StringBuilder s = new StringBuilder();
         s.append("\n" + this.name.replace("/", "") + " [\nshape = \"record\",\nlabel = \"{");
-        s.append("\\<\\<interface\\>\\>\\l" + this.name + " | ");
+        s.append("\\<\\<interface\\>\\>\\n" + this.name + " | ");
 //        for (IData f : this.getFields()) {
 //            s.append(f.toString());
 //        }
