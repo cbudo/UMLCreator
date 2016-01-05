@@ -1,7 +1,6 @@
 package Parse;
 
-import Visitor.DesignParser;
-
+import java.util.Collections;
 import java.util.HashMap;
 import java.util.List;
 
@@ -9,17 +8,16 @@ import java.util.List;
  * Created by budocf on 12/17/2015.
  */
 public class Class extends IClass {
-    IData extend;
-    List<IData> implement;
+    String extend;
+    List<String> implement;
 
     public Class(String name, String accessibility, String extend, String[] implementing) {
         this.name = name;
         this.accessibility = accessibility;
         this._methods = new HashMap<>();
         this._fields = new HashMap<>();
-        this.extend = DesignParser.projectData.getClazz(extend);
-        for (String implement : implementing)
-            this.implement.add(DesignParser.projectData.getClazz(implement));
+        this.extend = extend;
+        Collections.addAll(this.implement, implementing);
     }
 
     @Override
