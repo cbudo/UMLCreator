@@ -1,9 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="1b357d25-b641-458c-8a8c-24064c31616e" name="Default" comment="fixed changes in tostrings, added change to className passed to visitors, should make inheritence work">
+    <list default="true" id="1b357d25-b641-458c-8a8c-24064c31616e" name="Default" comment="updated UML to reflect current progress">
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Milestone_1_UML.png" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Milestone_1_UML.uxf" afterPath="$PROJECT_DIR$/Milestone_1_UML.uxf" />
     </list>
     <ignored path="UMLCreator.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -55,8 +55,8 @@
       <file leaf-file-name="DesignParser.java" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/Visitor/DesignParser.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.25925925">
-              <caret line="24" column="7" selection-start-line="24" selection-start-column="7" selection-end-line="24" selection-end-column="7" />
+            <state vertical-scroll-proportion="0.8148148">
+              <caret line="39" column="16" selection-start-line="39" selection-start-column="16" selection-end-line="39" selection-end-column="16" />
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
@@ -710,6 +710,19 @@
       <listeners />
       <method />
     </configuration>
+    <configuration default="true" type="executeSpecs" factoryName="Gauge Execution">
+      <setting name="environment" value="" />
+      <setting name="specsToExecute" value="" />
+      <setting name="tags" value="" />
+      <setting name="parallelNodes" value="" />
+      <setting name="execInParallel" value="false" />
+      <setting name="programParameters" value="" />
+      <setting name="workingDirectory" value="" />
+      <setting name="moduleName" value="" />
+      <envMap />
+      <setting name="rowsRange" value="" />
+      <method />
+    </configuration>
     <configuration default="true" type="js.build_tools.gulp" factoryName="Gulp.js">
       <node-options />
       <gulpfile />
@@ -755,7 +768,7 @@
       <workItem from="1451964853623" duration="4284000" />
       <workItem from="1451969398830" duration="6914000" />
       <workItem from="1451978368516" duration="7333000" />
-      <workItem from="1451985740797" duration="856000" />
+      <workItem from="1451985740797" duration="961000" />
     </task>
     <task id="LOCAL-00001" summary="added asm libraries and visitor package">
       <created>1451953507803</created>
@@ -841,11 +854,17 @@
       <option name="project" value="LOCAL" />
       <updated>1451986536441</updated>
     </task>
-    <option name="localTasksCounter" value="15" />
+    <task id="LOCAL-00015" summary="updated UML to reflect current progress">
+      <created>1451986615202</created>
+      <option name="number" value="00015" />
+      <option name="project" value="LOCAL" />
+      <updated>1451986615202</updated>
+    </task>
+    <option name="localTasksCounter" value="16" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="33638000" />
+    <option name="totallyTimeSpent" value="33743000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -910,7 +929,8 @@
     <MESSAGE value="Bug with extending regular classes, otherwise works" />
     <MESSAGE value="bug with classes not displaying methods" />
     <MESSAGE value="fixed changes in tostrings, added change to className passed to visitors, should make inheritence work" />
-    <option name="LAST_COMMIT_MESSAGE" value="fixed changes in tostrings, added change to className passed to visitors, should make inheritence work" />
+    <MESSAGE value="updated UML to reflect current progress" />
+    <option name="LAST_COMMIT_MESSAGE" value="updated UML to reflect current progress" />
     <option name="OPTIMIZE_IMPORTS_BEFORE_PROJECT_COMMIT" value="true" />
     <option name="REFORMAT_BEFORE_PROJECT_COMMIT" value="true" />
     <option name="REARRANGE_BEFORE_PROJECT_COMMIT" value="true" />
@@ -926,14 +946,6 @@
     <option name="FILTER_TARGETS" value="false" />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/src/GraphMaker/GraphCreator.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="64" column="57" selection-start-line="64" selection-start-column="57" selection-end-line="64" selection-end-column="57" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/Parse/Interface.java">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
@@ -1355,10 +1367,15 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/Milestone_1_UML.png">
+      <provider selected="true" editor-type-id="images">
+        <state />
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/src/Visitor/DesignParser.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.25925925">
-          <caret line="24" column="7" selection-start-line="24" selection-start-column="7" selection-end-line="24" selection-end-column="7" />
+        <state vertical-scroll-proportion="0.8148148">
+          <caret line="39" column="16" selection-start-line="39" selection-start-column="16" selection-end-line="39" selection-end-column="16" />
           <folding>
             <element signature="imports" expanded="true" />
           </folding>
