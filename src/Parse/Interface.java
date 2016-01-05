@@ -39,13 +39,13 @@ public class Interface extends IClass {
     @Override
     public String toString() {
         StringBuilder s = new StringBuilder();
-        s.append("\n" + this.name + " [\nshape = \"record\",\nlabel = \"{");
+        s.append("\n" + this.name.replace("/", "") + " [\nshape = \"record\",\nlabel = \"{");
         s.append("\\<\\<interface\\>\\>\\l" + this.name + " | ");
-        for (IData f : this.getFields()) {
-            s.append(f.toString());
-        }
-
-        s.append("|");
+//        for (IData f : this.getFields()) {
+//            s.append(f.toString());
+//        }
+//
+//        s.append("|");
 
         for (IData m : this.getMethods()) {
             s.append(m.toString());

@@ -39,7 +39,8 @@ public class GraphCreator {
         }
 
         for (IData val : data.getClasses()) {
-            s.append(val.toString());
+            String a = val.toString();
+            s.append(a);
         }
 
         s.append("\n");
@@ -49,19 +50,19 @@ public class GraphCreator {
     private static void createArrows(StringBuilder s, IDataStorage data) {
         //TODO impelement 'implements' and forms of 'uses'. Currently only does extends
         for (IData val : data.getClasses()) {
-            String name1 = ((IClass) val).getName();
+            String name1 = val.getName().replace("/", "");
 
             //extends superclass
             IData extendedClass = data.getClazz(((IClass) val).getExtends());
             if (extendedClass != null) {
-                String name2 = ((IClass) extendedClass).getName();
+                String name2 = extendedClass.getName().replace("/", "");
                 s.append(name1 + " -> " + name2 + " [arrowhead=\"onormal\", style=\"solid\"];\n");
             }
 
 //          implements interface
             for (String inter : ((IClass) val).getImplements()) {
                 System.out.println("on interface " + inter);
-                String iname = inter;//((IClass) data.getInterfacade(inter)).getName();
+                String iname = inter.replace("/", "");//((IClass) data.getInterfacade(inter)).getName();
                 s.append(name1 + " -> " + iname + " [arrowhead=\"onormal\", style=\"dashed\"];\n");
             }
 

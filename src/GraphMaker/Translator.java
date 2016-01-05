@@ -13,6 +13,7 @@ public class Translator {
         accessibilityTranslator.put("public", "+");
         accessibilityTranslator.put("private", "-");
         accessibilityTranslator.put("protected", "-");
+        accessibilityTranslator.put("default", "+");
     }
 
     public static String translateAccessibility(String accessibility) {

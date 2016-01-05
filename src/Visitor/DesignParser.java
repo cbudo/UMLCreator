@@ -86,7 +86,7 @@ public class DesignParser {
         System.out.println(GraphCreator.setupGraph(projectData));
 
         FileOutputStream out = new FileOutputStream("graph_text\\generated_graph.gv");
-        out.write(GraphCreator.setupGraph(projectData).getBytes());
+        out.write(GraphCreator.setupGraph(projectData).getBytes());//.getBytes());
         out.close();
     }
 }
