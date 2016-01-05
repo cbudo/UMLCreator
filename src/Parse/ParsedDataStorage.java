@@ -39,17 +39,17 @@ public class ParsedDataStorage implements IDataStorage {
         return interfaces.values();
     }
 
-    public Collection<IData> getabstractClasses() {
+    public Collection<IData> getAbstractClasses() {
         return abstractClasses.values();
     }
 
     @Override
-    public void addMethod(String cName, IMethod method) {
+    public void addMethod(String cName, IData method) {
         ((IClass) classes.get(cName)).addMethod(method.name, method);
     }
 
     @Override
-    public void addField(String cName, IField field) {
+    public void addField(String cName, IData field) {
         ((IClass) classes.get(cName)).addField(field.name, field);
     }
 

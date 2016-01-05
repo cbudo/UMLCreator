@@ -6,4 +6,12 @@ package Parse;
 public abstract class IData {
     protected String name = null;
     protected String accessibility = null;
+
+    public void setAccess(String access) {
+        this.accessibility = access;
+    }
+
+    public void setName(String name) {
+        this.name = name;
+    }
 }

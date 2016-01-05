@@ -6,9 +6,9 @@ import java.util.Collection;
  * Created by budocf on 12/17/2015.
  */
 public interface IDataStorage {
-    void addMethod(String cName, IMethod method);
+    void addMethod(String cName, IData method);
 
-    void addField(String cName, IField field);
+    void addField(String cName, IData field);
     void addClass(String name, IData clazz);
 
     void addAbstractClass(String name, IData abstractClass);
@@ -17,7 +17,7 @@ public interface IDataStorage {
 
     void addInterfaces(String name, IData interfacade);
 
-    Collection<IData> getabstractClasses();
+    Collection<IData> getAbstractClasses();
 
     Collection<IData> getClasses();
 

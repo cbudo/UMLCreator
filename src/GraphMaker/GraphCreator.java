@@ -27,7 +27,7 @@ public class GraphCreator {
     }
 
     private static void buildBoxes(StringBuilder s, IDataStorage data) {
-        for (IData val : data.getabstractClasses()) {
+        for (IData val : data.getAbstractClasses()) {
             //s.append(val.toString());
         }
 

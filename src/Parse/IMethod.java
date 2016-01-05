@@ -2,22 +2,39 @@ package Parse;
 
 import GraphMaker.Translator;
 
-import java.util.Map;
+import java.util.ArrayList;
+import java.util.Collections;
+import java.util.List;
 
 /**
  * Created by budocf on 12/17/2015.
  */
 public class IMethod extends IData {
     String returnType = null;
-    Map<String, String> paramNameToType = null;
+    List<String> parameters;
+
+    public IMethod() {
+        this.parameters = new ArrayList<>();
+    }
 
     public IMethod(String name, String returnType, String accessibility, String[] paramTypes) {
         this.name = name;
         this.returnType = returnType;
         this.accessibility = accessibility;
+        this.parameters = new ArrayList<>();
+        Collections.addAll(parameters, paramTypes);
     }
 
     public String toString() {
         return Translator.translateAccessibility(accessibility) + " " + this.name + " : " + this.returnType + "\\l";
+    }
+
+    public void setReturnType(String returnType) {
+        this.returnType = returnType;
+    }
+
+    public void setArgs(String[] args) {
+        parameters = new ArrayList<>();
+        Collections.addAll(parameters, args);
     }
 }
