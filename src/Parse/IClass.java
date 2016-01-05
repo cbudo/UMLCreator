@@ -1,5 +1,6 @@
 package Parse;
 
+import java.util.Collection;
 import java.util.Map;
 
 /**
@@ -7,15 +8,23 @@ import java.util.Map;
  */
 public abstract class IClass extends IData {
 
-    protected Map<String, IMethod> _methods = null;
-    protected Map<String, IField> _fields = null;
+    protected Map<String, IData> _methods = null;
+    protected Map<String, IData> _fields = null;
 
-    public void addMethod(String name, IMethod method) {
+    public void addMethod(String name, IData method) {
         _methods.put(name, method);
     }
 
-    public void addField(String name, IField field) {
+    public void addField(String name, IData field) {
         _fields.put(name, field);
+    }
+
+    public Collection<IData> getMethods() {
+        return _methods.values();
+    }
+
+    public Collection<IData> getFields() {
+        return _fields.values();
     }
 
     public abstract String toString();

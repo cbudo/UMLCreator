@@ -1,14 +1,14 @@
 package GraphMaker;
 
 import Parse.IData;
-import Parse.ParsedDataStorage;
+import Parse.IDataStorage;
 
 /**
  * Created by efronbs on 1/4/2016.
  */
 public class GraphCreator {
 
-    public static String setupGraph(ParsedDataStorage data) {
+    public static String setupGraph(IDataStorage data) {
         StringBuilder s = new StringBuilder();
         stringPrefix(s);
         buildBoxes(s, data);
@@ -23,19 +23,19 @@ public class GraphCreator {
     }
 
     private static void stringSuffixes(StringBuilder s) {
-        s.append("}\n");
+        s.append("\n}\n");
     }
 
-    private static void buildBoxes(StringBuilder s, ParsedDataStorage data) {
+    private static void buildBoxes(StringBuilder s, IDataStorage data) {
         for (IData val : data.getabstractClasses()) {
-            s.append(val.toString());
-        }
-
-        for (IData val : data.getClasses()) {
-            s.append(val.toString());
+            //s.append(val.toString());
         }
 
         for (IData val : data.getInterfaces()) {
+            //s.append(val.toString());
+        }
+
+        for (IData val : data.getClasses()) {
             s.append(val.toString());
         }
     }

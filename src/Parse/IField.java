@@ -1,5 +1,7 @@
 package Parse;
 
+import GraphMaker.Translator;
+
 /**
  * Created by budocf on 12/17/2015.
  */
@@ -10,5 +12,9 @@ public class IField extends IData {
         this.name = name;
         this.type = type;
         this.accessibility = accessibility;
+    }
+
+    public String toString() {
+        return Translator.translateAccessibility(accessibility) + " " + this.name + " : " + type + "\\l";
     }
 }

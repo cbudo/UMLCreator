@@ -24,6 +24,19 @@ public class Class extends IClass {
 
     @Override
     public String toString() {
-        return "this is a class muthafucka\n";
+        StringBuilder s = new StringBuilder();
+        s.append("\n" + this.name + " [\nshape = \"record\",\nlabel = \"{");
+        s.append(this.name + " | ");
+        for (IData f : this.getFields()) {
+            s.append(f.toString());
+        }
+        s.append("|");
+
+        for (IData m : this.getMethods()) {
+            s.append(m.toString());
+        }
+
+        s.append("}\"];");
+        return s.toString();
     }
 }

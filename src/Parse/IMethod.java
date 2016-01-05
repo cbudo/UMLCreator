@@ -1,5 +1,7 @@
 package Parse;
 
+import GraphMaker.Translator;
+
 import java.util.Map;
 
 /**
@@ -13,6 +15,9 @@ public class IMethod extends IData {
         this.name = name;
         this.returnType = returnType;
         this.accessibility = accessibility;
+    }
 
+    public String toString() {
+        return Translator.translateAccessibility(accessibility) + " " + this.name + " : " + this.returnType + "\\l";
     }
 }

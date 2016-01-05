@@ -1,9 +1,8 @@
 package Visitor;
 
+import GraphMaker.GraphCreator;
+import Parse.*;
 import Parse.Class;
-import Parse.IClass;
-import Parse.IDataStorage;
-import Parse.ParsedDataStorage;
 
 import java.io.IOException;
 
@@ -19,10 +18,24 @@ public class DesignParser {
      */
     public static void main(String[] args) throws IOException {
 
-        IDataStorage data = new ParsedDataStorage();
-        String[] s = new String[10];
-        IClass c = new Class("fuck", "fuck", "fuck", s);
-        IClass
+        //String[] s = {"fuck", "fuck"};
+        String[] s = {};
+
+        IClass c = new Class("fuck", "public", "fuck", s);
+        IData f = new IField("fuckTheField", "String", "private");
+        IData m = new IMethod("fuckTheMethod", "void", "public", s);
+
+        c.addField("fieldn", f);
+        c.addMethod("methodn", m);
+
+        IClass i = new Interface();
+        IClass a = new AbstractClass();
+
+        projectData.addClass("fuck", c);
+        projectData.addInterfaces("fuck", i);
+        projectData.addAbstractClass("fuck", a);
+
+        System.out.println(GraphCreator.setupGraph(projectData));
 
         /*for (String className : args) {
             // ASM's ClassReader does the heavy lifting of parsing the compiled Java class
@@ -42,7 +55,7 @@ public class DesignParser {
 
             // Tell the Reader to use our (heavily decorated) ClassVisitor to visit the class
             reader.accept(methodVisitor, ClassReader.EXPAND_FRAMES);
-           */
-        }
+
+        } */
     }
 }
