@@ -1,17 +1,21 @@
 package Visitor;
 
+import Parse.IDataStorage;
 import org.objectweb.asm.ClassVisitor;
 import org.objectweb.asm.MethodVisitor;
 import org.objectweb.asm.Opcodes;
 import org.objectweb.asm.Type;
 
 public class ClassMethodVisitor extends ClassVisitor {
+	IDataStorage storage;
+
 	public ClassMethodVisitor(int api) {
 		super(api);
 	}
 
-	public ClassMethodVisitor(int api, ClassVisitor decorated) {
+	public ClassMethodVisitor(int api, ClassVisitor decorated, IDataStorage storage) {
 		super(api, decorated);
+		this.storage = storage;
 		// TODO Auto-generated constructor stub
 	}
 

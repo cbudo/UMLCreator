@@ -24,13 +24,13 @@ public class DesignParser {
             ClassReader reader = new ClassReader(className);
 
             // make class declaration visitor to get superclass and interfaces
-            ClassVisitor decVisitor = new ClassDeclarationVisitor(Opcodes.ASM5);
+            ClassVisitor decVisitor = new ClassDeclarationVisitor(Opcodes.ASM5, projectData);
 
             // DECORATE declaration visitor with field visitor
-            ClassVisitor fieldVisitor = new ClassFieldVisitor(Opcodes.ASM5, decVisitor);
+            ClassVisitor fieldVisitor = new ClassFieldVisitor(Opcodes.ASM5, decVisitor, projectData);
 
             // DECORATE field visitor with method visitor
-            ClassVisitor methodVisitor = new ClassMethodVisitor(Opcodes.ASM5, fieldVisitor);
+            ClassVisitor methodVisitor = new ClassMethodVisitor(Opcodes.ASM5, fieldVisitor, projectData);
 
             // TODO: add more DECORATORS here in later milestones to accomplish specific tasks
 

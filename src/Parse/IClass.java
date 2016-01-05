@@ -17,4 +17,6 @@ public abstract class IClass extends IData {
     public void addField(String name, IField field) {
         _fields.put(name, field);
     }
+
+    public abstract String toString();
 }
