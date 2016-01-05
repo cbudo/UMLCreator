@@ -16,6 +16,10 @@ public class Interface extends IClass {
         this.extend = extend;
     }
 
+    public Interface() {
+
+    }
+
     @Override
     public String toString() {
         return "this is an interface\n";
