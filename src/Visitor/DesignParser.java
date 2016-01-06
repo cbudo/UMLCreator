@@ -16,6 +16,7 @@ import java.util.List;
 public class DesignParser {
 
     public static IDataStorage projectData = new ParsedDataStorage();
+
     /**
      * Reads in a list of Java Classes and reverse engineers their design.
      *

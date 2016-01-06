@@ -4,6 +4,7 @@ import Parse.IField;
 import org.junit.After;
 import org.junit.Before;
 import org.junit.Test;
+import org.objectweb.asm.Opcodes;
 
 import static org.junit.Assert.assertEquals;
 
@@ -14,7 +15,7 @@ public class IFieldTest {
     IField field;
     @Before
     public void setUp() throws Exception {
-        field = new IField("Test", "boolean", "private");
+        field = new IField("Test", "boolean", Opcodes.ACC_PRIVATE);
     }
 
     @After

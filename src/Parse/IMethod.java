@@ -17,10 +17,10 @@ public class IMethod extends IData {
         this.parameters = new ArrayList<>();
     }
 
-    public IMethod(String name, String returnType, String accessibility, String[] paramTypes) {
+    public IMethod(String name, String returnType, int accessibility, String[] paramTypes) {
         this.name = name;
         this.returnType = returnType;
-        this.accessibility = accessibility;
+        this.accessibility = GetAccess(accessibility);
         this.parameters = new ArrayList<>();
         Collections.addAll(parameters, paramTypes);
     }

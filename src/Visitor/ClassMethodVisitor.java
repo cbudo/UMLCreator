@@ -25,7 +25,7 @@ public class ClassMethodVisitor extends ClassVisitor {
 
 
         // DONE: create an internal representation of the current method and pass it to the methods below
-        String accessLevel = ClassFieldVisitor.GetAccess(access);
+        int accessLevel = access;
         String returnType = addReturnType(desc);
         String[] args = addArguments(desc);
 

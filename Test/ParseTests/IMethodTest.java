@@ -5,6 +5,7 @@ import Parse.IMethod;
 import org.junit.After;
 import org.junit.Before;
 import org.junit.Test;
+import org.objectweb.asm.Opcodes;
 
 import static org.junit.Assert.assertEquals;
 
@@ -16,7 +17,7 @@ public class IMethodTest {
     @Before
     public void setUp() throws Exception {
         String[] empty = new String[0];
-        method = new IMethod("Test", "String", "public", empty);
+        method = new IMethod("Test", "String", Opcodes.ACC_PUBLIC, empty);
     }
 
     @After

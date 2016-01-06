@@ -1,20 +1,23 @@
 package Parse;
 
-import java.util.Collection;
+import java.util.ArrayList;
+import java.util.Collections;
 import java.util.HashMap;
+import java.util.List;
 
 /**
  * Created by budocf on 12/17/2015.
  */
 public class Interface extends IClass {
-    String extend;
+    List<String> implement;
 
-    public Interface(String name, String accessibility, String extend) {
+    public Interface(String name, int accessibility, String[] implement) {
         this.name = name;
-        this.accessibility = accessibility;
+        this.accessibility = GetAccess(accessibility);
         this._methods = new HashMap<>();
         this._fields = new HashMap<>();
-        this.extend = extend;
+        this.implement = new ArrayList<>();
+        Collections.addAll(this.implement, implement);
     }
 
     public Interface() {
@@ -28,12 +31,12 @@ public class Interface extends IClass {
 
     @Override
     public String getExtends() {
-        return extend;
+        return null;
     }
 
     @Override
-    public Collection<String> getImplements() {
-        return null;
+    public List<String> getImplements() {
+        return implement;
     }
 
     @Override

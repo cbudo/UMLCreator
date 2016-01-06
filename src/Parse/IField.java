@@ -8,10 +8,10 @@ import GraphMaker.Translator;
 public class IField extends IData {
     String type = null;
 
-    public IField(String name, String type, String accessibility) {
+    public IField(String name, String type, int accessibility) {
         this.name = name;
         this.type = type;
-        this.accessibility = accessibility;
+        this.accessibility = GetAccess(accessibility);
     }
 
     public String toString() {

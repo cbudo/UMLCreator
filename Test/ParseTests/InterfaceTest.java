@@ -5,6 +5,10 @@ import Parse.Interface;
 import org.junit.After;
 import org.junit.Before;
 import org.junit.Test;
+import org.objectweb.asm.Opcodes;
+
+import java.util.ArrayList;
+import java.util.List;
 
 import static org.junit.Assert.assertEquals;
 
@@ -15,7 +19,8 @@ public class InterfaceTest {
     IData interfacade;
     @Before
     public void setUp() throws Exception {
-        interfacade = new Interface("Test", "public", "");
+        String[] empty = new String[0];
+        interfacade = new Interface("Test", Opcodes.ACC_PUBLIC, empty);
     }
 
     @After
@@ -30,12 +35,13 @@ public class InterfaceTest {
 
     @Test
     public void testGetExtends() throws Exception {
-        assertEquals("", ((Interface) interfacade).getExtends());
+        List<String> empty = new ArrayList<>();
+        assertEquals(empty, ((Interface) interfacade).getImplements());
     }
 
 
     @Test
     public void testToString() throws Exception {
-        assertEquals("\nTest [\nshape = \"record\",\nlabel = \"{\\<\\<interface\\>\\>\\lTest | }\"];", interfacade.toString());
+        assertEquals("\nTest [\nshape = \"record\",\nlabel = \"{\\<\\<interface\\>\\>\\nTest | }\"];", interfacade.toString());
     }
 }

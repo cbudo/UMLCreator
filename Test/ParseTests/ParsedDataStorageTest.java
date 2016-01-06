@@ -5,6 +5,7 @@ import Parse.*;
 import org.junit.After;
 import org.junit.Before;
 import org.junit.Test;
+import org.objectweb.asm.Opcodes;
 
 import static org.junit.Assert.assertEquals;
 import static org.junit.Assert.assertTrue;
@@ -37,7 +38,7 @@ public class ParsedDataStorageTest {
     @Test
     public void testAddInterfaces() throws Exception {
         String[] empty = new String[0];
-        Interface clazz = new Interface("Test", "private", "");
+        Interface clazz = new Interface("Test", Opcodes.ACC_PRIVATE, empty);
         storage.addInterfaces("Test", clazz);
         assertTrue(storage.getInterfaces().contains(clazz));
         assertEquals(clazz, storage.getInterface("Test"));
@@ -53,7 +54,7 @@ public class ParsedDataStorageTest {
         String[] empty = new String[0];
         Class clazz = new Class("Test", "private", "", empty);
         storage.addClass("Test", clazz);
-        IData method = new IMethod("test", "boolean", "private", empty);
+        IData method = new IMethod("test", "boolean", Opcodes.ACC_PRIVATE, empty);
         storage.addField("Test", method);
 
     }
