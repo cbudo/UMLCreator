@@ -35,12 +35,17 @@ public class GraphCreator {
         }
 
         for (IData val : data.getInterfaces()) {
-            s.append(val.toString());
+            String escapedString = val.toString();
+            escapedString = escapedString.replaceAll("<", "\\<");
+            escapedString = escapedString.replaceAll(">", "\\>");
+            s.append(escapedString);
         }
 
         for (IData val : data.getClasses()) {
-            String a = val.toString();
-            s.append(a);
+            String escapedString = val.toString();
+            escapedString = escapedString.replaceAll("<", "\\<");
+            escapedString = escapedString.replaceAll(">", "\\>");
+            s.append(escapedString);
         }
 
         s.append("\n");
@@ -53,7 +58,7 @@ public class GraphCreator {
             String name1 = val.getName().replace("/", "");
 
             //extends superclass
-            IData extendedClass = data.getClazz(((IClass) val).getExtends());
+            IData extendedClass = data.getClazz(((IClass) val).getExtends().replace("/", "."));
             if (extendedClass != null) {
                 String name2 = extendedClass.getName().replace("/", "");
                 s.append(name1 + " -> " + name2 + " [arrowhead=\"onormal\", style=\"solid\"];\n");
@@ -66,6 +71,15 @@ public class GraphCreator {
                 s.append(name1 + " -> " + iname + " [arrowhead=\"onormal\", style=\"dashed\"];\n");
             }
 
+        }
+        //interfaces
+        for (IData val : data.getInterfaces()) {
+            String name1 = val.getName();
+            IData extendedInterface = data.getInterface(((IClass) val).getExtends().replace("/", "."));
+            if (extendedInterface != null) {
+                String name2 = extendedInterface.getName().replace("/", "");
+                s.append(name1 + " -> " + name2 + " [arrowhead=\"onormal\", style=\"solid\"];\n");
+            }
         }
     }
 }

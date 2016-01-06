@@ -49,40 +49,40 @@ public class DesignParser {
             reader.accept(methodVisitor, ClassReader.EXPAND_FRAMES);
         }
 
-//            String[] empty = {};
-//            String[] inh1 = {"i1", "i2"};
+//        String[] empty = {};
+//        String[] inh1 = {"i1", "i2"};
 //
-//            IClass c2 = new Class("you", "private", "", inh1);
-//            IData f2 = new IField("afield", "String", "protected");
-//            IData m2 = new IMethod("amethod", "void", "public", empty);
-//            c2.addField("fieldn2", f2);
-//            c2.addMethod("methodn2", m2);
+//        IClass c2 = new Class("you", "private", "", inh1);
+//        IData f2 = new IField("afield", "String", "protected");
+//        IData m2 = new IMethod("amethod", "void", "public", empty);
+//        c2.addField("fieldn2", f2);
+//        c2.addMethod("methodn2", m2);
 //
-//            IClass c1 = new Class("fuck", "public", "you", empty);
-//            IData f1 = new IField("fuckTheField", "String", "private");
-//            IData m1 = new IMethod("fuckTheMethod", "void", "public", empty);
-//            c1.addField("fieldn", f1);
-//            c1.addMethod("methodn", m1);
+//        IClass c1 = new Class("fuck", "public", "you", empty);
+//        IData f1 = new IField("fuckTheField", "String", "private");
+//        IData m1 = new IMethod("fuckTheMethod", "void", "public", empty);
+//        c1.addField("fieldn", f1);
+//        c1.addMethod("methodn", m1);
 //
-//            IClass i1 = new Interface("i1", "public", "", empty);
-//            IData f3 = new IField("f3", "String", "protected");
-//            IData m3 = new IMethod("m3", "void", "public", empty);
-//            i1.addField("f3", f3);
-//            i1.addMethod("m3", m3);
+//        IClass i1 = new Interface("i1", "public", "");
+//        IData f3 = new IField("f3", "String", "protected");
+//        IData m3 = new IMethod("m3", "void", "public", empty);
+//        i1.addField("f3", f3);
+//        i1.addMethod("m3", m3);
 //
-//            IClass i2 = new Interface("i2", "public", "", empty);
-//            IData f4 = new IField("f4", "String", "protected");
-//            IData m4 = new IMethod("m4", "void", "public", empty);
-//            i2.addField("f4", f4);
-//            i2.addMethod("m4", m4);
+//        IClass i2 = new Interface("i2", "public", "");
+//        IData f4 = new IField("f4", "String", "protected");
+//        IData m4 = new IMethod("m4", "void", "public", empty);
+//        i2.addField("f4", f4);
+//        i2.addMethod("m4", m4);
 //
-//            IClass a1 = new AbstractClass();
+//        IClass a1 = new AbstractClass();
 //
-//            projectData.addClass("fuck", c1);
-//            projectData.addClass("you", c2);
-//            projectData.addInterfaces("i1", i1);
-//            projectData.addInterfaces("i2", i2);
-//            projectData.addAbstractClass("a1", a1);
+//        projectData.addClass("fuck", c1);
+//        projectData.addClass("you", c2);
+//        projectData.addInterfaces("i1", i1);
+//        projectData.addInterfaces("i2", i2);
+//        projectData.addAbstractClass("a1", a1);
 
         System.out.println(GraphCreator.setupGraph(projectData));
 
