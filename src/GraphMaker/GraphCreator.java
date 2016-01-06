@@ -36,15 +36,15 @@ public class GraphCreator {
 
         for (IData val : data.getInterfaces()) {
             String escapedString = val.toString();
-            escapedString = escapedString.replaceAll("<", "\\<");
-            escapedString = escapedString.replaceAll(">", "\\>");
+            //escapedString = escapedString.replace("<", "\\<");
+            //escapedString = escapedString.replace(">", "\\>");
             s.append(escapedString);
         }
 
         for (IData val : data.getClasses()) {
             String escapedString = val.toString();
-            escapedString = escapedString.replaceAll("<", "\\<");
-            escapedString = escapedString.replaceAll(">", "\\>");
+            escapedString = escapedString.replace("<", "\\<");
+            escapedString = escapedString.replace(">", "\\>");
             s.append(escapedString);
         }
 
