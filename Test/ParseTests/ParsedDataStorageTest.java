@@ -41,7 +41,7 @@ public class ParsedDataStorageTest {
         Interface clazz = new Interface("Test", Opcodes.ACC_PRIVATE, empty);
         storage.addInterfaces("Test", clazz);
         assertTrue(storage.getInterfaces().contains(clazz));
-        assertEquals(clazz, storage.getInterface("Test"));
+        assertEquals(clazz, storage.getInterfacade("Test"));
     }
 
     @Test

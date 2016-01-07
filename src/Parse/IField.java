@@ -14,6 +14,18 @@ public class IField extends IData {
         this.accessibility = GetAccess(accessibility);
     }
 
+    public String getName() {
+        return this.name;
+    }
+
+    public String getType() {
+        return this.type;
+    }
+
+    public String getAccessibility() {
+        return this.accessibility;
+    }
+
     public String toString() {
         return Translator.translateAccessibility(accessibility) + " " + this.name + " : " + type + "\\l";
     }

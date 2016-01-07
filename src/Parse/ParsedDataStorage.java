@@ -31,7 +31,11 @@ public class ParsedDataStorage implements IDataStorage {
     }
 
     public IData getClazz(String className) {
-        return classes.get(className);
+        if (this.classes.containsKey(className)) {
+            return classes.get(className);
+        } else {
+            return null;
+        }
     }
 
     public void addInterfaces(String name, IData interfacade) {
