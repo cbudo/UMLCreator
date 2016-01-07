@@ -31,5 +31,6 @@
       </library>
     </orderEntry>
     <orderEntry type="library" name="Lab1-3-Solution" level="project" />
+    <orderEntry type="library" name="asm-all-5.0.4" level="project" />
   </component>
 </module>

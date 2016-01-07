@@ -25,6 +25,14 @@ public class IMethod extends IData {
         Collections.addAll(parameters, paramTypes);
     }
 
+    public List<String> getParamNames() {
+        return parameters;
+    }
+
+    public String getReturnType() {
+        return returnType;
+    }
+
     public String toString() {
         return Translator.translateAccessibility(accessibility) + " " + this.name + " : " + this.returnType + "\\l";
     }

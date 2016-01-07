@@ -20,7 +20,9 @@ public class ClassDeclarationVisitor extends ClassVisitor {
             ParsedDataStorage.getInstance().addInterfaces(className, new Interface(name, access, interfaces));
         } else if ((access & Opcodes.ACC_ABSTRACT) != 0) {
             IData absClass = new AbstractClass(name, access, superName, interfaces);
-            ParsedDataStorage.getInstance().addAbstractClass(className, absClass);
+            //ParsedDataStorage.getInstance().addAbstractClass(className, absClass);
+            ParsedDataStorage.getInstance().addClass(className, absClass);
+
         } else {
             ParsedDataStorage.getInstance().addClass(className, new Class(name, signature, superName, interfaces));
 
