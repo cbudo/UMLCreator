@@ -14,10 +14,10 @@ import static org.junit.Assert.assertTrue;
  * Created by budocf on 1/5/2016.
  */
 public class ParsedDataStorageTest {
-    IDataStorage storage = new ParsedDataStorage();
+    IDataStorage storage = ParsedDataStorage.getInstance();
     @Before
     public void setUp() throws Exception {
-        storage = new ParsedDataStorage();
+        storage = ParsedDataStorage.getInstance();
     }
 
     @After

@@ -2,6 +2,7 @@ package Visitor;
 
 import Parse.IData;
 import Parse.IField;
+import Parse.ParsedDataStorage;
 import org.objectweb.asm.ClassVisitor;
 import org.objectweb.asm.FieldVisitor;
 import org.objectweb.asm.Type;
@@ -29,7 +30,7 @@ public class ClassFieldVisitor extends ClassVisitor {
         IData field = new IField(name, type, access);
         // DONE: add this field to your internal representation of the current class.
         // What is a good way to know what the current class is?
-        DesignParser.projectData.addField(className, field);
+        ParsedDataStorage.getInstance().addField(className, field);
         return toDecorate;
 	}
 

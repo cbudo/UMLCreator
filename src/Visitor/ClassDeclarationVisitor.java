@@ -3,6 +3,7 @@ package Visitor;
 import Parse.AbstractClass;
 import Parse.Class;
 import Parse.Interface;
+import Parse.ParsedDataStorage;
 import org.objectweb.asm.ClassVisitor;
 import org.objectweb.asm.Opcodes;
 
@@ -18,11 +19,11 @@ public class ClassDeclarationVisitor extends ClassVisitor {
     public void visit(int version, int access, String name, String signature, String superName, String[] interfaces) {
         // DONE: construct an internal representation of the class for later use by decorators
         if ((access & Opcodes.ACC_INTERFACE) != 0) {
-            DesignParser.projectData.addInterfaces(className, new Interface(name, access, interfaces));
+            ParsedDataStorage.getInstance().addInterfaces(className, new Interface(name, access, interfaces));
         } else if ((access & Opcodes.ACC_ABSTRACT) != 0) {
-            DesignParser.projectData.addAbstractClass(className, new AbstractClass(name, access, superName, interfaces));
+            ParsedDataStorage.getInstance().addAbstractClass(className, new AbstractClass(name, access, superName, interfaces));
         } else {
-            DesignParser.projectData.addClass(className, new Class(name, signature, superName, interfaces));
+            ParsedDataStorage.getInstance().addClass(className, new Class(name, signature, superName, interfaces));
 
         }
         super.visit(version, access, name, signature, superName, interfaces);

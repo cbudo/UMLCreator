@@ -2,6 +2,7 @@ package Visitor;
 
 import Parse.IData;
 import Parse.IMethod;
+import Parse.ParsedDataStorage;
 import org.objectweb.asm.ClassVisitor;
 import org.objectweb.asm.MethodVisitor;
 import org.objectweb.asm.Type;
@@ -33,7 +34,7 @@ public class ClassMethodVisitor extends ClassVisitor {
         // DONE: add the current method to your internal representation of the current class
         // What is a good way for the code to remember what the current class is?
 
-        DesignParser.projectData.addMethod(className, method);
+        ParsedDataStorage.getInstance().addMethod(className, method);
 
         return toDecorate;
     }

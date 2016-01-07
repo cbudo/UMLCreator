@@ -2,7 +2,6 @@ package Visitor;
 
 import GraphMaker.GraphCreator;
 import Parse.IData;
-import Parse.IDataStorage;
 import Parse.ParsedDataStorage;
 import org.objectweb.asm.ClassReader;
 import org.objectweb.asm.ClassVisitor;
@@ -14,8 +13,6 @@ import java.util.ArrayList;
 import java.util.List;
 
 public class DesignParser {
-
-    public static IDataStorage projectData = new ParsedDataStorage();
 
     /**
      * Reads in a list of Java Classes and reverse engineers their design.
@@ -85,10 +82,10 @@ public class DesignParser {
 //        projectData.addInterfaces("i2", i2);
 //        projectData.addAbstractClass("a1", a1);
 
-        System.out.println(GraphCreator.setupGraph(projectData));
+        System.out.println(GraphCreator.setupGraph(ParsedDataStorage.getInstance()));
 
         FileOutputStream out = new FileOutputStream("graph_text\\generated_graph.gv");
-        out.write(GraphCreator.setupGraph(projectData).getBytes());//.getBytes());
+        out.write(GraphCreator.setupGraph(ParsedDataStorage.getInstance()).getBytes());//.getBytes());
         out.close();
     }
 }

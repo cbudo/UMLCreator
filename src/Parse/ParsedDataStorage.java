@@ -8,15 +8,22 @@ import java.util.Map;
  * Created by budocf on 12/17/2015.
  */
 public class ParsedDataStorage implements IDataStorage {
-
+    private static ParsedDataStorage storage;
     Map<String, IData> classes;
     Map<String, IData> interfaces;
     Map<String, IData> abstractClasses;
 
-    public ParsedDataStorage() {
+    private ParsedDataStorage() {
         this.classes = new HashMap<>();
         this.interfaces = new HashMap<>();
         this.abstractClasses = new HashMap<>();
+    }
+
+    public static ParsedDataStorage getInstance() {
+        if (storage == null) {
+            storage = new ParsedDataStorage();
+        }
+        return storage;
     }
 
     public void addClass(String name, IData clazz) {
