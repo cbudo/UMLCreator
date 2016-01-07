@@ -1,9 +1,7 @@
 package Visitor;
 
-import Parse.AbstractClass;
+import Parse.*;
 import Parse.Class;
-import Parse.Interface;
-import Parse.ParsedDataStorage;
 import org.objectweb.asm.ClassVisitor;
 import org.objectweb.asm.Opcodes;
 
@@ -21,7 +19,8 @@ public class ClassDeclarationVisitor extends ClassVisitor {
         if ((access & Opcodes.ACC_INTERFACE) != 0) {
             ParsedDataStorage.getInstance().addInterfaces(className, new Interface(name, access, interfaces));
         } else if ((access & Opcodes.ACC_ABSTRACT) != 0) {
-            ParsedDataStorage.getInstance().addAbstractClass(className, new AbstractClass(name, access, superName, interfaces));
+            IData absClass = new AbstractClass(name, access, superName, interfaces);
+            ParsedDataStorage.getInstance().addAbstractClass(className, absClass);
         } else {
             ParsedDataStorage.getInstance().addClass(className, new Class(name, signature, superName, interfaces));
 

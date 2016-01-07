@@ -59,7 +59,11 @@ public class ParsedDataStorage implements IDataStorage {
         try {
             ((IClass) classes.get(cName)).addMethod(method.name, method);
         } catch (Exception e) {
-            ((IClass) interfaces.get(cName)).addMethod(method.name, method);
+            try {
+                ((IClass) abstractClasses.get(cName)).addField(method.name, method);
+            } catch (Exception ex) {
+                ((IClass) interfaces.get(cName)).addMethod(method.name, method);
+            }
         }
     }
 
@@ -68,7 +72,11 @@ public class ParsedDataStorage implements IDataStorage {
         try {
             ((IClass) classes.get(cName)).addField(field.name, field);
         } catch (Exception e) {
-            ((IClass) interfaces.get(cName)).addField(field.name, field);
+            try {
+                ((IClass) abstractClasses.get(cName)).addField(field.name, field);
+            } catch (Exception ex) {
+                ((IClass) interfaces.get(cName)).addField(field.name, field);
+            }
         }
     }
 

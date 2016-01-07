@@ -1,9 +1,6 @@
 package Parse;
 
-import java.util.ArrayList;
-import java.util.Collection;
-import java.util.Collections;
-import java.util.List;
+import java.util.*;
 
 /**
  * Created by budocf on 1/4/2016.
@@ -16,6 +13,8 @@ public class AbstractClass extends IClass {
         this.name = name;
         this.accessibility = GetAccess(access);
         this.extend = superName;
+        this._methods = new HashMap<>();
+        this._fields = new HashMap<>();
         implement = new ArrayList<>();
         Collections.addAll(implement, interfaces);
     }
