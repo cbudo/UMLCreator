@@ -1,9 +1,15 @@
 package Visitor;
 
-import Parse.*;
-import Parse.Class;
+import NewParseClasses.AbstractClassRep;
+import NewParseClasses.AbstractJavaClassRep;
+import NewParseClasses.ClassRep;
+import NewParseClasses.InterfaceRep;
+import Parse.ParsedDataStorage;
 import org.objectweb.asm.ClassVisitor;
 import org.objectweb.asm.Opcodes;
+
+import java.util.Arrays;
+import java.util.List;
 
 public class ClassDeclarationVisitor extends ClassVisitor {
     protected String className;
@@ -16,15 +22,18 @@ public class ClassDeclarationVisitor extends ClassVisitor {
     @Override
     public void visit(int version, int access, String name, String signature, String superName, String[] interfaces) {
         // DONE: construct an internal representation of the class for later use by decorators
+        List<String> interfaceList = Arrays.asList(interfaces);
         if ((access & Opcodes.ACC_INTERFACE) != 0) {
-            ParsedDataStorage.getInstance().addInterfaces(className, new Interface(name, access, interfaces));
+            ParsedDataStorage.getInstance().addInterfaces(className, new InterfaceRep(name, access, interfaceList));
         } else if ((access & Opcodes.ACC_ABSTRACT) != 0) {
-            IData absClass = new AbstractClass(name, access, superName, interfaces);
+            AbstractJavaClassRep absClass = new AbstractClassRep(name, access, interfaceList, superName);
             //ParsedDataStorage.getInstance().addAbstractClass(className, absClass);
             ParsedDataStorage.getInstance().addClass(className, absClass);
 
         } else {
-            ParsedDataStorage.getInstance().addClass(className, new Class(name, signature, superName, interfaces));
+            //what is signature?
+            //ParsedDataStorage.getInstance().addClass(className, new ClassRep(name, signature, interfaceList, superName));
+            ParsedDataStorage.getInstance().addClass(className, new ClassRep(name, access, interfaceList, superName));
 
         }
         super.visit(version, access, name, signature, superName, interfaces);

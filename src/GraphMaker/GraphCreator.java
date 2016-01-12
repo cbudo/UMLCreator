@@ -61,7 +61,7 @@ public class GraphCreator {
             String name1 = val.getName().replace("/", "");
 
             //extends superclass
-            IData extendedClass = data.getClazz(((IClass) val).getExtends().replace("/", "."));
+            IData extendedClass = data.getClass(((IClass) val).getExtends().replace("/", "."));
             if (extendedClass != null) {
                 String name2 = extendedClass.getName().replace("/", "");
                 s.append(name1 + " -> " + name2 + " [arrowhead=\"onormal\", style=\"solid\"];\n");
@@ -80,7 +80,7 @@ public class GraphCreator {
             String name1 = val.getName().replace("/", "");
 
             //extends superclass
-            IData extendedClass = data.getClazz(((IClass) val).getExtends().replace("/", "."));
+            IData extendedClass = data.getClass(((IClass) val).getExtends().replace("/", "."));
             if (extendedClass != null) {
                 String name2 = extendedClass.getName().replace("/", "");
                 s.append(name1 + " -> " + name2 + " [arrowhead=\"onormal\", style=\"solid\"];\n");
@@ -113,7 +113,7 @@ public class GraphCreator {
 
         IData interfaceToCheck = ParsedDataStorage.getInstance().getInterfacade(typeName);
         IData abstractClassToCheck = ParsedDataStorage.getInstance().getInterfacade(typeName);
-        IData classToCheck = ParsedDataStorage.getInstance().getClazz(typeName);
+        IData classToCheck = ParsedDataStorage.getInstance().getClass(typeName);
 
         if (classToCheck != null && classChecking.getName() != classToCheck.getName()) {
             String keyName = classChecking.getName().replace("/", "");

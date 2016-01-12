@@ -1,5 +1,8 @@
 package Parse;
 
+import NewParseClasses.AbstractData;
+import NewParseClasses.AbstractJavaClassRep;
+
 import java.util.Collection;
 
 /**
@@ -7,23 +10,23 @@ import java.util.Collection;
  */
 public interface IDataStorage {
 
-    Collection<IData> getAbstractClasses();
+    Collection<AbstractJavaClassRep> getAbstractClasses();
 
-    Collection<IData> getClasses();
+    Collection<AbstractJavaClassRep> getClasses();
 
-    Collection<IData> getInterfaces();
+    Collection<AbstractJavaClassRep> getInterfaces();
 
-    IData getClazz(String className);
+    AbstractJavaClassRep getClass(String className);
 
-    IData getInterfacade(String interfaceName);
+    AbstractJavaClassRep getInterfacade(String interfaceName);
 
-    void addMethod(String cName, IData method);
+    void addMethod(String cName, AbstractData methodRep);
 
-    void addField(String cName, IData field);
+    void addField(String cName, AbstractData fieldRep);
 
-    void addClass(String name, IData clazz);
+    void addClass(String name, AbstractJavaClassRep classRep);
 
-    void addAbstractClass(String name, IData abstractClass);
+    void addAbstractClass(String name, AbstractJavaClassRep abstractClassRep);
 
-    void addInterfaces(String name, IData interfacade);
+    void addInterfaces(String name, AbstractJavaClassRep interfaceRep);
 }

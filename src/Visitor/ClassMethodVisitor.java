@@ -1,7 +1,7 @@
 package Visitor;
 
-import Parse.IData;
-import Parse.IMethod;
+import NewParseClasses.AbstractData;
+import NewParseClasses.MethodRep;
 import Parse.ParsedDataStorage;
 import org.objectweb.asm.ClassVisitor;
 import org.objectweb.asm.MethodVisitor;
@@ -30,7 +30,10 @@ public class ClassMethodVisitor extends ClassVisitor {
         String returnType = addReturnType(desc);
         String[] args = addArguments(desc);
 
-        IData method = new IMethod(name, returnType, accessLevel, args);
+        AbstractData method = new MethodRep(name, accessLevel, returnType);
+        for (String rel : args) {
+            ((MethodRep) method).addUsesRelation(rel);
+        }
         // DONE: add the current method to your internal representation of the current class
         // What is a good way for the code to remember what the current class is?
 

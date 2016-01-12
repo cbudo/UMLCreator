@@ -31,7 +31,7 @@ public class ParsedDataStorageTest {
         Class clazz = new Class("Test", "private", "", empty);
         storage.addClass("Test", clazz);
         assertTrue(storage.getClasses().contains(clazz));
-        assertEquals(clazz, storage.getClazz("Test"));
+        assertEquals(clazz, storage.getClass("Test"));
     }
 
 

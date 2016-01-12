@@ -1,5 +1,8 @@
 package Parse;
 
+import NewParseClasses.AbstractData;
+import NewParseClasses.AbstractJavaClassRep;
+
 import java.util.Collection;
 import java.util.HashMap;
 import java.util.Map;
@@ -9,14 +12,14 @@ import java.util.Map;
  */
 public class ParsedDataStorage implements IDataStorage {
     private static ParsedDataStorage storage;
-    Map<String, IData> classes;
-    Map<String, IData> interfaces;
-    Map<String, IData> abstractClasses;
+    Map<String, AbstractJavaClassRep> classes;
+    Map<String, AbstractJavaClassRep> interfaces;
+    Map<String, AbstractJavaClassRep> abstractClasses;
 
     private ParsedDataStorage() {
-        this.classes = new HashMap<>();
-        this.interfaces = new HashMap<>();
-        this.abstractClasses = new HashMap<>();
+        this.classes = new HashMap<String, AbstractJavaClassRep>();
+        this.interfaces = new HashMap<String, AbstractJavaClassRep>();
+        this.abstractClasses = new HashMap<String, AbstractJavaClassRep>();
     }
 
     public static ParsedDataStorage getInstance() {
@@ -26,11 +29,11 @@ public class ParsedDataStorage implements IDataStorage {
         return storage;
     }
 
-    public void addClass(String name, IData clazz) {
-        classes.put(name, clazz);
+    public void addClass(String name, AbstractJavaClassRep classRep) {
+        classes.put(name, classRep);
     }
 
-    public IData getClazz(String className) {
+    public AbstractJavaClassRep getClass(String className) {
         if (this.classes.containsKey(className)) {
             return classes.get(className);
         } else {
@@ -38,61 +41,61 @@ public class ParsedDataStorage implements IDataStorage {
         }
     }
 
-    public void addInterfaces(String name, IData interfacade) {
-        interfaces.put(name, interfacade);
+    public void addInterfaces(String name, AbstractJavaClassRep interfaceRep) {
+        interfaces.put(name, interfaceRep);
     }
 
-    public IData getInterfacade(String interfaceName) {
+    public AbstractJavaClassRep getInterfacade(String interfaceName) {
         return interfaces.get(interfaceName);
     }
 
-    public Collection<IData> getClasses() {
+    public Collection<AbstractJavaClassRep> getClasses() {
         return classes.values();
     }
 
-    public Collection<IData> getInterfaces() {
+    public Collection<AbstractJavaClassRep> getInterfaces() {
         return interfaces.values();
     }
 
-    public Collection<IData> getAbstractClasses() {
+    public Collection<AbstractJavaClassRep> getAbstractClasses() {
         return abstractClasses.values();
     }
 
     @Override
-    public void addMethod(String cName, IData method) {
+    public void addMethod(String cName, AbstractData methodRep) {
         try {
-            ((IClass) classes.get(cName)).addMethod(method.name, method);
+            classes.get(cName).addMethod(methodRep.getName(), methodRep);
         } catch (Exception e) {
             try {
-                ((IClass) abstractClasses.get(cName)).addField(method.name, method);
+                abstractClasses.get(cName).addMethod(methodRep.getName(), methodRep);
             } catch (Exception ex) {
-                ((IClass) interfaces.get(cName)).addMethod(method.name, method);
+                interfaces.get(cName).addMethod(methodRep.getName(), methodRep);
             }
         }
     }
 
     @Override
-    public void addField(String cName, IData field) {
+    public void addField(String cName, AbstractData fieldRep) {
         try {
-            ((IClass) classes.get(cName)).addField(field.name, field);
+            classes.get(cName).addField(fieldRep.getName(), fieldRep);
         } catch (Exception e) {
             try {
-                ((IClass) abstractClasses.get(cName)).addField(field.name, field);
+                abstractClasses.get(cName).addField(fieldRep.getName(), fieldRep);
             } catch (Exception ex) {
-                ((IClass) interfaces.get(cName)).addField(field.name, field);
+                interfaces.get(cName).addField(fieldRep.getName(), fieldRep);
             }
         }
     }
 
-    public void addAbstractClass(String name, IData abstractClass) {
-        abstractClasses.put(name, abstractClass);
+    public void addAbstractClass(String name, AbstractJavaClassRep abstractClassRep) {
+        abstractClasses.put(name, abstractClassRep);
     }
 
-    public IData getAbstractClass(String className) {
+    public AbstractJavaClassRep getAbstractClass(String className) {
         return abstractClasses.get(className);
     }
 
-    public IData getInterface(String interfaceName) {
+    public AbstractJavaClassRep getInterface(String interfaceName) {
         return interfaces.get(interfaceName);
     }
 

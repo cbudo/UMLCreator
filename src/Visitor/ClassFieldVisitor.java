@@ -1,7 +1,7 @@
 package Visitor;
 
-import Parse.IData;
-import Parse.IField;
+import NewParseClasses.AbstractData;
+import NewParseClasses.FieldRep;
 import Parse.ParsedDataStorage;
 import org.objectweb.asm.ClassVisitor;
 import org.objectweb.asm.FieldVisitor;
@@ -27,7 +27,7 @@ public class ClassFieldVisitor extends ClassVisitor {
 
 		FieldVisitor toDecorate = super.visitField(access, name, desc, signature, value);
 		String type = Type.getType(desc).getClassName();
-        IData field = new IField(name, type, access);
+        AbstractData field = new FieldRep(name, access, type);
         // DONE: add this field to your internal representation of the current class.
         // What is a good way to know what the current class is?
         ParsedDataStorage.getInstance().addField(className, field);
