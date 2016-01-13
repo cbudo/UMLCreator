@@ -1,7 +1,7 @@
-package Parse;
+package DataStorage;
 
-import NewParseClasses.AbstractData;
-import NewParseClasses.AbstractJavaClassRep;
+import ParseClasses.AbstractData;
+import ParseClasses.AbstractJavaClassRep;
 
 import java.util.Collection;
 

@@ -1,4 +1,4 @@
-package NewParseClasses;
+package ParseClasses;
 
 /**
  * Created by efronbs on 1/7/2016.

@@ -1,8 +1,8 @@
 package Visitor;
 
-import NewParseClasses.AbstractData;
-import NewParseClasses.FieldRep;
-import Parse.ParsedDataStorage;
+import DataStorage.ParsedDataStorage;
+import ParseClasses.AbstractData;
+import ParseClasses.FieldRep;
 import org.objectweb.asm.ClassVisitor;
 import org.objectweb.asm.FieldVisitor;
 import org.objectweb.asm.Type;

@@ -1,10 +1,10 @@
 package Visitor;
 
-import NewParseClasses.AbstractClassRep;
-import NewParseClasses.AbstractJavaClassRep;
-import NewParseClasses.ClassRep;
-import NewParseClasses.InterfaceRep;
-import Parse.ParsedDataStorage;
+import DataStorage.ParsedDataStorage;
+import ParseClasses.AbstractClassRep;
+import ParseClasses.AbstractJavaClassRep;
+import ParseClasses.ClassRep;
+import ParseClasses.InterfaceRep;
 import org.objectweb.asm.ClassVisitor;
 import org.objectweb.asm.Opcodes;
 
@@ -28,7 +28,7 @@ public class ClassDeclarationVisitor extends ClassVisitor {
         } else if ((access & Opcodes.ACC_ABSTRACT) != 0) {
             AbstractJavaClassRep absClass = new AbstractClassRep(name, access, interfaceList, superName);
             //ParsedDataStorage.getInstance().addAbstractClass(className, absClass);
-            ParsedDataStorage.getInstance().addClass(className, absClass);
+            ParsedDataStorage.getInstance().addAbstractClass(className, absClass);
 
         } else {
             //what is signature?

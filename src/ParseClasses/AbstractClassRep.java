@@ -1,4 +1,6 @@
-package NewParseClasses;
+package ParseClasses;
+
+import DataStorage.UMLClassParsing.IUMLVisitor;
 
 import java.util.List;
 
@@ -6,7 +8,7 @@ import java.util.List;
  * Created by efronbs on 1/7/2016.
  */
 
-public class AbstractClassRep extends AbstractExtendableClassRep
+public class AbstractClassRep extends AbstractExtendableClassRep implements Visitable
 {
     public AbstractClassRep(String name, int accessibility)
     {
@@ -26,5 +28,10 @@ public class AbstractClassRep extends AbstractExtendableClassRep
     public AbstractClassRep(String name, int accessibility, List<String> implementsName, String extendsClassName)
     {
         super(name, accessibility, implementsName, extendsClassName);
+    }
+
+    @Override
+    public void acceptUMLClass(IUMLVisitor visitor, StringBuilder currentString) {
+        visitor.visit(this, currentString);
     }
 }

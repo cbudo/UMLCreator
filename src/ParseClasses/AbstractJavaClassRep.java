@@ -1,4 +1,4 @@
-package NewParseClasses;
+package ParseClasses;
 
 import java.util.HashMap;
 import java.util.List;
@@ -29,7 +29,6 @@ public abstract class AbstractJavaClassRep extends AbstractData
 
     public void addMethod(String methodName, AbstractData methodStructure)
     {
-        this.implementsNames.add(methodName);
         this.methodsMap.put(methodName, methodStructure);
     }
 

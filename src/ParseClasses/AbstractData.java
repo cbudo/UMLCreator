@@ -1,4 +1,4 @@
-package NewParseClasses;
+package ParseClasses;
 
 import java.util.HashMap;
 import java.util.Map;
