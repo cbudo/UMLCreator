@@ -2,10 +2,9 @@ package DataStorage;
 
 import ParseClasses.AbstractData;
 import ParseClasses.AbstractJavaClassRep;
+import ParseClasses.IRelation;
 
-import java.util.Collection;
-import java.util.HashMap;
-import java.util.Map;
+import java.util.*;
 
 /**
  * Created by budocf on 12/17/2015.
@@ -15,11 +14,13 @@ public class ParsedDataStorage implements IDataStorage {
     Map<String, AbstractJavaClassRep> classes;
     Map<String, AbstractJavaClassRep> interfaces;
     Map<String, AbstractJavaClassRep> abstractClasses;
+    List<IRelation> relations;
 
     private ParsedDataStorage() {
         this.classes = new HashMap<String, AbstractJavaClassRep>();
         this.interfaces = new HashMap<String, AbstractJavaClassRep>();
         this.abstractClasses = new HashMap<String, AbstractJavaClassRep>();
+        this.relations = new ArrayList<>();
     }
 
     public static ParsedDataStorage getInstance() {
@@ -97,6 +98,10 @@ public class ParsedDataStorage implements IDataStorage {
 
     public AbstractJavaClassRep getInterface(String interfaceName) {
         return interfaces.get(interfaceName);
+    }
+
+    public boolean addRelation(IRelation relation) {
+        return relations.add(relation);
     }
 
 }

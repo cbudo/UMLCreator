@@ -1,5 +1,7 @@
 package ParseClasses;
 
+import DataStorage.ParsedDataStorage;
+
 import java.util.HashMap;
 import java.util.List;
 import java.util.Map;
@@ -24,6 +26,13 @@ public abstract class AbstractJavaClassRep extends AbstractData
         this.implementsNames = implementsNames;
         this.methodsMap = new HashMap<String, AbstractData>();
         this.fieldsMap = new HashMap<String,AbstractData>();
+        addImplementsToStorage();
+    }
+
+    protected void addImplementsToStorage() {
+        for (String s : implementsNames) {
+            ParsedDataStorage.getInstance().addRelation(new Implements(s, this.getName()));
+        }
     }
 
 
