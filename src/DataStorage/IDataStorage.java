@@ -2,6 +2,7 @@ package DataStorage;
 
 import ParseClasses.AbstractData;
 import ParseClasses.AbstractJavaClassRep;
+import ParseClasses.MethodCall;
 
 import java.util.Collection;
 
@@ -29,4 +30,6 @@ public interface IDataStorage {
     void addAbstractClass(String name, AbstractJavaClassRep abstractClassRep);
 
     void addInterfaces(String name, AbstractJavaClassRep interfaceRep);
+
+    MethodCall[] getMethods();
 }

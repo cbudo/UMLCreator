@@ -3,6 +3,7 @@ package DataStorage;
 import ParseClasses.AbstractData;
 import ParseClasses.AbstractJavaClassRep;
 import ParseClasses.IRelation;
+import ParseClasses.MethodCall;
 
 import java.util.*;
 
@@ -15,6 +16,7 @@ public class ParsedDataStorage implements IDataStorage {
     Map<String, AbstractJavaClassRep> interfaces;
     Map<String, AbstractJavaClassRep> abstractClasses;
     List<IRelation> relations;
+    List<MethodCall> methodCalls;
     private int max_depth = 5;
 
     private ParsedDataStorage() {
@@ -22,6 +24,7 @@ public class ParsedDataStorage implements IDataStorage {
         this.interfaces = new HashMap<String, AbstractJavaClassRep>();
         this.abstractClasses = new HashMap<String, AbstractJavaClassRep>();
         this.relations = new ArrayList<>();
+        this.methodCalls = new LinkedList<>();
     }
 
     public static ParsedDataStorage getInstance() {
@@ -53,6 +56,15 @@ public class ParsedDataStorage implements IDataStorage {
 
     public void addInterfaces(String name, AbstractJavaClassRep interfaceRep) {
         interfaces.put(name, interfaceRep);
+    }
+
+    @Override
+    public MethodCall[] getMethods() {
+        return methodCalls.toArray(new MethodCall[methodCalls.size()]);
+    }
+
+    public boolean addMethod(MethodCall mc) {
+        return methodCalls.add(mc);
     }
 
     public AbstractJavaClassRep getInterfacade(String interfaceName) {

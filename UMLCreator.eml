@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<component inherit-compiler-output="true" inheritJdk="true">
+	<output-test url="file://$MODULE_DIR$/out/test/UMLCreator"/>
+	<exclude-output/>
+	<contentEntry url="file://$MODULE_DIR$">
+		<testFolder url="file://$MODULE_DIR$/Test"/>
+		<excludeFolder url="file://$MODULE_DIR$/Test/ParseTests"/>
+		<excludeFolder url="file://$MODULE_DIR$/src/GraphMaker"/>
+		<excludeFolder url="file://$MODULE_DIR$/src/Parse"/>
+	</contentEntry>
+	<lib name="junit-4.12.jar" scope="COMPILE">
+		<relative-module-cls project-related="jar://$PROJECT_DIR$/lib/junit-4.12.jar!/"/>
+	</lib>
+	<lib name="lib/junit-4.12.jar" scope="COMPILE">
+		<relative-module-cls project-related="jar://$PROJECT_DIR$/lib/junit-4.12.jar!/"/>
+	</lib>
+	<levels>
+		<level name="asm-all-5.0.4" value="project"/>
+		<level name="Lab1-3-Solution" value="project"/>
+	</levels>
+</component>

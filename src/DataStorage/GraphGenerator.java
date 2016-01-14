@@ -7,7 +7,7 @@ import ParseClasses.ClassRep;
 /**
  * Created by efronbs on 1/12/2016.
  */
-public class GraphGenerator {
+public class GraphGenerator implements IGenerator {
     public static String buildUMLClassDiagram() {
         IDataStorage data = ParsedDataStorage.getInstance();
         UMLClassVisitor classVisitBuilder = new UMLClassVisitor();
@@ -19,5 +19,10 @@ public class GraphGenerator {
         }
 
         return graphString.toString();
+    }
+
+    @Override
+    public String Generate() {
+        return buildUMLClassDiagram();
     }
 }
