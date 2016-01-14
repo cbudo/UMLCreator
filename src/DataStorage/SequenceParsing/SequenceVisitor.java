@@ -13,6 +13,8 @@ public class SequenceVisitor implements ISequenceVisitor {
     @Override
     public void visit(MethodCall mc, StringBuilder classes, StringBuilder methods) {
         addClass(mc.GetCallingClass(), classes);
+        if (mc.GetMethodName() == "new")
+            classes.append("/");
         addClass(mc.GetCalledClass(), classes);
         addMethod(mc, methods);
     }
@@ -34,8 +36,10 @@ public class SequenceVisitor implements ISequenceVisitor {
         sb.append(".");
         sb.append(mc.GetMethodName());
         appendArgs(mc.GetArgs(), sb);
-        sb.append(":");
-        sb.append(mc.getRetType());
+        if (mc.getRetType() != null) {
+            sb.append(":");
+            sb.append(mc.getRetType());
+        }
         sb.append("\n");
     }
 
