@@ -2,6 +2,11 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="1b357d25-b641-458c-8a8c-24064c31616e" name="Default" comment="generating sequence diagrams properly">
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/MS3_Turnin/ProjectSequence_actual.jpg" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/MS3_Turnin/Shuffle_Generated.jpg" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/MS3_Turnin/Shuffle_actual.jpg" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/MS3_Turnin/UMLClass_MS3.jpg" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/MS3_Turnin/ProjectSequence_actual.uxf" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
     </list>
     <ignored path="UMLCreator.iws" />
@@ -425,6 +430,7 @@
       <recent name="C:\Users\efronbs\Documents\School\y3q2\374\UMLCreatorActual\src\Visitor" />
     </key>
     <key name="CopyFile.RECENT_KEYS">
+      <recent name="C:\Users\budocf\Documents\Courses\Junior\CSSE374\Project\UMLCreator\MS3_Turnin" />
       <recent name="C:\Users\efronbs\Documents\School\y3q2\374\UMLCreatorActual\src\headfirst\factory\pizzaaf\pizzaaf" />
       <recent name="C:\Users\efronbs\Documents\School\y3q2\374\UMLCreatorActual\src\headfirst\factory\pizzaaf" />
       <recent name="C:\Users\budocf\Documents\Courses\Junior\CSSE374\Project\UMLCreator\src\Visitor" />
@@ -908,7 +914,7 @@
       <workItem from="1452690679618" duration="33931000" />
       <workItem from="1452758458370" duration="95000" />
       <workItem from="1452758570803" duration="1030000" />
-      <workItem from="1452797150590" duration="5504000" />
+      <workItem from="1452797150590" duration="5770000" />
     </task>
     <task id="LOCAL-00001" summary="added asm libraries and visitor package">
       <created>1451953507803</created>
@@ -1048,11 +1054,17 @@
       <option name="project" value="LOCAL" />
       <updated>1452803886839</updated>
     </task>
-    <option name="localTasksCounter" value="24" />
+    <task id="LOCAL-00024" summary="generating sequence diagrams properly">
+      <created>1452803907518</created>
+      <option name="number" value="00024" />
+      <option name="project" value="LOCAL" />
+      <updated>1452803907518</updated>
+    </task>
+    <option name="localTasksCounter" value="25" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="138535000" />
+    <option name="totallyTimeSpent" value="138801000" />
   </component>
   <component name="TodoView" selected-index="1">
     <todo-panel id="selected-file">
