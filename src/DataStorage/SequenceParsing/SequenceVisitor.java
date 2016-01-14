@@ -13,8 +13,10 @@ public class SequenceVisitor implements ISequenceVisitor {
     @Override
     public void visit(MethodCall mc, StringBuilder classes, StringBuilder methods) {
         addClass(mc.GetCallingClass(), classes);
-        if (mc.GetMethodName() == "new")
+        if ((mc.GetMethodName().equals("new")) && !classesVisited.contains(mc.GetCalledClass()))
             classes.append("/");
+        else if (mc.GetMethodName().equals("new"))
+            return;
         addClass(mc.GetCalledClass(), classes);
         addMethod(mc, methods);
     }

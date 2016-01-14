@@ -14,8 +14,8 @@ public class MethodCall {
     private String retType;
 
     public MethodCall(String callingClass, String calledClass, String methodName, String[] args, String retType) {
-        this.callingClass = callingClass;
-        this.calledClass = calledClass;
+        this.callingClass = callingClass.replace("[", "");
+        this.calledClass = calledClass.replace("[", "");
         this.methodName = methodName;
         this.args = args;
         this.retType = retType;

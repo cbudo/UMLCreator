@@ -1,0 +1,2340 @@
+DesignParser:DesignParser[a]
+/ArrayList:ArrayList[a]
+/ClassReader:ClassReader[a]
+String:String[a]
+CharSequence:CharSequence[a]
+Pattern:Pattern[a]
+Normalizer:Normalizer[a]
+NormalizerBase:NormalizerBase[a]
+NormalizerBase$Mode:NormalizerBase$Mode[a]
+System:System[a]
+NormalizerImpl:NormalizerImpl[a]
+/UnicodeSet:UnicodeSet[a]
+/UnicodeSetIterator:UnicodeSetIterator[a]
+Iterator:Iterator[a]
+IntTrie:IntTrie[a]
+/NullPointerException:NullPointerException[a]
+Trie$DataManipulate:Trie$DataManipulate[a]
+/StringBuilder:StringBuilder[a]
+Object:Object[a]
+Class:Class[a]
+AbstractStringBuilder:AbstractStringBuilder[a]
+Integer:Integer[a]
+Long:Long[a]
+Float:Float[a]
+FloatingDecimal:FloatingDecimal[a]
+Double:Double[a]
+ThreadLocal:ThreadLocal[a]
+Thread:Thread[a]
+ThreadLocal$ThreadLocalMap:ThreadLocal$ThreadLocalMap[a]
+ThreadLocal$ThreadLocalMap$Entry:ThreadLocal$ThreadLocalMap$Entry[a]
+FloatingDecimal$BinaryToASCIIBuffer:FloatingDecimal$BinaryToASCIIBuffer[a]
+/AssertionError:AssertionError[a]
+Math:Math[a]
+FDBigInteger:FDBigInteger[a]
+Arrays:Arrays[a]
+Array:Array[a]
+/IllegalArgumentException:IllegalArgumentException[a]
+FloatingDecimal$BinaryToASCIIConverter:FloatingDecimal$BinaryToASCIIConverter[a]
+/OutOfMemoryError:OutOfMemoryError[a]
+/StringIndexOutOfBoundsException:StringIndexOutOfBoundsException[a]
+StringBuffer:StringBuffer[a]
+/IndexOutOfBoundsException:IndexOutOfBoundsException[a]
+Utility:Utility[a]
+UTF16:UTF16[a]
+UCharacterProperty:UCharacterProperty[a]
+/ArrayIndexOutOfBoundsException:ArrayIndexOutOfBoundsException[a]
+TreeSet:TreeSet[a]
+NavigableMap:NavigableMap[a]
+/ParsePosition:ParsePosition[a]
+/RuleCharacterIterator:RuleCharacterIterator[a]
+SymbolTable:SymbolTable[a]
+UCharacter:UCharacter[a]
+CharTrie:CharTrie[a]
+Character:Character[a]
+CharacterData:CharacterData[a]
+VersionInfo:VersionInfo[a]
+/NumberFormatException:NumberFormatException[a]
+HashMap:HashMap[a]
+HashMap$TreeNode:HashMap$TreeNode[a]
+ClassScope:ClassScope[a]
+CoreReflectionFactory:CoreReflectionFactory[a]
+ClassRepository:ClassRepository[a]
+SoftReference:SoftReference[a]
+Reference:Reference[a]
+/Class$ReflectionData:Class$ReflectionData[a]
+Class$Atomic:Class$Atomic[a]
+Unsafe:Unsafe[a]
+Class;:Class;[a]
+ClassSignature:ClassSignature[a]
+TypeTree:TypeTree[a]
+Reifier:Reifier[a]
+Type;:Type;[a]
+ParameterizedType:ParameterizedType[a]
+Comparable:Comparable[a]
+/HashMap$Node:HashMap$Node[a]
+/UnicodeSet$VersionFilter:UnicodeSet$VersionFilter[a]
+Exception:Exception[a]
+/MissingResourceException:MissingResourceException[a]
+/TrieIterator:TrieIterator[a]
+/RangeValueIterator$Element:RangeValueIterator$Element[a]
+Trie:Trie[a]
+/IllegalStateException:IllegalStateException[a]
+UnicodeSet$Filter:UnicodeSet$Filter[a]
+NavigableSet:NavigableSet[a]
+I:I[a]
+/InternalError:InternalError[a]
+/TreeMap:TreeMap[a]
+Collection:Collection[a]
+SortedSet:SortedSet[a]
+Comparator:Comparator[a]
+Map$Entry:Map$Entry[a]
+ObjectInputStream:ObjectInputStream[a]
+ObjectInputStream$BlockDataInputStream:ObjectInputStream$BlockDataInputStream[a]
+/OptionalDataException:OptionalDataException[a]
+ObjectInputStream$PeekInputStream:ObjectInputStream$PeekInputStream[a]
+InputStream:InputStream[a]
+/StreamCorruptedException:StreamCorruptedException[a]
+/EOFException:EOFException[a]
+Bits:Bits[a]
+ObjectInputStream$HandleTable:ObjectInputStream$HandleTable[a]
+ObjectInputStream$ValidationList:ObjectInputStream$ValidationList[a]
+/Formatter:Formatter[a]
+/FormatterClosedException:FormatterClosedException[a]
+ASCII:ASCII[a]
+/Pattern$SliceUS:Pattern$SliceUS[a]
+/Pattern$SliceU:Pattern$SliceU[a]
+/Pattern$SliceIS:Pattern$SliceIS[a]
+/Pattern$SliceI:Pattern$SliceI[a]
+/Pattern$SliceS:Pattern$SliceS[a]
+/Pattern$Slice:Pattern$Slice[a]
+/Pattern$GroupHead:Pattern$GroupHead[a]
+/Pattern$GroupTail:Pattern$GroupTail[a]
+/Pattern$Pos:Pattern$Pos[a]
+/Pattern$Neg:Pattern$Neg[a]
+/Pattern$Ques:Pattern$Ques[a]
+/PatternSyntaxException:PatternSyntaxException[a]
+Map:Map[a]
+/Pattern$TreeInfo:Pattern$TreeInfo[a]
+Pattern$Node:Pattern$Node[a]
+/Pattern$BehindS:Pattern$BehindS[a]
+/Pattern$Behind:Pattern$Behind[a]
+/Pattern$NotBehindS:Pattern$NotBehindS[a]
+/Pattern$NotBehind:Pattern$NotBehind[a]
+/Pattern$Curly:Pattern$Curly[a]
+/Pattern$BranchConn:Pattern$BranchConn[a]
+/Pattern$Branch:Pattern$Branch[a]
+/Pattern$GroupCurly:Pattern$GroupCurly[a]
+/Pattern$Loop:Pattern$Loop[a]
+/Pattern$LazyLoop:Pattern$LazyLoop[a]
+/Pattern$Prolog:Pattern$Prolog[a]
+/Pattern$BitClass:Pattern$BitClass[a]
+/Pattern$5:Pattern$5[a]
+/Pattern$6:Pattern$6[a]
+Locale:Locale[a]
+BaseLocale:BaseLocale[a]
+ConditionalSpecialCasing:ConditionalSpecialCasing[a]
+Hashtable:Hashtable[a]
+HashSet:HashSet[a]
+/HashMap$KeySet:HashMap$KeySet[a]
+Set:Set[a]
+ConditionalSpecialCasing$Entry:ConditionalSpecialCasing$Entry[a]
+BreakIterator:BreakIterator[a]
+Locale$Category:Locale$Category[a]
+/GetPropertyAction:GetPropertyAction[a]
+AccessController:AccessController[a]
+/AccessControlContext:AccessControlContext[a]
+Policy:Policy[a]
+AtomicReference:AtomicReference[a]
+Debug:Debug[a]
+PrintStream:PrintStream[a]
+/IOException:IOException[a]
+BufferedWriter:BufferedWriter[a]
+Writer:Writer[a]
+OutputStreamWriter:OutputStreamWriter[a]
+StreamEncoder:StreamEncoder[a]
+ByteBuffer:ByteBuffer[a]
+WritableByteChannel:WritableByteChannel[a]
+/UnsupportedOperationException:UnsupportedOperationException[a]
+/ReadOnlyBufferException:ReadOnlyBufferException[a]
+OutputStream:OutputStream[a]
+SecurityManager:SecurityManager[a]
+/Class$EnclosingMethodInfo:Class$EnclosingMethodInfo[a]
+Reflection:Reflection[a]
+ClassLoader:ClassLoader[a]
+ReflectUtil:ReflectUtil[a]
+ProtectionDomain:ProtectionDomain[a]
+CodeSource:CodeSource[a]
+URL:URL[a]
+URLStreamHandler:URLStreamHandler[a]
+Permission:Permission[a]
+/Policy$1:Policy$1[a]
+/AccessController$1:AccessController$1[a]
+/Policy$3:Policy$3[a]
+/WeakHashMap:WeakHashMap[a]
+/Permissions:Permissions[a]
+ReferenceQueue:ReferenceQueue[a]
+VM:VM[a]
+WeakHashMap$Entry:WeakHashMap$Entry[a]
+PermissionCollection:PermissionCollection[a]
+Enumeration:Enumeration[a]
+/SecurityException:SecurityException[a]
+UnresolvedPermissionCollection:UnresolvedPermissionCollection[a]
+List:List[a]
+UnresolvedPermission:UnresolvedPermission[a]
+Certificate:Certificate[a]
+X509CertImpl:X509CertImpl[a]
+/CertificateEncodingException:CertificateEncodingException[a]
+/Class$3:Class$3[a]
+Constructor:Constructor[a]
+/ReflectionFactory$GetReflectionFactoryAction:ReflectionFactory$GetReflectionFactoryAction[a]
+ReflectionFactory:ReflectionFactory[a]
+Modifier:Modifier[a]
+LangReflectAccess:LangReflectAccess[a]
+/NoSuchMethodException:NoSuchMethodException[a]
+/ReflectionFactory$1:ReflectionFactory$1[a]
+/InstantiationExceptionConstructorAccessorImpl:InstantiationExceptionConstructorAccessorImpl[a]
+/BootstrapConstructorAccessorImpl:BootstrapConstructorAccessorImpl[a]
+/MethodAccessorGenerator:MethodAccessorGenerator[a]
+ByteVectorFactory:ByteVectorFactory[a]
+/ByteVectorImpl:ByteVectorImpl[a]
+/ClassFileAssembler:ClassFileAssembler[a]
+ByteVector:ByteVector[a]
+UTF8:UTF8[a]
+/RuntimeException:RuntimeException[a]
+/Label:Label[a]
+/Label$PatchInfo:Label$PatchInfo[a]
+/MethodAccessorGenerator$1:MethodAccessorGenerator$1[a]
+/NativeConstructorAccessorImpl:NativeConstructorAccessorImpl[a]
+/DelegatingConstructorAccessorImpl:DelegatingConstructorAccessorImpl[a]
+ConstructorAccessor:ConstructorAccessor[a]
+/PermissionsHash:PermissionsHash[a]
+/IllegalAccessException:IllegalAccessException[a]
+/Class$1:Class$1[a]
+/InstantiationException:InstantiationException[a]
+InvocationTargetException:InvocationTargetException[a]
+/Policy$PolicyInfo:Policy$PolicyInfo[a]
+/PolicyFile:PolicyFile[a]
+/Policy$2:Policy$2[a]
+/AccessControlContext$1:AccessControlContext$1[a]
+/AccessControlException:AccessControlException[a]
+Proxy:Proxy[a]
+WeakCache:WeakCache[a]
+Objects:Objects[a]
+Supplier:Supplier[a]
+WeakCache$CacheKey:WeakCache$CacheKey[a]
+ConcurrentMap:ConcurrentMap[a]
+/WeakCache$LookupValue:WeakCache$LookupValue[a]
+/SecurityManager$1:SecurityManager$1[a]
+/StringTokenizer:StringTokenizer[a]
+/NoSuchElementException:NoSuchElementException[a]
+/RuntimePermission:RuntimePermission[a]
+/Matcher:Matcher[a]
+Interruptible:Interruptible[a]
+DomainCombiner:DomainCombiner[a]
+LocaleUtils:LocaleUtils[a]
+/BaseLocale$Key:BaseLocale$Key[a]
+BaseLocale$Cache:BaseLocale$Cache[a]
+/Locale$LocaleKey:Locale$LocaleKey[a]
+Locale$Cache:Locale$Cache[a]
+BreakIterator$BreakIteratorCache:BreakIterator$BreakIteratorCache[a]
+LocaleExtensions:LocaleExtensions[a]
+LocaleProviderAdapter:LocaleProviderAdapter[a]
+/ConcurrentHashMap:ConcurrentHashMap[a]
+LocaleProviderAdapter$Type:LocaleProviderAdapter$Type[a]
+LocaleServiceProvider:LocaleServiceProvider[a]
+ResourceBundle$Control:ResourceBundle$Control[a]
+ResourceBundle$SingleFormatControl:ResourceBundle$SingleFormatControl[a]
+ResourceBundle$Control$CandidateListCache:ResourceBundle$Control$CandidateListCache[a]
+BreakIteratorProvider:BreakIteratorProvider[a]
+/StringCharacterIterator:StringCharacterIterator[a]
+Character$UnicodeScript:Character$UnicodeScript[a]
+Enum:Enum[a]
+/Class$MethodArray:Class$MethodArray[a]
+Member:Member[a]
+Method:Method[a]
+/Class$4:Class$4[a]
+/NativeMethodAccessorImpl:NativeMethodAccessorImpl[a]
+/DelegatingMethodAccessorImpl:DelegatingMethodAccessorImpl[a]
+MethodAccessor:MethodAccessor[a]
+/Pattern$Script:Pattern$Script[a]
+Character$UnicodeBlock:Character$UnicodeBlock[a]
+/Pattern$Block:Pattern$Block[a]
+Pattern$CharPropertyNames:Pattern$CharPropertyNames[a]
+Pattern$CharPropertyNames$CharPropertyFactory:Pattern$CharPropertyNames$CharPropertyFactory[a]
+UnicodeProp:UnicodeProp[a]
+/Pattern$Utype:Pattern$Utype[a]
+Pattern$CharProperty:Pattern$CharProperty[a]
+/Pattern$CharProperty$1:Pattern$CharProperty$1[a]
+/Pattern$CIBackRef:Pattern$CIBackRef[a]
+/Pattern$BackRef:Pattern$BackRef[a]
+/Pattern$Begin:Pattern$Begin[a]
+/Pattern$Bound:Pattern$Bound[a]
+/Pattern$Ctype:Pattern$Ctype[a]
+/Pattern$LastMatch:Pattern$LastMatch[a]
+/Pattern$HorizWS:Pattern$HorizWS[a]
+/Pattern$LineEnding:Pattern$LineEnding[a]
+/Pattern$VertWS:Pattern$VertWS[a]
+/Pattern$UnixDollar:Pattern$UnixDollar[a]
+/Pattern$Dollar:Pattern$Dollar[a]
+/Pattern$End:Pattern$End[a]
+/Pattern$SingleU:Pattern$SingleU[a]
+/Pattern$SingleI:Pattern$SingleI[a]
+/Pattern$SingleS:Pattern$SingleS[a]
+/Pattern$Single:Pattern$Single[a]
+/Pattern$2:Pattern$2[a]
+/Pattern$3:Pattern$3[a]
+/Pattern$1:Pattern$1[a]
+/Pattern$7:Pattern$7[a]
+/Pattern$UnixCaret:Pattern$UnixCaret[a]
+/Pattern$Caret:Pattern$Caret[a]
+/Pattern$All:Pattern$All[a]
+/Pattern$UnixDot:Pattern$UnixDot[a]
+/Pattern$Dot:Pattern$Dot[a]
+Pattern$BnM:Pattern$BnM[a]
+/Pattern$BnMS:Pattern$BnMS[a]
+/Pattern$StartS:Pattern$StartS[a]
+/Pattern$Start:Pattern$Start[a]
+/UnknownFormatConversionException:UnknownFormatConversionException[a]
+/Formatter$FixedString:Formatter$FixedString[a]
+/Formatter$FormatSpecifier:Formatter$FormatSpecifier[a]
+Formatter$FormatString:Formatter$FormatString[a]
+/MissingFormatArgumentException:MissingFormatArgumentException[a]
+DataInputStream:DataInputStream[a]
+/InvalidObjectException:InvalidObjectException[a]
+/ObjectStreamClass:ObjectStreamClass[a]
+/UTFDataFormatException:UTFDataFormatException[a]
+/IllegalAccessError:IllegalAccessError[a]
+BiFunction:BiFunction[a]
+/WeakCache$Factory:WeakCache$Factory[a]
+/ClassNotFoundException:ClassNotFoundException[a]
+/InvalidClassException:InvalidClassException[a]
+ObjectStreamClass$Caches:ObjectStreamClass$Caches[a]
+/ObjectStreamClass$WeakClassKey:ObjectStreamClass$WeakClassKey[a]
+/ObjectStreamClass$EntryFuture:ObjectStreamClass$EntryFuture[a]
+/ObjectStreamClass$EntryFuture$1:ObjectStreamClass$EntryFuture$1[a]
+/ObjectStreamClass$FieldReflectorKey:ObjectStreamClass$FieldReflectorKey[a]
+ObjectStreamField:ObjectStreamField[a]
+/ObjectStreamClass$FieldReflector:ObjectStreamClass$FieldReflector[a]
+Byte:Byte[a]
+/ObjectStreamClass$1:ObjectStreamClass$1[a]
+/ObjectStreamClass$ExceptionInfo:ObjectStreamClass$ExceptionInfo[a]
+ObjectInputStream$HandleTable$HandleList:ObjectInputStream$HandleTable$HandleList[a]
+Externalizable:Externalizable[a]
+/ObjectStreamClass$ClassDataSlot:ObjectStreamClass$ClassDataSlot[a]
+Collections:Collections[a]
+ListIterator:ListIterator[a]
+/SerialCallbackContext:SerialCallbackContext[a]
+/ClassCastException:ClassCastException[a]
+ObjectStreamField;:ObjectStreamField;[a]
+Field:Field[a]
+Object;:Object;[a]
+Z:Z[a]
+B:B[a]
+C:C[a]
+D:D[a]
+F:F[a]
+J:J[a]
+S:S[a]
+/WriteAbortedException:WriteAbortedException[a]
+/ObjectInputStream$ValidationList$1:ObjectInputStream$ValidationList$1[a]
+PrivilegedActionException:PrivilegedActionException[a]
+/TreeMap$Entry:TreeMap$Entry[a]
+AbstractSet:AbstractSet[a]
+Normalizer$Form:Normalizer$Form[a]
+/ClassDeclarationVisitor:ClassDeclarationVisitor[a]
+/ClassFieldVisitor:ClassFieldVisitor[a]
+/ClassMethodVisitor:ClassMethodVisitor[a]
+/Context:Context[a]
+/Item:Item[a]
+Type:Type[a]
+/Handle:Handle[a]
+ClassVisitor:ClassVisitor[a]
+FieldVisitor:FieldVisitor[a]
+MethodVisitor:MethodVisitor[a]
+Attribute:Attribute[a]
+/TypePath:TypePath[a]
+AnnotationVisitor:AnnotationVisitor[a]
+/Short:Short[a]
+
+DesignParser:ArrayList.new()
+DesignParser:ClassReader.new(String)
+DesignParser:String.replace():String
+String:CharSequence.toString():String
+String:Pattern.compile(String, int):Pattern
+Pattern:Pattern.has(int):boolean
+Pattern:Pattern.normalize():void
+Pattern:Normalizer.normalize(CharSequence, Normalizer$Form):String
+Normalizer:CharSequence.toString():String
+Normalizer:NormalizerBase.normalize(String, Normalizer$Form):String
+NormalizerBase:NormalizerBase$Mode.normalize(Object;, int, int, Object;, int, int, int):int
+NormalizerBase$Mode:System.arraycopy(Object, int, Object, int, int):void
+NormalizerBase$Mode:NormalizerImpl.getNX(int):UnicodeSet
+NormalizerImpl:NormalizerImpl.internalGetNX(int):UnicodeSet
+NormalizerImpl:NormalizerImpl.internalGetNXHangul():UnicodeSet
+NormalizerImpl:UnicodeSet.new(int, int)
+NormalizerImpl:NormalizerImpl.internalGetNXCJKCompat():UnicodeSet
+NormalizerImpl:UnicodeSetIterator.new(UnicodeSet)
+NormalizerImpl:UnicodeSetIterator.nextRange():boolean
+UnicodeSetIterator:UnicodeSetIterator.loadRange(int):void
+UnicodeSetIterator:UnicodeSet.getRangeStart(int):int
+UnicodeSetIterator:UnicodeSet.getRangeEnd(int):int
+UnicodeSetIterator:Iterator.next():Object
+UnicodeSetIterator:Iterator.hasNext():boolean
+NormalizerImpl:NormalizerImpl.getNorm32(int):long
+NormalizerImpl:IntTrie.getLeadValue():int
+IntTrie:IntTrie.getLeadOffset():int
+NormalizerImpl:IntTrie.getCodePointValue(int):int
+IntTrie:IntTrie.getCodePointOffset(int):int
+NormalizerImpl:NormalizerImpl.isNorm32LeadSurrogate(long):boolean
+NormalizerImpl:NormalizerImpl.getNorm32FromSurrogatePair(long):long
+NormalizerImpl:IntTrie.getTrailValue(int):int
+IntTrie:NullPointerException.new(String)
+IntTrie:Trie$DataManipulate.getFoldingOffset(int):int
+IntTrie:IntTrie.getRawOffset(int):int
+NormalizerImpl:UnicodeSet.add(int):UnicodeSet
+UnicodeSet:UnicodeSet.add_unchecked(int):UnicodeSet
+UnicodeSet:StringBuilder.new()
+UnicodeSet:StringBuilder.append(String):StringBuilder
+StringBuilder:String.valueOf(Object):String
+String:Object.toString():String
+Object:Object.getClass():Class
+Object:Class.getName():String
+Class:Class.getName0():String
+Object:StringBuilder.append(String):StringBuilder
+StringBuilder:StringBuilder.append(String):StringBuilder
+StringBuilder:AbstractStringBuilder.append(String):AbstractStringBuilder
+AbstractStringBuilder:String.valueOf(Object):String
+String:Integer.toString(int):String
+Integer:Integer.toString(int):String
+Integer:Integer.stringSize(int):int
+Integer:Integer.getChars(int, int, Object;):void
+String:Long.toString(long):String
+Long:Long.toString(long):String
+Long:Long.stringSize(long):int
+Long:Long.getChars(long, int, Object;):void
+String:Float.toString():String
+Float:FloatingDecimal.toJavaFormatString():String
+FloatingDecimal:FloatingDecimal.getBinaryToASCIIConverter(double):FloatingDecimal$BinaryToASCIIConverter
+FloatingDecimal:Double.doubleToRawLongBits(double):long
+FloatingDecimal:Long.numberOfLeadingZeros(long):int
+FloatingDecimal:FloatingDecimal.getBinaryToASCIIBuffer():FloatingDecimal$BinaryToASCIIBuffer
+FloatingDecimal:ThreadLocal.get():Object
+ThreadLocal:Thread.currentThread():Thread
+ThreadLocal:ThreadLocal.getMap(Thread):ThreadLocal$ThreadLocalMap
+ThreadLocal:ThreadLocal$ThreadLocalMap.access$000(ThreadLocal$ThreadLocalMap, ThreadLocal):ThreadLocal$ThreadLocalMap$Entry
+ThreadLocal$ThreadLocalMap:ThreadLocal$ThreadLocalMap.getEntry(ThreadLocal):ThreadLocal$ThreadLocalMap$Entry
+ThreadLocal$ThreadLocalMap:ThreadLocal.access$400(ThreadLocal):int
+ThreadLocal$ThreadLocalMap:ThreadLocal$ThreadLocalMap$Entry.get():Object
+ThreadLocal$ThreadLocalMap:ThreadLocal$ThreadLocalMap.getEntryAfterMiss(ThreadLocal, int, ThreadLocal$ThreadLocalMap$Entry):ThreadLocal$ThreadLocalMap$Entry
+ThreadLocal$ThreadLocalMap:ThreadLocal$ThreadLocalMap.expungeStaleEntry(int):int
+ThreadLocal$ThreadLocalMap:ThreadLocal$ThreadLocalMap.nextIndex(int, int):int
+ThreadLocal:ThreadLocal.setInitialValue():Object
+ThreadLocal:ThreadLocal.initialValue():Object
+ThreadLocal:ThreadLocal$ThreadLocalMap.access$100(ThreadLocal$ThreadLocalMap, ThreadLocal, Object):void
+ThreadLocal$ThreadLocalMap:ThreadLocal$ThreadLocalMap.set(ThreadLocal, Object):void
+ThreadLocal$ThreadLocalMap:ThreadLocal$ThreadLocalMap.replaceStaleEntry(ThreadLocal, Object, int):void
+ThreadLocal$ThreadLocalMap:ThreadLocal$ThreadLocalMap.prevIndex(int, int):int
+ThreadLocal$ThreadLocalMap:ThreadLocal$ThreadLocalMap.cleanSomeSlots(int, int):boolean
+ThreadLocal$ThreadLocalMap:ThreadLocal$ThreadLocalMap.rehash():void
+ThreadLocal$ThreadLocalMap:ThreadLocal$ThreadLocalMap.expungeStaleEntries():void
+ThreadLocal$ThreadLocalMap:ThreadLocal$ThreadLocalMap.resize():void
+ThreadLocal$ThreadLocalMap:ThreadLocal$ThreadLocalMap.setThreshold(int):void
+ThreadLocal:ThreadLocal.createMap(Thread, Object):void
+FloatingDecimal:FloatingDecimal$BinaryToASCIIBuffer.access$000(FloatingDecimal$BinaryToASCIIBuffer, boolean):void
+FloatingDecimal$BinaryToASCIIBuffer:FloatingDecimal$BinaryToASCIIBuffer.setSign(boolean):void
+FloatingDecimal:FloatingDecimal$BinaryToASCIIBuffer.access$100(FloatingDecimal$BinaryToASCIIBuffer, int, long, int, boolean):void
+FloatingDecimal$BinaryToASCIIBuffer:FloatingDecimal$BinaryToASCIIBuffer.dtoa(int, long, int, boolean):void
+FloatingDecimal$BinaryToASCIIBuffer:AssertionError.new()
+FloatingDecimal$BinaryToASCIIBuffer:Long.numberOfTrailingZeros(long):int
+FloatingDecimal$BinaryToASCIIBuffer:Math.max(int, int):int
+Math:Float.floatToRawIntBits():int
+Math:Double.doubleToRawLongBits(double):long
+FloatingDecimal$BinaryToASCIIBuffer:FloatingDecimal$BinaryToASCIIBuffer.insignificantDigitsForPow2(int):int
+FloatingDecimal$BinaryToASCIIBuffer:FloatingDecimal$BinaryToASCIIBuffer.developLongDigits(int, long, int):void
+FloatingDecimal$BinaryToASCIIBuffer:FloatingDecimal$BinaryToASCIIBuffer.estimateDecExp(long, int):int
+FloatingDecimal$BinaryToASCIIBuffer:Double.longBitsToDouble(long):double
+FloatingDecimal$BinaryToASCIIBuffer:Double.doubleToRawLongBits(double):long
+FloatingDecimal$BinaryToASCIIBuffer:Math.min(int, int):int
+FloatingDecimal$BinaryToASCIIBuffer:FDBigInteger.valueOfPow52(int, int):FDBigInteger
+FDBigInteger:FDBigInteger.big5pow(int):FDBigInteger
+FDBigInteger:FDBigInteger.big5powRec(int):FDBigInteger
+FDBigInteger:FDBigInteger.mult(int):FDBigInteger
+FDBigInteger:FDBigInteger.size():int
+FDBigInteger:FDBigInteger.leftShift(int):FDBigInteger
+FDBigInteger:Arrays.copyOf([I, int):[I
+Arrays:Object.getClass():Class
+Arrays:Arrays.copyOf(Object;, int, Class):Object;
+Arrays:Class.getComponentType():Class
+Arrays:Array.newInstance(Class, int):Object
+Array:Array.newArray(Class, int):Object
+Array:Array.multiNewArray(Class, [I):Object
+Arrays:Math.min(int, int):int
+Arrays:System.arraycopy(Object, int, Object, int, int):void
+FDBigInteger:FDBigInteger.valueOfPow2(int):FDBigInteger
+FloatingDecimal$BinaryToASCIIBuffer:FDBigInteger.getNormalizationBias():int
+FDBigInteger:IllegalArgumentException.new(String)
+FDBigInteger:Integer.numberOfLeadingZeros(int):int
+FloatingDecimal$BinaryToASCIIBuffer:FDBigInteger.leftShift(int):FDBigInteger
+FloatingDecimal$BinaryToASCIIBuffer:FDBigInteger.valueOfMulPow52(long, int, int):FDBigInteger
+FloatingDecimal$BinaryToASCIIBuffer:FDBigInteger.quoRemIteration(FDBigInteger):int
+FDBigInteger:FDBigInteger.multAndCarryBy10([I, int, [I):int
+FDBigInteger:FDBigInteger.trimLeadingZeros():void
+FDBigInteger:FDBigInteger.multDiffMe(long, FDBigInteger):long
+FloatingDecimal$BinaryToASCIIBuffer:FDBigInteger.cmp(FDBigInteger):int
+FDBigInteger:FDBigInteger.checkZeroTail([I, int):int
+FloatingDecimal$BinaryToASCIIBuffer:FDBigInteger.addAndCmp(FDBigInteger, FDBigInteger):int
+FDBigInteger:FDBigInteger.cmp(FDBigInteger):int
+FDBigInteger:FDBigInteger.add(FDBigInteger):FDBigInteger
+FloatingDecimal$BinaryToASCIIBuffer:FDBigInteger.multBy10():FDBigInteger
+FDBigInteger:System.arraycopy(Object, int, Object, int, int):void
+FloatingDecimal$BinaryToASCIIBuffer:FloatingDecimal$BinaryToASCIIBuffer.roundup():void
+FloatingDecimal:Float.floatToRawIntBits():int
+FloatingDecimal:Integer.numberOfLeadingZeros(int):int
+FloatingDecimal:FloatingDecimal$BinaryToASCIIConverter.toJavaFormatString():String
+Float:Float.toString():String
+String:Double.toString(double):String
+Double:FloatingDecimal.toJavaFormatString(double):String
+Double:Double.toString(double):String
+AbstractStringBuilder:AbstractStringBuilder.append(String):AbstractStringBuilder
+AbstractStringBuilder:AbstractStringBuilder.appendNull():AbstractStringBuilder
+AbstractStringBuilder:AbstractStringBuilder.ensureCapacityInternal(int):void
+AbstractStringBuilder:AbstractStringBuilder.expandCapacity(int):void
+AbstractStringBuilder:OutOfMemoryError.new()
+AbstractStringBuilder:Arrays.copyOf(Object;, int):Object;
+AbstractStringBuilder:String.length():int
+AbstractStringBuilder:String.getChars(int, int, Object;, int):void
+String:System.arraycopy(Object, int, Object, int, int):void
+String:StringIndexOutOfBoundsException.new(int)
+AbstractStringBuilder:StringBuffer.length():int
+AbstractStringBuilder:StringBuffer.getChars(int, int, Object;, int):void
+StringBuffer:AbstractStringBuilder.getChars(int, int, Object;, int):void
+AbstractStringBuilder:System.arraycopy(Object, int, Object, int, int):void
+AbstractStringBuilder:AbstractStringBuilder.length():int
+AbstractStringBuilder:AbstractStringBuilder.getChars(int, int, Object;, int):void
+AbstractStringBuilder:CharSequence.length():int
+AbstractStringBuilder:StringBuilder.append(String):StringBuilder
+AbstractStringBuilder:StringBuilder.toString():String
+AbstractStringBuilder:IndexOutOfBoundsException.new(String)
+AbstractStringBuilder:CharSequence.charAt(int):void
+AbstractStringBuilder:Integer.stringSize(int):int
+AbstractStringBuilder:Integer.getChars(int, int, Object;):void
+AbstractStringBuilder:Long.stringSize(long):int
+AbstractStringBuilder:Long.getChars(long, int, Object;):void
+AbstractStringBuilder:FloatingDecimal.appendTo(Appendable):void
+FloatingDecimal:FloatingDecimal$BinaryToASCIIConverter.appendTo(Appendable):void
+Object:Object.hashCode():int
+Object:Integer.toHexString(int):String
+Integer:Integer.toUnsignedString0(int, int):String
+Integer:Integer.numberOfLeadingZeros(int):int
+Integer:Math.max(int, int):int
+Integer:Integer.formatUnsignedInt(int, int, Object;, int, int):int
+Object:StringBuilder.toString():String
+UnicodeSet:Utility.hex(int, int):String
+Utility:Utility.appendNumber(StringBuffer, int, int, int):StringBuffer
+Utility:StringBuilder.append(String):StringBuilder
+Utility:StringBuilder.toString():String
+Utility:StringBuffer.append(String):StringBuffer
+StringBuffer:String.valueOf(Object):String
+StringBuffer:AbstractStringBuilder.append(String):AbstractStringBuilder
+StringBuffer:StringBuffer.append(double):StringBuffer
+Utility:Utility.recursiveAppendNumber(StringBuffer, int, int, int):void
+Utility:StringBuffer.toString():String
+StringBuffer:Arrays.copyOfRange(Object;, int, int):Object;
+Arrays:Arrays.copyOfRange(Object;, int, int, Class):Object;
+Arrays:StringBuilder.append(int):StringBuilder
+Arrays:StringBuilder.toString():String
+UnicodeSet:StringBuilder.toString():String
+UnicodeSet:UnicodeSet.range(int, int):[I
+UnicodeSet:UnicodeSet.add([I, int, int):UnicodeSet
+UnicodeSet:UnicodeSet.getSingleCP(String):int
+UnicodeSet:String.length():int
+UnicodeSet:String.charAt(int):void
+UnicodeSet:UTF16.charAt(String, int):int
+UTF16:String.charAt(int):void
+UTF16:UTF16._charAt(String, int):int
+UTF16:String.length():int
+UTF16:UCharacterProperty.getRawSupplementary():int
+UTF16:ArrayIndexOutOfBoundsException.new(int)
+UTF16:UTF16.isSurrogate():boolean
+UTF16:UTF16.isTrailSurrogate():boolean
+UTF16:UTF16.isLeadSurrogate():boolean
+UnicodeSet:TreeSet.add(Object):boolean
+TreeSet:NavigableMap.put(Object, Object):Object
+UnicodeSet:UnicodeSet.ensureBufferCapacity(int):void
+UnicodeSet:UnicodeSet.max(int, int):int
+UnicodeSet:UnicodeSet.findCodePoint(int):int
+UnicodeSet:UnicodeSet.ensureCapacity(int):void
+UnicodeSet:System.arraycopy(Object, int, Object, int, int):void
+NormalizerImpl:NormalizerImpl.internalGetNXUnicode(int):UnicodeSet
+NormalizerImpl:UnicodeSet.applyPattern(String):UnicodeSet
+UnicodeSet:UnicodeSet.applyPattern(String, ParsePosition, SymbolTable, int):UnicodeSet
+UnicodeSet:ParsePosition.new(int)
+UnicodeSet:RuleCharacterIterator.new(String, SymbolTable, ParsePosition)
+UnicodeSet:RuleCharacterIterator.inVariable():boolean
+UnicodeSet:UnicodeSet.syntaxError(RuleCharacterIterator, String):void
+UnicodeSet:Object.toString():String
+UnicodeSet:Utility.escape(String):String
+Utility:String.length():int
+Utility:UTF16.charAt(String, int):int
+Utility:UTF16.getCharCount(int):int
+Utility:Utility.hex(int, int, StringBuffer):StringBuffer
+UnicodeSet:StringBuffer.toString():String
+UnicodeSet:ParsePosition.getIndex():int
+UnicodeSet:Utility.skipWhitespace(String, int):int
+Utility:UCharacterProperty.isRuleWhiteSpace(int):boolean
+UnicodeSet:UnicodeSet.clear():UnicodeSet
+UnicodeSet:TreeSet.clear():void
+TreeSet:NavigableMap.clear():void
+UnicodeSet:RuleCharacterIterator.atEnd():boolean
+RuleCharacterIterator:ParsePosition.getIndex():int
+RuleCharacterIterator:String.length():int
+UnicodeSet:UnicodeSet.resemblesPropertyPattern(RuleCharacterIterator, int):boolean
+UnicodeSet:RuleCharacterIterator.getPos(Object):Object
+UnicodeSet:RuleCharacterIterator.next(int):int
+RuleCharacterIterator:RuleCharacterIterator._current():int
+RuleCharacterIterator:UTF16.charAt(Object;, int, int, int):int
+RuleCharacterIterator:UTF16.getCharCount(int):int
+RuleCharacterIterator:RuleCharacterIterator._advance(int):void
+RuleCharacterIterator:ParsePosition.setIndex(int):void
+RuleCharacterIterator:SymbolTable.parseReference(String, ParsePosition, int):String
+RuleCharacterIterator:SymbolTable.lookup(String):Object;
+RuleCharacterIterator:StringBuilder.append(String):StringBuilder
+RuleCharacterIterator:StringBuilder.toString():String
+RuleCharacterIterator:UCharacterProperty.isRuleWhiteSpace(int):boolean
+RuleCharacterIterator:RuleCharacterIterator.lookahead():String
+RuleCharacterIterator:String.substring(int):String
+RuleCharacterIterator:Utility.unescapeAt(String, [I):int
+Utility:UCharacter.digit(int, int):int
+UCharacter:UCharacter.getProperty(int):int
+UCharacter:UTF16.getLeadSurrogate(int):void
+UCharacter:CharTrie.getSurrogateValue():void
+CharTrie:CharTrie.getSurrogateOffset():int
+CharTrie:CharTrie.getLeadValue():void
+CharTrie:CharTrie.getLeadOffset():int
+CharTrie:Trie$DataManipulate.getFoldingOffset(int):int
+CharTrie:CharTrie.getRawOffset(int):int
+UCharacter:UCharacter.getNumericType(int):int
+UCharacter:UCharacterProperty.getUnsignedValue(int):int
+UCharacter:UCharacter.getEuropeanDigit(int):int
+Utility:UTF16.isLeadSurrogate():boolean
+Utility:String.charAt(int):void
+Utility:Utility.unescapeAt(String, [I):int
+Utility:UTF16.isTrailSurrogate():boolean
+Utility:UCharacterProperty.getRawSupplementary():int
+RuleCharacterIterator:RuleCharacterIterator.jumpahead(int):void
+UnicodeSet:RuleCharacterIterator.setPos(Object):void
+UnicodeSet:RuleCharacterIterator.isEscaped():boolean
+UnicodeSet:StringBuffer.append():StringBuffer
+UnicodeSet:SymbolTable.lookupMatcher(int):UnicodeMatcher
+UnicodeSet:UnicodeSet._appendToPat(StringBuffer, int, boolean):void
+UnicodeSet:UTF16.getCharCount(int):int
+UnicodeSet:Utility.isUnprintable(int):boolean
+UnicodeSet:Utility.escapeUnprintable(StringBuffer, int):boolean
+Utility:Utility.isUnprintable(int):boolean
+UnicodeSet:UCharacterProperty.isRuleWhiteSpace(int):boolean
+UnicodeSet:UTF16.append(StringBuffer, int):StringBuffer
+UTF16:StringBuilder.append(String):StringBuilder
+UTF16:Integer.toHexString(int):String
+UTF16:StringBuilder.toString():String
+UTF16:UTF16.getLeadSurrogate(int):void
+UTF16:StringBuffer.append():StringBuffer
+UTF16:UTF16.getTrailSurrogate(int):void
+UnicodeSet:RuleCharacterIterator.skipIgnored(int):void
+UnicodeSet:UnicodeSet.applyPropertyPattern(RuleCharacterIterator, StringBuffer, SymbolTable):void
+UnicodeSet:String.regionMatches(int, String, int, int):boolean
+String:Character.toUpperCase():void
+Character:Character.toUpperCase(int):int
+Character:CharacterData.of(int):CharacterData
+Character:CharacterData.toUpperCase(int):int
+String:Character.toLowerCase():void
+Character:Character.toLowerCase(int):int
+Character:CharacterData.toLowerCase(int):int
+UnicodeSet:String.indexOf(String, int):int
+String:String.indexOf(int, int):int
+String:String.indexOfSupplementary(int, int):int
+String:Character.isValidCodePoint(int):boolean
+String:Character.highSurrogate(int):void
+String:Character.lowSurrogate(int):void
+UnicodeSet:String.substring(int, int):String
+UnicodeSet:UnicodeSet.applyPropertyAlias(String, String, SymbolTable):UnicodeSet
+UnicodeSet:String.equals(Object):boolean
+UnicodeSet:UnicodeSet.mungeCharName(String):String
+UnicodeSet:StringBuffer.length():int
+UnicodeSet:StringBuffer.charAt(int):void
+UnicodeSet:StringBuffer.setLength(int):void
+StringBuffer:AbstractStringBuilder.setLength(int):void
+AbstractStringBuilder:Arrays.fill(Object;, int, int):void
+Arrays:Arrays.rangeCheck(int, int, int):void
+UnicodeSet:VersionInfo.getInstance(String):VersionInfo
+VersionInfo:String.length():int
+VersionInfo:String.charAt(int):void
+VersionInfo:StringBuilder.append(String):StringBuilder
+VersionInfo:StringBuilder.toString():String
+VersionInfo:VersionInfo.getInstance(int, int, int, int):VersionInfo
+VersionInfo:VersionInfo.getInt(int, int, int, int):int
+VersionInfo:Integer.valueOf(int):Integer
+Integer:Integer.parseInt(String, int):int
+Integer:NumberFormatException.new(String)
+Integer:StringBuilder.append(String):StringBuilder
+Integer:StringBuilder.toString():String
+Integer:String.length():int
+Integer:String.charAt(int):void
+Integer:NumberFormatException.forInputString(String):NumberFormatException
+NumberFormatException:StringBuilder.append(String):StringBuilder
+NumberFormatException:StringBuilder.toString():String
+Integer:Character.digit(int):int
+Character:Character.digit(int, int):int
+Character:CharacterData.digit(int, int):int
+Integer:Integer.valueOf(int):Integer
+VersionInfo:HashMap.get(Object):Object
+HashMap:HashMap.hash(Object):int
+HashMap:Object.hashCode():int
+HashMap:HashMap.getNode(int, Object):HashMap$Node
+HashMap:Object.equals(Object):boolean
+HashMap:HashMap$TreeNode.getTreeNode(int, Object):HashMap$TreeNode
+HashMap$TreeNode:HashMap$TreeNode.root():HashMap$TreeNode
+HashMap$TreeNode:HashMap$TreeNode.find(int, Object, Class):HashMap$TreeNode
+HashMap$TreeNode:Object.equals(Object):boolean
+HashMap$TreeNode:HashMap.comparableClassFor(Object):Class
+HashMap:Object.getClass():Class
+HashMap:Class.getGenericInterfaces():Object;
+Class:Class.getGenericInfo():ClassRepository
+Class:Class.getGenericSignature0():String
+Class:Class.getFactory():GenericsFactory
+Class:ClassScope.make(Class):ClassScope
+Class:CoreReflectionFactory.make(GenericDeclaration, Scope):CoreReflectionFactory
+Class:ClassRepository.make(String, GenericsFactory):ClassRepository
+Class:Class.getInterfaces():Object;
+Class:Class.reflectionData():Class$ReflectionData
+Class:SoftReference.get():Object
+SoftReference:Reference.get():Object
+Class:Class.newReflectionData(SoftReference, int):Class$ReflectionData
+Class:Class$ReflectionData.new(int)
+Class:Class$Atomic.casReflectionData(Class, SoftReference, SoftReference):boolean
+Class$Atomic:Unsafe.compareAndSwapObject(Object, long, Object, Object):boolean
+Class:Class.getInterfaces0():Object;
+Class:Class;.clone():Object
+Class:ClassRepository.getSuperInterfaces():Object;
+ClassRepository:ClassRepository.getTree():Tree
+ClassRepository:ClassSignature.getSuperInterfaces():Object;
+ClassRepository:ClassRepository.getReifier():Reifier
+ClassRepository:TypeTree.accept(TypeTreeVisitor):void
+ClassRepository:Reifier.getResult():Type
+Reifier:Reifier.getResult():Type
+ClassRepository:Type;.clone():Object
+HashMap:ParameterizedType.getRawType():Type
+HashMap:ParameterizedType.getActualTypeArguments():Object;
+HashMap$TreeNode:HashMap.compareComparables(Class, Object, Object):int
+HashMap:Comparable.compareTo(Object):int
+VersionInfo:HashMap.put(Object, Object):Object
+HashMap:HashMap.putVal(int, Object, Object, boolean, boolean):Object
+HashMap:HashMap.resize():Object;
+HashMap:HashMap$TreeNode.split(HashMap, Object;, int, int):void
+HashMap$TreeNode:HashMap$TreeNode.untreeify(HashMap):HashMap$Node
+HashMap$TreeNode:HashMap.replacementNode(HashMap$Node, HashMap$Node):HashMap$Node
+HashMap:HashMap$Node.new(int, Object, Object, HashMap$Node)
+HashMap$TreeNode:HashMap$TreeNode.treeify(Object;):void
+HashMap$TreeNode:HashMap$TreeNode.tieBreakOrder(Object, Object):int
+HashMap$TreeNode:Object.getClass():Class
+HashMap$TreeNode:Class.getName():String
+HashMap$TreeNode:String.compareTo(String):int
+String:Math.min(int, int):int
+String:String.compareTo(String):int
+HashMap$TreeNode:System.identityHashCode(Object):int
+HashMap$TreeNode:HashMap$TreeNode.balanceInsertion(HashMap$TreeNode, HashMap$TreeNode):HashMap$TreeNode
+HashMap$TreeNode:HashMap$TreeNode.rotateLeft(HashMap$TreeNode, HashMap$TreeNode):HashMap$TreeNode
+HashMap$TreeNode:HashMap$TreeNode.rotateRight(HashMap$TreeNode, HashMap$TreeNode):HashMap$TreeNode
+HashMap$TreeNode:HashMap$TreeNode.moveRootToFront(Object;, HashMap$TreeNode):void
+HashMap$TreeNode:HashMap$TreeNode.checkInvariants(HashMap$TreeNode):boolean
+HashMap:HashMap.newNode(int, Object, Object, HashMap$Node):HashMap$Node
+HashMap:HashMap$TreeNode.putTreeVal(HashMap, Object;, int, Object, Object):HashMap$TreeNode
+HashMap$TreeNode:HashMap.newTreeNode(int, Object, Object, HashMap$Node):HashMap$TreeNode
+HashMap:HashMap.treeifyBin(Object;, int):void
+HashMap:HashMap.replacementTreeNode(HashMap$Node, HashMap$Node):HashMap$TreeNode
+HashMap:HashMap$TreeNode.treeify(Object;):void
+HashMap:HashMap.afterNodeAccess(HashMap$Node):void
+HashMap:HashMap.afterNodeInsertion(boolean):void
+UnicodeSet:UnicodeSet$VersionFilter.new(VersionInfo)
+UnicodeSet:UnicodeSet.applyFilter(UnicodeSet$Filter, int):UnicodeSet
+UnicodeSet:UnicodeSet.getInclusions(int):UnicodeSet
+UnicodeSet:UCharacterProperty.getInstance():UCharacterProperty
+UCharacterProperty:Exception.getMessage():String
+UCharacterProperty:MissingResourceException.new(String, String, String)
+UnicodeSet:UCharacterProperty.upropsvec_addPropertyStarts(UnicodeSet):void
+UCharacterProperty:TrieIterator.new(Trie)
+UCharacterProperty:RangeValueIterator$Element.new()
+UCharacterProperty:TrieIterator.next(RangeValueIterator$Element):boolean
+TrieIterator:TrieIterator.calculateNextBMPElement(RangeValueIterator$Element):boolean
+TrieIterator:TrieIterator.checkBlockDetail(int):boolean
+TrieIterator:Trie.getValue(int):int
+TrieIterator:TrieIterator.extract(int):int
+TrieIterator:TrieIterator.setResult(RangeValueIterator$Element, int, int, int):void
+TrieIterator:TrieIterator.checkBlock(int, int):boolean
+TrieIterator:TrieIterator.calculateNextSupplementaryElement(RangeValueIterator$Element):void
+TrieIterator:UTF16.getTrailSurrogate(int):void
+TrieIterator:TrieIterator.checkNullNextTrailIndex():boolean
+TrieIterator:UTF16.getLeadSurrogate(int):void
+TrieIterator:Trie$DataManipulate.getFoldingOffset(int):int
+TrieIterator:TrieIterator.checkTrailBlock(int, int):boolean
+TrieIterator:UCharacterProperty.getRawSupplementary():int
+UCharacterProperty:UnicodeSet.add(int):UnicodeSet
+UnicodeSet:IllegalStateException.new(String)
+UnicodeSet:UnicodeSet.getRangeCount():int
+UnicodeSet:UnicodeSet.getRangeStart(int):int
+UnicodeSet:UnicodeSet.getRangeEnd(int):int
+UnicodeSet:UnicodeSet$Filter.contains(int):boolean
+UnicodeSet:UnicodeSet.complement():UnicodeSet
+UnicodeSet:UnicodeSet.xor([I, int, int):UnicodeSet
+UnicodeSet:ParsePosition.setIndex(int):void
+UnicodeSet:RuleCharacterIterator.lookahead():String
+UnicodeSet:RuleCharacterIterator.jumpahead(int):void
+UnicodeSet:UnicodeSet._toPattern(StringBuffer, boolean):StringBuffer
+UnicodeSet:UnicodeSet._generatePattern(StringBuffer, boolean, boolean):StringBuffer
+UnicodeSet:TreeSet.size():int
+TreeSet:NavigableMap.size():int
+UnicodeSet:TreeSet.iterator():Iterator
+TreeSet:NavigableMap.navigableKeySet():NavigableSet
+TreeSet:NavigableSet.iterator():Iterator
+UnicodeSet:Iterator.hasNext():boolean
+UnicodeSet:Iterator.next():Object
+UnicodeSet:UnicodeSet.set(UnicodeSet):UnicodeSet
+UnicodeSet:I.clone():Object
+UnicodeSet:TreeSet.clone():Object
+TreeSet:Object.clone():Object
+TreeSet:InternalError.new(Throwable)
+TreeSet:TreeMap.new(SortedMap)
+UnicodeSet:UnicodeSet.removeAll(UnicodeSet):UnicodeSet
+UnicodeSet:UnicodeSet.retain([I, int, int):UnicodeSet
+UnicodeSet:TreeSet.removeAll(Collection):boolean
+UnicodeSet:UnicodeSet.retainAll(UnicodeSet):UnicodeSet
+UnicodeSet:TreeSet.retainAll(Collection):boolean
+UnicodeSet:UnicodeSet.addAll(UnicodeSet):UnicodeSet
+UnicodeSet:TreeSet.addAll(Collection):boolean
+TreeSet:Collection.size():int
+TreeSet:SortedSet.comparator():Comparator
+TreeSet:TreeMap.comparator():Comparator
+TreeSet:Comparator.equals(Object):boolean
+TreeSet:TreeMap.addAllForTreeSet(SortedSet, Object):void
+TreeMap:SortedSet.size():int
+TreeMap:SortedSet.iterator():Iterator
+TreeMap:TreeMap.buildFromSorted(int, Iterator, ObjectInputStream, Object):void
+TreeMap:TreeMap.computeRedLevel(int):int
+TreeMap:Iterator.next():Object
+TreeMap:Map$Entry.getKey():Object
+TreeMap:Map$Entry.getValue():Object
+TreeMap:ObjectInputStream.readObject():Object
+ObjectInputStream:ObjectInputStream.readObjectOverride():Object
+ObjectInputStream:ObjectInputStream.readObject0(boolean):Object
+ObjectInputStream:ObjectInputStream$BlockDataInputStream.getBlockDataMode():boolean
+ObjectInputStream:ObjectInputStream$BlockDataInputStream.currentBlockRemaining():int
+ObjectInputStream:OptionalDataException.new(int)
+ObjectInputStream:ObjectInputStream$BlockDataInputStream.setBlockDataMode(boolean):boolean
+ObjectInputStream:ObjectInputStream$BlockDataInputStream.peekByte():void
+ObjectInputStream$BlockDataInputStream:ObjectInputStream$BlockDataInputStream.peek():int
+ObjectInputStream$BlockDataInputStream:ObjectInputStream$BlockDataInputStream.refill():void
+ObjectInputStream$BlockDataInputStream:Math.min(int, int):int
+ObjectInputStream$BlockDataInputStream:ObjectInputStream$PeekInputStream.read(Object;, int, int):int
+ObjectInputStream$PeekInputStream:InputStream.read():int
+InputStream:InputStream.read(Object;, int, int):int
+ObjectInputStream$BlockDataInputStream:StreamCorruptedException.new(String)
+ObjectInputStream$BlockDataInputStream:ObjectInputStream$BlockDataInputStream.readBlockHeader(boolean):int
+ObjectInputStream$BlockDataInputStream:ObjectInputStream.access$500(ObjectInputStream):boolean
+ObjectInputStream$BlockDataInputStream:ObjectInputStream$PeekInputStream.available():int
+ObjectInputStream$PeekInputStream:InputStream.available():int
+ObjectInputStream$BlockDataInputStream:ObjectInputStream$PeekInputStream.peek():int
+ObjectInputStream$BlockDataInputStream:ObjectInputStream$PeekInputStream.readFully(Object;, int, int):void
+ObjectInputStream$PeekInputStream:ObjectInputStream$PeekInputStream.read(Object;, int, int):int
+ObjectInputStream$PeekInputStream:EOFException.new()
+ObjectInputStream$BlockDataInputStream:Bits.getInt(Object;, int):int
+ObjectInputStream$BlockDataInputStream:StringBuilder.append(String):StringBuilder
+ObjectInputStream$BlockDataInputStream:StringBuilder.toString():String
+ObjectInputStream$BlockDataInputStream:ObjectInputStream.access$600(ObjectInputStream):void
+ObjectInputStream:ObjectInputStream.handleReset():void
+ObjectInputStream:StringBuilder.append(String):StringBuilder
+ObjectInputStream:StringBuilder.toString():String
+ObjectInputStream:ObjectInputStream.clear():void
+ObjectInputStream:ObjectInputStream$HandleTable.clear():void
+ObjectInputStream$HandleTable:Arrays.fill(Object;, int, int):void
+ObjectInputStream:ObjectInputStream$ValidationList.clear():void
+ObjectInputStream$BlockDataInputStream:Integer.valueOf(int):Integer
+ObjectInputStream$BlockDataInputStream:String.format(String, Object;):String
+String:Formatter.new()
+String:Formatter.format(String, Object;):Formatter
+Formatter:Formatter.format(Locale, String, Object;):Formatter
+Formatter:Formatter.ensureOpen():void
+Formatter:FormatterClosedException.new()
+Formatter:Formatter.parse(String):Object;
+Formatter:Pattern.matcher(CharSequence):Matcher
+Pattern:Pattern.compile():void
+Pattern:String.length():int
+Pattern:String.codePointAt(int):int
+String:Character.codePointAtImpl(Object;, int, int):int
+Character:Character.isHighSurrogate():boolean
+Character:Character.isLowSurrogate():boolean
+Character:Character.toCodePoint():int
+Pattern:Pattern.isSupplementary(int):boolean
+Pattern:Character.isSurrogate():boolean
+Pattern:Character.charCount(int):int
+Pattern:Pattern.RemoveQEQuoting():void
+Pattern:System.arraycopy(Object, int, Object, int, int):void
+Pattern:ASCII.isAscii(int):boolean
+Pattern:ASCII.isAlpha(int):boolean
+ASCII:ASCII.isType(int, int):boolean
+ASCII:ASCII.getType(int):int
+Pattern:ASCII.isDigit(int):boolean
+Pattern:Arrays.copyOf([I, int):[I
+Pattern:Pattern.newSlice([I, int, boolean):Pattern$Node
+Pattern:Character.toUpperCase(int):int
+Pattern:Character.toLowerCase(int):int
+Pattern:Pattern$SliceUS.new([I)
+Pattern:Pattern$SliceU.new([I)
+Pattern:ASCII.toLower(int):int
+ASCII:ASCII.isUpper(int):boolean
+Pattern:Pattern$SliceIS.new([I)
+Pattern:Pattern$SliceI.new([I)
+Pattern:Pattern$SliceS.new([I)
+Pattern:Pattern$Slice.new([I)
+Pattern:Pattern.expr(Pattern$Node):Pattern$Node
+Pattern:Pattern.sequence(Pattern$Node):Pattern$Node
+Pattern:Pattern.peek():int
+Pattern:Pattern.peekPastWhitespace(int):int
+Pattern:ASCII.isSpace(int):boolean
+Pattern:Pattern.peekPastLine():int
+Pattern:Pattern.isLineSeparator(int):boolean
+Pattern:Pattern.group0():Pattern$Node
+Pattern:Pattern.next():int
+Pattern:Pattern.skip():int
+Pattern:Pattern.createGroup(boolean):Pattern$Node
+Pattern:Pattern$GroupHead.new(int)
+Pattern:Pattern$GroupTail.new(int, int)
+Pattern:Pattern$Pos.new(Pattern$Node)
+Pattern:Pattern$Neg.new(Pattern$Node)
+Pattern:Pattern$Ques.new(Pattern$Node, int)
+Pattern:Pattern.read():int
+Pattern:Pattern.parsePastWhitespace(int):int
+Pattern:Pattern.parsePastLine():int
+Pattern:ASCII.isLower(int):boolean
+Pattern:ASCII.isUpper(int):boolean
+Pattern:Pattern.groupname(int):String
+Pattern:Character.toChars(int):Object;
+Character:Character.isBmpCodePoint(int):boolean
+Character:Character.isValidCodePoint(int):boolean
+Character:Character.toSurrogates(int, Object;, int):void
+Character:Character.lowSurrogate(int):void
+Character:Character.highSurrogate(int):void
+Pattern:StringBuilder.append(Object;):StringBuilder
+Pattern:StringBuilder.length():int
+StringBuilder:AbstractStringBuilder.length():int
+Pattern:Pattern.error(String):PatternSyntaxException
+Pattern:PatternSyntaxException.new(String, String, int)
+Pattern:StringBuilder.toString():String
+Pattern:Pattern.namedGroups():Map
+Pattern:Map.containsKey(Object):boolean
+Pattern:Integer.valueOf(int):Integer
+Pattern:Map.put(Object, Object):Object
+Pattern:Pattern$TreeInfo.new()
+Pattern:Pattern$Node.study(Pattern$TreeInfo):boolean
+Pattern$Node:Pattern$Node.study(Pattern$TreeInfo):boolean
+Pattern:Pattern.findSupplementary(int, int):boolean
+Pattern:Pattern$BehindS.new(Pattern$Node, int, int)
+Pattern:Pattern$Behind.new(Pattern$Node, int, int)
+Pattern:Pattern$NotBehindS.new(Pattern$Node, int, int)
+Pattern:Pattern$NotBehind.new(Pattern$Node, int, int)
+Pattern:Pattern.unread():void
+Pattern:Pattern.addFlag():void
+Pattern:Pattern.subFlag():void
+Pattern:Pattern.accept(int, String):void
+Pattern:Pattern.closure(Pattern$Node):Pattern$Node
+Pattern:Pattern$Curly.new(Pattern$Node, int, int, int)
+Pattern:Pattern$BranchConn.new()
+Pattern:Pattern$Branch.new(Pattern$Node, Pattern$Node, Pattern$Node)
+Pattern:Pattern$GroupCurly.new(Pattern$Node, int, int, int, int, int, boolean)
+Pattern:Pattern$Loop.new(int, int)
+Pattern:Pattern$LazyLoop.new(int, int)
+Pattern:Pattern$Prolog.new(Pattern$Loop)
+Pattern:Pattern.clazz(boolean):Pattern$CharProperty
+Pattern:Pattern$BitClass.new()
+Pattern:Pattern.union(Pattern$CharProperty, Pattern$CharProperty):Pattern$CharProperty
+Pattern:Pattern$5.new(Pattern$CharProperty, Pattern$CharProperty)
+Pattern:Pattern.intersection(Pattern$CharProperty, Pattern$CharProperty):Pattern$CharProperty
+Pattern:Pattern$6.new(Pattern$CharProperty, Pattern$CharProperty)
+Pattern:Pattern.range(Pattern$BitClass):Pattern$CharProperty
+Pattern:Pattern.nextEscaped():int
+Pattern:Pattern.family(boolean, boolean):Pattern$CharProperty
+Pattern:Character.isSupplementaryCodePoint(int):boolean
+Pattern:String.valueOf():String
+Pattern:Pattern.mark(int):void
+Pattern:String.indexOf(int):int
+Pattern:String.substring(int):String
+Pattern:String.toLowerCase(Locale):String
+String:String.codePointAt(int):int
+String:Character.charCount(int):int
+String:Locale.getLanguage():String
+Locale:BaseLocale.getLanguage():String
+String:ConditionalSpecialCasing.toLowerCaseEx(String, int, Locale):int
+ConditionalSpecialCasing:ConditionalSpecialCasing.lookUpTable(String, int, Locale, boolean):Object;
+ConditionalSpecialCasing:String.codePointAt(int):int
+ConditionalSpecialCasing:Hashtable.get(Object):Object
+Hashtable:Object.hashCode():int
+Hashtable:Object.equals(Object):boolean
+ConditionalSpecialCasing:HashSet.iterator():Iterator
+HashSet:HashMap.keySet():Set
+HashMap:HashMap$KeySet.new(HashMap)
+HashSet:Set.iterator():Iterator
+ConditionalSpecialCasing:Locale.getLanguage():String
+ConditionalSpecialCasing:Iterator.hasNext():boolean
+ConditionalSpecialCasing:Iterator.next():Object
+ConditionalSpecialCasing:ConditionalSpecialCasing$Entry.getLanguage():String
+ConditionalSpecialCasing:String.equals(Object):boolean
+ConditionalSpecialCasing:ConditionalSpecialCasing$Entry.getCondition():int
+ConditionalSpecialCasing:ConditionalSpecialCasing.isConditionMet(String, int, Locale, int):boolean
+ConditionalSpecialCasing:ConditionalSpecialCasing.isFinalCased(String, int, Locale):boolean
+ConditionalSpecialCasing:BreakIterator.getWordInstance(Locale):BreakIterator
+BreakIterator:Locale.getDefault():Locale
+Locale:Locale$Category.ordinal():int
+Locale:Locale.initDefault(Locale$Category):Locale
+Locale:GetPropertyAction.new(String, String)
+Locale:AccessController.doPrivileged(PrivilegedAction):Object
+AccessController:AccessController.getContext():AccessControlContext
+AccessController:AccessController.getStackAccessControlContext():AccessControlContext
+AccessController:AccessControlContext.new(Object;, boolean)
+AccessController:AccessControlContext.optimize():AccessControlContext
+AccessControlContext:AccessController.getInheritedAccessControlContext():AccessControlContext
+AccessControlContext:AccessControlContext.getDebug():Debug
+AccessControlContext:Policy.isSet():boolean
+Policy:AtomicReference.get():Object
+AccessControlContext:Debug.getInstance(String):Debug
+Debug:Debug.getInstance(String, String):Debug
+Debug:Debug.isOn(String):boolean
+Debug:String.indexOf(String):int
+AccessControlContext:Debug.println(String):void
+Debug:StringBuilder.append(String):StringBuilder
+Debug:StringBuilder.toString():String
+Debug:PrintStream.println(String):void
+PrintStream:PrintStream.newLine():void
+PrintStream:PrintStream.ensureOpen():void
+PrintStream:IOException.new(String)
+PrintStream:BufferedWriter.newLine():void
+BufferedWriter:BufferedWriter.write(String):void
+BufferedWriter:BufferedWriter.ensureOpen():void
+BufferedWriter:BufferedWriter.flushBuffer():void
+BufferedWriter:Writer.write(Object;, int, int):void
+Writer:Writer.write(Object;, int, int):void
+Writer:String.length():int
+Writer:String.getChars(int, int, Object;, int):void
+BufferedWriter:BufferedWriter.min(int, int):int
+BufferedWriter:System.arraycopy(Object, int, Object, int, int):void
+BufferedWriter:String.getChars(int, int, Object;, int):void
+PrintStream:BufferedWriter.flushBuffer():void
+PrintStream:OutputStreamWriter.flushBuffer():void
+OutputStreamWriter:StreamEncoder.flushBuffer():void
+StreamEncoder:StreamEncoder.isOpen():boolean
+StreamEncoder:StreamEncoder.implFlushBuffer():void
+StreamEncoder:ByteBuffer.position():int
+StreamEncoder:StreamEncoder.writeBytes():void
+StreamEncoder:ByteBuffer.flip():Buffer
+StreamEncoder:ByteBuffer.limit():int
+StreamEncoder:WritableByteChannel.write(ByteBuffer):int
+StreamEncoder:ByteBuffer.array():Object;
+ByteBuffer:UnsupportedOperationException.new()
+ByteBuffer:ReadOnlyBufferException.new()
+ByteBuffer:ByteBuffer.array():Object;
+StreamEncoder:ByteBuffer.arrayOffset():int
+StreamEncoder:OutputStream.write(Object;, int, int):void
+OutputStream:OutputStream.write(Object;, int, int):void
+StreamEncoder:ByteBuffer.clear():Buffer
+PrintStream:OutputStream.flush():void
+PrintStream:Thread.currentThread():Thread
+PrintStream:Thread.interrupt():void
+Thread:Thread.currentThread():Thread
+Thread:Thread.checkAccess():void
+Thread:System.getSecurityManager():SecurityManager
+Thread:SecurityManager.checkAccess(Thread):void
+SecurityManager:Thread.getThreadGroup():ThreadGroup
+SecurityManager:SecurityManager.checkPermission(Permission):void
+SecurityManager:AccessController.checkPermission(Permission):void
+AccessController:AccessControlContext.getDebug():Debug
+AccessController:Debug.isOn(String):boolean
+AccessController:StringBuilder.append(String):StringBuilder
+AccessController:Object.getClass():Class
+AccessController:Class.getCanonicalName():String
+Class:Class.isArray():boolean
+Class:Class.getComponentType():Class
+Class:Class.getCanonicalName():String
+Class:StringBuilder.append(String):StringBuilder
+Class:StringBuilder.toString():String
+Class:Class.isLocalOrAnonymousClass():boolean
+Class:Class.getEnclosingMethodInfo():Class$EnclosingMethodInfo
+Class:Class.getEnclosingMethod0():Object;
+Class:Class$EnclosingMethodInfo.new(Object;, Class$1)
+Class:Class.getEnclosingClass():Class
+Class:Class.getDeclaringClass():Class
+Class:Class.getDeclaringClass0():Class
+Class:Reflection.getCallerClass():Class
+Class:ClassLoader.getClassLoader(Class):ClassLoader
+ClassLoader:Class.getClassLoader0():ClassLoader
+Class:Class.checkPackageAccess(ClassLoader, boolean):void
+Class:System.getSecurityManager():SecurityManager
+Class:Class.getClassLoader0():ClassLoader
+Class:ReflectUtil.needsPackageAccessCheck(ClassLoader, ClassLoader):boolean
+ReflectUtil:ReflectUtil.isAncestor(ClassLoader, ClassLoader):boolean
+ReflectUtil:ClassLoader.getParent():ClassLoader
+ClassLoader:System.getSecurityManager():SecurityManager
+ClassLoader:Reflection.getCallerClass():Class
+ClassLoader:ClassLoader.checkClassLoaderPermission(ClassLoader, Class):void
+ClassLoader:ClassLoader.getClassLoader(Class):ClassLoader
+ClassLoader:ClassLoader.needsClassLoaderPermissionCheck(ClassLoader, ClassLoader):boolean
+ClassLoader:ClassLoader.isAncestor(ClassLoader):boolean
+ClassLoader:SecurityManager.checkPermission(Permission):void
+SecurityManager:AccessControlContext.checkPermission(Permission):void
+AccessControlContext:Debug.isOn(String):boolean
+AccessControlContext:ProtectionDomain.getCodeSource():CodeSource
+AccessControlContext:CodeSource.getLocation():URL
+AccessControlContext:StringBuilder.append(String):StringBuilder
+AccessControlContext:URL.toString():String
+URL:URL.toExternalForm():String
+URL:URLStreamHandler.toExternalForm(URL):String
+URLStreamHandler:URL.getProtocol():String
+URLStreamHandler:String.length():int
+URLStreamHandler:URL.getAuthority():String
+URLStreamHandler:URL.getPath():String
+URLStreamHandler:URL.getQuery():String
+URLStreamHandler:URL.getRef():String
+URLStreamHandler:StringBuffer.append(String):StringBuffer
+URLStreamHandler:StringBuffer.toString():String
+AccessControlContext:StringBuilder.toString():String
+AccessControlContext:Object.getClass():Class
+AccessControlContext:Class.getCanonicalName():String
+Class:Class.getName():String
+Class:Class.getSimpleName():String
+Class:Class.getSimpleBinaryName():String
+Class:String.length():int
+Class:String.substring(int):String
+Class:String.lastIndexOf(String):int
+String:String.lastIndexOf(int, int):int
+String:String.lastIndexOfSupplementary(int, int):int
+Class:String.charAt(int):void
+Class:Class.isAsciiDigit():boolean
+AccessControlContext:Thread.dumpStack():void
+Thread:Exception.printStackTrace():void
+AccessControlContext:AccessControlContext.checkPermission2(Permission):void
+AccessControlContext:Object.equals(Object):boolean
+AccessControlContext:Permission.implies(Permission):boolean
+AccessControlContext:AccessControlContext.checkPermission(Permission):void
+AccessControlContext:ProtectionDomain.implies(Permission):boolean
+ProtectionDomain:Policy.getPolicyNoCheck():Policy
+Policy:Policy$1.new()
+Policy:AccessController.doPrivileged(PrivilegedAction):Object
+AccessController:Reflection.getCallerClass():Class
+AccessController:AccessController.createWrapper(DomainCombiner, Class, AccessControlContext, AccessControlContext, Object;):AccessControlContext
+AccessController:AccessController.getCallerPD(Class):ProtectionDomain
+AccessController:AccessController$1.new(Class)
+AccessController:AccessController.doPrivileged(PrivilegedAction):Object
+AccessController:AccessControlContext.isAuthorized():boolean
+AccessController:System.getSecurityManager():SecurityManager
+AccessController:ProtectionDomain.impliesCreateAccessControlContext():boolean
+ProtectionDomain:ProtectionDomain.implies(Permission):boolean
+ProtectionDomain:Policy.implies(ProtectionDomain, Permission):boolean
+Policy:Policy.initPolicy(Policy):void
+Policy:Policy$3.new(Policy)
+Policy:WeakHashMap.new()
+Policy:ProtectionDomain.getCodeSource():CodeSource
+Policy:Policy.getPermissions(ProtectionDomain):PermissionCollection
+Policy:Permissions.new()
+Policy:WeakHashMap.get(Object):Object
+WeakHashMap:WeakHashMap.maskNull(Object):Object
+WeakHashMap:WeakHashMap.hash(Object):int
+WeakHashMap:Object.hashCode():int
+WeakHashMap:WeakHashMap.getTable():Object;
+WeakHashMap:WeakHashMap.expungeStaleEntries():void
+WeakHashMap:ReferenceQueue.poll():Reference
+ReferenceQueue:ReferenceQueue.reallyPoll():Reference
+ReferenceQueue:VM.addFinalRefCount(int):void
+WeakHashMap:WeakHashMap.indexFor(int, int):int
+WeakHashMap:WeakHashMap$Entry.get():Object
+WeakHashMap:WeakHashMap.eq(Object, Object):boolean
+WeakHashMap:Object.equals(Object):boolean
+Policy:PermissionCollection.elements():Enumeration
+Policy:Enumeration.hasMoreElements():boolean
+Policy:Enumeration.nextElement():Object
+Policy:Permissions.add(Permission):void
+Permissions:Permissions.isReadOnly():boolean
+Permissions:SecurityException.new(String)
+Permissions:Permissions.getPermissionCollection(Permission, boolean):PermissionCollection
+Permissions:Object.getClass():Class
+Permissions:Map.get(Object):Object
+Permissions:Permissions.getUnresolvedPermissions(Permission):PermissionCollection
+Permissions:UnresolvedPermissionCollection.getUnresolvedPermissions(Permission):List
+UnresolvedPermissionCollection:Object.getClass():Class
+UnresolvedPermissionCollection:Class.getName():String
+UnresolvedPermissionCollection:Map.get(Object):Object
+Permissions:Class.getSigners():Object;
+Permissions:List.size():int
+Permissions:List.get(int):Object
+Permissions:UnresolvedPermission.resolve(Permission, Object;):Permission
+UnresolvedPermission:Certificate.equals(Object):boolean
+Certificate:X509CertImpl.getEncodedInternal(Certificate):Object;
+X509CertImpl:CertificateEncodingException.new(String)
+X509CertImpl:X509CertImpl.getEncodedInternal():Object;
+X509CertImpl:Certificate.getEncoded():Object;
+Certificate:Arrays.equals(Object;, Object;):boolean
+Arrays:Double.doubleToLongBits(double):long
+Double:Double.doubleToRawLongBits(double):long
+Arrays:Float.floatToIntBits():int
+Float:Float.floatToRawIntBits():int
+Arrays:Object.equals(Object):boolean
+UnresolvedPermission:Object.getClass():Class
+UnresolvedPermission:Class.getConstructor(Object;):Constructor
+Class:Class.checkMemberAccess(int, Class, boolean):void
+Class:SecurityManager.checkPermission(Permission):void
+Class:Class.getConstructor0(Object;, int):Constructor
+Class:Class.privateGetDeclaredConstructors(boolean):Object;
+Class:Class.checkInitted():void
+Class:Class$3.new()
+Class:AccessController.doPrivileged(PrivilegedAction):Object
+Class:Class.isInterface():boolean
+Class:Class.getDeclaredConstructors0(boolean):Object;
+Class:Constructor.getParameterTypes():Object;
+Constructor:Class;.clone():Object
+Class:Class.arrayContentsEq(Object;, Object;):boolean
+Class:Class.getReflectionFactory():ReflectionFactory
+Class:ReflectionFactory$GetReflectionFactoryAction.new()
+Class:ReflectionFactory.copyConstructor(Constructor):Constructor
+ReflectionFactory:ReflectionFactory.langReflectAccess():LangReflectAccess
+ReflectionFactory:Modifier.isPublic(int):boolean
+ReflectionFactory:LangReflectAccess.copyConstructor(Constructor):Constructor
+Class:Class.argumentTypesToString(Object;):String
+Class:NoSuchMethodException.new(String)
+UnresolvedPermission:Constructor.newInstance(Object;):Object
+Constructor:Reflection.quickCheckMemberAccess(Class, int):boolean
+Reflection:Reflection.getClassAccessFlags(Class):int
+Reflection:Modifier.isPublic(int):boolean
+Constructor:Reflection.getCallerClass():Class
+Constructor:Constructor.checkAccess(Class, Class, Object, int):void
+Constructor:Class.getModifiers():int
+Constructor:Constructor.acquireConstructorAccessor():ConstructorAccessor
+Constructor:Constructor.getConstructorAccessor():ConstructorAccessor
+Constructor:ReflectionFactory.newConstructorAccessor(Constructor):ConstructorAccessor
+ReflectionFactory:ReflectionFactory.checkInitted():void
+ReflectionFactory:ReflectionFactory$1.new()
+ReflectionFactory:AccessController.doPrivileged(PrivilegedAction):Object
+ReflectionFactory:Constructor.getDeclaringClass():Class
+ReflectionFactory:Class.getModifiers():int
+ReflectionFactory:Modifier.isAbstract(int):boolean
+ReflectionFactory:InstantiationExceptionConstructorAccessorImpl.new(String)
+ReflectionFactory:Reflection.isSubclassOf(Class, Class):boolean
+Reflection:Class.getSuperclass():Class
+ReflectionFactory:BootstrapConstructorAccessorImpl.new(Constructor)
+ReflectionFactory:ReflectUtil.isVMAnonymousClass(Class):boolean
+ReflectUtil:Class.getName():String
+ReflectUtil:String.indexOf(String):int
+ReflectionFactory:MethodAccessorGenerator.new()
+ReflectionFactory:Constructor.getParameterTypes():Object;
+ReflectionFactory:Constructor.getExceptionTypes():Object;
+ReflectionFactory:Constructor.getModifiers():int
+ReflectionFactory:MethodAccessorGenerator.generateConstructor(Class, Object;, Object;, int):ConstructorAccessor
+MethodAccessorGenerator:MethodAccessorGenerator.generate(Class, String, Object;, Class, Object;, int, boolean, boolean, Class):MagicAccessorImpl
+MethodAccessorGenerator:ByteVectorFactory.create():ByteVector
+ByteVectorFactory:ByteVectorImpl.new()
+MethodAccessorGenerator:ClassFileAssembler.new(ByteVector)
+MethodAccessorGenerator:ClassFileAssembler.emitMagicAndVersion():void
+ClassFileAssembler:ClassFileAssembler.emitInt(int):void
+ClassFileAssembler:ClassFileAssembler.emitByte():void
+ClassFileAssembler:ByteVector.add():void
+ClassFileAssembler:ClassFileAssembler.emitShort():void
+ClassFileAssembler:ByteVector.put(int):void
+MethodAccessorGenerator:MethodAccessorGenerator.usesPrimitiveTypes():boolean
+MethodAccessorGenerator:Class.isPrimitive():boolean
+MethodAccessorGenerator:MethodAccessorGenerator.numNonPrimitiveParameterTypes():int
+MethodAccessorGenerator:MethodAccessorGenerator.add():void
+MethodAccessorGenerator:ClassFileAssembler.emitShort():void
+MethodAccessorGenerator:MethodAccessorGenerator.generateName(boolean, boolean):String
+MethodAccessorGenerator:StringBuilder.append(String):StringBuilder
+MethodAccessorGenerator:StringBuilder.toString():String
+MethodAccessorGenerator:ClassFileAssembler.emitConstantPoolUTF8(String):void
+ClassFileAssembler:UTF8.encode(String):Object;
+UTF8:String.length():int
+UTF8:UTF8.utf8Length(String):int
+UTF8:String.charAt(int):void
+MethodAccessorGenerator:ClassFileAssembler.cpi():void
+ClassFileAssembler:RuntimeException.new(String)
+MethodAccessorGenerator:ClassFileAssembler.emitConstantPoolClass():void
+MethodAccessorGenerator:MethodAccessorGenerator.getClassName(Class, boolean):String
+MethodAccessorGenerator:MethodAccessorGenerator.buildInternalSignature():String
+MethodAccessorGenerator:StringBuffer.append(String):StringBuffer
+MethodAccessorGenerator:StringBuffer.toString():String
+MethodAccessorGenerator:MethodAccessorGenerator.sub():void
+MethodAccessorGenerator:ClassFileAssembler.emitConstantPoolNameAndType():void
+MethodAccessorGenerator:MethodAccessorGenerator.isInterface():boolean
+MethodAccessorGenerator:Class.isInterface():boolean
+MethodAccessorGenerator:ClassFileAssembler.emitConstantPoolInterfaceMethodref():void
+MethodAccessorGenerator:ClassFileAssembler.emitConstantPoolMethodref():void
+MethodAccessorGenerator:MethodAccessorGenerator.isPrimitive(Class):boolean
+MethodAccessorGenerator:MethodAccessorGenerator.emitCommonConstantPoolEntries():void
+MethodAccessorGenerator:MethodAccessorGenerator.emitBoxingContantPoolEntries():void
+MethodAccessorGenerator:MethodAccessorGenerator.emitConstructor():void
+MethodAccessorGenerator:MethodAccessorGenerator.emitInvoke():void
+MethodAccessorGenerator:ClassFileAssembler.setMaxLocals(int):void
+MethodAccessorGenerator:ClassFileAssembler.opc_new():void
+ClassFileAssembler:ClassFileAssembler.incStack():void
+ClassFileAssembler:ClassFileAssembler.setStack(int):void
+MethodAccessorGenerator:ClassFileAssembler.opc_dup():void
+MethodAccessorGenerator:MethodAccessorGenerator.indexForPrimitiveType(Class):void
+MethodAccessorGenerator:MethodAccessorGenerator.isStatic():boolean
+MethodAccessorGenerator:ClassFileAssembler.opc_aload_1():void
+MethodAccessorGenerator:Label.new()
+MethodAccessorGenerator:ClassFileAssembler.opc_ifnonnull(Label):void
+ClassFileAssembler:ClassFileAssembler.decStack():void
+ClassFileAssembler:ClassFileAssembler.getLength():void
+ClassFileAssembler:ByteVector.getLength():int
+ClassFileAssembler:ClassFileAssembler.getStack():int
+ClassFileAssembler:Label.add(ClassFileAssembler, int):void
+Label:Label$PatchInfo.new(ClassFileAssembler, int)
+Label:List.add(Object):boolean
+MethodAccessorGenerator:ClassFileAssembler.opc_invokespecial(int, int):void
+MethodAccessorGenerator:ClassFileAssembler.opc_athrow():void
+MethodAccessorGenerator:Label.bind():void
+Label:List.iterator():Iterator
+Label:Iterator.hasNext():boolean
+Label:Iterator.next():Object
+Label:ClassFileAssembler.getLength():void
+Label:ClassFileAssembler.emitShort():void
+Label:ClassFileAssembler.setStack(int):void
+MethodAccessorGenerator:ClassFileAssembler.getLength():void
+MethodAccessorGenerator:ClassFileAssembler.opc_checkcast():void
+MethodAccessorGenerator:ClassFileAssembler.opc_aload_2():void
+MethodAccessorGenerator:ClassFileAssembler.opc_ifnull(Label):void
+MethodAccessorGenerator:ClassFileAssembler.opc_arraylength():void
+MethodAccessorGenerator:ClassFileAssembler.opc_sipush():void
+MethodAccessorGenerator:ClassFileAssembler.opc_if_icmpeq(Label):void
+MethodAccessorGenerator:MethodAccessorGenerator.typeSizeInStackSlots(Class):int
+MethodAccessorGenerator:ClassFileAssembler.opc_aaload():void
+MethodAccessorGenerator:ClassFileAssembler.opc_astore_2():void
+MethodAccessorGenerator:ClassFileAssembler.opc_astore_3():void
+MethodAccessorGenerator:MethodAccessorGenerator.canWidenTo(Class, Class):boolean
+MethodAccessorGenerator:ClassFileAssembler.opc_aload_3():void
+MethodAccessorGenerator:ClassFileAssembler.opc_instanceof():void
+MethodAccessorGenerator:ClassFileAssembler.opc_ifeq(Label):void
+MethodAccessorGenerator:MethodAccessorGenerator.unboxingMethodForPrimitiveType(Class):void
+MethodAccessorGenerator:ClassFileAssembler.opc_invokevirtual(int, int):void
+MethodAccessorGenerator:MethodAccessorGenerator.emitWideningBytecodeForPrimitiveConversion(ClassFileAssembler, Class, Class):void
+MethodAccessorGenerator:ClassFileAssembler.opc_goto(Label):void
+MethodAccessorGenerator:ClassFileAssembler.opc_invokestatic(int, int):void
+MethodAccessorGenerator:MethodAccessorGenerator.isPrivate():boolean
+MethodAccessorGenerator:ClassFileAssembler.opc_invokeinterface(int, int):void
+MethodAccessorGenerator:MethodAccessorGenerator.ctorIndexForPrimitiveType(Class):void
+MethodAccessorGenerator:ClassFileAssembler.opc_aconst_null():void
+MethodAccessorGenerator:ClassFileAssembler.opc_areturn():void
+MethodAccessorGenerator:ClassFileAssembler.setStack(int):void
+MethodAccessorGenerator:ClassFileAssembler.opc_dup_x1():void
+MethodAccessorGenerator:ClassFileAssembler.opc_swap():void
+MethodAccessorGenerator:ClassFileAssembler.getMaxLocals():void
+MethodAccessorGenerator:MethodAccessorGenerator.emitMethod(int, ClassFileAssembler, ClassFileAssembler, Object;):void
+MethodAccessorGenerator:ByteVector.trim():void
+MethodAccessorGenerator:ByteVector.getData():Object;
+MethodAccessorGenerator:MethodAccessorGenerator$1.new(MethodAccessorGenerator, String, Object;, Class)
+MethodAccessorGenerator:AccessController.doPrivileged(PrivilegedAction):Object
+ReflectionFactory:NativeConstructorAccessorImpl.new(Constructor)
+ReflectionFactory:DelegatingConstructorAccessorImpl.new(ConstructorAccessorImpl)
+ReflectionFactory:NativeConstructorAccessorImpl.setParent(DelegatingConstructorAccessorImpl):void
+Constructor:Constructor.setConstructorAccessor(ConstructorAccessor):void
+Constructor:ConstructorAccessor.newInstance(Object;):Object
+UnresolvedPermission:StringBuilder.append(String):StringBuilder
+UnresolvedPermission:StringBuilder.toString():String
+UnresolvedPermission:Debug.println(String):void
+UnresolvedPermission:NoSuchMethodException.printStackTrace():void
+UnresolvedPermission:Exception.printStackTrace():void
+Permissions:Permission.newPermissionCollection():PermissionCollection
+Permissions:PermissionsHash.new()
+Permissions:PermissionCollection.add(Permission):void
+Permissions:Map.put(Object, Object):Object
+Policy:ProtectionDomain.getPermissions():PermissionCollection
+Policy:Policy.addStaticPerms(PermissionCollection, PermissionCollection):void
+Policy:PermissionCollection.add(Permission):void
+Policy:WeakHashMap.put(Object, Object):Object
+WeakHashMap:WeakHashMap.resize(int):void
+WeakHashMap:WeakHashMap.newTable(int):Object;
+WeakHashMap:WeakHashMap.transfer(Object;, Object;):void
+Policy:PermissionCollection.implies(Permission):boolean
+ProtectionDomain:PermissionCollection.implies(Permission):boolean
+Policy:Class.forName(String):Class
+Class:Class.forName0(String, boolean, ClassLoader, Class):Class
+Class:VM.isSystemDomainLoader(ClassLoader):boolean
+Policy:Class.newInstance():Object
+Class:IllegalAccessException.new(String)
+Class:Class$1.new(Class, Constructor)
+Class:InstantiationException.new(String)
+Class:InstantiationException.initCause(Throwable):Throwable
+Class:Constructor.getModifiers():int
+Class:Reflection.quickCheckMemberAccess(Class, int):boolean
+Class:Reflection.ensureMemberAccess(Class, Class, Object, int):void
+Reflection:Reflection.verifyMemberAccess(Class, Class, Object, int):boolean
+Reflection:Reflection.isSameClassPackage(Class, Class):boolean
+Reflection:Class.getClassLoader():ClassLoader
+Class:ClassLoader.checkClassLoaderPermission(ClassLoader, Class):void
+Reflection:Class.getName():String
+Reflection:String.lastIndexOf(int):int
+Reflection:String.charAt(int):void
+Reflection:StringBuilder.append(String):StringBuilder
+Reflection:StringBuilder.toString():String
+Reflection:String.regionMatches(boolean, int, String, int, int):boolean
+Reflection:Modifier.isProtected(int):boolean
+Reflection:Reflection.isSubclassOf(Class, Class):boolean
+Reflection:Modifier.isPrivate(int):boolean
+Reflection:Object.getClass():Class
+Reflection:Modifier.toString(int):String
+Modifier:StringBuilder.append(String):StringBuilder
+Modifier:StringBuilder.length():int
+Modifier:StringBuilder.toString():String
+Modifier:String.substring(int, int):String
+Class:Constructor.newInstance(Object;):Object
+Class:Unsafe.getUnsafe():Unsafe
+Unsafe:Reflection.getCallerClass():Class
+Unsafe:Class.getClassLoader():ClassLoader
+Unsafe:VM.isSystemDomainLoader(ClassLoader):boolean
+Class:InvocationTargetException.getTargetException():Throwable
+Class:Unsafe.throwException(Throwable):void
+Policy:Policy$PolicyInfo.new(Policy, boolean)
+Policy:PolicyFile.new()
+Policy:AtomicReference.set(Object):void
+Policy:Policy$2.new(String)
+Policy:Debug.println(String):void
+AccessControlContext:AccessControlContext$1.new(AccessControlContext, Debug, ProtectionDomain)
+AccessControlContext:AccessController.doPrivileged(PrivilegedAction):Object
+AccessControlContext:AccessControlException.new(String, Permission)
+Class:Proxy.isProxyClass(Class):boolean
+Proxy:Class.isAssignableFrom(Class):boolean
+Proxy:WeakCache.containsValue(Object):boolean
+WeakCache:Objects.requireNonNull(Object):Object
+Objects:Supplier.get():Object
+WeakCache:WeakCache.expungeStaleEntries():void
+WeakCache:ReferenceQueue.poll():Reference
+WeakCache:WeakCache$CacheKey.expungeFrom(ConcurrentMap, ConcurrentMap):void
+WeakCache$CacheKey:ConcurrentMap.remove(Object):Object
+WeakCache$CacheKey:ConcurrentMap.values():Collection
+WeakCache$CacheKey:Collection.iterator():Iterator
+WeakCache$CacheKey:Iterator.hasNext():boolean
+WeakCache$CacheKey:Iterator.next():Object
+WeakCache:WeakCache$LookupValue.new(Object)
+WeakCache:ConcurrentMap.containsKey(Object):boolean
+Class:ReflectUtil.isNonPublicProxyClass(Class):boolean
+ReflectUtil:String.lastIndexOf(int):int
+ReflectUtil:String.substring(int, int):String
+ReflectUtil:Proxy.isProxyClass(Class):boolean
+ReflectUtil:String.equals(Object):boolean
+Class:SecurityManager.checkPackageAccess(String):void
+SecurityManager:SecurityManager$1.new(SecurityManager)
+SecurityManager:AccessController.doPrivileged(PrivilegedAction):Object
+SecurityManager:SecurityManager.getPackages(String):Object;
+SecurityManager:String.equals(Object):boolean
+SecurityManager:StringTokenizer.new(String, String)
+SecurityManager:StringTokenizer.countTokens():int
+StringTokenizer:StringTokenizer.skipDelimiters(int):int
+StringTokenizer:String.charAt(int):void
+StringTokenizer:String.indexOf(int):int
+StringTokenizer:String.codePointAt(int):int
+StringTokenizer:StringTokenizer.isDelimiter(int):boolean
+StringTokenizer:Character.charCount(int):int
+StringTokenizer:StringTokenizer.scanToken(int):int
+SecurityManager:StringTokenizer.hasMoreElements():boolean
+StringTokenizer:StringTokenizer.hasMoreTokens():boolean
+SecurityManager:StringTokenizer.nextToken():String
+StringTokenizer:NoSuchElementException.new()
+StringTokenizer:String.substring(int, int):String
+StringTokenizer:StringTokenizer.setMaxDelimCodePoint():void
+StringTokenizer:String.length():int
+StringTokenizer:StringTokenizer.nextToken():String
+SecurityManager:String.trim():String
+String:String.substring(int, int):String
+SecurityManager:String.startsWith(String):boolean
+String:String.startsWith(String, int):boolean
+SecurityManager:StringBuilder.append(String):StringBuilder
+SecurityManager:StringBuilder.toString():String
+SecurityManager:RuntimePermission.new(String)
+Class:ReflectUtil.checkProxyPackageAccess(ClassLoader, Object;):void
+ReflectUtil:System.getSecurityManager():SecurityManager
+ReflectUtil:Class.getInterfaces():Object;
+ReflectUtil:ReflectUtil.checkPackageAccess(Class):void
+ReflectUtil:ReflectUtil.isNonPublicProxyClass(Class):boolean
+ReflectUtil:ReflectUtil.checkProxyPackageAccess(Class):void
+ReflectUtil:Class.getClassLoader():ClassLoader
+ReflectUtil:ReflectUtil.needsPackageAccessCheck(ClassLoader, ClassLoader):boolean
+ReflectUtil:String.replace():String
+String:Pattern.matcher(CharSequence):Matcher
+Pattern:Matcher.new(Pattern, CharSequence)
+String:Matcher.quoteReplacement(String):String
+Matcher:String.indexOf(int):int
+Matcher:String.length():int
+Matcher:String.charAt(int):void
+Matcher:StringBuilder.append():StringBuilder
+Matcher:StringBuilder.toString():String
+String:Matcher.replaceAll(String):String
+Matcher:Matcher.reset():Matcher
+Matcher:Matcher.getTextLength():int
+Matcher:CharSequence.length():int
+Matcher:Matcher.find():boolean
+Matcher:Matcher.search(int):boolean
+Matcher:Pattern$Node.match(Matcher, int, CharSequence):boolean
+Matcher:Matcher.appendReplacement(StringBuffer, String):Matcher
+Matcher:ASCII.isLower(int):boolean
+Matcher:ASCII.isUpper(int):boolean
+Matcher:ASCII.isDigit(int):boolean
+Matcher:StringBuilder.length():int
+Matcher:Pattern.namedGroups():Map
+Matcher:Map.containsKey(Object):boolean
+Matcher:Map.get(Object):Object
+Matcher:Integer.intValue():int
+Matcher:Matcher.groupCount():int
+Matcher:Matcher.start(int):int
+Matcher:Matcher.getMatchedGroupIndex(String):int
+Matcher:Objects.requireNonNull(Object, String):Object
+Matcher:Matcher.end(int):int
+Matcher:StringBuffer.append(CharSequence, int, int):StringBuffer
+Matcher:Matcher.appendTail(StringBuffer):StringBuffer
+Matcher:StringBuffer.toString():String
+Matcher:CharSequence.toString():String
+ReflectUtil:String.startsWith(String):boolean
+ReflectUtil:String.length():int
+ReflectUtil:SecurityManager.checkPackageAccess(String):void
+Class:Class$EnclosingMethodInfo.getEnclosingClass():Class
+AccessController:StringBuilder.toString():String
+AccessController:Thread.dumpStack():void
+AccessController:Debug.println(String):void
+AccessController:AccessControlContext.checkPermission(Permission):void
+Thread:Thread.interrupt0():void
+Thread:Interruptible.interrupt(Thread):void
+PrintStream:PrintStream.print(boolean):void
+PrintStream:PrintStream.write(String):void
+PrintStream:OutputStream.write(int):void
+PrintStream:BufferedWriter.write(Object;):void
+PrintStream:String.indexOf(int):int
+PrintStream:String.valueOf():String
+AccessControlContext:DomainCombiner.combine(Object;, Object;):Object;
+AccessControlContext:AccessControlContext.calculateFields(AccessControlContext, AccessControlContext, Object;):void
+AccessControlContext:AccessControlContext.combine(Object;, Object;):Object;
+AccessControlContext:System.arraycopy(Object, int, Object, int, int):void
+AccessControlContext:AccessControlContext.containsAllPDs(Object;, Object;):boolean
+Locale:String.indexOf(int):int
+Locale:String.substring(int, int):String
+Locale:Locale.getInstance(String, String, String, String, LocaleExtensions):Locale
+Locale:Locale.getCompatibilityExtensions(String, String, String, String):LocaleExtensions
+Locale:LocaleUtils.caseIgnoreMatch(String, String):boolean
+LocaleUtils:String.length():int
+LocaleUtils:String.charAt(int):void
+LocaleUtils:LocaleUtils.toLower():void
+LocaleUtils:LocaleUtils.isUpper():boolean
+Locale:String.length():int
+Locale:String.equals(Object):boolean
+Locale:BaseLocale.getInstance(String, String, String, String):BaseLocale
+BaseLocale:LocaleUtils.caseIgnoreMatch(String, String):boolean
+BaseLocale:BaseLocale$Key.new(String, String, String, String)
+BaseLocale:BaseLocale$Cache.get(Object):Object
+Locale:Locale$LocaleKey.new(BaseLocale, LocaleExtensions, Locale$1)
+Locale:Locale$Cache.get(Object):Object
+Locale:Locale.getLanguage():String
+Locale:Locale.getScript():String
+Locale:BaseLocale.getScript():String
+Locale:Locale.getCountry():String
+Locale:BaseLocale.getRegion():String
+Locale:Locale.getVariant():String
+Locale:BaseLocale.getVariant():String
+Locale:Locale.getDefault():Locale
+BreakIterator:BreakIterator.getWordInstance(Locale):BreakIterator
+BreakIterator:BreakIterator.getBreakInstance(Locale, int):BreakIterator
+BreakIterator:SoftReference.get():Object
+BreakIterator:BreakIterator$BreakIteratorCache.getLocale():Locale
+BreakIterator:Locale.equals(Object):boolean
+Locale:BaseLocale.equals(Object):boolean
+Locale:LocaleExtensions.equals(Object):boolean
+LocaleExtensions:String.equals(Object):boolean
+BreakIterator:BreakIterator$BreakIteratorCache.createBreakInstance():BreakIterator
+BreakIterator$BreakIteratorCache:BreakIterator.clone():Object
+BreakIterator:Object.clone():Object
+BreakIterator:BreakIterator.createBreakInstance(Locale, int):BreakIterator
+BreakIterator:LocaleProviderAdapter.getAdapter(Class, Locale):LocaleProviderAdapter
+LocaleProviderAdapter:ConcurrentMap.get(Object):Object
+LocaleProviderAdapter:ConcurrentHashMap.new()
+LocaleProviderAdapter:ConcurrentMap.putIfAbsent(Object, Object):Object
+LocaleProviderAdapter:LocaleProviderAdapter.findAdapter(Class, Locale):LocaleProviderAdapter
+LocaleProviderAdapter:LocaleProviderAdapter.getAdapterPreference():List
+LocaleProviderAdapter:List.iterator():Iterator
+LocaleProviderAdapter:Iterator.hasNext():boolean
+LocaleProviderAdapter:Iterator.next():Object
+LocaleProviderAdapter:LocaleProviderAdapter.forType(LocaleProviderAdapter$Type):LocaleProviderAdapter
+LocaleProviderAdapter:LocaleProviderAdapter$Type.ordinal():int
+LocaleProviderAdapter:LocaleProviderAdapter.getLocaleServiceProvider(Class):LocaleServiceProvider
+LocaleProviderAdapter:LocaleServiceProvider.isSupportedLocale(Locale):boolean
+LocaleServiceProvider:Locale.stripExtensions():Locale
+Locale:Locale.hasExtensions():boolean
+LocaleServiceProvider:LocaleServiceProvider.getAvailableLocales():Object;
+LocaleServiceProvider:Locale.equals(Object):boolean
+LocaleProviderAdapter:ResourceBundle$Control.getControl(List):ResourceBundle$Control
+ResourceBundle$Control:List.equals(Object):boolean
+ResourceBundle$Control:ResourceBundle$SingleFormatControl.access$800():ResourceBundle$Control
+ResourceBundle$Control:ResourceBundle$SingleFormatControl.access$900():ResourceBundle$Control
+LocaleProviderAdapter:ResourceBundle$Control.getCandidateLocales(String, Locale):List
+ResourceBundle$Control:Locale.getBaseLocale():BaseLocale
+ResourceBundle$Control:ResourceBundle$Control$CandidateListCache.get(Object):Object
+LocaleProviderAdapter:Locale.equals(Object):boolean
+BreakIterator:LocaleProviderAdapter.forJRE():LocaleProviderAdapter
+BreakIterator:LocaleProviderAdapter.getBreakIteratorProvider():BreakIteratorProvider
+BreakIterator:BreakIteratorProvider.getCharacterInstance(Locale):BreakIterator
+BreakIterator:BreakIteratorProvider.getWordInstance(Locale):BreakIterator
+BreakIterator:BreakIteratorProvider.getLineInstance(Locale):BreakIterator
+BreakIterator:BreakIteratorProvider.getSentenceInstance(Locale):BreakIterator
+ConditionalSpecialCasing:BreakIterator.setText(String):void
+BreakIterator:StringCharacterIterator.new(String)
+BreakIterator:BreakIterator.setText(CharacterIterator):void
+ConditionalSpecialCasing:BreakIterator.isBoundary(int):boolean
+BreakIterator:BreakIterator.following(int):int
+ConditionalSpecialCasing:String.codePointBefore(int):int
+String:Character.codePointBeforeImpl(Object;, int, int):int
+ConditionalSpecialCasing:ConditionalSpecialCasing.isCased(int):boolean
+ConditionalSpecialCasing:Character.getType(int):int
+Character:Character.getType(int):int
+Character:CharacterData.getType(int):int
+ConditionalSpecialCasing:String.length():int
+ConditionalSpecialCasing:Character.charCount(int):int
+ConditionalSpecialCasing:ConditionalSpecialCasing.isAfterSoftDotted(String, int):boolean
+ConditionalSpecialCasing:ConditionalSpecialCasing.isSoftDotted(int):boolean
+ConditionalSpecialCasing:Normalizer.getCombiningClass(int):int
+Normalizer:NormalizerImpl.getCombiningClass(int):int
+ConditionalSpecialCasing:ConditionalSpecialCasing.isMoreAbove(String, int):boolean
+ConditionalSpecialCasing:ConditionalSpecialCasing.isAfterI(String, int):boolean
+ConditionalSpecialCasing:ConditionalSpecialCasing.isBeforeDot(String, int):boolean
+ConditionalSpecialCasing:ConditionalSpecialCasing$Entry.getLowerCase():Object;
+ConditionalSpecialCasing:ConditionalSpecialCasing$Entry.getUpperCase():Object;
+ConditionalSpecialCasing:Character.toLowerCase(int):int
+String:ConditionalSpecialCasing.toLowerCaseCharArray(String, int, Locale):Object;
+String:Character.toChars(int, Object;, int):int
+String:Locale.getDefault():Locale
+String:String.toLowerCase(Locale):String
+Pattern:String.equals(Object):boolean
+Pattern:Pattern.unicodeScriptPropertyFor(String):Pattern$CharProperty
+Pattern:Character$UnicodeScript.forName(String):Character$UnicodeScript
+Character$UnicodeScript:String.toUpperCase(Locale):String
+String:Character.toUpperCaseEx(int):int
+Character:CharacterData.toUpperCaseEx(int):int
+CharacterData:CharacterData.toUpperCase(int):int
+String:ConditionalSpecialCasing.toUpperCaseEx(String, int, Locale):int
+ConditionalSpecialCasing:Character.toUpperCaseEx(int):int
+String:ConditionalSpecialCasing.toUpperCaseCharArray(String, int, Locale):Object;
+ConditionalSpecialCasing:Character.toUpperCaseCharArray(int):Object;
+Character:CharacterData.toUpperCaseCharArray(int):Object;
+String:Character.toUpperCaseCharArray(int):Object;
+String:String.toUpperCase(Locale):String
+Character$UnicodeScript:HashMap.get(Object):Object
+Character$UnicodeScript:Character$UnicodeScript.valueOf(String):Character$UnicodeScript
+Character$UnicodeScript:Enum.valueOf(Class, String):Enum
+Enum:Class.enumConstantDirectory():Map
+Class:Class.getEnumConstantsShared():Object;
+Class:Class.isEnum():boolean
+Class:Class.getModifiers():int
+Class:Class.getSuperclass():Class
+Class:Class.getMethod(String, Object;):Method
+Class:Class.getMethod0(String, Object;, boolean):Method
+Class:Class$MethodArray.new(int)
+Class:Class.privateGetMethodRecursive(String, Object;, boolean, Class$MethodArray):Method
+Class:Class.privateGetDeclaredMethods(boolean):Object;
+Class:Class.getDeclaredMethods0(boolean):Object;
+Class:Reflection.filterMethods(Class, Object;):Object;
+Reflection:Map.get(Object):Object
+Reflection:Reflection.filter(Object;, Object;):Object;
+Reflection:Member.getName():String
+Reflection:Array.newInstance(Class, int):Object
+Class:Class.searchMethods(Object;, String, Object;):Method
+Class:String.intern():String
+Class:Method.getName():String
+Class:Method.getParameterTypes():Object;
+Method:Class;.clone():Object
+Class:Method.getReturnType():Class
+Class:Class.isAssignableFrom(Class):boolean
+Class:ReflectionFactory.copyMethod(Method):Method
+ReflectionFactory:LangReflectAccess.copyMethod(Method):Method
+Class:Method.getModifiers():int
+Class:Modifier.isStatic(int):boolean
+Class:Class$MethodArray.add(Method):void
+Class$MethodArray:Arrays.copyOf(Object;, int):Object;
+Class$MethodArray:Method.isDefault():boolean
+Method:Method.getModifiers():int
+Method:Method.getDeclaringClass():Class
+Method:Class.isInterface():boolean
+Class:Class$MethodArray.removeLessSpecifics():void
+Class$MethodArray:Class$MethodArray.hasDefaults():boolean
+Class$MethodArray:Class$MethodArray.get(int):Method
+Class$MethodArray:Class$MethodArray.matchesNameAndDescriptor(Method, Method):boolean
+Class$MethodArray:Method.getReturnType():Class
+Class$MethodArray:Method.getName():String
+Class$MethodArray:Method.getParameterTypes():Object;
+Class$MethodArray:Class.access$300(Object;, Object;):boolean
+Class$MethodArray:Class$MethodArray.hasMoreSpecificClass(Method, Method):boolean
+Class$MethodArray:Method.getDeclaringClass():Class
+Class$MethodArray:Class.isAssignableFrom(Class):boolean
+Class$MethodArray:Class$MethodArray.remove(int):void
+Class:Class$MethodArray.getFirst():Method
+Class:Class$4.new(Class, Method)
+Class:Method.invoke(Object, Object;):Object
+Method:Reflection.quickCheckMemberAccess(Class, int):boolean
+Method:Reflection.getCallerClass():Class
+Method:Method.checkAccess(Class, Class, Object, int):void
+Method:Method.acquireMethodAccessor():MethodAccessor
+Method:Method.getMethodAccessor():MethodAccessor
+Method:ReflectionFactory.newMethodAccessor(Method):MethodAccessor
+ReflectionFactory:Method.getDeclaringClass():Class
+ReflectionFactory:Method.getName():String
+ReflectionFactory:Method.getParameterTypes():Object;
+ReflectionFactory:Method.getReturnType():Class
+ReflectionFactory:Method.getExceptionTypes():Object;
+ReflectionFactory:Method.getModifiers():int
+ReflectionFactory:MethodAccessorGenerator.generateMethod(Class, String, Object;, Class, Object;, int):MethodAccessor
+ReflectionFactory:NativeMethodAccessorImpl.new(Method)
+ReflectionFactory:DelegatingMethodAccessorImpl.new(MethodAccessorImpl)
+ReflectionFactory:NativeMethodAccessorImpl.setParent(DelegatingMethodAccessorImpl):void
+Method:Method.setMethodAccessor(MethodAccessor):void
+Method:MethodAccessor.invoke(Object, Object;):Object
+Class:Enum.name():String
+Class:Map.put(Object, Object):Object
+Enum:Map.get(Object):Object
+Enum:StringBuilder.append(String):StringBuilder
+Enum:Class.getCanonicalName():String
+Enum:StringBuilder.toString():String
+Pattern:Pattern$Script.new(Character$UnicodeScript)
+Pattern:Pattern.unicodeBlockPropertyFor(String):Pattern$CharProperty
+Pattern:Character$UnicodeBlock.forName(String):Character$UnicodeBlock
+Character$UnicodeBlock:String.toUpperCase(Locale):String
+Character$UnicodeBlock:Map.get(Object):Object
+Pattern:Pattern$Block.new(Character$UnicodeBlock)
+Pattern:Pattern.charPropertyNodeFor(String):Pattern$CharProperty
+Pattern:Pattern$CharPropertyNames.charPropertyFor(String):Pattern$CharProperty
+Pattern$CharPropertyNames:HashMap.get(Object):Object
+Pattern$CharPropertyNames:Pattern$CharPropertyNames$CharPropertyFactory.make():Pattern$CharProperty
+Pattern:String.startsWith(String):boolean
+Pattern:UnicodeProp.forName(String):UnicodeProp
+UnicodeProp:String.toUpperCase(Locale):String
+UnicodeProp:HashMap.get(Object):Object
+UnicodeProp:UnicodeProp.valueOf(String):UnicodeProp
+UnicodeProp:Enum.valueOf(Class, String):Enum
+Pattern:Pattern$Utype.new(UnicodeProp)
+Pattern:UnicodeProp.forPOSIXName(String):UnicodeProp
+Pattern:Pattern$CharProperty.complement():Pattern$CharProperty
+Pattern$CharProperty:Pattern$CharProperty$1.new(Pattern$CharProperty)
+Pattern:Pattern.escape(boolean, boolean, boolean):int
+Pattern:Pattern.o():int
+Pattern:Pattern.ref(int):Pattern$Node
+Pattern:Pattern$CIBackRef.new(int, boolean)
+Pattern:Pattern$BackRef.new(int)
+Pattern:Pattern$Begin.new()
+Pattern:Pattern$Bound.new(int, boolean)
+Pattern:Pattern$Utype.complement():Pattern$CharProperty
+Pattern:Pattern$Ctype.new(int)
+Pattern:Pattern$Ctype.complement():Pattern$CharProperty
+Pattern:Pattern$LastMatch.new()
+Pattern:Pattern$HorizWS.new()
+Pattern:Pattern$HorizWS.complement():Pattern$CharProperty
+Pattern:Pattern$LineEnding.new()
+Pattern:Pattern$VertWS.new()
+Pattern:Pattern$VertWS.complement():Pattern$CharProperty
+Pattern:Pattern$UnixDollar.new(boolean)
+Pattern:Pattern$Dollar.new(boolean)
+Pattern:Pattern.c():int
+Pattern:Map.get(Object):Object
+Pattern:Integer.intValue():int
+Pattern:Pattern.u():int
+Pattern:Pattern.uxxxx():int
+Pattern:ASCII.isHexDigit(int):boolean
+Pattern:ASCII.toDigit(int):int
+Pattern:Character.isHighSurrogate():boolean
+Pattern:Pattern.cursor():int
+Pattern:Character.isLowSurrogate():boolean
+Pattern:Character.toCodePoint():int
+Pattern:Pattern.setcursor(int):void
+Pattern:Pattern.x():int
+Pattern:Pattern$End.new()
+Pattern:Pattern.bitsOrSingle(Pattern$BitClass, int):Pattern$CharProperty
+Pattern:Pattern.flags():int
+Pattern:Pattern$BitClass.add(int, int):Pattern$BitClass
+Pattern$BitClass:ASCII.isAscii(int):boolean
+Pattern$BitClass:ASCII.toUpper(int):int
+ASCII:ASCII.isLower(int):boolean
+Pattern$BitClass:ASCII.toLower(int):int
+Pattern$BitClass:Character.toLowerCase(int):int
+Pattern$BitClass:Character.toUpperCase(int):int
+Pattern:Pattern.newSingle(int):Pattern$CharProperty
+Pattern:Pattern$SingleU.new(int)
+Pattern:ASCII.toUpper(int):int
+Pattern:Pattern$SingleI.new(int, int)
+Pattern:Pattern$SingleS.new(int)
+Pattern:Pattern$Single.new(int)
+Pattern:Pattern.caseInsensitiveRangeFor(int, int):Pattern$CharProperty
+Pattern:Pattern$2.new(Pattern, int, int)
+Pattern:Pattern$3.new(Pattern, int, int)
+Pattern:Pattern.rangeFor(int, int):Pattern$CharProperty
+Pattern:Pattern$1.new(int, int)
+Pattern:Pattern.setDifference(Pattern$CharProperty, Pattern$CharProperty):Pattern$CharProperty
+Pattern:Pattern$7.new(Pattern$CharProperty, Pattern$CharProperty)
+Pattern:Pattern.atom():Pattern$Node
+Pattern:Pattern.append(int, int):void
+Pattern:Pattern$UnixCaret.new()
+Pattern:Pattern$Caret.new()
+Pattern:Pattern$All.new()
+Pattern:Pattern$UnixDot.new()
+Pattern:Pattern$Dot.new()
+Pattern:Pattern$Branch.add(Pattern$Node):void
+Pattern$Branch:System.arraycopy(Object, int, Object, int, int):void
+Pattern:Pattern$BnM.optimize(Pattern$Node):Pattern$Node
+Pattern$BnM:Pattern$BnMS.new([I, [I, [I, Pattern$Node)
+Pattern:Pattern$StartS.new(Pattern$Node)
+Pattern:Pattern$Start.new(Pattern$Node)
+Formatter:String.length():int
+Formatter:Matcher.find(int):boolean
+Formatter:Matcher.start():int
+Formatter:Formatter.checkText(String, int, int):void
+Formatter:String.charAt(int):void
+Formatter:String.valueOf():String
+Formatter:UnknownFormatConversionException.new(String)
+Formatter:String.substring(int, int):String
+Formatter:Formatter$FixedString.new(Formatter, String)
+Formatter:ArrayList.add(Object):boolean
+ArrayList:ArrayList.ensureCapacityInternal(int):void
+ArrayList:Math.max(int, int):int
+ArrayList:ArrayList.ensureExplicitCapacity(int):void
+ArrayList:ArrayList.grow(int):void
+ArrayList:ArrayList.hugeCapacity(int):int
+ArrayList:Arrays.copyOf(Object;, int):Object;
+ArrayList:ArrayList.rangeCheckForAdd(int):void
+ArrayList:ArrayList.outOfBoundsMsg(int):String
+ArrayList:StringBuilder.append(String):StringBuilder
+ArrayList:StringBuilder.toString():String
+ArrayList:System.arraycopy(Object, int, Object, int, int):void
+Formatter:Formatter$FormatSpecifier.new(Formatter, Matcher)
+Formatter:Matcher.end():int
+Formatter:ArrayList.size():int
+Formatter:ArrayList.toArray(Object;):Object;
+ArrayList:Object.getClass():Class
+Formatter:Formatter$FormatString.index():int
+Formatter:Formatter$FormatString.print(Object, Locale):void
+Formatter:Formatter$FormatString.toString():String
+Formatter:MissingFormatArgumentException.new(String)
+String:Formatter.toString():String
+Formatter:Object.toString():String
+ObjectInputStream:ObjectInputStream$BlockDataInputStream.readByte():void
+ObjectInputStream$BlockDataInputStream:ObjectInputStream$BlockDataInputStream.read():int
+ObjectInputStream$BlockDataInputStream:System.arraycopy(Object, int, Object, int, int):void
+ObjectInputStream:ObjectInputStream.readNull():Object
+ObjectInputStream:ObjectInputStream.readHandle(boolean):Object
+ObjectInputStream:ObjectInputStream$BlockDataInputStream.readInt():int
+ObjectInputStream$BlockDataInputStream:DataInputStream.readInt():int
+DataInputStream:InputStream.read():int
+ObjectInputStream:ObjectInputStream$HandleTable.size():int
+ObjectInputStream:Integer.valueOf(int):Integer
+ObjectInputStream:String.format(String, Object;):String
+ObjectInputStream:InvalidObjectException.new(String)
+ObjectInputStream:ObjectInputStream$HandleTable.lookupObject(int):Object
+ObjectInputStream:ObjectInputStream.readClass(boolean):Class
+ObjectInputStream:ObjectInputStream.readClassDesc(boolean):ObjectStreamClass
+ObjectInputStream:ObjectInputStream.readProxyDesc(boolean):ObjectStreamClass
+ObjectInputStream:ObjectStreamClass.new()
+ObjectInputStream:ObjectInputStream$HandleTable.assign(Object):int
+ObjectInputStream$HandleTable:ObjectInputStream$HandleTable.grow():void
+ObjectInputStream$HandleTable:System.arraycopy(Object, int, Object, int, int):void
+ObjectInputStream:ObjectInputStream$BlockDataInputStream.readUTF():String
+ObjectInputStream$BlockDataInputStream:ObjectInputStream$BlockDataInputStream.readUnsignedShort():int
+ObjectInputStream$BlockDataInputStream:DataInputStream.readUnsignedShort():int
+ObjectInputStream$BlockDataInputStream:Bits.getShort(Object;, int):void
+ObjectInputStream$BlockDataInputStream:ObjectInputStream$BlockDataInputStream.readUTFBody(long):String
+ObjectInputStream$BlockDataInputStream:ObjectInputStream$BlockDataInputStream.readUTFSpan(StringBuilder, long):long
+ObjectInputStream$BlockDataInputStream:UTFDataFormatException.new()
+ObjectInputStream$BlockDataInputStream:ObjectInputStream$BlockDataInputStream.readUTFChar(StringBuilder, long):int
+ObjectInputStream$BlockDataInputStream:ObjectInputStream$BlockDataInputStream.readByte():void
+ObjectInputStream:ObjectInputStream.resolveProxyClass(Object;):Class
+ObjectInputStream:ObjectInputStream.latestUserDefinedLoader():ClassLoader
+ObjectInputStream:VM.latestUserDefinedLoader():ClassLoader
+ObjectInputStream:Class.forName(String, boolean, ClassLoader):Class
+ObjectInputStream:Class.getModifiers():int
+ObjectInputStream:Class.getClassLoader():ClassLoader
+ObjectInputStream:IllegalAccessError.new(String)
+ObjectInputStream:Proxy.getProxyClass(ClassLoader, Object;):Class
+Proxy:Class;.clone():Object
+Proxy:System.getSecurityManager():SecurityManager
+Proxy:Reflection.getCallerClass():Class
+Proxy:Proxy.checkProxyAccess(Class, ClassLoader, Object;):void
+Proxy:Class.getClassLoader():ClassLoader
+Proxy:VM.isSystemDomainLoader(ClassLoader):boolean
+Proxy:SecurityManager.checkPermission(Permission):void
+Proxy:ReflectUtil.checkProxyPackageAccess(ClassLoader, Object;):void
+Proxy:Proxy.getProxyClass0(ClassLoader, Object;):Class
+Proxy:WeakCache.get(Object, Object):Object
+WeakCache:WeakCache$CacheKey.valueOf(Object, ReferenceQueue):Object
+WeakCache:ConcurrentMap.get(Object):Object
+WeakCache:ConcurrentMap.putIfAbsent(Object, Object):Object
+WeakCache:BiFunction.apply(Object, Object):Object
+WeakCache:Supplier.get():Object
+WeakCache:WeakCache$Factory.new(WeakCache, Object, Object, Object, ConcurrentMap)
+WeakCache:ConcurrentMap.replace(Object, Object, Object):boolean
+ObjectInputStream:ClassNotFoundException.new(String, Throwable)
+ObjectInputStream:Proxy.isProxyClass(Class):boolean
+ObjectInputStream:InvalidClassException.new(String)
+ObjectInputStream:Object.getClass():Class
+ObjectInputStream:Class.getInterfaces():Object;
+ObjectInputStream:ReflectUtil.checkProxyPackageAccess(ClassLoader, Object;):void
+ObjectInputStream:ObjectInputStream.skipCustomData():void
+ObjectInputStream:ObjectInputStream$BlockDataInputStream.skipBlockData():void
+ObjectInputStream:ObjectStreamClass.initProxy(Class, ClassNotFoundException, ObjectStreamClass):void
+ObjectStreamClass:Long.valueOf(long):Long
+Long:Long.parseLong(String, int):long
+Long:StringBuilder.append(String):StringBuilder
+Long:StringBuilder.toString():String
+Long:String.length():int
+Long:String.charAt(int):void
+Long:NumberFormatException.forInputString(String):NumberFormatException
+Long:Character.digit(int):int
+Long:Long.valueOf(long):Long
+ObjectStreamClass:ObjectStreamClass.lookup(Class, boolean):ObjectStreamClass
+ObjectStreamClass:Class.isAssignableFrom(Class):boolean
+ObjectStreamClass:ObjectStreamClass$Caches.access$200():ReferenceQueue
+ObjectStreamClass:ObjectStreamClass.processQueue(ReferenceQueue, ConcurrentMap):void
+ObjectStreamClass:ReferenceQueue.poll():Reference
+ObjectStreamClass:ConcurrentMap.remove(Object):Object
+ObjectStreamClass:ObjectStreamClass$WeakClassKey.new(Class, ReferenceQueue)
+ObjectStreamClass:ConcurrentMap.get(Object):Object
+ObjectStreamClass:Reference.get():Object
+ObjectStreamClass:ObjectStreamClass$EntryFuture.new(ObjectStreamClass$1)
+ObjectStreamClass:ConcurrentMap.putIfAbsent(Object, Object):Object
+ObjectStreamClass:ObjectStreamClass$EntryFuture.getOwner():Thread
+ObjectStreamClass:Thread.currentThread():Thread
+ObjectStreamClass:ObjectStreamClass$EntryFuture.get():Object
+ObjectStreamClass$EntryFuture:Object.wait():void
+Object:Object.wait(long):void
+ObjectStreamClass$EntryFuture:ObjectStreamClass$EntryFuture$1.new(ObjectStreamClass$EntryFuture)
+ObjectStreamClass$EntryFuture:AccessController.doPrivileged(PrivilegedAction):Object
+ObjectStreamClass:ObjectStreamClass$EntryFuture.set(Object):boolean
+ObjectStreamClass$EntryFuture:Object.notifyAll():void
+ObjectStreamClass:ConcurrentMap.put(Object, Object):Object
+ObjectStreamClass:StringBuilder.append(String):StringBuilder
+ObjectStreamClass:StringBuilder.toString():String
+ObjectStreamClass:ObjectStreamClass.getReflector(Object;, ObjectStreamClass):ObjectStreamClass$FieldReflector
+ObjectStreamClass:ObjectStreamClass$Caches.access$2600():ReferenceQueue
+ObjectStreamClass:ObjectStreamClass$FieldReflectorKey.new(Class, Object;, ReferenceQueue)
+ObjectStreamClass:ObjectStreamClass.matchFields(Object;, ObjectStreamClass):Object;
+ObjectStreamClass:ObjectStreamField.getName():String
+ObjectStreamClass:String.equals(Object):boolean
+ObjectStreamClass:ObjectStreamField.isPrimitive():boolean
+ObjectStreamField:String.charAt(int):void
+ObjectStreamClass:ObjectStreamField.getTypeCode():void
+ObjectStreamClass:ObjectStreamField.getField():Field
+ObjectStreamClass:ObjectStreamField.isUnshared():boolean
+ObjectStreamClass:ObjectStreamField.getSignature():String
+ObjectStreamClass:ObjectStreamField.getOffset():int
+ObjectStreamClass:ObjectStreamField.setOffset(int):void
+ObjectStreamClass:ObjectStreamClass$FieldReflector.new(Object;)
+ObjectInputStream:ObjectInputStream$HandleTable.finish(int):void
+ObjectInputStream:ObjectInputStream.readNonProxyDesc(boolean):ObjectStreamClass
+ObjectInputStream:ObjectInputStream.readClassDescriptor():ObjectStreamClass
+ObjectInputStream:ObjectStreamClass.readNonProxy(ObjectInputStream):void
+ObjectStreamClass:ObjectInputStream.readUTF():String
+ObjectStreamClass:ObjectInputStream.readLong():long
+ObjectInputStream:ObjectInputStream$BlockDataInputStream.readLong():long
+ObjectInputStream$BlockDataInputStream:DataInputStream.readLong():long
+DataInputStream:DataInputStream.readFully(Object;, int, int):void
+ObjectInputStream$BlockDataInputStream:Bits.getLong(Object;, int):long
+ObjectStreamClass:ObjectInputStream.readByte():void
+ObjectStreamClass:Long.longValue():long
+ObjectStreamClass:ObjectInputStream.readShort():void
+ObjectInputStream:ObjectInputStream$BlockDataInputStream.readShort():void
+ObjectInputStream$BlockDataInputStream:DataInputStream.readShort():void
+ObjectStreamClass:ObjectInputStream.readTypeString():String
+ObjectInputStream:ObjectInputStream.readString(boolean):String
+ObjectInputStream:ObjectInputStream$BlockDataInputStream.readLongUTF():String
+ObjectInputStream$BlockDataInputStream:ObjectInputStream$BlockDataInputStream.readLong():long
+ObjectInputStream:Byte.valueOf():Byte
+Byte:Byte.parseByte(String, int):void
+Byte:Integer.parseInt(String, int):int
+Byte:StringBuilder.append(String):StringBuilder
+Byte:StringBuilder.toString():String
+Byte:Byte.valueOf():Byte
+ObjectStreamClass:InvalidClassException.initCause(Throwable):Throwable
+ObjectStreamClass:ObjectStreamClass.computeFieldOffsets():void
+ObjectInputStream:InvalidClassException.initCause(Throwable):Throwable
+ObjectInputStream:ObjectInputStream.isCustomSubclass():boolean
+ObjectInputStream:ObjectInputStream.resolveClass(ObjectStreamClass):Class
+ObjectInputStream:ObjectStreamClass.getName():String
+ObjectInputStream:HashMap.get(Object):Object
+ObjectInputStream:ReflectUtil.checkPackageAccess(Class):void
+ObjectInputStream:ObjectStreamClass.initNonProxy(ObjectStreamClass, Class, ClassNotFoundException, ObjectStreamClass):void
+ObjectStreamClass:ObjectStreamClass.getSerialVersionUID():long
+ObjectStreamClass:ObjectStreamClass$1.new(ObjectStreamClass)
+ObjectStreamClass:AccessController.doPrivileged(PrivilegedAction):Object
+ObjectStreamClass:Class.isArray():boolean
+ObjectStreamClass:ObjectStreamClass.classNamesEqual(String, String):boolean
+ObjectStreamClass:String.lastIndexOf(int):int
+ObjectStreamClass:String.substring(int):String
+ObjectStreamClass:ObjectStreamClass$ExceptionInfo.new(String, String)
+ObjectStreamClass:ObjectStreamClass$FieldReflector.getFields():Object;
+ObjectInputStream:ObjectStreamClass.forClass():Class
+ObjectStreamClass:System.getSecurityManager():SecurityManager
+ObjectStreamClass:Reflection.getCallerClass():Class
+ObjectStreamClass:Class.getClassLoader():ClassLoader
+ObjectStreamClass:ReflectUtil.needsPackageAccessCheck(ClassLoader, ClassLoader):boolean
+ObjectStreamClass:ReflectUtil.checkPackageAccess(Class):void
+ObjectInputStream:ObjectStreamClass.getResolveException():ClassNotFoundException
+ObjectInputStream:ObjectInputStream$HandleTable.markException(int, ClassNotFoundException):void
+ObjectInputStream$HandleTable:ObjectInputStream$HandleTable$HandleList.size():int
+ObjectInputStream$HandleTable:ObjectInputStream$HandleTable$HandleList.get(int):int
+ObjectInputStream$HandleTable:ObjectInputStream$HandleTable.markException(int, ClassNotFoundException):void
+ObjectInputStream:ObjectInputStream.checkResolve(Object):Object
+ObjectInputStream:ObjectInputStream$HandleTable.lookupException(int):ClassNotFoundException
+ObjectInputStream:ObjectInputStream.resolveObject(Object):Object
+ObjectInputStream:ObjectInputStream$HandleTable.setObject(int, Object):void
+ObjectInputStream:ObjectInputStream.readArray(boolean):Object
+ObjectInputStream:Class.getComponentType():Class
+ObjectInputStream:Array.newInstance(Class, int):Object
+ObjectInputStream:Class.isPrimitive():boolean
+ObjectInputStream:ObjectInputStream$BlockDataInputStream.readInts([I, int, int):void
+ObjectInputStream:ObjectInputStream$BlockDataInputStream.readFully(Object;, int, int, boolean):void
+ObjectInputStream$BlockDataInputStream:ObjectInputStream$BlockDataInputStream.readFully(Object;, int, int, boolean):void
+ObjectInputStream:ObjectInputStream$BlockDataInputStream.readLongs([J, int, int):void
+ObjectInputStream:ObjectInputStream$BlockDataInputStream.readFloats(Object;, int, int):void
+ObjectInputStream$BlockDataInputStream:DataInputStream.readFloat():void
+DataInputStream:DataInputStream.readInt():int
+DataInputStream:Float.intBitsToFloat(int):void
+ObjectInputStream$BlockDataInputStream:ObjectInputStream.access$700(Object;, int, Object;, int, int):void
+ObjectInputStream:ObjectInputStream.bytesToFloats(Object;, int, Object;, int, int):void
+ObjectInputStream:ObjectInputStream$BlockDataInputStream.readDoubles([D, int, int):void
+ObjectInputStream$BlockDataInputStream:DataInputStream.readDouble():double
+DataInputStream:DataInputStream.readLong():long
+DataInputStream:Double.longBitsToDouble(long):double
+ObjectInputStream$BlockDataInputStream:ObjectInputStream.access$800(Object;, int, [D, int, int):void
+ObjectInputStream:ObjectInputStream.bytesToDoubles(Object;, int, [D, int, int):void
+ObjectInputStream:ObjectInputStream$BlockDataInputStream.readShorts(Object;, int, int):void
+ObjectInputStream:ObjectInputStream$BlockDataInputStream.readChars(Object;, int, int):void
+ObjectInputStream$BlockDataInputStream:DataInputStream.readChar():void
+ObjectInputStream$BlockDataInputStream:Bits.getChar(Object;, int):void
+ObjectInputStream:ObjectInputStream$BlockDataInputStream.readBooleans(Object;, int, int):void
+ObjectInputStream$BlockDataInputStream:DataInputStream.readBoolean():boolean
+ObjectInputStream$BlockDataInputStream:Bits.getBoolean(Object;, int):boolean
+ObjectInputStream:ObjectInputStream$HandleTable.markDependency(int, int):void
+ObjectInputStream$HandleTable:ObjectInputStream$HandleTable$HandleList.add(int):void
+ObjectInputStream$HandleTable$HandleList:System.arraycopy(Object, int, Object, int, int):void
+ObjectInputStream:ObjectInputStream.readEnum(boolean):Enum
+ObjectInputStream:ObjectStreamClass.isEnum():boolean
+ObjectInputStream:Enum.valueOf(Class, String):Enum
+ObjectInputStream:InvalidObjectException.initCause(Throwable):Throwable
+ObjectInputStream:ObjectInputStream.readOrdinaryObject(boolean):Object
+ObjectInputStream:ObjectStreamClass.checkDeserialize():void
+ObjectStreamClass:ObjectStreamClass$ExceptionInfo.newInvalidClassException():InvalidClassException
+ObjectInputStream:ObjectStreamClass.isInstantiable():boolean
+ObjectInputStream:ObjectStreamClass.newInstance():Object
+ObjectStreamClass:Constructor.newInstance(Object;):Object
+ObjectInputStream:Class.getName():String
+ObjectInputStream:ObjectStreamClass.isExternalizable():boolean
+ObjectInputStream:ObjectInputStream.readExternalData(Externalizable, ObjectStreamClass):void
+ObjectInputStream:ObjectStreamClass.hasBlockExternalData():boolean
+ObjectInputStream:Externalizable.readExternal(ObjectInput):void
+ObjectInputStream:ObjectInputStream.readSerialData(Object, ObjectStreamClass):void
+ObjectInputStream:ObjectStreamClass.getClassDataLayout():Object;
+ObjectStreamClass:ObjectStreamClass.getClassDataLayout0():Object;
+ObjectStreamClass:Class.getSuperclass():Class
+ObjectStreamClass:HashSet.contains(Object):boolean
+HashSet:HashMap.containsKey(Object):boolean
+ObjectStreamClass:HashSet.add(Object):boolean
+HashSet:HashMap.put(Object, Object):Object
+ObjectStreamClass:Class.getName():String
+ObjectStreamClass:ObjectStreamClass$ClassDataSlot.new(ObjectStreamClass, boolean)
+ObjectStreamClass:ArrayList.add(Object):boolean
+ObjectStreamClass:ObjectStreamClass.getVariantFor(Class):ObjectStreamClass
+ObjectStreamClass:ObjectStreamClass.initProxy(Class, ClassNotFoundException, ObjectStreamClass):void
+ObjectStreamClass:ObjectStreamClass.initNonProxy(ObjectStreamClass, Class, ClassNotFoundException, ObjectStreamClass):void
+ObjectStreamClass:Collections.reverse(List):void
+Collections:List.size():int
+Collections:Collections.swap(List, int, int):void
+Collections:List.get(int):Object
+Collections:List.set(int, Object):Object
+Collections:List.listIterator():ListIterator
+Collections:ListIterator.next():Object
+Collections:ListIterator.previous():Object
+Collections:ListIterator.set(Object):void
+ObjectStreamClass:ArrayList.size():int
+ObjectStreamClass:ArrayList.toArray(Object;):Object;
+ObjectInputStream:ObjectStreamClass.hasReadObjectMethod():boolean
+ObjectInputStream:SerialCallbackContext.new(Object, ObjectStreamClass)
+ObjectInputStream:ObjectStreamClass.invokeReadObject(Object, ObjectInputStream):void
+ObjectStreamClass:Method.invoke(Object, Object;):Object
+ObjectStreamClass:InvocationTargetException.getTargetException():Throwable
+ObjectStreamClass:ObjectStreamClass.throwMiscException(Throwable):void
+ObjectStreamClass:IOException.initCause(Throwable):Throwable
+ObjectInputStream:SerialCallbackContext.setUsed():void
+ObjectInputStream:ObjectInputStream.defaultReadFields(Object, ObjectStreamClass):void
+ObjectInputStream:Class.isInstance(Object):boolean
+ObjectInputStream:ClassCastException.new()
+ObjectInputStream:ObjectStreamClass.getPrimDataSize():int
+ObjectInputStream:ObjectStreamClass.setPrimFieldValues(Object, Object;):void
+ObjectStreamClass:ObjectStreamClass$FieldReflector.setPrimFieldValues(Object, Object;):void
+ObjectStreamClass$FieldReflector:Bits.getBoolean(Object;, int):boolean
+ObjectStreamClass$FieldReflector:Unsafe.putBoolean(Object, long, boolean):void
+Unsafe:Unsafe.putBoolean(Object, long, boolean):void
+ObjectStreamClass$FieldReflector:Unsafe.putByte(Object, long):void
+Unsafe:Unsafe.putByte(Object, long):void
+ObjectStreamClass$FieldReflector:Bits.getChar(Object;, int):void
+ObjectStreamClass$FieldReflector:Unsafe.putChar(Object, long):void
+Unsafe:Unsafe.putChar(Object, long):void
+ObjectStreamClass$FieldReflector:Bits.getShort(Object;, int):void
+ObjectStreamClass$FieldReflector:Unsafe.putShort(Object, long):void
+Unsafe:Unsafe.putShort(Object, long):void
+ObjectStreamClass$FieldReflector:Bits.getInt(Object;, int):int
+ObjectStreamClass$FieldReflector:Unsafe.putInt(Object, long, int):void
+Unsafe:Unsafe.putInt(Object, long, int):void
+ObjectStreamClass$FieldReflector:Bits.getFloat(Object;, int):void
+Bits:Bits.getInt(Object;, int):int
+Bits:Float.intBitsToFloat(int):void
+ObjectStreamClass$FieldReflector:Unsafe.putFloat(Object, long):void
+Unsafe:Unsafe.putFloat(Object, long):void
+ObjectStreamClass$FieldReflector:Bits.getLong(Object;, int):long
+ObjectStreamClass$FieldReflector:Unsafe.putLong(Object, long, long):void
+Unsafe:Unsafe.putLong(Object, long, long):void
+ObjectStreamClass$FieldReflector:Bits.getDouble(Object;, int):double
+Bits:Bits.getLong(Object;, int):long
+Bits:Double.longBitsToDouble(long):double
+ObjectStreamClass$FieldReflector:Unsafe.putDouble(Object, long, double):void
+Unsafe:Unsafe.putDouble(Object, long, double):void
+ObjectInputStream:ObjectStreamClass.getFields(boolean):Object;
+ObjectStreamClass:ObjectStreamClass.getFields(boolean):Object;
+ObjectStreamClass:ObjectStreamField;.clone():Object
+ObjectInputStream:ObjectStreamClass.getNumObjFields():int
+ObjectInputStream:ObjectStreamField.isUnshared():boolean
+ObjectInputStream:ObjectStreamField.getField():Field
+ObjectInputStream:ObjectStreamClass.setObjFieldValues(Object, Object;):void
+ObjectStreamClass:ObjectStreamClass$FieldReflector.setObjFieldValues(Object, Object;):void
+ObjectStreamClass$FieldReflector:Class.isInstance(Object):boolean
+ObjectStreamClass$FieldReflector:ObjectStreamField.getField():Field
+ObjectStreamClass$FieldReflector:StringBuilder.append(String):StringBuilder
+ObjectStreamClass$FieldReflector:Object.getClass():Class
+ObjectStreamClass$FieldReflector:Class.getName():String
+ObjectStreamClass$FieldReflector:Field.getDeclaringClass():Class
+ObjectStreamClass$FieldReflector:Field.getName():String
+ObjectStreamClass$FieldReflector:Field.getType():Class
+ObjectStreamClass$FieldReflector:StringBuilder.toString():String
+ObjectStreamClass$FieldReflector:Unsafe.putObject(Object, long, Object):void
+Unsafe:Unsafe.putObject(Object, long, Object):void
+ObjectInputStream:ObjectStreamClass.hasWriteObjectData():boolean
+ObjectInputStream:ObjectStreamClass.hasReadObjectNoDataMethod():boolean
+ObjectInputStream:ObjectStreamClass.invokeReadObjectNoData(Object):void
+ObjectInputStream:ObjectStreamClass.hasReadResolveMethod():boolean
+ObjectInputStream:ObjectStreamClass.invokeReadResolve(Object):Object
+ObjectInputStream:Class.isArray():boolean
+ObjectInputStream:ObjectInputStream.cloneArray(Object):Object
+ObjectInputStream:Object;.clone():Object
+ObjectInputStream:Z.clone():Object
+ObjectInputStream:B.clone():Object
+ObjectInputStream:C.clone():Object
+ObjectInputStream:D.clone():Object
+ObjectInputStream:F.clone():Object
+ObjectInputStream:I.clone():Object
+ObjectInputStream:J.clone():Object
+ObjectInputStream:S.clone():Object
+ObjectInputStream:ObjectInputStream.readFatalException():IOException
+ObjectInputStream:WriteAbortedException.new(String, Exception)
+ObjectInputStream:ObjectInputStream$BlockDataInputStream.peek():int
+ObjectInputStream:ObjectInputStream$ValidationList.doCallbacks():void
+ObjectInputStream$ValidationList:ObjectInputStream$ValidationList$1.new(ObjectInputStream$ValidationList)
+ObjectInputStream$ValidationList:AccessController.doPrivileged(PrivilegedExceptionAction, AccessControlContext):Object
+ObjectInputStream$ValidationList:PrivilegedActionException.getException():Exception
+TreeMap:TreeMap$Entry.new(Object, Object, TreeMap$Entry)
+TreeSet:AbstractSet.addAll(Collection):boolean
+NormalizerImpl:UnicodeSet.addAll(UnicodeSet):UnicodeSet
+NormalizerBase$Mode:NormalizerBase$Mode.normalize(Object;, int, int, Object;, int, int, UnicodeSet):int
+NormalizerBase:Integer.toString(int):String
+NormalizerBase:NormalizerBase.normalize(String, Normalizer$Form, int):String
+NormalizerBase:String.length():int
+NormalizerBase:String.charAt(int):void
+NormalizerBase:String.toCharArray():Object;
+NormalizerBase:Normalizer$Form.ordinal():int
+NormalizerBase:StringBuilder.append(String):StringBuilder
+NormalizerBase:StringBuilder.toString():String
+Pattern:Character.getType(int):int
+Pattern:StringBuilder.appendCodePoint(int):StringBuilder
+StringBuilder:AbstractStringBuilder.appendCodePoint(int):AbstractStringBuilder
+AbstractStringBuilder:Character.isBmpCodePoint(int):boolean
+AbstractStringBuilder:Character.isValidCodePoint(int):boolean
+AbstractStringBuilder:Character.toSurrogates(int, Object;, int):void
+StringBuilder:StringBuilder.appendCodePoint(int):StringBuilder
+Pattern:Pattern.produceEquivalentAlternation(String):String
+Pattern:Pattern.countChars(CharSequence, int, int):int
+Pattern:CharSequence.charAt(int):void
+Pattern:CharSequence.length():int
+Pattern:Pattern.producePermutations(String):Object;
+Pattern:Character.codePointAt(CharSequence, int):int
+Character:CharSequence.charAt(int):void
+Character:CharSequence.length():int
+Character:Character.codePointAtImpl(Object;, int, int):int
+Pattern:Pattern.getClass(int):int
+Pattern:Normalizer.getCombiningClass(int):int
+Pattern:Pattern.countCodePoints(CharSequence):int
+Pattern:StringBuilder.delete(int, int):StringBuilder
+StringBuilder:AbstractStringBuilder.delete(int, int):AbstractStringBuilder
+StringBuilder:StringBuilder.delete(int, int):StringBuilder
+Pattern:Pattern.composeOneStep(String):String
+Pattern:StringBuilder.setLength(int):void
+StringBuilder:AbstractStringBuilder.setLength(int):void
+Pattern:Pattern.normalizeCharClass(StringBuilder, int):int
+DesignParser:ClassDeclarationVisitor.new(int, String)
+DesignParser:ClassFieldVisitor.new()
+DesignParser:ClassMethodVisitor.new()
+DesignParser:ClassReader.accept()
+ClassReader:ClassReader.accept()
+ClassReader:Context.new()
+ClassReader:ClassReader.readUnsignedShort(int):int
+ClassReader:ClassReader.readClass(int, Object;):String
+ClassReader:ClassReader.readUTF8(int, Object;):String
+ClassReader:ClassReader.a(int, int, Object;):String
+ClassReader:Item.new(int)
+ClassReader:Item.a(int, String, String, String):void
+Item:Float.floatToRawIntBits():int
+Item:Double.doubleToRawLongBits(double):long
+Item:String.hashCode():int
+Item:String.equals(Object):boolean
+ClassReader:ClassReader.readInt(int):int
+ClassReader:Float.intBitsToFloat(int):void
+ClassReader:ClassReader.readLong(int):long
+ClassReader:Double.longBitsToDouble(long):double
+ClassReader:ClassReader.readByte(int):int
+ClassReader:ByteVector.putByteArray()
+ByteVector:ByteVector.a(int):void
+ByteVector:System.arraycopy(Object, int, Object, int, int):void
+ClassReader:String.equals(Object):boolean
+ClassReader:ClassReader.readConst(int, Object;):Object
+ClassReader:Type.getObjectType()
+Type:String.toCharArray():Object;
+ClassReader:Type.getMethodType()
+Type:Type.a()
+Type:StringBuffer.append():StringBuffer
+Type:Class.isPrimitive():boolean
+Type:Class.isArray():boolean
+Type:Class.getComponentType():Class
+Type:Class.getName():String
+Type:String.length():int
+Type:String.charAt(int):void
+Type:Type.getMethodDescriptor()
+Type:StringBuffer.toString():String
+Type:Method.getParameterTypes():Object;
+Type:Method.getReturnType():Class
+Type:Type.getType()
+Type:Type.getDescriptor(Class):String
+Type:Type.getConstructorDescriptor(Constructor):String
+Type:Constructor.getParameterTypes():Object;
+ClassReader:Handle.new(int, String, String, String)
+ClassReader:Object.hashCode():int
+ClassReader:InputStream.available():int
+ClassReader:InputStream.read(Object;, int, int):int
+ClassReader:System.arraycopy(Object, int, Object, int, int):void
+ClassReader:InputStream.close():void
+ClassReader:ClassVisitor.visitField()
+ClassVisitor:ClassVisitor.visitField()
+ClassReader:FieldVisitor.visitAnnotation()
+FieldVisitor:FieldVisitor.visitAnnotation()
+ClassReader:FieldVisitor.visitTypeAnnotation()
+FieldVisitor:FieldVisitor.visitTypeAnnotation()
+ClassReader:FieldVisitor.visitAttribute()
+FieldVisitor:FieldVisitor.visitAttribute()
+ClassReader:FieldVisitor.visitEnd():void
+FieldVisitor:FieldVisitor.visitEnd():void
+ClassReader:ClassReader.readLabel()
+ClassReader:ClassReader.readShort(int):void
+ClassReader:MethodVisitor.visitTryCatchBlock()
+MethodVisitor:MethodVisitor.visitTryCatchBlock()
+ClassReader:Attribute.read()
+Attribute:System.arraycopy(Object, int, Object, int, int):void
+ClassReader:MethodVisitor.visitLabel()
+MethodVisitor:MethodVisitor.visitLabel()
+ClassReader:MethodVisitor.visitLineNumber()
+MethodVisitor:MethodVisitor.visitLineNumber()
+ClassReader:MethodVisitor.visitFrame(int, int, Object;, int, Object;):void
+MethodVisitor:MethodVisitor.visitFrame(int, int, Object;, int, Object;):void
+ClassReader:MethodVisitor.visitInsn(int):void
+MethodVisitor:MethodVisitor.visitInsn(int):void
+ClassReader:MethodVisitor.visitVarInsn(int, int):void
+MethodVisitor:MethodVisitor.visitVarInsn(int, int):void
+ClassReader:MethodVisitor.visitJumpInsn()
+MethodVisitor:MethodVisitor.visitJumpInsn()
+ClassReader:MethodVisitor.visitIincInsn(int, int):void
+MethodVisitor:MethodVisitor.visitIincInsn(int, int):void
+ClassReader:MethodVisitor.visitTableSwitchInsn()
+MethodVisitor:MethodVisitor.visitTableSwitchInsn()
+ClassReader:MethodVisitor.visitLookupSwitchInsn()
+MethodVisitor:MethodVisitor.visitLookupSwitchInsn()
+ClassReader:MethodVisitor.visitIntInsn(int, int):void
+MethodVisitor:MethodVisitor.visitIntInsn(int, int):void
+ClassReader:MethodVisitor.visitLdcInsn(Object):void
+MethodVisitor:MethodVisitor.visitLdcInsn(Object):void
+ClassReader:MethodVisitor.visitFieldInsn(int, String, String, String):void
+MethodVisitor:MethodVisitor.visitFieldInsn(int, String, String, String):void
+ClassReader:MethodVisitor.visitMethodInsn(int, String, String, String, boolean):void
+MethodVisitor:MethodVisitor.visitMethodInsn(int, String, String, String, boolean):void
+ClassReader:MethodVisitor.visitInvokeDynamicInsn()
+MethodVisitor:MethodVisitor.visitInvokeDynamicInsn()
+ClassReader:MethodVisitor.visitTypeInsn(int, String):void
+MethodVisitor:MethodVisitor.visitTypeInsn(int, String):void
+ClassReader:MethodVisitor.visitMultiANewArrayInsn(String, int):void
+MethodVisitor:MethodVisitor.visitMultiANewArrayInsn(String, int):void
+ClassReader:MethodVisitor.visitInsnAnnotation()
+MethodVisitor:MethodVisitor.visitInsnAnnotation()
+ClassReader:MethodVisitor.visitLocalVariable()
+MethodVisitor:MethodVisitor.visitLocalVariable()
+ClassReader:MethodVisitor.visitLocalVariableAnnotation()
+MethodVisitor:MethodVisitor.visitLocalVariableAnnotation()
+ClassReader:MethodVisitor.visitAttribute()
+MethodVisitor:MethodVisitor.visitAttribute()
+ClassReader:MethodVisitor.visitMaxs(int, int):void
+MethodVisitor:MethodVisitor.visitMaxs(int, int):void
+ClassReader:TypePath.new(Object;, int)
+ClassReader:MethodVisitor.visitTryCatchAnnotation()
+MethodVisitor:MethodVisitor.visitTryCatchAnnotation()
+ClassReader:AnnotationVisitor.visitEnd():void
+AnnotationVisitor:AnnotationVisitor.visitEnd():void
+ClassReader:AnnotationVisitor.visit(String, Object):void
+AnnotationVisitor:AnnotationVisitor.visit(String, Object):void
+ClassReader:Short.new()
+ClassReader:AnnotationVisitor.visitEnum(String, String, String):void
+AnnotationVisitor:AnnotationVisitor.visitEnum(String, String, String):void
+ClassReader:Type.getType()
+ClassReader:AnnotationVisitor.visitAnnotation()
+AnnotationVisitor:AnnotationVisitor.visitAnnotation()
+ClassReader:AnnotationVisitor.visitArray()
+AnnotationVisitor:AnnotationVisitor.visitArray()
+ClassReader:String.charAt(int):void
+ClassReader:String.substring(int, int):String
+ClassReader:ClassVisitor.visit(int, int, String, String, String, Object;):void
+ClassVisitor:ClassVisitor.visit(int, int, String, String, String, Object;):void
+ClassReader:ClassVisitor.visitSource(String, String):void
+ClassVisitor:ClassVisitor.visitSource(String, String):void
+ClassReader:ClassVisitor.visitOuterClass(String, String, String):void
+ClassVisitor:ClassVisitor.visitOuterClass(String, String, String):void
+ClassReader:ClassVisitor.visitAnnotation()
+ClassVisitor:ClassVisitor.visitAnnotation()
+ClassReader:ClassVisitor.visitTypeAnnotation()
+ClassVisitor:ClassVisitor.visitTypeAnnotation()
+ClassReader:ClassVisitor.visitAttribute()
+ClassVisitor:ClassVisitor.visitAttribute()
+ClassReader:ClassVisitor.visitInnerClass(String, String, String, int):void
+ClassVisitor:ClassVisitor.visitInnerClass(String, String, String, int):void
+ClassReader:ClassReader.b()
+ClassReader:ClassVisitor.visitMethod()
+ClassVisitor:ClassVisitor.visitMethod()
+ClassReader:MethodVisitor.visitParameter(String, int):void
+MethodVisitor:MethodVisitor.visitParameter(String, int):void
+ClassReader:MethodVisitor.visitAnnotationDefault()
+MethodVisitor:MethodVisitor.visitAnnotationDefault()
+ClassReader:MethodVisitor.visitAnnotation()
+MethodVisitor:MethodVisitor.visitAnnotation()
+ClassReader:MethodVisitor.visitTypeAnnotation()
+MethodVisitor:MethodVisitor.visitTypeAnnotation()
+ClassReader:MethodVisitor.visitCode():void
+MethodVisitor:MethodVisitor.visitCode():void
+ClassReader:MethodVisitor.visitEnd():void
+MethodVisitor:MethodVisitor.visitEnd():void
+ClassReader:Type.getArgumentTypes()
+Type:Type.getArgumentTypes()
+ClassReader:MethodVisitor.visitParameterAnnotation()
+MethodVisitor:MethodVisitor.visitParameterAnnotation()
+ClassReader:ClassVisitor.visitEnd():void
+ClassVisitor:ClassVisitor.visitEnd():void
