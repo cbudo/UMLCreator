@@ -33,7 +33,11 @@ public class DesignParser {
 
         for (String className : argList) {
             if (isMethodSignature(className)) {
-                specialParse(className);
+                try {
+                    specialParse(className);
+                } catch (ClassNotFoundException e) {
+                    //do nothing
+                }
             } else {
                 Parse(className);
             }
@@ -49,7 +53,7 @@ public class DesignParser {
         out.close();
     }
 
-    private static void specialParse(String className) throws IOException {
+    private static void specialParse(String className) throws IOException, ClassNotFoundException {
         String method = className.substring(className.lastIndexOf('.') + 1, className.length() - 2);
         String keepinItClassy = className.substring(0, className.lastIndexOf('.'));
         //System.out.println(keepinItClassy + " " + method);

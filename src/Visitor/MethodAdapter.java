@@ -44,7 +44,10 @@ public class MethodAdapter extends MethodVisitor {
     public void visitMethodInsn(int opcode, String owner, String name, String desc, boolean itf) {
         super.visitMethodInsn(opcode, owner, name, desc, itf);
 
-        //Creating data structure for this method call
+//        System.out.println("method name: " + name);
+//        System.out.println("Class Name: " + owner);
+//        System.out.println("description: " + desc);
+//        //Creating data structure for this method call
 //        System.out.println("********** IN METHODINSN NOW ***************");
 //        System.out.println("FULL calling class name: " + this.fullCallingClassName);
 //        System.out.println("calling class name: " + this.callingClassName);
@@ -60,14 +63,17 @@ public class MethodAdapter extends MethodVisitor {
         else
             methodName = name;
 
-        //System.out.println("method name: " + methodName);
-        String[] args = getArgs(desc);
-        for (String n : args) {
-            //System.out.println("arg: " + n);
-        }
-        String retType = getRetType(desc, name);
-        if (retType != null) {
-            //System.out.println("return type: " + retType);
+        String[] args = new String[0];
+        String retType = null;
+        if (!desc.contains("asm")) {
+            args = getArgs(desc);
+            for (String n : args) {
+                //System.out.println("arg: " + n);
+            }
+            retType = getRetType(desc, name);
+            if (retType != null) {
+                //System.out.println("return type: " + retType);
+            }
         }
 
 
@@ -85,14 +91,15 @@ public class MethodAdapter extends MethodVisitor {
 
         try {
             downTheRabbitHole(owner, methodName);
-        } catch (IOException e) {
-            System.out.println("YA DUN FUCKED SON");
-            e.printStackTrace();
+        } catch (Exception e) {
+//            System.out.println("YA DUN FUCKED SON");
+//            e.printStackTrace();
+            return;
         }
 
     }
 
-    private void downTheRabbitHole(String fullCalledClassName, String desiredMethodName) throws IOException {
+    private void downTheRabbitHole(String fullCalledClassName, String desiredMethodName) throws IOException, ClassNotFoundException {
         // ASM's ClassReader does the heavy lifting of parsing the compiled Java class
         ClassReader reader = new ClassReader(fullCalledClassName);
 
@@ -116,14 +123,14 @@ public class MethodAdapter extends MethodVisitor {
     }
 
     private String[] getArgs(String desc) {
-
         Type[] argTypes = Type.getMethodArguments(desc);
         ArrayList<String> argVals = new ArrayList<String>();
         for (Type t : argTypes) {
-            String[] tname = t.getInternalName().split("/");
-            argVals.add(tname[tname.length - 1]);
+            if (t != null) {
+                String[] tname = t.getInternalName().split("/");
+                argVals.add(tname[tname.length - 1]);
+            }
         }
-
         return Arrays.copyOf(argVals.toArray(), argVals.toArray().length, String[].class);
     }
 
