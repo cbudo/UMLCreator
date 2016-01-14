@@ -2,6 +2,7 @@ package Visitor;
 
 import DataStorage.GeneratorFactory;
 import DataStorage.IGenerator;
+import DataStorage.ParsedDataStorage;
 import ParseClasses.AbstractData;
 import org.objectweb.asm.ClassReader;
 import org.objectweb.asm.ClassVisitor;
@@ -26,12 +27,16 @@ public class DesignParser {
         List<String> argList = new ArrayList<>();
         Collections.addAll(argList, args);
         String generationType = getGenerationType(argList.remove(0));
-        if (argList.get(argList.size() - 1).matches("[0-9]")) {
-
+        if (argList.get(argList.size() - 1).matches("[0-9]*")) {
+            ParsedDataStorage.getInstance().setMax_depth(Integer.parseInt(argList.remove(argList.size() - 1)));
         }
 
         for (String className : argList) {
-            Parse(className);
+            if (isMethodSignature(className)) {
+                specialParse(className);
+            } else {
+                Parse(className);
+            }
         }
         GeneratorFactory generatorFactory = new GeneratorFactory();
         IGenerator generator = generatorFactory.getGenerator(generationType);
@@ -42,6 +47,34 @@ public class DesignParser {
         FileOutputStream out = new FileOutputStream("graph_text\\generated_graph." + generator.getOutputType());
         out.write(generatedText.getBytes());
         out.close();
+    }
+
+    private static void specialParse(String className) throws IOException {
+        String method = className.substring(className.lastIndexOf('.') + 1, className.length() - 2);
+        String keepinItClassy = className.substring(0, className.lastIndexOf('.'));
+        //System.out.println(keepinItClassy + " " + method);
+
+        // ASM's ClassReader does the heavy lifting of parsing the compiled Java class
+        ClassReader reader = new ClassReader(keepinItClassy);
+
+        // make class declaration visitor to get superclass and interfaces
+        //String name = keepinItClassy.replace('/', '.');
+        ClassVisitor decVisitor = new ClassDeclarationVisitor(Opcodes.ASM5, keepinItClassy);
+
+        // DECORATE declaration visitor with field visitor
+        ClassVisitor fieldVisitor = new ClassFieldVisitor(Opcodes.ASM5, decVisitor, keepinItClassy);
+
+        // DECORATE field visitor with method visitor
+        ClassVisitor methodVisitor = new ClassMethodVisitor(Opcodes.ASM5, fieldVisitor, keepinItClassy, method, 1);
+
+        // TODO: add more DECORATORS here in later milestones to accomplish specific tasks
+
+        // Tell the Reader to use our (heavily decorated) ClassVisitor to visit the class
+        reader.accept(methodVisitor, ClassReader.EXPAND_FRAMES);
+    }
+
+    private static boolean isMethodSignature(String className) {
+        return className.substring(className.length() - 1).equals(")");
     }
 
     private static String getGenerationType(String arg) {

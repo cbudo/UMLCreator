@@ -7,6 +7,16 @@ import ParseClasses.*;
  */
 public class UMLClassVisitor implements IUMLVisitor {
 
+    public void preVisit(StringBuilder currentString) {
+        currentString.append("digraph UML_Diagram\n");
+        currentString.append("{\n");
+        currentString.append("rankdir=BT;\n");
+    }
+
+    public void postVisit(StringBuilder currentString) {
+        currentString.append("\n}\n");
+    }
+
     @Override
     public void visit(FieldRep f, StringBuilder currentString) {
         currentString.append(f.getTranslatedAccessibility() + " "
@@ -23,11 +33,40 @@ public class UMLClassVisitor implements IUMLVisitor {
 
     @Override
     public void visit(InterfaceRep i, StringBuilder currentString) {
+        currentString.append("\n" + i.getName().replace("/", "")
+                + " [\nshape = \"record\",\nlabel = \"{"
+                + "\\<\\<interface\\>\\>\\l"
+                + i.getName() + "\\l" + "|");
 
+        for (AbstractData f : i.getFieldsMap().values()) {
+            ((FieldRep) f).acceptUMLClass(this, currentString);
+        }
+
+        currentString.append("|");
+
+        for (AbstractData m : i.getMethodsMap().values()) {
+            currentString.append(m.toString());
+        }
+
+        currentString.append("}\"];");
     }
 
     @Override
     public void visit(AbstractClassRep a, StringBuilder currentString) {
+        currentString.append("\n" + a.getName().replace("/", "")
+                + " [\nshape = \"record\",\nlabel = \"{"
+                + a.getName() + "\\l" + "|");
+
+        for (AbstractData f : a.getFieldsMap().values()) {
+            ((FieldRep) f).acceptUMLClass(this, currentString);
+        }
+        currentString.append("|");
+
+        for (AbstractData m : a.getMethodsMap().values()) {
+            ((MethodRep) m).acceptUMLClass(this, currentString);
+        }
+
+        currentString.append("}\"];");
 
     }
 
@@ -42,7 +81,7 @@ public class UMLClassVisitor implements IUMLVisitor {
         //building the box and setting up for adding the fields
         currentString.append("\n" + c.getName().replace("/", "")
                 + " [\nshape = \"record\",\nlabel = \"{"
-                + c.getName() + "|");
+                + c.getName() + "\\l" + "|");
 
         //add all of the fields to the string builder
         for (AbstractData f : c.getFieldsMap().values()) {

@@ -21,8 +21,6 @@ public class ClassFieldVisitor extends ClassVisitor {
         this.className = className;
     }
 
-
-
 	public FieldVisitor visitField(int access, String name, String desc, String signature, Object value) {
 
 		FieldVisitor toDecorate = super.visitField(access, name, desc, signature, value);

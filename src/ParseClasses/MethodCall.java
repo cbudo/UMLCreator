@@ -6,6 +6,7 @@ import DataStorage.SequenceParsing.SequenceVisitor;
  * Created by budocf on 1/13/2016.
  */
 public class MethodCall {
+    private String fullClassName;
     private String callingClass;
     private String calledClass;
     private String methodName;
@@ -18,6 +19,14 @@ public class MethodCall {
         this.methodName = methodName;
         this.args = args;
         this.retType = retType;
+    }
+
+    public String getFullClassName() {
+        return this.fullClassName;
+    }
+
+    public void setFullClassName(String fullClassName) {
+        this.fullClassName = fullClassName;
     }
 
     public String GetCallingClass() {
@@ -42,5 +51,11 @@ public class MethodCall {
 
     public void acceptSequenceClass(SequenceVisitor methodVisitor, StringBuilder classes, StringBuilder methods) {
         methodVisitor.visit(this, classes, methods);
+    }
+
+    public boolean equals(MethodCall method) {
+        return this.calledClass.equals(method.calledClass)
+                && this.callingClass.equals(method.callingClass)
+                && this.methodName.equals(method.methodName);
     }
 }

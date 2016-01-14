@@ -10,6 +10,8 @@ import org.objectweb.asm.Type;
 
 public class ClassMethodVisitor extends ClassVisitor {
     String className;
+    String desiredMethodName;
+    int depth;
 
     public ClassMethodVisitor(int api) {
         super(api);
@@ -19,15 +21,33 @@ public class ClassMethodVisitor extends ClassVisitor {
     public ClassMethodVisitor(int api, ClassVisitor decorated, String className) {
         super(api, decorated);
         this.className = className;
+        this.desiredMethodName = "";
+        this.depth = 0;
+    }
+
+    public ClassMethodVisitor(int api, ClassVisitor decorated, String className, String desiredMethodName, int currentDepth) {
+        super(api, decorated);
+        this.className = className;
+        this.desiredMethodName = desiredMethodName;
+        this.depth = depth;
     }
 
 
     @Override
     public MethodVisitor visitMethod(int access, String name, String desc, String signature, String[] exceptions) {
-        MethodVisitor mv = cv.visitMethod(access, name, desc, signature, exceptions);
-
+        //MethodVisitor mv = cv.visitMethod(access, name, desc, signature, exceptions);
+        //This is terrible redo this later
+//        System.out.println("name: " + name);
+//        System.out.println("class name: " + className);
         MethodVisitor toDecorate = super.visitMethod(access, name, desc, signature, exceptions);
 
+        if (!desiredMethodName.equals("")) //doing sequence
+        {
+            if (!this.desiredMethodName.equals(name) || name.equals("<init>") || depth > ParsedDataStorage.getInstance().getMax_depth()) //NOT handling creates rn
+            {
+                return toDecorate;
+            }
+        }
 
         // DONE: create an internal representation of the current method and pass it to the methods below
         int accessLevel = access;
@@ -40,9 +60,10 @@ public class ClassMethodVisitor extends ClassVisitor {
         }
         // DONE: add the current method to your internal representation of the current class
         // What is a good way for the code to remember what the current class is?
+        //System.out.println("Examining Method: " + name);
 
         ParsedDataStorage.getInstance().addMethod(className, method);
-        return mv == null ? null : new MethodAdapter(Opcodes.ASM5, mv, 1);
+        return new MethodAdapter(Opcodes.ASM5, toDecorate, depth, className);
     }
 
 
@@ -60,4 +81,5 @@ public class ClassMethodVisitor extends ClassVisitor {
         }
         return params;
     }
+
 }

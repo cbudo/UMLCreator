@@ -15,7 +15,7 @@ public class GeneratorFactory {
             case "Sequence":
                 return new SequenceGenerator();
             default:
-                return () -> null;
+                return null;
         }
     }
 }

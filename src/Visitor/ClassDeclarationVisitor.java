@@ -39,4 +39,5 @@ public class ClassDeclarationVisitor extends ClassVisitor {
         super.visit(version, access, name, signature, superName, interfaces);
 
     }
+
 }

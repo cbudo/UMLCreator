@@ -7,6 +7,7 @@ import ParseClasses.MethodCall;
  * Created by budocf on 1/13/2016.
  */
 public class SequenceGenerator implements IGenerator {
+
     @Override
     public String getOutputType() {
         return "sd";
