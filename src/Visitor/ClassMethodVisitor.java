@@ -5,6 +5,7 @@ import ParseClasses.AbstractData;
 import ParseClasses.MethodRep;
 import org.objectweb.asm.ClassVisitor;
 import org.objectweb.asm.MethodVisitor;
+import org.objectweb.asm.Opcodes;
 import org.objectweb.asm.Type;
 
 public class ClassMethodVisitor extends ClassVisitor {
@@ -20,8 +21,11 @@ public class ClassMethodVisitor extends ClassVisitor {
         this.className = className;
     }
 
+
     @Override
     public MethodVisitor visitMethod(int access, String name, String desc, String signature, String[] exceptions) {
+        MethodVisitor mv = cv.visitMethod(access, name, desc, signature, exceptions);
+
         MethodVisitor toDecorate = super.visitMethod(access, name, desc, signature, exceptions);
 
 
@@ -38,8 +42,7 @@ public class ClassMethodVisitor extends ClassVisitor {
         // What is a good way for the code to remember what the current class is?
 
         ParsedDataStorage.getInstance().addMethod(className, method);
-
-        return toDecorate;
+        return mv == null ? null : new MethodAdapter(Opcodes.ASM5, mv, 1);
     }
 
 

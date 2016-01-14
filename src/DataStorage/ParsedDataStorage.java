@@ -15,6 +15,7 @@ public class ParsedDataStorage implements IDataStorage {
     Map<String, AbstractJavaClassRep> interfaces;
     Map<String, AbstractJavaClassRep> abstractClasses;
     List<IRelation> relations;
+    private int max_depth = 5;
 
     private ParsedDataStorage() {
         this.classes = new HashMap<String, AbstractJavaClassRep>();
@@ -28,6 +29,14 @@ public class ParsedDataStorage implements IDataStorage {
             storage = new ParsedDataStorage();
         }
         return storage;
+    }
+
+    public int getMax_depth() {
+        return max_depth;
+    }
+
+    public void setMax_depth(int depth) {
+        this.max_depth = depth;
     }
 
     public void addClass(String name, AbstractJavaClassRep classRep) {
