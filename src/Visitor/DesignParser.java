@@ -1,6 +1,7 @@
 package Visitor;
 
-import DataStorage.GraphGenerator;
+import DataStorage.GeneratorFactory;
+import DataStorage.IGenerator;
 import ParseClasses.AbstractData;
 import org.objectweb.asm.ClassReader;
 import org.objectweb.asm.ClassVisitor;
@@ -9,6 +10,7 @@ import org.objectweb.asm.Opcodes;
 import java.io.FileOutputStream;
 import java.io.IOException;
 import java.util.ArrayList;
+import java.util.Collections;
 import java.util.List;
 
 public class DesignParser {
@@ -21,36 +23,59 @@ public class DesignParser {
      * @throws IOException
      */
     public static void main(String[] args) throws IOException {
+        List<String> argList = new ArrayList<>();
+        Collections.addAll(argList, args);
+        String generationType = getGenerationType(argList.remove(0));
+        if (argList.get(argList.size() - 1).matches("[0-9]")) {
 
-        for (String className : args) {
-            List<AbstractData> fields = new ArrayList<>();
-            List<AbstractData> methods = new ArrayList<>();
-
-            // ASM's ClassReader does the heavy lifting of parsing the compiled Java class
-            ClassReader reader = new ClassReader(className);
-
-            // make class declaration visitor to get superclass and interfaces
-            String name = className.replace('/', '.');
-            ClassVisitor decVisitor = new ClassDeclarationVisitor(Opcodes.ASM5, name);
-
-            // DECORATE declaration visitor with field visitor
-            ClassVisitor fieldVisitor = new ClassFieldVisitor(Opcodes.ASM5, decVisitor, name);
-
-            // DECORATE field visitor with method visitor
-            ClassVisitor methodVisitor = new ClassMethodVisitor(Opcodes.ASM5, fieldVisitor, name);
-
-            // TODO: add more DECORATORS here in later milestones to accomplish specific tasks
-
-
-            // Tell the Reader to use our (heavily decorated) ClassVisitor to visit the class
-            reader.accept(methodVisitor, ClassReader.EXPAND_FRAMES);
         }
 
+        for (String className : argList) {
+            Parse(className);
+        }
+        GeneratorFactory generatorFactory = new GeneratorFactory();
+        IGenerator generator = generatorFactory.getGenerator(generationType);
         //System.out.println(GraphCreator.setupGraph(ParsedDataStorage.getInstance()));
-        System.out.println(GraphGenerator.buildUMLClassDiagram());
+        String generatedText = generator.Generate();
+        System.out.println(generatedText);
 
-        FileOutputStream out = new FileOutputStream("graph_text\\generated_graph.gv");
-        out.write(GraphGenerator.buildUMLClassDiagram().getBytes());//.getBytes());
+        FileOutputStream out = new FileOutputStream("graph_text\\generated_graph." + generator.getOutputType());
+        out.write(generatedText.getBytes());
         out.close();
+    }
+
+    private static String getGenerationType(String arg) {
+        switch (arg) {
+            case "U":
+                return "UML";
+            case "S":
+                return "Sequence";
+            default:
+                return null;
+        }
+    }
+
+    public static void Parse(String className) throws IOException {
+        List<AbstractData> fields = new ArrayList<>();
+        List<AbstractData> methods = new ArrayList<>();
+
+        // ASM's ClassReader does the heavy lifting of parsing the compiled Java class
+        ClassReader reader = new ClassReader(className);
+
+        // make class declaration visitor to get superclass and interfaces
+        String name = className.replace('/', '.');
+        ClassVisitor decVisitor = new ClassDeclarationVisitor(Opcodes.ASM5, name);
+
+        // DECORATE declaration visitor with field visitor
+        ClassVisitor fieldVisitor = new ClassFieldVisitor(Opcodes.ASM5, decVisitor, name);
+
+        // DECORATE field visitor with method visitor
+        ClassVisitor methodVisitor = new ClassMethodVisitor(Opcodes.ASM5, fieldVisitor, name);
+
+        // TODO: add more DECORATORS here in later milestones to accomplish specific tasks
+
+
+        // Tell the Reader to use our (heavily decorated) ClassVisitor to visit the class
+        reader.accept(methodVisitor, ClassReader.EXPAND_FRAMES);
     }
 }

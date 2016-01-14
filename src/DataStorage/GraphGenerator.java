@@ -22,6 +22,11 @@ public class GraphGenerator implements IGenerator {
     }
 
     @Override
+    public String getOutputType() {
+        return "gv";
+    }
+
+    @Override
     public String Generate() {
         return buildUMLClassDiagram();
     }

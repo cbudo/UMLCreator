@@ -8,6 +8,11 @@ import ParseClasses.MethodCall;
  */
 public class SequenceGenerator implements IGenerator {
     @Override
+    public String getOutputType() {
+        return "sd";
+    }
+
+    @Override
     public String Generate() {
         IDataStorage data = ParsedDataStorage.getInstance();
         SequenceVisitor methodVisitor = new SequenceVisitor();
