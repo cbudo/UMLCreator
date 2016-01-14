@@ -34,5 +34,6 @@
       </library>
     </orderEntry>
     <orderEntry type="library" name="asm-5.0.4" level="application" />
+    <orderEntry type="library" name="asm-all-5.0.4" level="application" />
   </component>
 </module>
