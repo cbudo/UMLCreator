@@ -18,11 +18,12 @@ public class SequenceVisitor implements ISequenceVisitor {
     }
 
     private void addClass(String s, StringBuilder classes) {
-        if (classesVisited.contains(s)) {
+        if (!classesVisited.contains(s)) {
             classes.append(s);
             classes.append(":");
             classes.append(s);
             classes.append("[a]\n");
+            classesVisited.add(s);
         }
     }
 

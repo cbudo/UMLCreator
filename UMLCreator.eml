@@ -8,14 +8,12 @@
 		<excludeFolder url="file://$MODULE_DIR$/src/GraphMaker"/>
 		<excludeFolder url="file://$MODULE_DIR$/src/Parse"/>
 	</contentEntry>
-	<lib name="junit-4.12.jar" scope="COMPILE">
-		<relative-module-cls project-related="jar://$PROJECT_DIR$/lib/junit-4.12.jar!/"/>
-	</lib>
-	<lib name="lib/junit-4.12.jar" scope="COMPILE">
-		<relative-module-cls project-related="jar://$PROJECT_DIR$/lib/junit-4.12.jar!/"/>
-	</lib>
+	<lib name="hamcrest-junit-2.0.0.0" scope="RUNTIME"/>
+	<lib name="junit-4.12" scope="RUNTIME"/>
 	<levels>
 		<level name="asm-all-5.0.4" value="project"/>
+		<level name="hamcrest-junit-2.0.0.0" value="project"/>
+		<level name="junit-4.12" value="project"/>
 		<level name="Lab1-3-Solution" value="project"/>
 	</levels>
 </component>

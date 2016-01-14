@@ -2,6 +2,8 @@ package ParseTests;
 
 import Parse.IData;
 import Parse.IMethod;
+import ParseClasses.AbstractClassRep;
+import ParseClasses.MethodRep;
 import org.junit.After;
 import org.junit.Before;
 import org.junit.Test;
@@ -13,11 +15,11 @@ import static org.junit.Assert.assertEquals;
  * Created by budocf on 1/5/2016.
  */
 public class IMethodTest {
-    IData method;
+    AbstractClassRep method;
     @Before
     public void setUp() throws Exception {
         String[] empty = new String[0];
-        method = new IMethod("Test", "String", Opcodes.ACC_PUBLIC, empty);
+        method = new MethodRep("Test", "String", Opcodes.ACC_PUBLIC, empty);
     }
 
     @After

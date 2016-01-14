@@ -4,10 +4,9 @@
 	<classpathentry kind="src" path="src"/>
 	<classpathentry kind="src" path="Test"/>
 	<classpathentry kind="src" path="Docs"/>
-	<classpathentry kind="con" path="org.eclipse.jdt.USER_LIBRARY/asm-all-5.0.4"/>
-	<classpathentry kind="lib" path="lib/junit-4.12.jar"/>
-	<classpathentry kind="lib" path="lib/junit-4.12.jar"/>
+	<classpathentry exported="true" kind="con" path="org.eclipse.jdt.USER_LIBRARY/asm-all-5.0.4"/>
+	<classpathentry exported="true" kind="con" path="org.eclipse.jdt.USER_LIBRARY/hamcrest-junit-2.0.0.0"/>
+	<classpathentry exported="true" kind="con" path="org.eclipse.jdt.USER_LIBRARY/junit-4.12"/>
 	<classpathentry kind="con" path="org.eclipse.jdt.USER_LIBRARY/Lab1-3-Solution"/>
-	<classpathentry kind="con" path="org.eclipse.jdt.USER_LIBRARY/asm-all-5.0.4"/>
 	<classpathentry kind="output" path="out/production/UMLCreator"/>
 </classpath>
