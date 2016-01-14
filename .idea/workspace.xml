@@ -1,11 +1,8 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="1b357d25-b641-458c-8a8c-24064c31616e" name="Default" comment="">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/MS3_Turnin/generated_ourCode.sd" />
+    <list default="true" id="1b357d25-b641-458c-8a8c-24064c31616e" name="Default" comment="generating sequence diagrams properly">
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/DataStorage/SequenceParsing/SequenceVisitor.java" afterPath="$PROJECT_DIR$/src/DataStorage/SequenceParsing/SequenceVisitor.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/ParseClasses/MethodCall.java" afterPath="$PROJECT_DIR$/src/ParseClasses/MethodCall.java" />
     </list>
     <ignored path="UMLCreator.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -135,10 +132,10 @@
         <entry file="file://$PROJECT_DIR$/src/ParseClasses/MethodCall.java">
           <provider selected="true" editor-type-id="text-editor">
             <state vertical-scroll-proportion="0.0">
-              <caret line="17" column="53" selection-start-line="17" selection-start-column="53" selection-end-line="17" selection-end-column="53" />
+              <caret line="17" column="54" selection-start-line="17" selection-start-column="54" selection-end-line="17" selection-end-column="54" />
               <folding>
-                <element signature="e#961#962#0" expanded="true" />
-                <element signature="e#995#996#0" expanded="true" />
+                <element signature="e#963#964#0" expanded="true" />
+                <element signature="e#997#998#0" expanded="true" />
               </folding>
             </state>
           </provider>
@@ -911,7 +908,7 @@
       <workItem from="1452690679618" duration="33931000" />
       <workItem from="1452758458370" duration="95000" />
       <workItem from="1452758570803" duration="1030000" />
-      <workItem from="1452797150590" duration="5474000" />
+      <workItem from="1452797150590" duration="5504000" />
     </task>
     <task id="LOCAL-00001" summary="added asm libraries and visitor package">
       <created>1451953507803</created>
@@ -1045,11 +1042,17 @@
       <option name="project" value="LOCAL" />
       <updated>1452801112947</updated>
     </task>
-    <option name="localTasksCounter" value="23" />
+    <task id="LOCAL-00023" summary="generating sequence diagrams properly">
+      <created>1452803886839</created>
+      <option name="number" value="00023" />
+      <option name="project" value="LOCAL" />
+      <updated>1452803886839</updated>
+    </task>
+    <option name="localTasksCounter" value="24" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="138505000" />
+    <option name="totallyTimeSpent" value="138535000" />
   </component>
   <component name="TodoView" selected-index="1">
     <todo-panel id="selected-file">
@@ -1118,7 +1121,8 @@
     <MESSAGE value="Finished implementing the basics of visitor pattern for UML classes diagram. Currently will generate boxes correctly for classes. Need to just move my existing code over to handle the rest of it." />
     <MESSAGE value="added generated graph of java.util.Collections.shuffle" />
     <MESSAGE value="generating sequence diagram for project, slight problems with handling multiple new instances of the object being used" />
-    <option name="LAST_COMMIT_MESSAGE" value="generating sequence diagram for project, slight problems with handling multiple new instances of the object being used" />
+    <MESSAGE value="generating sequence diagrams properly" />
+    <option name="LAST_COMMIT_MESSAGE" value="generating sequence diagrams properly" />
     <option name="OPTIMIZE_IMPORTS_BEFORE_PROJECT_COMMIT" value="true" />
     <option name="REFORMAT_BEFORE_PROJECT_COMMIT" value="true" />
     <option name="REARRANGE_BEFORE_PROJECT_COMMIT" value="true" />
@@ -1188,8 +1192,8 @@
         <state vertical-scroll-proportion="0.0">
           <caret line="58" column="0" selection-start-line="58" selection-start-column="0" selection-end-line="58" selection-end-column="0" />
           <folding>
-            <element signature="e#961#962#0" expanded="true" />
-            <element signature="e#995#996#0" expanded="true" />
+            <element signature="e#963#964#0" expanded="true" />
+            <element signature="e#997#998#0" expanded="true" />
           </folding>
         </state>
       </provider>
@@ -1549,10 +1553,10 @@
     <entry file="file://$PROJECT_DIR$/src/ParseClasses/MethodCall.java">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
-          <caret line="17" column="53" selection-start-line="17" selection-start-column="53" selection-end-line="17" selection-end-column="53" />
+          <caret line="17" column="54" selection-start-line="17" selection-start-column="54" selection-end-line="17" selection-end-column="54" />
           <folding>
-            <element signature="e#961#962#0" expanded="true" />
-            <element signature="e#995#996#0" expanded="true" />
+            <element signature="e#963#964#0" expanded="true" />
+            <element signature="e#997#998#0" expanded="true" />
           </folding>
         </state>
       </provider>
