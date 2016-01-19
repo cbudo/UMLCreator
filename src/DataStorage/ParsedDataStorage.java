@@ -15,7 +15,8 @@ public class ParsedDataStorage implements IDataStorage {
     Map<String, AbstractJavaClassRep> classes;
     Map<String, AbstractJavaClassRep> interfaces;
     Map<String, AbstractJavaClassRep> abstractClasses;
-    List<IRelation> relations;
+    List<IRelation> usesRels;
+    List<IRelation> associationRels;
     List<MethodCall> methodCalls;
     private int max_depth = 5;
 
@@ -23,7 +24,8 @@ public class ParsedDataStorage implements IDataStorage {
         this.classes = new HashMap<String, AbstractJavaClassRep>();
         this.interfaces = new HashMap<String, AbstractJavaClassRep>();
         this.abstractClasses = new HashMap<String, AbstractJavaClassRep>();
-        this.relations = new ArrayList<>();
+        this.usesRels = new ArrayList<>();
+        this.associationRels = new ArrayList<>();
         this.methodCalls = new LinkedList<>();
     }
 
@@ -121,8 +123,32 @@ public class ParsedDataStorage implements IDataStorage {
         return interfaces.get(interfaceName);
     }
 
-    public boolean addRelation(IRelation relation) {
-        return relations.add(relation);
+    public List<IRelation> getAssociationRels() {
+        return this.associationRels;
     }
 
+    public List<IRelation> getUsesRels() {
+        return this.usesRels;
+    }
+
+    public boolean addUsesRelation(IRelation relation) {
+        if (!this.associationRels.contains(relation) && !this.usesRels.contains(relation)) {
+            this.usesRels.add(relation);
+            return true;
+        }
+
+        return false;
+    }
+
+    public boolean addAssociationRelation(IRelation relation) {
+        if (!this.associationRels.contains(relation)) {
+            if (this.usesRels.contains(relation)) {
+                this.usesRels.remove(relation);
+            }
+
+            return this.associationRels.add(relation);
+        }
+
+        return false;
+    }
 }

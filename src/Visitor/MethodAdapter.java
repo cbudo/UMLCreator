@@ -76,7 +76,6 @@ public class MethodAdapter extends MethodVisitor {
             }
         }
 
-
         MethodCall newSequenceMethod = new MethodCall(this.callingClassName, calledClass, methodName, args, retType);
 
         MethodCall[] existingCalls = ParsedDataStorage.getInstance().getMethods();
@@ -89,13 +88,13 @@ public class MethodAdapter extends MethodVisitor {
         //newSequenceMethod.setFullClassName(this.fullCallingClassName);
         ParsedDataStorage.getInstance().addMethod(newSequenceMethod);
 
-        try {
-            downTheRabbitHole(owner, methodName);
-        } catch (Exception e) {
+//        try {
+//            downTheRabbitHole(owner, methodName);
+//        } catch (Exception e) {
 //            System.out.println("YA DUN FUCKED SON");
 //            e.printStackTrace();
             return;
-        }
+        //}
 
     }
 
@@ -111,7 +110,7 @@ public class MethodAdapter extends MethodVisitor {
         ClassVisitor fieldVisitor = new ClassFieldVisitor(Opcodes.ASM5, decVisitor, name);
 
         // DECORATE field visitor with method visitor
-        ClassVisitor methodVisitor = new ClassMethodVisitor(Opcodes.ASM5, fieldVisitor, name, desiredMethodName, depth + 1);
+        ClassVisitor methodVisitor = new UMLClassMethodVisitor(Opcodes.ASM5, fieldVisitor, name, desiredMethodName, depth + 1);
 
         reader.accept(methodVisitor, ClassReader.EXPAND_FRAMES);
     }

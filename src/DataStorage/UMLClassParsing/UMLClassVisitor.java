@@ -33,10 +33,12 @@ public class UMLClassVisitor implements IUMLVisitor {
 
     @Override
     public void visit(InterfaceRep i, StringBuilder currentString) {
-        currentString.append("\n" + i.getName().replace("/", "")
+        String in = i.getName().substring(i.getName().lastIndexOf("/") + 1);
+
+        currentString.append("\n" + in
                 + " [\nshape = \"record\",\nlabel = \"{"
                 + "\\<\\<interface\\>\\>\\l"
-                + i.getName() + "\\l" + "|");
+                + in + "\\l" + "|");
 
         for (AbstractData f : i.getFieldsMap().values()) {
             ((FieldRep) f).acceptUMLClass(this, currentString);
@@ -49,13 +51,15 @@ public class UMLClassVisitor implements IUMLVisitor {
         }
 
         currentString.append("}\"];");
+
     }
 
     @Override
     public void visit(AbstractClassRep a, StringBuilder currentString) {
-        currentString.append("\n" + a.getName().replace("/", "")
+        String in = a.getName().substring(a.getName().lastIndexOf("/") + 1);
+        currentString.append("\n" + in
                 + " [\nshape = \"record\",\nlabel = \"{"
-                + a.getName() + "\\l" + "|");
+                + in + "\\l" + "|");
 
         for (AbstractData f : a.getFieldsMap().values()) {
             ((FieldRep) f).acceptUMLClass(this, currentString);
@@ -67,7 +71,6 @@ public class UMLClassVisitor implements IUMLVisitor {
         }
 
         currentString.append("}\"];");
-
     }
 
     /*
@@ -78,10 +81,11 @@ public class UMLClassVisitor implements IUMLVisitor {
      */
     @Override
     public void visit(ClassRep c, StringBuilder currentString) {
+        String in = c.getName().substring(c.getName().lastIndexOf("/") + 1);
         //building the box and setting up for adding the fields
-        currentString.append("\n" + c.getName().replace("/", "")
+        currentString.append("\n" + in
                 + " [\nshape = \"record\",\nlabel = \"{"
-                + c.getName() + "\\l" + "|");
+                + in + "\\l" + "|");
 
         //add all of the fields to the string builder
         for (AbstractData f : c.getFieldsMap().values()) {

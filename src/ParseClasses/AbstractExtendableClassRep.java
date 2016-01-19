@@ -1,7 +1,5 @@
 package ParseClasses;
 
-import DataStorage.ParsedDataStorage;
-
 import java.util.List;
 
 /**
@@ -32,9 +30,9 @@ public abstract class AbstractExtendableClassRep extends AbstractJavaClassRep
         this.extendedClassName = extendedClassName;
     }
 
-    protected void addExtendsRelationsToStorage() {
-        if (extendedClassName != null) {
-            ParsedDataStorage.getInstance().addRelation(new Extends(extendedClassName, getName()));
-        }
-    }
+//    protected void addExtendsRelationsToStorage() {
+//        if (extendedClassName != null) {
+//            ParsedDataStorage.getInstance().addRelation(new Extends(extendedClassName, getName()));
+//        }
+//    }
 }

@@ -3,29 +3,30 @@ package Visitor;
 import DataStorage.ParsedDataStorage;
 import ParseClasses.AbstractData;
 import ParseClasses.MethodRep;
+import ParseClasses.UsesRelation;
 import org.objectweb.asm.ClassVisitor;
 import org.objectweb.asm.MethodVisitor;
 import org.objectweb.asm.Opcodes;
 import org.objectweb.asm.Type;
 
-public class ClassMethodVisitor extends ClassVisitor {
+public class UMLClassMethodVisitor extends ClassVisitor {
     String className;
     String desiredMethodName;
     int depth;
 
-    public ClassMethodVisitor(int api) {
+    public UMLClassMethodVisitor(int api) {
         super(api);
         this.className = null;
     }
 
-    public ClassMethodVisitor(int api, ClassVisitor decorated, String className) {
+    public UMLClassMethodVisitor(int api, ClassVisitor decorated, String className) {
         super(api, decorated);
         this.className = className;
         this.desiredMethodName = "";
         this.depth = 0;
     }
 
-    public ClassMethodVisitor(int api, ClassVisitor decorated, String className, String desiredMethodName, int currentDepth) {
+    public UMLClassMethodVisitor(int api, ClassVisitor decorated, String className, String desiredMethodName, int currentDepth) {
         super(api, decorated);
         this.className = className;
         this.desiredMethodName = desiredMethodName;
@@ -35,35 +36,25 @@ public class ClassMethodVisitor extends ClassVisitor {
 
     @Override
     public MethodVisitor visitMethod(int access, String name, String desc, String signature, String[] exceptions) {
-        //MethodVisitor mv = cv.visitMethod(access, name, desc, signature, exceptions);
-        //This is terrible redo this later
-//        System.out.println("name: " + name);
-//        System.out.println("class name: " + className);
         MethodVisitor toDecorate = super.visitMethod(access, name, desc, signature, exceptions);
-
-        if (!desiredMethodName.equals("")) //doing sequence
-        {
-            if (!this.desiredMethodName.equals(name) || name.equals("<init>") || depth > ParsedDataStorage.getInstance().getMax_depth()) //NOT handling creates rn
-            {
-                return toDecorate;
-            }
-        }
-
-        // DONE: create an internal representation of the current method and pass it to the methods below
         int accessLevel = access;
         String returnType = addReturnType(desc);
         String[] args = addArguments(desc);
 
-        AbstractData method = new MethodRep(name, accessLevel, returnType);
+        String innerName = getInnermostClass(name);
+        String innerRet = getInnermostClass(returnType);
+        AbstractData method = new MethodRep(innerName, accessLevel, innerRet);
+
+        UsesRelation retUses = new UsesRelation(innerRet, getInnermostClass(this.className));
+        ParsedDataStorage.getInstance().addUsesRelation(retUses);
         for (String rel : args) {
-            ((MethodRep) method).addUsesRelation(rel);
+            UsesRelation newUses = new UsesRelation(rel, getInnermostClass(this.className));
+            ParsedDataStorage.getInstance().addUsesRelation(newUses);
         }
-        // DONE: add the current method to your internal representation of the current class
-        // What is a good way for the code to remember what the current class is?
-        //System.out.println("Examining Method: " + name);
 
         ParsedDataStorage.getInstance().addMethod(className, method);
-        return new MethodAdapter(Opcodes.ASM5, toDecorate, depth, className);
+        //return new MethodAdapter(Opcodes.ASM5, toDecorate, depth, className);
+        return new UMLMethodVisitor(Opcodes.ASM5, toDecorate, className);
     }
 
 
@@ -80,6 +71,14 @@ public class ClassMethodVisitor extends ClassVisitor {
             // DONE: ADD this information to your representation of the current method.
         }
         return params;
+    }
+
+    private String getInnermostClass(String someType) {
+        String t = someType.replace(".java", "");
+        t = t.replace("\\<", "");
+        t = t.replace("\\>", "");
+        String[] ar = t.split(".");
+        return ar[ar.length - 1];
     }
 
 }

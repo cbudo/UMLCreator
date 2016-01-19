@@ -46,6 +46,7 @@ public class DesignParser {
         IGenerator generator = generatorFactory.getGenerator(generationType);
         //System.out.println(GraphCreator.setupGraph(ParsedDataStorage.getInstance()));
         String generatedText = generator.Generate();
+
         System.out.println(generatedText);
 
         FileOutputStream out = new FileOutputStream("graph_text\\generated_graph." + generator.getOutputType());
@@ -69,7 +70,7 @@ public class DesignParser {
         ClassVisitor fieldVisitor = new ClassFieldVisitor(Opcodes.ASM5, decVisitor, keepinItClassy);
 
         // DECORATE field visitor with method visitor
-        ClassVisitor methodVisitor = new ClassMethodVisitor(Opcodes.ASM5, fieldVisitor, keepinItClassy, method, 1);
+        ClassVisitor methodVisitor = new UMLClassMethodVisitor(Opcodes.ASM5, fieldVisitor, keepinItClassy, method, 1);
 
         // TODO: add more DECORATORS here in later milestones to accomplish specific tasks
 
@@ -107,10 +108,7 @@ public class DesignParser {
         ClassVisitor fieldVisitor = new ClassFieldVisitor(Opcodes.ASM5, decVisitor, name);
 
         // DECORATE field visitor with method visitor
-        ClassVisitor methodVisitor = new ClassMethodVisitor(Opcodes.ASM5, fieldVisitor, name);
-
-        // TODO: add more DECORATORS here in later milestones to accomplish specific tasks
-
+        ClassVisitor methodVisitor = new UMLClassMethodVisitor(Opcodes.ASM5, fieldVisitor, name);
 
         // Tell the Reader to use our (heavily decorated) ClassVisitor to visit the class
         reader.accept(methodVisitor, ClassReader.EXPAND_FRAMES);

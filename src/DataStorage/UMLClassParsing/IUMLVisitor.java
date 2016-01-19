@@ -15,4 +15,5 @@ public interface IUMLVisitor {
     void visit(AbstractClassRep a, StringBuilder currentString);
 
     void visit(ClassRep c, StringBuilder currentString);
+
 }
