@@ -1,5 +1,7 @@
 package ParseClasses;
 
+import Visitor.ITraverser;
+
 import java.security.KeyRep;
 import java.util.HashMap;
 import java.util.Map;
@@ -7,7 +9,7 @@ import java.util.Map;
 /**
  * Created by efronbs on 1/7/2016.
  */
-public abstract class AbstractData
+public abstract class AbstractData implements ITraverser
 {
     private String name;
     private int accessibility;

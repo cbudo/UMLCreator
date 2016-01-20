@@ -1,6 +1,6 @@
 package ParseClasses;
 
-import DataStorage.UMLClassParsing.IUMLVisitor;
+import Visitor.IVisitor;
 
 import java.util.ArrayList;
 import java.util.List;
@@ -8,7 +8,7 @@ import java.util.List;
 /**
  * Created by efronbs on 1/7/2016.
  */
-public class MethodRep extends AbstractTypable implements Visitable
+public class MethodRep extends AbstractTypable
 {
     private List<String> usesRelations;
 
@@ -29,7 +29,9 @@ public class MethodRep extends AbstractTypable implements Visitable
     }
 
     @Override
-    public void acceptUMLClass(IUMLVisitor visitor, StringBuilder currentString) {
-        visitor.visit(this, currentString);
+    public void accept(IVisitor v) {
+        v.preVisit(this);
+        v.visit(this);
+        v.postVisit(this);
     }
 }

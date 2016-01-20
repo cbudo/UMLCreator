@@ -1,11 +1,13 @@
 package ParseClasses;
 
 import DataStorage.SequenceParsing.SequenceVisitor;
+import Visitor.ITraverser;
+import Visitor.IVisitor;
 
 /**
  * Created by budocf on 1/13/2016.
  */
-public class MethodCall {
+public class MethodCall implements ITraverser {
     private String fullClassName;
     private String callingClass;
     private String calledClass;
@@ -57,5 +59,12 @@ public class MethodCall {
         return this.calledClass.equals(method.calledClass)
                 && this.callingClass.equals(method.callingClass)
                 && this.methodName.equals(method.methodName);
+    }
+
+    @Override
+    public void accept(IVisitor v) {
+        v.preVisit(this);
+        v.visit(this);
+        v.postVisit(this);
     }
 }

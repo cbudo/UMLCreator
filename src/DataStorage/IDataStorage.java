@@ -32,4 +32,5 @@ public interface IDataStorage {
     void addInterfaces(String name, AbstractJavaClassRep interfaceRep);
 
     MethodCall[] getMethods();
+
 }

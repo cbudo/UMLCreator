@@ -4,13 +4,15 @@ import ParseClasses.AbstractData;
 import ParseClasses.AbstractJavaClassRep;
 import ParseClasses.IRelation;
 import ParseClasses.MethodCall;
+import Visitor.ITraverser;
+import Visitor.IVisitor;
 
 import java.util.*;
 
 /**
  * Created by budocf on 12/17/2015.
  */
-public class ParsedDataStorage implements IDataStorage {
+public class ParsedDataStorage implements IDataStorage, ITraverser {
     private static ParsedDataStorage storage;
     Map<String, AbstractJavaClassRep> classes;
     Map<String, AbstractJavaClassRep> interfaces;
@@ -149,5 +151,31 @@ public class ParsedDataStorage implements IDataStorage {
         }
 
         return false;
+    }
+
+    @Override
+    public void accept(IVisitor v) {
+        v.preVisit(this);
+        for (AbstractJavaClassRep ajc :
+                classes.values()) {
+            ajc.accept(v);
+        }
+        for (AbstractJavaClassRep inter :
+                interfaces.values()) {
+            inter.accept(v);
+        }
+        for (AbstractJavaClassRep abstractClass : abstractClasses.values()) {
+            abstractClass.accept(v);
+        }
+        for (IRelation r : usesRels) {
+            r.accept(v);
+        }
+        for (IRelation r : associationRels) {
+            r.accept(v);
+        }
+        for (MethodCall m : methodCalls) {
+            m.accept(v);
+        }
+        v.postVisit(this);
     }
 }
