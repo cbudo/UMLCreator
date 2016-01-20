@@ -65,7 +65,7 @@ public class ParsedDataStorage implements IDataStorage {
         return methodCalls.toArray(new MethodCall[methodCalls.size()]);
     }
 
-    public boolean addMethod(MethodCall mc) {
+    public boolean addMethodCall(MethodCall mc) {
         return methodCalls.add(mc);
     }
 
@@ -85,7 +85,6 @@ public class ParsedDataStorage implements IDataStorage {
         return abstractClasses.values();
     }
 
-    @Override
     public void addMethod(String cName, AbstractData methodRep) {
         try {
             classes.get(cName).addMethod(methodRep.getName(), methodRep);

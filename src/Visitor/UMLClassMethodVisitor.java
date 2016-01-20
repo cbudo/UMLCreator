@@ -57,7 +57,6 @@ public class UMLClassMethodVisitor extends ClassVisitor {
         return new UMLMethodVisitor(Opcodes.ASM5, toDecorate, className);
     }
 
-
     String addReturnType(String desc) {
         return Type.getReturnType(desc).getClassName();
     }
@@ -75,8 +74,8 @@ public class UMLClassMethodVisitor extends ClassVisitor {
 
     private String getInnermostClass(String someType) {
         String t = someType.replace(".java", "");
-        t = t.replace("\\<", "");
-        t = t.replace("\\>", "");
+        t = t.replace("<", "");
+        t = t.replace(">", "");
         if (t.contains(".")) {
             String[] ar = t.split("[.]");
             return ar[ar.length - 1];

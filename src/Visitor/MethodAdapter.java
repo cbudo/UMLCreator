@@ -86,7 +86,7 @@ public class MethodAdapter extends MethodVisitor {
             }
         }
         //newSequenceMethod.setFullClassName(this.fullCallingClassName);
-        ParsedDataStorage.getInstance().addMethod(newSequenceMethod);
+        ParsedDataStorage.getInstance().addMethodCall(newSequenceMethod);
 
 //        try {
 //            downTheRabbitHole(owner, methodName);
