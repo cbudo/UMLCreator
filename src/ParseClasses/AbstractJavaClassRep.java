@@ -1,5 +1,6 @@
 package ParseClasses;
 
+import java.util.ArrayList;
 import java.util.HashMap;
 import java.util.List;
 import java.util.Map;
@@ -9,6 +10,7 @@ import java.util.Map;
  */
 public abstract class AbstractJavaClassRep extends AbstractData
 {
+    private List<String> profileTags;
     private List<String> implementsNames;
     private Map<String, AbstractData> methodsMap;
     private Map<String, AbstractData> fieldsMap;
@@ -24,7 +26,7 @@ public abstract class AbstractJavaClassRep extends AbstractData
         this.implementsNames = implementsNames;
         this.methodsMap = new HashMap<String, AbstractData>();
         this.fieldsMap = new HashMap<String,AbstractData>();
-        //addImplementsToStorage();
+        this.profileTags = new ArrayList<String>();
     }
 
 //    protected void addImplementsToStorage() {
@@ -80,6 +82,14 @@ public abstract class AbstractJavaClassRep extends AbstractData
     public List<String> getImplementsList()
     {
         return this.implementsNames;
+    }
+
+    public void addProfileTag(String profile) {
+        this.profileTags.add(profile);
+    }
+
+    public List<String> getProfileTags() {
+        return this.profileTags;
     }
 
 }

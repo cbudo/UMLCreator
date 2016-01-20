@@ -9,6 +9,7 @@ import java.util.List;
  */
 public class ClassRep extends AbstractExtendableClassRep
 {
+
     public ClassRep(String name, int accessibility)
     {
         super(name, accessibility, null, null);
