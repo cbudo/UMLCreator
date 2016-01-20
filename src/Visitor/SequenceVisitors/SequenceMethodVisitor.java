@@ -1,7 +1,10 @@
-package Visitor;
+package Visitor.SequenceVisitors;
 
 import DataStorage.ParsedDataStorage;
 import ParseClasses.MethodCall;
+import Visitor.ClassDeclarationVisitor;
+import Visitor.ClassFieldVisitor;
+import Visitor.UMLVisitors.UMLClassMethodVisitor;
 import jdk.nashorn.internal.codegen.types.Type;
 import org.objectweb.asm.ClassReader;
 import org.objectweb.asm.ClassVisitor;
@@ -15,17 +18,17 @@ import java.util.Arrays;
 /**
  * Created by budocf on 1/13/2016.
  */
-public class MethodAdapter extends MethodVisitor {
+public class SequenceMethodVisitor extends MethodVisitor {
     private int depth;
     private String callingClassName;
     private String fullCallingClassName;
 
-    public MethodAdapter(int i, int depth) {
+    public SequenceMethodVisitor(int i, int depth) {
         super(i);
         this.depth = depth;
     }
 
-    public MethodAdapter(int i, MethodVisitor methodVisitor, int depth, String callingClassName) {
+    public SequenceMethodVisitor(int i, MethodVisitor methodVisitor, int depth, String callingClassName) {
         super(i, methodVisitor);
         this.depth = depth;
         this.fullCallingClassName = callingClassName;
@@ -44,19 +47,7 @@ public class MethodAdapter extends MethodVisitor {
     public void visitMethodInsn(int opcode, String owner, String name, String desc, boolean itf) {
         super.visitMethodInsn(opcode, owner, name, desc, itf);
 
-//        System.out.println("method name: " + name);
-//        System.out.println("Class Name: " + owner);
-//        System.out.println("description: " + desc);
-//        //Creating data structure for this method call
-//        System.out.println("********** IN METHODINSN NOW ***************");
-//        System.out.println("FULL calling class name: " + this.fullCallingClassName);
-//        System.out.println("calling class name: " + this.callingClassName);
-        String calledClass//;
-//        if (name.equals("<init>"))
-//            calledClass
-
-                = getCalledClass(owner);
-        //System.out.println("called class: " + calledClass);
+        String calledClass = getCalledClass(owner);
         String methodName;
         if (name.equals("<init>"))
             methodName = "new";

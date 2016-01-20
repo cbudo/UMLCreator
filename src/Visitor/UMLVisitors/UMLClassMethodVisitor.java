@@ -1,4 +1,4 @@
-package Visitor;
+package Visitor.UMLVisitors;
 
 import DataStorage.ParsedDataStorage;
 import ParseClasses.AbstractData;
@@ -53,7 +53,7 @@ public class UMLClassMethodVisitor extends ClassVisitor {
         }
 
         ParsedDataStorage.getInstance().addMethod(className, method);
-        //return new MethodAdapter(Opcodes.ASM5, toDecorate, depth, className);
+        //return new SequenceMethodVisitor(Opcodes.ASM5, toDecorate, depth, className);
         return new UMLMethodVisitor(Opcodes.ASM5, toDecorate, className);
     }
 

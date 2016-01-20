@@ -38,6 +38,12 @@ public class ParsedDataStorage implements IDataStorage, ITraverser {
         return storage;
     }
 
+    //This should almost definitely NEVER be called, only to be used for testing. The only time this should ever
+    //be accessed is through reflection when reseting between tests
+    private void destroySelf() {
+        storage = null;
+    }
+
     public int getMax_depth() {
         return max_depth;
     }
