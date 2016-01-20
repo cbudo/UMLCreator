@@ -79,13 +79,13 @@ public class SequenceMethodVisitor extends MethodVisitor {
         //newSequenceMethod.setFullClassName(this.fullCallingClassName);
         ParsedDataStorage.getInstance().addMethodCall(newSequenceMethod);
 
-//        try {
-//            downTheRabbitHole(owner, methodName);
-//        } catch (Exception e) {
-//            System.out.println("YA DUN FUCKED SON");
-//            e.printStackTrace();
+        try {
+            downTheRabbitHole(owner, methodName);
+        } catch (Exception e) {
+            System.out.println("YA DUN FUCKED SON");
+            e.printStackTrace();
             return;
-        //}
+        }
 
     }
 
