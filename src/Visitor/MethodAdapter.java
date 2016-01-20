@@ -2,6 +2,7 @@ package Visitor;
 
 import DataStorage.ParsedDataStorage;
 import ParseClasses.MethodCall;
+import Visitor.UMLVisitors.UMLClassMethodVisitor;
 import jdk.nashorn.internal.codegen.types.Type;
 import org.objectweb.asm.ClassReader;
 import org.objectweb.asm.ClassVisitor;
