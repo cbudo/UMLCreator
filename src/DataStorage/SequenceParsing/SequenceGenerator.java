@@ -6,7 +6,7 @@ import DataStorage.ParsedDataStorage;
 import ParseClasses.MethodCall;
 import Visitor.ClassDeclarationVisitor;
 import Visitor.ClassFieldVisitor;
-import Visitor.SequenceClassMethodVisitor;
+import Visitor.SequenceVisitors.SequenceClassMethodVisitor;
 import org.objectweb.asm.ClassReader;
 import org.objectweb.asm.ClassVisitor;
 import org.objectweb.asm.Opcodes;

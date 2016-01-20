@@ -1,7 +1,9 @@
-package Visitor;
+package Visitor.SequenceVisitors;
 
 import DataStorage.ParsedDataStorage;
 import ParseClasses.MethodCall;
+import Visitor.ClassDeclarationVisitor;
+import Visitor.ClassFieldVisitor;
 import Visitor.UMLVisitors.UMLClassMethodVisitor;
 import jdk.nashorn.internal.codegen.types.Type;
 import org.objectweb.asm.ClassReader;

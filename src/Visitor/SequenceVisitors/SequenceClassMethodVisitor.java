@@ -1,4 +1,4 @@
-package Visitor;
+package Visitor.SequenceVisitors;
 
 import DataStorage.ParsedDataStorage;
 import ParseClasses.AbstractData;
