@@ -4,8 +4,8 @@ import ParseClasses.AbstractData;
 import ParseClasses.AbstractJavaClassRep;
 import ParseClasses.IRelation;
 import ParseClasses.MethodCall;
-import Visitor.ITraverser;
-import Visitor.IVisitor;
+import Visitors.ITraverser;
+import Visitors.IVisitor;
 
 import java.util.*;
 

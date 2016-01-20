@@ -1,8 +1,8 @@
 package ParseClasses;
 
 import DataStorage.SequenceParsing.SequenceVisitor;
-import Visitor.ITraverser;
-import Visitor.IVisitor;
+import Visitors.ITraverser;
+import Visitors.IVisitor;
 
 /**
  * Created by budocf on 1/13/2016.

@@ -3,15 +3,18 @@ package DataStorage.SequenceParsing;
 import DataStorage.IDataStorage;
 import DataStorage.IGenerator;
 import DataStorage.ParsedDataStorage;
-import ParseClasses.MethodCall;
-import Visitor.ClassDeclarationVisitor;
-import Visitor.ClassFieldVisitor;
-import Visitor.SequenceVisitors.SequenceClassMethodVisitor;
+import Visitors.ClassDeclarationVisitor;
+import Visitors.ClassFieldVisitor;
+import Visitors.OutputStreams.SequenceOutputStream;
+import Visitors.SequenceVisitors.SequenceClassMethodVisitor;
+import com.sun.xml.internal.messaging.saaj.util.ByteOutputStream;
 import org.objectweb.asm.ClassReader;
 import org.objectweb.asm.ClassVisitor;
 import org.objectweb.asm.Opcodes;
 
+import java.io.FileNotFoundException;
 import java.io.IOException;
+import java.io.OutputStream;
 import java.util.List;
 
 /**
@@ -26,14 +29,28 @@ public class SequenceGenerator implements IGenerator {
 
     @Override
     public String Generate() {
+//        IDataStorage data = ParsedDataStorage.getInstance();
+//        SequenceVisitor methodVisitor = new SequenceVisitor();
+//        StringBuilder classes = new StringBuilder();
+//        StringBuilder methods = new StringBuilder();
+//        for (MethodCall mc : data.getMethods()) {
+//            mc.acceptSequenceClass(methodVisitor, classes, methods);
+//        }
+//        return classes.toString() + "\n" + methods.toString();
         IDataStorage data = ParsedDataStorage.getInstance();
-        SequenceVisitor methodVisitor = new SequenceVisitor();
-        StringBuilder classes = new StringBuilder();
-        StringBuilder methods = new StringBuilder();
-        for (MethodCall mc : data.getMethods()) {
-            mc.acceptSequenceClass(methodVisitor, classes, methods);
+        OutputStream os = null;
+        SequenceOutputStream fos = null;
+        try {
+            os = new ByteOutputStream();
+            fos = new SequenceOutputStream(os);
+            fos.write((ParsedDataStorage) data);
+        } catch (FileNotFoundException e) {
+            e.printStackTrace();
+        } catch (IOException e) {
+            e.printStackTrace();
         }
-        return classes.toString() + "\n" + methods.toString();
+
+        return os.toString();
     }
 
     @Override

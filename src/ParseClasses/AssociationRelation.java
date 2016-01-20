@@ -1,6 +1,6 @@
 package ParseClasses;
 
-import Visitor.IVisitor;
+import Visitors.IVisitor;
 
 /**
  * Created by efronbs on 1/18/2016.

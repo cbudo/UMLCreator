@@ -1,6 +1,6 @@
 package ParseClasses;
 
-import Visitor.ITraverser;
+import Visitors.ITraverser;
 
 /**
  * Created by budocf on 1/13/2016.

@@ -1,11 +1,11 @@
-package Visitor.OutputStreams;
+package Visitors.OutputStreams;
 
 import DataStorage.ParsedDataStorage;
 import ParseClasses.*;
-import Visitor.ITraverser;
-import Visitor.IVisitor;
-import Visitor.VisitType;
-import Visitor.Visitor;
+import Visitors.ITraverser;
+import Visitors.IVisitor;
+import Visitors.VisitType;
+import Visitors.Visitor;
 
 import java.io.FilterOutputStream;
 import java.io.IOException;

@@ -1,6 +1,6 @@
 package ParseClasses;
 
-import Visitor.IVisitor;
+import Visitors.IVisitor;
 
 import java.util.ArrayList;
 import java.util.List;

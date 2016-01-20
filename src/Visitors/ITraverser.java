@@ -1,4 +1,4 @@
-package Visitor;
+package Visitors;
 
 /**
  * Created by budocf on 1/19/2016.

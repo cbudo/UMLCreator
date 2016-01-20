@@ -1,6 +1,6 @@
 package ParseClasses;
 
-import Visitor.ITraverser;
+import Visitors.ITraverser;
 
 import java.security.KeyRep;
 import java.util.HashMap;

@@ -1,9 +1,9 @@
 package DataStorage;
 
-import Visitor.ClassDeclarationVisitor;
-import Visitor.ClassFieldVisitor;
-import Visitor.OutputStreams.UMLOutputStream;
-import Visitor.UMLVisitors.UMLClassMethodVisitor;
+import Visitors.ClassDeclarationVisitor;
+import Visitors.ClassFieldVisitor;
+import Visitors.OutputStreams.UMLOutputStream;
+import Visitors.UMLVisitors.UMLClassMethodVisitor;
 import com.sun.xml.internal.messaging.saaj.util.ByteOutputStream;
 import org.objectweb.asm.ClassReader;
 import org.objectweb.asm.ClassVisitor;

@@ -1,4 +1,4 @@
-package Visitor.UMLVisitors;
+package Visitors.UMLVisitors;
 
 import DataStorage.ParsedDataStorage;
 import ParseClasses.AbstractData;
