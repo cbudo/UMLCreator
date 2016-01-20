@@ -68,7 +68,7 @@ public class SequenceVisitorTest {
             if (listOfAnsLines.get(i).isEmpty()) {
                 listOfAnsLines.remove(i);
             }
-            System.out.println(listOfAnsLines.get(i));
+            //System.out.println(listOfAnsLines.get(i));
 
         }
 
@@ -92,5 +92,9 @@ public class SequenceVisitorTest {
         assertEquals("first_c2toc3(int, int, char)", tokenizedMethods.get(1)[2]);
         assertEquals("second_c2toc3(String, boolean)", tokenizedMethods.get(2)[2]);
 
+        //finally, checking if the return type is correct on everything
+        assertEquals("void", tokenizedMethods.get(0)[3]);
+        assertEquals("int", tokenizedMethods.get(1)[3]);
+        assertEquals("void", tokenizedMethods.get(2)[3]);
     }
 }

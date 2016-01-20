@@ -27,7 +27,7 @@ public class ClassFieldVisitor extends ClassVisitor {
 		String type = Type.getType(desc).getClassName();
         type = getInnermostClass(type);
         AbstractData field = new FieldRep(name, access, type);
-        AssociationRelation newAssoc = new AssociationRelation(getInnermostClass(name), getInnermostClass(this.className));
+        AssociationRelation newAssoc = new AssociationRelation(getInnermostClass(type), getInnermostClass(this.className));
         ParsedDataStorage.getInstance().addAssociationRelation(newAssoc);
         // DONE: add this field to your internal representation of the current class.
         // What is a good way to know what the current class is?
