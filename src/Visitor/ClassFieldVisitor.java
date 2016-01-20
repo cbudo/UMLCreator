@@ -39,7 +39,10 @@ public class ClassFieldVisitor extends ClassVisitor {
         String t = someType.replace(".java", "");
         t = t.replace("\\<", "");
         t = t.replace("\\>", "");
-        String[] ar = t.split(".");
-        return ar[ar.length - 1];
+        if (t.contains(".")) {
+            String[] ar = t.split("[.]");
+            return ar[ar.length - 1];
+        }
+        return t;
     }
 }
