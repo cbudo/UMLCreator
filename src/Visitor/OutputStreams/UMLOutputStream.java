@@ -29,6 +29,14 @@ public class UMLOutputStream extends FilterOutputStream {
     public UMLOutputStream(OutputStream out) throws IOException {
         super(out);
         this.visitor = new Visitor();
+        setupPostVisit();
+        setupPrevisit();
+        setupVisitAbstractClass();
+        setupVisitClass();
+        setupVisitField();
+        setupVisitInterface();
+        setupVisitMethod();
+        setupRelationVisit();
     }
 
     private void write(String m) {
@@ -43,35 +51,52 @@ public class UMLOutputStream extends FilterOutputStream {
         storage.accept(visitor);
     }
 
-    public void setupVisitClass() {
-        this.visitor.addVisit(VisitType.Visit, AbstractJavaClassRep.class, (ITraverser t) -> {
+    public void setupVisitAbstractClass() {
+        this.visitor.addVisit(VisitType.Visit, AbstractClassRep.class, (ITraverser t) -> {
             AbstractJavaClassRep e = (AbstractJavaClassRep) t;
-            StringBuilder sb = new StringBuilder();
-            String in = e.getName().substring(e.getName().lastIndexOf("/") + 1);
-            sb.append("\n" + in
+            String in = "<I>" + e.getName().substring(e.getName().lastIndexOf("/") + 1) + "</I>";
+            this.write("\n" + in
                     + " [\nshape = \"record\",\nlabel = \"{"
                     + in + "\\l" + "|");
 
             for (AbstractData f : e.getFieldsMap().values()) {
                 f.accept(visitor);
             }
-            sb.append("|");
+            this.write("|");
 
             for (AbstractData m : e.getMethodsMap().values()) {
                 m.accept(visitor);
             }
 
-            sb.append("}\"];");
-            this.write(sb.toString());
+            this.write("}\"];");
+        });
+    }
+    public void setupVisitClass() {
+        this.visitor.addVisit(VisitType.Visit, ClassRep.class, (ITraverser t) -> {
+            AbstractJavaClassRep e = (AbstractJavaClassRep) t;
+            String in = e.getName().substring(e.getName().lastIndexOf("/") + 1);
+            this.write("\n" + in
+                    + " [\nshape = \"record\",\nlabel = \"{"
+                    + in + "\\l" + "|");
+
+            for (AbstractData f : e.getFieldsMap().values()) {
+                f.accept(visitor);
+            }
+            this.write("|");
+
+            for (AbstractData m : e.getMethodsMap().values()) {
+                m.accept(visitor);
+            }
+
+            this.write("}\"];");
         });
     }
 
     public void setupVisitInterface() {
         this.visitor.addVisit(VisitType.Visit, InterfaceRep.class, (ITraverser t) -> {
             InterfaceRep i = (InterfaceRep) t;
-            StringBuilder currentString = new StringBuilder();
             String in = i.getName().substring(i.getName().lastIndexOf("/") + 1);
-            currentString.append("\n" + in
+            this.write("\n" + in
                     + " [\nshape = \"record\",\nlabel = \"{"
                     + "\\<\\<interface\\>\\>\\l"
                     + in + "\\l" + "|");
@@ -80,13 +105,13 @@ public class UMLOutputStream extends FilterOutputStream {
                 f.accept(visitor);
             }
 
-            currentString.append("|");
+            this.write("|");
 
             for (AbstractData m : i.getMethodsMap().values()) {
-                currentString.append(m.toString());
+                this.write(m.toString());
             }
 
-            currentString.append("}\"];");
+            this.write("}\"];");
         });
     }
 
@@ -119,6 +144,17 @@ public class UMLOutputStream extends FilterOutputStream {
     public void setupPostVisit() {
         this.visitor.addVisit(VisitType.PostVisit, ParsedDataStorage.class, (ITraverser t) -> {
             this.write("\n}\n");
+        });
+    }
+
+    public void setupRelationVisit() {
+        this.visitor.addVisit(VisitType.Visit, UsesRelation.class, (ITraverser t) -> {
+            UsesRelation a = (UsesRelation) t;
+            this.write(a.getFrom() + " -> " + a.getTo() + " [arrowhead=\"vee\", style=\"dashed\"];");
+        });
+        this.visitor.addVisit(VisitType.Visit, AssociationRelation.class, (ITraverser t) -> {
+            AssociationRelation a = (AssociationRelation) t;
+            this.write(a.getFrom() + " -> " + a.getTo() + " [arrowhead=\"onormal\", style=\"dashed\"];");
         });
     }
 

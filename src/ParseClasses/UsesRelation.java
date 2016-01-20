@@ -1,5 +1,7 @@
 package ParseClasses;
 
+import Visitor.IVisitor;
+
 /**
  * Created by efronbs on 1/18/2016.
  */
@@ -18,5 +20,31 @@ public class UsesRelation implements IRelation {
 
     public String getFrom() {
         return from;
+    }
+
+    @Override
+    public void accept(IVisitor v) {
+        v.preVisit(this);
+        v.visit(this);
+        v.postVisit(this);
+    }
+
+    @Override
+    public boolean equals(Object o) {
+        if (this == o) return true;
+        if (!(o instanceof UsesRelation)) return false;
+
+        UsesRelation that = (UsesRelation) o;
+
+        if (getFrom() != null ? !getFrom().equals(that.getFrom()) : that.getFrom() != null) return false;
+        return getTo() != null ? getTo().equals(that.getTo()) : that.getTo() == null;
+
+    }
+
+    @Override
+    public int hashCode() {
+        int result = getFrom() != null ? getFrom().hashCode() : 0;
+        result = 31 * result + (getTo() != null ? getTo().hashCode() : 0);
+        return result;
     }
 }

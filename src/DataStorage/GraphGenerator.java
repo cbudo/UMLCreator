@@ -1,19 +1,17 @@
-package DataStorage.UMLClassParsing;
+package DataStorage;
 
-import DataStorage.IDataStorage;
-import DataStorage.IGenerator;
-import DataStorage.ParsedDataStorage;
-import ParseClasses.AbstractClassRep;
-import ParseClasses.AbstractJavaClassRep;
-import ParseClasses.ClassRep;
 import Visitor.ClassDeclarationVisitor;
 import Visitor.ClassFieldVisitor;
+import Visitor.OutputStreams.UMLOutputStream;
 import Visitor.UMLVisitors.UMLClassMethodVisitor;
+import com.sun.xml.internal.messaging.saaj.util.ByteOutputStream;
 import org.objectweb.asm.ClassReader;
 import org.objectweb.asm.ClassVisitor;
 import org.objectweb.asm.Opcodes;
 
+import java.io.FileNotFoundException;
 import java.io.IOException;
+import java.io.OutputStream;
 import java.util.List;
 
 /**
@@ -22,22 +20,19 @@ import java.util.List;
 public class GraphGenerator implements IGenerator {
     public static String buildUMLClassDiagram() {
         IDataStorage data = ParsedDataStorage.getInstance();
-        IUMLVisitor classVisitBuilder = new UMLClassVisitor();
-        StringBuilder graphString = new StringBuilder();
-
-        ((UMLClassVisitor) classVisitBuilder).preVisit(graphString);
-
-        for (AbstractJavaClassRep c : data.getClasses()) {
-            ((ClassRep) c).acceptUMLClass(classVisitBuilder, graphString);
+        OutputStream os = null;
+        UMLOutputStream fos = null;
+        try {
+            os = new ByteOutputStream();
+            fos = new UMLOutputStream(os);
+            fos.write((ParsedDataStorage) data);
+        } catch (FileNotFoundException e) {
+            e.printStackTrace();
+        } catch (IOException e) {
+            e.printStackTrace();
         }
 
-        for (AbstractJavaClassRep ac : data.getAbstractClasses()) {
-            ((AbstractClassRep) ac).acceptUMLClass(classVisitBuilder, graphString);
-        }
-
-        ((UMLClassVisitor) classVisitBuilder).postVisit(graphString);
-
-        return graphString.toString();
+        return os.toString();
     }
 
     @Override
