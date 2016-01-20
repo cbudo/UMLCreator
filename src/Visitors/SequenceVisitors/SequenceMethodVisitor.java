@@ -4,7 +4,6 @@ import DataStorage.ParsedDataStorage;
 import ParseClasses.MethodCall;
 import Visitors.ClassDeclarationVisitor;
 import Visitors.ClassFieldVisitor;
-import Visitors.UMLVisitors.UMLClassMethodVisitor;
 import jdk.nashorn.internal.codegen.types.Type;
 import org.objectweb.asm.ClassReader;
 import org.objectweb.asm.ClassVisitor;
@@ -101,7 +100,7 @@ public class SequenceMethodVisitor extends MethodVisitor {
         ClassVisitor fieldVisitor = new ClassFieldVisitor(Opcodes.ASM5, decVisitor, name);
 
         // DECORATE field visitor with method visitor
-        ClassVisitor methodVisitor = new UMLClassMethodVisitor(Opcodes.ASM5, fieldVisitor, name, desiredMethodName, depth + 1);
+        ClassVisitor methodVisitor = new SequenceClassMethodVisitor(Opcodes.ASM5, fieldVisitor, name, desiredMethodName, depth + 1);
 
         reader.accept(methodVisitor, ClassReader.EXPAND_FRAMES);
     }
