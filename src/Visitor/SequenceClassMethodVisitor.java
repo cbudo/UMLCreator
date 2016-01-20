@@ -1,4 +1,4 @@
-package Visitor.UMLVisitors;
+package Visitor;
 
 import DataStorage.ParsedDataStorage;
 import ParseClasses.AbstractData;
@@ -9,24 +9,27 @@ import org.objectweb.asm.MethodVisitor;
 import org.objectweb.asm.Opcodes;
 import org.objectweb.asm.Type;
 
-public class UMLClassMethodVisitor extends ClassVisitor {
+/**
+ * Created by efronbs on 1/19/2016.
+ */
+public class SequenceClassMethodVisitor extends ClassVisitor {
     String className;
     String desiredMethodName;
     int depth;
 
-    public UMLClassMethodVisitor(int api) {
+    public SequenceClassMethodVisitor(int api) {
         super(api);
         this.className = null;
     }
 
-    public UMLClassMethodVisitor(int api, ClassVisitor decorated, String className) {
+    public SequenceClassMethodVisitor(int api, ClassVisitor decorated, String className) {
         super(api, decorated);
         this.className = className;
         this.desiredMethodName = "";
         this.depth = 0;
     }
 
-    public UMLClassMethodVisitor(int api, ClassVisitor decorated, String className, String desiredMethodName, int currentDepth) {
+    public SequenceClassMethodVisitor(int api, ClassVisitor decorated, String className, String desiredMethodName, int currentDepth) {
         super(api, decorated);
         this.className = className;
         this.desiredMethodName = desiredMethodName;
@@ -37,6 +40,7 @@ public class UMLClassMethodVisitor extends ClassVisitor {
     @Override
     public MethodVisitor visitMethod(int access, String name, String desc, String signature, String[] exceptions) {
         MethodVisitor toDecorate = super.visitMethod(access, name, desc, signature, exceptions);
+
         int accessLevel = access;
         String returnType = addReturnType(desc);
         String[] args = addArguments(desc);
@@ -53,8 +57,7 @@ public class UMLClassMethodVisitor extends ClassVisitor {
         }
 
         ParsedDataStorage.getInstance().addMethod(className, method);
-        //return new SequenceMethodVisitor(Opcodes.ASM5, toDecorate, depth, className);
-        return new UMLMethodVisitor(Opcodes.ASM5, toDecorate, className);
+        return new SequenceMethodVisitor(Opcodes.ASM5, toDecorate, depth, className);
     }
 
     String addReturnType(String desc) {

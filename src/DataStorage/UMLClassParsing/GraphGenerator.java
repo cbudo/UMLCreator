@@ -1,7 +1,8 @@
-package DataStorage;
+package DataStorage.UMLClassParsing;
 
-import DataStorage.UMLClassParsing.IUMLVisitor;
-import DataStorage.UMLClassParsing.UMLClassVisitor;
+import DataStorage.IDataStorage;
+import DataStorage.IGenerator;
+import DataStorage.ParsedDataStorage;
 import ParseClasses.AbstractClassRep;
 import ParseClasses.AbstractJavaClassRep;
 import ParseClasses.ClassRep;

@@ -1,15 +1,14 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="1b357d25-b641-458c-8a8c-24064c31616e" name="Default" comment="fixed some parsing bugs">
-      <change type="MOVED" beforePath="$PROJECT_DIR$/src/Visitor/UMLClassMethodVisitor.java" afterPath="$PROJECT_DIR$/src/Visitor/UMLVisitors/UMLClassMethodVisitor.java" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/src/Visitor/UMLMethodVisitor.java" afterPath="$PROJECT_DIR$/src/Visitor/UMLVisitors/UMLMethodVisitor.java" />
+    <list default="true" id="1b357d25-b641-458c-8a8c-24064c31616e" name="Default" comment="Cleaned up DesignParser to better utilize factory pattern">
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/Visitor/SequenceClassMethodVisitor.java" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/src/DataStorage/GraphGenerator.java" afterPath="$PROJECT_DIR$/src/DataStorage/UMLClassParsing/GraphGenerator.java" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/src/DataStorage/SequenceGenerator.java" afterPath="$PROJECT_DIR$/src/DataStorage/SequenceParsing/SequenceGenerator.java" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/src/Visitor/MethodAdapter.java" afterPath="$PROJECT_DIR$/src/Visitor/SequenceMethodVisitor.java" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/DataStorage/GraphGenerator.java" afterPath="$PROJECT_DIR$/src/DataStorage/GraphGenerator.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/DataStorage/IGenerator.java" afterPath="$PROJECT_DIR$/src/DataStorage/IGenerator.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/DataStorage/SequenceGenerator.java" afterPath="$PROJECT_DIR$/src/DataStorage/SequenceGenerator.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/Visitor/DesignParser.java" afterPath="$PROJECT_DIR$/src/Visitor/DesignParser.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/Visitor/MethodAdapter.java" afterPath="$PROJECT_DIR$/src/Visitor/MethodAdapter.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/DataStorage/GeneratorFactory.java" afterPath="$PROJECT_DIR$/src/DataStorage/GeneratorFactory.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/Visitor/UMLVisitors/UMLClassMethodVisitor.java" afterPath="$PROJECT_DIR$/src/Visitor/UMLVisitors/UMLClassMethodVisitor.java" />
     </list>
     <ignored path="UMLCreator.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -36,11 +35,11 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="375">
-      <file leaf-file-name="DesignParser.java" pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/src/Visitor/DesignParser.java">
+      <file leaf-file-name="SequenceClassMethodVisitor.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/Visitor/SequenceClassMethodVisitor.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.8013245">
-              <caret line="33" column="0" selection-start-line="33" selection-start-column="0" selection-end-line="33" selection-end-column="0" />
+            <state vertical-scroll-proportion="0.0">
+              <caret line="43" column="0" selection-start-line="43" selection-start-column="0" selection-end-line="43" selection-end-column="0" />
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
@@ -48,34 +47,24 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="IGenerator.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/DataStorage/IGenerator.java">
+      <file leaf-file-name="SequenceGenerator.java" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/src/DataStorage/SequenceParsing/SequenceGenerator.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state vertical-scroll-proportion="0.26710817">
+              <caret line="28" column="60" selection-start-line="28" selection-start-column="60" selection-end-line="28" selection-end-column="60" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="SequenceMethodVisitor.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/Visitor/SequenceMethodVisitor.java">
           <provider selected="true" editor-type-id="text-editor">
             <state vertical-scroll-proportion="0.0">
-              <caret line="0" column="20" selection-start-line="0" selection-start-column="20" selection-end-line="0" selection-end-column="20" />
+              <caret line="27" column="0" selection-start-line="27" selection-start-column="0" selection-end-line="27" selection-end-column="0" />
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="GraphGenerator.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/DataStorage/GraphGenerator.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.0">
-              <caret line="31" column="0" selection-start-line="31" selection-start-column="0" selection-end-line="31" selection-end-column="0" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="SequenceGenerator.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/DataStorage/SequenceGenerator.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.0">
-              <caret line="66" column="0" selection-start-line="66" selection-start-column="0" selection-end-line="66" selection-end-column="0" />
-              <folding />
             </state>
           </provider>
         </entry>
@@ -101,9 +90,6 @@
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/src/headfirst/factory/pizzaaf/Spinach.java" />
-        <option value="$PROJECT_DIR$/src/headfirst/factory/pizzaaf/NYPizzaStore.java" />
-        <option value="$PROJECT_DIR$/src/GraphMaker/Translator.java" />
         <option value="$PROJECT_DIR$/src/NewParseClasses/AbstractClassWithFieldsRep.java" />
         <option value="$PROJECT_DIR$/src/Parse/IDataStorage.java" />
         <option value="$PROJECT_DIR$/src/Parse/ParsedDataStorage.java" />
@@ -152,6 +138,9 @@
         <option value="$PROJECT_DIR$/src/DataStorage/GraphGenerator.java" />
         <option value="$PROJECT_DIR$/src/DataStorage/SequenceGenerator.java" />
         <option value="$PROJECT_DIR$/src/Visitor/DesignParser.java" />
+        <option value="$PROJECT_DIR$/src/Visitor/SequenceClassMethodVisitor.java" />
+        <option value="$PROJECT_DIR$/src/Visitor/SequenceMethodVisitor.java" />
+        <option value="$PROJECT_DIR$/src/DataStorage/SequenceParsing/SequenceGenerator.java" />
       </list>
     </option>
   </component>
@@ -320,6 +309,28 @@
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="UMLCreator" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="UMLCreatorActual" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="src" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="DataStorage" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="SequenceParsing" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
         </subPane>
       </pane>
     </panes>
@@ -351,18 +362,21 @@
     <property name="last_directory_selection" value="$PROJECT_DIR$/src" />
   </component>
   <component name="RecentsManager">
-    <key name="CopyFile.RECENT_KEYS">
-      <recent name="C:\Users\budocf\Documents\Courses\Junior\CSSE374\Project\UMLCreator\MS3_Turnin" />
-      <recent name="C:\Users\efronbs\Documents\School\y3q2\374\UMLCreatorActual\src\headfirst\factory\pizzaaf\pizzaaf" />
-      <recent name="C:\Users\efronbs\Documents\School\y3q2\374\UMLCreatorActual\src\headfirst\factory\pizzaaf" />
-      <recent name="C:\Users\budocf\Documents\Courses\Junior\CSSE374\Project\UMLCreator\src\Visitor" />
-    </key>
     <key name="MoveFile.RECENT_KEYS">
       <recent name="C:\Users\efronbs\Documents\School\y3q2\374\UMLCreatorActual\src" />
       <recent name="C:\Users\efronbs\Documents\School\y3q2\374\UMLCreatorActual" />
       <recent name="C:\Users\budocf\Documents\Courses\Junior\CSSE374\Project\UMLCreator\MS3_Turnin" />
       <recent name="C:\Users\efronbs\Documents\School\y3q2\374\UMLCreatorActual\src\DataStorage" />
       <recent name="C:\Users\efronbs\Documents\School\y3q2\374\UMLCreatorActual\src\Visitor" />
+    </key>
+    <key name="MoveClassesOrPackagesDialog.RECENTS_KEY">
+      <recent name="DataStorage.SequenceParsing" />
+    </key>
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="C:\Users\budocf\Documents\Courses\Junior\CSSE374\Project\UMLCreator\MS3_Turnin" />
+      <recent name="C:\Users\efronbs\Documents\School\y3q2\374\UMLCreatorActual\src\headfirst\factory\pizzaaf\pizzaaf" />
+      <recent name="C:\Users\efronbs\Documents\School\y3q2\374\UMLCreatorActual\src\headfirst\factory\pizzaaf" />
+      <recent name="C:\Users\budocf\Documents\Courses\Junior\CSSE374\Project\UMLCreator\src\Visitor" />
     </key>
   </component>
   <component name="RunManager" selected="Application.DesignParser">
@@ -375,7 +389,7 @@
       </extension>
       <option name="MAIN_CLASS_NAME" value="Visitor.DesignParser" />
       <option name="VM_PARAMETERS" value="" />
-      <option name="PROGRAM_PARAMETERS" value="U SampleASMOutput.Register SampleASMOutput.Payment SampleASMOutput.Sale" />
+      <option name="PROGRAM_PARAMETERS" value="S SampleASMOutput.Sale.makePayment" />
       <option name="WORKING_DIRECTORY" value="file://$PROJECT_DIR$" />
       <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
       <option name="ALTERNATIVE_JRE_PATH" />
@@ -835,7 +849,7 @@
       <workItem from="1453127088403" duration="619000" />
       <workItem from="1453157295626" duration="4994000" />
       <workItem from="1453167303170" duration="7102000" />
-      <workItem from="1453230067208" duration="8536000" />
+      <workItem from="1453230067208" duration="10537000" />
     </task>
     <task id="LOCAL-00001" summary="added asm libraries and visitor package">
       <created>1451953507803</created>
@@ -999,11 +1013,17 @@
       <option name="project" value="LOCAL" />
       <updated>1453258136191</updated>
     </task>
-    <option name="localTasksCounter" value="28" />
+    <task id="LOCAL-00028" summary="Cleaned up DesignParser to better utilize factory pattern">
+      <created>1453259229781</created>
+      <option name="number" value="00028" />
+      <option name="project" value="LOCAL" />
+      <updated>1453259229781</updated>
+    </task>
+    <option name="localTasksCounter" value="29" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="164067000" />
+    <option name="totallyTimeSpent" value="166068000" />
   </component>
   <component name="TodoView" selected-index="1">
     <todo-panel id="selected-file">
@@ -1075,7 +1095,8 @@
     <MESSAGE value="generating sequence diagrams properly" />
     <MESSAGE value="working on changing ASM parsing." />
     <MESSAGE value="fixed some parsing bugs" />
-    <option name="LAST_COMMIT_MESSAGE" value="fixed some parsing bugs" />
+    <MESSAGE value="Cleaned up DesignParser to better utilize factory pattern" />
+    <option name="LAST_COMMIT_MESSAGE" value="Cleaned up DesignParser to better utilize factory pattern" />
     <option name="OPTIMIZE_IMPORTS_BEFORE_PROJECT_COMMIT" value="true" />
     <option name="REFORMAT_BEFORE_PROJECT_COMMIT" value="true" />
     <option name="REARRANGE_BEFORE_PROJECT_COMMIT" value="true" />
@@ -1269,14 +1290,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/Visitor/MethodAdapter.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.16997792">
-          <caret line="7" column="7" selection-start-line="7" selection-start-column="7" selection-end-line="7" selection-end-column="7" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/Visitor/UMLVisitors/UMLMethodVisitor.java">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.09713025">
@@ -1303,14 +1316,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
           <caret line="7" column="29" selection-start-line="7" selection-start-column="29" selection-end-line="7" selection-end-column="29" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/SampleASMOutput/Register.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="5" column="13" selection-start-line="5" selection-start-column="13" selection-end-line="5" selection-end-column="13" />
           <folding />
         </state>
       </provider>
@@ -1401,14 +1406,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/Visitor/UMLVisitors/UMLClassMethodVisitor.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="1.1421405">
-          <caret line="73" column="0" selection-start-line="73" selection-start-column="0" selection-end-line="73" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/DataStorage/ParsedDataStorage.java">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.33277592">
@@ -1425,17 +1422,9 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/DataStorage/SequenceGenerator.java">
+    <entry file="file://$PROJECT_DIR$/src/DataStorage/UMLClassParsing/GraphGenerator.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="66" column="0" selection-start-line="66" selection-start-column="0" selection-end-line="66" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/DataStorage/GraphGenerator.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
+        <state vertical-scroll-proportion="-0.07284768">
           <caret line="31" column="0" selection-start-line="31" selection-start-column="0" selection-end-line="31" selection-end-column="0" />
           <folding />
         </state>
@@ -1443,8 +1432,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/DataStorage/IGenerator.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="0" column="20" selection-start-line="0" selection-start-column="20" selection-end-line="0" selection-end-column="20" />
+        <state vertical-scroll-proportion="0.33995584">
+          <caret line="14" column="0" selection-start-line="14" selection-start-column="0" selection-end-line="14" selection-end-column="0" />
           <folding>
             <element signature="imports" expanded="true" />
           </folding>
@@ -1453,11 +1442,71 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/Visitor/DesignParser.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.8013245">
-          <caret line="33" column="0" selection-start-line="33" selection-start-column="0" selection-end-line="33" selection-end-column="0" />
+        <state vertical-scroll-proportion="0.46136865">
+          <caret line="26" column="23" selection-start-line="26" selection-start-column="23" selection-end-line="26" selection-end-column="23" />
           <folding>
             <element signature="imports" expanded="true" />
           </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/Visitor/UMLVisitors/UMLClassMethodVisitor.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="84" column="0" selection-start-line="84" selection-start-column="0" selection-end-line="84" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/Visitor/SequenceMethodVisitor.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="27" column="0" selection-start-line="27" selection-start-column="0" selection-end-line="27" selection-end-column="0" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/Visitor/SequenceClassMethodVisitor.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="43" column="0" selection-start-line="43" selection-start-column="0" selection-end-line="43" selection-end-column="0" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/SampleASMOutput/Payment.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.121412806">
+          <caret line="5" column="13" selection-start-line="5" selection-start-column="13" selection-end-line="5" selection-end-column="13" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/SampleASMOutput/Register.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.121412806">
+          <caret line="5" column="13" selection-start-line="5" selection-start-column="13" selection-end-line="5" selection-end-column="13" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/SampleASMOutput/Sale.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.3156733">
+          <caret line="13" column="0" selection-start-line="13" selection-start-column="0" selection-end-line="13" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/DataStorage/SequenceParsing/SequenceGenerator.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.26710817">
+          <caret line="28" column="60" selection-start-line="28" selection-start-column="60" selection-end-line="28" selection-end-column="60" />
+          <folding />
         </state>
       </provider>
     </entry>

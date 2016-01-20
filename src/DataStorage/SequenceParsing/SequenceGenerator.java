@@ -1,10 +1,12 @@
-package DataStorage;
+package DataStorage.SequenceParsing;
 
-import DataStorage.SequenceParsing.SequenceVisitor;
+import DataStorage.IDataStorage;
+import DataStorage.IGenerator;
+import DataStorage.ParsedDataStorage;
 import ParseClasses.MethodCall;
 import Visitor.ClassDeclarationVisitor;
 import Visitor.ClassFieldVisitor;
-import Visitor.UMLVisitors.UMLClassMethodVisitor;
+import Visitor.SequenceClassMethodVisitor;
 import org.objectweb.asm.ClassReader;
 import org.objectweb.asm.ClassVisitor;
 import org.objectweb.asm.Opcodes;
@@ -52,7 +54,7 @@ public class SequenceGenerator implements IGenerator {
             ClassVisitor fieldVisitor = new ClassFieldVisitor(Opcodes.ASM5, decVisitor, keepinItClassy);
 
             // DECORATE field visitor with method visitor
-            ClassVisitor methodVisitor = new UMLClassMethodVisitor(Opcodes.ASM5, fieldVisitor, keepinItClassy, method, 1);
+            ClassVisitor methodVisitor = new SequenceClassMethodVisitor(Opcodes.ASM5, fieldVisitor, keepinItClassy, method, 1);
 
             // TODO: add more DECORATORS here in later milestones to accomplish specific tasks
 
