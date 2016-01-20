@@ -32,9 +32,9 @@ public class UsesRelation implements IRelation {
     @Override
     public boolean equals(Object o) {
         if (this == o) return true;
-        if (!(o instanceof UsesRelation)) return false;
+        if (!(o instanceof IRelation)) return false;
 
-        UsesRelation that = (UsesRelation) o;
+        IRelation that = (IRelation) o;
 
         if (getFrom() != null ? !getFrom().equals(that.getFrom()) : that.getFrom() != null) return false;
         return getTo() != null ? getTo().equals(that.getTo()) : that.getTo() == null;

@@ -1,7 +1,6 @@
 package DataStorage;
 
 import DataStorage.SequenceParsing.SequenceGenerator;
-import DataStorage.UMLClassParsing.GraphGenerator;
 
 /**
  * Created by budocf on 1/13/2016.

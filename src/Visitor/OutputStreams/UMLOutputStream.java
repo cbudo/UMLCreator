@@ -154,7 +154,7 @@ public class UMLOutputStream extends FilterOutputStream {
         });
         this.visitor.addVisit(VisitType.Visit, AssociationRelation.class, (ITraverser t) -> {
             AssociationRelation a = (AssociationRelation) t;
-            this.write(a.getFrom() + " -> " + a.getTo() + " [arrowhead=\"onormal\", style=\"dashed\"];");
+            this.write(a.getFrom() + " -> " + a.getTo() + " [arrowhead=\"vee\", style=\"solid\"];");
         });
     }
 

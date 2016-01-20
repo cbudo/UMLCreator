@@ -32,9 +32,9 @@ public class AssociationRelation implements IRelation {
     @Override
     public boolean equals(Object o) {
         if (this == o) return true;
-        if (!(o instanceof AssociationRelation)) return false;
+        if (!(o instanceof IRelation)) return false;
 
-        AssociationRelation that = (AssociationRelation) o;
+        IRelation that = (IRelation) o;
 
         if (getFrom() != null ? !getFrom().equals(that.getFrom()) : that.getFrom() != null) return false;
         return getTo() != null ? getTo().equals(that.getTo()) : that.getTo() == null;
