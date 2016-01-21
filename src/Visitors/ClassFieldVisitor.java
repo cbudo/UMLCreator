@@ -26,7 +26,7 @@ public class ClassFieldVisitor extends ClassVisitor {
         FieldVisitor toDecorate = super.visitField(access, name, desc, signature, value);
 		String type = Type.getType(desc).getClassName();
         type = getInnermostClass(type);
-        AbstractData field = new FieldRep(name, access, type);
+        AbstractData field = new FieldRep(name, access, type, className);
         AssociationRelation newAssoc = new AssociationRelation(getInnermostClass(type), getInnermostClass(this.className));
         ParsedDataStorage.getInstance().addAssociationRelation(newAssoc);
         // DONE: add this field to your internal representation of the current class.

@@ -73,11 +73,15 @@ public class UMLOutputStream extends FilterOutputStream {
     }
     public void setupVisitClass() {
         this.visitor.addVisit(VisitType.Visit, ClassRep.class, (ITraverser t) -> {
-            AbstractJavaClassRep e = (AbstractJavaClassRep) t;
+            ClassRep e = (ClassRep) t;
             String in = e.getName().substring(e.getName().lastIndexOf("/") + 1);
             this.write("\n" + in
                     + " [\nshape = \"record\",\nlabel = \"{"
-                    + in + "\\l" + "|");
+                    + in + "\\l\n");
+            if (e.isSingleton()) {
+                this.write("<<Singleton>>\\l\n");
+            }
+            this.write("|\n");
 
             for (AbstractData f : e.getFieldsMap().values()) {
                 f.accept(visitor);
@@ -150,11 +154,11 @@ public class UMLOutputStream extends FilterOutputStream {
     public void setupRelationVisit() {
         this.visitor.addVisit(VisitType.Visit, UsesRelation.class, (ITraverser t) -> {
             UsesRelation a = (UsesRelation) t;
-            this.write(a.getFrom() + " -> " + a.getTo() + " [arrowhead=\"vee\", style=\"dashed\"];");
+            this.write(a.getFrom() + " -> " + a.getTo() + " [arrowhead=\"vee\", style=\"dashed\"];\n");
         });
         this.visitor.addVisit(VisitType.Visit, AssociationRelation.class, (ITraverser t) -> {
             AssociationRelation a = (AssociationRelation) t;
-            this.write(a.getFrom() + " -> " + a.getTo() + " [arrowhead=\"vee\", style=\"solid\"];");
+            this.write(a.getFrom() + " -> " + a.getTo() + " [arrowhead=\"vee\", style=\"solid\"];\n");
         });
     }
 

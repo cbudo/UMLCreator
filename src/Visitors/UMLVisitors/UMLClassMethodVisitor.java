@@ -43,7 +43,7 @@ public class UMLClassMethodVisitor extends ClassVisitor {
 
         String innerName = getInnermostClass(name);
         String innerRet = getInnermostClass(returnType);
-        AbstractData method = new MethodRep(innerName, accessLevel, innerRet);
+        AbstractData method = new MethodRep(innerName, accessLevel, innerRet, className);
 
         UsesRelation retUses = new UsesRelation(innerRet, getInnermostClass(this.className));
         ParsedDataStorage.getInstance().addUsesRelation(retUses);

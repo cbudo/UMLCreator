@@ -3,6 +3,7 @@ package DataStorage;
 import Visitors.ClassDeclarationVisitor;
 import Visitors.ClassFieldVisitor;
 import Visitors.OutputStreams.UMLOutputStream;
+import Visitors.PatternVisitors.SingletonVisitor;
 import Visitors.UMLVisitors.UMLClassMethodVisitor;
 import com.sun.xml.internal.messaging.saaj.util.ByteOutputStream;
 import org.objectweb.asm.ClassReader;
@@ -19,13 +20,15 @@ import java.util.List;
  */
 public class GraphGenerator implements IGenerator {
     public static String buildUMLClassDiagram() {
-        IDataStorage data = ParsedDataStorage.getInstance();
+        ParsedDataStorage data = ParsedDataStorage.getInstance();
+        SingletonVisitor visitS = new SingletonVisitor();
+        visitS.visitAll(data);
         OutputStream os = null;
         UMLOutputStream fos = null;
         try {
             os = new ByteOutputStream();
             fos = new UMLOutputStream(os);
-            fos.write((ParsedDataStorage) data);
+            fos.write(data);
         } catch (FileNotFoundException e) {
             e.printStackTrace();
         } catch (IOException e) {

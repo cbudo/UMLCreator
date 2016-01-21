@@ -41,13 +41,9 @@ public class SequenceClassMethodVisitor extends ClassVisitor {
     public MethodVisitor visitMethod(int access, String name, String desc, String signature, String[] exceptions) {
         MethodVisitor toDecorate = super.visitMethod(access, name, desc, signature, exceptions);
 
-        System.out.println("desired name: " + this.desiredMethodName + " current: " + name);
-
         if (!name.equals(this.desiredMethodName) || this.depth > ParsedDataStorage.getInstance().getMax_depth()) {
             return toDecorate;
         }
-
-        System.out.println("Successfully parsing desired method!");
 
         int accessLevel = access;
         String returnType = addReturnType(desc);
@@ -55,7 +51,7 @@ public class SequenceClassMethodVisitor extends ClassVisitor {
 
         String innerName = getInnermostClass(name);
         String innerRet = getInnermostClass(returnType);
-        AbstractData method = new MethodRep(innerName, accessLevel, innerRet);
+        AbstractData method = new MethodRep(innerName, accessLevel, innerRet, className);
 
         UsesRelation retUses = new UsesRelation(innerRet, getInnermostClass(this.className));
         ParsedDataStorage.getInstance().addUsesRelation(retUses);

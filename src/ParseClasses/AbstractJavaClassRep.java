@@ -10,10 +10,10 @@ import java.util.Map;
  */
 public abstract class AbstractJavaClassRep extends AbstractData
 {
+    protected Map<String, AbstractData> methodsMap;
+    protected Map<String, AbstractData> fieldsMap;
     private List<String> profileTags;
     private List<String> implementsNames;
-    private Map<String, AbstractData> methodsMap;
-    private Map<String, AbstractData> fieldsMap;
 
     public AbstractJavaClassRep(String name, int accessibility)
     {
