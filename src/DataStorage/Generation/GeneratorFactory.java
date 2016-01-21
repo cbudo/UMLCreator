@@ -1,6 +1,4 @@
-package DataStorage;
-
-import DataStorage.SequenceParsing.SequenceGenerator;
+package DataStorage.Generation;
 
 /**
  * Created by budocf on 1/13/2016.

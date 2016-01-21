@@ -1,5 +1,6 @@
-package DataStorage;
+package DataStorage.Generation;
 
+import DataStorage.ParsedDataStorage;
 import Visitors.ClassDeclarationVisitor;
 import Visitors.ClassFieldVisitor;
 import Visitors.OutputStreams.UMLOutputStream;

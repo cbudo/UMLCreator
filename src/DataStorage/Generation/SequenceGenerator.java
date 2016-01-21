@@ -1,7 +1,6 @@
-package DataStorage.SequenceParsing;
+package DataStorage.Generation;
 
 import DataStorage.IDataStorage;
-import DataStorage.IGenerator;
 import DataStorage.ParsedDataStorage;
 import Visitors.ClassDeclarationVisitor;
 import Visitors.ClassFieldVisitor;

@@ -1,6 +1,5 @@
 package ParseClasses;
 
-import DataStorage.SequenceParsing.SequenceVisitor;
 import Visitors.ITraverser;
 import Visitors.IVisitor;
 
@@ -49,10 +48,6 @@ public class MethodCall implements ITraverser {
 
     public String getRetType() {
         return retType;
-    }
-
-    public void acceptSequenceClass(SequenceVisitor methodVisitor, StringBuilder classes, StringBuilder methods) {
-        methodVisitor.visit(this, classes, methods);
     }
 
     public boolean equals(MethodCall method) {
