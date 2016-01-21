@@ -16,7 +16,7 @@ Our design has not changes much since Milestone two, as we were already storing 
 We added functionality to allow for the creation of sequence diagrams using a tool called [SdEdit](http://sdedit.sourceforge.net/) This tool allows you to create sequence diagrams from text files.  We also did some refactoring, changing the UML creation to use a visitor, restructuring how java files are stored internally, and adding a generator (with a factory) to let us more easily specify the type of diagram to generate.
 
 ###Milestone 4
-![Milestone 4 updates](./MS4_Turnin/MS4_turnin/UMLClass_MS4.jpg)
+![Milestone 4 updates](./MS4_Turnin/MS4_turnin/UMLClass_MS4.png)
 First, to make our code more modular we made two different types of class method visitors and MethodVisitors, which allows us to change functionallity easily with no code duplication. We also moved some stuff around in DesignParser to make our code more modular, as all of the parsing code is now in the generator classes as well as setting up the printing.
 We also fixed the visitors for our model, to make it so that you can swap out different type of printing if we need to print UMLs differently in the future.
 Finally, to detect singleton we created another Model visitor which will looks for classes with private constructors, a private static field of itself, and a public getter method with the return type of the class. 
