@@ -68,7 +68,7 @@ public class UMLOutputStream extends FilterOutputStream {
                 m.accept(visitor);
             }
 
-            this.write("}\"];");
+            this.write("}\"];\n");
         });
     }
     public void setupVisitClass() {
@@ -88,7 +88,7 @@ public class UMLOutputStream extends FilterOutputStream {
                 m.accept(visitor);
             }
 
-            this.write("}\"];");
+            this.write("}\"];\n");
         });
     }
 
@@ -111,7 +111,7 @@ public class UMLOutputStream extends FilterOutputStream {
                 this.write(m.toString());
             }
 
-            this.write("}\"];");
+            this.write("}\"];\n");
         });
     }
 
@@ -120,7 +120,7 @@ public class UMLOutputStream extends FilterOutputStream {
             MethodRep m = (MethodRep) t;
             this.write(m.getTranslatedAccessibility() + " "
                     + m.getName() + " : "
-                    + m.getType() + "\\l");
+                    + m.getType() + "\\l\n");
         });
     }
 
@@ -129,7 +129,7 @@ public class UMLOutputStream extends FilterOutputStream {
             FieldRep f = (FieldRep) t;
             this.write(f.getTranslatedAccessibility() + " "
                     + f.getName() + " : "
-                    + f.getType() + "\\l");
+                    + f.getType() + "\\l\n");
         });
     }
 

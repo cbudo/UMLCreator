@@ -29,14 +29,6 @@ public class SequenceGenerator implements IGenerator {
 
     @Override
     public String Generate() {
-//        IDataStorage data = ParsedDataStorage.getInstance();
-//        SequenceVisitor methodVisitor = new SequenceVisitor();
-//        StringBuilder classes = new StringBuilder();
-//        StringBuilder methods = new StringBuilder();
-//        for (MethodCall mc : data.getMethods()) {
-//            mc.acceptSequenceClass(methodVisitor, classes, methods);
-//        }
-//        return classes.toString() + "\n" + methods.toString();
         IDataStorage data = ParsedDataStorage.getInstance();
         OutputStream os = null;
         SequenceOutputStream fos = null;
