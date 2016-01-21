@@ -79,7 +79,7 @@ public class UMLOutputStream extends FilterOutputStream {
                     + " [\nshape = \"record\",\nlabel = \"{"
                     + in + "\\l");
             if (e.isSingleton()) {
-                this.write("<<Singleton>>\\l");
+                this.write("\\<\\<Singleton\\>\\>\\l");
             }
             this.write("|\n");
 
