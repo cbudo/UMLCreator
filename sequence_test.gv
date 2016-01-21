@@ -1,0 +1,7 @@
+Register:Register[a]
+Sale:Sale[a]
+Payment:Payment[a]
+
+Register:Sale.makePayment(int):void
+Sale:Payment.new(int):null
+Sale:Payment.authorize():void

@@ -1,0 +1,22 @@
+digraph UML_Diagram
+{
+rankdir=BT;
+
+ChocolateBoiler [
+shape = "record", color="blue",
+label = "{ChocolateBoiler\l\<\<Singleton\>\>\l|
+- boiled : boolean\l
+- uniqueInstance : ChocolateBoiler\l
+- empty : boolean\l
+|- init : void\l
++ isEmpty : boolean\l
++ getInstance : ChocolateBoiler\l
++ fill : void\l
++ isBoiled : boolean\l
++ drain : void\l
++ boil : void\l
+}"];
+ChocolateBoiler -> boolean [arrowhead="vee", style="solid"];
+ChocolateBoiler -> ChocolateBoiler [arrowhead="vee", style="solid"];
+
+}

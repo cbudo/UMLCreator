@@ -1,0 +1,10 @@
+Test Successful![Thu Dec 11 16:31:27 EST 2014] - ENTRY_CREATE - input_output\test.htm
+[Thu Dec 11 16:31:27 EST 2014] - ENTRY_MODIFY - input_output\test.htm
+[Thu Dec 11 16:31:29 EST 2014] - ENTRY_CREATE - input_output\test.bak
+[Thu Dec 11 16:31:29 EST 2014] - ENTRY_MODIFY - input_output\test.bak
+[Thu Dec 11 16:31:30 EST 2014] - ENTRY_CREATE - input_output\test.exe
+[Thu Dec 11 16:31:30 EST 2014] - ENTRY_MODIFY - input_output\test.exe
+[Thu Dec 11 16:31:32 EST 2014] - ENTRY_CREATE - input_output\test.txt
+[Thu Dec 11 16:31:32 EST 2014] - ENTRY_MODIFY - input_output\test.txt
+[Thu Dec 11 16:31:34 EST 2014] - ENTRY_CREATE - input_output\test.html
+[Thu Dec 11 16:31:34 EST 2014] - ENTRY_MODIFY - input_output\test.html

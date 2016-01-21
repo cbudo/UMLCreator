@@ -2,6 +2,368 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="1b357d25-b641-458c-8a8c-24064c31616e" name="Default" comment="added the 4 singleton test cases">
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/DataTypesUML.jpg" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Lab1-3-Solution.zip" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Lab1-3-Solution/bin/headfirst/observer/swing/SwingObserverExample$AngelListener.class" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Lab1-3-Solution/bin/headfirst/observer/swing/SwingObserverExample$DevilListener.class" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Lab1-3-Solution/bin/headfirst/observer/swing/SwingObserverExample.class" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Lab1-3-Solution/bin/headfirst/observer/weather/CurrentConditionsDisplay.class" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Lab1-3-Solution/bin/headfirst/observer/weather/DisplayElement.class" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Lab1-3-Solution/bin/headfirst/observer/weather/ForecastDisplay.class" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Lab1-3-Solution/bin/headfirst/observer/weather/HeatIndexDisplay.class" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Lab1-3-Solution/bin/headfirst/observer/weather/Observer.class" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Lab1-3-Solution/bin/headfirst/observer/weather/StatisticsDisplay.class" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Lab1-3-Solution/bin/headfirst/observer/weather/Subject.class" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Lab1-3-Solution/bin/headfirst/observer/weather/WeatherData.class" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Lab1-3-Solution/bin/headfirst/observer/weather/WeatherStation.class" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Lab1-3-Solution/bin/headfirst/observer/weather/WeatherStationHeatIndex.class" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Lab1-3-Solution/bin/headfirst/observer/weatherobservable/CurrentConditionsDisplay.class" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Lab1-3-Solution/bin/headfirst/observer/weatherobservable/DisplayElement.class" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Lab1-3-Solution/bin/headfirst/observer/weatherobservable/ForecastDisplay.class" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Lab1-3-Solution/bin/headfirst/observer/weatherobservable/HeatIndexDisplay.class" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Lab1-3-Solution/bin/headfirst/observer/weatherobservable/StatisticsDisplay.class" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Lab1-3-Solution/bin/headfirst/observer/weatherobservable/WeatherData.class" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Lab1-3-Solution/bin/headfirst/observer/weatherobservable/WeatherStation.class" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Lab1-3-Solution/bin/headfirst/observer/weatherobservable/WeatherStationHeatIndex.class" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Lab1-3-Solution/bin/problem/AllAppRunningIntegrationTest.class" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Lab1-3-Solution/bin/problem/AllTests.class" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Lab1-3-Solution/bin/problem/AppLauncherApplication.class" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Lab1-3-Solution/bin/problem/ApplicationLauncher.class" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Lab1-3-Solution/bin/problem/DataFileRunner.class" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Lab1-3-Solution/bin/problem/DirectoryChangeLogger.class" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Lab1-3-Solution/bin/problem/DirectoryEvent.class" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Lab1-3-Solution/bin/problem/DirectoryMonitorService.class" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Lab1-3-Solution/bin/problem/ExecutableFileRunner.class" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Lab1-3-Solution/bin/problem/IApplicationLauncher.class" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Lab1-3-Solution/bin/problem/IDirectoryListener.class" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Lab1-3-Solution/bin/problem/IDirectoryMonitorService.class" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Lab1-3-Solution/bin/problem/NoAppRunningIntegrationTest.class" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Lab1-3-Solution/bin/problem/ProcessRunner.class" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Lab1-3-Solution/bin/puzzle/Creator.class" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Lab1-3-Solution/bin/puzzle/Creature.class" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Lab1-3-Solution/bin/temp/HumidityDisplay.class" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Lab1-3-Solution/bin/temp/ISubscriber.class" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Lab1-3-Solution/bin/temp/IWeatherData.class" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Lab1-3-Solution/bin/temp/IWeatherReporter.class" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Lab1-3-Solution/bin/temp/TemperatureDisplay.class" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Lab1-3-Solution/bin/temp/WeatherApp.class" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Lab1-3-Solution/bin/temp/WeatherData.class" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Lab1-3-Solution/bin/temp/WeatherReporter.class" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Lab1-3-Solution/bin/temp/WeatherReporterTest.class" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Lab1-3-Solution/docs/Answer.pdf" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Lab1-3-Solution/docs/Design.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Lab1-3-Solution/input_output/test.exe" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Lab1-3-Solution/input_output/test_files/test.exe" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Lab4-2-Singleton.zip" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/MS3_Turnin.zip" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/asm-all-5.0.4.jar" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/lab1-3_UML.jpg" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/out/Lab4-2-Singleton/bin/headfirst/singleton/chocolate/ChocolateBoiler.class" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/out/Lab4-2-Singleton/bin/headfirst/singleton/chocolate/ChocolateController.class" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/out/Lab4-2-Singleton/bin/headfirst/singleton/classic/Singleton.class" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/out/Lab4-2-Singleton/bin/headfirst/singleton/dcl/Singleton.class" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/out/Lab4-2-Singleton/bin/headfirst/singleton/dcl/SingletonClient.class" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/out/Lab4-2-Singleton/bin/headfirst/singleton/stat/Singleton.class" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/out/Lab4-2-Singleton/bin/headfirst/singleton/stat/SingletonClient.class" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/out/Lab4-2-Singleton/bin/headfirst/singleton/subclass/CoolerSingleton.class" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/out/Lab4-2-Singleton/bin/headfirst/singleton/subclass/HotterSingleton.class" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/out/Lab4-2-Singleton/bin/headfirst/singleton/subclass/Singleton.class" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/out/Lab4-2-Singleton/bin/headfirst/singleton/subclass/SingletonTestDrive.class" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/out/Lab4-2-Singleton/bin/headfirst/singleton/threadsafe/Singleton.class" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/out/production/UMLCreator/Actual/Lab1-3_Actual.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/out/production/UMLCreator/Actual/Milestone_1_UML.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/out/production/UMLCreator/DataStorage/GeneratorFactory.class" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/out/production/UMLCreator/DataStorage/GraphGenerator.class" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/out/production/UMLCreator/DataStorage/IDataStorage.class" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/out/production/UMLCreator/DataStorage/IGenerator.class" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/out/production/UMLCreator/DataStorage/ParsedDataStorage.class" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/out/production/UMLCreator/DataStorage/SequenceParsing/ISequenceVisitor.class" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/out/production/UMLCreator/DataStorage/SequenceParsing/SequenceGenerator.class" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/out/production/UMLCreator/DataStorage/SequenceParsing/SequenceVisitor.class" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/out/production/UMLCreator/Generated/Lab1-3_Generated.jpg" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/out/production/UMLCreator/Generated/Project_Generated.jpg" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/out/production/UMLCreator/ParseClasses/AbstractClassRep.class" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/out/production/UMLCreator/ParseClasses/AbstractData.class" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/out/production/UMLCreator/ParseClasses/AbstractExtendableClassRep.class" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/out/production/UMLCreator/ParseClasses/AbstractJavaClassRep.class" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/out/production/UMLCreator/ParseClasses/AbstractTypable.class" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/out/production/UMLCreator/ParseClasses/AssociationRelation.class" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/out/production/UMLCreator/ParseClasses/ClassRep.class" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/out/production/UMLCreator/ParseClasses/FieldRep.class" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/out/production/UMLCreator/ParseClasses/IRelation.class" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/out/production/UMLCreator/ParseClasses/InterfaceRep.class" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/out/production/UMLCreator/ParseClasses/MethodCall.class" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/out/production/UMLCreator/ParseClasses/MethodRep.class" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/out/production/UMLCreator/ParseClasses/UsesRelation.class" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/out/production/UMLCreator/Visitors/ClassDeclarationVisitor.class" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/out/production/UMLCreator/Visitors/ClassFieldVisitor.class" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/out/production/UMLCreator/Visitors/DesignParser.class" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/out/production/UMLCreator/Visitors/ITraverser.class" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/out/production/UMLCreator/Visitors/IVisitMethod.class" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/out/production/UMLCreator/Visitors/IVisitor.class" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/out/production/UMLCreator/Visitors/LookupKey.class" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/out/production/UMLCreator/Visitors/OutputStreams/SequenceOutputStream.class" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/out/production/UMLCreator/Visitors/OutputStreams/UMLOutputStream.class" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/out/production/UMLCreator/Visitors/PatternVisitors/SingletonVisitor.class" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/out/production/UMLCreator/Visitors/SequenceVisitors/SequenceClassMethodVisitor.class" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/out/production/UMLCreator/Visitors/SequenceVisitors/SequenceMethodVisitor.class" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/out/production/UMLCreator/Visitors/UMLVisitors/UMLClassMethodVisitor.class" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/out/production/UMLCreator/Visitors/UMLVisitors/UMLMethodVisitor.class" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/out/production/UMLCreator/Visitors/VisitType.class" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/out/production/UMLCreator/Visitors/Visitor.class" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/out/production/UMLCreator/headfirst/singleton/chocolate/ChocolateBoiler.class" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/out/production/UMLCreator/headfirst/singleton/chocolate/ChocolateController.class" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/out/production/UMLCreator/headfirst/singleton/classic/Singleton.class" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/out/production/UMLCreator/headfirst/singleton/dcl/Singleton.class" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/out/production/UMLCreator/headfirst/singleton/dcl/SingletonClient.class" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/out/production/UMLCreator/headfirst/singleton/stat/Singleton.class" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/out/production/UMLCreator/headfirst/singleton/stat/SingletonClient.class" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/out/production/UMLCreator/headfirst/singleton/subclass/CoolerSingleton.class" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/out/production/UMLCreator/headfirst/singleton/subclass/HotterSingleton.class" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/out/production/UMLCreator/headfirst/singleton/subclass/Singleton.class" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/out/production/UMLCreator/headfirst/singleton/subclass/SingletonTestDrive.class" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/out/production/UMLCreator/headfirst/singleton/threadsafe/Singleton.class" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/out/production/UMLCreator/pizzafactory/factory/pizzaaf/BlackOlives.class" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/out/production/UMLCreator/pizzafactory/factory/pizzaaf/Cheese.class" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/out/production/UMLCreator/pizzafactory/factory/pizzaaf/CheesePizza.class" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/out/production/UMLCreator/pizzafactory/factory/pizzaaf/ChicagoPizzaIngredientFactory.class" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/out/production/UMLCreator/pizzafactory/factory/pizzaaf/ChicagoPizzaStore.class" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/out/production/UMLCreator/pizzafactory/factory/pizzaaf/ClamPizza.class" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/out/production/UMLCreator/pizzafactory/factory/pizzaaf/Clams.class" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/out/production/UMLCreator/pizzafactory/factory/pizzaaf/Dough.class" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/out/production/UMLCreator/pizzafactory/factory/pizzaaf/Eggplant.class" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/out/production/UMLCreator/pizzafactory/factory/pizzaaf/FreshClams.class" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/out/production/UMLCreator/pizzafactory/factory/pizzaaf/FrozenClams.class" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/out/production/UMLCreator/pizzafactory/factory/pizzaaf/Garlic.class" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/out/production/UMLCreator/pizzafactory/factory/pizzaaf/MarinaraSauce.class" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/out/production/UMLCreator/pizzafactory/factory/pizzaaf/MozzarellaCheese.class" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/out/production/UMLCreator/pizzafactory/factory/pizzaaf/Mushroom.class" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/out/production/UMLCreator/pizzafactory/factory/pizzaaf/NYPizzaIngredientFactory.class" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/out/production/UMLCreator/pizzafactory/factory/pizzaaf/NYPizzaStore.class" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/out/production/UMLCreator/pizzafactory/factory/pizzaaf/Onion.class" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/out/production/UMLCreator/pizzafactory/factory/pizzaaf/ParmesanCheese.class" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/out/production/UMLCreator/pizzafactory/factory/pizzaaf/Pepperoni.class" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/out/production/UMLCreator/pizzafactory/factory/pizzaaf/PepperoniPizza.class" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/out/production/UMLCreator/pizzafactory/factory/pizzaaf/Pizza.class" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/out/production/UMLCreator/pizzafactory/factory/pizzaaf/PizzaIngredientFactory.class" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/out/production/UMLCreator/pizzafactory/factory/pizzaaf/PizzaStore.class" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/out/production/UMLCreator/pizzafactory/factory/pizzaaf/PizzaTestDrive.class" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/out/production/UMLCreator/pizzafactory/factory/pizzaaf/PlumTomatoSauce.class" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/out/production/UMLCreator/pizzafactory/factory/pizzaaf/RedPepper.class" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/out/production/UMLCreator/pizzafactory/factory/pizzaaf/ReggianoCheese.class" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/out/production/UMLCreator/pizzafactory/factory/pizzaaf/Sauce.class" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/out/production/UMLCreator/pizzafactory/factory/pizzaaf/SlicedPepperoni.class" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/out/production/UMLCreator/pizzafactory/factory/pizzaaf/Spinach.class" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/out/production/UMLCreator/pizzafactory/factory/pizzaaf/ThickCrustDough.class" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/out/production/UMLCreator/pizzafactory/factory/pizzaaf/ThinCrustDough.class" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/out/production/UMLCreator/pizzafactory/factory/pizzaaf/VeggiePizza.class" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/out/production/UMLCreator/pizzafactory/factory/pizzaaf/Veggies.class" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/out/production/UMLCreator/pizzafactory/factory/pizzafm/ChicagoPizzaStore.class" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/out/production/UMLCreator/pizzafactory/factory/pizzafm/ChicagoStyleCheesePizza.class" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/out/production/UMLCreator/pizzafactory/factory/pizzafm/ChicagoStyleClamPizza.class" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/out/production/UMLCreator/pizzafactory/factory/pizzafm/ChicagoStylePepperoniPizza.class" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/out/production/UMLCreator/pizzafactory/factory/pizzafm/ChicagoStyleVeggiePizza.class" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/out/production/UMLCreator/pizzafactory/factory/pizzafm/DependentPizzaStore.class" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/out/production/UMLCreator/pizzafactory/factory/pizzafm/NYPizzaStore.class" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/out/production/UMLCreator/pizzafactory/factory/pizzafm/NYStyleCheesePizza.class" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/out/production/UMLCreator/pizzafactory/factory/pizzafm/NYStyleClamPizza.class" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/out/production/UMLCreator/pizzafactory/factory/pizzafm/NYStylePepperoniPizza.class" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/out/production/UMLCreator/pizzafactory/factory/pizzafm/NYStyleVeggiePizza.class" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/out/production/UMLCreator/pizzafactory/factory/pizzafm/Pizza.class" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/out/production/UMLCreator/pizzafactory/factory/pizzafm/PizzaStore.class" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/out/production/UMLCreator/pizzafactory/factory/pizzafm/PizzaTestDrive.class" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/out/production/UMLCreator/pizzafactory/factory/pizzas/CheesePizza.class" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/out/production/UMLCreator/pizzafactory/factory/pizzas/ClamPizza.class" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/out/production/UMLCreator/pizzafactory/factory/pizzas/PepperoniPizza.class" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/out/production/UMLCreator/pizzafactory/factory/pizzas/Pizza.class" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/out/production/UMLCreator/pizzafactory/factory/pizzas/PizzaStore.class" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/out/production/UMLCreator/pizzafactory/factory/pizzas/PizzaTestDrive.class" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/out/production/UMLCreator/pizzafactory/factory/pizzas/SimplePizzaFactory.class" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/out/production/UMLCreator/pizzafactory/factory/pizzas/VeggiePizza.class" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/out/test/UMLCreator/DataStorage/SequenceParsing/SequenceVisitorTest.class" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/out/test/UMLCreator/UMLTests/SingletonTests.class" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/output_graph.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/pizzafactory.zip" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/sample_from_cmd.pn" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src.zip" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/Lab4-2-Singleton/bin/headfirst/singleton/chocolate/ChocolateBoiler.class" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/Lab4-2-Singleton/bin/headfirst/singleton/chocolate/ChocolateController.class" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/Lab4-2-Singleton/bin/headfirst/singleton/classic/Singleton.class" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/Lab4-2-Singleton/bin/headfirst/singleton/dcl/Singleton.class" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/Lab4-2-Singleton/bin/headfirst/singleton/dcl/SingletonClient.class" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/Lab4-2-Singleton/bin/headfirst/singleton/stat/Singleton.class" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/Lab4-2-Singleton/bin/headfirst/singleton/stat/SingletonClient.class" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/Lab4-2-Singleton/bin/headfirst/singleton/subclass/CoolerSingleton.class" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/Lab4-2-Singleton/bin/headfirst/singleton/subclass/HotterSingleton.class" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/Lab4-2-Singleton/bin/headfirst/singleton/subclass/Singleton.class" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/Lab4-2-Singleton/bin/headfirst/singleton/subclass/SingletonTestDrive.class" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/Lab4-2-Singleton/bin/headfirst/singleton/threadsafe/Singleton.class" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.project" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/CommandLineArugementsParser.py" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/GenerateTemp/Register.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Lab1-3-Solution/.classpath" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Lab1-3-Solution/.project" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Lab1-3-Solution/.settings/org.eclipse.jdt.core.prefs" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Lab1-3-Solution/docs/Design.uxf" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Lab1-3-Solution/input_output/test.bak" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Lab1-3-Solution/input_output/test.htm" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Lab1-3-Solution/input_output/test.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Lab1-3-Solution/input_output/test.log" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Lab1-3-Solution/input_output/test.txt" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Lab1-3-Solution/input_output/test_files/test.bak" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Lab1-3-Solution/input_output/test_files/test.htm" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Lab1-3-Solution/input_output/test_files/test.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Lab1-3-Solution/input_output/test_files/test.log" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Lab1-3-Solution/input_output/test_files/test.txt" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Lab1-3-Solution/src/headfirst/observer/swing/SwingObserverExample.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Lab1-3-Solution/src/headfirst/observer/weather/CurrentConditionsDisplay.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Lab1-3-Solution/src/headfirst/observer/weather/DisplayElement.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Lab1-3-Solution/src/headfirst/observer/weather/ForecastDisplay.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Lab1-3-Solution/src/headfirst/observer/weather/HeatIndexDisplay.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Lab1-3-Solution/src/headfirst/observer/weather/Observer.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Lab1-3-Solution/src/headfirst/observer/weather/StatisticsDisplay.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Lab1-3-Solution/src/headfirst/observer/weather/Subject.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Lab1-3-Solution/src/headfirst/observer/weather/WeatherData.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Lab1-3-Solution/src/headfirst/observer/weather/WeatherStation.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Lab1-3-Solution/src/headfirst/observer/weather/WeatherStationHeatIndex.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Lab1-3-Solution/src/headfirst/observer/weatherobservable/CurrentConditionsDisplay.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Lab1-3-Solution/src/headfirst/observer/weatherobservable/DisplayElement.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Lab1-3-Solution/src/headfirst/observer/weatherobservable/ForecastDisplay.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Lab1-3-Solution/src/headfirst/observer/weatherobservable/HeatIndexDisplay.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Lab1-3-Solution/src/headfirst/observer/weatherobservable/StatisticsDisplay.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Lab1-3-Solution/src/headfirst/observer/weatherobservable/WeatherData.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Lab1-3-Solution/src/headfirst/observer/weatherobservable/WeatherStation.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Lab1-3-Solution/src/headfirst/observer/weatherobservable/WeatherStationHeatIndex.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Lab1-3-Solution/src/problem/AppLauncherApplication.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Lab1-3-Solution/src/problem/ApplicationLauncher.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Lab1-3-Solution/src/problem/DataFileRunner.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Lab1-3-Solution/src/problem/DirectoryChangeLogger.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Lab1-3-Solution/src/problem/DirectoryEvent.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Lab1-3-Solution/src/problem/DirectoryMonitorService.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Lab1-3-Solution/src/problem/ExecutableFileRunner.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Lab1-3-Solution/src/problem/IApplicationLauncher.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Lab1-3-Solution/src/problem/IDirectoryListener.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Lab1-3-Solution/src/problem/IDirectoryMonitorService.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Lab1-3-Solution/src/problem/ProcessRunner.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Lab1-3-Solution/src/puzzle/Creator.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Lab1-3-Solution/src/temp/HumidityDisplay.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Lab1-3-Solution/src/temp/ISubscriber.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Lab1-3-Solution/src/temp/IWeatherData.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Lab1-3-Solution/src/temp/IWeatherReporter.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Lab1-3-Solution/src/temp/TemperatureDisplay.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Lab1-3-Solution/src/temp/WeatherApp.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Lab1-3-Solution/src/temp/WeatherData.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Lab1-3-Solution/src/temp/WeatherReporter.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Lab1-3-Solution/test/problem/AllAppRunningIntegrationTest.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Lab1-3-Solution/test/problem/AllTests.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Lab1-3-Solution/test/problem/NoAppRunningIntegrationTest.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Lab1-3-Solution/test/temp/WeatherReporterTest.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/MS_3_UML.uxf" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/commandline_args.txt" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/graph_text/generated_graph.gv" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/graph_text/generated_graph.sd" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/graph_text/test_from_text.gv" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/hs_err_pid8516.log" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/lib/.idea/.name" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/lib/.idea/compiler.xml" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/lib/.idea/copyright/profiles_settings.xml" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/lib/.idea/encodings.xml" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/lib/.idea/inspectionProfiles/Project_Default.xml" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/lib/.idea/inspectionProfiles/profiles_settings.xml" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/lib/.idea/libraries/asm_all_5_0_4.xml" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/lib/.idea/misc.xml" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/lib/.idea/modules.xml" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/lib/.idea/uiDesigner.xml" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/lib/.idea/vcs.xml" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/lib/.idea/workspace.xml" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/out/Lab4-2-Singleton/.classpath" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/out/Lab4-2-Singleton/.project" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/out/Lab4-2-Singleton/src/headfirst/singleton/chocolate/ChocolateBoiler.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/out/Lab4-2-Singleton/src/headfirst/singleton/chocolate/ChocolateController.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/out/Lab4-2-Singleton/src/headfirst/singleton/classic/Singleton.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/out/Lab4-2-Singleton/src/headfirst/singleton/dcl/Singleton.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/out/Lab4-2-Singleton/src/headfirst/singleton/dcl/SingletonClient.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/out/Lab4-2-Singleton/src/headfirst/singleton/stat/Singleton.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/out/Lab4-2-Singleton/src/headfirst/singleton/stat/SingletonClient.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/out/Lab4-2-Singleton/src/headfirst/singleton/subclass/CoolerSingleton.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/out/Lab4-2-Singleton/src/headfirst/singleton/subclass/HotterSingleton.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/out/Lab4-2-Singleton/src/headfirst/singleton/subclass/Singleton.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/out/Lab4-2-Singleton/src/headfirst/singleton/subclass/SingletonTestDrive.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/out/Lab4-2-Singleton/src/headfirst/singleton/threadsafe/Singleton.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/out/production/UMLCreator/Lab4-2-Singleton/.classpath" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/out/production/UMLCreator/Lab4-2-Singleton/.project" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/sequence_test.gv" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/Lab4-2-Singleton/.classpath" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/Lab4-2-Singleton/.project" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/Lab4-2-Singleton/src/headfirst/singleton/chocolate/ChocolateBoiler.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/Lab4-2-Singleton/src/headfirst/singleton/chocolate/ChocolateController.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/Lab4-2-Singleton/src/headfirst/singleton/classic/Singleton.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/Lab4-2-Singleton/src/headfirst/singleton/dcl/Singleton.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/Lab4-2-Singleton/src/headfirst/singleton/dcl/SingletonClient.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/Lab4-2-Singleton/src/headfirst/singleton/stat/Singleton.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/Lab4-2-Singleton/src/headfirst/singleton/stat/SingletonClient.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/Lab4-2-Singleton/src/headfirst/singleton/subclass/CoolerSingleton.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/Lab4-2-Singleton/src/headfirst/singleton/subclass/HotterSingleton.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/Lab4-2-Singleton/src/headfirst/singleton/subclass/Singleton.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/Lab4-2-Singleton/src/headfirst/singleton/subclass/SingletonTestDrive.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/Lab4-2-Singleton/src/headfirst/singleton/threadsafe/Singleton.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/pizzafactory/factory/pizzaaf/BlackOlives.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/pizzafactory/factory/pizzaaf/Cheese.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/pizzafactory/factory/pizzaaf/CheesePizza.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/pizzafactory/factory/pizzaaf/ChicagoPizzaIngredientFactory.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/pizzafactory/factory/pizzaaf/ChicagoPizzaStore.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/pizzafactory/factory/pizzaaf/ClamPizza.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/pizzafactory/factory/pizzaaf/Clams.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/pizzafactory/factory/pizzaaf/Dough.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/pizzafactory/factory/pizzaaf/Eggplant.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/pizzafactory/factory/pizzaaf/FreshClams.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/pizzafactory/factory/pizzaaf/FrozenClams.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/pizzafactory/factory/pizzaaf/Garlic.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/pizzafactory/factory/pizzaaf/MarinaraSauce.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/pizzafactory/factory/pizzaaf/MozzarellaCheese.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/pizzafactory/factory/pizzaaf/Mushroom.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/pizzafactory/factory/pizzaaf/NYPizzaIngredientFactory.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/pizzafactory/factory/pizzaaf/NYPizzaStore.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/pizzafactory/factory/pizzaaf/Onion.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/pizzafactory/factory/pizzaaf/ParmesanCheese.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/pizzafactory/factory/pizzaaf/Pepperoni.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/pizzafactory/factory/pizzaaf/PepperoniPizza.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/pizzafactory/factory/pizzaaf/Pizza.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/pizzafactory/factory/pizzaaf/PizzaIngredientFactory.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/pizzafactory/factory/pizzaaf/PizzaStore.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/pizzafactory/factory/pizzaaf/PizzaTestDrive.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/pizzafactory/factory/pizzaaf/PlumTomatoSauce.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/pizzafactory/factory/pizzaaf/RedPepper.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/pizzafactory/factory/pizzaaf/ReggianoCheese.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/pizzafactory/factory/pizzaaf/Sauce.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/pizzafactory/factory/pizzaaf/SlicedPepperoni.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/pizzafactory/factory/pizzaaf/Spinach.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/pizzafactory/factory/pizzaaf/ThickCrustDough.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/pizzafactory/factory/pizzaaf/ThinCrustDough.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/pizzafactory/factory/pizzaaf/VeggiePizza.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/pizzafactory/factory/pizzaaf/Veggies.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/pizzafactory/factory/pizzafm/ChicagoPizzaStore.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/pizzafactory/factory/pizzafm/ChicagoStyleCheesePizza.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/pizzafactory/factory/pizzafm/ChicagoStyleClamPizza.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/pizzafactory/factory/pizzafm/ChicagoStylePepperoniPizza.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/pizzafactory/factory/pizzafm/ChicagoStyleVeggiePizza.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/pizzafactory/factory/pizzafm/DependentPizzaStore.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/pizzafactory/factory/pizzafm/NYPizzaStore.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/pizzafactory/factory/pizzafm/NYStyleCheesePizza.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/pizzafactory/factory/pizzafm/NYStyleClamPizza.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/pizzafactory/factory/pizzafm/NYStylePepperoniPizza.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/pizzafactory/factory/pizzafm/NYStyleVeggiePizza.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/pizzafactory/factory/pizzafm/Pizza.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/pizzafactory/factory/pizzafm/PizzaStore.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/pizzafactory/factory/pizzafm/PizzaTestDrive.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/pizzafactory/factory/pizzas/CheesePizza.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/pizzafactory/factory/pizzas/ClamPizza.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/pizzafactory/factory/pizzas/PepperoniPizza.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/pizzafactory/factory/pizzas/Pizza.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/pizzafactory/factory/pizzas/PizzaStore.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/pizzafactory/factory/pizzas/PizzaTestDrive.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/pizzafactory/factory/pizzas/SimplePizzaFactory.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/pizzafactory/factory/pizzas/VeggiePizza.java" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
     </list>
     <ignored path="UMLCreator.iws" />
@@ -40,7 +402,28 @@
     <favorites_list name="UMLCreator" />
   </component>
   <component name="FileEditorManager">
-    <leaf SIDE_TABS_SIZE_LIMIT_KEY="375" />
+    <leaf SIDE_TABS_SIZE_LIMIT_KEY="375">
+      <file leaf-file-name="DesignParser.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/Visitors/DesignParser.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state vertical-scroll-proportion="0.0">
+              <caret line="23" column="42" selection-start-line="23" selection-start-column="42" selection-end-line="23" selection-end-column="42" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="ChocolateBoiler.java" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/src/Lab4-2-Singleton/src/headfirst/singleton/chocolate/ChocolateBoiler.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state vertical-scroll-proportion="0.7360595">
+              <caret line="18" column="28" selection-start-line="18" selection-start-column="28" selection-end-line="18" selection-end-column="28" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+    </leaf>
   </component>
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
@@ -281,6 +664,72 @@
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
+              <option name="myItemId" value="Lab4-2-Singleton" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="UMLCreator" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="UMLCreatorActual" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="src" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="Lab4-2-Singleton" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="singleton" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="UMLCreator" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="UMLCreatorActual" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="src" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="Lab4-2-Singleton" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="singleton" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="chocolate" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="UMLCreator" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="UMLCreatorActual" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="src" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
               <option name="myItemId" value="DataStorage" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
@@ -349,8 +798,7 @@
           <option name="mySupportsDeletion" value="false" />
           <option name="myCanBeAbsent" value="false" />
           <option name="myId" value="UPDATED" />
-          <PATH vcs="Git" revision="">$PROJECT_DIR$/.idea/workspace.xml</PATH>
-          <PATH vcs="Git" revision="">$PROJECT_DIR$/src/Visitors/OutputStreams/UMLOutputStream.java</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/README.md</PATH>
         </FILE-GROUP>
         <FILE-GROUP>
           <option name="myUpdateName" value="Created" />
@@ -446,7 +894,7 @@
       </FILE-GROUP>
     </UpdatedFiles>
   </component>
-  <component name="RunManager" selected="JUnit.SingletonTests">
+  <component name="RunManager" selected="Application.Unnamed">
     <configuration default="false" name="DesignParser" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea">
         <pattern>
@@ -933,7 +1381,7 @@
       <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea" />
       <option name="MAIN_CLASS_NAME" value="Visitors.DesignParser" />
       <option name="VM_PARAMETERS" value="" />
-      <option name="PROGRAM_PARAMETERS" value="U GenerateTemp.Payment GenerateTemp.Sale" />
+      <option name="PROGRAM_PARAMETERS" value="U headfirst.singleton.chocolate.ChocolateBoiler" />
       <option name="WORKING_DIRECTORY" value="file://$PROJECT_DIR$" />
       <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
       <option name="ALTERNATIVE_JRE_PATH" />
@@ -992,7 +1440,7 @@
       <workItem from="1453326847344" duration="18000" />
       <workItem from="1453336758890" duration="12352000" />
       <workItem from="1453351064298" duration="3000" />
-      <workItem from="1453398347771" duration="4639000" />
+      <workItem from="1453398347771" duration="8028000" />
     </task>
     <task id="LOCAL-00001" summary="added asm libraries and visitor package">
       <created>1451953507803</created>
@@ -1243,7 +1691,7 @@
     </history-entry>
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="177354000" />
+    <option name="totallyTimeSpent" value="180743000" />
   </component>
   <component name="TodoView" selected-index="1">
     <todo-panel id="selected-file">
@@ -1256,16 +1704,16 @@
   </component>
   <component name="ToolWindowManager">
     <frame x="-9" y="-9" width="1938" height="1098" extended-state="6" />
-    <editor active="false" />
+    <editor active="true" />
     <layout>
       <window_info id="Palette" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32800853" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
-      <window_info id="Messages" active="true" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.32374868" sideWeight="0.49571276" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32374868" sideWeight="0.49571276" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Palette&#9;" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.3939394" sideWeight="0.50428724" order="9" side_tool="true" content_ui="tabs" />
       <window_info id="Maven Projects" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.329582" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.24707136" sideWeight="0.49785638" order="10" side_tool="false" content_ui="tabs" />
-      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.3919063" sideWeight="0.49571276" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Run" active="true" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.3919063" sideWeight="0.49571276" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.30190796" sideWeight="0.5" order="8" side_tool="false" content_ui="tabs" />
       <window_info id="Designer" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.18971062" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
@@ -1709,14 +2157,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/Lab4-2-Singleton/src/headfirst/singleton/chocolate/ChocolateBoiler.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.14569536">
-          <caret line="6" column="2" selection-start-line="6" selection-start-column="2" selection-end-line="6" selection-end-column="2" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/Test/DataStorage/SequenceParsing/SequenceVisitorTest.java">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
@@ -1739,18 +2179,26 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/Visitors/DesignParser.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.37209302">
-          <caret line="33" column="8" selection-start-line="33" selection-start-column="8" selection-end-line="33" selection-end-column="8" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/DataStorage/GraphGenerator.java">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.47508305">
           <caret line="26" column="16" selection-start-line="26" selection-start-column="16" selection-end-line="26" selection-end-column="16" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/Visitors/DesignParser.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="23" column="42" selection-start-line="23" selection-start-column="42" selection-end-line="23" selection-end-column="42" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/Lab4-2-Singleton/src/headfirst/singleton/chocolate/ChocolateBoiler.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.7360595">
+          <caret line="18" column="28" selection-start-line="18" selection-start-column="28" selection-end-line="18" selection-end-column="28" />
           <folding />
         </state>
       </provider>

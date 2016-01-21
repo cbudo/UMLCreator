@@ -1,0 +1,15 @@
+digraph observer_example
+{
+rankdir=BT;
+Subject [
+shape="record",
+label = "{\<\<interface\>\>\nSubject| + notifyObservers() : void\l}"
+];
+
+WeatherData [
+shape = "record",
+label = "{WeatherData | - temperature : float\l- humidity : float\1- pressure : float\l|+ 			measurementsChanged() : void\l}"
+];
+
+WeatherData -> Subject [arrowhead="onormal", style="dashed"];
+}
