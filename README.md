@@ -2,16 +2,20 @@
 Project for CSSE 374
 
 ##Design
+###Milestone 1
 ![Our UML Design!](./MS1_Turnin/ProjectUML_actual.png)
 We are using the visitor and decorator patterns to parse compiled Java code and create UML diagrams.  In the current state we are able to parse Interfaces and classes and methods and fields inside each.
 This project uses ASM for bytecode parsing and dot by graphviz for creating the UML diagrams.
 
+###Milestone 2
 ![Milestone 2 updates](./MS2_Turnin/ProjectUML_actual.png)
 Our design has not changes much since Milestone two, as we were already storing the data needed for this milestone, but not using it yet. However, we have internally reorganized much of our code to make it more scalable. Much of this reorganization is focused on our data storage classes to better share code that does not change between classes. 
 
+###Milestone 3
 ![Milestone 3 updates](./MS3_Turnin/UMLClass_MS3.jpg)
 We added functionality to allow for the creation of sequence diagrams using a tool called [SdEdit](http://sdedit.sourceforge.net/) This tool allows you to create sequence diagrams from text files.  We also did some refactoring, changing the UML creation to use a visitor, restructuring how java files are stored internally, and adding a generator (with a factory) to let us more easily specify the type of diagram to generate.
 
+###Milestone 4
 ![Milestone 4 updates](./MS4_Turnin/MS4_turnin/UMLClass_MS4.jpg)
 First, to make our code more modular we made two different types of class method visitors and MethodVisitors, which allows us to change functionallity easily with no code duplication. We also moved some stuff around in DesignParser to make our code more modular, as all of the parsing code is now in the generator classes as well as setting up the printing.
 We also fixed the visitors for our model, to make it so that you can swap out different type of printing if we need to print UMLs differently in the future.
