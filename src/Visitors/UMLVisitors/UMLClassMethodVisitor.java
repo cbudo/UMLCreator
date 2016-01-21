@@ -48,7 +48,7 @@ public class UMLClassMethodVisitor extends ClassVisitor {
         UsesRelation retUses = new UsesRelation(innerRet, getInnermostClass(this.className));
         ParsedDataStorage.getInstance().addUsesRelation(retUses);
         for (String rel : args) {
-            UsesRelation newUses = new UsesRelation(rel, getInnermostClass(this.className));
+            UsesRelation newUses = new UsesRelation(getInnermostClass(rel), getInnermostClass(this.className));
             ParsedDataStorage.getInstance().addUsesRelation(newUses);
         }
 

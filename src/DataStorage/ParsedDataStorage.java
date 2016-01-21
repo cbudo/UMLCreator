@@ -140,11 +140,10 @@ public class ParsedDataStorage implements IDataStorage, ITraverser {
 
     public boolean addUsesRelation(IRelation relation) {
         if (!this.associationRels.contains(relation) || !this.usesRels.contains(relation)) {
-            this.usesRels.add(relation);
-            return true;
+            return false;
         }
-
-        return false;
+        this.usesRels.add(relation);
+        return true;
     }
 
     public boolean addAssociationRelation(IRelation relation) {
