@@ -1,8 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="1b357d25-b641-458c-8a8c-24064c31616e" name="Default" comment="fixed problem with visiting methods and fields improperly">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Test/UMLTests/SingletonTests.java" />
+    <list default="true" id="1b357d25-b641-458c-8a8c-24064c31616e" name="Default" comment="added the 4 singleton test cases">
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
     </list>
     <ignored path="UMLCreator.iws" />
@@ -65,14 +64,14 @@
       <file leaf-file-name="SingletonTests.java" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/Test/UMLTests/SingletonTests.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.3866171">
-              <caret line="45" column="8" selection-start-line="45" selection-start-column="8" selection-end-line="45" selection-end-column="8" />
+            <state vertical-scroll-proportion="0.34551495">
+              <caret line="42" column="8" selection-start-line="42" selection-start-column="8" selection-end-line="42" selection-end-column="8" />
               <folding>
                 <element signature="imports" expanded="true" />
-                <element signature="e#578#586#0" expanded="true" />
-                <element signature="e#1088#1096#0" expanded="true" />
-                <element signature="e#1600#1608#0" expanded="true" />
-                <element signature="e#2116#2124#0" expanded="true" />
+                <element signature="e#574#582#0" expanded="true" />
+                <element signature="e#1080#1088#0" expanded="true" />
+                <element signature="e#1588#1596#0" expanded="true" />
+                <element signature="e#2100#2108#0" expanded="true" />
               </folding>
             </state>
           </provider>
@@ -1040,7 +1039,7 @@
       <workItem from="1453326847344" duration="18000" />
       <workItem from="1453336758890" duration="12352000" />
       <workItem from="1453351064298" duration="3000" />
-      <workItem from="1453398347771" duration="4405000" />
+      <workItem from="1453398347771" duration="4434000" />
     </task>
     <task id="LOCAL-00001" summary="added asm libraries and visitor package">
       <created>1451953507803</created>
@@ -1252,7 +1251,13 @@
       <option name="project" value="LOCAL" />
       <updated>1453350604341</updated>
     </task>
-    <option name="localTasksCounter" value="36" />
+    <task id="LOCAL-00036" summary="added the 4 singleton test cases">
+      <created>1453405610819</created>
+      <option name="number" value="00036" />
+      <option name="project" value="LOCAL" />
+      <updated>1453405610819</updated>
+    </task>
+    <option name="localTasksCounter" value="37" />
     <servers />
   </component>
   <component name="TestHistory">
@@ -1279,7 +1284,7 @@
     </history-entry>
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="177120000" />
+    <option name="totallyTimeSpent" value="177149000" />
   </component>
   <component name="TodoView" selected-index="1">
     <todo-panel id="selected-file">
@@ -1296,12 +1301,12 @@
     <layout>
       <window_info id="Palette" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32800853" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
-      <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32435465" sideWeight="0.49571276" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.32374868" sideWeight="0.49571276" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Palette&#9;" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.3939394" sideWeight="0.50428724" order="9" side_tool="true" content_ui="tabs" />
       <window_info id="Maven Projects" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.329582" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.24707136" sideWeight="0.49785638" order="10" side_tool="false" content_ui="tabs" />
-      <window_info id="Run" active="true" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.3919063" sideWeight="0.49571276" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.3919063" sideWeight="0.49571276" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.30190796" sideWeight="0.5" order="8" side_tool="false" content_ui="tabs" />
       <window_info id="Designer" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.18971062" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
@@ -1333,7 +1338,6 @@
   </component>
   <component name="VcsManagerConfiguration">
     <option name="CHECK_CODE_CLEANUP_BEFORE_PROJECT_COMMIT" value="true" />
-    <MESSAGE value="updating visitor to use our data storage&#10;converted IData to abstract class so that it behaves in the manner that we were expecting" />
     <MESSAGE value="added IClass which extracts methods and fields from classes interfaces and abstract classes&#10;added methods to parsedDataStorage to enable classes, methods and fields to be added&#10;made projectData global so it is able to be updated throughout the program (may need to change this later)" />
     <MESSAGE value="added abstract classes to datastorage" />
     <MESSAGE value="working on parsing stored ASM data" />
@@ -1358,7 +1362,8 @@
     <MESSAGE value="moved lib files to common directory, added new line characters to uml output stream, started singletons" />
     <MESSAGE value="recognizing singleton patterns" />
     <MESSAGE value="fixed problem with visiting methods and fields improperly" />
-    <option name="LAST_COMMIT_MESSAGE" value="fixed problem with visiting methods and fields improperly" />
+    <MESSAGE value="added the 4 singleton test cases" />
+    <option name="LAST_COMMIT_MESSAGE" value="added the 4 singleton test cases" />
     <option name="OPTIMIZE_IMPORTS_BEFORE_PROJECT_COMMIT" value="true" />
     <option name="REFORMAT_BEFORE_PROJECT_COMMIT" value="true" />
     <option name="REARRANGE_BEFORE_PROJECT_COMMIT" value="true" />
@@ -1779,14 +1784,14 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/Test/UMLTests/SingletonTests.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.3866171">
-          <caret line="45" column="8" selection-start-line="45" selection-start-column="8" selection-end-line="45" selection-end-column="8" />
+        <state vertical-scroll-proportion="0.34551495">
+          <caret line="42" column="8" selection-start-line="42" selection-start-column="8" selection-end-line="42" selection-end-column="8" />
           <folding>
             <element signature="imports" expanded="true" />
-            <element signature="e#578#586#0" expanded="true" />
-            <element signature="e#1088#1096#0" expanded="true" />
-            <element signature="e#1600#1608#0" expanded="true" />
-            <element signature="e#2116#2124#0" expanded="true" />
+            <element signature="e#574#582#0" expanded="true" />
+            <element signature="e#1080#1088#0" expanded="true" />
+            <element signature="e#1588#1596#0" expanded="true" />
+            <element signature="e#2100#2108#0" expanded="true" />
           </folding>
         </state>
       </provider>
