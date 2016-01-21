@@ -1,0 +1,24 @@
+Collections:Collections[a]
+/Random:Random[a]
+List:List[a]
+AtomicLong:AtomicLong[a]
+Unsafe:Unsafe[a]
+/IllegalArgumentException:IllegalArgumentException[a]
+ListIterator:ListIterator[a]
+
+Collections:Random.new()
+Collections:Collections.shuffle(Object, Object):void
+Collections:List.size():int
+Collections:Random.nextInt(int):int
+Random:Random.next(int):int
+Random:AtomicLong.get():long
+Random:AtomicLong.compareAndSet(long, long):boolean
+AtomicLong:Unsafe.compareAndSwapLong(Object, long, long, long):boolean
+Random:IllegalArgumentException.new(Object)
+Collections:Collections.swap(Object, int, int):void
+Collections:List.get(int):Object
+Collections:List.set(int, Object):Object
+Collections:List.toArray():Object;
+Collections:List.listIterator():Object
+Collections:ListIterator.next():Object
+Collections:ListIterator.set(Object):void

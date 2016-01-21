@@ -1,0 +1,639 @@
+DesignParser:DesignParser[a]
+/ArrayList:ArrayList[a]
+Collections:Collections[a]
+Collection:Collection[a]
+List:List[a]
+String:String[a]
+Pattern:Pattern[a]
+Normalizer:Normalizer[a]
+CharSequence:CharSequence[a]
+NormalizerBase:NormalizerBase[a]
+NormalizerBase$Mode:NormalizerBase$Mode[a]
+Integer:Integer[a]
+/IndexOutOfBoundsException:IndexOutOfBoundsException[a]
+Normalizer$Form:Normalizer$Form[a]
+/StringBuilder:StringBuilder[a]
+/IllegalArgumentException:IllegalArgumentException[a]
+/StringIndexOutOfBoundsException:StringIndexOutOfBoundsException[a]
+Character:Character[a]
+CharacterData:CharacterData[a]
+AbstractStringBuilder:AbstractStringBuilder[a]
+/AssertionError:AssertionError[a]
+Arrays:Arrays[a]
+/PatternSyntaxException:PatternSyntaxException[a]
+System:System[a]
+ASCII:ASCII[a]
+Object:Object[a]
+Class:Class[a]
+Array:Array[a]
+Math:Math[a]
+/Pattern$SliceUS:Pattern$SliceUS[a]
+/Pattern$SliceU:Pattern$SliceU[a]
+/Pattern$SliceIS:Pattern$SliceIS[a]
+/Pattern$SliceI:Pattern$SliceI[a]
+/Pattern$SliceS:Pattern$SliceS[a]
+/Pattern$Slice:Pattern$Slice[a]
+/Pattern$Pos:Pattern$Pos[a]
+/Pattern$Neg:Pattern$Neg[a]
+/Pattern$Ques:Pattern$Ques[a]
+Map:Map[a]
+/Pattern$TreeInfo:Pattern$TreeInfo[a]
+Pattern$Node:Pattern$Node[a]
+/Pattern$BehindS:Pattern$BehindS[a]
+/Pattern$Behind:Pattern$Behind[a]
+/Pattern$NotBehindS:Pattern$NotBehindS[a]
+/Pattern$NotBehind:Pattern$NotBehind[a]
+/Pattern$BranchConn:Pattern$BranchConn[a]
+/Pattern$Branch:Pattern$Branch[a]
+/Pattern$GroupCurly:Pattern$GroupCurly[a]
+/Pattern$Loop:Pattern$Loop[a]
+/Pattern$LazyLoop:Pattern$LazyLoop[a]
+/Pattern$Prolog:Pattern$Prolog[a]
+/Pattern$BitClass:Pattern$BitClass[a]
+Pattern$CharProperty:Pattern$CharProperty[a]
+UnicodeProp:UnicodeProp[a]
+/Pattern$Utype:Pattern$Utype[a]
+Pattern$CharPropertyNames:Pattern$CharPropertyNames[a]
+/Pattern$UnixCaret:Pattern$UnixCaret[a]
+/Pattern$Caret:Pattern$Caret[a]
+/Pattern$Begin:Pattern$Begin[a]
+/Pattern$UnixDollar:Pattern$UnixDollar[a]
+/Pattern$Dollar:Pattern$Dollar[a]
+/Pattern$All:Pattern$All[a]
+/Pattern$UnixDot:Pattern$UnixDot[a]
+/Pattern$Dot:Pattern$Dot[a]
+Pattern$BnM:Pattern$BnM[a]
+/Pattern$BnMS:Pattern$BnMS[a]
+/Pattern$StartS:Pattern$StartS[a]
+/Pattern$Start:Pattern$Start[a]
+/Matcher:Matcher[a]
+ParsedDataStorage:ParsedDataStorage[a]
+/NumberFormatException:NumberFormatException[a]
+Long:Long[a]
+Float:Float[a]
+FloatingDecimal:FloatingDecimal[a]
+Double:Double[a]
+FloatingDecimal$BinaryToASCIIBuffer:FloatingDecimal$BinaryToASCIIBuffer[a]
+FloatingDecimal$BinaryToASCIIConverter:FloatingDecimal$BinaryToASCIIConverter[a]
+/GeneratorFactory:GeneratorFactory[a]
+/GraphGenerator:GraphGenerator[a]
+/SequenceGenerator:SequenceGenerator[a]
+IGenerator:IGenerator[a]
+PrintStream:PrintStream[a]
+/IOException:IOException[a]
+BufferedWriter:BufferedWriter[a]
+Writer:Writer[a]
+OutputStreamWriter:OutputStreamWriter[a]
+StreamEncoder:StreamEncoder[a]
+ByteBuffer:ByteBuffer[a]
+WritableByteChannel:WritableByteChannel[a]
+OutputStream:OutputStream[a]
+Thread:Thread[a]
+SecurityManager:SecurityManager[a]
+/NullPointerException:NullPointerException[a]
+AccessController:AccessController[a]
+AccessControlContext:AccessControlContext[a]
+/SecurityException:SecurityException[a]
+Interruptible:Interruptible[a]
+/FileOutputStream:FileOutputStream[a]
+Objects:Objects[a]
+Supplier:Supplier[a]
+StringCoding:StringCoding[a]
+ThreadLocal:ThreadLocal[a]
+ThreadLocal$ThreadLocalMap:ThreadLocal$ThreadLocalMap[a]
+ThreadLocal$ThreadLocalMap$Entry:ThreadLocal$ThreadLocalMap$Entry[a]
+SoftReference:SoftReference[a]
+Reference:Reference[a]
+StringCoding$StringEncoder:StringCoding$StringEncoder[a]
+HistoricallyNamedCharset:HistoricallyNamedCharset[a]
+Charset:Charset[a]
+CharsetProvider:CharsetProvider[a]
+/UnsupportedCharsetException:UnsupportedCharsetException[a]
+/Error:Error[a]
+/UnsupportedEncodingException:UnsupportedEncodingException[a]
+CharsetEncoder:CharsetEncoder[a]
+ArrayEncoder:ArrayEncoder[a]
+/HeapByteBuffer:HeapByteBuffer[a]
+CharBuffer:CharBuffer[a]
+/HeapCharBuffer:HeapCharBuffer[a]
+/StringCharBuffer:StringCharBuffer[a]
+/IllegalStateException:IllegalStateException[a]
+/CoderMalfunctionError:CoderMalfunctionError[a]
+CoderResult:CoderResult[a]
+CoderResult$Cache:CoderResult$Cache[a]
+/ReadOnlyBufferException:ReadOnlyBufferException[a]
+/BufferOverflowException:BufferOverflowException[a]
+/BufferUnderflowException:BufferUnderflowException[a]
+/UnsupportedOperationException:UnsupportedOperationException[a]
+/MalformedInputException:MalformedInputException[a]
+/UnmappableCharacterException:UnmappableCharacterException[a]
+/GetPropertyAction:GetPropertyAction[a]
+Debug:Debug[a]
+DomainCombiner:DomainCombiner[a]
+Reflection:Reflection[a]
+/AccessController$1:AccessController$1[a]
+ProtectionDomain:ProtectionDomain[a]
+MessageUtils:MessageUtils[a]
+Runtime:Runtime[a]
+/RuntimePermission:RuntimePermission[a]
+Shutdown:Shutdown[a]
+FileChannel:FileChannel[a]
+/FileOutputStream$1:FileOutputStream$1[a]
+FileDescriptor:FileDescriptor[a]
+Iterator:Iterator[a]
+Closeable:Closeable[a]
+Throwable:Throwable[a]
+
+DesignParser:ArrayList.new()
+DesignParser:Collections.addAll(Object, Object;):boolean
+Collections:Collection.add(Object):boolean
+DesignParser:List.remove(int):Object
+DesignParser:DesignParser.getGenerationType(Object):Object
+DesignParser:String.hashCode():int
+DesignParser:String.equals(Object):boolean
+DesignParser:List.size():int
+DesignParser:List.get(int):Object
+DesignParser:String.matches(Object):boolean
+String:Pattern.matches(Object, Object):boolean
+Pattern:Pattern.compile(Object):Object
+Pattern:Pattern.has(int):boolean
+Pattern:Pattern.normalize():void
+Pattern:Normalizer.normalize(Object, Object):Object
+Normalizer:CharSequence.toString():Object
+Normalizer:NormalizerBase.normalize(Object, Object):Object
+NormalizerBase:NormalizerBase$Mode.normalize(Object;, int, int, Object;, int, int, int):int
+NormalizerBase:Integer.toString(int):Object
+NormalizerBase:IndexOutOfBoundsException.new(Object)
+NormalizerBase:NormalizerBase.normalize(Object, Object, int):Object
+NormalizerBase:String.length():int
+NormalizerBase:String.charAt(int):void
+NormalizerBase:String.toCharArray():Object;
+NormalizerBase:Normalizer$Form.ordinal():int
+NormalizerBase:StringBuilder.new()
+NormalizerBase:StringBuilder.append(Object):Object
+NormalizerBase:StringBuilder.toString():Object
+NormalizerBase:IllegalArgumentException.new(Object)
+Pattern:String.length():int
+Pattern:String.codePointAt(int):int
+String:StringIndexOutOfBoundsException.new(int)
+String:Character.codePointAtImpl(Object;, int, int):int
+Character:Character.isHighSurrogate():boolean
+Character:Character.isLowSurrogate():boolean
+Character:Character.toCodePoint():int
+Pattern:Character.getType(int):int
+Character:Character.getType(int):int
+Character:CharacterData.of(int):Object
+Character:CharacterData.getType(int):int
+Pattern:StringBuilder.appendCodePoint(int):Object
+StringBuilder:AbstractStringBuilder.appendCodePoint(int):Object
+AbstractStringBuilder:Character.isBmpCodePoint(int):boolean
+AbstractStringBuilder:AbstractStringBuilder.ensureCapacityInternal(int):void
+AbstractStringBuilder:Character.isValidCodePoint(int):boolean
+AbstractStringBuilder:Character.toSurrogates(int, Object;, int):void
+StringBuilder:StringBuilder.appendCodePoint(int):Object
+Pattern:Character.charCount(int):int
+Pattern:StringBuilder.toString():Object
+Pattern:Pattern.produceEquivalentAlternation(Object):Object
+Pattern:Pattern.countChars(Object, int, int):int
+Pattern:CharSequence.charAt(int):void
+Pattern:Character.isHighSurrogate():boolean
+Pattern:CharSequence.length():int
+Pattern:AssertionError.new()
+Pattern:Character.isLowSurrogate():boolean
+Pattern:String.substring(int, int):Object
+Pattern:Pattern.producePermutations(Object):Object;
+Pattern:Character.codePointAt(Object, int):int
+Pattern:Pattern.getClass(int):int
+Pattern:Pattern.countCodePoints(Object):int
+Pattern:StringBuilder.delete(int, int):Object
+Pattern:StringBuilder.append(Object):Object
+Pattern:Pattern.composeOneStep(Object):Object
+Pattern:String.equals(Object):boolean
+Pattern:StringBuilder.length():int
+StringBuilder:AbstractStringBuilder.length():int
+Pattern:StringBuilder.setLength(int):void
+StringBuilder:AbstractStringBuilder.setLength(int):void
+AbstractStringBuilder:Arrays.fill(Object;, int, int):void
+Pattern:Pattern.normalizeCharClass(Object, int):int
+Pattern:Pattern.error(Object):Object
+Pattern:PatternSyntaxException.new(Object, Object, int)
+Pattern:Pattern.isSupplementary(int):boolean
+Pattern:Character.isSurrogate():boolean
+Pattern:Pattern.RemoveQEQuoting():void
+Pattern:System.arraycopy(Object, int, Object, int, int):void
+Pattern:ASCII.isAscii(int):boolean
+Pattern:ASCII.isAlpha(int):boolean
+ASCII:ASCII.isType(int, int):boolean
+ASCII:ASCII.getType(int):int
+Pattern:ASCII.isDigit(int):boolean
+Pattern:Arrays.copyOf([I, int):[I
+Arrays:Object.getClass():Object
+Arrays:Arrays.copyOf(Object;, int, Object):Object;
+Arrays:Class.getComponentType():Object
+Arrays:Array.newInstance(Object, int):Object
+Arrays:Math.min(int, int):int
+Arrays:System.arraycopy(Object, int, Object, int, int):void
+Pattern:Pattern.newSlice([I, int, boolean):Object
+Pattern:Character.toUpperCase(int):int
+Character:Character.toUpperCase(int):int
+Character:CharacterData.toUpperCase(int):int
+Pattern:Character.toLowerCase(int):int
+Character:Character.toLowerCase(int):int
+Character:CharacterData.toLowerCase(int):int
+Pattern:Pattern$SliceUS.new([I)
+Pattern:Pattern$SliceU.new([I)
+Pattern:ASCII.toLower(int):int
+ASCII:ASCII.isUpper(int):boolean
+Pattern:Pattern$SliceIS.new([I)
+Pattern:Pattern$SliceI.new([I)
+Pattern:Pattern$SliceS.new([I)
+Pattern:Pattern$Slice.new([I)
+Pattern:Pattern.expr(Object):Object
+Pattern:Pattern.sequence(Object):Object
+Pattern:Pattern.peek():int
+Pattern:Pattern.peekPastWhitespace(int):int
+Pattern:Pattern.group0():Object
+Pattern:Pattern.next():int
+Pattern:Pattern.skip():int
+Pattern:Pattern.createGroup(boolean):Object
+Pattern:Pattern$Pos.new(Object)
+Pattern:Pattern$Neg.new(Object)
+Pattern:Pattern$Ques.new(Object, int)
+Pattern:Pattern.read():int
+Pattern:ASCII.isLower(int):boolean
+Pattern:ASCII.isUpper(int):boolean
+Pattern:Pattern.groupname(int):Object
+Pattern:Pattern.namedGroups():Object
+Pattern:Map.containsKey(Object):boolean
+Pattern:Integer.valueOf(int):Object
+Pattern:Map.put(Object, Object):Object
+Pattern:Pattern$TreeInfo.new()
+Pattern:Pattern$Node.study(Object):boolean
+Pattern:Pattern.findSupplementary(int, int):boolean
+Pattern:Pattern$BehindS.new(Object, int, int)
+Pattern:Pattern$Behind.new(Object, int, int)
+Pattern:Pattern$NotBehindS.new(Object, int, int)
+Pattern:Pattern$NotBehind.new(Object, int, int)
+Pattern:Pattern.unread():void
+Pattern:Pattern.addFlag():void
+Pattern:Pattern.accept(int, Object):void
+Pattern:Pattern.closure(Object):Object
+Pattern:Pattern$BranchConn.new()
+Pattern:Pattern$Branch.new(Object, Object, Object)
+Pattern:Pattern$GroupCurly.new(Object, int, int, int, int, int, boolean)
+Pattern:Pattern$Loop.new(int, int)
+Pattern:Pattern$LazyLoop.new(int, int)
+Pattern:Pattern$Prolog.new(Object)
+Pattern:Pattern.clazz(boolean):Object
+Pattern:Pattern$BitClass.new()
+Pattern:Pattern.union(Object, Object):Object
+Pattern:Pattern.intersection(Object, Object):Object
+Pattern:Pattern.range(Object):Object
+Pattern:Pattern$CharProperty.complement():Object
+Pattern:Pattern.setDifference(Object, Object):Object
+Pattern:Pattern.nextEscaped():int
+Pattern:Pattern.family(boolean, boolean):Object
+Pattern:Character.isSupplementaryCodePoint(int):boolean
+Pattern:String.valueOf():Object
+Pattern:Pattern.mark(int):void
+Pattern:String.indexOf(int):int
+Pattern:String.toLowerCase(Object):Object
+Pattern:Pattern.unicodeScriptPropertyFor(Object):Object
+Pattern:Pattern.unicodeBlockPropertyFor(Object):Object
+Pattern:Pattern.charPropertyNodeFor(Object):Object
+Pattern:String.startsWith(Object):boolean
+Pattern:UnicodeProp.forName(Object):Object
+Pattern:Pattern$Utype.new(Object)
+Pattern:Pattern$CharPropertyNames.charPropertyFor(Object):Object
+Pattern:UnicodeProp.forPOSIXName(Object):Object
+Pattern:Pattern.atom():Object
+Pattern:Pattern.escape(boolean, boolean, boolean):int
+Pattern:Pattern.append(int, int):void
+Pattern:Pattern.newSingle(int):Object
+Pattern:Pattern$UnixCaret.new()
+Pattern:Pattern$Caret.new()
+Pattern:Pattern$Begin.new()
+Pattern:Pattern$UnixDollar.new(boolean)
+Pattern:Pattern$Dollar.new(boolean)
+Pattern:Pattern$All.new()
+Pattern:Pattern$UnixDot.new()
+Pattern:Pattern$Dot.new()
+Pattern:Pattern$Branch.add(Object):void
+Pattern$Branch:System.arraycopy(Object, int, Object, int, int):void
+Pattern:Pattern$BnM.optimize(Object):Object
+Pattern$BnM:Pattern$BnMS.new([I, [I, [I, Object)
+Pattern:Pattern$StartS.new(Object)
+Pattern:Pattern$Start.new(Object)
+Pattern:Pattern.matcher(Object):Object
+Pattern:Matcher.new(Object, Object)
+Pattern:Matcher.matches():boolean
+Matcher:Matcher.match(int, int):boolean
+Matcher:Pattern$Node.match(Object, int, Object):boolean
+DesignParser:ParsedDataStorage.getInstance():Object
+DesignParser:Integer.parseInt(Object):int
+Integer:NumberFormatException.new(Object)
+Integer:StringBuilder.append(Object):Object
+StringBuilder:String.valueOf(Object):Object
+String:Object.toString():Object
+Object:Object.getClass():Object
+Object:Class.getName():Object
+Class:Class.getName0():Object
+Object:StringBuilder.append(Object):Object
+StringBuilder:StringBuilder.append(Object):Object
+StringBuilder:AbstractStringBuilder.append(Object):Object
+Object:Object.hashCode():int
+Object:Integer.toHexString(int):Object
+Integer:Integer.toUnsignedString0(int, int):Object
+Integer:Integer.numberOfLeadingZeros(int):int
+Integer:Math.max(int, int):int
+Integer:Integer.formatUnsignedInt(int, int, Object;, int, int):int
+Object:StringBuilder.toString():Object
+String:Integer.toString(int):Object
+Integer:Integer.toString(int):Object
+Integer:Integer.stringSize(int):int
+Integer:Integer.getChars(int, int, Object;):void
+String:Long.toString(long):Object
+Long:Long.toString(long):Object
+Long:Long.stringSize(long):int
+Long:Long.getChars(long, int, Object;):void
+String:Float.toString():Object
+Float:FloatingDecimal.toJavaFormatString():Object
+FloatingDecimal:FloatingDecimal.getBinaryToASCIIConverter(double):Object
+FloatingDecimal:Double.doubleToRawLongBits(double):long
+FloatingDecimal:Long.numberOfLeadingZeros(long):int
+FloatingDecimal:FloatingDecimal.getBinaryToASCIIBuffer():Object
+FloatingDecimal:FloatingDecimal$BinaryToASCIIBuffer.access$000(Object, boolean):void
+FloatingDecimal:FloatingDecimal$BinaryToASCIIBuffer.access$100(Object, int, long, int, boolean):void
+FloatingDecimal:Float.floatToRawIntBits():int
+FloatingDecimal:Integer.numberOfLeadingZeros(int):int
+FloatingDecimal:FloatingDecimal$BinaryToASCIIConverter.toJavaFormatString():Object
+Float:Float.toString():Object
+String:Double.toString(double):Object
+Double:FloatingDecimal.toJavaFormatString(double):Object
+Double:Double.toString(double):Object
+Integer:StringBuilder.toString():Object
+Integer:String.length():int
+Integer:String.charAt(int):void
+Integer:NumberFormatException.forInputString(Object):Object
+NumberFormatException:StringBuilder.append(Object):Object
+NumberFormatException:StringBuilder.toString():Object
+Integer:Character.digit(int):int
+Character:Character.digit(int, int):int
+Character:CharacterData.digit(int, int):int
+Integer:Integer.parseInt(Object, int):int
+DesignParser:ParsedDataStorage.setMax_depth(int):void
+DesignParser:GeneratorFactory.new()
+DesignParser:GeneratorFactory.getGenerator(Object):Object
+GeneratorFactory:String.hashCode():int
+GeneratorFactory:String.equals(Object):boolean
+GeneratorFactory:GraphGenerator.new()
+GeneratorFactory:SequenceGenerator.new()
+DesignParser:IGenerator.parse(Object):void
+DesignParser:IGenerator.Generate():Object
+DesignParser:PrintStream.println(Object):void
+PrintStream:PrintStream.newLine():void
+PrintStream:PrintStream.ensureOpen():void
+PrintStream:IOException.new(Object)
+PrintStream:BufferedWriter.newLine():void
+BufferedWriter:BufferedWriter.write(Object):void
+BufferedWriter:BufferedWriter.ensureOpen():void
+BufferedWriter:BufferedWriter.flushBuffer():void
+BufferedWriter:Writer.write(Object;, int, int):void
+Writer:Writer.write(Object;, int, int):void
+Writer:String.length():int
+Writer:String.getChars(int, int, Object;, int):void
+BufferedWriter:BufferedWriter.min(int, int):int
+BufferedWriter:System.arraycopy(Object, int, Object, int, int):void
+BufferedWriter:String.getChars(int, int, Object;, int):void
+String:System.arraycopy(Object, int, Object, int, int):void
+PrintStream:BufferedWriter.flushBuffer():void
+PrintStream:OutputStreamWriter.flushBuffer():void
+OutputStreamWriter:StreamEncoder.flushBuffer():void
+StreamEncoder:StreamEncoder.isOpen():boolean
+StreamEncoder:StreamEncoder.implFlushBuffer():void
+StreamEncoder:ByteBuffer.position():int
+StreamEncoder:StreamEncoder.writeBytes():void
+StreamEncoder:ByteBuffer.flip():Object
+StreamEncoder:ByteBuffer.limit():int
+StreamEncoder:WritableByteChannel.write(Object):int
+StreamEncoder:ByteBuffer.array():Object;
+StreamEncoder:ByteBuffer.arrayOffset():int
+StreamEncoder:OutputStream.write(Object;, int, int):void
+StreamEncoder:ByteBuffer.clear():Object
+PrintStream:OutputStream.flush():void
+PrintStream:Thread.currentThread():Object
+PrintStream:Thread.interrupt():void
+Thread:Thread.currentThread():Object
+Thread:Thread.checkAccess():void
+Thread:System.getSecurityManager():Object
+Thread:SecurityManager.checkAccess(Object):void
+SecurityManager:NullPointerException.new(Object)
+SecurityManager:Thread.getThreadGroup():Object
+SecurityManager:SecurityManager.checkPermission(Object):void
+SecurityManager:AccessController.checkPermission(Object):void
+SecurityManager:AccessControlContext.checkPermission(Object):void
+SecurityManager:SecurityException.new()
+Thread:Thread.interrupt0():void
+Thread:Interruptible.interrupt(Object):void
+PrintStream:PrintStream.print(boolean):void
+PrintStream:PrintStream.write(Object):void
+PrintStream:OutputStream.write(int):void
+OutputStream:OutputStream.write(Object;, int, int):void
+PrintStream:BufferedWriter.write(Object;):void
+PrintStream:String.indexOf(int):int
+String:String.indexOf(int, int):int
+String:String.indexOfSupplementary(int, int):int
+String:Character.isValidCodePoint(int):boolean
+String:Character.highSurrogate(int):void
+String:Character.lowSurrogate(int):void
+PrintStream:String.valueOf():Object
+DesignParser:StringBuilder.append(Object):Object
+DesignParser:IGenerator.getOutputType():Object
+DesignParser:StringBuilder.toString():Object
+DesignParser:FileOutputStream.new(Object)
+DesignParser:String.getBytes():Object;
+String:Objects.requireNonNull(Object):Object
+Objects:Supplier.get():Object
+String:StringCoding.encode(Object, Object;, int, int):Object;
+StringCoding:StringCoding.deref(Object):Object
+StringCoding:ThreadLocal.get():Object
+ThreadLocal:Thread.currentThread():Object
+ThreadLocal:ThreadLocal.getMap(Object):Object
+ThreadLocal:ThreadLocal$ThreadLocalMap.access$000(Object, Object):Object
+ThreadLocal$ThreadLocalMap:ThreadLocal$ThreadLocalMap.getEntry(Object):Object
+ThreadLocal$ThreadLocalMap:ThreadLocal.access$400(Object):int
+ThreadLocal$ThreadLocalMap:ThreadLocal$ThreadLocalMap$Entry.get():Object
+ThreadLocal$ThreadLocalMap:ThreadLocal$ThreadLocalMap.getEntryAfterMiss(Object, int, Object):Object
+ThreadLocal:ThreadLocal.setInitialValue():Object
+ThreadLocal:ThreadLocal.initialValue():Object
+ThreadLocal:ThreadLocal$ThreadLocalMap.access$100(Object, Object, Object):void
+ThreadLocal$ThreadLocalMap:ThreadLocal$ThreadLocalMap.set(Object, Object):void
+ThreadLocal:ThreadLocal.createMap(Object, Object):void
+StringCoding:SoftReference.get():Object
+SoftReference:Reference.get():Object
+StringCoding:StringCoding$StringEncoder.requestedCharsetName():Object
+StringCoding:String.equals(Object):boolean
+StringCoding:StringCoding$StringEncoder.charsetName():Object
+StringCoding$StringEncoder:HistoricallyNamedCharset.historicalName():Object
+StringCoding$StringEncoder:Charset.name():Object
+StringCoding:StringCoding.lookupCharset(Object):Object
+StringCoding:Charset.isSupported(Object):boolean
+Charset:Charset.lookup(Object):Object
+Charset:String.equals(Object):boolean
+Charset:Charset.lookup2(Object):Object
+Charset:CharsetProvider.charsetForName(Object):Object
+Charset:Charset.lookupExtendedCharset(Object):Object
+Charset:Charset.lookupViaProviders(Object):Object
+Charset:Charset.cache(Object, Object):void
+Charset:Charset.checkName(Object):void
+StringCoding:Charset.forName(Object):Object
+Charset:UnsupportedCharsetException.new(Object)
+StringCoding:Error.new(Object)
+StringCoding:UnsupportedEncodingException.new(Object)
+StringCoding:StringCoding.set(Object, Object):void
+StringCoding:ThreadLocal.set(Object):void
+StringCoding:StringCoding$StringEncoder.encode(Object;, int, int):Object;
+StringCoding$StringEncoder:CharsetEncoder.maxBytesPerChar():void
+StringCoding$StringEncoder:StringCoding.access$000(int):int
+StringCoding:StringCoding.scale(int):int
+StringCoding$StringEncoder:ArrayEncoder.encode(Object;, int, int, Object;):int
+StringCoding$StringEncoder:StringCoding.access$300(Object;, int, Object, boolean):Object;
+StringCoding:StringCoding.safeTrim(Object;, int, Object, boolean):Object;
+StringCoding:System.getSecurityManager():Object
+StringCoding:Arrays.copyOf(Object;, int):Object;
+StringCoding$StringEncoder:CharsetEncoder.reset():Object
+CharsetEncoder:CharsetEncoder.implReset():void
+StringCoding$StringEncoder:ByteBuffer.wrap(Object;):Object
+ByteBuffer:HeapByteBuffer.new(Object;, int, int)
+ByteBuffer:ByteBuffer.wrap(Object;, int, int):Object
+StringCoding$StringEncoder:CharBuffer.wrap(Object;, int, int):Object
+CharBuffer:HeapCharBuffer.new(Object;, int, int)
+CharBuffer:CharBuffer.wrap(Object;, int, int):Object
+CharBuffer:StringCharBuffer.new(Object, int, int)
+CharBuffer:CharSequence.length():int
+StringCoding$StringEncoder:CharsetEncoder.encode(Object, Object, boolean):Object
+CharsetEncoder:CharsetEncoder.throwIllegalStateException(int, int):void
+CharsetEncoder:StringBuilder.append(Object):Object
+CharsetEncoder:StringBuilder.toString():Object
+CharsetEncoder:IllegalStateException.new(Object)
+CharsetEncoder:CharsetEncoder.encodeLoop(Object, Object):Object
+CharsetEncoder:CoderMalfunctionError.new(Object)
+CharsetEncoder:CoderResult.isOverflow():boolean
+CharsetEncoder:CoderResult.isUnderflow():boolean
+CharsetEncoder:CharBuffer.hasRemaining():boolean
+CharsetEncoder:CharBuffer.remaining():int
+CharsetEncoder:CoderResult.malformedForLength(int):Object
+CoderResult:CoderResult$Cache.access$200(Object, int):Object
+CoderResult$Cache:CoderResult$Cache.get(int):Object
+CharsetEncoder:CoderResult.isMalformed():boolean
+CharsetEncoder:CoderResult.isUnmappable():boolean
+CharsetEncoder:CoderResult.toString():Object
+CoderResult:CoderResult.isError():boolean
+CoderResult:StringBuilder.append(Object):Object
+CoderResult:StringBuilder.toString():Object
+CharsetEncoder:ByteBuffer.remaining():int
+CharsetEncoder:ByteBuffer.put(Object;):Object
+ByteBuffer:ByteBuffer.isReadOnly():boolean
+ByteBuffer:ReadOnlyBufferException.new()
+ByteBuffer:ByteBuffer.remaining():int
+ByteBuffer:BufferOverflowException.new()
+ByteBuffer:ByteBuffer.get():void
+ByteBuffer:ByteBuffer.checkBounds(int, int, int):void
+ByteBuffer:BufferUnderflowException.new()
+ByteBuffer:ByteBuffer.put():Object
+CharsetEncoder:CharBuffer.position():int
+CharsetEncoder:CoderResult.length():int
+CoderResult:UnsupportedOperationException.new()
+CharsetEncoder:CharsetEncoder.averageBytesPerChar():void
+CharsetEncoder:ByteBuffer.allocate(int):Object
+CharsetEncoder:CharsetEncoder.reset():Object
+CharsetEncoder:CharsetEncoder.encode(Object, Object, boolean):Object
+CharsetEncoder:CharsetEncoder.flush(Object):Object
+CharsetEncoder:CharsetEncoder.implFlush(Object):Object
+CharsetEncoder:ByteBuffer.flip():Object
+CharsetEncoder:CoderResult.throwException():void
+CoderResult:MalformedInputException.new(int)
+CoderResult:UnmappableCharacterException.new(int)
+StringCoding$StringEncoder:CoderResult.isUnderflow():boolean
+StringCoding$StringEncoder:CoderResult.throwException():void
+StringCoding$StringEncoder:CharsetEncoder.flush(Object):Object
+StringCoding$StringEncoder:ByteBuffer.position():int
+StringCoding:Charset.newEncoder():Object
+StringCoding:CharsetEncoder.maxBytesPerChar():void
+StringCoding:Object.getClass():Object
+StringCoding:Class.getClassLoader0():Object
+StringCoding:Arrays.copyOfRange(Object;, int, int):Object;
+Arrays:Arrays.copyOfRange(Object;, int, int, Object):Object;
+Arrays:StringBuilder.append(int):Object
+Arrays:StringBuilder.toString():Object
+StringCoding:CharsetEncoder.onMalformedInput(Object):Object
+CharsetEncoder:CharsetEncoder.implOnMalformedInput(Object):void
+StringCoding:CharsetEncoder.onUnmappableCharacter(Object):Object
+CharsetEncoder:CharsetEncoder.implOnUnmappableCharacter(Object):void
+StringCoding:CharsetEncoder.reset():Object
+StringCoding:ArrayEncoder.encode(Object;, int, int, Object;):int
+StringCoding:ByteBuffer.wrap(Object;):Object
+StringCoding:CharBuffer.wrap(Object;, int, int):Object
+StringCoding:CharsetEncoder.encode(Object, Object, boolean):Object
+StringCoding:CoderResult.isUnderflow():boolean
+StringCoding:CoderResult.throwException():void
+StringCoding:CharsetEncoder.flush(Object):Object
+StringCoding:ByteBuffer.position():int
+StringCoding:Charset.defaultCharset():Object
+Charset:GetPropertyAction.new(Object)
+Charset:AccessController.doPrivileged(Object):Object
+AccessController:AccessController.getContext():Object
+AccessController:AccessController.getStackAccessControlContext():Object
+AccessController:AccessControlContext.optimize():Object
+AccessControlContext:AccessController.getInheritedAccessControlContext():Object
+AccessControlContext:AccessControlContext.getDebug():Object
+AccessControlContext:Debug.println(Object):void
+AccessControlContext:DomainCombiner.combine(Object;, Object;):Object;
+AccessControlContext:AccessControlContext.calculateFields(Object, Object, Object;):void
+AccessControlContext:AccessControlContext.combine(Object;, Object;):Object;
+AccessController:Reflection.getCallerClass():Object
+AccessController:AccessController.createWrapper(Object, Object, Object, Object, Object;):Object
+AccessController:AccessController.getCallerPD(Object):Object
+AccessController:AccessController$1.new(Object)
+AccessController:AccessController.doPrivileged(Object):Object
+AccessController:AccessControlContext.isAuthorized():boolean
+AccessController:System.getSecurityManager():Object
+AccessController:ProtectionDomain.impliesCreateAccessControlContext():boolean
+ProtectionDomain:ProtectionDomain.implies(Object):boolean
+Charset:Charset.forName(Object):Object
+StringCoding:Charset.name():Object
+StringCoding:StringCoding.encode(Object, Object;, int, int):Object;
+StringCoding:StringCoding.warnUnsupportedCharset(Object):void
+StringCoding:StringBuilder.append(Object):Object
+StringCoding:StringBuilder.toString():Object
+StringCoding:MessageUtils.err(Object):void
+MessageUtils:StringBuilder.append(Object):Object
+MessageUtils:StringBuilder.toString():Object
+MessageUtils:MessageUtils.toStderr(Object):void
+StringCoding:UnsupportedEncodingException.toString():Object
+StringCoding:System.exit(int):void
+System:Runtime.getRuntime():Object
+System:Runtime.exit(int):void
+Runtime:System.getSecurityManager():Object
+Runtime:SecurityManager.checkExit(int):void
+SecurityManager:StringBuilder.append(Object):Object
+SecurityManager:StringBuilder.toString():Object
+SecurityManager:RuntimePermission.new(Object)
+Runtime:Shutdown.exit(int):void
+Shutdown:Shutdown.halt(int):void
+Shutdown:Shutdown.runAllFinalizers():void
+Shutdown:Shutdown.sequence():void
+DesignParser:FileOutputStream.write(Object;):void
+FileOutputStream:FileOutputStream.write(int, boolean):void
+FileOutputStream:FileOutputStream.writeBytes(Object;, int, int, boolean):void
+DesignParser:FileOutputStream.close():void
+FileOutputStream:FileChannel.close():void
+FileOutputStream:FileOutputStream$1.new(Object)
+FileOutputStream:FileDescriptor.closeAll(Object):void
+FileDescriptor:List.iterator():Object
+FileDescriptor:Iterator.hasNext():boolean
+FileDescriptor:Iterator.next():Object
+FileDescriptor:Closeable.close():void
+FileDescriptor:IOException.addSuppressed(Object):void
+FileDescriptor:Throwable.addSuppressed(Object):void
+Throwable:List.add(Object):boolean
