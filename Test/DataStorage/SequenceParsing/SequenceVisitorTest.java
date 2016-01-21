@@ -146,7 +146,7 @@ public class SequenceVisitorTest {
         IGenerator gen = generatorFactory.getGenerator("Sequence");
         String genString = gen.Generate();
 
-        System.out.println(genString);
+        //System.out.println(genString);
 
         String[] ansLines = genString.split("\n");
         List<String> listOfAnsLines = new ArrayList<String>();
@@ -161,24 +161,27 @@ public class SequenceVisitorTest {
         }
 
         ArrayList<String[]> tokenizedMethods = new ArrayList<String[]>();
-        for (int i = 0; i < 3; i++) {
+        for (int i = 2; i < 5; i++) {
             tokenizedMethods.add(listOfAnsLines.get(i).split("[:|.]"));
         }
+
+        assertEquals("StartingClass:StartingClass[a]", listOfAnsLines.get(0));
+        assertEquals("ReceivingClass:ReceivingClass[a]", listOfAnsLines.get(1));
 //
 //        //checking each methods from class and to class are set correctly
         assertEquals("StartingClass->StartingClass", tokenizedMethods.get(0)[0] + "->" + tokenizedMethods.get(0)[1]);
         assertEquals("StartingClass->ReceivingClass", tokenizedMethods.get(1)[0] + "->" + tokenizedMethods.get(1)[1]);
         assertEquals("StartingClass->StartingClass", tokenizedMethods.get(2)[0] + "->" + tokenizedMethods.get(2)[1]);
-//
-//        //checking if the correct method call was made, with the correct params
+////
+////        //checking if the correct method call was made, with the correct params
         assertEquals("first_c1toc1(int, String)", tokenizedMethods.get(0)[2]);
         assertEquals("first_c1toc2(char)", tokenizedMethods.get(1)[2]);
         assertEquals("second_c1toc1(int, String)", tokenizedMethods.get(2)[2]);
 //
 //        //finally, checking if the return type is correct on everything
-//        assertEquals("void", tokenizedMethods.get(0)[3]);
-//        assertEquals("int", tokenizedMethods.get(1)[3]);
-//        assertEquals("void", tokenizedMethods.get(2)[3]);
+        assertEquals("void", tokenizedMethods.get(0)[3]);
+        assertEquals("int", tokenizedMethods.get(1)[3]);
+        assertEquals("void", tokenizedMethods.get(2)[3]);
 
         //reflection to clean the data storage
         Class[] params = new Class[0];
