@@ -54,10 +54,10 @@ public class UMLOutputStream extends FilterOutputStream {
     public void setupVisitAbstractClass() {
         this.visitor.addVisit(VisitType.Visit, AbstractClassRep.class, (ITraverser t) -> {
             AbstractJavaClassRep e = (AbstractJavaClassRep) t;
-            String in = "<I>" + e.getName().substring(e.getName().lastIndexOf("/") + 1) + "</I>";
+            String in = e.getName().substring(e.getName().lastIndexOf("/") + 1);
             this.write("\n" + in
                     + " [\nshape = \"record\",\nlabel = \"{"
-                    + in + "\\l" + "|");
+                    + "<I>" + in + "</I>" + "\\l" + "|");
 
             for (AbstractData f : e.getFieldsMap().values()) {
                 f.accept(visitor);
@@ -71,16 +71,20 @@ public class UMLOutputStream extends FilterOutputStream {
             this.write("}\"];\n");
         });
     }
+
     public void setupVisitClass() {
         this.visitor.addVisit(VisitType.Visit, ClassRep.class, (ITraverser t) -> {
             ClassRep e = (ClassRep) t;
             String in = e.getName().substring(e.getName().lastIndexOf("/") + 1);
-            this.write("\n" + in
-                    + " [\nshape = \"record\",\nlabel = \"{"
-                    + in + "\\l");
+            String color = "black";
+            String singleton = "";
             if (e.isSingleton()) {
-                this.write("\\<\\<Singleton\\>\\>\\l");
+                singleton = "\\<\\<Singleton\\>\\>\\l";
+                color = "blue";
             }
+            this.write("\n" + in
+                    + " [\nshape = \"record\", color=\"" + color + "\",\nlabel = \"{"
+                    + in + "\\l" + singleton);
             this.write("|\n");
 
             for (AbstractData f : e.getFieldsMap().values()) {
