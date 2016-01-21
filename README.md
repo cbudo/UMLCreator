@@ -12,6 +12,11 @@ Our design has not changes much since Milestone two, as we were already storing 
 ![Milestone 3 updates](./MS3_Turnin/UMLClass_MS3.jpg)
 We added functionality to allow for the creation of sequence diagrams using a tool called [SdEdit](http://sdedit.sourceforge.net/) This tool allows you to create sequence diagrams from text files.  We also did some refactoring, changing the UML creation to use a visitor, restructuring how java files are stored internally, and adding a generator (with a factory) to let us more easily specify the type of diagram to generate.
 
+![Milestone 4 updates](./MS4_Turnin/MS4_turnin/UMLClass_MS4.jpg)
+First, to make our code more modular we made two different types of class method visitors and MethodVisitors, which allows us to change functionallity easily with no code duplication. We also moved some stuff around in DesignParser to make our code more modular, as all of the parsing code is now in the generator classes as well as setting up the printing.
+We also fixed the visitors for our model, to make it so that you can swap out different type of printing if we need to print UMLs differently in the future.
+Finally, to detect singleton we created another Model visitor which will looks for classes with private constructors, a private static field of itself, and a public getter method with the return type of the class. 
+
 ##How to Use
 In order to use this, you will need to call our application from the command line.
 the first argument should be the type of diagram you would like generated, these inputs are:
@@ -40,4 +45,7 @@ The final argument is optional and only matters if you are making a sequence dia
 | 3 | visitor for sequence diagram | changing UML to use Visitor |
 | 3 | debug problems with parsing asm | implementation of method sequence following |
 | 3 | handle different types of command line arguments||
+| 4 | converted visitors to new version discussed in class | refactored ASM visitors|
+| 4 | wrote singleton visitor | wrote unit tests |
+| 4 | restructured packages | did bug fixes | 
 
