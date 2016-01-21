@@ -33,7 +33,7 @@ public class SequenceClassMethodVisitor extends ClassVisitor {
         super(api, decorated);
         this.className = className;
         this.desiredMethodName = desiredMethodName;
-        this.depth = depth;
+        this.depth = currentDepth;
     }
 
 

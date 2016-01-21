@@ -79,7 +79,8 @@ public class SequenceMethodVisitor extends MethodVisitor {
         ParsedDataStorage.getInstance().addMethodCall(newSequenceMethod);
 
         try {
-            downTheRabbitHole(owner, methodName);
+            if (depth < ParsedDataStorage.getInstance().getMax_depth())
+                downTheRabbitHole(owner, methodName);
         } catch (Exception e) {
             System.out.println("YA DUN FUCKED SON");
             e.printStackTrace();
