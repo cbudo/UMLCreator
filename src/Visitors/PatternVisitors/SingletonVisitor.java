@@ -1,9 +1,7 @@
 package Visitors.PatternVisitors;
 
 import DataStorage.ParsedDataStorage;
-import ParseClasses.ClassRep;
-import ParseClasses.FieldRep;
-import ParseClasses.MethodRep;
+import ParseClasses.*;
 import Visitors.ITraverser;
 import Visitors.IVisitor;
 import Visitors.VisitType;
@@ -24,7 +22,18 @@ public class SingletonVisitor {
     }
 
     public void visitAll(ParsedDataStorage data) {
-        data.accept(visitor);
+        for (AbstractJavaClassRep r :
+                data.getClasses()) {
+
+            for (AbstractData m :
+                    r.getMethodsMap().values()) {
+                m.accept(visitor);
+            }
+            for (AbstractData f :
+                    r.getFieldsMap().values()) {
+                f.accept(visitor);
+            }
+        }
     }
 
     private void setupMethodVisit() {

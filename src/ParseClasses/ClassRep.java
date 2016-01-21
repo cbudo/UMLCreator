@@ -37,14 +37,6 @@ public class ClassRep extends AbstractExtendableClassRep
         v.preVisit(this);
         v.visit(this);
         v.postVisit(this);
-        for (AbstractData m :
-                methodsMap.values()) {
-            m.accept(v);
-        }
-        for (AbstractData f :
-                fieldsMap.values()) {
-            f.accept(v);
-        }
     }
 
     public void setPublicStaticGetInstatnce(boolean inst) {

@@ -77,9 +77,9 @@ public class UMLOutputStream extends FilterOutputStream {
             String in = e.getName().substring(e.getName().lastIndexOf("/") + 1);
             this.write("\n" + in
                     + " [\nshape = \"record\",\nlabel = \"{"
-                    + in + "\\l\n");
+                    + in + "\\l");
             if (e.isSingleton()) {
-                this.write("<<Singleton>>\\l\n");
+                this.write("<<Singleton>>\\l");
             }
             this.write("|\n");
 
