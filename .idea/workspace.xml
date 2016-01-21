@@ -1,11 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="1b357d25-b641-458c-8a8c-24064c31616e" name="Default" comment="added depth checking to sequence diagram generation">
+    <list default="true" id="1b357d25-b641-458c-8a8c-24064c31616e" name="Default" comment="fixed some UML bugs">
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/UMLCreator.iml" afterPath="$PROJECT_DIR$/UMLCreator.iml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/DataStorage/ParsedDataStorage.java" afterPath="$PROJECT_DIR$/src/DataStorage/ParsedDataStorage.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/Visitors/UMLVisitors/UMLClassMethodVisitor.java" afterPath="$PROJECT_DIR$/src/Visitors/UMLVisitors/UMLClassMethodVisitor.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/ParseClasses/AbstractData.java" afterPath="$PROJECT_DIR$/src/ParseClasses/AbstractData.java" />
     </list>
     <ignored path="UMLCreator.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -53,9 +51,10 @@
         <entry file="file://$PROJECT_DIR$/src/ParseClasses/AssociationRelation.java">
           <provider selected="true" editor-type-id="text-editor">
             <state vertical-scroll-proportion="0.0">
-              <caret line="18" column="0" selection-start-line="18" selection-start-column="0" selection-end-line="18" selection-end-column="0" />
+              <caret line="4" column="2" selection-start-line="4" selection-start-column="2" selection-end-line="4" selection-end-column="2" />
               <folding>
                 <element signature="e#321#322#0" expanded="true" />
+                <element signature="e#346#347#0" expanded="true" />
                 <element signature="e#377#378#0" expanded="true" />
                 <element signature="e#404#405#0" expanded="true" />
               </folding>
@@ -92,16 +91,41 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="ParsedDataStorage.java" pinned="false" current-in-tab="true">
+      <file leaf-file-name="ParsedDataStorage.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/DataStorage/ParsedDataStorage.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.45">
-              <caret line="143" column="25" selection-start-line="143" selection-start-column="25" selection-end-line="143" selection-end-column="25" />
+            <state vertical-scroll-proportion="0.0">
+              <caret line="150" column="45" selection-start-line="150" selection-start-column="45" selection-end-line="150" selection-end-column="45" />
               <folding>
                 <element signature="e#1523#1524#0" expanded="true" />
                 <element signature="e#1555#1556#0" expanded="true" />
                 <element signature="e#4088#4089#0" expanded="true" />
                 <element signature="e#4131#4132#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="AbstractJavaClassRep.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/ParseClasses/AbstractJavaClassRep.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state vertical-scroll-proportion="0.0">
+              <caret line="55" column="5" selection-start-line="55" selection-start-column="5" selection-end-line="55" selection-end-column="5" />
+              <folding>
+                <element signature="e#1525#1526#0" expanded="true" />
+                <element signature="e#1563#1564#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="AbstractData.java" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/src/ParseClasses/AbstractData.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state vertical-scroll-proportion="1.2941177">
+              <caret line="46" column="23" selection-start-line="46" selection-start-column="23" selection-end-line="46" selection-end-column="23" />
+              <folding>
+                <element signature="imports" expanded="true" />
               </folding>
             </state>
           </provider>
@@ -145,7 +169,6 @@
         <option value="$PROJECT_DIR$/src/Visitor/VisitType.java" />
         <option value="$PROJECT_DIR$/src/Visitor/LookupKey.java" />
         <option value="$PROJECT_DIR$/src/Visitor/Visitor.java" />
-        <option value="$PROJECT_DIR$/src/ParseClasses/AbstractData.java" />
         <option value="$PROJECT_DIR$/src/ParseClasses/FieldRep.java" />
         <option value="$PROJECT_DIR$/src/ParseClasses/InterfaceRep.java" />
         <option value="$PROJECT_DIR$/src/ParseClasses/MethodRep.java" />
@@ -180,6 +203,7 @@
         <option value="$PROJECT_DIR$/src/ParseClasses/UsesRelation.java" />
         <option value="$PROJECT_DIR$/src/Visitors/UMLVisitors/UMLClassMethodVisitor.java" />
         <option value="$PROJECT_DIR$/src/DataStorage/ParsedDataStorage.java" />
+        <option value="$PROJECT_DIR$/src/ParseClasses/AbstractData.java" />
       </list>
     </option>
   </component>
@@ -1064,7 +1088,7 @@
       <workItem from="1453326847344" duration="18000" />
       <workItem from="1453336758890" duration="2306000" />
       <workItem from="1453339896892" duration="641000" />
-      <workItem from="1453344697238" duration="4458000" />
+      <workItem from="1453344697238" duration="5522000" />
     </task>
     <task id="LOCAL-00001" summary="added asm libraries and visitor package">
       <created>1451953507803</created>
@@ -1246,7 +1270,13 @@
       <option name="project" value="LOCAL" />
       <updated>1453339066624</updated>
     </task>
-    <option name="localTasksCounter" value="31" />
+    <task id="LOCAL-00031" summary="fixed some UML bugs">
+      <created>1453349183198</created>
+      <option name="number" value="00031" />
+      <option name="project" value="LOCAL" />
+      <updated>1453349183198</updated>
+    </task>
+    <option name="localTasksCounter" value="32" />
     <servers />
   </component>
   <component name="TestHistory">
@@ -1282,7 +1312,7 @@
     </history-entry>
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="167765000" />
+    <option name="totallyTimeSpent" value="168829000" />
   </component>
   <component name="TodoView" selected-index="1">
     <todo-panel id="selected-file">
@@ -1295,7 +1325,7 @@
   </component>
   <component name="ToolWindowManager">
     <frame x="-9" y="-9" width="1938" height="1218" extended-state="6" />
-    <editor active="false" />
+    <editor active="true" />
     <layout>
       <window_info id="Palette" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32800853" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
@@ -1304,7 +1334,7 @@
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.3939394" sideWeight="0.50428724" order="9" side_tool="true" content_ui="tabs" />
       <window_info id="Maven Projects" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.329582" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.2474032" sideWeight="0.49785638" order="10" side_tool="false" content_ui="tabs" />
-      <window_info id="Run" active="true" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.32672334" sideWeight="0.49571276" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.32672334" sideWeight="0.49571276" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.30190796" sideWeight="0.5" order="8" side_tool="false" content_ui="tabs" />
       <window_info id="Designer" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.18971062" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
@@ -1383,7 +1413,8 @@
     <MESSAGE value="changed the arrow used for association" />
     <MESSAGE value="Added new version of sequence diagram visitor" />
     <MESSAGE value="added depth checking to sequence diagram generation" />
-    <option name="LAST_COMMIT_MESSAGE" value="added depth checking to sequence diagram generation" />
+    <MESSAGE value="fixed some UML bugs" />
+    <option name="LAST_COMMIT_MESSAGE" value="fixed some UML bugs" />
     <option name="OPTIMIZE_IMPORTS_BEFORE_PROJECT_COMMIT" value="true" />
     <option name="REFORMAT_BEFORE_PROJECT_COMMIT" value="true" />
     <option name="REARRANGE_BEFORE_PROJECT_COMMIT" value="true" />
@@ -1536,13 +1567,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/ParseClasses/AbstractData.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.72202164">
-          <caret line="43" column="1" selection-start-line="43" selection-start-column="1" selection-end-line="43" selection-end-column="1" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/ParseClasses/AbstractClassRep.java">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="1.4296029">
@@ -1611,16 +1635,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.33333334">
           <caret line="9" column="11" selection-start-line="9" selection-start-column="11" selection-end-line="9" selection-end-column="11" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/ParseClasses/AbstractJavaClassRep.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="1.0">
-          <caret line="55" column="16" selection-start-line="55" selection-start-column="16" selection-end-line="55" selection-end-column="16" />
-          <folding>
-            <element signature="imports" expanded="false" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -1756,26 +1770,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/ParseClasses/IRelation.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="9" column="11" selection-start-line="9" selection-start-column="11" selection-end-line="9" selection-end-column="11" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/ParseClasses/AssociationRelation.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="18" column="0" selection-start-line="18" selection-start-column="0" selection-end-line="18" selection-end-column="0" />
-          <folding>
-            <element signature="e#321#322#0" expanded="true" />
-            <element signature="e#377#378#0" expanded="true" />
-            <element signature="e#404#405#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/GenerateTemp/Register.java">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.67941177">
@@ -1809,15 +1803,57 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/src/ParseClasses/AssociationRelation.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="4" column="2" selection-start-line="4" selection-start-column="2" selection-end-line="4" selection-end-column="2" />
+          <folding>
+            <element signature="e#321#322#0" expanded="true" />
+            <element signature="e#346#347#0" expanded="true" />
+            <element signature="e#377#378#0" expanded="true" />
+            <element signature="e#404#405#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/ParseClasses/IRelation.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="9" column="11" selection-start-line="9" selection-start-column="11" selection-end-line="9" selection-end-column="11" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/src/DataStorage/ParsedDataStorage.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.45">
-          <caret line="143" column="25" selection-start-line="143" selection-start-column="25" selection-end-line="143" selection-end-column="25" />
+        <state vertical-scroll-proportion="0.0">
+          <caret line="150" column="45" selection-start-line="150" selection-start-column="45" selection-end-line="150" selection-end-column="45" />
           <folding>
             <element signature="e#1523#1524#0" expanded="true" />
             <element signature="e#1555#1556#0" expanded="true" />
             <element signature="e#4088#4089#0" expanded="true" />
             <element signature="e#4131#4132#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/ParseClasses/AbstractJavaClassRep.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="55" column="5" selection-start-line="55" selection-start-column="5" selection-end-line="55" selection-end-column="5" />
+          <folding>
+            <element signature="e#1525#1526#0" expanded="true" />
+            <element signature="e#1563#1564#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/ParseClasses/AbstractData.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="1.2941177">
+          <caret line="46" column="23" selection-start-line="46" selection-start-column="23" selection-end-line="46" selection-end-column="23" />
+          <folding>
+            <element signature="imports" expanded="true" />
           </folding>
         </state>
       </provider>

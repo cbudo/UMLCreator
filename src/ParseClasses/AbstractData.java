@@ -1,6 +1,7 @@
 package ParseClasses;
 
 import Visitors.ITraverser;
+import org.objectweb.asm.Opcodes;
 
 import java.security.KeyRep;
 import java.util.HashMap;
@@ -38,7 +39,13 @@ public abstract class AbstractData implements ITraverser
 
     public String getTranslatedAccessibility()
     {
-        return this.accessibilityTranslator.get(this.accessibility);
+        if ((this.getAccessibility() & Opcodes.ACC_PUBLIC) != 0) {
+            return "+";
+        } else if ((this.getAccessibility() & Opcodes.ACC_PRIVATE) != 0) {
+            return "-";
+        } else {
+            return "#";
+        }
     }
 
 }
