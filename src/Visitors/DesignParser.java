@@ -1,7 +1,7 @@
 package Visitors;
 
-import DataStorage.GeneratorFactory;
-import DataStorage.IGenerator;
+import DataStorage.Generation.GeneratorFactory;
+import DataStorage.Generation.IGenerator;
 import DataStorage.ParsedDataStorage;
 
 import java.io.FileOutputStream;

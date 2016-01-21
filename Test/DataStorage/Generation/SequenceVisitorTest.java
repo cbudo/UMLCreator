@@ -1,7 +1,5 @@
-package DataStorage.SequenceParsing;
+package DataStorage.Generation;
 
-import DataStorage.GeneratorFactory;
-import DataStorage.IGenerator;
 import DataStorage.ParsedDataStorage;
 import ParseClasses.MethodCall;
 import org.junit.Test;
@@ -19,17 +17,17 @@ import static org.junit.Assert.assertEquals;
  */
 public class SequenceVisitorTest {
 
-    @Test
-    public void basicTestVisit() throws Exception {
-        StringBuilder classes = new StringBuilder();
-        StringBuilder methods = new StringBuilder();
-        String[] args = new String[0];
-        MethodCall mc = new MethodCall("Calling", "Called", "Method", args, "void");
-        SequenceVisitor visitor = new SequenceVisitor();
-        visitor.visit(mc, classes, methods);
-        assertEquals("Calling:Calling[a]\nCalled:Called[a]\n", classes.toString());
-        assertEquals("Calling:Called.Method():void\n", methods.toString());
-    }
+//    @Test
+//    public void basicTestVisit() throws Exception {
+//        StringBuilder classes = new StringBuilder();
+//        StringBuilder methods = new StringBuilder();
+//        String[] args = new String[0];
+//        MethodCall mc = new MethodCall("Calling", "Called", "Method", args, "void");
+//        SequenceVisitor visitor = new SequenceVisitor();
+//        visitor.visit(mc, classes, methods);
+//        assertEquals("Calling:Calling[a]\nCalled:Called[a]\n", classes.toString());
+//        assertEquals("Calling:Called.Method():void\n", methods.toString());
+//    }
 
     //callingClass, calledClass, methodName, args, retType
     @Test
