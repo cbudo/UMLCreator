@@ -4,6 +4,7 @@ import DataStorage.ParsedDataStorage;
 import Visitors.ClassDeclarationVisitor;
 import Visitors.ClassFieldVisitor;
 import Visitors.OutputStreams.UMLOutputStream;
+import Visitors.PatternVisitors.AbstractVisitorTemplate;
 import Visitors.PatternVisitors.SingletonVisitor;
 import Visitors.UMLVisitors.UMLClassMethodVisitor;
 import com.sun.xml.internal.messaging.saaj.util.ByteOutputStream;
@@ -22,8 +23,8 @@ import java.util.List;
 public class GraphGenerator implements IGenerator {
     public static String buildUMLClassDiagram() {
         ParsedDataStorage data = ParsedDataStorage.getInstance();
-        SingletonVisitor visitS = new SingletonVisitor();
-        visitS.visitAll(data);
+        AbstractVisitorTemplate visitS = new SingletonVisitor(data);
+        visitS.doTheStuff();
         OutputStream os = null;
         UMLOutputStream fos = null;
         try {

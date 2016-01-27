@@ -1,7 +1,10 @@
 package UMLTests;
 
-import DataStorage.GeneratorFactory;
-import DataStorage.IGenerator;
+//import DataStorage.GeneratorFactory;
+//import DataStorage.IGenerator;
+
+import DataStorage.Generation.GeneratorFactory;
+import DataStorage.Generation.IGenerator;
 import org.junit.Test;
 
 import java.util.ArrayList;

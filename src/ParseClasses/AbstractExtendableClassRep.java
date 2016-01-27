@@ -30,6 +30,10 @@ public abstract class AbstractExtendableClassRep extends AbstractJavaClassRep
         this.extendedClassName = extendedClassName;
     }
 
+    public String getExtendedClassName() {
+        return this.extendedClassName;
+    }
+
 //    protected void addExtendsRelationsToStorage() {
 //        if (extendedClassName != null) {
 //            ParsedDataStorage.getInstance().addRelation(new Extends(extendedClassName, getName()));

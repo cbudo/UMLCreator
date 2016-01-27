@@ -12,13 +12,15 @@ import java.util.Map;
  */
 public abstract class AbstractData implements ITraverser
 {
-    private String name;
+    private String name, displayName;
     private int accessibility;
     private Map<Integer, String> accessibilityTranslator = new HashMap<Integer, String>();
 
     public AbstractData(String name, int accessibility)
     {
         this.name = name;
+        this.displayName = getInnermostName();
+
         this.accessibility = accessibility;
 
         this.accessibilityTranslator.put(KeyRep.Type.PUBLIC.ordinal(), "+");
@@ -30,6 +32,18 @@ public abstract class AbstractData implements ITraverser
     public String getName()
     {
         return this.name;
+    }
+
+    public String getInnermostName() {
+        return this.name.substring(this.name.lastIndexOf("/") + 1);
+    }
+
+    public String getDisplayName() {
+        return this.displayName;
+    }
+
+    public void addToDisplayName(String textToAdd) {
+        this.displayName += textToAdd;
     }
 
     public int getAccessibility()

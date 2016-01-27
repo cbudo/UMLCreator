@@ -3,7 +3,7 @@ digraph UML_Diagram
 rankdir=BT;
 
 ChocolateBoiler [
-shape = "record", color="blue",
+shape = "record", color="black",
 label = "{ChocolateBoiler\l\<\<Singleton\>\>\l|
 - boiled : boolean\l
 - uniqueInstance : ChocolateBoiler\l

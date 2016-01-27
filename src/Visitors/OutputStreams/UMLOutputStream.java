@@ -75,16 +75,17 @@ public class UMLOutputStream extends FilterOutputStream {
     public void setupVisitClass() {
         this.visitor.addVisit(VisitType.Visit, ClassRep.class, (ITraverser t) -> {
             ClassRep e = (ClassRep) t;
-            String in = e.getName().substring(e.getName().lastIndexOf("/") + 1);
+            String in = e.getInnermostName();//.substring(e.getName().lastIndexOf("/") + 1);
+            String nameToDisplay = e.getDisplayName();
             String color = "black";
-            String singleton = "";
-            if (e.isSingleton()) {
-                singleton = "\\<\\<Singleton\\>\\>\\l";
-                color = "blue";
-            }
+//            String singleton = "";
+//            if (e.isSingleton()) {
+//                singleton = "\\<\\<Singleton\\>\\>\\l";
+//                color = "blue";
+//            }
             this.write("\n" + in
                     + " [\nshape = \"record\", color=\"" + color + "\",\nlabel = \"{"
-                    + in + "\\l" + singleton);
+                    + nameToDisplay + "\\l");
             this.write("|\n");
 
             for (AbstractData f : e.getFieldsMap().values()) {

@@ -1,30 +1,32 @@
 package Visitors.PatternVisitors;
 
+import DataStorage.IDataStorage;
 import DataStorage.ParsedDataStorage;
 import ParseClasses.*;
 import Visitors.ITraverser;
-import Visitors.IVisitor;
 import Visitors.VisitType;
-import Visitors.Visitor;
 import org.objectweb.asm.Opcodes;
 
 /**
  * Created by budocf on 1/20/2016.
  */
-public class SingletonVisitor {
-    private final IVisitor visitor;
+public class SingletonVisitor extends AbstractVisitorTemplate {
 
-    public SingletonVisitor() {
-        visitor = new Visitor();
-        setupFieldVisit();
-        setupMethodPostVisit();
-        setupMethodVisit();
+    public SingletonVisitor(IDataStorage data) {
+        super(data);
     }
 
-    public void visitAll(ParsedDataStorage data) {
+    @Override
+    public void performSetup() {
+        setupFieldVisit();
+        setupMethodVisit();
+        setupMethodPostVisit();
+    }
+
+    @Override
+    public void performVisits(IDataStorage data) {
         for (AbstractJavaClassRep r :
                 data.getClasses()) {
-
             for (AbstractData m :
                     r.getMethodsMap().values()) {
                 m.accept(visitor);
@@ -32,6 +34,15 @@ public class SingletonVisitor {
             for (AbstractData f :
                     r.getFieldsMap().values()) {
                 f.accept(visitor);
+            }
+        }
+    }
+
+    @Override
+    public void performAnalysis() {
+        for (AbstractJavaClassRep r : data.getClasses()) {
+            if (((ClassRep) r).isSingleton()) {
+                r.addToDisplayName("\\l\\<\\<Singleton\\>\\>");
             }
         }
     }
@@ -59,6 +70,7 @@ public class SingletonVisitor {
             }
         });
     }
+
 
     private void setupFieldVisit() {
         this.visitor.addVisit(VisitType.Visit, FieldRep.class, (ITraverser t) -> {

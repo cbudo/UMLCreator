@@ -1,370 +1,173 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="1b357d25-b641-458c-8a8c-24064c31616e" name="Default" comment="added the 4 singleton test cases">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/DataTypesUML.jpg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Lab1-3-Solution.zip" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Lab1-3-Solution/bin/headfirst/observer/swing/SwingObserverExample$AngelListener.class" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Lab1-3-Solution/bin/headfirst/observer/swing/SwingObserverExample$DevilListener.class" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Lab1-3-Solution/bin/headfirst/observer/swing/SwingObserverExample.class" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Lab1-3-Solution/bin/headfirst/observer/weather/CurrentConditionsDisplay.class" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Lab1-3-Solution/bin/headfirst/observer/weather/DisplayElement.class" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Lab1-3-Solution/bin/headfirst/observer/weather/ForecastDisplay.class" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Lab1-3-Solution/bin/headfirst/observer/weather/HeatIndexDisplay.class" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Lab1-3-Solution/bin/headfirst/observer/weather/Observer.class" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Lab1-3-Solution/bin/headfirst/observer/weather/StatisticsDisplay.class" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Lab1-3-Solution/bin/headfirst/observer/weather/Subject.class" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Lab1-3-Solution/bin/headfirst/observer/weather/WeatherData.class" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Lab1-3-Solution/bin/headfirst/observer/weather/WeatherStation.class" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Lab1-3-Solution/bin/headfirst/observer/weather/WeatherStationHeatIndex.class" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Lab1-3-Solution/bin/headfirst/observer/weatherobservable/CurrentConditionsDisplay.class" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Lab1-3-Solution/bin/headfirst/observer/weatherobservable/DisplayElement.class" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Lab1-3-Solution/bin/headfirst/observer/weatherobservable/ForecastDisplay.class" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Lab1-3-Solution/bin/headfirst/observer/weatherobservable/HeatIndexDisplay.class" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Lab1-3-Solution/bin/headfirst/observer/weatherobservable/StatisticsDisplay.class" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Lab1-3-Solution/bin/headfirst/observer/weatherobservable/WeatherData.class" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Lab1-3-Solution/bin/headfirst/observer/weatherobservable/WeatherStation.class" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Lab1-3-Solution/bin/headfirst/observer/weatherobservable/WeatherStationHeatIndex.class" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Lab1-3-Solution/bin/problem/AllAppRunningIntegrationTest.class" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Lab1-3-Solution/bin/problem/AllTests.class" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Lab1-3-Solution/bin/problem/AppLauncherApplication.class" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Lab1-3-Solution/bin/problem/ApplicationLauncher.class" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Lab1-3-Solution/bin/problem/DataFileRunner.class" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Lab1-3-Solution/bin/problem/DirectoryChangeLogger.class" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Lab1-3-Solution/bin/problem/DirectoryEvent.class" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Lab1-3-Solution/bin/problem/DirectoryMonitorService.class" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Lab1-3-Solution/bin/problem/ExecutableFileRunner.class" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Lab1-3-Solution/bin/problem/IApplicationLauncher.class" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Lab1-3-Solution/bin/problem/IDirectoryListener.class" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Lab1-3-Solution/bin/problem/IDirectoryMonitorService.class" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Lab1-3-Solution/bin/problem/NoAppRunningIntegrationTest.class" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Lab1-3-Solution/bin/problem/ProcessRunner.class" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Lab1-3-Solution/bin/puzzle/Creator.class" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Lab1-3-Solution/bin/puzzle/Creature.class" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Lab1-3-Solution/bin/temp/HumidityDisplay.class" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Lab1-3-Solution/bin/temp/ISubscriber.class" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Lab1-3-Solution/bin/temp/IWeatherData.class" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Lab1-3-Solution/bin/temp/IWeatherReporter.class" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Lab1-3-Solution/bin/temp/TemperatureDisplay.class" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Lab1-3-Solution/bin/temp/WeatherApp.class" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Lab1-3-Solution/bin/temp/WeatherData.class" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Lab1-3-Solution/bin/temp/WeatherReporter.class" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Lab1-3-Solution/bin/temp/WeatherReporterTest.class" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Lab1-3-Solution/docs/Answer.pdf" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Lab1-3-Solution/docs/Design.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Lab1-3-Solution/input_output/test.exe" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Lab1-3-Solution/input_output/test_files/test.exe" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Lab4-2-Singleton.zip" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/MS3_Turnin.zip" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/asm-all-5.0.4.jar" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/lab1-3_UML.jpg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/out/Lab4-2-Singleton/bin/headfirst/singleton/chocolate/ChocolateBoiler.class" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/out/Lab4-2-Singleton/bin/headfirst/singleton/chocolate/ChocolateController.class" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/out/Lab4-2-Singleton/bin/headfirst/singleton/classic/Singleton.class" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/out/Lab4-2-Singleton/bin/headfirst/singleton/dcl/Singleton.class" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/out/Lab4-2-Singleton/bin/headfirst/singleton/dcl/SingletonClient.class" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/out/Lab4-2-Singleton/bin/headfirst/singleton/stat/Singleton.class" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/out/Lab4-2-Singleton/bin/headfirst/singleton/stat/SingletonClient.class" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/out/Lab4-2-Singleton/bin/headfirst/singleton/subclass/CoolerSingleton.class" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/out/Lab4-2-Singleton/bin/headfirst/singleton/subclass/HotterSingleton.class" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/out/Lab4-2-Singleton/bin/headfirst/singleton/subclass/Singleton.class" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/out/Lab4-2-Singleton/bin/headfirst/singleton/subclass/SingletonTestDrive.class" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/out/Lab4-2-Singleton/bin/headfirst/singleton/threadsafe/Singleton.class" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/out/production/UMLCreator/Actual/Lab1-3_Actual.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/out/production/UMLCreator/Actual/Milestone_1_UML.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/out/production/UMLCreator/DataStorage/GeneratorFactory.class" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/out/production/UMLCreator/DataStorage/GraphGenerator.class" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/out/production/UMLCreator/DataStorage/IDataStorage.class" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/out/production/UMLCreator/DataStorage/IGenerator.class" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/out/production/UMLCreator/DataStorage/ParsedDataStorage.class" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/out/production/UMLCreator/DataStorage/SequenceParsing/ISequenceVisitor.class" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/out/production/UMLCreator/DataStorage/SequenceParsing/SequenceGenerator.class" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/out/production/UMLCreator/DataStorage/SequenceParsing/SequenceVisitor.class" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/out/production/UMLCreator/Generated/Lab1-3_Generated.jpg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/out/production/UMLCreator/Generated/Project_Generated.jpg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/out/production/UMLCreator/ParseClasses/AbstractClassRep.class" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/out/production/UMLCreator/ParseClasses/AbstractData.class" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/out/production/UMLCreator/ParseClasses/AbstractExtendableClassRep.class" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/out/production/UMLCreator/ParseClasses/AbstractJavaClassRep.class" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/out/production/UMLCreator/ParseClasses/AbstractTypable.class" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/out/production/UMLCreator/ParseClasses/AssociationRelation.class" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/out/production/UMLCreator/ParseClasses/ClassRep.class" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/out/production/UMLCreator/ParseClasses/FieldRep.class" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/out/production/UMLCreator/ParseClasses/IRelation.class" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/out/production/UMLCreator/ParseClasses/InterfaceRep.class" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/out/production/UMLCreator/ParseClasses/MethodCall.class" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/out/production/UMLCreator/ParseClasses/MethodRep.class" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/out/production/UMLCreator/ParseClasses/UsesRelation.class" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/out/production/UMLCreator/Visitors/ClassDeclarationVisitor.class" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/out/production/UMLCreator/Visitors/ClassFieldVisitor.class" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/out/production/UMLCreator/Visitors/DesignParser.class" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/out/production/UMLCreator/Visitors/ITraverser.class" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/out/production/UMLCreator/Visitors/IVisitMethod.class" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/out/production/UMLCreator/Visitors/IVisitor.class" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/out/production/UMLCreator/Visitors/LookupKey.class" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/out/production/UMLCreator/Visitors/OutputStreams/SequenceOutputStream.class" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/out/production/UMLCreator/Visitors/OutputStreams/UMLOutputStream.class" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/out/production/UMLCreator/Visitors/PatternVisitors/SingletonVisitor.class" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/out/production/UMLCreator/Visitors/SequenceVisitors/SequenceClassMethodVisitor.class" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/out/production/UMLCreator/Visitors/SequenceVisitors/SequenceMethodVisitor.class" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/out/production/UMLCreator/Visitors/UMLVisitors/UMLClassMethodVisitor.class" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/out/production/UMLCreator/Visitors/UMLVisitors/UMLMethodVisitor.class" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/out/production/UMLCreator/Visitors/VisitType.class" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/out/production/UMLCreator/Visitors/Visitor.class" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/out/production/UMLCreator/headfirst/singleton/chocolate/ChocolateBoiler.class" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/out/production/UMLCreator/headfirst/singleton/chocolate/ChocolateController.class" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/out/production/UMLCreator/headfirst/singleton/classic/Singleton.class" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/out/production/UMLCreator/headfirst/singleton/dcl/Singleton.class" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/out/production/UMLCreator/headfirst/singleton/dcl/SingletonClient.class" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/out/production/UMLCreator/headfirst/singleton/stat/Singleton.class" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/out/production/UMLCreator/headfirst/singleton/stat/SingletonClient.class" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/out/production/UMLCreator/headfirst/singleton/subclass/CoolerSingleton.class" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/out/production/UMLCreator/headfirst/singleton/subclass/HotterSingleton.class" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/out/production/UMLCreator/headfirst/singleton/subclass/Singleton.class" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/out/production/UMLCreator/headfirst/singleton/subclass/SingletonTestDrive.class" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/out/production/UMLCreator/headfirst/singleton/threadsafe/Singleton.class" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/out/production/UMLCreator/pizzafactory/factory/pizzaaf/BlackOlives.class" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/out/production/UMLCreator/pizzafactory/factory/pizzaaf/Cheese.class" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/out/production/UMLCreator/pizzafactory/factory/pizzaaf/CheesePizza.class" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/out/production/UMLCreator/pizzafactory/factory/pizzaaf/ChicagoPizzaIngredientFactory.class" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/out/production/UMLCreator/pizzafactory/factory/pizzaaf/ChicagoPizzaStore.class" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/out/production/UMLCreator/pizzafactory/factory/pizzaaf/ClamPizza.class" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/out/production/UMLCreator/pizzafactory/factory/pizzaaf/Clams.class" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/out/production/UMLCreator/pizzafactory/factory/pizzaaf/Dough.class" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/out/production/UMLCreator/pizzafactory/factory/pizzaaf/Eggplant.class" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/out/production/UMLCreator/pizzafactory/factory/pizzaaf/FreshClams.class" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/out/production/UMLCreator/pizzafactory/factory/pizzaaf/FrozenClams.class" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/out/production/UMLCreator/pizzafactory/factory/pizzaaf/Garlic.class" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/out/production/UMLCreator/pizzafactory/factory/pizzaaf/MarinaraSauce.class" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/out/production/UMLCreator/pizzafactory/factory/pizzaaf/MozzarellaCheese.class" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/out/production/UMLCreator/pizzafactory/factory/pizzaaf/Mushroom.class" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/out/production/UMLCreator/pizzafactory/factory/pizzaaf/NYPizzaIngredientFactory.class" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/out/production/UMLCreator/pizzafactory/factory/pizzaaf/NYPizzaStore.class" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/out/production/UMLCreator/pizzafactory/factory/pizzaaf/Onion.class" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/out/production/UMLCreator/pizzafactory/factory/pizzaaf/ParmesanCheese.class" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/out/production/UMLCreator/pizzafactory/factory/pizzaaf/Pepperoni.class" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/out/production/UMLCreator/pizzafactory/factory/pizzaaf/PepperoniPizza.class" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/out/production/UMLCreator/pizzafactory/factory/pizzaaf/Pizza.class" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/out/production/UMLCreator/pizzafactory/factory/pizzaaf/PizzaIngredientFactory.class" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/out/production/UMLCreator/pizzafactory/factory/pizzaaf/PizzaStore.class" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/out/production/UMLCreator/pizzafactory/factory/pizzaaf/PizzaTestDrive.class" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/out/production/UMLCreator/pizzafactory/factory/pizzaaf/PlumTomatoSauce.class" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/out/production/UMLCreator/pizzafactory/factory/pizzaaf/RedPepper.class" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/out/production/UMLCreator/pizzafactory/factory/pizzaaf/ReggianoCheese.class" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/out/production/UMLCreator/pizzafactory/factory/pizzaaf/Sauce.class" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/out/production/UMLCreator/pizzafactory/factory/pizzaaf/SlicedPepperoni.class" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/out/production/UMLCreator/pizzafactory/factory/pizzaaf/Spinach.class" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/out/production/UMLCreator/pizzafactory/factory/pizzaaf/ThickCrustDough.class" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/out/production/UMLCreator/pizzafactory/factory/pizzaaf/ThinCrustDough.class" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/out/production/UMLCreator/pizzafactory/factory/pizzaaf/VeggiePizza.class" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/out/production/UMLCreator/pizzafactory/factory/pizzaaf/Veggies.class" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/out/production/UMLCreator/pizzafactory/factory/pizzafm/ChicagoPizzaStore.class" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/out/production/UMLCreator/pizzafactory/factory/pizzafm/ChicagoStyleCheesePizza.class" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/out/production/UMLCreator/pizzafactory/factory/pizzafm/ChicagoStyleClamPizza.class" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/out/production/UMLCreator/pizzafactory/factory/pizzafm/ChicagoStylePepperoniPizza.class" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/out/production/UMLCreator/pizzafactory/factory/pizzafm/ChicagoStyleVeggiePizza.class" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/out/production/UMLCreator/pizzafactory/factory/pizzafm/DependentPizzaStore.class" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/out/production/UMLCreator/pizzafactory/factory/pizzafm/NYPizzaStore.class" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/out/production/UMLCreator/pizzafactory/factory/pizzafm/NYStyleCheesePizza.class" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/out/production/UMLCreator/pizzafactory/factory/pizzafm/NYStyleClamPizza.class" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/out/production/UMLCreator/pizzafactory/factory/pizzafm/NYStylePepperoniPizza.class" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/out/production/UMLCreator/pizzafactory/factory/pizzafm/NYStyleVeggiePizza.class" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/out/production/UMLCreator/pizzafactory/factory/pizzafm/Pizza.class" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/out/production/UMLCreator/pizzafactory/factory/pizzafm/PizzaStore.class" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/out/production/UMLCreator/pizzafactory/factory/pizzafm/PizzaTestDrive.class" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/out/production/UMLCreator/pizzafactory/factory/pizzas/CheesePizza.class" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/out/production/UMLCreator/pizzafactory/factory/pizzas/ClamPizza.class" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/out/production/UMLCreator/pizzafactory/factory/pizzas/PepperoniPizza.class" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/out/production/UMLCreator/pizzafactory/factory/pizzas/Pizza.class" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/out/production/UMLCreator/pizzafactory/factory/pizzas/PizzaStore.class" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/out/production/UMLCreator/pizzafactory/factory/pizzas/PizzaTestDrive.class" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/out/production/UMLCreator/pizzafactory/factory/pizzas/SimplePizzaFactory.class" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/out/production/UMLCreator/pizzafactory/factory/pizzas/VeggiePizza.class" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/out/test/UMLCreator/DataStorage/SequenceParsing/SequenceVisitorTest.class" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/out/test/UMLCreator/UMLTests/SingletonTests.class" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/output_graph.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/pizzafactory.zip" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/sample_from_cmd.pn" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src.zip" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/Lab4-2-Singleton/bin/headfirst/singleton/chocolate/ChocolateBoiler.class" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/Lab4-2-Singleton/bin/headfirst/singleton/chocolate/ChocolateController.class" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/Lab4-2-Singleton/bin/headfirst/singleton/classic/Singleton.class" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/Lab4-2-Singleton/bin/headfirst/singleton/dcl/Singleton.class" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/Lab4-2-Singleton/bin/headfirst/singleton/dcl/SingletonClient.class" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/Lab4-2-Singleton/bin/headfirst/singleton/stat/Singleton.class" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/Lab4-2-Singleton/bin/headfirst/singleton/stat/SingletonClient.class" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/Lab4-2-Singleton/bin/headfirst/singleton/subclass/CoolerSingleton.class" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/Lab4-2-Singleton/bin/headfirst/singleton/subclass/HotterSingleton.class" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/Lab4-2-Singleton/bin/headfirst/singleton/subclass/Singleton.class" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/Lab4-2-Singleton/bin/headfirst/singleton/subclass/SingletonTestDrive.class" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/Lab4-2-Singleton/bin/headfirst/singleton/threadsafe/Singleton.class" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.project" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/CommandLineArugementsParser.py" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/GenerateTemp/Register.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Lab1-3-Solution/.classpath" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Lab1-3-Solution/.project" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Lab1-3-Solution/.settings/org.eclipse.jdt.core.prefs" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Lab1-3-Solution/docs/Design.uxf" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Lab1-3-Solution/input_output/test.bak" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Lab1-3-Solution/input_output/test.htm" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Lab1-3-Solution/input_output/test.html" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Lab1-3-Solution/input_output/test.log" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Lab1-3-Solution/input_output/test.txt" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Lab1-3-Solution/input_output/test_files/test.bak" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Lab1-3-Solution/input_output/test_files/test.htm" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Lab1-3-Solution/input_output/test_files/test.html" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Lab1-3-Solution/input_output/test_files/test.log" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Lab1-3-Solution/input_output/test_files/test.txt" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Lab1-3-Solution/src/headfirst/observer/swing/SwingObserverExample.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Lab1-3-Solution/src/headfirst/observer/weather/CurrentConditionsDisplay.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Lab1-3-Solution/src/headfirst/observer/weather/DisplayElement.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Lab1-3-Solution/src/headfirst/observer/weather/ForecastDisplay.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Lab1-3-Solution/src/headfirst/observer/weather/HeatIndexDisplay.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Lab1-3-Solution/src/headfirst/observer/weather/Observer.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Lab1-3-Solution/src/headfirst/observer/weather/StatisticsDisplay.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Lab1-3-Solution/src/headfirst/observer/weather/Subject.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Lab1-3-Solution/src/headfirst/observer/weather/WeatherData.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Lab1-3-Solution/src/headfirst/observer/weather/WeatherStation.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Lab1-3-Solution/src/headfirst/observer/weather/WeatherStationHeatIndex.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Lab1-3-Solution/src/headfirst/observer/weatherobservable/CurrentConditionsDisplay.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Lab1-3-Solution/src/headfirst/observer/weatherobservable/DisplayElement.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Lab1-3-Solution/src/headfirst/observer/weatherobservable/ForecastDisplay.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Lab1-3-Solution/src/headfirst/observer/weatherobservable/HeatIndexDisplay.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Lab1-3-Solution/src/headfirst/observer/weatherobservable/StatisticsDisplay.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Lab1-3-Solution/src/headfirst/observer/weatherobservable/WeatherData.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Lab1-3-Solution/src/headfirst/observer/weatherobservable/WeatherStation.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Lab1-3-Solution/src/headfirst/observer/weatherobservable/WeatherStationHeatIndex.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Lab1-3-Solution/src/problem/AppLauncherApplication.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Lab1-3-Solution/src/problem/ApplicationLauncher.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Lab1-3-Solution/src/problem/DataFileRunner.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Lab1-3-Solution/src/problem/DirectoryChangeLogger.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Lab1-3-Solution/src/problem/DirectoryEvent.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Lab1-3-Solution/src/problem/DirectoryMonitorService.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Lab1-3-Solution/src/problem/ExecutableFileRunner.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Lab1-3-Solution/src/problem/IApplicationLauncher.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Lab1-3-Solution/src/problem/IDirectoryListener.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Lab1-3-Solution/src/problem/IDirectoryMonitorService.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Lab1-3-Solution/src/problem/ProcessRunner.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Lab1-3-Solution/src/puzzle/Creator.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Lab1-3-Solution/src/temp/HumidityDisplay.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Lab1-3-Solution/src/temp/ISubscriber.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Lab1-3-Solution/src/temp/IWeatherData.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Lab1-3-Solution/src/temp/IWeatherReporter.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Lab1-3-Solution/src/temp/TemperatureDisplay.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Lab1-3-Solution/src/temp/WeatherApp.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Lab1-3-Solution/src/temp/WeatherData.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Lab1-3-Solution/src/temp/WeatherReporter.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Lab1-3-Solution/test/problem/AllAppRunningIntegrationTest.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Lab1-3-Solution/test/problem/AllTests.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Lab1-3-Solution/test/problem/NoAppRunningIntegrationTest.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Lab1-3-Solution/test/temp/WeatherReporterTest.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/MS_3_UML.uxf" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/commandline_args.txt" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/graph_text/generated_graph.gv" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/graph_text/generated_graph.sd" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/graph_text/test_from_text.gv" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/hs_err_pid8516.log" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/lib/.idea/.name" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/lib/.idea/compiler.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/lib/.idea/copyright/profiles_settings.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/lib/.idea/encodings.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/lib/.idea/inspectionProfiles/Project_Default.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/lib/.idea/inspectionProfiles/profiles_settings.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/lib/.idea/libraries/asm_all_5_0_4.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/lib/.idea/misc.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/lib/.idea/modules.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/lib/.idea/uiDesigner.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/lib/.idea/vcs.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/lib/.idea/workspace.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/out/Lab4-2-Singleton/.classpath" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/out/Lab4-2-Singleton/.project" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/out/Lab4-2-Singleton/src/headfirst/singleton/chocolate/ChocolateBoiler.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/out/Lab4-2-Singleton/src/headfirst/singleton/chocolate/ChocolateController.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/out/Lab4-2-Singleton/src/headfirst/singleton/classic/Singleton.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/out/Lab4-2-Singleton/src/headfirst/singleton/dcl/Singleton.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/out/Lab4-2-Singleton/src/headfirst/singleton/dcl/SingletonClient.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/out/Lab4-2-Singleton/src/headfirst/singleton/stat/Singleton.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/out/Lab4-2-Singleton/src/headfirst/singleton/stat/SingletonClient.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/out/Lab4-2-Singleton/src/headfirst/singleton/subclass/CoolerSingleton.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/out/Lab4-2-Singleton/src/headfirst/singleton/subclass/HotterSingleton.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/out/Lab4-2-Singleton/src/headfirst/singleton/subclass/Singleton.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/out/Lab4-2-Singleton/src/headfirst/singleton/subclass/SingletonTestDrive.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/out/Lab4-2-Singleton/src/headfirst/singleton/threadsafe/Singleton.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/out/production/UMLCreator/Lab4-2-Singleton/.classpath" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/out/production/UMLCreator/Lab4-2-Singleton/.project" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/sequence_test.gv" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/Lab4-2-Singleton/.classpath" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/Lab4-2-Singleton/.project" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/Lab4-2-Singleton/src/headfirst/singleton/chocolate/ChocolateBoiler.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/Lab4-2-Singleton/src/headfirst/singleton/chocolate/ChocolateController.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/Lab4-2-Singleton/src/headfirst/singleton/classic/Singleton.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/Lab4-2-Singleton/src/headfirst/singleton/dcl/Singleton.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/Lab4-2-Singleton/src/headfirst/singleton/dcl/SingletonClient.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/Lab4-2-Singleton/src/headfirst/singleton/stat/Singleton.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/Lab4-2-Singleton/src/headfirst/singleton/stat/SingletonClient.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/Lab4-2-Singleton/src/headfirst/singleton/subclass/CoolerSingleton.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/Lab4-2-Singleton/src/headfirst/singleton/subclass/HotterSingleton.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/Lab4-2-Singleton/src/headfirst/singleton/subclass/Singleton.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/Lab4-2-Singleton/src/headfirst/singleton/subclass/SingletonTestDrive.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/Lab4-2-Singleton/src/headfirst/singleton/threadsafe/Singleton.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/pizzafactory/factory/pizzaaf/BlackOlives.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/pizzafactory/factory/pizzaaf/Cheese.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/pizzafactory/factory/pizzaaf/CheesePizza.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/pizzafactory/factory/pizzaaf/ChicagoPizzaIngredientFactory.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/pizzafactory/factory/pizzaaf/ChicagoPizzaStore.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/pizzafactory/factory/pizzaaf/ClamPizza.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/pizzafactory/factory/pizzaaf/Clams.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/pizzafactory/factory/pizzaaf/Dough.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/pizzafactory/factory/pizzaaf/Eggplant.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/pizzafactory/factory/pizzaaf/FreshClams.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/pizzafactory/factory/pizzaaf/FrozenClams.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/pizzafactory/factory/pizzaaf/Garlic.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/pizzafactory/factory/pizzaaf/MarinaraSauce.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/pizzafactory/factory/pizzaaf/MozzarellaCheese.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/pizzafactory/factory/pizzaaf/Mushroom.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/pizzafactory/factory/pizzaaf/NYPizzaIngredientFactory.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/pizzafactory/factory/pizzaaf/NYPizzaStore.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/pizzafactory/factory/pizzaaf/Onion.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/pizzafactory/factory/pizzaaf/ParmesanCheese.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/pizzafactory/factory/pizzaaf/Pepperoni.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/pizzafactory/factory/pizzaaf/PepperoniPizza.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/pizzafactory/factory/pizzaaf/Pizza.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/pizzafactory/factory/pizzaaf/PizzaIngredientFactory.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/pizzafactory/factory/pizzaaf/PizzaStore.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/pizzafactory/factory/pizzaaf/PizzaTestDrive.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/pizzafactory/factory/pizzaaf/PlumTomatoSauce.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/pizzafactory/factory/pizzaaf/RedPepper.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/pizzafactory/factory/pizzaaf/ReggianoCheese.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/pizzafactory/factory/pizzaaf/Sauce.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/pizzafactory/factory/pizzaaf/SlicedPepperoni.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/pizzafactory/factory/pizzaaf/Spinach.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/pizzafactory/factory/pizzaaf/ThickCrustDough.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/pizzafactory/factory/pizzaaf/ThinCrustDough.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/pizzafactory/factory/pizzaaf/VeggiePizza.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/pizzafactory/factory/pizzaaf/Veggies.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/pizzafactory/factory/pizzafm/ChicagoPizzaStore.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/pizzafactory/factory/pizzafm/ChicagoStyleCheesePizza.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/pizzafactory/factory/pizzafm/ChicagoStyleClamPizza.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/pizzafactory/factory/pizzafm/ChicagoStylePepperoniPizza.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/pizzafactory/factory/pizzafm/ChicagoStyleVeggiePizza.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/pizzafactory/factory/pizzafm/DependentPizzaStore.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/pizzafactory/factory/pizzafm/NYPizzaStore.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/pizzafactory/factory/pizzafm/NYStyleCheesePizza.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/pizzafactory/factory/pizzafm/NYStyleClamPizza.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/pizzafactory/factory/pizzafm/NYStylePepperoniPizza.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/pizzafactory/factory/pizzafm/NYStyleVeggiePizza.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/pizzafactory/factory/pizzafm/Pizza.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/pizzafactory/factory/pizzafm/PizzaStore.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/pizzafactory/factory/pizzafm/PizzaTestDrive.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/pizzafactory/factory/pizzas/CheesePizza.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/pizzafactory/factory/pizzas/ClamPizza.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/pizzafactory/factory/pizzas/PepperoniPizza.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/pizzafactory/factory/pizzas/Pizza.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/pizzafactory/factory/pizzas/PizzaStore.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/pizzafactory/factory/pizzas/PizzaTestDrive.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/pizzafactory/factory/pizzas/SimplePizzaFactory.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/pizzafactory/factory/pizzas/VeggiePizza.java" />
+    <list default="true" id="1b357d25-b641-458c-8a8c-24064c31616e" name="Default" comment="Updated pattern recognition code">
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/Visitors/PatternVisitors/AbstractVisitorTemplate.java" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/out/production/UMLCreator/DataStorage/GeneratorFactory.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/out/production/UMLCreator/DataStorage/GraphGenerator.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/out/production/UMLCreator/DataStorage/IGenerator.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/out/production/UMLCreator/DataStorage/SequenceParsing/ISequenceVisitor.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/out/production/UMLCreator/DataStorage/SequenceParsing/SequenceGenerator.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/out/production/UMLCreator/DataStorage/SequenceParsing/SequenceVisitor.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/out/production/UMLCreator/Lab4-2-Singleton/.classpath" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/out/production/UMLCreator/Lab4-2-Singleton/.project" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/out/production/UMLCreator/pizzafactory/factory/pizzaaf/BlackOlives.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/out/production/UMLCreator/pizzafactory/factory/pizzaaf/Cheese.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/out/production/UMLCreator/pizzafactory/factory/pizzaaf/CheesePizza.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/out/production/UMLCreator/pizzafactory/factory/pizzaaf/ChicagoPizzaIngredientFactory.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/out/production/UMLCreator/pizzafactory/factory/pizzaaf/ChicagoPizzaStore.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/out/production/UMLCreator/pizzafactory/factory/pizzaaf/ClamPizza.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/out/production/UMLCreator/pizzafactory/factory/pizzaaf/Clams.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/out/production/UMLCreator/pizzafactory/factory/pizzaaf/Dough.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/out/production/UMLCreator/pizzafactory/factory/pizzaaf/Eggplant.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/out/production/UMLCreator/pizzafactory/factory/pizzaaf/FreshClams.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/out/production/UMLCreator/pizzafactory/factory/pizzaaf/FrozenClams.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/out/production/UMLCreator/pizzafactory/factory/pizzaaf/Garlic.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/out/production/UMLCreator/pizzafactory/factory/pizzaaf/MarinaraSauce.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/out/production/UMLCreator/pizzafactory/factory/pizzaaf/MozzarellaCheese.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/out/production/UMLCreator/pizzafactory/factory/pizzaaf/Mushroom.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/out/production/UMLCreator/pizzafactory/factory/pizzaaf/NYPizzaIngredientFactory.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/out/production/UMLCreator/pizzafactory/factory/pizzaaf/NYPizzaStore.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/out/production/UMLCreator/pizzafactory/factory/pizzaaf/Onion.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/out/production/UMLCreator/pizzafactory/factory/pizzaaf/ParmesanCheese.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/out/production/UMLCreator/pizzafactory/factory/pizzaaf/Pepperoni.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/out/production/UMLCreator/pizzafactory/factory/pizzaaf/PepperoniPizza.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/out/production/UMLCreator/pizzafactory/factory/pizzaaf/Pizza.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/out/production/UMLCreator/pizzafactory/factory/pizzaaf/PizzaIngredientFactory.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/out/production/UMLCreator/pizzafactory/factory/pizzaaf/PizzaStore.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/out/production/UMLCreator/pizzafactory/factory/pizzaaf/PizzaTestDrive.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/out/production/UMLCreator/pizzafactory/factory/pizzaaf/PlumTomatoSauce.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/out/production/UMLCreator/pizzafactory/factory/pizzaaf/RedPepper.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/out/production/UMLCreator/pizzafactory/factory/pizzaaf/ReggianoCheese.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/out/production/UMLCreator/pizzafactory/factory/pizzaaf/Sauce.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/out/production/UMLCreator/pizzafactory/factory/pizzaaf/SlicedPepperoni.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/out/production/UMLCreator/pizzafactory/factory/pizzaaf/Spinach.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/out/production/UMLCreator/pizzafactory/factory/pizzaaf/ThickCrustDough.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/out/production/UMLCreator/pizzafactory/factory/pizzaaf/ThinCrustDough.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/out/production/UMLCreator/pizzafactory/factory/pizzaaf/VeggiePizza.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/out/production/UMLCreator/pizzafactory/factory/pizzaaf/Veggies.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/out/production/UMLCreator/pizzafactory/factory/pizzafm/ChicagoPizzaStore.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/out/production/UMLCreator/pizzafactory/factory/pizzafm/ChicagoStyleCheesePizza.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/out/production/UMLCreator/pizzafactory/factory/pizzafm/ChicagoStyleClamPizza.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/out/production/UMLCreator/pizzafactory/factory/pizzafm/ChicagoStylePepperoniPizza.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/out/production/UMLCreator/pizzafactory/factory/pizzafm/ChicagoStyleVeggiePizza.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/out/production/UMLCreator/pizzafactory/factory/pizzafm/DependentPizzaStore.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/out/production/UMLCreator/pizzafactory/factory/pizzafm/NYPizzaStore.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/out/production/UMLCreator/pizzafactory/factory/pizzafm/NYStyleCheesePizza.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/out/production/UMLCreator/pizzafactory/factory/pizzafm/NYStyleClamPizza.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/out/production/UMLCreator/pizzafactory/factory/pizzafm/NYStylePepperoniPizza.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/out/production/UMLCreator/pizzafactory/factory/pizzafm/NYStyleVeggiePizza.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/out/production/UMLCreator/pizzafactory/factory/pizzafm/Pizza.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/out/production/UMLCreator/pizzafactory/factory/pizzafm/PizzaStore.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/out/production/UMLCreator/pizzafactory/factory/pizzafm/PizzaTestDrive.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/out/production/UMLCreator/pizzafactory/factory/pizzas/CheesePizza.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/out/production/UMLCreator/pizzafactory/factory/pizzas/ClamPizza.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/out/production/UMLCreator/pizzafactory/factory/pizzas/PepperoniPizza.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/out/production/UMLCreator/pizzafactory/factory/pizzas/Pizza.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/out/production/UMLCreator/pizzafactory/factory/pizzas/PizzaStore.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/out/production/UMLCreator/pizzafactory/factory/pizzas/PizzaTestDrive.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/out/production/UMLCreator/pizzafactory/factory/pizzas/SimplePizzaFactory.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/out/production/UMLCreator/pizzafactory/factory/pizzas/VeggiePizza.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/out/test/UMLCreator/DataStorage/SequenceParsing/SequenceVisitorTest.class" afterPath="" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/src/Lab4-2-Singleton/.classpath" afterPath="$PROJECT_DIR$/src/TestingProjects/factory/Lab4-2-Singleton/.classpath" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/src/Lab4-2-Singleton/.project" afterPath="$PROJECT_DIR$/src/TestingProjects/factory/Lab4-2-Singleton/.project" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/src/Lab4-2-Singleton/bin/headfirst/singleton/chocolate/ChocolateBoiler.class" afterPath="$PROJECT_DIR$/src/TestingProjects/factory/Lab4-2-Singleton/bin/headfirst/singleton/chocolate/ChocolateBoiler.class" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/src/Lab4-2-Singleton/bin/headfirst/singleton/chocolate/ChocolateController.class" afterPath="$PROJECT_DIR$/src/TestingProjects/factory/Lab4-2-Singleton/bin/headfirst/singleton/chocolate/ChocolateController.class" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/src/Lab4-2-Singleton/bin/headfirst/singleton/classic/Singleton.class" afterPath="$PROJECT_DIR$/src/TestingProjects/factory/Lab4-2-Singleton/bin/headfirst/singleton/classic/Singleton.class" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/src/Lab4-2-Singleton/bin/headfirst/singleton/dcl/Singleton.class" afterPath="$PROJECT_DIR$/src/TestingProjects/factory/Lab4-2-Singleton/bin/headfirst/singleton/dcl/Singleton.class" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/src/Lab4-2-Singleton/bin/headfirst/singleton/dcl/SingletonClient.class" afterPath="$PROJECT_DIR$/src/TestingProjects/factory/Lab4-2-Singleton/bin/headfirst/singleton/dcl/SingletonClient.class" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/src/Lab4-2-Singleton/bin/headfirst/singleton/stat/Singleton.class" afterPath="$PROJECT_DIR$/src/TestingProjects/factory/Lab4-2-Singleton/bin/headfirst/singleton/stat/Singleton.class" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/src/Lab4-2-Singleton/bin/headfirst/singleton/stat/SingletonClient.class" afterPath="$PROJECT_DIR$/src/TestingProjects/factory/Lab4-2-Singleton/bin/headfirst/singleton/stat/SingletonClient.class" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/src/Lab4-2-Singleton/bin/headfirst/singleton/subclass/CoolerSingleton.class" afterPath="$PROJECT_DIR$/src/TestingProjects/factory/Lab4-2-Singleton/bin/headfirst/singleton/subclass/CoolerSingleton.class" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/src/Lab4-2-Singleton/bin/headfirst/singleton/subclass/HotterSingleton.class" afterPath="$PROJECT_DIR$/src/TestingProjects/factory/Lab4-2-Singleton/bin/headfirst/singleton/subclass/HotterSingleton.class" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/src/Lab4-2-Singleton/bin/headfirst/singleton/subclass/Singleton.class" afterPath="$PROJECT_DIR$/src/TestingProjects/factory/Lab4-2-Singleton/bin/headfirst/singleton/subclass/Singleton.class" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/src/Lab4-2-Singleton/bin/headfirst/singleton/subclass/SingletonTestDrive.class" afterPath="$PROJECT_DIR$/src/TestingProjects/factory/Lab4-2-Singleton/bin/headfirst/singleton/subclass/SingletonTestDrive.class" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/src/Lab4-2-Singleton/bin/headfirst/singleton/threadsafe/Singleton.class" afterPath="$PROJECT_DIR$/src/TestingProjects/factory/Lab4-2-Singleton/bin/headfirst/singleton/threadsafe/Singleton.class" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/src/Lab4-2-Singleton/src/headfirst/singleton/chocolate/ChocolateBoiler.java" afterPath="$PROJECT_DIR$/src/TestingProjects/factory/Lab4-2-Singleton/src/headfirst/singleton/chocolate/ChocolateBoiler.java" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/src/Lab4-2-Singleton/src/headfirst/singleton/chocolate/ChocolateController.java" afterPath="$PROJECT_DIR$/src/TestingProjects/factory/Lab4-2-Singleton/src/headfirst/singleton/chocolate/ChocolateController.java" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/src/Lab4-2-Singleton/src/headfirst/singleton/classic/Singleton.java" afterPath="$PROJECT_DIR$/src/TestingProjects/factory/Lab4-2-Singleton/src/headfirst/singleton/classic/Singleton.java" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/src/Lab4-2-Singleton/src/headfirst/singleton/dcl/Singleton.java" afterPath="$PROJECT_DIR$/src/TestingProjects/factory/Lab4-2-Singleton/src/headfirst/singleton/dcl/Singleton.java" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/src/Lab4-2-Singleton/src/headfirst/singleton/dcl/SingletonClient.java" afterPath="$PROJECT_DIR$/src/TestingProjects/factory/Lab4-2-Singleton/src/headfirst/singleton/dcl/SingletonClient.java" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/src/Lab4-2-Singleton/src/headfirst/singleton/stat/Singleton.java" afterPath="$PROJECT_DIR$/src/TestingProjects/factory/Lab4-2-Singleton/src/headfirst/singleton/stat/Singleton.java" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/src/Lab4-2-Singleton/src/headfirst/singleton/stat/SingletonClient.java" afterPath="$PROJECT_DIR$/src/TestingProjects/factory/Lab4-2-Singleton/src/headfirst/singleton/stat/SingletonClient.java" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/src/Lab4-2-Singleton/src/headfirst/singleton/subclass/CoolerSingleton.java" afterPath="$PROJECT_DIR$/src/TestingProjects/factory/Lab4-2-Singleton/src/headfirst/singleton/subclass/CoolerSingleton.java" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/src/Lab4-2-Singleton/src/headfirst/singleton/subclass/HotterSingleton.java" afterPath="$PROJECT_DIR$/src/TestingProjects/factory/Lab4-2-Singleton/src/headfirst/singleton/subclass/HotterSingleton.java" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/src/Lab4-2-Singleton/src/headfirst/singleton/subclass/Singleton.java" afterPath="$PROJECT_DIR$/src/TestingProjects/factory/Lab4-2-Singleton/src/headfirst/singleton/subclass/Singleton.java" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/src/Lab4-2-Singleton/src/headfirst/singleton/subclass/SingletonTestDrive.java" afterPath="$PROJECT_DIR$/src/TestingProjects/factory/Lab4-2-Singleton/src/headfirst/singleton/subclass/SingletonTestDrive.java" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/src/Lab4-2-Singleton/src/headfirst/singleton/threadsafe/Singleton.java" afterPath="$PROJECT_DIR$/src/TestingProjects/factory/Lab4-2-Singleton/src/headfirst/singleton/threadsafe/Singleton.java" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/src/pizzafactory/factory/pizzaaf/BlackOlives.java" afterPath="$PROJECT_DIR$/src/TestingProjects/factory/pizzaaf/BlackOlives.java" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/src/pizzafactory/factory/pizzaaf/Cheese.java" afterPath="$PROJECT_DIR$/src/TestingProjects/factory/pizzaaf/Cheese.java" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/src/pizzafactory/factory/pizzaaf/CheesePizza.java" afterPath="$PROJECT_DIR$/src/TestingProjects/factory/pizzaaf/CheesePizza.java" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/src/pizzafactory/factory/pizzaaf/ChicagoPizzaIngredientFactory.java" afterPath="$PROJECT_DIR$/src/TestingProjects/factory/pizzaaf/ChicagoPizzaIngredientFactory.java" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/src/pizzafactory/factory/pizzaaf/ChicagoPizzaStore.java" afterPath="$PROJECT_DIR$/src/TestingProjects/factory/pizzaaf/ChicagoPizzaStore.java" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/src/pizzafactory/factory/pizzaaf/ClamPizza.java" afterPath="$PROJECT_DIR$/src/TestingProjects/factory/pizzaaf/ClamPizza.java" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/src/pizzafactory/factory/pizzaaf/Clams.java" afterPath="$PROJECT_DIR$/src/TestingProjects/factory/pizzaaf/Clams.java" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/src/pizzafactory/factory/pizzaaf/Dough.java" afterPath="$PROJECT_DIR$/src/TestingProjects/factory/pizzaaf/Dough.java" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/src/pizzafactory/factory/pizzaaf/Eggplant.java" afterPath="$PROJECT_DIR$/src/TestingProjects/factory/pizzaaf/Eggplant.java" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/src/pizzafactory/factory/pizzaaf/FreshClams.java" afterPath="$PROJECT_DIR$/src/TestingProjects/factory/pizzaaf/FreshClams.java" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/src/pizzafactory/factory/pizzaaf/FrozenClams.java" afterPath="$PROJECT_DIR$/src/TestingProjects/factory/pizzaaf/FrozenClams.java" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/src/pizzafactory/factory/pizzaaf/Garlic.java" afterPath="$PROJECT_DIR$/src/TestingProjects/factory/pizzaaf/Garlic.java" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/src/pizzafactory/factory/pizzaaf/MarinaraSauce.java" afterPath="$PROJECT_DIR$/src/TestingProjects/factory/pizzaaf/MarinaraSauce.java" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/src/pizzafactory/factory/pizzaaf/MozzarellaCheese.java" afterPath="$PROJECT_DIR$/src/TestingProjects/factory/pizzaaf/MozzarellaCheese.java" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/src/pizzafactory/factory/pizzaaf/Mushroom.java" afterPath="$PROJECT_DIR$/src/TestingProjects/factory/pizzaaf/Mushroom.java" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/src/pizzafactory/factory/pizzaaf/NYPizzaIngredientFactory.java" afterPath="$PROJECT_DIR$/src/TestingProjects/factory/pizzaaf/NYPizzaIngredientFactory.java" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/src/pizzafactory/factory/pizzaaf/NYPizzaStore.java" afterPath="$PROJECT_DIR$/src/TestingProjects/factory/pizzaaf/NYPizzaStore.java" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/src/pizzafactory/factory/pizzaaf/Onion.java" afterPath="$PROJECT_DIR$/src/TestingProjects/factory/pizzaaf/Onion.java" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/src/pizzafactory/factory/pizzaaf/ParmesanCheese.java" afterPath="$PROJECT_DIR$/src/TestingProjects/factory/pizzaaf/ParmesanCheese.java" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/src/pizzafactory/factory/pizzaaf/Pepperoni.java" afterPath="$PROJECT_DIR$/src/TestingProjects/factory/pizzaaf/Pepperoni.java" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/src/pizzafactory/factory/pizzaaf/PepperoniPizza.java" afterPath="$PROJECT_DIR$/src/TestingProjects/factory/pizzaaf/PepperoniPizza.java" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/src/pizzafactory/factory/pizzaaf/Pizza.java" afterPath="$PROJECT_DIR$/src/TestingProjects/factory/pizzaaf/Pizza.java" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/src/pizzafactory/factory/pizzaaf/PizzaIngredientFactory.java" afterPath="$PROJECT_DIR$/src/TestingProjects/factory/pizzaaf/PizzaIngredientFactory.java" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/src/pizzafactory/factory/pizzaaf/PizzaStore.java" afterPath="$PROJECT_DIR$/src/TestingProjects/factory/pizzaaf/PizzaStore.java" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/src/pizzafactory/factory/pizzaaf/PizzaTestDrive.java" afterPath="$PROJECT_DIR$/src/TestingProjects/factory/pizzaaf/PizzaTestDrive.java" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/src/pizzafactory/factory/pizzaaf/PlumTomatoSauce.java" afterPath="$PROJECT_DIR$/src/TestingProjects/factory/pizzaaf/PlumTomatoSauce.java" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/src/pizzafactory/factory/pizzaaf/RedPepper.java" afterPath="$PROJECT_DIR$/src/TestingProjects/factory/pizzaaf/RedPepper.java" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/src/pizzafactory/factory/pizzaaf/ReggianoCheese.java" afterPath="$PROJECT_DIR$/src/TestingProjects/factory/pizzaaf/ReggianoCheese.java" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/src/pizzafactory/factory/pizzaaf/Sauce.java" afterPath="$PROJECT_DIR$/src/TestingProjects/factory/pizzaaf/Sauce.java" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/src/pizzafactory/factory/pizzaaf/SlicedPepperoni.java" afterPath="$PROJECT_DIR$/src/TestingProjects/factory/pizzaaf/SlicedPepperoni.java" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/src/pizzafactory/factory/pizzaaf/Spinach.java" afterPath="$PROJECT_DIR$/src/TestingProjects/factory/pizzaaf/Spinach.java" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/src/pizzafactory/factory/pizzaaf/ThickCrustDough.java" afterPath="$PROJECT_DIR$/src/TestingProjects/factory/pizzaaf/ThickCrustDough.java" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/src/pizzafactory/factory/pizzaaf/ThinCrustDough.java" afterPath="$PROJECT_DIR$/src/TestingProjects/factory/pizzaaf/ThinCrustDough.java" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/src/pizzafactory/factory/pizzaaf/VeggiePizza.java" afterPath="$PROJECT_DIR$/src/TestingProjects/factory/pizzaaf/VeggiePizza.java" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/src/pizzafactory/factory/pizzaaf/Veggies.java" afterPath="$PROJECT_DIR$/src/TestingProjects/factory/pizzaaf/Veggies.java" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/src/pizzafactory/factory/pizzafm/ChicagoPizzaStore.java" afterPath="$PROJECT_DIR$/src/TestingProjects/factory/pizzafm/ChicagoPizzaStore.java" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/src/pizzafactory/factory/pizzafm/ChicagoStyleCheesePizza.java" afterPath="$PROJECT_DIR$/src/TestingProjects/factory/pizzafm/ChicagoStyleCheesePizza.java" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/src/pizzafactory/factory/pizzafm/ChicagoStyleClamPizza.java" afterPath="$PROJECT_DIR$/src/TestingProjects/factory/pizzafm/ChicagoStyleClamPizza.java" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/src/pizzafactory/factory/pizzafm/ChicagoStylePepperoniPizza.java" afterPath="$PROJECT_DIR$/src/TestingProjects/factory/pizzafm/ChicagoStylePepperoniPizza.java" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/src/pizzafactory/factory/pizzafm/ChicagoStyleVeggiePizza.java" afterPath="$PROJECT_DIR$/src/TestingProjects/factory/pizzafm/ChicagoStyleVeggiePizza.java" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/src/pizzafactory/factory/pizzafm/DependentPizzaStore.java" afterPath="$PROJECT_DIR$/src/TestingProjects/factory/pizzafm/DependentPizzaStore.java" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/src/pizzafactory/factory/pizzafm/NYPizzaStore.java" afterPath="$PROJECT_DIR$/src/TestingProjects/factory/pizzafm/NYPizzaStore.java" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/src/pizzafactory/factory/pizzafm/NYStyleCheesePizza.java" afterPath="$PROJECT_DIR$/src/TestingProjects/factory/pizzafm/NYStyleCheesePizza.java" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/src/pizzafactory/factory/pizzafm/NYStyleClamPizza.java" afterPath="$PROJECT_DIR$/src/TestingProjects/factory/pizzafm/NYStyleClamPizza.java" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/src/pizzafactory/factory/pizzafm/NYStylePepperoniPizza.java" afterPath="$PROJECT_DIR$/src/TestingProjects/factory/pizzafm/NYStylePepperoniPizza.java" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/src/pizzafactory/factory/pizzafm/NYStyleVeggiePizza.java" afterPath="$PROJECT_DIR$/src/TestingProjects/factory/pizzafm/NYStyleVeggiePizza.java" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/src/pizzafactory/factory/pizzafm/Pizza.java" afterPath="$PROJECT_DIR$/src/TestingProjects/factory/pizzafm/Pizza.java" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/src/pizzafactory/factory/pizzafm/PizzaStore.java" afterPath="$PROJECT_DIR$/src/TestingProjects/factory/pizzafm/PizzaStore.java" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/src/pizzafactory/factory/pizzafm/PizzaTestDrive.java" afterPath="$PROJECT_DIR$/src/TestingProjects/factory/pizzafm/PizzaTestDrive.java" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/src/pizzafactory/factory/pizzas/CheesePizza.java" afterPath="$PROJECT_DIR$/src/TestingProjects/factory/pizzas/CheesePizza.java" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/src/pizzafactory/factory/pizzas/ClamPizza.java" afterPath="$PROJECT_DIR$/src/TestingProjects/factory/pizzas/ClamPizza.java" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/src/pizzafactory/factory/pizzas/PepperoniPizza.java" afterPath="$PROJECT_DIR$/src/TestingProjects/factory/pizzas/PepperoniPizza.java" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/src/pizzafactory/factory/pizzas/Pizza.java" afterPath="$PROJECT_DIR$/src/TestingProjects/factory/pizzas/Pizza.java" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/src/pizzafactory/factory/pizzas/PizzaStore.java" afterPath="$PROJECT_DIR$/src/TestingProjects/factory/pizzas/PizzaStore.java" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/src/pizzafactory/factory/pizzas/PizzaTestDrive.java" afterPath="$PROJECT_DIR$/src/TestingProjects/factory/pizzas/PizzaTestDrive.java" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/src/pizzafactory/factory/pizzas/SimplePizzaFactory.java" afterPath="$PROJECT_DIR$/src/TestingProjects/factory/pizzas/SimplePizzaFactory.java" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/src/pizzafactory/factory/pizzas/VeggiePizza.java" afterPath="$PROJECT_DIR$/src/TestingProjects/factory/pizzas/VeggiePizza.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/production/UMLCreator/ParseClasses/AbstractData.class" afterPath="$PROJECT_DIR$/out/production/UMLCreator/ParseClasses/AbstractData.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/production/UMLCreator/ParseClasses/AbstractExtendableClassRep.class" afterPath="$PROJECT_DIR$/out/production/UMLCreator/ParseClasses/AbstractExtendableClassRep.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/production/UMLCreator/ParseClasses/MethodCall.class" afterPath="$PROJECT_DIR$/out/production/UMLCreator/ParseClasses/MethodCall.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/production/UMLCreator/Visitors/DesignParser.class" afterPath="$PROJECT_DIR$/out/production/UMLCreator/Visitors/DesignParser.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/production/UMLCreator/Visitors/OutputStreams/UMLOutputStream.class" afterPath="$PROJECT_DIR$/out/production/UMLCreator/Visitors/OutputStreams/UMLOutputStream.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/production/UMLCreator/Visitors/PatternVisitors/SingletonVisitor.class" afterPath="$PROJECT_DIR$/out/production/UMLCreator/Visitors/PatternVisitors/SingletonVisitor.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/test/UMLCreator/UMLTests/SingletonTests.class" afterPath="$PROJECT_DIR$/out/test/UMLCreator/UMLTests/SingletonTests.class" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/MS4_Turnin/MS3_fixes/DiagramCommandLineArgs.txt" afterPath="$PROJECT_DIR$/MS4_Turnin/MS3_fixes/DiagramCommandLineArgs.txt" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Test/UMLTests/SingletonTests.java" afterPath="$PROJECT_DIR$/Test/UMLTests/SingletonTests.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/graph_text/generated_graph.gv" afterPath="$PROJECT_DIR$/graph_text/generated_graph.gv" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/DataStorage/Generation/GraphGenerator.java" afterPath="$PROJECT_DIR$/src/DataStorage/Generation/GraphGenerator.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/ParseClasses/AbstractData.java" afterPath="$PROJECT_DIR$/src/ParseClasses/AbstractData.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/ParseClasses/AbstractExtendableClassRep.java" afterPath="$PROJECT_DIR$/src/ParseClasses/AbstractExtendableClassRep.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/Visitors/OutputStreams/UMLOutputStream.java" afterPath="$PROJECT_DIR$/src/Visitors/OutputStreams/UMLOutputStream.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/Visitors/PatternVisitors/SingletonVisitor.java" afterPath="$PROJECT_DIR$/src/Visitors/PatternVisitors/SingletonVisitor.java" />
     </list>
     <ignored path="UMLCreator.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -403,22 +206,78 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="375">
-      <file leaf-file-name="DesignParser.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/Visitors/DesignParser.java">
+      <file leaf-file-name="UMLOutputStream.java" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/src/Visitors/OutputStreams/UMLOutputStream.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.0">
-              <caret line="23" column="42" selection-start-line="23" selection-start-column="42" selection-end-line="23" selection-end-column="42" />
+            <state vertical-scroll-proportion="0.46909493">
+              <caret line="90" column="56" selection-start-line="90" selection-start-column="56" selection-end-line="90" selection-end-column="56" />
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="ChocolateBoiler.java" pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/src/Lab4-2-Singleton/src/headfirst/singleton/chocolate/ChocolateBoiler.java">
+      <file leaf-file-name="ParsedDataStorage.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/DataStorage/ParsedDataStorage.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.7360595">
-              <caret line="18" column="28" selection-start-line="18" selection-start-column="28" selection-end-line="18" selection-end-column="28" />
+            <state vertical-scroll-proportion="0.0">
+              <caret line="56" column="5" selection-start-line="56" selection-start-column="5" selection-end-line="56" selection-end-column="5" />
               <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="SingletonVisitor.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/Visitors/PatternVisitors/SingletonVisitor.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state vertical-scroll-proportion="0.0">
+              <caret line="53" column="45" selection-start-line="53" selection-start-column="45" selection-end-line="53" selection-end-column="45" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="ClassRep.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/ParseClasses/ClassRep.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state vertical-scroll-proportion="0.0">
+              <caret line="39" column="5" selection-start-line="39" selection-start-column="5" selection-end-line="39" selection-end-column="5" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="IDataStorage.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/DataStorage/IDataStorage.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state vertical-scroll-proportion="0.0">
+              <caret line="27" column="62" selection-start-line="27" selection-start-column="62" selection-end-line="27" selection-end-column="62" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="AbstractExtendableClassRep.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/ParseClasses/AbstractExtendableClassRep.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state vertical-scroll-proportion="0.0">
+              <caret line="35" column="0" selection-start-line="35" selection-start-column="0" selection-end-line="35" selection-end-column="0" />
+              <folding>
+                <element signature="e#964#965#0" expanded="true" />
+                <element signature="e#1009#1010#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="AbstractData.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/ParseClasses/AbstractData.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state vertical-scroll-proportion="0.0">
+              <caret line="45" column="38" selection-start-line="45" selection-start-column="38" selection-end-line="45" selection-end-column="38" />
+              <folding>
+                <element signature="e#1216#1217#0" expanded="true" />
+                <element signature="e#1261#1262#0" expanded="true" />
+              </folding>
             </state>
           </provider>
         </entry>
@@ -445,10 +304,6 @@
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/src/Visitor/NewMethodVisitor.java" />
-        <option value="$PROJECT_DIR$/src/DataStorage/SequenceGenerator.java" />
-        <option value="$PROJECT_DIR$/src/Visitor/ClassMethodVisitor.java" />
-        <option value="C:/Program Files/Java/jdk1.8.0_45/jre/lib/ext/nashorn.jar!/jdk/nashorn/internal/codegen/types/Type.class" />
         <option value="$PROJECT_DIR$/src/Visitor/DesignParser.java" />
         <option value="$PROJECT_DIR$/src/Visitor/MethodAdapter.java" />
         <option value="$PROJECT_DIR$/src/DataStorage/SequenceParsing/SequenceVisitor.java" />
@@ -460,10 +315,8 @@
         <option value="$PROJECT_DIR$/src/Visitor/VisitType.java" />
         <option value="$PROJECT_DIR$/src/Visitor/LookupKey.java" />
         <option value="$PROJECT_DIR$/src/Visitor/Visitor.java" />
-        <option value="$PROJECT_DIR$/src/ParseClasses/AbstractData.java" />
         <option value="$PROJECT_DIR$/src/ParseClasses/InterfaceRep.java" />
         <option value="$PROJECT_DIR$/src/ParseClasses/AbstractClassRep.java" />
-        <option value="$PROJECT_DIR$/src/DataStorage/IDataStorage.java" />
         <option value="$PROJECT_DIR$/src/ParseClasses/IRelation.java" />
         <option value="$PROJECT_DIR$/src/ParseClasses/MethodCall.java" />
         <option value="$PROJECT_DIR$/src/DataStorage/UMLClassParsing/UMLClassVisitor.java" />
@@ -474,7 +327,6 @@
         <option value="$PROJECT_DIR$/src/DataStorage/GeneratorFactory.java" />
         <option value="$PROJECT_DIR$/src/ParseClasses/AssociationRelation.java" />
         <option value="$PROJECT_DIR$/src/ParseClasses/UsesRelation.java" />
-        <option value="$PROJECT_DIR$/src/DataStorage/ParsedDataStorage.java" />
         <option value="$PROJECT_DIR$/src/Visitor/OutputStreams/UMLOutputStream.java" />
         <option value="C:/Program Files/Java/jdk1.8.0_45/src.zip!/java/lang/String.java" />
         <option value="$PROJECT_DIR$/src/Visitor/OutputStreams/SequenceOutputStream.java" />
@@ -493,9 +345,16 @@
         <option value="$PROJECT_DIR$/src/ParseClasses/MethodRep.java" />
         <option value="$PROJECT_DIR$/src/ParseClasses/FieldRep.java" />
         <option value="$PROJECT_DIR$/src/ParseClasses/ClassRep.java" />
+        <option value="$PROJECT_DIR$/Test/UMLTests/SingletonTests.java" />
+        <option value="$PROJECT_DIR$/src/Visitors/PatternVisitors/AbstractVisitorTemplate.java" />
+        <option value="$PROJECT_DIR$/src/DataStorage/Generation/GraphGenerator.java" />
+        <option value="$PROJECT_DIR$/src/ParseClasses/AbstractExtendableClassRep.java" />
+        <option value="$PROJECT_DIR$/src/ParseClasses/PatternDecorators/SingletonDecorator.java" />
+        <option value="$PROJECT_DIR$/src/ParseClasses/AbstractData.java" />
+        <option value="$PROJECT_DIR$/src/DataStorage/ParsedDataStorage.java" />
+        <option value="$PROJECT_DIR$/src/DataStorage/IDataStorage.java" />
         <option value="$PROJECT_DIR$/src/Visitors/PatternVisitors/SingletonVisitor.java" />
         <option value="$PROJECT_DIR$/src/Visitors/OutputStreams/UMLOutputStream.java" />
-        <option value="$PROJECT_DIR$/Test/UMLTests/SingletonTests.java" />
       </list>
     </option>
   </component>
@@ -578,56 +437,6 @@
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
-              <option name="myItemId" value="Test" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="UMLTests" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="UMLCreator" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="UMLCreatorActual" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="Test" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="UMLCreator" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="UMLCreatorActual" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="Test" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="SequenceParsing" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="UMLCreator" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="UMLCreatorActual" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
               <option name="myItemId" value="src" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
@@ -649,22 +458,12 @@
               <option name="myItemId" value="src" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
-          </PATH>
-          <PATH>
             <PATH_ELEMENT>
-              <option name="myItemId" value="UMLCreator" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="UMLCreatorActual" />
+              <option name="myItemId" value="Visitors" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
-              <option name="myItemId" value="src" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="Lab4-2-Singleton" />
+              <option name="myItemId" value="PatternVisitors" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
@@ -682,11 +481,25 @@
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
-              <option name="myItemId" value="Lab4-2-Singleton" />
+              <option name="myItemId" value="Visitors" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
-              <option name="myItemId" value="singleton" />
+              <option name="myItemId" value="OutputStreams" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="UMLCreator" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="UMLCreatorActual" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="src" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
@@ -704,15 +517,7 @@
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
-              <option name="myItemId" value="Lab4-2-Singleton" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="singleton" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="chocolate" />
+              <option name="myItemId" value="ParseClasses" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
@@ -767,6 +572,7 @@
     <property name="last_directory_selection" value="$PROJECT_DIR$/src" />
     <property name="settings.editor.selected.configurable" value="vcs.Git" />
     <property name="settings.editor.splitter.proportion" value="0.2" />
+    <property name="SearchEverywhereHistoryKey" value="&#9;FILE&#9;file://C:/Users/efronbs/Documents/School/y3q2/374/UMLCreatorActual/src/ParseClasses/ClassRep.java" />
   </component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
@@ -783,116 +589,6 @@
       <recent name="C:\Users\efronbs\Documents\School\y3q2\374\UMLCreatorActual\src" />
       <recent name="C:\Users\efronbs\Documents\School\y3q2\374\UMLCreatorActual\src\Visitor" />
     </key>
-  </component>
-  <component name="RestoreUpdateTree" date="Moments ago" ActionInfo="_Update">
-    <UpdatedFiles>
-      <FILE-GROUP>
-        <option name="myUpdateName" value="Updated from server" />
-        <option name="myStatusName" value="Changed on server" />
-        <option name="mySupportsDeletion" value="false" />
-        <option name="myCanBeAbsent" value="false" />
-        <option name="myId" value="CHANGED_ON_SERVER" />
-        <FILE-GROUP>
-          <option name="myUpdateName" value="Updated" />
-          <option name="myStatusName" value="Changed" />
-          <option name="mySupportsDeletion" value="false" />
-          <option name="myCanBeAbsent" value="false" />
-          <option name="myId" value="UPDATED" />
-          <PATH vcs="Git" revision="">$PROJECT_DIR$/README.md</PATH>
-        </FILE-GROUP>
-        <FILE-GROUP>
-          <option name="myUpdateName" value="Created" />
-          <option name="myStatusName" value="Created" />
-          <option name="mySupportsDeletion" value="false" />
-          <option name="myCanBeAbsent" value="false" />
-          <option name="myId" value="CREATED" />
-        </FILE-GROUP>
-        <FILE-GROUP>
-          <option name="myUpdateName" value="Deleted" />
-          <option name="myStatusName" value="Deleted" />
-          <option name="mySupportsDeletion" value="false" />
-          <option name="myCanBeAbsent" value="true" />
-          <option name="myId" value="REMOVED_FROM_REPOSITORY" />
-        </FILE-GROUP>
-        <FILE-GROUP>
-          <option name="myUpdateName" value="Restored" />
-          <option name="myStatusName" value="Will be restored" />
-          <option name="mySupportsDeletion" value="false" />
-          <option name="myCanBeAbsent" value="false" />
-          <option name="myId" value="RESTORED" />
-        </FILE-GROUP>
-      </FILE-GROUP>
-      <FILE-GROUP>
-        <option name="myUpdateName" value="Modified" />
-        <option name="myStatusName" value="Modified" />
-        <option name="mySupportsDeletion" value="false" />
-        <option name="myCanBeAbsent" value="false" />
-        <option name="myId" value="MODIFIED" />
-      </FILE-GROUP>
-      <FILE-GROUP>
-        <option name="myUpdateName" value="Skipped" />
-        <option name="myStatusName" value="Skipped" />
-        <option name="mySupportsDeletion" value="false" />
-        <option name="myCanBeAbsent" value="false" />
-        <option name="myId" value="SKIPPED" />
-      </FILE-GROUP>
-      <FILE-GROUP>
-        <option name="myUpdateName" value="Merged with conflicts" />
-        <option name="myStatusName" value="Will be merged with conflicts" />
-        <option name="mySupportsDeletion" value="false" />
-        <option name="myCanBeAbsent" value="false" />
-        <option name="myId" value="MERGED_WITH_CONFLICTS" />
-      </FILE-GROUP>
-      <FILE-GROUP>
-        <option name="myUpdateName" value="Merged with tree conflicts" />
-        <option name="myStatusName" value="Merged with tree conflicts" />
-        <option name="mySupportsDeletion" value="false" />
-        <option name="myCanBeAbsent" value="false" />
-        <option name="myId" value="MERGED_WITH_TREE_CONFLICT" />
-      </FILE-GROUP>
-      <FILE-GROUP>
-        <option name="myUpdateName" value="Merged with property conflicts" />
-        <option name="myStatusName" value="Will be merged with property conflicts" />
-        <option name="mySupportsDeletion" value="false" />
-        <option name="myCanBeAbsent" value="false" />
-        <option name="myId" value="MERGED_WITH_PROPERTY_CONFLICT" />
-      </FILE-GROUP>
-      <FILE-GROUP>
-        <option name="myUpdateName" value="Merged" />
-        <option name="myStatusName" value="Will be merged" />
-        <option name="mySupportsDeletion" value="false" />
-        <option name="myCanBeAbsent" value="false" />
-        <option name="myId" value="MERGED" />
-      </FILE-GROUP>
-      <FILE-GROUP>
-        <option name="myUpdateName" value="Not in repository" />
-        <option name="myStatusName" value="Not in repository" />
-        <option name="mySupportsDeletion" value="true" />
-        <option name="myCanBeAbsent" value="false" />
-        <option name="myId" value="UNKNOWN" />
-      </FILE-GROUP>
-      <FILE-GROUP>
-        <option name="myUpdateName" value="Locally added" />
-        <option name="myStatusName" value="Locally added" />
-        <option name="mySupportsDeletion" value="false" />
-        <option name="myCanBeAbsent" value="false" />
-        <option name="myId" value="LOCALLY_ADDED" />
-      </FILE-GROUP>
-      <FILE-GROUP>
-        <option name="myUpdateName" value="Locally removed" />
-        <option name="myStatusName" value="Locally removed" />
-        <option name="mySupportsDeletion" value="false" />
-        <option name="myCanBeAbsent" value="false" />
-        <option name="myId" value="LOCALLY_REMOVED" />
-      </FILE-GROUP>
-      <FILE-GROUP>
-        <option name="myUpdateName" value="Switched" />
-        <option name="myStatusName" value="Switched" />
-        <option name="mySupportsDeletion" value="false" />
-        <option name="myCanBeAbsent" value="false" />
-        <option name="myId" value="SWITCHED" />
-      </FILE-GROUP>
-    </UpdatedFiles>
   </component>
   <component name="RunManager" selected="Application.Unnamed">
     <configuration default="false" name="DesignParser" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
@@ -1441,6 +1137,11 @@
       <workItem from="1453336758890" duration="12352000" />
       <workItem from="1453351064298" duration="3000" />
       <workItem from="1453398347771" duration="8028000" />
+      <workItem from="1453411396808" duration="999000" />
+      <workItem from="1453520057602" duration="10000" />
+      <workItem from="1453744635505" duration="591000" />
+      <workItem from="1453763982802" duration="187000" />
+      <workItem from="1453862328020" duration="19046000" />
     </task>
     <task id="LOCAL-00001" summary="added asm libraries and visitor package">
       <created>1451953507803</created>
@@ -1691,7 +1392,7 @@
     </history-entry>
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="180743000" />
+    <option name="totallyTimeSpent" value="201576000" />
   </component>
   <component name="TodoView" selected-index="1">
     <todo-panel id="selected-file">
@@ -1713,23 +1414,23 @@
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.3939394" sideWeight="0.50428724" order="9" side_tool="true" content_ui="tabs" />
       <window_info id="Maven Projects" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.329582" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.24707136" sideWeight="0.49785638" order="10" side_tool="false" content_ui="tabs" />
-      <window_info id="Run" active="true" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.3919063" sideWeight="0.49571276" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.23855165" sideWeight="0.49571276" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.30190796" sideWeight="0.5" order="8" side_tool="false" content_ui="tabs" />
       <window_info id="Designer" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.18971062" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.17631297" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
       <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32995495" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
+      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33333334" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.24973205" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="UI Designer" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="true" content_ui="tabs" />
-      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.39618406" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
+      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.39616615" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
       <window_info id="Coverage" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.329582" sideWeight="0.5" order="7" side_tool="true" content_ui="tabs" />
       <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="combo" />
-      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33445567" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
     </layout>
   </component>
   <component name="Vcs.Log.UiProperties">
@@ -1745,7 +1446,6 @@
   </component>
   <component name="VcsManagerConfiguration">
     <option name="CHECK_CODE_CLEANUP_BEFORE_PROJECT_COMMIT" value="true" />
-    <MESSAGE value="added IClass which extracts methods and fields from classes interfaces and abstract classes&#10;added methods to parsedDataStorage to enable classes, methods and fields to be added&#10;made projectData global so it is able to be updated throughout the program (may need to change this later)" />
     <MESSAGE value="added abstract classes to datastorage" />
     <MESSAGE value="working on parsing stored ASM data" />
     <MESSAGE value="redid all the work that git destroyed earlier&#10;implementation of interfaces" />
@@ -1770,7 +1470,8 @@
     <MESSAGE value="recognizing singleton patterns" />
     <MESSAGE value="fixed problem with visiting methods and fields improperly" />
     <MESSAGE value="added the 4 singleton test cases" />
-    <option name="LAST_COMMIT_MESSAGE" value="added the 4 singleton test cases" />
+    <MESSAGE value="Updated pattern recognition code" />
+    <option name="LAST_COMMIT_MESSAGE" value="Updated pattern recognition code" />
     <option name="OPTIMIZE_IMPORTS_BEFORE_PROJECT_COMMIT" value="true" />
     <option name="REFORMAT_BEFORE_PROJECT_COMMIT" value="true" />
     <option name="REARRANGE_BEFORE_PROJECT_COMMIT" value="true" />
@@ -1791,7 +1492,7 @@
           <option name="timeStamp" value="78" />
         </line-breakpoint>
       </breakpoints>
-      <option name="time" value="85" />
+      <option name="time" value="93" />
     </breakpoint-manager>
     <watches-manager />
   </component>
@@ -1800,6 +1501,14 @@
     <option name="FILTER_TARGETS" value="false" />
   </component>
   <component name="editorHistoryManager">
+    <entry file="file://$PROJECT_DIR$/src/TestingProjects/factory/Lab4-2-Singleton/src/headfirst/singleton/chocolate/ChocolateBoiler.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/MS3_Turnin/Shuffle.sd">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
@@ -1824,20 +1533,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/Visitors/IVisitMethod.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.18333334">
-          <caret line="7" column="1" selection-start-line="7" selection-start-column="1" selection-end-line="7" selection-end-column="1" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/Visitors/IVisitor.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.13095239">
-          <caret line="5" column="19" selection-start-line="5" selection-start-column="19" selection-end-line="5" selection-end-column="19" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/ParseClasses/AbstractClassRep.java">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="1.4296029">
@@ -1845,24 +1540,10 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/Visitors/ITraverser.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="6" column="31" selection-start-line="6" selection-start-column="31" selection-end-line="6" selection-end-column="31" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/ParseClasses/InterfaceRep.java">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
           <caret line="23" column="36" selection-start-line="23" selection-start-column="36" selection-end-line="23" selection-end-column="36" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/DataStorage/IDataStorage.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="0" column="6" selection-start-line="0" selection-start-column="6" selection-end-line="0" selection-end-column="6" />
         </state>
       </provider>
     </entry>
@@ -1877,27 +1558,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
           <caret line="9" column="11" selection-start-line="9" selection-start-column="11" selection-end-line="9" selection-end-column="11" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/DataStorage/GeneratorFactory.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="10" column="5" selection-start-line="10" selection-start-column="5" selection-end-line="10" selection-end-column="5" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/DataStorage/SequenceParsing/ISequenceVisitor.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="11" column="14" selection-start-line="11" selection-start-column="8" selection-end-line="11" selection-end-column="14" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/DataStorage/SequenceParsing/SequenceVisitor.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="11" column="24" selection-start-line="11" selection-start-column="24" selection-end-line="11" selection-end-column="24" />
         </state>
       </provider>
     </entry>
@@ -1929,14 +1589,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/DataStorage/SequenceParsing/SequenceGenerator.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="59" column="70" selection-start-line="59" selection-start-column="70" selection-end-line="59" selection-end-column="70" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/Visitors/SequenceVisitors/SequenceClassMethodVisitor.java">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
@@ -1955,7 +1607,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.3321617">
           <caret line="28" column="70" selection-start-line="28" selection-start-column="70" selection-end-line="28" selection-end-column="70" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -1970,9 +1621,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="-7.5555553">
           <caret line="45" column="0" selection-start-line="45" selection-start-column="0" selection-end-line="45" selection-end-column="0" />
-          <folding>
-            <element signature="imports" expanded="false" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -1990,26 +1638,10 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/DataStorage/ParsedDataStorage.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="100" column="47" selection-start-line="100" selection-start-column="47" selection-end-line="100" selection-end-column="47" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/ParseClasses/AbstractExtendableClassRep.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="7" column="59" selection-start-line="7" selection-start-column="59" selection-end-line="7" selection-end-column="59" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/ParseClasses/MethodCall.java">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.52079207">
           <caret line="54" column="24" selection-start-line="54" selection-start-column="23" selection-end-line="54" selection-end-column="24" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -2017,28 +1649,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
           <caret line="23" column="0" selection-start-line="23" selection-start-column="0" selection-end-line="23" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/Visitors/Visitor.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="19" column="0" selection-start-line="19" selection-start-column="0" selection-end-line="19" selection-end-column="0" />
-          <folding>
-            <element signature="e#682#683#0" expanded="false" />
-            <element signature="e#730#731#0" expanded="false" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/ParseClasses/AbstractData.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="36" column="0" selection-start-line="36" selection-start-column="0" selection-end-line="36" selection-end-column="0" />
-          <folding>
-            <element signature="e#992#993#0" expanded="false" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -2046,11 +1656,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
           <caret line="29" column="0" selection-start-line="29" selection-start-column="0" selection-end-line="29" selection-end-column="0" />
-          <folding>
-            <element signature="e#749#750#0" expanded="false" />
-            <element signature="e#791#792#0" expanded="false" />
-            <element signature="e#875#876#0" expanded="false" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -2058,20 +1663,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
           <caret line="20" column="67" selection-start-line="20" selection-start-column="67" selection-end-line="20" selection-end-column="67" />
-          <folding>
-            <element signature="e#375#376#0" expanded="false" />
-            <element signature="e#407#408#0" expanded="false" />
-            <element signature="e#449#450#0" expanded="false" />
-            <element signature="e#523#524#0" expanded="false" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/ParseClasses/ClassRep.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="38" column="26" selection-start-line="38" selection-start-column="26" selection-end-line="38" selection-end-column="26" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -2079,126 +1670,207 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
           <caret line="12" column="40" selection-start-line="12" selection-start-column="40" selection-end-line="12" selection-end-column="40" />
-          <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/Visitors/OutputStreams/UMLOutputStream.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="69" column="0" selection-start-line="69" selection-start-column="0" selection-end-line="69" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/Visitors/PatternVisitors/SingletonVisitor.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.6357616">
-          <caret line="64" column="37" selection-start-line="64" selection-start-column="37" selection-end-line="64" selection-end-column="37" />
-          <folding>
-            <element signature="imports" expanded="false" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/Lab4-2-Singleton/src/headfirst/singleton/chocolate/ChocolateController.java">
+    <entry file="file://$PROJECT_DIR$/src/TestingProjects/factory/Lab4-2-Singleton/src/headfirst/singleton/chocolate/ChocolateController.java">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.49070632">
           <caret line="12" column="1" selection-start-line="12" selection-start-column="1" selection-end-line="12" selection-end-column="1" />
-          <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/Lab4-2-Singleton/src/headfirst/singleton/classic/Singleton.java">
+    <entry file="file://$PROJECT_DIR$/src/TestingProjects/factory/Lab4-2-Singleton/src/headfirst/singleton/classic/Singleton.java">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.16356878">
           <caret line="4" column="13" selection-start-line="4" selection-start-column="13" selection-end-line="4" selection-end-column="13" />
-          <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/Lab4-2-Singleton/src/headfirst/singleton/dcl/Singleton.java">
+    <entry file="file://$PROJECT_DIR$/src/TestingProjects/factory/Lab4-2-Singleton/src/headfirst/singleton/dcl/Singleton.java">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.28624535">
           <caret line="7" column="13" selection-start-line="7" selection-start-column="13" selection-end-line="7" selection-end-column="13" />
-          <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/Lab4-2-Singleton/src/headfirst/singleton/stat/Singleton.java">
+    <entry file="file://$PROJECT_DIR$/src/TestingProjects/factory/Lab4-2-Singleton/src/headfirst/singleton/stat/Singleton.java">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.08178439">
           <caret line="2" column="13" selection-start-line="2" selection-start-column="13" selection-end-line="2" selection-end-column="13" />
-          <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/Lab4-2-Singleton/src/headfirst/singleton/stat/SingletonClient.java">
+    <entry file="file://$PROJECT_DIR$/src/TestingProjects/factory/Lab4-2-Singleton/src/headfirst/singleton/stat/SingletonClient.java">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.08178439">
           <caret line="2" column="13" selection-start-line="2" selection-start-column="13" selection-end-line="2" selection-end-column="13" />
-          <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/Lab4-2-Singleton/src/headfirst/singleton/subclass/CoolerSingleton.java">
+    <entry file="file://$PROJECT_DIR$/src/TestingProjects/factory/Lab4-2-Singleton/src/headfirst/singleton/subclass/CoolerSingleton.java">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
           <caret line="2" column="13" selection-start-line="2" selection-start-column="13" selection-end-line="2" selection-end-column="13" />
-          <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/Lab4-2-Singleton/src/headfirst/singleton/subclass/HotterSingleton.java">
+    <entry file="file://$PROJECT_DIR$/src/TestingProjects/factory/Lab4-2-Singleton/src/headfirst/singleton/subclass/HotterSingleton.java">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.08178439">
           <caret line="2" column="13" selection-start-line="2" selection-start-column="13" selection-end-line="2" selection-end-column="13" />
-          <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/Test/DataStorage/SequenceParsing/SequenceVisitorTest.java">
+    <entry file="file://$PROJECT_DIR$/Test/DataStorage/Generation/SequenceVisitorTest.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="19" column="31" selection-start-line="19" selection-start-column="13" selection-end-line="19" selection-end-column="31" />
-          <folding />
+        <state vertical-scroll-proportion="-3.1280353">
+          <caret line="17" column="13" selection-start-line="17" selection-start-column="13" selection-end-line="17" selection-end-column="13" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/Test/UMLTests/SingletonTests.java">
+    <entry file="file://$PROJECT_DIR$/src/TestingProjects/factory/Lab4-2-Singleton/src/headfirst/singleton/chocolate/ChocolateBoiler.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.089701">
-          <caret line="41" column="0" selection-start-line="41" selection-start-column="0" selection-end-line="41" selection-end-column="0" />
-          <folding>
-            <element signature="imports" expanded="true" />
-            <element signature="e#574#582#0" expanded="true" />
-            <element signature="e#1080#1088#0" expanded="true" />
-            <element signature="e#1588#1596#0" expanded="true" />
-            <element signature="e#2100#2108#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/DataStorage/GraphGenerator.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.47508305">
-          <caret line="26" column="16" selection-start-line="26" selection-start-column="16" selection-end-line="26" selection-end-column="16" />
+        <state vertical-scroll-proportion="0.24255788">
+          <caret line="10" column="5" selection-start-line="10" selection-start-column="5" selection-end-line="10" selection-end-column="5" />
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/Visitors/DesignParser.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
+        <state vertical-scroll-proportion="0.024255788">
           <caret line="23" column="42" selection-start-line="23" selection-start-column="42" selection-end-line="23" selection-end-column="42" />
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/Lab4-2-Singleton/src/headfirst/singleton/chocolate/ChocolateBoiler.java">
+    <entry file="file://$PROJECT_DIR$/src/Visitors/Visitor.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.7360595">
-          <caret line="18" column="28" selection-start-line="18" selection-start-column="28" selection-end-line="18" selection-end-column="28" />
+        <state vertical-scroll-proportion="0.0">
+          <caret line="21" column="0" selection-start-line="21" selection-start-column="0" selection-end-line="21" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/Visitors/ITraverser.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="8" column="0" selection-start-line="8" selection-start-column="0" selection-end-line="8" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/commandline_args.txt">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="0" column="871" selection-start-line="0" selection-start-column="871" selection-end-line="0" selection-end-column="871" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Test/UMLTests/SingletonTests.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.66048235">
+          <caret line="65" column="0" selection-start-line="65" selection-start-column="0" selection-end-line="65" selection-end-column="0" />
+          <folding>
+            <element signature="imports" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/Visitors/IVisitor.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.388521">
+          <caret line="16" column="0" selection-start-line="16" selection-start-column="0" selection-end-line="16" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/Visitors/IVisitMethod.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.16129032">
+          <caret line="5" column="30" selection-start-line="5" selection-start-column="30" selection-end-line="5" selection-end-column="30" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/DataStorage/Generation/GraphGenerator.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.29325512">
+          <caret line="25" column="66" selection-start-line="25" selection-start-column="66" selection-end-line="25" selection-end-column="66" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/Visitors/PatternVisitors/AbstractVisitorTemplate.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="27" column="22" selection-start-line="27" selection-start-column="22" selection-end-line="27" selection-end-column="22" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/ParseClasses/ClassRep.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="39" column="5" selection-start-line="39" selection-start-column="5" selection-end-line="39" selection-end-column="5" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/ParseClasses/AbstractExtendableClassRep.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="35" column="0" selection-start-line="35" selection-start-column="0" selection-end-line="35" selection-end-column="0" />
+          <folding>
+            <element signature="e#964#965#0" expanded="true" />
+            <element signature="e#1009#1010#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/ParseClasses/AbstractData.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="45" column="38" selection-start-line="45" selection-start-column="38" selection-end-line="45" selection-end-column="38" />
+          <folding>
+            <element signature="e#1216#1217#0" expanded="true" />
+            <element signature="e#1261#1262#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/DataStorage/IDataStorage.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="27" column="62" selection-start-line="27" selection-start-column="62" selection-end-line="27" selection-end-column="62" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/Visitors/PatternVisitors/SingletonVisitor.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="53" column="45" selection-start-line="53" selection-start-column="45" selection-end-line="53" selection-end-column="45" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/DataStorage/ParsedDataStorage.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="56" column="5" selection-start-line="56" selection-start-column="5" selection-end-line="56" selection-end-column="5" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/Visitors/OutputStreams/UMLOutputStream.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.46909493">
+          <caret line="90" column="56" selection-start-line="90" selection-start-column="56" selection-end-line="90" selection-end-column="56" />
           <folding />
         </state>
       </provider>
