@@ -1,38 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="1b357d25-b641-458c-8a8c-24064c31616e" name="Default" comment="added cleanname to parseddatastorage&#10;">
-      <change type="DELETED" beforePath="$PROJECT_DIR$/out/production/UMLCreator/headfirst/singleton/chocolate/ChocolateBoiler.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/out/production/UMLCreator/headfirst/singleton/chocolate/ChocolateController.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/out/production/UMLCreator/headfirst/singleton/classic/Singleton.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/out/production/UMLCreator/headfirst/singleton/dcl/Singleton.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/out/production/UMLCreator/headfirst/singleton/dcl/SingletonClient.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/out/production/UMLCreator/headfirst/singleton/stat/Singleton.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/out/production/UMLCreator/headfirst/singleton/stat/SingletonClient.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/out/production/UMLCreator/headfirst/singleton/subclass/CoolerSingleton.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/out/production/UMLCreator/headfirst/singleton/subclass/HotterSingleton.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/out/production/UMLCreator/headfirst/singleton/subclass/Singleton.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/out/production/UMLCreator/headfirst/singleton/subclass/SingletonTestDrive.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/out/production/UMLCreator/headfirst/singleton/threadsafe/Singleton.class" afterPath="" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/production/UMLCreator/DataStorage/IDataStorage.class" afterPath="$PROJECT_DIR$/out/production/UMLCreator/DataStorage/IDataStorage.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/production/UMLCreator/DataStorage/ParsedDataStorage.class" afterPath="$PROJECT_DIR$/out/production/UMLCreator/DataStorage/ParsedDataStorage.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/production/UMLCreator/ParseClasses/AbstractData.class" afterPath="$PROJECT_DIR$/out/production/UMLCreator/ParseClasses/AbstractData.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/production/UMLCreator/ParseClasses/AbstractExtendableClassRep.class" afterPath="$PROJECT_DIR$/out/production/UMLCreator/ParseClasses/AbstractExtendableClassRep.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/production/UMLCreator/ParseClasses/AbstractJavaClassRep.class" afterPath="$PROJECT_DIR$/out/production/UMLCreator/ParseClasses/AbstractJavaClassRep.class" />
+    <list default="true" id="1b357d25-b641-458c-8a8c-24064c31616e" name="Default" comment="merged decorator pattern">
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/production/UMLCreator/Visitors/OutputStreams/UMLOutputStream.class" afterPath="$PROJECT_DIR$/out/production/UMLCreator/Visitors/OutputStreams/UMLOutputStream.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/production/UMLCreator/Visitors/PatternVisitors/SingletonVisitor.class" afterPath="$PROJECT_DIR$/out/production/UMLCreator/Visitors/PatternVisitors/SingletonVisitor.class" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/graph_text/generated_graph.gv" afterPath="$PROJECT_DIR$/graph_text/generated_graph.gv" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/DataStorage/Generation/GraphGenerator.java" afterPath="$PROJECT_DIR$/src/DataStorage/Generation/GraphGenerator.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/DataStorage/IDataStorage.java" afterPath="$PROJECT_DIR$/src/DataStorage/IDataStorage.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/DataStorage/ParsedDataStorage.java" afterPath="$PROJECT_DIR$/src/DataStorage/ParsedDataStorage.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/ParseClasses/AbstractData.java" afterPath="$PROJECT_DIR$/src/ParseClasses/AbstractData.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/ParseClasses/AbstractExtendableClassRep.java" afterPath="$PROJECT_DIR$/src/ParseClasses/AbstractExtendableClassRep.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/ParseClasses/AbstractJavaClassRep.java" afterPath="$PROJECT_DIR$/src/ParseClasses/AbstractJavaClassRep.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/Visitors/OutputStreams/UMLOutputStream.java" afterPath="$PROJECT_DIR$/src/Visitors/OutputStreams/UMLOutputStream.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/Visitors/PatternVisitors/AdaptorVisitor.java" afterPath="$PROJECT_DIR$/src/Visitors/PatternVisitors/AdaptorVisitor.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/Visitors/PatternVisitors/DecoratorVisitor.java" afterPath="$PROJECT_DIR$/src/Visitors/PatternVisitors/DecoratorVisitor.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/Visitors/PatternVisitors/SingletonVisitor.java" afterPath="$PROJECT_DIR$/src/Visitors/PatternVisitors/SingletonVisitor.java" />
     </list>
     <ignored path="UMLCreator.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -74,7 +45,7 @@
       <file leaf-file-name="UMLOutputStream.java" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/Visitors/OutputStreams/UMLOutputStream.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.712743">
+            <state vertical-scroll-proportion="1.266533">
               <caret line="122" column="62" selection-start-line="122" selection-start-column="62" selection-end-line="122" selection-end-column="62" />
               <folding />
             </state>
@@ -100,12 +71,7 @@
           <provider selected="true" editor-type-id="text-editor">
             <state vertical-scroll-proportion="0.0">
               <caret line="123" column="0" selection-start-line="123" selection-start-column="0" selection-end-line="123" selection-end-column="0" />
-              <folding>
-                <element signature="e#1372#1373#0" expanded="true" />
-                <element signature="e#1410#1411#0" expanded="true" />
-                <element signature="e#1445#1446#0" expanded="true" />
-                <element signature="e#1482#1483#0" expanded="true" />
-              </folding>
+              <folding />
             </state>
           </provider>
         </entry>
@@ -135,7 +101,7 @@
         <entry file="file://$PROJECT_DIR$/src/Visitors/PatternVisitors/AdaptorVisitor.java">
           <provider selected="true" editor-type-id="text-editor">
             <state vertical-scroll-proportion="0.0">
-              <caret line="62" column="48" selection-start-line="62" selection-start-column="48" selection-end-line="62" selection-end-column="48" />
+              <caret line="62" column="34" selection-start-line="62" selection-start-column="34" selection-end-line="62" selection-end-column="34" />
               <folding />
             </state>
           </provider>
@@ -287,8 +253,7 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
-      <pane id="Scope" />
-      <pane id="PackagesPane" />
+      <pane id="Scratches" />
       <pane id="ProjectPane">
         <subPane>
           <PATH>
@@ -543,7 +508,8 @@
           </PATH>
         </subPane>
       </pane>
-      <pane id="Scratches" />
+      <pane id="Scope" />
+      <pane id="PackagesPane" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -590,131 +556,6 @@
       <recent name="C:\Users\efronbs\Documents\School\y3q2\374\UMLCreatorActual\src" />
       <recent name="C:\Users\efronbs\Documents\School\y3q2\374\UMLCreatorActual\src\Visitor" />
     </key>
-  </component>
-  <component name="RestoreUpdateTree" date="Moments ago" ActionInfo="_Update">
-    <UpdatedFiles>
-      <FILE-GROUP>
-        <option name="myUpdateName" value="Updated from server" />
-        <option name="myStatusName" value="Changed on server" />
-        <option name="mySupportsDeletion" value="false" />
-        <option name="myCanBeAbsent" value="false" />
-        <option name="myId" value="CHANGED_ON_SERVER" />
-        <FILE-GROUP>
-          <option name="myUpdateName" value="Updated" />
-          <option name="myStatusName" value="Changed" />
-          <option name="mySupportsDeletion" value="false" />
-          <option name="myCanBeAbsent" value="false" />
-          <option name="myId" value="UPDATED" />
-          <PATH vcs="Git" revision="">$PROJECT_DIR$/.idea/workspace.xml</PATH>
-          <PATH vcs="Git" revision="">$PROJECT_DIR$/graph_text/generated_graph.gv</PATH>
-          <PATH vcs="Git" revision="">$PROJECT_DIR$/out/production/UMLCreator/DataStorage/ParsedDataStorage.class</PATH>
-          <PATH vcs="Git" revision="">$PROJECT_DIR$/out/production/UMLCreator/ParseClasses/AbstractJavaClassRep.class</PATH>
-          <PATH vcs="Git" revision="">$PROJECT_DIR$/out/production/UMLCreator/ParseClasses/AbstractTypable.class</PATH>
-          <PATH vcs="Git" revision="">$PROJECT_DIR$/out/production/UMLCreator/Visitors/ClassFieldVisitor.class</PATH>
-          <PATH vcs="Git" revision="">$PROJECT_DIR$/out/production/UMLCreator/Visitors/OutputStreams/UMLOutputStream.class</PATH>
-          <PATH vcs="Git" revision="">$PROJECT_DIR$/out/production/UMLCreator/Visitors/UMLVisitors/UMLClassMethodVisitor.class</PATH>
-          <PATH vcs="Git" revision="">$PROJECT_DIR$/out/production/UMLCreator/Visitors/UMLVisitors/UMLMethodVisitor.class</PATH>
-          <PATH vcs="Git" revision="">$PROJECT_DIR$/src/DataStorage/ParsedDataStorage.java</PATH>
-          <PATH vcs="Git" revision="">$PROJECT_DIR$/src/Visitors/ClassFieldVisitor.java</PATH>
-          <PATH vcs="Git" revision="">$PROJECT_DIR$/src/Visitors/OutputStreams/UMLOutputStream.java</PATH>
-          <PATH vcs="Git" revision="">$PROJECT_DIR$/src/Visitors/PatternVisitors/AdaptorVisitor.java</PATH>
-          <PATH vcs="Git" revision="">$PROJECT_DIR$/src/Visitors/UMLVisitors/UMLClassMethodVisitor.java</PATH>
-          <PATH vcs="Git" revision="">$PROJECT_DIR$/src/Visitors/UMLVisitors/UMLMethodVisitor.java</PATH>
-        </FILE-GROUP>
-        <FILE-GROUP>
-          <option name="myUpdateName" value="Created" />
-          <option name="myStatusName" value="Created" />
-          <option name="mySupportsDeletion" value="false" />
-          <option name="myCanBeAbsent" value="false" />
-          <option name="myId" value="CREATED" />
-          <PATH vcs="Git" revision="">$PROJECT_DIR$/MS5_Turnin/AdaptorTestDiagram</PATH>
-        </FILE-GROUP>
-        <FILE-GROUP>
-          <option name="myUpdateName" value="Deleted" />
-          <option name="myStatusName" value="Deleted" />
-          <option name="mySupportsDeletion" value="false" />
-          <option name="myCanBeAbsent" value="true" />
-          <option name="myId" value="REMOVED_FROM_REPOSITORY" />
-        </FILE-GROUP>
-        <FILE-GROUP>
-          <option name="myUpdateName" value="Restored" />
-          <option name="myStatusName" value="Will be restored" />
-          <option name="mySupportsDeletion" value="false" />
-          <option name="myCanBeAbsent" value="false" />
-          <option name="myId" value="RESTORED" />
-        </FILE-GROUP>
-      </FILE-GROUP>
-      <FILE-GROUP>
-        <option name="myUpdateName" value="Modified" />
-        <option name="myStatusName" value="Modified" />
-        <option name="mySupportsDeletion" value="false" />
-        <option name="myCanBeAbsent" value="false" />
-        <option name="myId" value="MODIFIED" />
-      </FILE-GROUP>
-      <FILE-GROUP>
-        <option name="myUpdateName" value="Skipped" />
-        <option name="myStatusName" value="Skipped" />
-        <option name="mySupportsDeletion" value="false" />
-        <option name="myCanBeAbsent" value="false" />
-        <option name="myId" value="SKIPPED" />
-      </FILE-GROUP>
-      <FILE-GROUP>
-        <option name="myUpdateName" value="Merged with conflicts" />
-        <option name="myStatusName" value="Will be merged with conflicts" />
-        <option name="mySupportsDeletion" value="false" />
-        <option name="myCanBeAbsent" value="false" />
-        <option name="myId" value="MERGED_WITH_CONFLICTS" />
-      </FILE-GROUP>
-      <FILE-GROUP>
-        <option name="myUpdateName" value="Merged with tree conflicts" />
-        <option name="myStatusName" value="Merged with tree conflicts" />
-        <option name="mySupportsDeletion" value="false" />
-        <option name="myCanBeAbsent" value="false" />
-        <option name="myId" value="MERGED_WITH_TREE_CONFLICT" />
-      </FILE-GROUP>
-      <FILE-GROUP>
-        <option name="myUpdateName" value="Merged with property conflicts" />
-        <option name="myStatusName" value="Will be merged with property conflicts" />
-        <option name="mySupportsDeletion" value="false" />
-        <option name="myCanBeAbsent" value="false" />
-        <option name="myId" value="MERGED_WITH_PROPERTY_CONFLICT" />
-      </FILE-GROUP>
-      <FILE-GROUP>
-        <option name="myUpdateName" value="Merged" />
-        <option name="myStatusName" value="Will be merged" />
-        <option name="mySupportsDeletion" value="false" />
-        <option name="myCanBeAbsent" value="false" />
-        <option name="myId" value="MERGED" />
-      </FILE-GROUP>
-      <FILE-GROUP>
-        <option name="myUpdateName" value="Not in repository" />
-        <option name="myStatusName" value="Not in repository" />
-        <option name="mySupportsDeletion" value="true" />
-        <option name="myCanBeAbsent" value="false" />
-        <option name="myId" value="UNKNOWN" />
-      </FILE-GROUP>
-      <FILE-GROUP>
-        <option name="myUpdateName" value="Locally added" />
-        <option name="myStatusName" value="Locally added" />
-        <option name="mySupportsDeletion" value="false" />
-        <option name="myCanBeAbsent" value="false" />
-        <option name="myId" value="LOCALLY_ADDED" />
-      </FILE-GROUP>
-      <FILE-GROUP>
-        <option name="myUpdateName" value="Locally removed" />
-        <option name="myStatusName" value="Locally removed" />
-        <option name="mySupportsDeletion" value="false" />
-        <option name="myCanBeAbsent" value="false" />
-        <option name="myId" value="LOCALLY_REMOVED" />
-      </FILE-GROUP>
-      <FILE-GROUP>
-        <option name="myUpdateName" value="Switched" />
-        <option name="myStatusName" value="Switched" />
-        <option name="mySupportsDeletion" value="false" />
-        <option name="myCanBeAbsent" value="false" />
-        <option name="myId" value="SWITCHED" />
-      </FILE-GROUP>
-    </UpdatedFiles>
   </component>
   <component name="RunManager" selected="Application.DesignParser">
     <configuration default="false" name="SingletonTests" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
@@ -1280,6 +1121,7 @@
       <workItem from="1453763982802" duration="187000" />
       <workItem from="1453862328020" duration="19046000" />
       <workItem from="1453944555579" duration="24602000" />
+      <workItem from="1454015831667" duration="97000" />
     </task>
     <task id="LOCAL-00001" summary="added asm libraries and visitor package">
       <created>1451953507803</created>
@@ -1515,7 +1357,13 @@
       <option name="project" value="LOCAL" />
       <updated>1453950806196</updated>
     </task>
-    <option name="localTasksCounter" value="40" />
+    <task id="LOCAL-00040" summary="merged decorator pattern">
+      <created>1454015872589</created>
+      <option name="number" value="00040" />
+      <option name="project" value="LOCAL" />
+      <updated>1454015872589</updated>
+    </task>
+    <option name="localTasksCounter" value="41" />
     <servers />
   </component>
   <component name="TestHistory">
@@ -1542,7 +1390,7 @@
     </history-entry>
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="226178000" />
+    <option name="totallyTimeSpent" value="226275000" />
   </component>
   <component name="TodoView" selected-index="1">
     <todo-panel id="selected-file">
@@ -1565,12 +1413,10 @@
       <window_info id="Maven Projects" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.329582" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.2462772" sideWeight="0.49785638" order="10" side_tool="false" content_ui="tabs" />
       <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.40291807" sideWeight="0.49356914" order="2" side_tool="false" content_ui="tabs" />
-      <window_info id="Coverage" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.329582" sideWeight="0.5" order="7" side_tool="true" content_ui="tabs" />
       <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.30190796" sideWeight="0.5" order="8" side_tool="false" content_ui="tabs" />
       <window_info id="Designer" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.17309754" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
       <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32995495" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
-      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33333334" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.24973205" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="UI Designer" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
@@ -1580,7 +1426,9 @@
       <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
+      <window_info id="Coverage" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.329582" sideWeight="0.5" order="7" side_tool="true" content_ui="tabs" />
       <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="combo" />
+      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33333334" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
     </layout>
   </component>
   <component name="Vcs.Log.UiProperties">
@@ -1596,7 +1444,6 @@
   </component>
   <component name="VcsManagerConfiguration">
     <option name="CHECK_CODE_CLEANUP_BEFORE_PROJECT_COMMIT" value="true" />
-    <MESSAGE value="redid all the work that git destroyed earlier&#10;implementation of interfaces" />
     <MESSAGE value="fixed how classes and interfaces were storing info about superclass and implemented classes" />
     <MESSAGE value="added empty constructor to interface for testing" />
     <MESSAGE value="parsing of code working, next step is making it go on to parse classes that it extends or implements" />
@@ -1621,7 +1468,8 @@
     <MESSAGE value="Updated pattern recognition code" />
     <MESSAGE value="added support for implements and extends arrows, removed arrows to items that were not covered" />
     <MESSAGE value="added cleanname to parseddatastorage&#10;" />
-    <option name="LAST_COMMIT_MESSAGE" value="added cleanname to parseddatastorage&#10;" />
+    <MESSAGE value="merged decorator pattern" />
+    <option name="LAST_COMMIT_MESSAGE" value="merged decorator pattern" />
     <option name="OPTIMIZE_IMPORTS_BEFORE_PROJECT_COMMIT" value="true" />
     <option name="REFORMAT_BEFORE_PROJECT_COMMIT" value="true" />
     <option name="REARRANGE_BEFORE_PROJECT_COMMIT" value="true" />
@@ -1673,6 +1521,73 @@
     <option name="FILTER_TARGETS" value="false" />
   </component>
   <component name="editorHistoryManager">
+    <entry file="file://$PROJECT_DIR$/src/ParseClasses/AbstractExtendableClassRep.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="21" column="0" selection-start-line="21" selection-start-column="0" selection-end-line="21" selection-end-column="0" />
+          <folding>
+            <element signature="imports" expanded="true" />
+            <element signature="e#1852#1853#0" expanded="true" />
+            <element signature="e#1897#1898#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/ParseClasses/AbstractJavaClassRep.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="123" column="0" selection-start-line="123" selection-start-column="0" selection-end-line="123" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/ParseClasses/AbstractData.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="16" column="25" selection-start-line="16" selection-start-column="25" selection-end-line="16" selection-end-column="25" />
+          <folding>
+            <element signature="e#1009#1010#0" expanded="true" />
+            <element signature="e#1041#1042#0" expanded="true" />
+            <element signature="e#1081#1082#0" expanded="true" />
+            <element signature="e#1155#1156#0" expanded="true" />
+            <element signature="e#1193#1194#0" expanded="true" />
+            <element signature="e#1232#1233#0" expanded="true" />
+            <element signature="e#1286#1287#0" expanded="true" />
+            <element signature="e#1339#1340#0" expanded="true" />
+            <element signature="e#1758#1759#0" expanded="true" />
+            <element signature="e#1792#1793#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/Visitors/PatternVisitors/AdaptorVisitor.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="62" column="34" selection-start-line="62" selection-start-column="34" selection-end-line="62" selection-end-column="34" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/ParseClasses/InterfaceRep.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="11" column="20" selection-start-line="11" selection-start-column="20" selection-end-line="11" selection-end-column="20" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/Visitors/PatternVisitors/DecoratorVisitor.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="29" column="22" selection-start-line="29" selection-start-column="22" selection-end-line="29" selection-end-column="22" />
+          <folding>
+            <element signature="imports" expanded="true" />
+            <element signature="e#313#314#0" expanded="true" />
+            <element signature="e#340#341#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/src/Visitors/VisitType.java">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.26190478">
@@ -1775,7 +1690,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
           <caret line="8" column="0" selection-start-line="8" selection-start-column="0" selection-end-line="8" selection-end-column="0" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -1798,7 +1712,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.388521">
           <caret line="16" column="0" selection-start-line="16" selection-start-column="0" selection-end-line="16" selection-end-column="0" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -1829,7 +1742,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
           <caret line="45" column="0" selection-start-line="45" selection-start-column="0" selection-end-line="45" selection-end-column="0" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -1845,9 +1757,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
           <caret line="7" column="49" selection-start-line="7" selection-start-column="49" selection-end-line="7" selection-end-column="49" />
-          <folding>
-            <element signature="e#606#607#0" expanded="false" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -1855,7 +1764,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
           <caret line="0" column="35" selection-start-line="0" selection-start-column="8" selection-end-line="0" selection-end-column="35" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -1863,9 +1771,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.55172414">
           <caret line="22" column="0" selection-start-line="22" selection-start-column="0" selection-end-line="22" selection-end-column="0" />
-          <folding>
-            <element signature="imports" expanded="false" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -1873,9 +1778,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="-7.7647057">
           <caret line="12" column="39" selection-start-line="12" selection-start-column="39" selection-end-line="12" selection-end-column="39" />
-          <folding>
-            <element signature="imports" expanded="false" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -1883,7 +1785,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.3559322">
           <caret line="77" column="24" selection-start-line="77" selection-start-column="24" selection-end-line="77" selection-end-column="24" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -1909,9 +1810,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
           <caret line="22" column="0" selection-start-line="22" selection-start-column="0" selection-end-line="22" selection-end-column="0" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -2003,7 +1901,7 @@
     <entry file="file://$PROJECT_DIR$/src/Visitors/PatternVisitors/AdaptorVisitor.java">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
-          <caret line="62" column="48" selection-start-line="62" selection-start-column="48" selection-end-line="62" selection-end-column="48" />
+          <caret line="62" column="34" selection-start-line="62" selection-start-column="34" selection-end-line="62" selection-end-column="34" />
           <folding />
         </state>
       </provider>
@@ -2043,18 +1941,13 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
           <caret line="123" column="0" selection-start-line="123" selection-start-column="0" selection-end-line="123" selection-end-column="0" />
-          <folding>
-            <element signature="e#1372#1373#0" expanded="true" />
-            <element signature="e#1410#1411#0" expanded="true" />
-            <element signature="e#1445#1446#0" expanded="true" />
-            <element signature="e#1482#1483#0" expanded="true" />
-          </folding>
+          <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/Visitors/OutputStreams/UMLOutputStream.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.712743">
+        <state vertical-scroll-proportion="1.266533">
           <caret line="122" column="62" selection-start-line="122" selection-start-column="62" selection-end-line="122" selection-end-column="62" />
           <folding />
         </state>
