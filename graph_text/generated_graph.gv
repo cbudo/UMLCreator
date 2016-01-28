@@ -77,7 +77,7 @@ label = "{String\n\<\<adaptee\>\>\n\<\<adaptee\>\>\n|
 }"];
 
 ClassVisitor [
-shape = "record", fillcolor=green, style=filled,
+shape = "record", color="maroon ", fillcolor=green, style=filled,
 label = "{ClassVisitor\n\<\<target\>\>\n\<\<target\>\>\n\<\<decorator\>\>\n|# cv : ClassVisitor\l
 # api : int\l
 |+ init : void\l
