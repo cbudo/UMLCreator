@@ -50,11 +50,11 @@ public class AdaptorVisitor extends AbstractVisitorTemplate {
         addNewClasses();
 
         for (AdaptorNameSet s : adaptorsFound) {
-            ParsedDataStorage.getInstance().getNonSpecificJavaClass(s.adaptorName.replace("/", ".")).addToDisplayName("\\l\\<\\<adaptor\\>\\>");
+            ParsedDataStorage.getInstance().getNonSpecificJavaClass(s.adaptorName.replace("/", ".")).addToDisplayName("\\<\\<adaptor\\>\\>");
             ParsedDataStorage.getInstance().getNonSpecificJavaClass(s.adaptorName.replace("/", ".")).setColor("maroon");
-            ParsedDataStorage.getInstance().getNonSpecificJavaClass(s.adapteeName.replace("/", ".")).addToDisplayName("\\l\\<\\<adaptee\\>\\>");
+            ParsedDataStorage.getInstance().getNonSpecificJavaClass(s.adapteeName.replace("/", ".")).addToDisplayName("\\<\\<adaptee\\>\\>");
             ParsedDataStorage.getInstance().getNonSpecificJavaClass(s.adapteeName.replace("/", ".")).setColor("maroon");
-            ParsedDataStorage.getInstance().getNonSpecificJavaClass(s.targetName.replace("/", ".")).addToDisplayName("\\l\\<\\<target\\>\\>");
+            ParsedDataStorage.getInstance().getNonSpecificJavaClass(s.targetName.replace("/", ".")).addToDisplayName("\\<\\<target\\>\\>");
             ParsedDataStorage.getInstance().getNonSpecificJavaClass(s.targetName.replace("/", ".")).setColor("maroon");
         }
     }

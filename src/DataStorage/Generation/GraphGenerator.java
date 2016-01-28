@@ -6,6 +6,7 @@ import Visitors.ClassFieldVisitor;
 import Visitors.OutputStreams.UMLOutputStream;
 import Visitors.PatternVisitors.AbstractVisitorTemplate;
 import Visitors.PatternVisitors.AdaptorVisitor;
+import Visitors.PatternVisitors.DecoratorVisitor;
 import Visitors.PatternVisitors.SingletonVisitor;
 import Visitors.UMLVisitors.UMLClassMethodVisitor;
 import com.sun.xml.internal.messaging.saaj.util.ByteOutputStream;
@@ -33,6 +34,8 @@ public class GraphGenerator implements IGenerator {
         try {
             os = new ByteOutputStream();
             fos = new UMLOutputStream(os);
+            DecoratorVisitor DV = new DecoratorVisitor(data);
+            DV.doTheStuff();
             fos.write(data);
         } catch (FileNotFoundException e) {
             e.printStackTrace();

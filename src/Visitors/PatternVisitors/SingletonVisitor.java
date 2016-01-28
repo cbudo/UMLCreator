@@ -42,7 +42,7 @@ public class SingletonVisitor extends AbstractVisitorTemplate {
     public void performAnalysis() {
         for (AbstractJavaClassRep r : data.getClasses()) {
             if (((ClassRep) r).isSingleton()) {
-                r.addToDisplayName("\\l\\<\\<Singleton\\>\\>");
+                r.addToDisplayName("\\<\\<Singleton\\>\\>");
                 r.setColor("blue");
             }
         }

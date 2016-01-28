@@ -56,8 +56,8 @@ public class UMLOutputStream extends FilterOutputStream {
             AbstractExtendableClassRep e = (AbstractExtendableClassRep) t;
             String in = cleanName(e.getName());
             this.write("\n" + in
-                    + " [\nshape = \"record\",\nlabel = \"{"
-                    + "<I>" + e.getDisplayName() + "</I>" + "\\l" + "|");
+                    + " [\nshape = \"record\", fillcolor=" + e.getFillColor() + ", style=filled,\nlabel = \"{"
+                    + e.getDisplayName() + "|");
 
             for (AbstractData f : e.getFieldsMap().values()) {
                 f.accept(visitor);
@@ -87,8 +87,8 @@ public class UMLOutputStream extends FilterOutputStream {
             String color = e.getColor();
 
             this.write("\n" + in
-                    + " [\nshape = \"record\", color=\"" + color + "\",\nlabel = \"{"
-                    + nameToDisplay + "\\l");
+                    + " [\nshape = \"record\", color=\"" + color + "\", fillcolor=" + e.getFillColor() + ", style=filled,\nlabel = \"{"
+                    + nameToDisplay);
             this.write("|\n");
 
             for (AbstractData f : e.getFieldsMap().values()) {
@@ -116,9 +116,9 @@ public class UMLOutputStream extends FilterOutputStream {
             InterfaceRep i = (InterfaceRep) t;
             String in = cleanName(i.getName());
             this.write("\n" + in
-                    + " [\nshape = \"record\", color=\"" + i.getColor() + "\",\nlabel = \"{"
+                    + " [\nshape = \"record\", color=\"" + i.getColor() + "\", fillcolor=" + i.getFillColor() + ", style=filled,\nlabel = \"{"
                     + "\\<\\<interface\\>\\>\\l"
-                    + i.getDisplayName() + "\\l" + "|");
+                    + i.getDisplayName() + "|");
 
             for (AbstractData f : i.getFieldsMap().values()) {
                 f.accept(visitor);
@@ -195,7 +195,7 @@ public class UMLOutputStream extends FilterOutputStream {
     }
 
     public String cleanName(String in) {
-        return in.substring(in.lastIndexOf("/") + 1);
+        return in.substring(in.lastIndexOf("/") + 1).substring(in.lastIndexOf(".") + 1);
     }
 
     public String makeSlashes(String n) {

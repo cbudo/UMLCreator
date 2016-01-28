@@ -33,4 +33,6 @@ public interface IDataStorage {
 
     MethodCall[] getMethods();
 
+    AbstractJavaClassRep getNonSpecificJavaClass(String name);
+
 }

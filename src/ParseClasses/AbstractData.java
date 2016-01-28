@@ -14,12 +14,13 @@ public abstract class AbstractData implements ITraverser
 {
     private String name, displayName;
     private int accessibility;
+    private boolean isComponent;
     private Map<Integer, String> accessibilityTranslator = new HashMap<Integer, String>();
 
     public AbstractData(String name, int accessibility)
     {
         this.name = name;
-        this.displayName = getInnermostName();
+        this.displayName = getInnermostName() + "\\n";
 
         this.accessibility = accessibility;
 
@@ -27,6 +28,7 @@ public abstract class AbstractData implements ITraverser
         this.accessibilityTranslator.put(KeyRep.Type.PRIVATE.ordinal(), "-");
         this.accessibilityTranslator.put(KeyRep.Type.SECRET.ordinal(), "-");
         //this.accessibilityTranslator.put("default", "+");
+        isComponent = false;
     }
 
     public String getName()
@@ -43,7 +45,7 @@ public abstract class AbstractData implements ITraverser
     }
 
     public void addToDisplayName(String textToAdd) {
-        this.displayName += textToAdd;
+        this.displayName += textToAdd + "\\n";
     }
 
     public int getAccessibility()
@@ -61,5 +63,14 @@ public abstract class AbstractData implements ITraverser
             return "#";
         }
     }
+
+    public boolean isComponent() {
+        return isComponent;
+    }
+
+    public void setComponent(boolean component) {
+        isComponent = component;
+    }
+
 
 }

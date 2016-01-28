@@ -98,27 +98,21 @@ public class ParsedDataStorage implements IDataStorage, ITraverser {
     }
 
     public void addMethod(String cName, AbstractData methodRep) {
+        AbstractJavaClassRep data = getNonSpecificJavaClass(cName);
         try {
-            classes.get(cName).addMethod(methodRep.getName(), methodRep);
+            data.addMethod(methodRep.getName(), methodRep);
         } catch (Exception e) {
-            try {
-                abstractClasses.get(cName).addMethod(methodRep.getName(), methodRep);
-            } catch (Exception ex) {
-                interfaces.get(cName).addMethod(methodRep.getName(), methodRep);
-            }
+            data = null;
         }
     }
 
     @Override
     public void addField(String cName, AbstractData fieldRep) {
+        AbstractJavaClassRep data = getNonSpecificJavaClass(cName);
         try {
-            classes.get(cName).addField(fieldRep.getName(), fieldRep);
+            data.addField(fieldRep.getName(), fieldRep);
         } catch (Exception e) {
-            try {
-                abstractClasses.get(cName).addField(fieldRep.getName(), fieldRep);
-            } catch (Exception ex) {
-                interfaces.get(cName).addField(fieldRep.getName(), fieldRep);
-            }
+            data = null;
         }
     }
 
@@ -172,7 +166,7 @@ public class ParsedDataStorage implements IDataStorage, ITraverser {
     }
 
     public String cleanName(String in) {
-        return in.substring(in.lastIndexOf(".") + 1);
+        return in.substring(in.lastIndexOf(".") + 1).substring(in.lastIndexOf("/") + 1);
     }
 
     public boolean checkContains(String fullName) {
