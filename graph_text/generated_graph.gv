@@ -3,7 +3,7 @@ digraph UML_Diagram
 rankdir=BT;
 
 IteratorToEnumerationAdapter [
-shape = "record", color="black",
+shape = "record", color="maroon",
 label = "{IteratorToEnumerationAdapter\l\<\<adaptor\>\>\l|
 - itr : Iterator\l
 |+ init : void\l
@@ -28,7 +28,7 @@ label = "{LinearTransformer\l|
 }"];
 
 Iterator [
-shape = "record",
+shape = "record", color="maroon",
 label = "{\<\<interface\>\>\lIterator\l\<\<adaptee\>\>\l||+ next : Object\l
 + hasNext : boolean\l
 + forEachRemaining : void\l
@@ -36,7 +36,7 @@ label = "{\<\<interface\>\>\lIterator\l\<\<adaptee\>\>\l||+ next : Object\l
 }"];
 
 Enumeration [
-shape = "record",
+shape = "record", color="maroon",
 label = "{\<\<interface\>\>\lEnumeration\l\<\<target\>\>\l||+ hasMoreElements : boolean\l
 + nextElement : Object\l
 }"];

@@ -116,7 +116,7 @@ public class UMLOutputStream extends FilterOutputStream {
             InterfaceRep i = (InterfaceRep) t;
             String in = cleanName(i.getName());
             this.write("\n" + in
-                    + " [\nshape = \"record\",\nlabel = \"{"
+                    + " [\nshape = \"record\", color=\"" + i.getColor() + "\",\nlabel = \"{"
                     + "\\<\\<interface\\>\\>\\l"
                     + i.getDisplayName() + "\\l" + "|");
 
