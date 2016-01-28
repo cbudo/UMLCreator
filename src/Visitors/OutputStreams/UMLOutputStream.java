@@ -53,8 +53,8 @@ public class UMLOutputStream extends FilterOutputStream {
 
     public void setupVisitAbstractClass() {
         this.visitor.addVisit(VisitType.Visit, AbstractClassRep.class, (ITraverser t) -> {
-            AbstractJavaClassRep e = (AbstractJavaClassRep) t;
-            String in = e.getName().substring(e.getName().lastIndexOf("/") + 1);
+            AbstractExtendableClassRep e = (AbstractExtendableClassRep) t;
+            String in = cleanName(e.getName());
             this.write("\n" + in
                     + " [\nshape = \"record\",\nlabel = \"{"
                     + "<I>" + in + "</I>" + "\\l" + "|");
@@ -69,13 +69,20 @@ public class UMLOutputStream extends FilterOutputStream {
             }
 
             this.write("}\"];\n");
+            for (String s :
+                    e.getImplementsList()) {
+                //write for implement arrow
+                makeImplementsArrow(cleanName(e.getName()), cleanName(s));
+            }
+            // write extends arrow
+            makeExtendsArrow(cleanName(e.getName()), cleanName(e.getExtendedClassName()));
         });
     }
 
     public void setupVisitClass() {
         this.visitor.addVisit(VisitType.Visit, ClassRep.class, (ITraverser t) -> {
             ClassRep e = (ClassRep) t;
-            String in = e.getInnermostName();//.substring(e.getName().lastIndexOf("/") + 1);
+            String in = cleanName(e.getInnermostName());//.substring(e.getName().lastIndexOf("/") + 1);
             String nameToDisplay = e.getDisplayName();
             String color = "black";
 //            String singleton = "";
@@ -98,13 +105,20 @@ public class UMLOutputStream extends FilterOutputStream {
             }
 
             this.write("}\"];\n");
+            for (String s :
+                    e.getImplementsList()) {
+                //write for implement arrow
+                makeImplementsArrow(cleanName(e.getName()), cleanName(s));
+            }
+            // write extends arrow
+            makeExtendsArrow(cleanName(e.getName()), cleanName(e.getExtendedClassName()));
         });
     }
 
     public void setupVisitInterface() {
         this.visitor.addVisit(VisitType.Visit, InterfaceRep.class, (ITraverser t) -> {
             InterfaceRep i = (InterfaceRep) t;
-            String in = i.getName().substring(i.getName().lastIndexOf("/") + 1);
+            String in = cleanName(i.getName());
             this.write("\n" + in
                     + " [\nshape = \"record\",\nlabel = \"{"
                     + "\\<\\<interface\\>\\>\\l"
@@ -117,10 +131,16 @@ public class UMLOutputStream extends FilterOutputStream {
             this.write("|");
 
             for (AbstractData m : i.getMethodsMap().values()) {
-                this.write(m.toString());
+                m.accept(visitor);
             }
 
             this.write("}\"];\n");
+            for (String s :
+                    i.getImplementsList()) {
+                //write for extends arrow
+                makeExtendsArrow(cleanName(i.getName()), cleanName(s));
+
+            }
         });
     }
 
@@ -165,6 +185,21 @@ public class UMLOutputStream extends FilterOutputStream {
             AssociationRelation a = (AssociationRelation) t;
             this.write(a.getFrom() + " -> " + a.getTo() + " [arrowhead=\"vee\", style=\"solid\"];\n");
         });
+    }
+
+    public void makeExtendsArrow(String className, String extendedClass) {
+        if (ParsedDataStorage.getInstance().containsClass(className) && ParsedDataStorage.getInstance().containsClass(extendedClass))
+            this.write(className + " -> " + extendedClass + " [arrowhead=\"onormal\", style=\"solid\"];\n");
+    }
+
+    public void makeImplementsArrow(String className, String implementedClass) {
+        if (ParsedDataStorage.getInstance().containsClass(className) && ParsedDataStorage.getInstance().containsClass(implementedClass))
+            this.write(className + " -> " + implementedClass + " [arrowhead=\"onormal\", style=\"dashed\"];\n");
+
+    }
+
+    public String cleanName(String in) {
+        return in.substring(in.lastIndexOf("/") + 1);
     }
 
 }

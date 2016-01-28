@@ -2,21 +2,62 @@ digraph UML_Diagram
 {
 rankdir=BT;
 
-ChocolateBoiler [
+ParsedDataStorage [
 shape = "record", color="black",
-label = "{ChocolateBoiler\l\<\<Singleton\>\>\l|
-- boiled : boolean\l
-- uniqueInstance : ChocolateBoiler\l
-- empty : boolean\l
-|- init : void\l
-+ isEmpty : boolean\l
-+ getInstance : ChocolateBoiler\l
-+ fill : void\l
-+ isBoiled : boolean\l
-+ drain : void\l
-+ boil : void\l
+label = "{ParsedDataStorage\l\<\<Singleton\>\>\l|
+- associationRels : List\l
+- interfaces : Map\l
+- max_depth : int\l
+- classes : Map\l
+- includedClasses : List\l
+- methodCalls : List\l
+- storage : ParsedDataStorage\l
+- usesRels : List\l
+- abstractClasses : Map\l
+|+ getClass : AbstractJavaClassRep\l
++ addAbstractClass : void\l
++ setMax_depth : void\l
++ containsClass : boolean\l
++ getUsesRels : List\l
++ addUsesRelation : boolean\l
++ getClasses : Collection\l
++ addClass : void\l
++ addMethod : void\l
+- init : void\l
++ getInterface : AbstractJavaClassRep\l
++ getInterfacade : AbstractJavaClassRep\l
++ getAbstractClasses : Collection\l
++ getInterfaces : Collection\l
++ addField : void\l
++ getMax_depth : int\l
++ accept : void\l
+- destroySelf : void\l
++ cleanName : String\l
++ addInterfaces : void\l
++ addMethodCall : boolean\l
++ addAssociationRelation : boolean\l
++ getAbstractClass : AbstractJavaClassRep\l
++ getAssociationRels : List\l
++ getInstance : ParsedDataStorage\l
++ usedClasses : Iterator\l
++ getMethods : MethodCall[]\l
 }"];
-ChocolateBoiler -> boolean [arrowhead="vee", style="solid"];
-ChocolateBoiler -> ChocolateBoiler [arrowhead="vee", style="solid"];
+ParsedDataStorage -> IDataStorage [arrowhead="onormal", style="dashed"];
+
+IDataStorage [
+shape = "record",
+label = "{\<\<interface\>\>\lIDataStorage\l||+ getClass : AbstractJavaClassRep\l
++ addInterfaces : void\l
++ getAbstractClasses : Collection\l
++ getInterfacade : AbstractJavaClassRep\l
++ addAbstractClass : void\l
++ getInterfaces : Collection\l
++ addField : void\l
++ getMethods : MethodCall[]\l
++ getClasses : Collection\l
++ addMethod : void\l
++ addClass : void\l
+}"];
+ParsedDataStorage -> ParsedDataStorage [arrowhead="vee", style="solid"];
 
 }

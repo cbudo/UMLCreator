@@ -14,12 +14,13 @@ import java.util.*;
  */
 public class ParsedDataStorage implements IDataStorage, ITraverser {
     private static ParsedDataStorage storage;
-    Map<String, AbstractJavaClassRep> classes;
-    Map<String, AbstractJavaClassRep> interfaces;
-    Map<String, AbstractJavaClassRep> abstractClasses;
-    List<IRelation> usesRels;
-    List<IRelation> associationRels;
-    List<MethodCall> methodCalls;
+    private Map<String, AbstractJavaClassRep> classes;
+    private Map<String, AbstractJavaClassRep> interfaces;
+    private Map<String, AbstractJavaClassRep> abstractClasses;
+    private List<String> includedClasses;
+    private List<IRelation> usesRels;
+    private List<IRelation> associationRels;
+    private List<MethodCall> methodCalls;
     private int max_depth = 5;
 
     private ParsedDataStorage() {
@@ -29,6 +30,7 @@ public class ParsedDataStorage implements IDataStorage, ITraverser {
         this.usesRels = new ArrayList<>();
         this.associationRels = new ArrayList<>();
         this.methodCalls = new LinkedList<>();
+        this.includedClasses = new ArrayList<>();
     }
 
     public static ParsedDataStorage getInstance() {
@@ -54,6 +56,7 @@ public class ParsedDataStorage implements IDataStorage, ITraverser {
 
     public void addClass(String name, AbstractJavaClassRep classRep) {
         classes.put(name, classRep);
+        includedClasses.add(cleanName(name));
     }
 
     public AbstractJavaClassRep getClass(String className) {
@@ -66,6 +69,7 @@ public class ParsedDataStorage implements IDataStorage, ITraverser {
 
     public void addInterfaces(String name, AbstractJavaClassRep interfaceRep) {
         interfaces.put(name, interfaceRep);
+        includedClasses.add(cleanName(name));
     }
 
     @Override
@@ -120,6 +124,7 @@ public class ParsedDataStorage implements IDataStorage, ITraverser {
 
     public void addAbstractClass(String name, AbstractJavaClassRep abstractClassRep) {
         abstractClasses.put(name, abstractClassRep);
+        includedClasses.add(cleanName(name));
     }
 
     public AbstractJavaClassRep getAbstractClass(String className) {
@@ -136,6 +141,14 @@ public class ParsedDataStorage implements IDataStorage, ITraverser {
 
     public List<IRelation> getUsesRels() {
         return this.usesRels;
+    }
+
+    public Iterator<String> usedClasses() {
+        return includedClasses.iterator();
+    }
+
+    public boolean containsClass(String clazzName) {
+        return includedClasses.contains(clazzName);
     }
 
     public boolean addUsesRelation(IRelation relation) {
@@ -158,6 +171,11 @@ public class ParsedDataStorage implements IDataStorage, ITraverser {
         return false;
     }
 
+    public String cleanName(String in) {
+        return in.substring(in.lastIndexOf(".") + 1);
+    }
+
+
     @Override
     public void accept(IVisitor v) {
         v.preVisit(this);
@@ -173,10 +191,12 @@ public class ParsedDataStorage implements IDataStorage, ITraverser {
             abstractClass.accept(v);
         }
         for (IRelation r : usesRels) {
-            r.accept(v);
+            if (containsClass(r.getFrom()) && containsClass(r.getTo()))
+                r.accept(v);
         }
         for (IRelation r : associationRels) {
-            r.accept(v);
+            if (containsClass(r.getFrom()) && containsClass(r.getTo()))
+                r.accept(v);
         }
         for (MethodCall m : methodCalls) {
             m.accept(v);
