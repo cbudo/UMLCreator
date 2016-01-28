@@ -175,6 +175,40 @@ public class ParsedDataStorage implements IDataStorage, ITraverser {
         return in.substring(in.lastIndexOf(".") + 1);
     }
 
+    public boolean checkContains(String fullName) {
+        for (AbstractJavaClassRep r : this.getClasses()) {
+            if (r.getName().equals(fullName)) {
+                return true;
+            }
+        }
+        for (AbstractJavaClassRep r : this.getAbstractClasses()) {
+            if (r.getName().equals(fullName)) {
+                return true;
+            }
+        }
+        for (AbstractJavaClassRep r : this.getInterfaces()) {
+            if (r.getName().equals(fullName)) {
+                return true;
+            }
+        }
+        return false;
+    }
+
+    public AbstractJavaClassRep getNonSpecificJavaClass(String className) {
+        if (this.classes.containsKey(className)) {
+            return this.classes.get(className);
+        }
+
+        if (this.abstractClasses.containsKey(className)) {
+            return this.abstractClasses.get(className);
+        }
+
+        if (this.interfaces.containsKey(className)) {
+            return this.interfaces.get(className);
+        }
+
+        return null;
+    }
 
     @Override
     public void accept(IVisitor v) {

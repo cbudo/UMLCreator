@@ -18,6 +18,7 @@
       <excludeFolder url="file://$MODULE_DIR$/src/GenerateTemp" />
       <excludeFolder url="file://$MODULE_DIR$/src/GraphMaker" />
       <excludeFolder url="file://$MODULE_DIR$/src/Parse" />
+      <excludeFolder url="file://$MODULE_DIR$/src/TestingProjects/Lab5-1-Solution" />
     </content>
     <orderEntry type="inheritedJdk" />
     <orderEntry type="sourceFolder" forTests="false" />

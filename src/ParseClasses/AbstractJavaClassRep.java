@@ -14,6 +14,7 @@ public abstract class AbstractJavaClassRep extends AbstractData
     protected Map<String, AbstractData> fieldsMap;
     private List<String> profileTags;
     private List<String> implementsNames;
+    private String color;
 
     public AbstractJavaClassRep(String name, int accessibility)
     {
@@ -27,6 +28,7 @@ public abstract class AbstractJavaClassRep extends AbstractData
         this.methodsMap = new HashMap<String, AbstractData>();
         this.fieldsMap = new HashMap<String,AbstractData>();
         this.profileTags = new ArrayList<String>();
+        this.color = "black";
     }
 
 //    protected void addImplementsToStorage() {
@@ -90,6 +92,14 @@ public abstract class AbstractJavaClassRep extends AbstractData
 
     public List<String> getProfileTags() {
         return this.profileTags;
+    }
+
+    public String getColor() {
+        return this.color;
+    }
+
+    public void setColor(String c) {
+        this.color = c;
     }
 
 }

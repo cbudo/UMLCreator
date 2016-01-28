@@ -2,62 +2,43 @@ digraph UML_Diagram
 {
 rankdir=BT;
 
-ParsedDataStorage [
+IteratorToEnumerationAdapter [
 shape = "record", color="black",
-label = "{ParsedDataStorage\l\<\<Singleton\>\>\l|
-- associationRels : List\l
-- interfaces : Map\l
-- max_depth : int\l
-- classes : Map\l
-- includedClasses : List\l
-- methodCalls : List\l
-- storage : ParsedDataStorage\l
-- usesRels : List\l
-- abstractClasses : Map\l
-|+ getClass : AbstractJavaClassRep\l
-+ addAbstractClass : void\l
-+ setMax_depth : void\l
-+ containsClass : boolean\l
-+ getUsesRels : List\l
-+ addUsesRelation : boolean\l
-+ getClasses : Collection\l
-+ addClass : void\l
-+ addMethod : void\l
-- init : void\l
-+ getInterface : AbstractJavaClassRep\l
-+ getInterfacade : AbstractJavaClassRep\l
-+ getAbstractClasses : Collection\l
-+ getInterfaces : Collection\l
-+ addField : void\l
-+ getMax_depth : int\l
-+ accept : void\l
-- destroySelf : void\l
-+ cleanName : String\l
-+ addInterfaces : void\l
-+ addMethodCall : boolean\l
-+ addAssociationRelation : boolean\l
-+ getAbstractClass : AbstractJavaClassRep\l
-+ getAssociationRels : List\l
-+ getInstance : ParsedDataStorage\l
-+ usedClasses : Iterator\l
-+ getMethods : MethodCall[]\l
+label = "{IteratorToEnumerationAdapter\l\<\<adaptor\>\>\l|
+- itr : Iterator\l
+|+ init : void\l
++ hasMoreElements : boolean\l
++ nextElement : Object\l
 }"];
-ParsedDataStorage -> IDataStorage [arrowhead="onormal", style="dashed"];
+IteratorToEnumerationAdapter -> Enumeration [arrowhead="onormal", style="dashed"];
 
-IDataStorage [
-shape = "record",
-label = "{\<\<interface\>\>\lIDataStorage\l||+ getClass : AbstractJavaClassRep\l
-+ addInterfaces : void\l
-+ getAbstractClasses : Collection\l
-+ getInterfacade : AbstractJavaClassRep\l
-+ addAbstractClass : void\l
-+ getInterfaces : Collection\l
-+ addField : void\l
-+ getMethods : MethodCall[]\l
-+ getClasses : Collection\l
-+ addMethod : void\l
-+ addClass : void\l
+App [
+shape = "record", color="black",
+label = "{App\l|
+|+ init : void\l
++ main : void\l
 }"];
-ParsedDataStorage -> ParsedDataStorage [arrowhead="vee", style="solid"];
+
+LinearTransformer [
+shape = "record", color="black",
+label = "{LinearTransformer\l|
+- enumTion : Enumeration\l
+|+ init : void\l
++ transform : void\l
+}"];
+
+Iterator [
+shape = "record",
+label = "{\<\<interface\>\>\lIterator\l\<\<adaptee\>\>\l||+ next : Object\l
++ hasNext : boolean\l
++ forEachRemaining : void\l
++ remove : void\l
+}"];
+
+Enumeration [
+shape = "record",
+label = "{\<\<interface\>\>\lEnumeration\l\<\<target\>\>\l||+ hasMoreElements : boolean\l
++ nextElement : Object\l
+}"];
 
 }

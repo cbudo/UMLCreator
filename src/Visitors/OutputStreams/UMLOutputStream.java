@@ -57,7 +57,7 @@ public class UMLOutputStream extends FilterOutputStream {
             String in = cleanName(e.getName());
             this.write("\n" + in
                     + " [\nshape = \"record\",\nlabel = \"{"
-                    + "<I>" + in + "</I>" + "\\l" + "|");
+                    + "<I>" + e.getDisplayName() + "</I>" + "\\l" + "|");
 
             for (AbstractData f : e.getFieldsMap().values()) {
                 f.accept(visitor);
@@ -84,12 +84,8 @@ public class UMLOutputStream extends FilterOutputStream {
             ClassRep e = (ClassRep) t;
             String in = cleanName(e.getInnermostName());//.substring(e.getName().lastIndexOf("/") + 1);
             String nameToDisplay = e.getDisplayName();
-            String color = "black";
-//            String singleton = "";
-//            if (e.isSingleton()) {
-//                singleton = "\\<\\<Singleton\\>\\>\\l";
-//                color = "blue";
-//            }
+            String color = e.getColor();
+
             this.write("\n" + in
                     + " [\nshape = \"record\", color=\"" + color + "\",\nlabel = \"{"
                     + nameToDisplay + "\\l");
@@ -122,7 +118,7 @@ public class UMLOutputStream extends FilterOutputStream {
             this.write("\n" + in
                     + " [\nshape = \"record\",\nlabel = \"{"
                     + "\\<\\<interface\\>\\>\\l"
-                    + in + "\\l" + "|");
+                    + i.getDisplayName() + "\\l" + "|");
 
             for (AbstractData f : i.getFieldsMap().values()) {
                 f.accept(visitor);
