@@ -56,7 +56,7 @@ public class UMLOutputStream extends FilterOutputStream {
             AbstractExtendableClassRep e = (AbstractExtendableClassRep) t;
             String in = cleanName(e.getName());
             this.write("\n" + in
-                    + " [\nshape = \"record\",\nlabel = \"{"
+                    + " [\nshape = \"record\", color=\"" + e.getColor() + "\",\nlabel = \"{"
                     + "\\<\\<abstract\\>\\>\\l" + e.getDisplayName() + "\\l" + "|");
 
             for (AbstractData f : e.getFieldsMap().values()) {
