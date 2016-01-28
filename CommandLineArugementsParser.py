@@ -27,7 +27,7 @@ def main():
 	path = "src"
 	f = open("commandline_args.txt", "w")
 	for outerdir in os.listdir(path):
-		if ("pizza" in outerdir) or ("Temp" in outerdir) or ("Lab4-2" in outerdir):
+		if ("TestingProjects" in outerdir) or ("GenerateTemp" in outerdir):
 			continue
 
 		for DirOrFile in os.listdir(path + "\\" + outerdir):

@@ -1,0 +1,262 @@
+digraph UML_Diagram
+{
+rankdir=BT;
+
+Desktop [
+shape = "record", color="black",
+label = "{Desktop\l|
+- peer : DesktopPeer\l
+|- init : void\l
+- checkExec : void\l
++ mail : void\l
++ edit : void\l
+- checkActionSupport : void\l
+- checkAWTPermission : void\l
++ isSupported : boolean\l
+- checkFileValidation : void\l
++ print : void\l
++ getDesktop : Desktop\l
++ isDesktopSupported : boolean\l
++ open : void\l
++ browse : void\l
+}"];
+
+FilterInputStream [
+shape = "record", color="maroon",
+label = "{FilterInputStream\l\<\<adaptor\>\>\l|
+# in : InputStream\l
+|# init : void\l
++ read : int\l
++ markSupported : boolean\l
++ available : int\l
++ reset : void\l
++ skip : long\l
++ close : void\l
++ mark : void\l
+}"];
+FilterInputStream -> InputStream [arrowhead="onormal", style="solid"];
+
+Runtime [
+shape = "record", color="blue",
+label = "{Runtime\l\<\<Singleton\>\>\l|
+- currentRuntime : Runtime\l
+|+ traceMethodCalls : void\l
+- init : void\l
++ loadLibrary : void\l
++ availableProcessors : int\l
++ addShutdownHook : void\l
+- runFinalization0 : void\l
+# clinit : void\l
++ runFinalizersOnExit : void\l
++ getLocalizedOutputStream : OutputStream\l
++ maxMemory : long\l
+# load0 : void\l
++ exit : void\l
++ halt : void\l
++ getLocalizedInputStream : InputStream\l
++ totalMemory : long\l
++ load : void\l
++ removeShutdownHook : boolean\l
+# loadLibrary0 : void\l
++ gc : void\l
++ getRuntime : Runtime\l
++ freeMemory : long\l
++ traceInstructions : void\l
++ exec : Process\l
++ runFinalization : void\l
+}"];
+
+Calendar [
+shape = "record",
+label = "{\<\<abstract\>\>\lCalendar\l|+ MONTH : int\l
++ THURSDAY : int\l
++ WEEK_OF_MONTH : int\l
++ DECEMBER : int\l
++ NARROW_STANDALONE : int\l
+# HOUR_OF_DAY_MASK : int\l
++ DAY_OF_WEEK_IN_MONTH : int\l
++ NARROW_FORMAT : int\l
+- MINIMUM_USER_STAMP : int\l
+# WEEK_OF_YEAR_MASK : int\l
++ WEDNESDAY : int\l
+# YEAR_MASK : int\l
++ LONG_STANDALONE : int\l
++ YEAR : int\l
++ WEEK_OF_YEAR : int\l
++ FIELD_COUNT : int\l
+- zone : TimeZone\l
++ SATURDAY : int\l
+- sharedZone : boolean\l
++ MINUTE : int\l
+- serialVersionOnStream : int\l
+# HOUR_MASK : int\l
++ JANUARY : int\l
+# DAY_OF_YEAR_MASK : int\l
++ DST_OFFSET : int\l
++ SUNDAY : int\l
++ LONG_FORMAT : int\l
+# isSet : boolean[]\l
++ TUESDAY : int\l
++ SEPTEMBER : int\l
++ AM : int\l
+# ERA_MASK : int\l
+# areAllFieldsSet : boolean\l
++ DATE : int\l
+# SECOND_MASK : int\l
++ ERA : int\l
+- minimalDaysInFirstWeek : int\l
+# MINUTE_MASK : int\l
+# MILLISECOND_MASK : int\l
++ AUGUST : int\l
++ JULY : int\l
++ DAY_OF_WEEK : int\l
+# fields : int[]\l
+# DST_OFFSET_MASK : int\l
++ DAY_OF_YEAR : int\l
++ MAY : int\l
++ DAY_OF_MONTH : int\l
++ HOUR : int\l
++ FRIDAY : int\l
++ AM_PM : int\l
++ FEBRUARY : int\l
+- stamp : int[]\l
++ ALL_STYLES : int\l
+# currentSerialVersion : int\l
+- lenient : boolean\l
++ ZONE_OFFSET : int\l
+# serialVersionUID : long\l
++ HOUR_OF_DAY : int\l
++ UNDECIMBER : int\l
+# AM_PM_MASK : int\l
+- cachedLocaleData : ConcurrentMap\l
+- UNSET : int\l
+- FIELD_NAME : String[]\l
++ APRIL : int\l
++ LONG : int\l
+# DATE_MASK : int\l
++ JUNE : int\l
+# STANDALONE_MASK : int\l
++ SHORT_STANDALONE : int\l
+- COMPUTED : int\l
+# DAY_OF_WEEK_IN_MONTH_MASK : int\l
++ OCTOBER : int\l
+# DAY_OF_MONTH_MASK : int\l
+# $assertionsDisabled : boolean\l
++ NOVEMBER : int\l
+# isTimeSet : boolean\l
++ SHORT : int\l
+# ALL_FIELDS : int\l
++ MONDAY : int\l
+# MONTH_MASK : int\l
+- nextStamp : int\l
+# WEEK_OF_MONTH_MASK : int\l
+# DAY_OF_WEEK_MASK : int\l
+- firstDayOfWeek : int\l
+# ZONE_OFFSET_MASK : int\l
++ MARCH : int\l
++ SECOND : int\l
++ MILLISECOND : int\l
+# time : long\l
++ PM : int\l
++ SHORT_FORMAT : int\l
+# areFieldsSet : boolean\l
+|# selectFields : int\l
++ getAvailableCalendarTypes : Set\l
+# setZoneShared : void\l
+# isFieldSet : boolean\l
++ before : boolean\l
++ getTimeZone : TimeZone\l
++ getWeekYear : int\l
+- createCalendar : Calendar\l
++ setMinimalDaysInFirstWeek : void\l
++ compareTo : int\l
+# computeFields : void\l
++ getWeeksInWeekYear : int\l
++ getActualMaximum : int\l
++ getMinimum : int\l
+# internalSet : void\l
+# isExternallySet : boolean\l
++ getAvailableLocales : Locale[]\l
+- aggregateStamp : int\l
+- setWeekCountData : void\l
++ setTime : void\l
+# internalGet : int\l
++ add : void\l
+# init : void\l
+- getMillisOf : long\l
++ isSet : boolean\l
+# setFieldsComputed : void\l
++ getLeastMaximum : int\l
+- writeObject : void\l
++ getTimeInMillis : long\l
+# getBaseStyle : int\l
+# getZone : TimeZone\l
+- readObject : void\l
+# setUnnormalized : void\l
+# isFullyNormalized : boolean\l
++ getDisplayName : String\l
++ setWeekDate : void\l
+# getFieldName : String\l
++ getMinimalDaysInFirstWeek : int\l
++ getGreatestMinimum : int\l
+- getDisplayNamesImpl : Map\l
+- invalidateWeekFields : void\l
++ getTime : Date\l
++ isLenient : boolean\l
++ roll : void\l
+- adjustStamp : void\l
+# checkDisplayNameParams : boolean\l
++ getMaximum : int\l
++ setLenient : void\l
+# setFieldsNormalized : void\l
+# getSetStateFields : int\l
+# isPartiallyNormalized : boolean\l
++ hashCode : int\l
++ get : int\l
++ setTimeZone : void\l
++ after : boolean\l
++ getDisplayNames : Map\l
++ set : void\l
++ getCalendarType : String\l
++ clear : void\l
+# isStandaloneStyle : boolean\l
++ getActualMinimum : int\l
++ setFirstDayOfWeek : void\l
+- updateTime : void\l
+# clinit : void\l
++ toInstant : Instant\l
++ isWeekDateSupported : boolean\l
++ getFirstDayOfWeek : int\l
++ setTimeInMillis : void\l
+# isNarrowStyle : boolean\l
+# computeTime : void\l
++ equals : boolean\l
++ clone : Object\l
+- getFieldStrings : String[]\l
++ toString : String\l
++ getInstance : Calendar\l
+- appendValue : void\l
+# complete : void\l
+}"];
+
+InputStream [
+shape = "record",
+label = "{\<\<abstract\>\>\lInputStream\l\<\<adaptee\>\>\l\<\<target\>\>\l|- MAX_SKIP_BUFFER_SIZE : int\l
+|+ init : void\l
++ read : int\l
++ markSupported : boolean\l
++ available : int\l
++ reset : void\l
++ skip : long\l
++ close : void\l
++ mark : void\l
+}"];
+Runtime -> InputStream [arrowhead="vee", style="dashed"];
+Desktop -> Desktop [arrowhead="vee", style="dashed"];
+Calendar -> Calendar [arrowhead="vee", style="dashed"];
+FilterInputStream -> FilterInputStream [arrowhead="vee", style="dashed"];
+InputStream -> InputStream [arrowhead="vee", style="dashed"];
+Runtime -> Runtime [arrowhead="vee", style="solid"];
+FilterInputStream -> InputStream [arrowhead="vee", style="solid"];
+
+}

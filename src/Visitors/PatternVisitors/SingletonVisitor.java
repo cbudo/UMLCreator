@@ -64,7 +64,7 @@ public class SingletonVisitor extends AbstractVisitorTemplate {
         this.visitor.addVisit(VisitType.PostVisit, MethodRep.class, (ITraverser t) -> {
             MethodRep m = (MethodRep) t;
             if (m.getName().equals("init")) {
-                if ((m.getAccessibility() & Opcodes.ACC_PRIVATE) != 0) {
+                if ((m.getAccessibility() & Opcodes.ACC_PUBLIC) == 0) {
                     ClassRep cr = (ClassRep) ParsedDataStorage.getInstance().getClass(m.getClassName());
                     cr.setPrivateSingletonInit(true);
                 }
