@@ -1,53 +1,8 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="1b357d25-b641-458c-8a8c-24064c31616e" name="Default" comment="Updated pattern recognition code">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/Visitors/PatternVisitors/AdaptorVisitor.java" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/src/TestingProjects/factory/Lab4-2-Singleton/.classpath" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/src/TestingProjects/factory/Lab4-2-Singleton/.project" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/src/TestingProjects/factory/Lab4-2-Singleton/bin/headfirst/singleton/chocolate/ChocolateBoiler.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/src/TestingProjects/factory/Lab4-2-Singleton/bin/headfirst/singleton/chocolate/ChocolateController.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/src/TestingProjects/factory/Lab4-2-Singleton/bin/headfirst/singleton/classic/Singleton.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/src/TestingProjects/factory/Lab4-2-Singleton/bin/headfirst/singleton/dcl/Singleton.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/src/TestingProjects/factory/Lab4-2-Singleton/bin/headfirst/singleton/dcl/SingletonClient.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/src/TestingProjects/factory/Lab4-2-Singleton/bin/headfirst/singleton/stat/Singleton.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/src/TestingProjects/factory/Lab4-2-Singleton/bin/headfirst/singleton/stat/SingletonClient.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/src/TestingProjects/factory/Lab4-2-Singleton/bin/headfirst/singleton/subclass/CoolerSingleton.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/src/TestingProjects/factory/Lab4-2-Singleton/bin/headfirst/singleton/subclass/HotterSingleton.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/src/TestingProjects/factory/Lab4-2-Singleton/bin/headfirst/singleton/subclass/Singleton.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/src/TestingProjects/factory/Lab4-2-Singleton/bin/headfirst/singleton/subclass/SingletonTestDrive.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/src/TestingProjects/factory/Lab4-2-Singleton/bin/headfirst/singleton/threadsafe/Singleton.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/src/TestingProjects/factory/Lab4-2-Singleton/src/headfirst/singleton/chocolate/ChocolateBoiler.java" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/src/TestingProjects/factory/Lab4-2-Singleton/src/headfirst/singleton/chocolate/ChocolateController.java" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/src/TestingProjects/factory/Lab4-2-Singleton/src/headfirst/singleton/classic/Singleton.java" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/src/TestingProjects/factory/Lab4-2-Singleton/src/headfirst/singleton/dcl/Singleton.java" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/src/TestingProjects/factory/Lab4-2-Singleton/src/headfirst/singleton/dcl/SingletonClient.java" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/src/TestingProjects/factory/Lab4-2-Singleton/src/headfirst/singleton/stat/Singleton.java" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/src/TestingProjects/factory/Lab4-2-Singleton/src/headfirst/singleton/stat/SingletonClient.java" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/src/TestingProjects/factory/Lab4-2-Singleton/src/headfirst/singleton/subclass/CoolerSingleton.java" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/src/TestingProjects/factory/Lab4-2-Singleton/src/headfirst/singleton/subclass/HotterSingleton.java" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/src/TestingProjects/factory/Lab4-2-Singleton/src/headfirst/singleton/subclass/Singleton.java" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/src/TestingProjects/factory/Lab4-2-Singleton/src/headfirst/singleton/subclass/SingletonTestDrive.java" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/src/TestingProjects/factory/Lab4-2-Singleton/src/headfirst/singleton/threadsafe/Singleton.java" afterPath="" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/production/UMLCreator/DataStorage/ParsedDataStorage.class" afterPath="$PROJECT_DIR$/out/production/UMLCreator/DataStorage/ParsedDataStorage.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/production/UMLCreator/ParseClasses/AbstractJavaClassRep.class" afterPath="$PROJECT_DIR$/out/production/UMLCreator/ParseClasses/AbstractJavaClassRep.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/production/UMLCreator/ParseClasses/AbstractTypable.class" afterPath="$PROJECT_DIR$/out/production/UMLCreator/ParseClasses/AbstractTypable.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/production/UMLCreator/Visitors/ClassFieldVisitor.class" afterPath="$PROJECT_DIR$/out/production/UMLCreator/Visitors/ClassFieldVisitor.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/production/UMLCreator/Visitors/DesignParser.class" afterPath="$PROJECT_DIR$/out/production/UMLCreator/Visitors/DesignParser.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/production/UMLCreator/Visitors/OutputStreams/SequenceOutputStream.class" afterPath="$PROJECT_DIR$/out/production/UMLCreator/Visitors/OutputStreams/SequenceOutputStream.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/production/UMLCreator/Visitors/OutputStreams/UMLOutputStream.class" afterPath="$PROJECT_DIR$/out/production/UMLCreator/Visitors/OutputStreams/UMLOutputStream.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/production/UMLCreator/Visitors/PatternVisitors/SingletonVisitor.class" afterPath="$PROJECT_DIR$/out/production/UMLCreator/Visitors/PatternVisitors/SingletonVisitor.class" />
+    <list default="true" id="1b357d25-b641-458c-8a8c-24064c31616e" name="Default" comment="Adaptor Pattern code implemented">
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/UMLCreator.iml" afterPath="$PROJECT_DIR$/UMLCreator.iml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/graph_text/generated_graph.gv" afterPath="$PROJECT_DIR$/graph_text/generated_graph.gv" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/DataStorage/Generation/GraphGenerator.java" afterPath="$PROJECT_DIR$/src/DataStorage/Generation/GraphGenerator.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/DataStorage/ParsedDataStorage.java" afterPath="$PROJECT_DIR$/src/DataStorage/ParsedDataStorage.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/ParseClasses/AbstractJavaClassRep.java" afterPath="$PROJECT_DIR$/src/ParseClasses/AbstractJavaClassRep.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/ParseClasses/AbstractTypable.java" afterPath="$PROJECT_DIR$/src/ParseClasses/AbstractTypable.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/Visitors/ClassFieldVisitor.java" afterPath="$PROJECT_DIR$/src/Visitors/ClassFieldVisitor.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/Visitors/DesignParser.java" afterPath="$PROJECT_DIR$/src/Visitors/DesignParser.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/Visitors/OutputStreams/UMLOutputStream.java" afterPath="$PROJECT_DIR$/src/Visitors/OutputStreams/UMLOutputStream.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/Visitors/PatternVisitors/SingletonVisitor.java" afterPath="$PROJECT_DIR$/src/Visitors/PatternVisitors/SingletonVisitor.java" />
     </list>
     <ignored path="UMLCreator.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -96,21 +51,21 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="AdaptorVisitor.java" pinned="false" current-in-tab="false">
+      <file leaf-file-name="AdaptorVisitor.java" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/Visitors/PatternVisitors/AdaptorVisitor.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.0">
-              <caret line="97" column="26" selection-start-line="97" selection-start-column="26" selection-end-line="97" selection-end-column="26" />
+            <state vertical-scroll-proportion="1.0750552">
+              <caret line="116" column="5" selection-start-line="116" selection-start-column="5" selection-end-line="116" selection-end-column="5" />
               <folding>
                 <element signature="imports" expanded="true" />
-                <element signature="e#1071#1072#0" expanded="true" />
-                <element signature="e#1104#1105#0" expanded="true" />
+                <element signature="e#914#915#0" expanded="true" />
+                <element signature="e#947#948#0" expanded="true" />
               </folding>
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="App.java" pinned="false" current-in-tab="true">
+      <file leaf-file-name="App.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/TestingProjects/problem/client/App.java">
           <provider selected="true" editor-type-id="text-editor">
             <state vertical-scroll-proportion="0.0">
@@ -134,7 +89,7 @@
         <entry file="file://$PROJECT_DIR$/src/DataStorage/ParsedDataStorage.java">
           <provider selected="true" editor-type-id="text-editor">
             <state vertical-scroll-proportion="0.0">
-              <caret line="206" column="9" selection-start-line="206" selection-start-column="9" selection-end-line="206" selection-end-column="9" />
+              <caret line="197" column="50" selection-start-line="197" selection-start-column="50" selection-end-line="197" selection-end-column="50" />
               <folding />
             </state>
           </provider>
@@ -1250,7 +1205,7 @@
       <workItem from="1453744635505" duration="591000" />
       <workItem from="1453763982802" duration="187000" />
       <workItem from="1453862328020" duration="21031000" />
-      <workItem from="1453944659156" duration="11912000" />
+      <workItem from="1453944659156" duration="12549000" />
     </task>
     <task id="LOCAL-00001" summary="added asm libraries and visitor package">
       <created>1451953507803</created>
@@ -1480,7 +1435,13 @@
       <option name="project" value="LOCAL" />
       <updated>1453929705043</updated>
     </task>
-    <option name="localTasksCounter" value="39" />
+    <task id="LOCAL-00039" summary="Adaptor Pattern code implemented">
+      <created>1453956767711</created>
+      <option name="number" value="00039" />
+      <option name="project" value="LOCAL" />
+      <updated>1453956767711</updated>
+    </task>
+    <option name="localTasksCounter" value="40" />
     <servers />
   </component>
   <component name="TestHistory">
@@ -1507,7 +1468,7 @@
     </history-entry>
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="215473000" />
+    <option name="totallyTimeSpent" value="216110000" />
   </component>
   <component name="TodoView" selected-index="1">
     <todo-panel id="selected-file">
@@ -1561,7 +1522,6 @@
   </component>
   <component name="VcsManagerConfiguration">
     <option name="CHECK_CODE_CLEANUP_BEFORE_PROJECT_COMMIT" value="true" />
-    <MESSAGE value="added abstract classes to datastorage" />
     <MESSAGE value="working on parsing stored ASM data" />
     <MESSAGE value="redid all the work that git destroyed earlier&#10;implementation of interfaces" />
     <MESSAGE value="fixed how classes and interfaces were storing info about superclass and implemented classes" />
@@ -1586,7 +1546,8 @@
     <MESSAGE value="fixed problem with visiting methods and fields improperly" />
     <MESSAGE value="added the 4 singleton test cases" />
     <MESSAGE value="Updated pattern recognition code" />
-    <option name="LAST_COMMIT_MESSAGE" value="Updated pattern recognition code" />
+    <MESSAGE value="Adaptor Pattern code implemented" />
+    <option name="LAST_COMMIT_MESSAGE" value="Adaptor Pattern code implemented" />
     <option name="OPTIMIZE_IMPORTS_BEFORE_PROJECT_COMMIT" value="true" />
     <option name="REFORMAT_BEFORE_PROJECT_COMMIT" value="true" />
     <option name="REARRANGE_BEFORE_PROJECT_COMMIT" value="true" />
@@ -1938,7 +1899,7 @@
     <entry file="file://$PROJECT_DIR$/src/DataStorage/ParsedDataStorage.java">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
-          <caret line="206" column="9" selection-start-line="206" selection-start-column="9" selection-end-line="206" selection-end-column="9" />
+          <caret line="197" column="50" selection-start-line="197" selection-start-column="50" selection-end-line="197" selection-end-column="50" />
           <folding />
         </state>
       </provider>
@@ -1994,23 +1955,23 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/Visitors/PatternVisitors/AdaptorVisitor.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="97" column="26" selection-start-line="97" selection-start-column="26" selection-end-line="97" selection-end-column="26" />
-          <folding>
-            <element signature="imports" expanded="true" />
-            <element signature="e#1071#1072#0" expanded="true" />
-            <element signature="e#1104#1105#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/TestingProjects/problem/client/App.java">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
           <caret line="0" column="13" selection-start-line="0" selection-start-column="13" selection-end-line="0" selection-end-column="13" />
           <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/Visitors/PatternVisitors/AdaptorVisitor.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="1.0750552">
+          <caret line="116" column="5" selection-start-line="116" selection-start-column="5" selection-end-line="116" selection-end-column="5" />
+          <folding>
+            <element signature="imports" expanded="true" />
+            <element signature="e#914#915#0" expanded="true" />
+            <element signature="e#947#948#0" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
