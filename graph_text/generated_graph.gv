@@ -40,5 +40,10 @@ shape = "record",
 label = "{\<\<interface\>\>\lEnumeration\l\<\<target\>\>\l||+ hasMoreElements : boolean\l
 + nextElement : Object\l
 }"];
+App -> IteratorToEnumerationAdapter [arrowhead="vee", style="dashed"];
+App -> LinearTransformer [arrowhead="vee", style="dashed"];
+Iterator -> Iterator [arrowhead="vee", style="dashed"];
+IteratorToEnumerationAdapter -> Iterator [arrowhead="vee", style="solid"];
+LinearTransformer -> Enumeration [arrowhead="vee", style="solid"];
 
 }

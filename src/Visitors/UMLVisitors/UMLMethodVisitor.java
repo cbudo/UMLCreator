@@ -26,7 +26,7 @@ public class UMLMethodVisitor extends MethodVisitor {
         super.visitMethodInsn(opcode, owner, name, desc, itf);
         String calledClass = getCalledClass(owner);
         String callingClass = this.callingClassName;
-        UsesRelation newRel = new UsesRelation(calledClass, callingClass);
+        UsesRelation newRel = new UsesRelation(owner.replace("/", "."), fullCallingClassName);//(calledClass, callingClass);
         ParsedDataStorage.getInstance().addUsesRelation(newRel);
     }
 

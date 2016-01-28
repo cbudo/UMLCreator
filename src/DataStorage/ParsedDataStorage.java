@@ -152,7 +152,7 @@ public class ParsedDataStorage implements IDataStorage, ITraverser {
     }
 
     public boolean addUsesRelation(IRelation relation) {
-        if (!this.associationRels.contains(relation) || !this.usesRels.contains(relation)) {
+        if (this.associationRels.contains(relation) || this.usesRels.contains(relation)) {
             return false;
         }
         this.usesRels.add(relation);
@@ -176,6 +176,7 @@ public class ParsedDataStorage implements IDataStorage, ITraverser {
     }
 
     public boolean checkContains(String fullName) {
+        fullName = fullName.replace(".", "/");
         for (AbstractJavaClassRep r : this.getClasses()) {
             if (r.getName().equals(fullName)) {
                 return true;
@@ -225,11 +226,13 @@ public class ParsedDataStorage implements IDataStorage, ITraverser {
             abstractClass.accept(v);
         }
         for (IRelation r : usesRels) {
-            if (containsClass(r.getFrom()) && containsClass(r.getTo()))
+            //if (containsClass(r.getFrom()) && containsClass(r.getTo()))
+            if (checkContains(r.getFrom()) && checkContains(r.getTo()))
                 r.accept(v);
         }
         for (IRelation r : associationRels) {
-            if (containsClass(r.getFrom()) && containsClass(r.getTo()))
+            //if (containsClass(r.getFrom()) && containsClass(r.getTo()))
+            if (checkContains(r.getFrom()) && checkContains(r.getTo()))
                 r.accept(v);
         }
         for (MethodCall m : methodCalls) {

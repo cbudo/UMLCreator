@@ -175,11 +175,11 @@ public class UMLOutputStream extends FilterOutputStream {
     public void setupRelationVisit() {
         this.visitor.addVisit(VisitType.Visit, UsesRelation.class, (ITraverser t) -> {
             UsesRelation a = (UsesRelation) t;
-            this.write(a.getFrom() + " -> " + a.getTo() + " [arrowhead=\"vee\", style=\"dashed\"];\n");
+            this.write(cleanName(makeSlashes(a.getFrom())) + " -> " + cleanName(makeSlashes(a.getTo())) + " [arrowhead=\"vee\", style=\"dashed\"];\n");
         });
         this.visitor.addVisit(VisitType.Visit, AssociationRelation.class, (ITraverser t) -> {
             AssociationRelation a = (AssociationRelation) t;
-            this.write(a.getFrom() + " -> " + a.getTo() + " [arrowhead=\"vee\", style=\"solid\"];\n");
+            this.write(cleanName(makeSlashes(a.getFrom())) + " -> " + cleanName(makeSlashes(a.getTo())) + " [arrowhead=\"vee\", style=\"solid\"];\n");
         });
     }
 
@@ -196,6 +196,14 @@ public class UMLOutputStream extends FilterOutputStream {
 
     public String cleanName(String in) {
         return in.substring(in.lastIndexOf("/") + 1);
+    }
+
+    public String makeSlashes(String n) {
+        if (n.contains(".")) {
+            n = n.replace(".", "/");
+        }
+
+        return n;
     }
 
 }
