@@ -5,6 +5,7 @@ import DataStorage.ParsedDataStorage;
 import ParseClasses.AbstractJavaClassRep;
 import ParseClasses.ClassRep;
 import ParseClasses.FieldRep;
+import ParseClasses.MethodRep;
 import Visitors.ClassDeclarationVisitor;
 import Visitors.ClassFieldVisitor;
 import Visitors.ITraverser;
@@ -114,6 +115,18 @@ public class AdaptorVisitor extends AbstractVisitorTemplate {
                         newSet.targetName = c.getImplementsList().get(0);
                     }
                     adaptorsFound.add(newSet);
+                }
+            }
+        });
+    }
+
+    private void setupMethodVisit() {
+        this.visitor.addVisit(VisitType.Visit, MethodRep.class, (ITraverser t) -> {
+            MethodRep m = (MethodRep) t;
+            if ((m.getAccessibility() & Opcodes.ACC_STATIC) != 0) {
+                if ((m.getSimpleClassName().equals(m.getType()))) {
+                    ClassRep cr = (ClassRep) ParsedDataStorage.getInstance().getClass(m.getClassName());
+                    cr.setPublicStaticGetInstatnce(true);
                 }
             }
         });

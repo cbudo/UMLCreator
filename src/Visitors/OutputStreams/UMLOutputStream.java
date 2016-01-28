@@ -57,7 +57,7 @@ public class UMLOutputStream extends FilterOutputStream {
             String in = cleanName(e.getName());
             this.write("\n" + in
                     + " [\nshape = \"record\",\nlabel = \"{"
-                    + "<I>" + e.getDisplayName() + "</I>" + "\\l" + "|");
+                    + "\\<\\<abstract\\>\\>\\l" + e.getDisplayName() + "\\l" + "|");
 
             for (AbstractData f : e.getFieldsMap().values()) {
                 f.accept(visitor);

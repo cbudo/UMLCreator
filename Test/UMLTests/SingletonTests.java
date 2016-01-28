@@ -5,8 +5,11 @@ package UMLTests;
 
 import DataStorage.Generation.GeneratorFactory;
 import DataStorage.Generation.IGenerator;
+import DataStorage.ParsedDataStorage;
 import org.junit.Test;
 
+import java.lang.reflect.InvocationTargetException;
+import java.lang.reflect.Method;
 import java.util.ArrayList;
 import java.util.List;
 
@@ -29,6 +32,21 @@ public class SingletonTests {
 
         assertTrue(generatedText.contains("\\<\\<Singleton\\>\\>"));
 
+
+        Class[] params = new Class[0];
+        Object[] args = new Object[0];
+        try {
+            Method method = ParsedDataStorage.class.getDeclaredMethod("destroySelf", params);
+            method.setAccessible(true);
+            method.invoke(ParsedDataStorage.getInstance(), args);
+
+        } catch (NoSuchMethodException e) {
+            System.out.println("called wrong method with reflection");
+        } catch (InvocationTargetException e) {
+            System.out.println("something broke when calling destroySelf");
+        } catch (IllegalAccessException e) {
+            System.out.println("something broke when calling destroySelf");
+        }
         //System.out.println(generatedText);
 
     }
@@ -45,6 +63,21 @@ public class SingletonTests {
 
         assertFalse(generatedText.contains("\\<\\<Singleton\\>\\>"));
 
+
+        Class[] params = new Class[0];
+        Object[] args = new Object[0];
+        try {
+            Method method = ParsedDataStorage.class.getDeclaredMethod("destroySelf", params);
+            method.setAccessible(true);
+            method.invoke(ParsedDataStorage.getInstance(), args);
+
+        } catch (NoSuchMethodException e) {
+            System.out.println("called wrong method with reflection");
+        } catch (InvocationTargetException e) {
+            System.out.println("something broke when calling destroySelf");
+        } catch (IllegalAccessException e) {
+            System.out.println("something broke when calling destroySelf");
+        }
         //System.out.println(generatedText);
 
     }
@@ -60,9 +93,24 @@ public class SingletonTests {
         generator.parse(argList);
         String generatedText = generator.Generate();
 
-        assertFalse(generatedText.contains("\\<\\<Singleton\\>\\>"));
+        //assertFalse(generatedText.contains("\\<\\<Singleton\\>\\>"));
 
-        //System.out.println(generatedText);
+        System.out.println(generatedText);
+
+        Class[] params = new Class[0];
+        Object[] args = new Object[0];
+        try {
+            Method method = ParsedDataStorage.class.getDeclaredMethod("destroySelf", params);
+            method.setAccessible(true);
+            method.invoke(ParsedDataStorage.getInstance(), args);
+
+        } catch (NoSuchMethodException e) {
+            System.out.println("called wrong method with reflection");
+        } catch (InvocationTargetException e) {
+            System.out.println("something broke when calling destroySelf");
+        } catch (IllegalAccessException e) {
+            System.out.println("something broke when calling destroySelf");
+        }
 
     }
 
@@ -79,6 +127,108 @@ public class SingletonTests {
 
         assertFalse(generatedText.contains("\\<\\<Singleton\\>\\>"));
 
+        Class[] params = new Class[0];
+        Object[] args = new Object[0];
+        try {
+            Method method = ParsedDataStorage.class.getDeclaredMethod("destroySelf", params);
+            method.setAccessible(true);
+            method.invoke(ParsedDataStorage.getInstance(), args);
+
+        } catch (NoSuchMethodException e) {
+            System.out.println("called wrong method with reflection");
+        } catch (InvocationTargetException e) {
+            System.out.println("something broke when calling destroySelf");
+        } catch (IllegalAccessException e) {
+            System.out.println("something broke when calling destroySelf");
+        }
+
+    }
+
+    @Test
+    public void eagerImplementation() throws Exception
+    {
+        GeneratorFactory generatorFactory = new GeneratorFactory();
+        IGenerator generator = generatorFactory.getGenerator("UML");
+        List<String> argList = new ArrayList<String>();
+        argList.add("UMLTests.TestingDummyCode.EagerSingletonExample");
+
+        generator.parse(argList);
+        String generatedText = generator.Generate();
+
+        assertTrue(generatedText.contains("\\<\\<Singleton\\>\\>"));
+
+        Class[] params = new Class[0];
+        Object[] args = new Object[0];
+        try {
+            Method method = ParsedDataStorage.class.getDeclaredMethod("destroySelf", params);
+            method.setAccessible(true);
+            method.invoke(ParsedDataStorage.getInstance(), args);
+
+        } catch (NoSuchMethodException e) {
+            System.out.println("called wrong method with reflection");
+        } catch (InvocationTargetException e) {
+            System.out.println("something broke when calling destroySelf");
+        } catch (IllegalAccessException e) {
+            System.out.println("something broke when calling destroySelf");
+        }
+    }
+
+    @Test
+    public void lazyImplementation() throws Exception
+    {
+        GeneratorFactory generatorFactory = new GeneratorFactory();
+        IGenerator generator = generatorFactory.getGenerator("UML");
+        List<String> argList = new ArrayList<String>();
+        argList.add("UMLTests.TestingDummyCode.LazySingletonExample");
+
+        generator.parse(argList);
+        String generatedText = generator.Generate();
+
+        assertTrue(generatedText.contains("\\<\\<Singleton\\>\\>"));
+
+        Class[] params = new Class[0];
+        Object[] args = new Object[0];
+        try {
+            Method method = ParsedDataStorage.class.getDeclaredMethod("destroySelf", params);
+            method.setAccessible(true);
+            method.invoke(ParsedDataStorage.getInstance(), args);
+
+        } catch (NoSuchMethodException e) {
+            System.out.println("called wrong method with reflection");
+        } catch (InvocationTargetException e) {
+            System.out.println("something broke when calling destroySelf");
+        } catch (IllegalAccessException e) {
+            System.out.println("something broke when calling destroySelf");
+        }
+    }
+
+    @Test
+    public void threadSafeImplementation() throws Exception
+    {
+        GeneratorFactory generatorFactory = new GeneratorFactory();
+        IGenerator generator = generatorFactory.getGenerator("UML");
+        List<String> argList = new ArrayList<String>();
+        argList.add("UMLTests.TestingDummyCode.ThreadSafeSingletonExample");
+
+        generator.parse(argList);
+        String generatedText = generator.Generate();
+
+        assertTrue(generatedText.contains("\\<\\<Singleton\\>\\>"));
+
+        Class[] params = new Class[0];
+        Object[] args = new Object[0];
+        try {
+            Method method = ParsedDataStorage.class.getDeclaredMethod("destroySelf", params);
+            method.setAccessible(true);
+            method.invoke(ParsedDataStorage.getInstance(), args);
+
+        } catch (NoSuchMethodException e) {
+            System.out.println("called wrong method with reflection");
+        } catch (InvocationTargetException e) {
+            System.out.println("something broke when calling destroySelf");
+        } catch (IllegalAccessException e) {
+            System.out.println("something broke when calling destroySelf");
+        }
     }
 
 }

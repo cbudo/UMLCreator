@@ -1,0 +1,4 @@
+Adaptor Code
+
+U TestingProjects.problem.client.App TestingProjects.problem.client.IteratorToEnumerationAdapter TestingProjects.problem.lib.LinearTransformer
+
