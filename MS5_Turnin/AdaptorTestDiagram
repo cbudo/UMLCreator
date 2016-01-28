@@ -1,0 +1,49 @@
+digraph UML_Diagram
+{
+rankdir=BT;
+
+IteratorToEnumerationAdapter [
+shape = "record", color="maroon",
+label = "{IteratorToEnumerationAdapter\l\<\<adaptor\>\>\l|
+- itr : Iterator\l
+|+ init : void\l
++ hasMoreElements : boolean\l
++ nextElement : Object\l
+}"];
+IteratorToEnumerationAdapter -> Enumeration [arrowhead="onormal", style="dashed"];
+
+App [
+shape = "record", color="black",
+label = "{App\l|
+|+ init : void\l
++ main : void\l
+}"];
+
+LinearTransformer [
+shape = "record", color="black",
+label = "{LinearTransformer\l|
+- enumTion : Enumeration\l
+|+ init : void\l
++ transform : void\l
+}"];
+
+Iterator [
+shape = "record", color="maroon",
+label = "{\<\<interface\>\>\lIterator\l\<\<adaptee\>\>\l||+ next : Object\l
++ hasNext : boolean\l
++ forEachRemaining : void\l
++ remove : void\l
+}"];
+
+Enumeration [
+shape = "record", color="maroon",
+label = "{\<\<interface\>\>\lEnumeration\l\<\<target\>\>\l||+ hasMoreElements : boolean\l
++ nextElement : Object\l
+}"];
+App -> IteratorToEnumerationAdapter [arrowhead="vee", style="dashed"];
+App -> LinearTransformer [arrowhead="vee", style="dashed"];
+Iterator -> Iterator [arrowhead="vee", style="dashed"];
+IteratorToEnumerationAdapter -> Iterator [arrowhead="vee", style="solid"];
+LinearTransformer -> Enumeration [arrowhead="vee", style="solid"];
+
+}
