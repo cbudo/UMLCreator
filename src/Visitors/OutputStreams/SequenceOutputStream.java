@@ -1,11 +1,11 @@
 package Visitors.OutputStreams;
 
+import DataStorage.ParseClasses.Internals.MethodCall;
 import DataStorage.ParsedDataStorage;
-import ParseClasses.MethodCall;
-import Visitors.ITraverser;
-import Visitors.IVisitor;
-import Visitors.VisitType;
-import Visitors.Visitor;
+import Visitors.DefaultVisitors.ITraverser;
+import Visitors.DefaultVisitors.IVisitor;
+import Visitors.DefaultVisitors.VisitType;
+import Visitors.DefaultVisitors.Visitor;
 
 import java.io.FilterOutputStream;
 import java.io.IOException;
@@ -19,7 +19,7 @@ public class SequenceOutputStream extends FilterOutputStream {
     private final IVisitor visitor;
     private StringBuilder classes;
     private StringBuilder methods;
-    private Set visitedClasses;
+    private Set<String> visitedClasses;
 
     /**
      * Creates an output stream filter built on top of the specified

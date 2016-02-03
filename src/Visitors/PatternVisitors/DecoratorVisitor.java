@@ -1,8 +1,8 @@
 package Visitors.PatternVisitors;
 
 import DataStorage.IDataStorage;
-import ParseClasses.AbstractExtendableClassRep;
-import ParseClasses.AbstractJavaClassRep;
+import DataStorage.ParseClasses.ClassTypes.AbstractExtendableClassRep;
+import DataStorage.ParseClasses.ClassTypes.AbstractJavaClassRep;
 
 /**
  * Created by budocf on 1/27/2016.
@@ -20,7 +20,7 @@ public class DecoratorVisitor extends AbstractVisitorTemplate {
                 if (data.getNonSpecificJavaClass(((AbstractExtendableClassRep) r).getExtendedClassName().replace('/', '.')).isDecorator()) {
                     r.setDecorator(true);
                 }
-            } catch (Exception e) {
+            } catch (Exception ignored) {
 
             }
         }
@@ -29,7 +29,7 @@ public class DecoratorVisitor extends AbstractVisitorTemplate {
                 if (data.getNonSpecificJavaClass(((AbstractExtendableClassRep) r).getExtendedClassName().replace('/', '.')).isDecorator()) {
                     r.setDecorator(true);
                 }
-            } catch (Exception e) {
+            } catch (Exception ignored) {
 
             }
         }

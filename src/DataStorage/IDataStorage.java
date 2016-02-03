@@ -1,8 +1,8 @@
 package DataStorage;
 
-import ParseClasses.AbstractData;
-import ParseClasses.AbstractJavaClassRep;
-import ParseClasses.MethodCall;
+import DataStorage.ParseClasses.ClassTypes.AbstractData;
+import DataStorage.ParseClasses.ClassTypes.AbstractJavaClassRep;
+import DataStorage.ParseClasses.Internals.MethodCall;
 
 import java.util.Collection;
 

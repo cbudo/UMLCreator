@@ -1,11 +1,15 @@
 package Visitors.OutputStreams;
 
+import DataStorage.ParseClasses.ClassTypes.*;
+import DataStorage.ParseClasses.Internals.AssociationRelation;
+import DataStorage.ParseClasses.Internals.FieldRep;
+import DataStorage.ParseClasses.Internals.MethodRep;
+import DataStorage.ParseClasses.Internals.UsesRelation;
 import DataStorage.ParsedDataStorage;
-import ParseClasses.*;
-import Visitors.ITraverser;
-import Visitors.IVisitor;
-import Visitors.VisitType;
-import Visitors.Visitor;
+import Visitors.DefaultVisitors.ITraverser;
+import Visitors.DefaultVisitors.IVisitor;
+import Visitors.DefaultVisitors.VisitType;
+import Visitors.DefaultVisitors.Visitor;
 
 import java.io.FilterOutputStream;
 import java.io.IOException;
@@ -167,9 +171,7 @@ public class UMLOutputStream extends FilterOutputStream {
     }
 
     public void setupPostVisit() {
-        this.visitor.addVisit(VisitType.PostVisit, ParsedDataStorage.class, (ITraverser t) -> {
-            this.write("\n}\n");
-        });
+        this.visitor.addVisit(VisitType.PostVisit, ParsedDataStorage.class, (ITraverser t) -> this.write("\n}\n"));
     }
 
     public void setupRelationVisit() {

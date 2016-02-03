@@ -1,7 +1,7 @@
 package Visitors.UMLVisitors;
 
+import DataStorage.ParseClasses.Internals.UsesRelation;
 import DataStorage.ParsedDataStorage;
-import ParseClasses.UsesRelation;
 import org.objectweb.asm.MethodVisitor;
 
 /**

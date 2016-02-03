@@ -1,8 +1,8 @@
 package Visitors.PatternVisitors;
 
 import DataStorage.IDataStorage;
-import Visitors.IVisitor;
-import Visitors.Visitor;
+import Visitors.DefaultVisitors.IVisitor;
+import Visitors.DefaultVisitors.Visitor;
 
 /**
  * Created by efronbs on 1/27/2016.

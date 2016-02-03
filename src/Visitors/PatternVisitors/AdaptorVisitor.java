@@ -1,16 +1,16 @@
 package Visitors.PatternVisitors;
 
 import DataStorage.IDataStorage;
+import DataStorage.ParseClasses.ClassTypes.AbstractJavaClassRep;
+import DataStorage.ParseClasses.ClassTypes.ClassRep;
+import DataStorage.ParseClasses.Internals.FieldRep;
+import DataStorage.ParseClasses.Internals.MethodRep;
 import DataStorage.ParsedDataStorage;
-import ParseClasses.AbstractJavaClassRep;
-import ParseClasses.ClassRep;
-import ParseClasses.FieldRep;
-import ParseClasses.MethodRep;
-import Visitors.ClassDeclarationVisitor;
-import Visitors.ClassFieldVisitor;
-import Visitors.ITraverser;
+import Visitors.ASMVisitors.ClassDeclarationVisitor;
+import Visitors.ASMVisitors.ClassFieldVisitor;
+import Visitors.DefaultVisitors.ITraverser;
+import Visitors.DefaultVisitors.VisitType;
 import Visitors.UMLVisitors.UMLClassMethodVisitor;
-import Visitors.VisitType;
 import org.objectweb.asm.ClassReader;
 import org.objectweb.asm.ClassVisitor;
 import org.objectweb.asm.Opcodes;
@@ -28,7 +28,7 @@ public class AdaptorVisitor extends AbstractVisitorTemplate {
 
     public AdaptorVisitor(IDataStorage data) {
         super(data);
-        adaptorsFound = new ArrayList<AdaptorNameSet>();
+        adaptorsFound = new ArrayList<>();
     }
 
     @Override

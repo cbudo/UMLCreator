@@ -1,180 +1,87 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="1b357d25-b641-458c-8a8c-24064c31616e" name="Default" comment="Cleaned up stray documents and unnecessary files">
-      <change type="DELETED" beforePath="$PROJECT_DIR$/GenerateTemp/Register.java" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/Lab1-3-Solution.zip" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/Lab1-3-Solution/.classpath" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/Lab1-3-Solution/.project" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/Lab1-3-Solution/.settings/org.eclipse.jdt.core.prefs" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/Lab1-3-Solution/bin/headfirst/observer/swing/SwingObserverExample$AngelListener.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/Lab1-3-Solution/bin/headfirst/observer/swing/SwingObserverExample$DevilListener.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/Lab1-3-Solution/bin/headfirst/observer/swing/SwingObserverExample.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/Lab1-3-Solution/bin/headfirst/observer/weather/CurrentConditionsDisplay.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/Lab1-3-Solution/bin/headfirst/observer/weather/DisplayElement.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/Lab1-3-Solution/bin/headfirst/observer/weather/ForecastDisplay.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/Lab1-3-Solution/bin/headfirst/observer/weather/HeatIndexDisplay.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/Lab1-3-Solution/bin/headfirst/observer/weather/Observer.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/Lab1-3-Solution/bin/headfirst/observer/weather/StatisticsDisplay.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/Lab1-3-Solution/bin/headfirst/observer/weather/Subject.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/Lab1-3-Solution/bin/headfirst/observer/weather/WeatherData.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/Lab1-3-Solution/bin/headfirst/observer/weather/WeatherStation.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/Lab1-3-Solution/bin/headfirst/observer/weather/WeatherStationHeatIndex.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/Lab1-3-Solution/bin/headfirst/observer/weatherobservable/CurrentConditionsDisplay.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/Lab1-3-Solution/bin/headfirst/observer/weatherobservable/DisplayElement.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/Lab1-3-Solution/bin/headfirst/observer/weatherobservable/ForecastDisplay.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/Lab1-3-Solution/bin/headfirst/observer/weatherobservable/HeatIndexDisplay.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/Lab1-3-Solution/bin/headfirst/observer/weatherobservable/StatisticsDisplay.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/Lab1-3-Solution/bin/headfirst/observer/weatherobservable/WeatherData.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/Lab1-3-Solution/bin/headfirst/observer/weatherobservable/WeatherStation.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/Lab1-3-Solution/bin/headfirst/observer/weatherobservable/WeatherStationHeatIndex.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/Lab1-3-Solution/bin/problem/AllAppRunningIntegrationTest.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/Lab1-3-Solution/bin/problem/AllTests.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/Lab1-3-Solution/bin/problem/AppLauncherApplication.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/Lab1-3-Solution/bin/problem/ApplicationLauncher.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/Lab1-3-Solution/bin/problem/DataFileRunner.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/Lab1-3-Solution/bin/problem/DirectoryChangeLogger.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/Lab1-3-Solution/bin/problem/DirectoryEvent.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/Lab1-3-Solution/bin/problem/DirectoryMonitorService.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/Lab1-3-Solution/bin/problem/ExecutableFileRunner.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/Lab1-3-Solution/bin/problem/IApplicationLauncher.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/Lab1-3-Solution/bin/problem/IDirectoryListener.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/Lab1-3-Solution/bin/problem/IDirectoryMonitorService.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/Lab1-3-Solution/bin/problem/NoAppRunningIntegrationTest.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/Lab1-3-Solution/bin/problem/ProcessRunner.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/Lab1-3-Solution/bin/puzzle/Creator.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/Lab1-3-Solution/bin/puzzle/Creature.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/Lab1-3-Solution/bin/temp/HumidityDisplay.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/Lab1-3-Solution/bin/temp/ISubscriber.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/Lab1-3-Solution/bin/temp/IWeatherData.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/Lab1-3-Solution/bin/temp/IWeatherReporter.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/Lab1-3-Solution/bin/temp/TemperatureDisplay.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/Lab1-3-Solution/bin/temp/WeatherApp.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/Lab1-3-Solution/bin/temp/WeatherData.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/Lab1-3-Solution/bin/temp/WeatherReporter.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/Lab1-3-Solution/bin/temp/WeatherReporterTest.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/Lab1-3-Solution/docs/Answer.pdf" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/Lab1-3-Solution/docs/Design.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/Lab1-3-Solution/docs/Design.uxf" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/Lab1-3-Solution/input_output/test.bak" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/Lab1-3-Solution/input_output/test.exe" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/Lab1-3-Solution/input_output/test.htm" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/Lab1-3-Solution/input_output/test.html" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/Lab1-3-Solution/input_output/test.log" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/Lab1-3-Solution/input_output/test.txt" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/Lab1-3-Solution/input_output/test_files/test.bak" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/Lab1-3-Solution/input_output/test_files/test.exe" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/Lab1-3-Solution/input_output/test_files/test.htm" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/Lab1-3-Solution/input_output/test_files/test.html" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/Lab1-3-Solution/input_output/test_files/test.log" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/Lab1-3-Solution/input_output/test_files/test.txt" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/Lab1-3-Solution/src/headfirst/observer/swing/SwingObserverExample.java" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/Lab1-3-Solution/src/headfirst/observer/weather/CurrentConditionsDisplay.java" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/Lab1-3-Solution/src/headfirst/observer/weather/DisplayElement.java" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/Lab1-3-Solution/src/headfirst/observer/weather/ForecastDisplay.java" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/Lab1-3-Solution/src/headfirst/observer/weather/HeatIndexDisplay.java" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/Lab1-3-Solution/src/headfirst/observer/weather/Observer.java" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/Lab1-3-Solution/src/headfirst/observer/weather/StatisticsDisplay.java" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/Lab1-3-Solution/src/headfirst/observer/weather/Subject.java" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/Lab1-3-Solution/src/headfirst/observer/weather/WeatherData.java" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/Lab1-3-Solution/src/headfirst/observer/weather/WeatherStation.java" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/Lab1-3-Solution/src/headfirst/observer/weather/WeatherStationHeatIndex.java" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/Lab1-3-Solution/src/headfirst/observer/weatherobservable/CurrentConditionsDisplay.java" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/Lab1-3-Solution/src/headfirst/observer/weatherobservable/DisplayElement.java" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/Lab1-3-Solution/src/headfirst/observer/weatherobservable/ForecastDisplay.java" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/Lab1-3-Solution/src/headfirst/observer/weatherobservable/HeatIndexDisplay.java" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/Lab1-3-Solution/src/headfirst/observer/weatherobservable/StatisticsDisplay.java" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/Lab1-3-Solution/src/headfirst/observer/weatherobservable/WeatherData.java" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/Lab1-3-Solution/src/headfirst/observer/weatherobservable/WeatherStation.java" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/Lab1-3-Solution/src/headfirst/observer/weatherobservable/WeatherStationHeatIndex.java" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/Lab1-3-Solution/src/puzzle/Creator.java" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/Lab1-3-Solution/src/temp/HumidityDisplay.java" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/Lab1-3-Solution/src/temp/ISubscriber.java" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/Lab1-3-Solution/src/temp/IWeatherData.java" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/Lab1-3-Solution/src/temp/IWeatherReporter.java" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/Lab1-3-Solution/src/temp/TemperatureDisplay.java" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/Lab1-3-Solution/src/temp/WeatherApp.java" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/Lab1-3-Solution/src/temp/WeatherData.java" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/Lab1-3-Solution/src/temp/WeatherReporter.java" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/Lab1-3-Solution/test/problem/AllAppRunningIntegrationTest.java" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/Lab1-3-Solution/test/problem/AllTests.java" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/Lab1-3-Solution/test/problem/NoAppRunningIntegrationTest.java" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/Lab1-3-Solution/test/temp/WeatherReporterTest.java" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/Lab4-2-Singleton.zip" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/MS3_Turnin.zip" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/asm-all-5.0.4.jar" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/hs_err_pid8516.log" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/pizzafactory.zip" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/src.zip" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/src/GenerateTemp/Register.java" afterPath="" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/CommandLineArugementsParser.py" afterPath="$PROJECT_DIR$/Docs/usage/CommandLineArugementsParser.py" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/DataTypesUML.jpg" afterPath="$PROJECT_DIR$/Docs/usage/DataTypesUML.jpg" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/DataTypesUML.uxf" afterPath="$PROJECT_DIR$/Docs/usage/DataTypesUML.uxf" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/Lab1-3-Solution/src/problem/AppLauncherApplication.java" afterPath="$PROJECT_DIR$/src/TestingProjects/problem1_3/AppLauncherApplication.java" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/Lab1-3-Solution/src/problem/ApplicationLauncher.java" afterPath="$PROJECT_DIR$/src/TestingProjects/problem1_3/ApplicationLauncher.java" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/Lab1-3-Solution/src/problem/DataFileRunner.java" afterPath="$PROJECT_DIR$/src/TestingProjects/problem1_3/DataFileRunner.java" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/Lab1-3-Solution/src/problem/DirectoryChangeLogger.java" afterPath="$PROJECT_DIR$/src/TestingProjects/problem1_3/DirectoryChangeLogger.java" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/Lab1-3-Solution/src/problem/DirectoryEvent.java" afterPath="$PROJECT_DIR$/src/TestingProjects/problem1_3/DirectoryEvent.java" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/Lab1-3-Solution/src/problem/DirectoryMonitorService.java" afterPath="$PROJECT_DIR$/src/TestingProjects/problem1_3/DirectoryMonitorService.java" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/Lab1-3-Solution/src/problem/ExecutableFileRunner.java" afterPath="$PROJECT_DIR$/src/TestingProjects/problem1_3/ExecutableFileRunner.java" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/Lab1-3-Solution/src/problem/IApplicationLauncher.java" afterPath="$PROJECT_DIR$/src/TestingProjects/problem1_3/IApplicationLauncher.java" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/Lab1-3-Solution/src/problem/IDirectoryListener.java" afterPath="$PROJECT_DIR$/src/TestingProjects/problem1_3/IDirectoryListener.java" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/Lab1-3-Solution/src/problem/IDirectoryMonitorService.java" afterPath="$PROJECT_DIR$/src/TestingProjects/problem1_3/IDirectoryMonitorService.java" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/Lab1-3-Solution/src/problem/ProcessRunner.java" afterPath="$PROJECT_DIR$/src/TestingProjects/problem1_3/ProcessRunner.java" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/MS1_Turnin/Lab1-3-Generated.png" afterPath="$PROJECT_DIR$/Docs/MS1_Turnin/Lab1-3-Generated.png" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/MS1_Turnin/Lab1-3Actual.png" afterPath="$PROJECT_DIR$/Docs/MS1_Turnin/Lab1-3Actual.png" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/MS1_Turnin/ProjectUML_actual.png" afterPath="$PROJECT_DIR$/Docs/MS2_Turnin/ProjectUML_actual.png" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/MS1_Turnin/ProjectUML_generated.png" afterPath="$PROJECT_DIR$/Docs/MS1_Turnin/ProjectUML_generated.png" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/MS2_Turnin/AbstractPizzaFactory.png" afterPath="$PROJECT_DIR$/Docs/MS2_Turnin/AbstractPizzaFactory.png" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/MS2_Turnin/ProjectUML_actual.png" afterPath="$PROJECT_DIR$/Docs/MS1_Turnin/ProjectUML_actual.png" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/MS2_Turnin/ProjectUML_generated.png" afterPath="$PROJECT_DIR$/Docs/MS2_Turnin/ProjectUML_generated.png" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/MS3_Turnin/ProjectSequence_actual.jpg" afterPath="$PROJECT_DIR$/Docs/MS4_Turnin/MS3_fixes/ProjectSequence_actual.jpg" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/MS3_Turnin/ProjectSequence_actual.uxf" afterPath="$PROJECT_DIR$/Docs/MS3_Turnin/ProjectSequence_actual.uxf" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/MS3_Turnin/Shuffle.sd" afterPath="$PROJECT_DIR$/Docs/MS3_Turnin/Shuffle.sd" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/MS3_Turnin/Shuffle_Generated.jpg" afterPath="$PROJECT_DIR$/Docs/MS3_Turnin/Shuffle_Generated.jpg" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/MS3_Turnin/Shuffle_actual.jpg" afterPath="$PROJECT_DIR$/Docs/MS4_Turnin/MS3_fixes/Shuffle_actual.jpg" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/MS3_Turnin/UMLClass_MS3.jpg" afterPath="$PROJECT_DIR$/Docs/MS3_Turnin/UMLClass_MS3.jpg" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/MS3_Turnin/generated_ourCode.sd" afterPath="$PROJECT_DIR$/Docs/MS3_Turnin/generated_ourCode.sd" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/MS4_Turnin/MS3_fixes/DiagramCommandLineArgs.txt" afterPath="$PROJECT_DIR$/Docs/MS4_Turnin/MS3_fixes/DiagramCommandLineArgs.txt" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/MS4_Turnin/MS3_fixes/ProjectSequence_actual.jpg" afterPath="$PROJECT_DIR$/Docs/MS3_Turnin/ProjectSequence_actual.jpg" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/MS4_Turnin/MS3_fixes/ProjectSequence_generated.sd" afterPath="$PROJECT_DIR$/Docs/MS4_Turnin/MS3_fixes/ProjectSequence_generated.sd" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/MS4_Turnin/MS3_fixes/ShuffleSequence_generated.sd" afterPath="$PROJECT_DIR$/Docs/MS4_Turnin/MS3_fixes/ShuffleSequence_generated.sd" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/MS4_Turnin/MS3_fixes/Shuffle_actual.jpg" afterPath="$PROJECT_DIR$/Docs/MS3_Turnin/Shuffle_actual.jpg" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/MS4_Turnin/MS3_fixes/project_gen" afterPath="$PROJECT_DIR$/Docs/MS4_Turnin/MS3_fixes/project_gen" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/MS4_Turnin/MS3_fixes/swap_sequence.PNG" afterPath="$PROJECT_DIR$/Docs/MS4_Turnin/MS3_fixes/swap_sequence.PNG" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/MS4_Turnin/MS4_turnin/ChocolateBoiler.PNG" afterPath="$PROJECT_DIR$/Docs/MS4_Turnin/MS4_turnin/ChocolateBoiler.PNG" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/MS4_Turnin/MS4_turnin/ChocolateBoilerSingleton.gv" afterPath="$PROJECT_DIR$/Docs/MS4_Turnin/MS4_turnin/ChocolateBoilerSingleton.gv" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/MS4_Turnin/MS4_turnin/CommandLineArgs.txt" afterPath="$PROJECT_DIR$/Docs/MS4_Turnin/MS4_turnin/CommandLineArgs.txt" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/MS4_Turnin/MS4_turnin/MS4UML.uxf" afterPath="$PROJECT_DIR$/Docs/MS4_Turnin/MS4_turnin/MS4UML.uxf" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/MS4_Turnin/MS4_turnin/UMLClass_MS4.png" afterPath="$PROJECT_DIR$/Docs/MS4_Turnin/MS4_turnin/UMLClass_MS4.png" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/MS4_Turnin/MS4_turnin/generatedUML" afterPath="$PROJECT_DIR$/Docs/MS4_Turnin/MS4_turnin/generatedUML" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/MS4_Turnin/MS4_turnin/generatedUML.jpg" afterPath="$PROJECT_DIR$/Docs/MS4_Turnin/MS4_turnin/generatedUML.jpg" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/MS5_Turnin/MS4_fixes/4Cases" afterPath="$PROJECT_DIR$/Docs/MS5_Turnin/MS4_fixes/4Cases" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/MS5_Turnin/MS4_fixes/ChocolateBoiler.png" afterPath="$PROJECT_DIR$/Docs/MS5_Turnin/MS4_fixes/ChocolateBoiler.png" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/MS5_Turnin/MS4_fixes/OurUML_Singleton.png" afterPath="$PROJECT_DIR$/Docs/MS5_Turnin/MS4_fixes/OurUML_Singleton.png" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/MS5_Turnin/MS4_fixes/commandline_args.txt" afterPath="$PROJECT_DIR$/Docs/MS5_Turnin/MS4_fixes/commandline_args.txt" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/MS5_Turnin/MS5_turnin/AdaptorTestDiagram" afterPath="$PROJECT_DIR$/Docs/MS5_Turnin/MS5_turnin/AdaptorTestDiagram" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/MS5_Turnin/MS5_turnin/CMD_args.txt" afterPath="$PROJECT_DIR$/Docs/MS5_Turnin/MS5_turnin/CMD_args.txt" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/MS5_Turnin/MS5_turnin/MS5UML.uxf" afterPath="$PROJECT_DIR$/Docs/MS5_Turnin/MS5_turnin/MS5UML.uxf" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/MS5_Turnin/MS5_turnin/MS5_ProjectUML.jpg" afterPath="$PROJECT_DIR$/Docs/MS5_Turnin/MS5_turnin/MS5_ProjectUML.jpg" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/MS5_Turnin/graph2.png" afterPath="$PROJECT_DIR$/Docs/MS5_Turnin/graph2.png" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/MS_3_UML.uxf" afterPath="$PROJECT_DIR$/Docs/usage/MS_3_UML.uxf" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/Milestone_1_UML.uxf" afterPath="$PROJECT_DIR$/Docs/usage/Milestone_1_UML.uxf" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/SampleASMOutput/Payment.java" afterPath="$PROJECT_DIR$/src/TestingProjects/SampleASMOutput/Payment.java" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/SampleASMOutput/Register.java" afterPath="$PROJECT_DIR$/src/TestingProjects/SampleASMOutput/Register.java" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/SampleASMOutput/Sale.java" afterPath="$PROJECT_DIR$/src/TestingProjects/SampleASMOutput/Sale.java" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/commandline_args.txt" afterPath="$PROJECT_DIR$/Docs/usage/commandline_args.txt" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/lab1-3_UML.jpg" afterPath="$PROJECT_DIR$/Docs/usage/lab1-3_UML.jpg" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/output_graph.png" afterPath="$PROJECT_DIR$/Docs/usage/output_graph.png" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/sample_from_cmd.pn" afterPath="$PROJECT_DIR$/Docs/usage/sample_from_cmd.pn" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/sequence_test.gv" afterPath="$PROJECT_DIR$/Docs/usage/sequence_test.gv" />
+    <list default="true" id="1b357d25-b641-458c-8a8c-24064c31616e" name="Default" comment="more restructuring of files, should be done with that for this milestone">
+      <change type="DELETED" beforePath="$PROJECT_DIR$/out/production/UMLCreator/ParseClasses/AbstractClassRep.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/out/production/UMLCreator/ParseClasses/AbstractData.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/out/production/UMLCreator/ParseClasses/AbstractExtendableClassRep.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/out/production/UMLCreator/ParseClasses/AbstractJavaClassRep.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/out/production/UMLCreator/ParseClasses/AbstractTypable.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/out/production/UMLCreator/ParseClasses/AssociationRelation.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/out/production/UMLCreator/ParseClasses/ClassRep.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/out/production/UMLCreator/ParseClasses/FieldRep.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/out/production/UMLCreator/ParseClasses/IRelation.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/out/production/UMLCreator/ParseClasses/InterfaceRep.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/out/production/UMLCreator/ParseClasses/MethodCall.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/out/production/UMLCreator/ParseClasses/MethodRep.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/out/production/UMLCreator/ParseClasses/UsesRelation.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/out/production/UMLCreator/Visitors/ClassDeclarationVisitor.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/out/production/UMLCreator/Visitors/ClassFieldVisitor.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/out/production/UMLCreator/Visitors/DesignParser.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/out/production/UMLCreator/Visitors/ITraverser.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/out/production/UMLCreator/Visitors/IVisitMethod.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/out/production/UMLCreator/Visitors/IVisitor.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/out/production/UMLCreator/Visitors/LookupKey.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/out/production/UMLCreator/Visitors/VisitType.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/out/production/UMLCreator/Visitors/Visitor.class" afterPath="" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/Test/DataStorage/Generation/SequenceVisitorTest.java" afterPath="$PROJECT_DIR$/Test/Generation/Generation/SequenceVisitorTest.java" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/src/DataStorage/Generation/GeneratorFactory.java" afterPath="$PROJECT_DIR$/src/Generation/GeneratorFactory.java" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/src/DataStorage/Generation/GraphGenerator.java" afterPath="$PROJECT_DIR$/src/Generation/GraphGenerator.java" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/src/DataStorage/Generation/IGenerator.java" afterPath="$PROJECT_DIR$/src/Generation/IGenerator.java" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/src/DataStorage/Generation/SequenceGenerator.java" afterPath="$PROJECT_DIR$/src/Generation/SequenceGenerator.java" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/src/ParseClasses/AbstractClassRep.java" afterPath="$PROJECT_DIR$/src/DataStorage/ParseClasses/ClassTypes/AbstractClassRep.java" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/src/ParseClasses/AbstractData.java" afterPath="$PROJECT_DIR$/src/DataStorage/ParseClasses/ClassTypes/AbstractData.java" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/src/ParseClasses/AbstractExtendableClassRep.java" afterPath="$PROJECT_DIR$/src/DataStorage/ParseClasses/ClassTypes/AbstractExtendableClassRep.java" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/src/ParseClasses/AbstractJavaClassRep.java" afterPath="$PROJECT_DIR$/src/DataStorage/ParseClasses/ClassTypes/AbstractJavaClassRep.java" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/src/ParseClasses/AbstractTypable.java" afterPath="$PROJECT_DIR$/src/DataStorage/ParseClasses/ClassTypes/AbstractTypable.java" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/src/ParseClasses/AssociationRelation.java" afterPath="$PROJECT_DIR$/src/DataStorage/ParseClasses/Internals/AssociationRelation.java" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/src/ParseClasses/ClassRep.java" afterPath="$PROJECT_DIR$/src/DataStorage/ParseClasses/ClassTypes/ClassRep.java" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/src/ParseClasses/FieldRep.java" afterPath="$PROJECT_DIR$/src/DataStorage/ParseClasses/Internals/FieldRep.java" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/src/ParseClasses/IRelation.java" afterPath="$PROJECT_DIR$/src/DataStorage/ParseClasses/Internals/IRelation.java" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/src/ParseClasses/InterfaceRep.java" afterPath="$PROJECT_DIR$/src/DataStorage/ParseClasses/ClassTypes/InterfaceRep.java" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/src/ParseClasses/MethodCall.java" afterPath="$PROJECT_DIR$/src/DataStorage/ParseClasses/Internals/MethodCall.java" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/src/ParseClasses/MethodRep.java" afterPath="$PROJECT_DIR$/src/DataStorage/ParseClasses/Internals/MethodRep.java" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/src/ParseClasses/UsesRelation.java" afterPath="$PROJECT_DIR$/src/DataStorage/ParseClasses/Internals/UsesRelation.java" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/src/Visitors/ClassDeclarationVisitor.java" afterPath="$PROJECT_DIR$/src/Visitors/ASMVisitors/ClassDeclarationVisitor.java" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/src/Visitors/ClassFieldVisitor.java" afterPath="$PROJECT_DIR$/src/Visitors/ASMVisitors/ClassFieldVisitor.java" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/src/Visitors/DesignParser.java" afterPath="$PROJECT_DIR$/src/Visitors/ASMVisitors/DesignParser.java" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/src/Visitors/ITraverser.java" afterPath="$PROJECT_DIR$/src/Visitors/DefaultVisitors/ITraverser.java" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/src/Visitors/IVisitMethod.java" afterPath="$PROJECT_DIR$/src/Visitors/DefaultVisitors/IVisitMethod.java" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/src/Visitors/IVisitor.java" afterPath="$PROJECT_DIR$/src/Visitors/DefaultVisitors/IVisitor.java" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/src/Visitors/LookupKey.java" afterPath="$PROJECT_DIR$/src/Visitors/DefaultVisitors/LookupKey.java" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/src/Visitors/VisitType.java" afterPath="$PROJECT_DIR$/src/Visitors/DefaultVisitors/VisitType.java" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/src/Visitors/Visitor.java" afterPath="$PROJECT_DIR$/src/Visitors/DefaultVisitors/Visitor.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/production/UMLCreator/DataStorage/IDataStorage.class" afterPath="$PROJECT_DIR$/out/production/UMLCreator/DataStorage/IDataStorage.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/production/UMLCreator/DataStorage/ParsedDataStorage.class" afterPath="$PROJECT_DIR$/out/production/UMLCreator/DataStorage/ParsedDataStorage.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/production/UMLCreator/Visitors/OutputStreams/SequenceOutputStream.class" afterPath="$PROJECT_DIR$/out/production/UMLCreator/Visitors/OutputStreams/SequenceOutputStream.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/production/UMLCreator/Visitors/OutputStreams/UMLOutputStream.class" afterPath="$PROJECT_DIR$/out/production/UMLCreator/Visitors/OutputStreams/UMLOutputStream.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/production/UMLCreator/Visitors/PatternVisitors/SingletonVisitor.class" afterPath="$PROJECT_DIR$/out/production/UMLCreator/Visitors/PatternVisitors/SingletonVisitor.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/production/UMLCreator/Visitors/SequenceVisitors/SequenceClassMethodVisitor.class" afterPath="$PROJECT_DIR$/out/production/UMLCreator/Visitors/SequenceVisitors/SequenceClassMethodVisitor.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/production/UMLCreator/Visitors/SequenceVisitors/SequenceMethodVisitor.class" afterPath="$PROJECT_DIR$/out/production/UMLCreator/Visitors/SequenceVisitors/SequenceMethodVisitor.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/production/UMLCreator/Visitors/UMLVisitors/UMLClassMethodVisitor.class" afterPath="$PROJECT_DIR$/out/production/UMLCreator/Visitors/UMLVisitors/UMLClassMethodVisitor.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/production/UMLCreator/Visitors/UMLVisitors/UMLMethodVisitor.class" afterPath="$PROJECT_DIR$/out/production/UMLCreator/Visitors/UMLVisitors/UMLMethodVisitor.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/test/UMLCreator/UMLTests/SingletonTests.class" afterPath="$PROJECT_DIR$/out/test/UMLCreator/UMLTests/SingletonTests.class" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/UMLCreator.iml" afterPath="$PROJECT_DIR$/UMLCreator.iml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/ParseClasses/AbstractData.java" afterPath="$PROJECT_DIR$/src/ParseClasses/AbstractData.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/TestingProjects/factory/pizzas/Pizza.java" afterPath="$PROJECT_DIR$/src/TestingProjects/factory/pizzas/Pizza.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Docs/MS4_Turnin/MS3_fixes/DiagramCommandLineArgs.txt" afterPath="$PROJECT_DIR$/Docs/MS4_Turnin/MS3_fixes/DiagramCommandLineArgs.txt" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Docs/MS4_Turnin/MS4_turnin/MS4UML.uxf" afterPath="$PROJECT_DIR$/Docs/MS4_Turnin/MS4_turnin/MS4UML.uxf" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Docs/MS4_Turnin/MS4_turnin/generatedUML" afterPath="$PROJECT_DIR$/Docs/MS4_Turnin/MS4_turnin/generatedUML" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Docs/MS5_Turnin/MS4_fixes/commandline_args.txt" afterPath="$PROJECT_DIR$/Docs/MS5_Turnin/MS4_fixes/commandline_args.txt" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Docs/MS5_Turnin/MS5_turnin/MS5UML.uxf" afterPath="$PROJECT_DIR$/Docs/MS5_Turnin/MS5_turnin/MS5UML.uxf" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Docs/usage/commandline_args.txt" afterPath="$PROJECT_DIR$/Docs/usage/commandline_args.txt" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Test/UMLTests/SingletonTests.java" afterPath="$PROJECT_DIR$/Test/UMLTests/SingletonTests.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/DataStorage/IDataStorage.java" afterPath="$PROJECT_DIR$/src/DataStorage/IDataStorage.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/DataStorage/ParsedDataStorage.java" afterPath="$PROJECT_DIR$/src/DataStorage/ParsedDataStorage.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/TestingProjects/factory/pizzafm/Pizza.java" afterPath="$PROJECT_DIR$/src/TestingProjects/factory/pizzafm/Pizza.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/Visitors/OutputStreams/SequenceOutputStream.java" afterPath="$PROJECT_DIR$/src/Visitors/OutputStreams/SequenceOutputStream.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/Visitors/OutputStreams/UMLOutputStream.java" afterPath="$PROJECT_DIR$/src/Visitors/OutputStreams/UMLOutputStream.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/Visitors/PatternVisitors/AbstractVisitorTemplate.java" afterPath="$PROJECT_DIR$/src/Visitors/PatternVisitors/AbstractVisitorTemplate.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/Visitors/PatternVisitors/AdaptorVisitor.java" afterPath="$PROJECT_DIR$/src/Visitors/PatternVisitors/AdaptorVisitor.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/Visitors/PatternVisitors/DecoratorVisitor.java" afterPath="$PROJECT_DIR$/src/Visitors/PatternVisitors/DecoratorVisitor.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/Visitors/PatternVisitors/SingletonVisitor.java" afterPath="$PROJECT_DIR$/src/Visitors/PatternVisitors/SingletonVisitor.java" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/Visitors/SequenceVisitors/SequenceClassMethodVisitor.java" afterPath="$PROJECT_DIR$/src/Visitors/SequenceVisitors/SequenceClassMethodVisitor.java" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/Visitors/SequenceVisitors/SequenceMethodVisitor.java" afterPath="$PROJECT_DIR$/src/Visitors/SequenceVisitors/SequenceMethodVisitor.java" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/Visitors/UMLVisitors/UMLClassMethodVisitor.java" afterPath="$PROJECT_DIR$/src/Visitors/UMLVisitors/UMLClassMethodVisitor.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/Visitors/UMLVisitors/UMLMethodVisitor.java" afterPath="$PROJECT_DIR$/src/Visitors/UMLVisitors/UMLMethodVisitor.java" />
     </list>
     <ignored path="UMLCreator.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -213,54 +120,71 @@
   </component>
   <component name="FileEditorManager">
     <leaf>
-      <file leaf-file-name="ClassDeclarationVisitor.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/Visitors/ClassDeclarationVisitor.java">
+      <file leaf-file-name="AbstractJavaClassRep.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/DataStorage/ParseClasses/ClassTypes/AbstractJavaClassRep.java">
           <provider selected="true" editor-type-id="text-editor">
             <state vertical-scroll-proportion="0.0">
-              <caret line="16" column="35" selection-start-line="16" selection-start-column="35" selection-end-line="16" selection-end-column="35" />
+              <caret line="29" column="38" selection-start-line="29" selection-start-column="38" selection-end-line="29" selection-end-column="38" />
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="SingletonVisitor.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/Visitors/PatternVisitors/SingletonVisitor.java">
+      <file leaf-file-name="SequenceGenerator.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/Generation/SequenceGenerator.java">
           <provider selected="true" editor-type-id="text-editor">
             <state vertical-scroll-proportion="0.0">
-              <caret line="51" column="8" selection-start-line="51" selection-start-column="8" selection-end-line="51" selection-end-column="8" />
+              <caret line="32" column="32" selection-start-line="32" selection-start-column="32" selection-end-line="32" selection-end-column="32" />
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="AdaptorVisitor.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/Visitors/PatternVisitors/AdaptorVisitor.java">
+      <file leaf-file-name="ParsedDataStorage.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/DataStorage/ParsedDataStorage.java">
           <provider selected="true" editor-type-id="text-editor">
             <state vertical-scroll-proportion="0.0">
-              <caret line="123" column="8" selection-start-line="123" selection-start-column="8" selection-end-line="123" selection-end-column="8" />
+              <caret line="26" column="35" selection-start-line="26" selection-start-column="35" selection-end-line="26" selection-end-column="35" />
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="ApplicationLauncher.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/TestingProjects/problem1_3/ApplicationLauncher.java">
+      <file leaf-file-name="DecoratorVisitor.java" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/src/Visitors/PatternVisitors/DecoratorVisitor.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.0">
-              <caret line="41" column="19" selection-start-line="41" selection-start-column="19" selection-end-line="41" selection-end-column="19" />
-              <folding>
-                <element signature="e#250#251#0" expanded="true" />
-                <element signature="e#329#330#0" expanded="true" />
-              </folding>
+            <state vertical-scroll-proportion="0.47931033">
+              <caret line="26" column="30" selection-start-line="26" selection-start-column="30" selection-end-line="26" selection-end-column="30" />
+              <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="ProcessRunner.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/TestingProjects/problem1_3/ProcessRunner.java">
+      <file leaf-file-name="UsesRelation.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/DataStorage/ParseClasses/Internals/UsesRelation.java">
           <provider selected="true" editor-type-id="text-editor">
             <state vertical-scroll-proportion="0.0">
-              <caret line="18" column="68" selection-start-line="18" selection-start-column="68" selection-end-line="18" selection-end-column="68" />
+              <caret line="41" column="0" selection-start-line="41" selection-start-column="0" selection-end-line="41" selection-end-column="0" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="AssociationRelation.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/DataStorage/ParseClasses/Internals/AssociationRelation.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state vertical-scroll-proportion="0.0">
+              <caret line="38" column="8" selection-start-line="38" selection-start-column="8" selection-end-line="38" selection-end-column="8" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="SingletonTests.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/Test/UMLTests/SingletonTests.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state vertical-scroll-proportion="0.0">
+              <caret line="34" column="29" selection-start-line="34" selection-start-column="29" selection-end-line="34" selection-end-column="29" />
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
@@ -268,52 +192,36 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="UMLClassMethodVisitor.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/Visitors/UMLVisitors/UMLClassMethodVisitor.java">
+      <file leaf-file-name="SequenceVisitorTest.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/Test/Generation/Generation/SequenceVisitorTest.java">
           <provider selected="true" editor-type-id="text-editor">
             <state vertical-scroll-proportion="0.0">
-              <caret line="32" column="33" selection-start-line="32" selection-start-column="33" selection-end-line="32" selection-end-column="33" />
+              <caret line="184" column="46" selection-start-line="184" selection-start-column="46" selection-end-line="184" selection-end-column="46" />
+              <folding>
+                <element signature="imports" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="MethodRep.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/DataStorage/ParseClasses/Internals/MethodRep.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state vertical-scroll-proportion="0.0">
+              <caret line="17" column="43" selection-start-line="17" selection-start-column="43" selection-end-line="17" selection-end-column="43" />
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="SequenceMethodVisitor.java" pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/src/Visitors/SequenceVisitors/SequenceMethodVisitor.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="-0.014035088">
-              <caret line="115" column="50" selection-start-line="115" selection-start-column="50" selection-end-line="115" selection-end-column="50" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="AbstractVisitorTemplate.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/Visitors/PatternVisitors/AbstractVisitorTemplate.java">
+      <file leaf-file-name="Pizza.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/TestingProjects/factory/pizzafm/Pizza.java">
           <provider selected="true" editor-type-id="text-editor">
             <state vertical-scroll-proportion="0.0">
-              <caret line="9" column="22" selection-start-line="9" selection-start-column="22" selection-end-line="9" selection-end-column="22" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="IVisitMethod.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/Visitors/IVisitMethod.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.0">
-              <caret line="6" column="9" selection-start-line="6" selection-start-column="9" selection-end-line="6" selection-end-column="9" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="GraphGenerator.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/DataStorage/Generation/GraphGenerator.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.0">
-              <caret line="64" column="0" selection-start-line="64" selection-start-column="0" selection-end-line="64" selection-end-column="0" />
-              <folding />
+              <caret line="9" column="42" selection-start-line="9" selection-start-column="42" selection-end-line="9" selection-end-column="42" />
+              <folding>
+                <element signature="imports" expanded="true" />
+              </folding>
             </state>
           </provider>
         </entry>
@@ -325,6 +233,7 @@
       <list>
         <option value="Interface" />
         <option value="Enum" />
+        <option value="package-info" />
         <option value="Class" />
       </list>
     </option>
@@ -345,23 +254,6 @@
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/src/Visitor/OutputStreams/SequenceOutputStream.java" />
-        <option value="$PROJECT_DIR$/src/DataStorage/SequenceParsing/ISequenceVisitor.java" />
-        <option value="$PROJECT_DIR$/src/Visitors/OutputStreams/SequenceOutputStream.java" />
-        <option value="$PROJECT_DIR$/graph_text/generated_graph.sd" />
-        <option value="$PROJECT_DIR$/src/DataStorage/SequenceParsing/SequenceGenerator.java" />
-        <option value="$PROJECT_DIR$/src/GenerateTemp/Payment.java" />
-        <option value="$PROJECT_DIR$/src/GenerateTemp/Register.java" />
-        <option value="$PROJECT_DIR$/src/DataStorage/GraphGenerator.java" />
-        <option value="$PROJECT_DIR$/src/ParseClasses/MethodRep.java" />
-        <option value="$PROJECT_DIR$/src/ParseClasses/FieldRep.java" />
-        <option value="$PROJECT_DIR$/src/ParseClasses/ClassRep.java" />
-        <option value="$PROJECT_DIR$/src/Visitors/PatternVisitors/AbstractVisitorTemplate.java" />
-        <option value="$PROJECT_DIR$/src/ParseClasses/AbstractExtendableClassRep.java" />
-        <option value="$PROJECT_DIR$/src/ParseClasses/PatternDecorators/SingletonDecorator.java" />
-        <option value="$PROJECT_DIR$/src/DataStorage/IDataStorage.java" />
-        <option value="$PROJECT_DIR$/src/ParseClasses/AbstractJavaClassRep.java" />
-        <option value="$PROJECT_DIR$/src/DataStorage/Generation/GraphGenerator.java" />
         <option value="$PROJECT_DIR$/src/TestingProjects/Lab5-1-Solution/src/problem/client/IteratorToEnumerationAdapter.java" />
         <option value="$PROJECT_DIR$/src/TestingProjects/Lab5-1-Solution/src/problem/lib/LinearTransformer.java" />
         <option value="$PROJECT_DIR$/src/TestingProjects/Lab5-1-Solution/src/problem/client/App.java" />
@@ -372,15 +264,11 @@
         <option value="$PROJECT_DIR$/src/Visitors/DesignParser.java" />
         <option value="$PROJECT_DIR$/src/ParseClasses/AbstractTypable.java" />
         <option value="$PROJECT_DIR$/src/Visitors/ClassFieldVisitor.java" />
-        <option value="$PROJECT_DIR$/src/DataStorage/ParsedDataStorage.java" />
         <option value="$PROJECT_DIR$/src/Visitors/UMLVisitors/UMLMethodVisitor.java" />
-        <option value="$PROJECT_DIR$/src/Visitors/PatternVisitors/AdaptorVisitor.java" />
-        <option value="$PROJECT_DIR$/src/Visitors/OutputStreams/UMLOutputStream.java" />
         <option value="$PROJECT_DIR$/src/Visitors/PatternVisitors/SingletonVisitor.java" />
         <option value="$PROJECT_DIR$/Test/UMLTests/TestingDummyCode/EagerSingletonExample.java" />
         <option value="$PROJECT_DIR$/Test/UMLTests/TestingDummyCode/LazySingletonExample.java" />
         <option value="$PROJECT_DIR$/Test/UMLTests/TestingDummyCode/ThreadSafeSingletonExample.java" />
-        <option value="$PROJECT_DIR$/Test/UMLTests/SingletonTests.java" />
         <option value="$PROJECT_DIR$/src/TestingProjects/problem1-3/ProcessRunner.java" />
         <option value="$PROJECT_DIR$/src/TestingProjects/problem1_3/IDirectoryMonitorService.java" />
         <option value="$PROJECT_DIR$/src/TestingProjects/problem1_3/DirectoryEvent.java" />
@@ -396,6 +284,27 @@
         <option value="$PROJECT_DIR$/src/TestingProjects/problem1_3/ProcessRunner.java" />
         <option value="$PROJECT_DIR$/src/Visitors/UMLVisitors/UMLClassMethodVisitor.java" />
         <option value="$PROJECT_DIR$/src/Visitors/SequenceVisitors/SequenceMethodVisitor.java" />
+        <option value="$PROJECT_DIR$/src/Generation/Generation/SequenceGenerator.java" />
+        <option value="$PROJECT_DIR$/src/Generation/Generation/IGenerator.java" />
+        <option value="$PROJECT_DIR$/src/Generation/Generation/GraphGenerator.java" />
+        <option value="$PROJECT_DIR$/src/Generation/Generation/GeneratorFactory.java" />
+        <option value="$PROJECT_DIR$/src/DataStorage/ParseClasses/Internals.java" />
+        <option value="$PROJECT_DIR$/src/Visitors/ASMVisitors/DesignParser.java" />
+        <option value="$PROJECT_DIR$/src/Visitors/OutputStreams/UMLOutputStream.java" />
+        <option value="$PROJECT_DIR$/src/Visitors/OutputStreams/SequenceOutputStream.java" />
+        <option value="$PROJECT_DIR$/src/DataStorage/ParseClasses/ClassTypes/AbstractExtendableClassRep.java" />
+        <option value="$PROJECT_DIR$/src/Generation/GraphGenerator.java" />
+        <option value="$PROJECT_DIR$/src/Visitors/PatternVisitors/AdaptorVisitor.java" />
+        <option value="$PROJECT_DIR$/src/DataStorage/ParsedDataStorage.java" />
+        <option value="$PROJECT_DIR$/src/DataStorage/ParseClasses/ClassTypes/AbstractJavaClassRep.java" />
+        <option value="$PROJECT_DIR$/src/Generation/SequenceGenerator.java" />
+        <option value="$PROJECT_DIR$/src/Visitors/PatternVisitors/DecoratorVisitor.java" />
+        <option value="$PROJECT_DIR$/src/DataStorage/ParseClasses/Internals/UsesRelation.java" />
+        <option value="$PROJECT_DIR$/src/DataStorage/ParseClasses/Internals/AssociationRelation.java" />
+        <option value="$PROJECT_DIR$/src/DataStorage/ParseClasses/Internals/MethodRep.java" />
+        <option value="$PROJECT_DIR$/src/TestingProjects/factory/pizzafm/Pizza.java" />
+        <option value="$PROJECT_DIR$/Test/UMLTests/SingletonTests.java" />
+        <option value="$PROJECT_DIR$/Test/Generation/Generation/SequenceVisitorTest.java" />
       </list>
     </option>
   </component>
@@ -474,7 +383,11 @@
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
-              <option name="myItemId" value="src" />
+              <option name="myItemId" value="Test" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="UMLTests" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
@@ -488,11 +401,7 @@
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
-              <option name="myItemId" value="src" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="DataStorage" />
+              <option name="myItemId" value="Test" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
@@ -506,15 +415,25 @@
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
-              <option name="myItemId" value="src" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="DataStorage" />
+              <option name="myItemId" value="Test" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
               <option name="myItemId" value="Generation" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="UMLCreator" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="umlcreatorbackup" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="src" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
@@ -548,10 +467,11 @@
     <property name="FileHistory.git4idea.history.GitHistoryProvider_treeOrder2" value="2" />
     <property name="FileHistory.git4idea.history.GitHistoryProvider_treeWidth3" value="1142" />
     <property name="FileHistory.git4idea.history.GitHistoryProvider_treeOrder3" value="3" />
-    <property name="last_directory_selection" value="$PROJECT_DIR$/src" />
+    <property name="last_directory_selection" value="$PROJECT_DIR$/src/Generation" />
     <property name="settings.editor.selected.configurable" value="vcs.Git" />
     <property name="settings.editor.splitter.proportion" value="0.2" />
     <property name="SearchEverywhereHistoryKey" value="&#9;FILE&#9;file://C:/Users/efronbs/Documents/School/y3q2/374/bitbucket_project/UMLCreatorActual/src/ParseClasses/ClassRep.java" />
+    <property name="extract.method.default.visibility" value="private" />
   </component>
   <component name="RecentsManager">
     <key name="MoveFile.RECENT_KEYS">
@@ -560,6 +480,10 @@
       <recent name="C:\Users\budocf\Documents\Courses\Junior\CSSE374\Project\UMLCreator\lib" />
       <recent name="C:\Users\budocf\Documents\Courses\Junior\CSSE374\Project\UMLCreator\MS3_Turnin" />
       <recent name="C:\Users\efronbs\Documents\School\y3q2\374\UMLCreatorActual\src\DataStorage" />
+    </key>
+    <key name="MoveClassesOrPackagesDialog.RECENTS_KEY">
+      <recent name="DataStorage" />
+      <recent name="Generation" />
     </key>
     <key name="CopyFile.RECENT_KEYS">
       <recent name="C:\Users\budocf\Documents\Courses\Junior\CSSE374\Project\umlcreatorbackup\src\TestingProjects" />
@@ -577,7 +501,7 @@
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
-      <option name="MAIN_CLASS_NAME" value="Visitors.DesignParser" />
+      <option name="MAIN_CLASS_NAME" value="Visitors.ASMVisitors.DesignParser" />
       <option name="VM_PARAMETERS" value="" />
       <option name="PROGRAM_PARAMETERS" value="U headfirst.singleton.chocolate.ChocolateBoiler" />
       <option name="WORKING_DIRECTORY" value="file://$PROJECT_DIR$" />
@@ -1093,7 +1017,7 @@
     </configuration>
     <configuration default="false" name="Unnamed" type="Application" factoryName="Application">
       <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea" />
-      <option name="MAIN_CLASS_NAME" value="Visitors.DesignParser" />
+      <option name="MAIN_CLASS_NAME" value="Visitors.ASMVisitors.DesignParser" />
       <option name="VM_PARAMETERS" value="" />
       <option name="PROGRAM_PARAMETERS" value="U java.lang.Runtime java.awt.Desktop java.util.Calendar java.io.FilterInputStream" />
       <option name="WORKING_DIRECTORY" value="file://$PROJECT_DIR$" />
@@ -1167,7 +1091,7 @@
       <workItem from="1453999677303" duration="9131000" />
       <workItem from="1454014366650" duration="16000" />
       <workItem from="1454465688240" duration="1356000" />
-      <workItem from="1454467286439" duration="2418000" />
+      <workItem from="1454467286439" duration="4972000" />
     </task>
     <task id="LOCAL-00001" summary="added asm libraries and visitor package">
       <created>1451953507803</created>
@@ -1427,13 +1351,16 @@
       <option name="project" value="LOCAL" />
       <updated>1454466230366</updated>
     </task>
-    <option name="localTasksCounter" value="44" />
+    <task id="LOCAL-00044" summary="Cleaned up stray documents and unnecessary files">
+      <created>1454469715941</created>
+      <option name="number" value="00044" />
+      <option name="project" value="LOCAL" />
+      <updated>1454469715941</updated>
+    </task>
+    <option name="localTasksCounter" value="45" />
     <servers />
   </component>
   <component name="TestHistory">
-    <history-entry file="SingletonTests - 2016.01.28 at 14h 51m 13s.xml">
-      <configuration name="SingletonTests" configurationId="JUnit" />
-    </history-entry>
     <history-entry file="SingletonTests - 2016.01.28 at 14h 52m 00s.xml">
       <configuration name="SingletonTests" configurationId="JUnit" />
     </history-entry>
@@ -1444,6 +1371,9 @@
       <configuration name="SingletonTests" configurationId="JUnit" />
     </history-entry>
     <history-entry file="SingletonTests - 2016.01.28 at 15h 08m 18s.xml">
+      <configuration name="SingletonTests" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="SingletonTests - 2016.02.02 at 23h 33m 44s.xml">
       <configuration name="SingletonTests" configurationId="JUnit" />
     </history-entry>
     <history-entry file="SingletonTests_eagerImplementation - 2016.01.28 at 14h 42m 32s.xml">
@@ -1463,7 +1393,7 @@
     </history-entry>
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="233200000" />
+    <option name="totallyTimeSpent" value="235754000" />
   </component>
   <component name="TodoView" selected-index="1">
     <todo-panel id="selected-file">
@@ -1479,20 +1409,20 @@
     <editor active="true" />
     <layout>
       <window_info id="Palette" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
-      <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32800853" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
-      <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.32323232" sideWeight="0.49571276" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32772166" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
+      <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32323232" sideWeight="0.49571276" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Palette&#9;" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.24707136" sideWeight="0.50535905" order="9" side_tool="true" content_ui="tabs" />
       <window_info id="Maven Projects" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.329582" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.31425366" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.24597701" sideWeight="0.49464095" order="10" side_tool="false" content_ui="tabs" />
       <window_info id="Coverage" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.329582" sideWeight="0.5" order="7" side_tool="true" content_ui="tabs" />
-      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.31309903" sideWeight="0.49571276" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.31200898" sideWeight="0.49571276" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.30190796" sideWeight="0.5" order="8" side_tool="false" content_ui="tabs" />
       <window_info id="Designer" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.12486602" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.16720258" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
       <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32995495" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
-      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33333334" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
+      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33108866" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.35518292" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="UI Designer" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
@@ -1517,7 +1447,6 @@
   </component>
   <component name="VcsManagerConfiguration">
     <option name="CHECK_CODE_CLEANUP_BEFORE_PROJECT_COMMIT" value="true" />
-    <MESSAGE value="parsing of code working, next step is making it go on to parse classes that it extends or implements" />
     <MESSAGE value="Bug with extending regular classes, otherwise works" />
     <MESSAGE value="bug with classes not displaying methods" />
     <MESSAGE value="Implemented associations" />
@@ -1542,7 +1471,8 @@
     <MESSAGE value="Adaptor colors are in" />
     <MESSAGE value="Why isn't this working" />
     <MESSAGE value="Cleaned up stray documents and unnecessary files" />
-    <option name="LAST_COMMIT_MESSAGE" value="Cleaned up stray documents and unnecessary files" />
+    <MESSAGE value="more restructuring of files, should be done with that for this milestone" />
+    <option name="LAST_COMMIT_MESSAGE" value="more restructuring of files, should be done with that for this milestone" />
     <option name="OPTIMIZE_IMPORTS_BEFORE_PROJECT_COMMIT" value="true" />
     <option name="REFORMAT_BEFORE_PROJECT_COMMIT" value="true" />
     <option name="REARRANGE_BEFORE_PROJECT_COMMIT" value="true" />
@@ -1564,25 +1494,25 @@
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-line">
           <url>file://$PROJECT_DIR$/src/DataStorage/ParsedDataStorage.java</url>
-          <line>235</line>
+          <line>233</line>
           <properties />
           <option name="timeStamp" value="103" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-line">
           <url>file://$PROJECT_DIR$/src/DataStorage/ParsedDataStorage.java</url>
-          <line>215</line>
+          <line>213</line>
           <properties />
           <option name="timeStamp" value="108" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-line">
           <url>file://$PROJECT_DIR$/src/DataStorage/ParsedDataStorage.java</url>
-          <line>179</line>
+          <line>177</line>
           <properties />
           <option name="timeStamp" value="109" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-line">
           <url>file://$PROJECT_DIR$/src/DataStorage/ParsedDataStorage.java</url>
-          <line>163</line>
+          <line>161</line>
           <properties />
           <option name="timeStamp" value="111" />
         </line-breakpoint>
@@ -1596,119 +1526,6 @@
     <option name="FILTER_TARGETS" value="false" />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/src/Visitors/UMLVisitors/UMLMethodVisitor.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="25" column="45" selection-start-line="25" selection-start-column="45" selection-end-line="25" selection-end-column="45" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/Visitors/ClassFieldVisitor.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.49117646">
-          <caret line="29" column="0" selection-start-line="29" selection-start-column="0" selection-end-line="29" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/Visitors/OutputStreams/UMLOutputStream.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.6754967">
-          <caret line="71" column="21" selection-start-line="71" selection-start-column="21" selection-end-line="71" selection-end-column="21" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Test/UMLTests/TestingDummyCode/LazySingletonExample.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.07189543">
-          <caret line="2" column="13" selection-start-line="2" selection-start-column="13" selection-end-line="2" selection-end-column="13" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Test/UMLTests/SingletonTests.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.49614114">
-          <caret line="216" column="0" selection-start-line="216" selection-start-column="0" selection-end-line="216" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Test/UMLTests/TestingDummyCode/ThreadSafeSingletonExample.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.6063947">
-          <caret line="25" column="17" selection-start-line="25" selection-start-column="17" selection-end-line="25" selection-end-column="17" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Test/UMLTests/TestingDummyCode/EagerSingletonExample.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.36383682">
-          <caret line="15" column="5" selection-start-line="15" selection-start-column="5" selection-end-line="15" selection-end-column="5" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Test/UMLTests/TestingDummyCode/LazySingletonExample.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.2183021">
-          <caret line="9" column="18" selection-start-line="9" selection-start-column="18" selection-end-line="9" selection-end-column="18" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Test/DataStorage/Generation/SequenceVisitorTest.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.8059537">
-          <caret line="197" column="9" selection-start-line="197" selection-start-column="9" selection-end-line="197" selection-end-column="9" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/ParseClasses/ClassRep.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.61190736">
-          <caret line="39" column="5" selection-start-line="39" selection-start-column="5" selection-end-line="39" selection-end-column="5" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/ParseClasses/MethodRep.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.55788314">
-          <caret line="32" column="12" selection-start-line="32" selection-start-column="12" selection-end-line="32" selection-end-column="12" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Docs/MS1_Turnin/Lab1-3Actual.png">
-      <provider selected="true" editor-type-id="images">
-        <state />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Docs/MS1_Turnin/Lab1-3-Generated.png">
-      <provider selected="true" editor-type-id="images">
-        <state />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Docs/MS1_Turnin/ProjectUML_actual.png">
-      <provider selected="true" editor-type-id="images">
-        <state />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Docs/MS1_Turnin/ProjectUML_generated.png">
-      <provider selected="true" editor-type-id="images">
-        <state />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Docs/MS2_Turnin/ProjectUML_actual.png">
-      <provider selected="true" editor-type-id="images">
-        <state />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Docs/MS2_Turnin/AbstractPizzaFactory.png">
-      <provider selected="true" editor-type-id="images">
-        <state />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Docs/MS2_Turnin/ProjectUML_generated.png">
-      <provider selected="true" editor-type-id="images">
-        <state />
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/Docs/MS3_Turnin/Shuffle.sd">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
@@ -1846,10 +1663,10 @@
           <caret line="23" column="26" selection-start-line="23" selection-start-column="26" selection-end-line="23" selection-end-column="26" />
           <folding>
             <element signature="e#137#164#0" expanded="false" />
-            <element signature="e#460#461#0" expanded="true" />
-            <element signature="e#509#510#0" expanded="true" />
-            <element signature="e#546#547#0" expanded="true" />
-            <element signature="e#579#580#0" expanded="true" />
+            <element signature="e#460#461#0" expanded="false" />
+            <element signature="e#509#510#0" expanded="false" />
+            <element signature="e#546#547#0" expanded="false" />
+            <element signature="e#579#580#0" expanded="false" />
           </folding>
         </state>
       </provider>
@@ -1859,8 +1676,8 @@
         <state vertical-scroll-proportion="0.0">
           <caret line="13" column="15" selection-start-line="13" selection-start-column="15" selection-end-line="13" selection-end-column="15" />
           <folding>
-            <element signature="e#286#287#0" expanded="true" />
-            <element signature="e#325#326#0" expanded="true" />
+            <element signature="e#286#287#0" expanded="false" />
+            <element signature="e#325#326#0" expanded="false" />
           </folding>
         </state>
       </provider>
@@ -1881,19 +1698,19 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/ParseClasses/AbstractData.java">
+    <entry file="file://$PROJECT_DIR$/src/DataStorage/ParseClasses/ClassTypes/AbstractData.java">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
           <caret line="61" column="29" selection-start-line="61" selection-start-column="29" selection-end-line="61" selection-end-column="29" />
           <folding>
             <element signature="imports" expanded="false" />
-            <element signature="e#1382#1383#0" expanded="true" />
             <element signature="e#1421#1422#0" expanded="true" />
+            <element signature="e#1460#1461#0" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/Visitors/ClassDeclarationVisitor.java">
+    <entry file="file://$PROJECT_DIR$/src/Visitors/ASMVisitors/ClassDeclarationVisitor.java">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
           <caret line="16" column="35" selection-start-line="16" selection-start-column="35" selection-end-line="16" selection-end-column="35" />
@@ -1901,15 +1718,7 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/DataStorage/Generation/GraphGenerator.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="64" column="0" selection-start-line="64" selection-start-column="0" selection-end-line="64" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/Visitors/IVisitMethod.java">
+    <entry file="file://$PROJECT_DIR$/src/Visitors/DefaultVisitors/IVisitMethod.java">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
           <caret line="6" column="9" selection-start-line="6" selection-start-column="9" selection-end-line="6" selection-end-column="9" />
@@ -1933,25 +1742,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/Visitors/PatternVisitors/AdaptorVisitor.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="123" column="8" selection-start-line="123" selection-start-column="8" selection-end-line="123" selection-end-column="8" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/TestingProjects/problem1_3/ApplicationLauncher.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="41" column="19" selection-start-line="41" selection-start-column="19" selection-end-line="41" selection-end-column="19" />
-          <folding>
-            <element signature="e#250#251#0" expanded="true" />
-            <element signature="e#329#330#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/TestingProjects/problem1_3/ProcessRunner.java">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
@@ -1959,6 +1749,22 @@
           <folding>
             <element signature="imports" expanded="true" />
           </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/Visitors/SequenceVisitors/SequenceMethodVisitor.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="115" column="50" selection-start-line="115" selection-start-column="50" selection-end-line="115" selection-end-column="50" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/DataStorage/ParseClasses/ClassTypes/AbstractClassRep.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="6" column="3" selection-start-line="6" selection-start-column="3" selection-end-line="6" selection-end-column="3" />
+          <folding />
         </state>
       </provider>
     </entry>
@@ -1970,10 +1776,174 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/Visitors/SequenceVisitors/SequenceMethodVisitor.java">
+    <entry file="file://$PROJECT_DIR$/src/Generation/IGenerator.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-0.014035088">
-          <caret line="115" column="50" selection-start-line="115" selection-start-column="50" selection-end-line="115" selection-end-column="50" />
+        <state vertical-scroll-proportion="0.0">
+          <caret line="0" column="13" selection-start-line="0" selection-start-column="13" selection-end-line="0" selection-end-column="13" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/Generation/GeneratorFactory.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="5" column="13" selection-start-line="5" selection-start-column="13" selection-end-line="5" selection-end-column="13" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/Visitors/ASMVisitors/DesignParser.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="29" column="8" selection-start-line="29" selection-start-column="8" selection-end-line="29" selection-end-column="8" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/TestingProjects/factory/pizzafm/NYStyleVeggiePizza.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="16" column="0" selection-start-line="16" selection-start-column="0" selection-end-line="16" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/TestingProjects/problem1_3/ApplicationLauncher.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="9" column="34" selection-start-line="9" selection-start-column="34" selection-end-line="9" selection-end-column="34" />
+          <folding>
+            <element signature="e#329#330#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/Visitors/OutputStreams/UMLOutputStream.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="173" column="94" selection-start-line="173" selection-start-column="94" selection-end-line="173" selection-end-column="94" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/Visitors/OutputStreams/SequenceOutputStream.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="21" column="23" selection-start-line="21" selection-start-column="23" selection-end-line="21" selection-end-column="23" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/DataStorage/ParseClasses/ClassTypes/AbstractExtendableClassRep.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="47" column="13" selection-start-line="47" selection-start-column="13" selection-end-line="47" selection-end-column="13" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/Generation/GraphGenerator.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="32" column="27" selection-start-line="32" selection-start-column="27" selection-end-line="32" selection-end-column="27" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/Visitors/PatternVisitors/AdaptorVisitor.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="30" column="38" selection-start-line="30" selection-start-column="38" selection-end-line="30" selection-end-column="38" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/DataStorage/ParsedDataStorage.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="26" column="35" selection-start-line="26" selection-start-column="35" selection-end-line="26" selection-end-column="35" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/DataStorage/ParseClasses/ClassTypes/AbstractJavaClassRep.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="29" column="38" selection-start-line="29" selection-start-column="38" selection-end-line="29" selection-end-column="38" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/Generation/SequenceGenerator.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="32" column="32" selection-start-line="32" selection-start-column="32" selection-end-line="32" selection-end-column="32" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/DataStorage/ParseClasses/Internals/UsesRelation.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="41" column="0" selection-start-line="41" selection-start-column="0" selection-end-line="41" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/DataStorage/ParseClasses/Internals/AssociationRelation.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="38" column="8" selection-start-line="38" selection-start-column="8" selection-end-line="38" selection-end-column="8" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/DataStorage/ParseClasses/Internals/MethodRep.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="17" column="43" selection-start-line="17" selection-start-column="43" selection-end-line="17" selection-end-column="43" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/TestingProjects/factory/pizzafm/Pizza.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="9" column="42" selection-start-line="9" selection-start-column="42" selection-end-line="9" selection-end-column="42" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Test/UMLTests/SingletonTests.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="34" column="29" selection-start-line="34" selection-start-column="29" selection-end-line="34" selection-end-column="29" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Test/Generation/Generation/SequenceVisitorTest.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="184" column="46" selection-start-line="184" selection-start-column="46" selection-end-line="184" selection-end-column="46" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/Visitors/PatternVisitors/DecoratorVisitor.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.47931033">
+          <caret line="26" column="30" selection-start-line="26" selection-start-column="30" selection-end-line="26" selection-end-column="30" />
           <folding />
         </state>
       </provider>

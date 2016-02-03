@@ -83,7 +83,7 @@ DataStorage::IDataStorage
       <w>432</w>
       <h>84</h>
     </coordinates>
-    <panel_attributes>ParseClasses::AbstractClassRep
+    <panel_attributes>DataStorage.ParseClasses::AbstractClassRep
 --
 --
 +AbstractClassRep(String name, int accessibility): ctor
@@ -103,7 +103,7 @@ DataStorage::IDataStorage
       <w>312</w>
       <h>108</h>
     </coordinates>
-    <panel_attributes>/ParseClasses::AbstractData/
+    <panel_attributes>/DataStorage.ParseClasses::AbstractData/
 --
 -name: String
 -accessibility: int
@@ -125,7 +125,7 @@ DataStorage::IDataStorage
       <w>486</w>
       <h>84</h>
     </coordinates>
-    <panel_attributes>/ParseClasses::AbstractExtendableClassRep/
+    <panel_attributes>/DataStorage.ParseClasses::AbstractExtendableClassRep/
 --
 -extendedClassName: String
 --
@@ -145,7 +145,7 @@ DataStorage::IDataStorage
       <w>354</w>
       <h>198</h>
     </coordinates>
-    <panel_attributes>/ParseClasses::AbstractJavaClassRep/
+    <panel_attributes>/DataStorage.ParseClasses::AbstractJavaClassRep/
 --
 #methodsMap: Map&lt;String, AbstractData&gt;
 #fieldsMap: Map&lt;String, AbstractData&gt;
@@ -176,7 +176,7 @@ DataStorage::IDataStorage
       <w>252</w>
       <h>66</h>
     </coordinates>
-    <panel_attributes>/ParseClasses::AbstractTypable/
+    <panel_attributes>/DataStorage.ParseClasses::AbstractTypable/
 --
 -type: String
 --
@@ -194,7 +194,7 @@ DataStorage::IDataStorage
       <w>192</w>
       <h>114</h>
     </coordinates>
-    <panel_attributes>ParseClasses::AssociationRelation
+    <panel_attributes>DataStorage.ParseClasses::AssociationRelation
 --
 ~from: String
 ~to: String
@@ -217,7 +217,7 @@ DataStorage::IDataStorage
       <w>402</w>
       <h>156</h>
     </coordinates>
-    <panel_attributes>ParseClasses::ClassRep
+    <panel_attributes>DataStorage.ParseClasses::ClassRep
 --
 -publicStaticGetInstatnce = false: boolean
 -privateSingletonInit = false: boolean
@@ -244,7 +244,7 @@ DataStorage::IDataStorage
       <w>294</w>
       <h>84</h>
     </coordinates>
-    <panel_attributes>ParseClasses::FieldRep
+    <panel_attributes>DataStorage.ParseClasses::FieldRep
 --
 -className: String
 --
@@ -264,7 +264,7 @@ DataStorage::IDataStorage
       <w>282</w>
       <h>66</h>
     </coordinates>
-    <panel_attributes>ParseClasses::InterfaceRep
+    <panel_attributes>DataStorage.ParseClasses::InterfaceRep
 --
 --
 +InterfaceRep(String name, int accessibility): ctor
@@ -283,7 +283,7 @@ DataStorage::IDataStorage
       <h>66</h>
     </coordinates>
     <panel_attributes>&lt;&lt;interface&gt;&gt;
-ParseClasses::IRelation
+DataStorage.ParseClasses::IRelation
 --
 --
 ~getTo(): String
@@ -300,7 +300,7 @@ ParseClasses::IRelation
       <w>414</w>
       <h>210</h>
     </coordinates>
-    <panel_attributes>ParseClasses::MethodCall
+    <panel_attributes>DataStorage.ParseClasses::MethodCall
 --
 -fullClassName: String
 -callingClass: String
@@ -332,7 +332,7 @@ ParseClasses::IRelation
       <w>306</w>
       <h>114</h>
     </coordinates>
-    <panel_attributes>ParseClasses::MethodRep
+    <panel_attributes>DataStorage.ParseClasses::MethodRep
 --
 -usesRelations: List&lt;String&gt;
 -className: String
@@ -355,7 +355,7 @@ ParseClasses::IRelation
       <w>168</w>
       <h>114</h>
     </coordinates>
-    <panel_attributes>ParseClasses::UsesRelation
+    <panel_attributes>DataStorage.ParseClasses::UsesRelation
 --
 -from: String
 -to: String
@@ -713,7 +713,7 @@ Visitors::IVisitor
       <w>198</w>
       <h>54</h>
     </coordinates>
-    <panel_attributes>DataStorage.Generation::GeneratorFactory
+    <panel_attributes>Generation.Generation::GeneratorFactory
 --
 --
 +GeneratorFactory(): ctor
@@ -730,7 +730,7 @@ layer=2</panel_attributes>
       <w>168</w>
       <h>66</h>
     </coordinates>
-    <panel_attributes>DataStorage.Generation::GraphGenerator
+    <panel_attributes>Generation.Generation::GraphGenerator
 --
 --
 +buildUMLClassDiagram(): String
@@ -751,7 +751,7 @@ layer=2</panel_attributes>
       <h>78</h>
     </coordinates>
     <panel_attributes>&lt;&lt;interface&gt;&gt;
-DataStorage.Generation::IGenerator
+Generation.Generation::IGenerator
 --
 --
 ~getOutputType(): String
@@ -770,7 +770,7 @@ layer=2</panel_attributes>
       <w>186</w>
       <h>66</h>
     </coordinates>
-    <panel_attributes>DataStorage.Generation::SequenceGenerator
+    <panel_attributes>Generation.Generation::SequenceGenerator
 --
 --
 +getOutputType(): String

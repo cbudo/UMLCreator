@@ -1,9 +1,9 @@
 package Visitors.SequenceVisitors;
 
+import DataStorage.ParseClasses.ClassTypes.AbstractData;
+import DataStorage.ParseClasses.Internals.MethodRep;
+import DataStorage.ParseClasses.Internals.UsesRelation;
 import DataStorage.ParsedDataStorage;
-import ParseClasses.AbstractData;
-import ParseClasses.MethodRep;
-import ParseClasses.UsesRelation;
 import org.objectweb.asm.ClassVisitor;
 import org.objectweb.asm.MethodVisitor;
 import org.objectweb.asm.Opcodes;

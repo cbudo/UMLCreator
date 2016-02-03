@@ -1,11 +1,11 @@
 package DataStorage;
 
-import ParseClasses.AbstractData;
-import ParseClasses.AbstractJavaClassRep;
-import ParseClasses.IRelation;
-import ParseClasses.MethodCall;
-import Visitors.ITraverser;
-import Visitors.IVisitor;
+import DataStorage.ParseClasses.ClassTypes.AbstractData;
+import DataStorage.ParseClasses.ClassTypes.AbstractJavaClassRep;
+import DataStorage.ParseClasses.Internals.IRelation;
+import DataStorage.ParseClasses.Internals.MethodCall;
+import Visitors.DefaultVisitors.ITraverser;
+import Visitors.DefaultVisitors.IVisitor;
 
 import java.util.*;
 
@@ -24,9 +24,9 @@ public class ParsedDataStorage implements IDataStorage, ITraverser {
     private int max_depth = 5;
 
     private ParsedDataStorage() {
-        this.classes = new HashMap<String, AbstractJavaClassRep>();
-        this.interfaces = new HashMap<String, AbstractJavaClassRep>();
-        this.abstractClasses = new HashMap<String, AbstractJavaClassRep>();
+        this.classes = new HashMap<>();
+        this.interfaces = new HashMap<>();
+        this.abstractClasses = new HashMap<>();
         this.usesRels = new ArrayList<>();
         this.associationRels = new ArrayList<>();
         this.methodCalls = new LinkedList<>();
@@ -101,8 +101,7 @@ public class ParsedDataStorage implements IDataStorage, ITraverser {
         AbstractJavaClassRep data = getNonSpecificJavaClass(cName);
         try {
             data.addMethod(methodRep.getName(), methodRep);
-        } catch (Exception e) {
-            data = null;
+        } catch (Exception ignored) {
         }
     }
 
@@ -111,8 +110,7 @@ public class ParsedDataStorage implements IDataStorage, ITraverser {
         AbstractJavaClassRep data = getNonSpecificJavaClass(cName);
         try {
             data.addField(fieldRep.getName(), fieldRep);
-        } catch (Exception e) {
-            data = null;
+        } catch (Exception ignored) {
         }
     }
 

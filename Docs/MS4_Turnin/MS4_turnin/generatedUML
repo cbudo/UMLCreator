@@ -343,32 +343,32 @@ label = "{Visitor\l|
 
 IGenerator [
 shape = "record",
-label = "{\<\<interface\>\>\lIGenerator\l||ParseClasses.MethodRep@4f3f5b24ParseClasses.MethodRep@15aeb7abParseClasses.MethodRep@7b23ec81}"];
+label = "{\<\<interface\>\>\lIGenerator\l||DataStorage.ParseClasses.Internals.MethodRep@4f3f5b24ParseClasses.MethodRep@15aeb7abParseClasses.MethodRep@7b23ec81}"];
 
 ITraverser [
 shape = "record",
-label = "{\<\<interface\>\>\lITraverser\l||ParseClasses.MethodRep@6acbcfc0}"];
+label = "{\<\<interface\>\>\lITraverser\l||DataStorage.ParseClasses.Internals.MethodRep@6acbcfc0}"];
 
 IDataStorage [
 shape = "record",
-label = "{\<\<interface\>\>\lIDataStorage\l||ParseClasses.MethodRep@5f184fc6ParseClasses.MethodRep@3feba861ParseClasses.MethodRep@5b480cf9ParseClasses.MethodRep@6f496d9fParseClasses.MethodRep@723279cfParseClasses.MethodRep@10f87f48ParseClasses.MethodRep@b4c966aParseClasses.MethodRep@2f4d3709ParseClasses.MethodRep@4e50df2eParseClasses.MethodRep@1d81eb93ParseClasses.MethodRep@7291c18f}"];
+label = "{\<\<interface\>\>\lIDataStorage\l||DataStorage.ParseClasses.Internals.MethodRep@5f184fc6ParseClasses.MethodRep@3feba861ParseClasses.MethodRep@5b480cf9ParseClasses.MethodRep@6f496d9fParseClasses.MethodRep@723279cfParseClasses.MethodRep@10f87f48ParseClasses.MethodRep@b4c966aParseClasses.MethodRep@2f4d3709ParseClasses.MethodRep@4e50df2eParseClasses.MethodRep@1d81eb93ParseClasses.MethodRep@7291c18f}"];
 
 IVisitMethod [
 shape = "record",
-label = "{\<\<interface\>\>\lIVisitMethod\l||ParseClasses.MethodRep@34a245ab}"];
+label = "{\<\<interface\>\>\lIVisitMethod\l||DataStorage.ParseClasses.Internals.MethodRep@34a245ab}"];
 
 IRelation [
 shape = "record",
-label = "{\<\<interface\>\>\lIRelation\l||ParseClasses.MethodRep@7cc355beParseClasses.MethodRep@6e8cf4c6}"];
+label = "{\<\<interface\>\>\lIRelation\l||DataStorage.ParseClasses.Internals.MethodRep@7cc355beParseClasses.MethodRep@6e8cf4c6}"];
 
 ISequenceVisitor [
 shape = "record",
 label = "{\<\<interface\>\>\lISequenceVisitor\l|+ classesVisited : Set\l
-|ParseClasses.MethodRep@12edcd21ParseClasses.MethodRep@34c45dca}"];
+|DataStorage.ParseClasses.Internals.MethodRep@12edcd21ParseClasses.MethodRep@34c45dca}"];
 
 IVisitor [
 shape = "record",
-label = "{\<\<interface\>\>\lIVisitor\l||ParseClasses.MethodRep@52cc8049ParseClasses.MethodRep@5b6f7412ParseClasses.MethodRep@27973e9bParseClasses.MethodRep@312b1daeParseClasses.MethodRep@7530d0a}"];
+label = "{\<\<interface\>\>\lIVisitor\l||DataStorage.ParseClasses.Internals.MethodRep@52cc8049ParseClasses.MethodRep@5b6f7412ParseClasses.MethodRep@27973e9bParseClasses.MethodRep@312b1daeParseClasses.MethodRep@7530d0a}"];
 
 AbstractTypable [
 shape = "record",
