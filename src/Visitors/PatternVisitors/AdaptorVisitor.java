@@ -126,7 +126,7 @@ public class AdaptorVisitor extends AbstractVisitorTemplate {
             if ((m.getAccessibility() & Opcodes.ACC_STATIC) != 0) {
                 if ((m.getSimpleClassName().equals(m.getType()))) {
                     ClassRep cr = (ClassRep) ParsedDataStorage.getInstance().getClass(m.getClassName());
-                    cr.setPublicStaticGetInstatnce(true);
+                    cr.setPublicStaticGetInstance(true);
                 }
             }
         });
