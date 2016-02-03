@@ -30,20 +30,19 @@ public class UMLClassMethodVisitor extends ClassVisitor {
         super(api, decorated);
         this.className = className;
         this.desiredMethodName = desiredMethodName;
-        this.depth = depth;
+        this.depth = currentDepth;
     }
 
 
     @Override
     public MethodVisitor visitMethod(int access, String name, String desc, String signature, String[] exceptions) {
         MethodVisitor toDecorate = super.visitMethod(access, name, desc, signature, exceptions);
-        int accessLevel = access;
         String returnType = addReturnType(desc);
         String[] args = addArguments(desc);
 
         String innerName = getInnermostClass(name);
         String innerRet = getInnermostClass(returnType);
-        AbstractData method = new MethodRep(innerName, accessLevel, innerRet, className);
+        AbstractData method = new MethodRep(innerName, access, innerRet, className);
 
         UsesRelation retUses = new UsesRelation(returnType.replace("/", "."), this.className);//innerRet, getInnermostClass(this.className));
         ParsedDataStorage.getInstance().addUsesRelation(retUses);

@@ -3,10 +3,6 @@ package ParseClasses;
 import Visitors.ITraverser;
 import org.objectweb.asm.Opcodes;
 
-import java.security.KeyRep;
-import java.util.HashMap;
-import java.util.Map;
-
 /**
  * Created by efronbs on 1/7/2016.
  */
@@ -15,7 +11,6 @@ public abstract class AbstractData implements ITraverser
     private String name, displayName;
     private int accessibility;
     private boolean isComponent;
-    private Map<Integer, String> accessibilityTranslator = new HashMap<Integer, String>();
 
     public AbstractData(String name, int accessibility)
     {
@@ -24,10 +19,6 @@ public abstract class AbstractData implements ITraverser
 
         this.accessibility = accessibility;
 
-        this.accessibilityTranslator.put(KeyRep.Type.PUBLIC.ordinal(), "+");
-        this.accessibilityTranslator.put(KeyRep.Type.PRIVATE.ordinal(), "-");
-        this.accessibilityTranslator.put(KeyRep.Type.SECRET.ordinal(), "-");
-        //this.accessibilityTranslator.put("default", "+");
         isComponent = false;
     }
 

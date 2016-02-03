@@ -57,13 +57,13 @@ public class SequenceMethodVisitor extends MethodVisitor {
         String retType = null;
         if (!desc.contains("asm")) {
             args = getArgs(desc);
-            for (String n : args) {
-                //System.out.println("arg: " + n);
-            }
+//            for (String n : args) {
+//                //System.out.println("arg: " + n);
+//            }
             retType = getRetType(desc, name);
-            if (retType != null) {
-                //System.out.println("return type: " + retType);
-            }
+//            if (retType != null) {
+//                //System.out.println("return type: " + retType);
+//            }
         }
 
         MethodCall newSequenceMethod = new MethodCall(this.callingClassName, calledClass, methodName, args, retType);
@@ -84,7 +84,6 @@ public class SequenceMethodVisitor extends MethodVisitor {
         } catch (Exception e) {
             System.out.println("YA DUN FUCKED SON");
             e.printStackTrace();
-            return;
         }
 
     }
@@ -114,7 +113,7 @@ public class SequenceMethodVisitor extends MethodVisitor {
 
     private String[] getArgs(String desc) {
         Type[] argTypes = Type.getMethodArguments(desc);
-        ArrayList<String> argVals = new ArrayList<String>();
+        ArrayList<String> argVals = new ArrayList<>();
         for (Type t : argTypes) {
             if (t != null) {
                 String[] tname = t.getInternalName().split("/");

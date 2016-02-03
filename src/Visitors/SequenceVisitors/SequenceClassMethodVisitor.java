@@ -45,13 +45,12 @@ public class SequenceClassMethodVisitor extends ClassVisitor {
             return toDecorate;
         }
 
-        int accessLevel = access;
         String returnType = addReturnType(desc);
         String[] args = addArguments(desc);
 
         String innerName = getInnermostClass(name);
         String innerRet = getInnermostClass(returnType);
-        AbstractData method = new MethodRep(innerName, accessLevel, innerRet, className);
+        AbstractData method = new MethodRep(innerName, access, innerRet, className);
 
         UsesRelation retUses = new UsesRelation(innerRet, getInnermostClass(this.className));
         ParsedDataStorage.getInstance().addUsesRelation(retUses);
