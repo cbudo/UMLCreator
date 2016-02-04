@@ -1,7 +1,6 @@
 package DataStorage.DataStore;
 
-import DataStorage.ParseClasses.ClassTypes.AbstractData;
-import DataStorage.ParseClasses.ClassTypes.AbstractJavaClassRep;
+import DataStorage.ParseClasses.ClassTypes.*;
 import DataStorage.ParseClasses.Internals.IRelation;
 import DataStorage.ParseClasses.Internals.MethodCall;
 import Visitors.DefaultVisitors.ITraverser;
@@ -212,6 +211,32 @@ public class ParsedDataStorage implements IDataStorage, ITraverser {
             this.associationRels.remove(rel);
         }
     }
+
+    public void removeNonSpecificJavaClass(String toRm) {
+        if (this.classes.containsKey(toRm)) {
+            this.classes.remove(toRm);
+        }
+        if (this.abstractClasses.containsKey(toRm)) {
+            this.abstractClasses.remove(toRm);
+        }
+        if (this.interfaces.containsKey(toRm)) {
+            this.interfaces.remove(toRm);
+        }
+    }
+
+    public void addNonSpecificJavaClass(AbstractJavaClassRep toAdd) {
+        if (toAdd instanceof ClassRep) {
+            this.classes.put(toAdd.getName(), toAdd);
+        }
+        if (toAdd instanceof AbstractClassRep) {
+            this.abstractClasses.put(toAdd.getName(), toAdd);
+        }
+        if (toAdd instanceof InterfaceRep) {
+            this.interfaces.put(toAdd.getName(), toAdd);
+        }
+
+    }
+
 
     @Override
     public void accept(IVisitor v) {
