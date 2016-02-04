@@ -1,9 +1,9 @@
 package Visitors.UMLVisitors;
 
-import DataStorage.ParsedDataStorage;
-import ParseClasses.AbstractData;
-import ParseClasses.MethodRep;
-import ParseClasses.UsesRelation;
+import DataStorage.DataStore.ParsedDataStorage;
+import DataStorage.ParseClasses.ClassTypes.AbstractData;
+import DataStorage.ParseClasses.Internals.MethodRep;
+import DataStorage.ParseClasses.Internals.UsesRelation;
 import org.objectweb.asm.ClassVisitor;
 import org.objectweb.asm.MethodVisitor;
 import org.objectweb.asm.Opcodes;
@@ -30,31 +30,32 @@ public class UMLClassMethodVisitor extends ClassVisitor {
         super(api, decorated);
         this.className = className;
         this.desiredMethodName = desiredMethodName;
-        this.depth = depth;
+        this.depth = currentDepth;
     }
 
 
     @Override
     public MethodVisitor visitMethod(int access, String name, String desc, String signature, String[] exceptions) {
         MethodVisitor toDecorate = super.visitMethod(access, name, desc, signature, exceptions);
-        int accessLevel = access;
         String returnType = addReturnType(desc);
         String[] args = addArguments(desc);
 
         String innerName = getInnermostClass(name);
         String innerRet = getInnermostClass(returnType);
-        AbstractData method = new MethodRep(innerName, accessLevel, innerRet, className);
+        AbstractData method = new MethodRep(innerName, access, innerRet, className);
 
-        UsesRelation retUses = new UsesRelation(innerRet, getInnermostClass(this.className));
+        UsesRelation retUses = new UsesRelation(returnType.replace("/", "."), this.className);//innerRet, getInnermostClass(this.className));
+        ((MethodRep) method).addUsesRelation(retUses);
         ParsedDataStorage.getInstance().addUsesRelation(retUses);
         for (String rel : args) {
-            UsesRelation newUses = new UsesRelation(getInnermostClass(rel), getInnermostClass(this.className));
+            UsesRelation newUses = new UsesRelation(rel.replace("/", "."), this.className);//getInnermostClass(rel), getInnermostClass(this.className));
             ParsedDataStorage.getInstance().addUsesRelation(newUses);
+            ((MethodRep) method).addUsesRelation(newUses);
         }
 
         ParsedDataStorage.getInstance().addMethod(className, method);
         //return new SequenceMethodVisitor(Opcodes.ASM5, toDecorate, depth, className);
-        return new UMLMethodVisitor(Opcodes.ASM5, toDecorate, className);
+        return new UMLMethodVisitor(Opcodes.ASM5, toDecorate, className, innerName);
     }
 
     String addReturnType(String desc) {

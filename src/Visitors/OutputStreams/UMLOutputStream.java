@@ -1,11 +1,13 @@
 package Visitors.OutputStreams;
 
-import DataStorage.ParsedDataStorage;
-import ParseClasses.*;
-import Visitors.ITraverser;
-import Visitors.IVisitor;
-import Visitors.VisitType;
-import Visitors.Visitor;
+import DataStorage.DataStore.ParsedDataStorage;
+import DataStorage.ParseClasses.ClassTypes.*;
+import DataStorage.ParseClasses.Decorators.NamedRelationDecorator;
+import DataStorage.ParseClasses.Internals.*;
+import Visitors.DefaultVisitors.ITraverser;
+import Visitors.DefaultVisitors.IVisitor;
+import Visitors.DefaultVisitors.VisitType;
+import Visitors.DefaultVisitors.Visitor;
 
 import java.io.FilterOutputStream;
 import java.io.IOException;
@@ -53,11 +55,11 @@ public class UMLOutputStream extends FilterOutputStream {
 
     public void setupVisitAbstractClass() {
         this.visitor.addVisit(VisitType.Visit, AbstractClassRep.class, (ITraverser t) -> {
-            AbstractJavaClassRep e = (AbstractJavaClassRep) t;
-            String in = e.getName().substring(e.getName().lastIndexOf("/") + 1);
+            AbstractExtendableClassRep e = (AbstractExtendableClassRep) t;
+            String in = cleanName(e.getName());
             this.write("\n" + in
-                    + " [\nshape = \"record\",\nlabel = \"{"
-                    + "<I>" + in + "</I>" + "\\l" + "|");
+                    + " [\nshape = \"record\", color=\"" + e.getColor() + " \", fillcolor=" + e.getFillColor() + ", style=filled,\nlabel = \"{"
+                    + e.getDisplayName() + "|");
 
             for (AbstractData f : e.getFieldsMap().values()) {
                 f.accept(visitor);
@@ -69,22 +71,26 @@ public class UMLOutputStream extends FilterOutputStream {
             }
 
             this.write("}\"];\n");
+            for (String s :
+                    e.getImplementsList()) {
+                //write for implement arrow
+                makeImplementsArrow(cleanName(e.getName()), cleanName(s));
+            }
+            // write extends arrow
+            makeExtendsArrow(cleanName(e.getName()), cleanName(e.getExtendedClassName()));
         });
     }
 
     public void setupVisitClass() {
         this.visitor.addVisit(VisitType.Visit, ClassRep.class, (ITraverser t) -> {
             ClassRep e = (ClassRep) t;
-            String in = e.getName().substring(e.getName().lastIndexOf("/") + 1);
-            String color = "black";
-            String singleton = "";
-            if (e.isSingleton()) {
-                singleton = "\\<\\<Singleton\\>\\>\\l";
-                color = "blue";
-            }
+            String in = cleanName(e.getInnermostName());//.substring(e.getName().lastIndexOf("/") + 1);
+            String nameToDisplay = e.getDisplayName();
+            String color = e.getColor();
+
             this.write("\n" + in
-                    + " [\nshape = \"record\", color=\"" + color + "\",\nlabel = \"{"
-                    + in + "\\l" + singleton);
+                    + " [\nshape = \"record\", color=\"" + color + "\", fillcolor=" + e.getFillColor() + ", style=filled,\nlabel = \"{"
+                    + nameToDisplay);
             this.write("|\n");
 
             for (AbstractData f : e.getFieldsMap().values()) {
@@ -97,17 +103,24 @@ public class UMLOutputStream extends FilterOutputStream {
             }
 
             this.write("}\"];\n");
+            for (String s :
+                    e.getImplementsList()) {
+                //write for implement arrow
+                makeImplementsArrow(cleanName(e.getName()), cleanName(s));
+            }
+            // write extends arrow
+            makeExtendsArrow(cleanName(e.getName()), cleanName(e.getExtendedClassName()));
         });
     }
 
     public void setupVisitInterface() {
         this.visitor.addVisit(VisitType.Visit, InterfaceRep.class, (ITraverser t) -> {
             InterfaceRep i = (InterfaceRep) t;
-            String in = i.getName().substring(i.getName().lastIndexOf("/") + 1);
+            String in = cleanName(i.getName());
             this.write("\n" + in
-                    + " [\nshape = \"record\",\nlabel = \"{"
+                    + " [\nshape = \"record\", color=\"" + i.getColor() + "\", fillcolor=" + i.getFillColor() + ", style=filled,\nlabel = \"{"
                     + "\\<\\<interface\\>\\>\\l"
-                    + in + "\\l" + "|");
+                    + i.getDisplayName() + "|");
 
             for (AbstractData f : i.getFieldsMap().values()) {
                 f.accept(visitor);
@@ -116,10 +129,16 @@ public class UMLOutputStream extends FilterOutputStream {
             this.write("|");
 
             for (AbstractData m : i.getMethodsMap().values()) {
-                this.write(m.toString());
+                m.accept(visitor);
             }
 
             this.write("}\"];\n");
+            for (String s :
+                    i.getImplementsList()) {
+                //write for extends arrow
+                makeExtendsArrow(cleanName(i.getName()), cleanName(s));
+
+            }
         });
     }
 
@@ -150,20 +169,45 @@ public class UMLOutputStream extends FilterOutputStream {
     }
 
     public void setupPostVisit() {
-        this.visitor.addVisit(VisitType.PostVisit, ParsedDataStorage.class, (ITraverser t) -> {
-            this.write("\n}\n");
-        });
+        this.visitor.addVisit(VisitType.PostVisit, ParsedDataStorage.class, (ITraverser t) -> this.write("\n}\n"));
     }
 
     public void setupRelationVisit() {
         this.visitor.addVisit(VisitType.Visit, UsesRelation.class, (ITraverser t) -> {
             UsesRelation a = (UsesRelation) t;
-            this.write(a.getFrom() + " -> " + a.getTo() + " [arrowhead=\"vee\", style=\"dashed\"];\n");
+            this.write(cleanName(makeSlashes(a.getFrom())) + " -> " + cleanName(makeSlashes(a.getTo())) + " [label = \"" + a.getArrowName() + "\", arrowhead=\"vee\", style=\"dashed\"];\n");
         });
         this.visitor.addVisit(VisitType.Visit, AssociationRelation.class, (ITraverser t) -> {
-            AssociationRelation a = (AssociationRelation) t;
-            this.write(a.getFrom() + " -> " + a.getTo() + " [arrowhead=\"vee\", style=\"solid\"];\n");
+            IRelation a = (IRelation) t;
+            this.write(cleanName(makeSlashes(a.getFrom())) + " -> " + cleanName(makeSlashes(a.getTo())) + " [label = \"" + a.getArrowName() + "\",arrowhead=\"vee\", style=\"solid\"];\n");
         });
+        this.visitor.addVisit(VisitType.Visit, NamedRelationDecorator.class, (ITraverser t) -> {
+            IRelation a = (IRelation) t;
+            this.write(cleanName(makeSlashes(a.getFrom())) + " -> " + cleanName(makeSlashes(a.getTo())) + " [label = \"" + a.getArrowName() + "\",arrowhead=\"vee\", style=\"solid\"];\n");
+        });
+    }
+
+    public void makeExtendsArrow(String className, String extendedClass) {
+        if (ParsedDataStorage.getInstance().containsClass(className) && ParsedDataStorage.getInstance().containsClass(extendedClass))
+            this.write(className + " -> " + extendedClass + " [arrowhead=\"onormal\", style=\"solid\"];\n");
+    }
+
+    public void makeImplementsArrow(String className, String implementedClass) {
+        if (ParsedDataStorage.getInstance().containsClass(className) && ParsedDataStorage.getInstance().containsClass(implementedClass))
+            this.write(className + " -> " + implementedClass + " [arrowhead=\"onormal\", style=\"dashed\"];\n");
+
+    }
+
+    public String cleanName(String in) {
+        return in.substring(in.lastIndexOf("/") + 1).substring(in.lastIndexOf(".") + 1);
+    }
+
+    public String makeSlashes(String n) {
+        if (n.contains(".")) {
+            n = n.replace(".", "/");
+        }
+
+        return n;
     }
 
 }

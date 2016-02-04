@@ -2,21 +2,48 @@ digraph UML_Diagram
 {
 rankdir=BT;
 
-ChocolateBoiler [
-shape = "record", color="blue",
-label = "{ChocolateBoiler\l\<\<Singleton\>\>\l|
-- boiled : boolean\l
-- uniqueInstance : ChocolateBoiler\l
-- empty : boolean\l
-|- init : void\l
-+ isEmpty : boolean\l
-+ getInstance : ChocolateBoiler\l
-+ fill : void\l
-+ isBoiled : boolean\l
-+ drain : void\l
-+ boil : void\l
+IteratorToEnumerationAdapter [
+shape = "record", color="maroon", fillcolor=white, style=filled,
+label = "{IteratorToEnumerationAdapter\n\<\<adaptor\>\>\n|
+- itr : Iterator\l
+|+ init : void\l
++ hasMoreElements : boolean\l
++ nextElement : Object\l
 }"];
-ChocolateBoiler -> boolean [arrowhead="vee", style="solid"];
-ChocolateBoiler -> ChocolateBoiler [arrowhead="vee", style="solid"];
+IteratorToEnumerationAdapter -> Enumeration [arrowhead="onormal", style="dashed"];
+
+App [
+shape = "record", color="black", fillcolor=white, style=filled,
+label = "{App\n|
+|+ init : void\l
++ main : void\l
+}"];
+
+LinearTransformer [
+shape = "record", color="black", fillcolor=white, style=filled,
+label = "{LinearTransformer\n|
+- enumTion : Enumeration\l
+|+ init : void\l
++ transform : void\l
+}"];
+
+Iterator [
+shape = "record", color="maroon", fillcolor=white, style=filled,
+label = "{\<\<interface\>\>\lIterator\n\<\<adaptee\>\>\n||+ next : Object\l
++ hasNext : boolean\l
++ forEachRemaining : void\l
++ remove : void\l
+}"];
+
+Enumeration [
+shape = "record", color="maroon", fillcolor=white, style=filled,
+label = "{\<\<interface\>\>\lEnumeration\n\<\<target\>\>\n||+ hasMoreElements : boolean\l
++ nextElement : Object\l
+}"];
+App -> IteratorToEnumerationAdapter [label = "", arrowhead="vee", style="dashed"];
+App -> LinearTransformer [label = "", arrowhead="vee", style="dashed"];
+Iterator -> Iterator [label = "", arrowhead="vee", style="dashed"];
+LinearTransformer -> Enumeration [label = "",arrowhead="vee", style="solid"];
+IteratorToEnumerationAdapter -> Iterator [label = "\n\<\<adapts\>\>",arrowhead="vee", style="solid"];
 
 }
