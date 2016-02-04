@@ -2,48 +2,863 @@ digraph UML_Diagram
 {
 rankdir=BT;
 
-IteratorToEnumerationAdapter [
-shape = "record", color="maroon", fillcolor=white, style=filled,
-label = "{IteratorToEnumerationAdapter\n\<\<adaptor\>\>\n|
-- itr : Iterator\l
-|+ init : void\l
-+ hasMoreElements : boolean\l
-+ nextElement : Object\l
-}"];
-IteratorToEnumerationAdapter -> Enumeration [arrowhead="onormal", style="dashed"];
-
-App [
+AssociationRelation [
 shape = "record", color="black", fillcolor=white, style=filled,
-label = "{App\n|
+label = "{AssociationRelation\n|
+# from : String\l
+# to : String\l
 |+ init : void\l
++ hashCode : int\l
++ equals : boolean\l
++ getTo : String\l
++ getArrowName : String\l
++ getFrom : String\l
++ accept : void\l
+}"];
+AssociationRelation -> IRelation [arrowhead="onormal", style="dashed"];
+
+PatternTypeClassDecorator [
+shape = "record", color="black", fillcolor=white, style=filled,
+label = "{PatternTypeClassDecorator\n|
+- classToDecorate : ClassRep\l
+- patternName : String\l
+|+ getProfileTags : List\l
++ setDecorator : void\l
++ getName : String\l
++ isDecorator : boolean\l
++ getExtendedClassName : String\l
++ getFieldsMap : Map\l
++ addProfileTag : void\l
++ getMethod : AbstractData\l
++ getTranslatedAccessibility : String\l
++ addImplements : void\l
++ setPrivateSingletonInit : void\l
++ addMethod : void\l
++ init : void\l
++ addToDisplayName : void\l
++ addField : void\l
++ getField : AbstractData\l
++ setPublicStaticGetInstance : void\l
++ setPrivateSingletonField : void\l
++ isSingleton : boolean\l
++ getColor : String\l
++ setComponent : void\l
++ getInnermostName : String\l
++ accept : void\l
++ setFillColor : void\l
++ setColor : void\l
++ getAccessibility : int\l
++ getDisplayName : String\l
++ getMethodsMap : Map\l
++ getFillColor : String\l
++ getImplementsList : List\l
++ isComponent : boolean\l
+}"];
+PatternTypeClassDecorator -> AbstractJavaClassRep [arrowhead="onormal", style="solid"];
+
+UMLMethodVisitor [
+shape = "record", color="black", fillcolor=white, style=filled,
+label = "{UMLMethodVisitor\n|
+- callingClassName : String\l
+- methodName : String\l
+- fullCallingClassName : String\l
+|- getCalledClass : String\l
++ init : void\l
++ visitMethodInsn : void\l
+}"];
+
+MethodCall [
+shape = "record", color="black", fillcolor=white, style=filled,
+label = "{MethodCall\n|
+- args : String[]\l
+- retType : String\l
+- fullClassName : String\l
+- calledClass : String\l
+- callingClass : String\l
+- methodName : String\l
+|+ init : void\l
++ getRetType : String\l
++ GetCallingClass : String\l
++ GetArgs : String[]\l
++ GetMethodName : String\l
++ equals : boolean\l
++ getFullClassName : String\l
++ GetCalledClass : String\l
++ setFullClassName : void\l
++ accept : void\l
+}"];
+MethodCall -> ITraverser [arrowhead="onormal", style="dashed"];
+
+SequenceOutputStream [
+shape = "record", color="black", fillcolor=white, style=filled,
+label = "{SequenceOutputStream\n|
+- visitedClasses : Set\l
+- methods : StringBuilder\l
+- classes : StringBuilder\l
+- visitor : IVisitor\l
+|+ init : void\l
+- appendArgs : void\l
++ write : void\l
+- lambda$setupClassVisit$0 : void\l
++ setupClassVisit : void\l
+- addClass : void\l
+- addMethod : void\l
+}"];
+
+GeneratorFactory [
+shape = "record", color="black", fillcolor=white, style=filled,
+label = "{GeneratorFactory\n|
+|+ init : void\l
++ getGenerator : IGenerator\l
+}"];
+
+UMLOutputStream [
+shape = "record", color="black", fillcolor=white, style=filled,
+label = "{UMLOutputStream\n|
+- visitor : IVisitor\l
+|+ init : void\l
+- lambda$setupVisitAbstractClass$0 : void\l
++ setupPostVisit : void\l
+- lambda$setupVisitInterface$2 : void\l
++ setupPrevisit : void\l
++ setupVisitAbstractClass : void\l
+- lambda$setupVisitMethod$3 : void\l
++ setupVisitInterface : void\l
++ makeExtendsArrow : void\l
+- lambda$setupPostVisit$6 : void\l
++ cleanName : String\l
+- lambda$setupRelationVisit$9 : void\l
++ setupVisitField : void\l
++ setupVisitMethod : void\l
++ setupRelationVisit : void\l
++ makeImplementsArrow : void\l
+- lambda$setupRelationVisit$7 : void\l
+- lambda$setupVisitField$4 : void\l
+- lambda$setupRelationVisit$8 : void\l
+- lambda$setupVisitClass$1 : void\l
+- lambda$setupPrevisit$5 : void\l
++ setupVisitClass : void\l
++ write : void\l
++ makeSlashes : String\l
+}"];
+
+DesignParser [
+shape = "record", color="black", fillcolor=white, style=filled,
+label = "{DesignParser\n|
+|+ init : void\l
+- getGenerationType : String\l
+- isMethodSignature : boolean\l
 + main : void\l
 }"];
 
-LinearTransformer [
+AdaptorVisitor [
 shape = "record", color="black", fillcolor=white, style=filled,
-label = "{LinearTransformer\n|
-- enumTion : Enumeration\l
+label = "{AdaptorVisitor\n|
++ adaptorSets : List\l
++ adaptorsFound : AdaptorVisitor$PossibleAdaptorClasses\l
+|- lambda$setupMethodVisit$1 : void\l
++ init : void\l
++ performVisits : void\l
+- addNewClasses : void\l
++ performAnalysis : void\l
++ performSetup : void\l
+- setupMethodVisit : void\l
+- downTheRabbitHole : void\l
+- lambda$setupClassVisit$0 : void\l
+- setupClassVisit : void\l
+}"];
+AdaptorVisitor -> AbstractVisitorTemplate [arrowhead="onormal", style="solid"];
+
+GraphGenerator [
+shape = "record", color="black", fillcolor=white, style=filled,
+label = "{GraphGenerator\n|
+|+ buildUMLClassDiagram : String\l
++ init : void\l
++ getOutputType : String\l
++ Generate : String\l
++ parse : void\l
+}"];
+GraphGenerator -> IGenerator [arrowhead="onormal", style="dashed"];
+
+ParsedDataStorage [
+shape = "record", color="blue", fillcolor=green, style=filled,
+label = "{ParsedDataStorage\n\<\<Singleton\>\>\n\<\<decorator\>\>\n\<\<component\>\>\n|
+- associationRels : List\l
+- interfaces : Map\l
+- max_depth : int\l
+- classes : Map\l
+- includedClasses : List\l
+- methodCalls : List\l
+- storage : ParsedDataStorage\l
+- usesRels : List\l
+- abstractClasses : Map\l
+|+ getClass : AbstractJavaClassRep\l
++ addAbstractClass : void\l
++ setMax_depth : void\l
++ removeNonSpecificJavaClass : void\l
++ removeRelation : void\l
++ containsClass : boolean\l
++ getUsesRels : List\l
++ addUsesRelation : boolean\l
++ checkContains : boolean\l
++ getClasses : Collection\l
++ addClass : void\l
++ addMethod : void\l
+- init : void\l
++ getInterface : AbstractJavaClassRep\l
++ addNonSpecificJavaClass : void\l
++ getInterfacade : AbstractJavaClassRep\l
++ getAbstractClasses : Collection\l
++ getInterfaces : Collection\l
++ addField : void\l
++ getMax_depth : int\l
++ accept : void\l
+- destroySelf : void\l
++ cleanName : String\l
++ addInterfaces : void\l
++ addMethodCall : boolean\l
++ addAssociationRelation : boolean\l
++ getAbstractClass : AbstractJavaClassRep\l
++ getNonSpecificJavaClass : AbstractJavaClassRep\l
++ getAssociationRels : List\l
++ getInstance : ParsedDataStorage\l
++ usedClasses : Iterator\l
++ getMethods : MethodCall[]\l
+}"];
+ParsedDataStorage -> IDataStorage [arrowhead="onormal", style="dashed"];
+ParsedDataStorage -> ITraverser [arrowhead="onormal", style="dashed"];
+
+FieldRep [
+shape = "record", color="maroon", fillcolor=white, style=filled,
+label = "{FieldRep\n\<\<adaptor\>\>\n|
+- className : String\l
 |+ init : void\l
-+ transform : void\l
++ getSimpleClassName : String\l
++ getClassName : String\l
++ accept : void\l
+}"];
+FieldRep -> AbstractTypable [arrowhead="onormal", style="solid"];
+
+InterfaceRep [
+shape = "record", color="black", fillcolor=white, style=filled,
+label = "{InterfaceRep\n|
+|+ init : void\l
++ accept : void\l
+}"];
+InterfaceRep -> AbstractJavaClassRep [arrowhead="onormal", style="solid"];
+
+ClassDeclarationVisitor [
+shape = "record", color="maroon", fillcolor=green, style=filled,
+label = "{ClassDeclarationVisitor\n\<\<adaptor\>\>\n\<\<decorator\>\>\n|
+# className : String\l
+|+ init : void\l
++ visit : void\l
+}"];
+ClassDeclarationVisitor -> ClassVisitor [arrowhead="onormal", style="solid"];
+
+String [
+shape = "record", color="maroon", fillcolor=white, style=filled,
+label = "{String\n\<\<adaptee\>\>\n|
+- serialPersistentFields : ObjectStreamField[]\l
++ CASE_INSENSITIVE_ORDER : Comparator\l
+- serialVersionUID : long\l
+- value : char[]\l
+- hash : int\l
+|+ toCharArray : char[]\l
++ codePointAt : int\l
+- indexOfSupplementary : int\l
++ replace : String\l
++ regionMatches : boolean\l
++ replaceFirst : String\l
++ compareTo : int\l
++ replaceAll : String\l
++ getBytes : byte[]\l
++ substring : String\l
++ split : String[]\l
++ trim : String\l
+- checkBounds : void\l
++ hashCode : int\l
++ toUpperCase : String\l
++ join : String\l
++ codePointBefore : int\l
++ equalsIgnoreCase : boolean\l
+# indexOf : int\l
++ copyValueOf : String\l
++ codePointCount : int\l
++ compareToIgnoreCase : int\l
+- lastIndexOfSupplementary : int\l
+# init : void\l
++ intern : String\l
++ getChars : void\l
++ valueOf : String\l
++ contentEquals : boolean\l
++ toLowerCase : String\l
++ length : int\l
++ isEmpty : boolean\l
++ format : String\l
+# clinit : void\l
++ subSequence : CharSequence\l
++ concat : String\l
++ matches : boolean\l
+# lastIndexOf : int\l
++ contains : boolean\l
++ equals : boolean\l
++ endsWith : boolean\l
+- nonSyncContentEquals : boolean\l
++ toString : String\l
++ charAt : char\l
++ offsetByCodePoints : int\l
++ startsWith : boolean\l
 }"];
 
-Iterator [
-shape = "record", color="maroon", fillcolor=white, style=filled,
-label = "{\<\<interface\>\>\lIterator\n\<\<adaptee\>\>\n||+ next : Object\l
-+ hasNext : boolean\l
-+ forEachRemaining : void\l
-+ remove : void\l
+SingletonVisitor [
+shape = "record", color="black", fillcolor=white, style=filled,
+label = "{SingletonVisitor\n|
+|- lambda$setupMethodVisit$1 : void\l
++ init : void\l
+- setupFieldVisit : void\l
++ performVisits : void\l
+- setupMethodPostVisit : void\l
++ performAnalysis : void\l
+- lambda$setupMethodPostVisit$2 : void\l
++ performSetup : void\l
+- setupMethodVisit : void\l
+- lambda$setupFieldVisit$3 : void\l
+}"];
+SingletonVisitor -> AbstractVisitorTemplate [arrowhead="onormal", style="solid"];
+
+VisitType [
+shape = "record", color="black", fillcolor=green, style=filled,
+label = "{VisitType\n\<\<decorator\>\>\n\<\<component\>\>\n|
++ PreVisit : VisitType\l
++ Visit : VisitType\l
++ PostVisit : VisitType\l
+- $VALUES : VisitType[]\l
+|- init : void\l
++ valueOf : VisitType\l
++ values : VisitType[]\l
+# clinit : void\l
 }"];
 
-Enumeration [
-shape = "record", color="maroon", fillcolor=white, style=filled,
-label = "{\<\<interface\>\>\lEnumeration\n\<\<target\>\>\n||+ hasMoreElements : boolean\l
-+ nextElement : Object\l
+DecoratorVisitor [
+shape = "record", color="black", fillcolor=white, style=filled,
+label = "{DecoratorVisitor\n|
+|+ init : void\l
++ performVisits : void\l
++ performAnalysis : void\l
++ performSetup : void\l
 }"];
-App -> IteratorToEnumerationAdapter [label = "", arrowhead="vee", style="dashed"];
-App -> LinearTransformer [label = "", arrowhead="vee", style="dashed"];
-Iterator -> Iterator [label = "", arrowhead="vee", style="dashed"];
-LinearTransformer -> Enumeration [label = "",arrowhead="vee", style="solid"];
-IteratorToEnumerationAdapter -> Iterator [label = "\n\<\<adapts\>\>",arrowhead="vee", style="solid"];
+DecoratorVisitor -> AbstractVisitorTemplate [arrowhead="onormal", style="solid"];
+
+SingletonClass [
+shape = "record", color="maroon", fillcolor=white, style=filled,
+label = "{SingletonClass\n\<\<adaptor\>\>\n|
+# decorated : ClassRep\l
+|+ init : void\l
++ accept : void\l
+}"];
+SingletonClass -> AbstractExtendableClassRep [arrowhead="onormal", style="solid"];
+
+SequenceGenerator [
+shape = "record", color="black", fillcolor=white, style=filled,
+label = "{SequenceGenerator\n|
+|+ init : void\l
++ getOutputType : String\l
++ Generate : String\l
++ parse : void\l
+}"];
+SequenceGenerator -> IGenerator [arrowhead="onormal", style="dashed"];
+
+ClassFieldVisitor [
+shape = "record", color="maroon", fillcolor=green, style=filled,
+label = "{ClassFieldVisitor\n\<\<adaptor\>\>\n\<\<decorator\>\>\n|
+# className : String\l
+|+ init : void\l
++ visitField : FieldVisitor\l
+- getInnermostClass : String\l
+}"];
+ClassFieldVisitor -> ClassVisitor [arrowhead="onormal", style="solid"];
+
+UsesRelation [
+shape = "record", color="black", fillcolor=white, style=filled,
+label = "{UsesRelation\n|
+- from : String\l
+- to : String\l
+|+ init : void\l
++ hashCode : int\l
++ equals : boolean\l
++ getTo : String\l
++ getArrowName : String\l
++ getFrom : String\l
++ accept : void\l
+}"];
+UsesRelation -> IRelation [arrowhead="onormal", style="dashed"];
+
+LookupKey [
+shape = "record", color="black", fillcolor=white, style=filled,
+label = "{LookupKey\n|
+# clazz : Class\l
+# visitType : VisitType\l
+|+ init : void\l
++ hashCode : int\l
++ equals : boolean\l
+}"];
+
+MethodRep [
+shape = "record", color="black", fillcolor=white, style=filled,
+label = "{MethodRep\n|
+- className : String\l
+- usesRelations : List\l
+|+ init : void\l
++ getUsesRelations : List\l
++ getSimpleClassName : String\l
++ addUsesRelation : void\l
++ getClassName : String\l
++ accept : void\l
+}"];
+MethodRep -> AbstractTypable [arrowhead="onormal", style="solid"];
+
+UMLClassMethodVisitor [
+shape = "record", color="black", fillcolor=green, style=filled,
+label = "{UMLClassMethodVisitor\n\<\<decorator\>\>\n|
+# depth : int\l
+# className : String\l
+# desiredMethodName : String\l
+|+ init : void\l
+# addArguments : String[]\l
+- getInnermostClass : String\l
++ visitMethod : MethodVisitor\l
+# addReturnType : String\l
+}"];
+UMLClassMethodVisitor -> ClassVisitor [arrowhead="onormal", style="solid"];
+
+Visitor [
+shape = "record", color="black", fillcolor=white, style=filled,
+label = "{Visitor\n|
+# keyToVisitMethodMap : Map\l
+|+ init : void\l
++ postVisit : void\l
+- doVisit : void\l
++ preVisit : void\l
++ addVisit : void\l
++ removeVisit : void\l
++ visit : void\l
+}"];
+Visitor -> IVisitor [arrowhead="onormal", style="dashed"];
+
+SequenceMethodVisitor [
+shape = "record", color="black", fillcolor=white, style=filled,
+label = "{SequenceMethodVisitor\n|
+- callingClassName : String\l
+- depth : int\l
+- fullCallingClassName : String\l
+|- getCalledClass : String\l
++ init : void\l
+- getRetType : String\l
++ visitMethodInsn : void\l
+- downTheRabbitHole : void\l
+- getArgs : String[]\l
+}"];
+
+NamedRelationDecorator [
+shape = "record", color="black", fillcolor=white, style=filled,
+label = "{NamedRelationDecorator\n|
+- decoratee : IRelation\l
+- arrowName : String\l
+|+ init : void\l
++ hashCode : int\l
++ equals : boolean\l
++ getTo : String\l
++ getArrowName : String\l
++ getFrom : String\l
++ accept : void\l
+}"];
+NamedRelationDecorator -> IRelation [arrowhead="onormal", style="dashed"];
+
+ClassRep [
+shape = "record", color="maroon", fillcolor=white, style=filled,
+label = "{ClassRep\n\<\<adaptee\>\>\n|
+- privateSingletonInit : boolean\l
+- privateSingletonField : boolean\l
+- publicStaticGetInstance : boolean\l
+|+ init : void\l
++ setPrivateSingletonInit : void\l
++ setPublicStaticGetInstance : void\l
++ setPrivateSingletonField : void\l
++ isSingleton : boolean\l
++ accept : void\l
+}"];
+ClassRep -> AbstractExtendableClassRep [arrowhead="onormal", style="solid"];
+
+SequenceClassMethodVisitor [
+shape = "record", color="black", fillcolor=green, style=filled,
+label = "{SequenceClassMethodVisitor\n\<\<decorator\>\>\n|
+# depth : int\l
+# className : String\l
+# desiredMethodName : String\l
+|+ init : void\l
+# addArguments : String[]\l
+- getInnermostClass : String\l
++ visitMethod : MethodVisitor\l
+# addReturnType : String\l
+}"];
+SequenceClassMethodVisitor -> ClassVisitor [arrowhead="onormal", style="solid"];
+
+AbstractClassRep [
+shape = "record", color="black", fillcolor=white, style=filled,
+label = "{AbstractClassRep\n|
+|+ init : void\l
++ accept : void\l
+}"];
+AbstractClassRep -> AbstractExtendableClassRep [arrowhead="onormal", style="solid"];
+
+IGenerator [
+shape = "record", color="black", fillcolor=white, style=filled,
+label = "{\<\<interface\>\>\lIGenerator\n||+ getOutputType : String\l
++ Generate : String\l
++ parse : void\l
+}"];
+
+IVisitMethod [
+shape = "record", color="black", fillcolor=white, style=filled,
+label = "{\<\<interface\>\>\lIVisitMethod\n||+ execute : void\l
+}"];
+
+IVisitor [
+shape = "record", color="black", fillcolor=white, style=filled,
+label = "{\<\<interface\>\>\lIVisitor\n||+ postVisit : void\l
++ preVisit : void\l
++ addVisit : void\l
++ removeVisit : void\l
++ visit : void\l
+}"];
+
+IDataStorage [
+shape = "record", color="black", fillcolor=white, style=filled,
+label = "{\<\<interface\>\>\lIDataStorage\n||+ getClass : AbstractJavaClassRep\l
++ addInterfaces : void\l
++ getAbstractClasses : Collection\l
++ getInterfacade : AbstractJavaClassRep\l
++ addAbstractClass : void\l
++ getNonSpecificJavaClass : AbstractJavaClassRep\l
++ getInterfaces : Collection\l
++ addField : void\l
++ getMethods : MethodCall[]\l
++ getClasses : Collection\l
++ addMethod : void\l
++ addClass : void\l
+}"];
+
+ITraverser [
+shape = "record", color="black", fillcolor=white, style=filled,
+label = "{\<\<interface\>\>\lITraverser\n||+ accept : void\l
+}"];
+
+IRelation [
+shape = "record", color="black", fillcolor=white, style=filled,
+label = "{\<\<interface\>\>\lIRelation\n||+ getTo : String\l
++ getArrowName : String\l
++ getFrom : String\l
+}"];
+IRelation -> ITraverser [arrowhead="onormal", style="solid"];
+
+AbstractTypable [
+shape = "record", color="maroon ", fillcolor=white, style=filled,
+label = "{AbstractTypable\n\<\<target\>\>\n|- type : String\l
+- fullType : String\l
+|+ init : void\l
++ getType : String\l
++ getFullType : String\l
+}"];
+AbstractTypable -> AbstractData [arrowhead="onormal", style="solid"];
+
+AbstractVisitorTemplate [
+shape = "record", color="black ", fillcolor=white, style=filled,
+label = "{AbstractVisitorTemplate\n|+ data : IDataStorage\l
++ visitor : IVisitor\l
+|+ init : void\l
++ performVisits : void\l
++ doTheStuff : void\l
++ performAnalysis : void\l
++ performSetup : void\l
+}"];
+
+AbstractExtendableClassRep [
+shape = "record", color="maroon ", fillcolor=white, style=filled,
+label = "{AbstractExtendableClassRep\n\<\<target\>\>\n|- extendedClassName : String\l
+|+ init : void\l
++ addField : void\l
++ getExtendedClassName : String\l
+}"];
+AbstractExtendableClassRep -> AbstractJavaClassRep [arrowhead="onormal", style="solid"];
+
+AbstractJavaClassRep [
+shape = "record", color="black ", fillcolor=white, style=filled,
+label = "{AbstractJavaClassRep\n|- fillColor : String\l
+- implementsNames : List\l
+# fieldsMap : Map\l
+- color : String\l
+- profileTags : List\l
+# isDecorator : boolean\l
+# methodsMap : Map\l
+|+ init : void\l
++ getProfileTags : List\l
++ setDecorator : void\l
++ isDecorator : boolean\l
++ addField : void\l
++ getField : AbstractData\l
++ getFieldsMap : Map\l
++ getColor : String\l
++ addProfileTag : void\l
++ getMethod : AbstractData\l
++ setFillColor : void\l
++ addImplements : void\l
++ setColor : void\l
++ getMethodsMap : Map\l
++ getFillColor : String\l
++ getImplementsList : List\l
++ addMethod : void\l
+}"];
+AbstractJavaClassRep -> AbstractData [arrowhead="onormal", style="solid"];
+
+AbstractData [
+shape = "record", color="black ", fillcolor=white, style=filled,
+label = "{AbstractData\n|- accessibility : int\l
+- displayName : String\l
+- name : String\l
+- isComponent : boolean\l
+|+ init : void\l
++ getName : String\l
++ getAccessibility : int\l
++ getDisplayName : String\l
++ addToDisplayName : void\l
++ setComponent : void\l
++ getInnermostName : String\l
++ getTranslatedAccessibility : String\l
++ isComponent : boolean\l
+}"];
+AbstractData -> ITraverser [arrowhead="onormal", style="dashed"];
+
+ClassVisitor [
+shape = "record", color="maroon ", fillcolor=green, style=filled,
+label = "{ClassVisitor\n\<\<target\>\>\n\<\<decorator\>\>\n|# cv : ClassVisitor\l
+# api : int\l
+|+ init : void\l
++ visitField : FieldVisitor\l
++ visitTypeAnnotation : AnnotationVisitor\l
++ visitInnerClass : void\l
++ visitEnd : void\l
++ visitOuterClass : void\l
++ visitAttribute : void\l
++ visit : void\l
++ visitAnnotation : AnnotationVisitor\l
++ visitMethod : MethodVisitor\l
++ visitSource : void\l
+}"];
+IDataStorage -> AbstractJavaClassRep [label = "", arrowhead="vee", style="dashed"];
+IDataStorage -> String [label = "", arrowhead="vee", style="dashed"];
+IDataStorage -> AbstractData [label = "", arrowhead="vee", style="dashed"];
+ParsedDataStorage -> String [label = "", arrowhead="vee", style="dashed"];
+ParsedDataStorage -> AbstractJavaClassRep [label = "", arrowhead="vee", style="dashed"];
+ParsedDataStorage -> MethodCall [label = "", arrowhead="vee", style="dashed"];
+ParsedDataStorage -> AbstractData [label = "", arrowhead="vee", style="dashed"];
+ParsedDataStorage -> IRelation [label = "", arrowhead="vee", style="dashed"];
+ParsedDataStorage -> IVisitor [label = "", arrowhead="vee", style="dashed"];
+AbstractClassRep -> String [label = "", arrowhead="vee", style="dashed"];
+AbstractClassRep -> AbstractExtendableClassRep [label = "", arrowhead="vee", style="dashed"];
+AbstractClassRep -> IVisitor [label = "", arrowhead="vee", style="dashed"];
+AbstractData -> AbstractData [label = "", arrowhead="vee", style="dashed"];
+AbstractExtendableClassRep -> AbstractExtendableClassRep [label = "", arrowhead="vee", style="dashed"];
+AbstractExtendableClassRep -> AbstractJavaClassRep [label = "", arrowhead="vee", style="dashed"];
+AbstractExtendableClassRep -> ParsedDataStorage [label = "", arrowhead="vee", style="dashed"];
+AbstractExtendableClassRep -> AbstractData [label = "", arrowhead="vee", style="dashed"];
+AbstractExtendableClassRep -> FieldRep [label = "", arrowhead="vee", style="dashed"];
+AbstractJavaClassRep -> String [label = "", arrowhead="vee", style="dashed"];
+AbstractJavaClassRep -> AbstractJavaClassRep [label = "", arrowhead="vee", style="dashed"];
+AbstractJavaClassRep -> AbstractData [label = "", arrowhead="vee", style="dashed"];
+AbstractJavaClassRep -> FieldRep [label = "", arrowhead="vee", style="dashed"];
+AbstractJavaClassRep -> ParsedDataStorage [label = "", arrowhead="vee", style="dashed"];
+AbstractTypable -> AbstractData [label = "", arrowhead="vee", style="dashed"];
+AbstractTypable -> ParsedDataStorage [label = "", arrowhead="vee", style="dashed"];
+ClassRep -> String [label = "", arrowhead="vee", style="dashed"];
+ClassRep -> AbstractExtendableClassRep [label = "", arrowhead="vee", style="dashed"];
+ClassRep -> IVisitor [label = "", arrowhead="vee", style="dashed"];
+InterfaceRep -> String [label = "", arrowhead="vee", style="dashed"];
+InterfaceRep -> AbstractJavaClassRep [label = "", arrowhead="vee", style="dashed"];
+InterfaceRep -> IVisitor [label = "", arrowhead="vee", style="dashed"];
+NamedRelationDecorator -> String [label = "", arrowhead="vee", style="dashed"];
+NamedRelationDecorator -> IVisitor [label = "", arrowhead="vee", style="dashed"];
+PatternTypeClassDecorator -> String [label = "", arrowhead="vee", style="dashed"];
+PatternTypeClassDecorator -> AbstractJavaClassRep [label = "", arrowhead="vee", style="dashed"];
+PatternTypeClassDecorator -> IVisitor [label = "", arrowhead="vee", style="dashed"];
+PatternTypeClassDecorator -> AbstractData [label = "", arrowhead="vee", style="dashed"];
+SingletonClass -> IVisitor [label = "", arrowhead="vee", style="dashed"];
+AssociationRelation -> IVisitor [label = "", arrowhead="vee", style="dashed"];
+AssociationRelation -> AssociationRelation [label = "", arrowhead="vee", style="dashed"];
+AssociationRelation -> IRelation [label = "", arrowhead="vee", style="dashed"];
+FieldRep -> AbstractTypable [label = "", arrowhead="vee", style="dashed"];
+FieldRep -> IVisitor [label = "", arrowhead="vee", style="dashed"];
+IRelation -> String [label = "", arrowhead="vee", style="dashed"];
+MethodCall -> MethodCall [label = "", arrowhead="vee", style="dashed"];
+MethodCall -> IVisitor [label = "", arrowhead="vee", style="dashed"];
+MethodRep -> String [label = "", arrowhead="vee", style="dashed"];
+MethodRep -> AbstractTypable [label = "", arrowhead="vee", style="dashed"];
+MethodRep -> UsesRelation [label = "", arrowhead="vee", style="dashed"];
+MethodRep -> IVisitor [label = "", arrowhead="vee", style="dashed"];
+UsesRelation -> IVisitor [label = "", arrowhead="vee", style="dashed"];
+UsesRelation -> UsesRelation [label = "", arrowhead="vee", style="dashed"];
+UsesRelation -> IRelation [label = "", arrowhead="vee", style="dashed"];
+GeneratorFactory -> IGenerator [label = "", arrowhead="vee", style="dashed"];
+GeneratorFactory -> String [label = "", arrowhead="vee", style="dashed"];
+GeneratorFactory -> GraphGenerator [label = "", arrowhead="vee", style="dashed"];
+GeneratorFactory -> SequenceGenerator [label = "", arrowhead="vee", style="dashed"];
+GraphGenerator -> String [label = "", arrowhead="vee", style="dashed"];
+GraphGenerator -> ParsedDataStorage [label = "", arrowhead="vee", style="dashed"];
+GraphGenerator -> SingletonVisitor [label = "", arrowhead="vee", style="dashed"];
+GraphGenerator -> AdaptorVisitor [label = "", arrowhead="vee", style="dashed"];
+GraphGenerator -> AbstractVisitorTemplate [label = "", arrowhead="vee", style="dashed"];
+GraphGenerator -> UMLOutputStream [label = "", arrowhead="vee", style="dashed"];
+GraphGenerator -> DecoratorVisitor [label = "", arrowhead="vee", style="dashed"];
+GraphGenerator -> GraphGenerator [label = "", arrowhead="vee", style="dashed"];
+GraphGenerator -> ClassDeclarationVisitor [label = "", arrowhead="vee", style="dashed"];
+GraphGenerator -> ClassFieldVisitor [label = "", arrowhead="vee", style="dashed"];
+GraphGenerator -> UMLClassMethodVisitor [label = "", arrowhead="vee", style="dashed"];
+IGenerator -> String [label = "", arrowhead="vee", style="dashed"];
+SequenceGenerator -> String [label = "", arrowhead="vee", style="dashed"];
+SequenceGenerator -> ParsedDataStorage [label = "", arrowhead="vee", style="dashed"];
+SequenceGenerator -> SequenceOutputStream [label = "", arrowhead="vee", style="dashed"];
+SequenceGenerator -> ClassDeclarationVisitor [label = "", arrowhead="vee", style="dashed"];
+SequenceGenerator -> ClassFieldVisitor [label = "", arrowhead="vee", style="dashed"];
+SequenceGenerator -> SequenceClassMethodVisitor [label = "", arrowhead="vee", style="dashed"];
+ClassDeclarationVisitor -> ClassVisitor [label = "", arrowhead="vee", style="dashed"];
+ClassDeclarationVisitor -> ParsedDataStorage [label = "", arrowhead="vee", style="dashed"];
+ClassDeclarationVisitor -> InterfaceRep [label = "", arrowhead="vee", style="dashed"];
+ClassDeclarationVisitor -> AbstractClassRep [label = "", arrowhead="vee", style="dashed"];
+ClassDeclarationVisitor -> ClassRep [label = "", arrowhead="vee", style="dashed"];
+ClassFieldVisitor -> ClassVisitor [label = "", arrowhead="vee", style="dashed"];
+ClassFieldVisitor -> FieldRep [label = "", arrowhead="vee", style="dashed"];
+ClassFieldVisitor -> AssociationRelation [label = "", arrowhead="vee", style="dashed"];
+ClassFieldVisitor -> ParsedDataStorage [label = "", arrowhead="vee", style="dashed"];
+DesignParser -> DesignParser [label = "", arrowhead="vee", style="dashed"];
+DesignParser -> String [label = "", arrowhead="vee", style="dashed"];
+DesignParser -> ParsedDataStorage [label = "", arrowhead="vee", style="dashed"];
+DesignParser -> GeneratorFactory [label = "", arrowhead="vee", style="dashed"];
+DesignParser -> IGenerator [label = "", arrowhead="vee", style="dashed"];
+ITraverser -> IVisitor [label = "", arrowhead="vee", style="dashed"];
+IVisitMethod -> ITraverser [label = "", arrowhead="vee", style="dashed"];
+IVisitor -> ITraverser [label = "", arrowhead="vee", style="dashed"];
+IVisitor -> VisitType [label = "", arrowhead="vee", style="dashed"];
+IVisitor -> IVisitMethod [label = "", arrowhead="vee", style="dashed"];
+Visitor -> VisitType [label = "", arrowhead="vee", style="dashed"];
+Visitor -> ITraverser [label = "", arrowhead="vee", style="dashed"];
+Visitor -> LookupKey [label = "", arrowhead="vee", style="dashed"];
+Visitor -> IVisitMethod [label = "", arrowhead="vee", style="dashed"];
+Visitor -> Visitor [label = "", arrowhead="vee", style="dashed"];
+VisitType -> String [label = "", arrowhead="vee", style="dashed"];
+SequenceOutputStream -> Visitor [label = "", arrowhead="vee", style="dashed"];
+SequenceOutputStream -> SequenceOutputStream [label = "", arrowhead="vee", style="dashed"];
+SequenceOutputStream -> String [label = "", arrowhead="vee", style="dashed"];
+SequenceOutputStream -> ParsedDataStorage [label = "", arrowhead="vee", style="dashed"];
+SequenceOutputStream -> MethodCall [label = "", arrowhead="vee", style="dashed"];
+SequenceOutputStream -> ITraverser [label = "", arrowhead="vee", style="dashed"];
+UMLOutputStream -> Visitor [label = "", arrowhead="vee", style="dashed"];
+UMLOutputStream -> UMLOutputStream [label = "", arrowhead="vee", style="dashed"];
+UMLOutputStream -> String [label = "", arrowhead="vee", style="dashed"];
+UMLOutputStream -> ParsedDataStorage [label = "", arrowhead="vee", style="dashed"];
+UMLOutputStream -> ITraverser [label = "", arrowhead="vee", style="dashed"];
+UMLOutputStream -> IRelation [label = "", arrowhead="vee", style="dashed"];
+UMLOutputStream -> UsesRelation [label = "", arrowhead="vee", style="dashed"];
+UMLOutputStream -> FieldRep [label = "", arrowhead="vee", style="dashed"];
+UMLOutputStream -> MethodRep [label = "", arrowhead="vee", style="dashed"];
+UMLOutputStream -> InterfaceRep [label = "", arrowhead="vee", style="dashed"];
+UMLOutputStream -> AbstractData [label = "", arrowhead="vee", style="dashed"];
+UMLOutputStream -> ClassRep [label = "", arrowhead="vee", style="dashed"];
+UMLOutputStream -> AbstractExtendableClassRep [label = "", arrowhead="vee", style="dashed"];
+AbstractVisitorTemplate -> IDataStorage [label = "", arrowhead="vee", style="dashed"];
+AbstractVisitorTemplate -> Visitor [label = "", arrowhead="vee", style="dashed"];
+AbstractVisitorTemplate -> AbstractVisitorTemplate [label = "", arrowhead="vee", style="dashed"];
+AdaptorVisitor -> IDataStorage [label = "", arrowhead="vee", style="dashed"];
+AdaptorVisitor -> AbstractVisitorTemplate [label = "", arrowhead="vee", style="dashed"];
+AdaptorVisitor -> AdaptorVisitor [label = "", arrowhead="vee", style="dashed"];
+AdaptorVisitor -> AbstractJavaClassRep [label = "", arrowhead="vee", style="dashed"];
+AdaptorVisitor -> AbstractData [label = "", arrowhead="vee", style="dashed"];
+AdaptorVisitor -> ParsedDataStorage [label = "", arrowhead="vee", style="dashed"];
+AdaptorVisitor -> String [label = "", arrowhead="vee", style="dashed"];
+AdaptorVisitor -> IRelation [label = "", arrowhead="vee", style="dashed"];
+AdaptorVisitor -> NamedRelationDecorator [label = "", arrowhead="vee", style="dashed"];
+AdaptorVisitor -> FieldRep [label = "", arrowhead="vee", style="dashed"];
+AdaptorVisitor -> ClassRep [label = "", arrowhead="vee", style="dashed"];
+AdaptorVisitor -> ClassDeclarationVisitor [label = "", arrowhead="vee", style="dashed"];
+AdaptorVisitor -> ClassFieldVisitor [label = "", arrowhead="vee", style="dashed"];
+AdaptorVisitor -> UMLClassMethodVisitor [label = "", arrowhead="vee", style="dashed"];
+AdaptorVisitor -> IVisitor [label = "", arrowhead="vee", style="dashed"];
+AdaptorVisitor -> ITraverser [label = "", arrowhead="vee", style="dashed"];
+AdaptorVisitor -> MethodRep [label = "", arrowhead="vee", style="dashed"];
+AdaptorVisitor -> UsesRelation [label = "", arrowhead="vee", style="dashed"];
+DecoratorVisitor -> IDataStorage [label = "", arrowhead="vee", style="dashed"];
+DecoratorVisitor -> AbstractVisitorTemplate [label = "", arrowhead="vee", style="dashed"];
+DecoratorVisitor -> AbstractExtendableClassRep [label = "", arrowhead="vee", style="dashed"];
+DecoratorVisitor -> String [label = "", arrowhead="vee", style="dashed"];
+DecoratorVisitor -> AbstractJavaClassRep [label = "", arrowhead="vee", style="dashed"];
+SingletonVisitor -> IDataStorage [label = "", arrowhead="vee", style="dashed"];
+SingletonVisitor -> AbstractVisitorTemplate [label = "", arrowhead="vee", style="dashed"];
+SingletonVisitor -> SingletonVisitor [label = "", arrowhead="vee", style="dashed"];
+SingletonVisitor -> AbstractJavaClassRep [label = "", arrowhead="vee", style="dashed"];
+SingletonVisitor -> AbstractData [label = "", arrowhead="vee", style="dashed"];
+SingletonVisitor -> ClassRep [label = "", arrowhead="vee", style="dashed"];
+SingletonVisitor -> IVisitor [label = "", arrowhead="vee", style="dashed"];
+SingletonVisitor -> ITraverser [label = "", arrowhead="vee", style="dashed"];
+SingletonVisitor -> FieldRep [label = "", arrowhead="vee", style="dashed"];
+SingletonVisitor -> String [label = "", arrowhead="vee", style="dashed"];
+SingletonVisitor -> ParsedDataStorage [label = "", arrowhead="vee", style="dashed"];
+SingletonVisitor -> MethodRep [label = "", arrowhead="vee", style="dashed"];
+SequenceClassMethodVisitor -> ClassVisitor [label = "", arrowhead="vee", style="dashed"];
+SequenceClassMethodVisitor -> ParsedDataStorage [label = "", arrowhead="vee", style="dashed"];
+SequenceClassMethodVisitor -> SequenceClassMethodVisitor [label = "", arrowhead="vee", style="dashed"];
+SequenceClassMethodVisitor -> MethodRep [label = "", arrowhead="vee", style="dashed"];
+SequenceClassMethodVisitor -> UsesRelation [label = "", arrowhead="vee", style="dashed"];
+SequenceClassMethodVisitor -> SequenceMethodVisitor [label = "", arrowhead="vee", style="dashed"];
+SequenceMethodVisitor -> String [label = "", arrowhead="vee", style="dashed"];
+SequenceMethodVisitor -> SequenceMethodVisitor [label = "", arrowhead="vee", style="dashed"];
+SequenceMethodVisitor -> MethodCall [label = "", arrowhead="vee", style="dashed"];
+SequenceMethodVisitor -> ParsedDataStorage [label = "", arrowhead="vee", style="dashed"];
+SequenceMethodVisitor -> ClassDeclarationVisitor [label = "", arrowhead="vee", style="dashed"];
+SequenceMethodVisitor -> ClassFieldVisitor [label = "", arrowhead="vee", style="dashed"];
+SequenceMethodVisitor -> SequenceClassMethodVisitor [label = "", arrowhead="vee", style="dashed"];
+UMLClassMethodVisitor -> ClassVisitor [label = "", arrowhead="vee", style="dashed"];
+UMLClassMethodVisitor -> UMLClassMethodVisitor [label = "", arrowhead="vee", style="dashed"];
+UMLClassMethodVisitor -> MethodRep [label = "", arrowhead="vee", style="dashed"];
+UMLClassMethodVisitor -> UsesRelation [label = "", arrowhead="vee", style="dashed"];
+UMLClassMethodVisitor -> ParsedDataStorage [label = "", arrowhead="vee", style="dashed"];
+UMLClassMethodVisitor -> UMLMethodVisitor [label = "", arrowhead="vee", style="dashed"];
+UMLMethodVisitor -> UMLMethodVisitor [label = "", arrowhead="vee", style="dashed"];
+UMLMethodVisitor -> UsesRelation [label = "", arrowhead="vee", style="dashed"];
+UMLMethodVisitor -> ParsedDataStorage [label = "", arrowhead="vee", style="dashed"];
+UMLMethodVisitor -> ClassRep [label = "", arrowhead="vee", style="dashed"];
+UMLMethodVisitor -> MethodRep [label = "", arrowhead="vee", style="dashed"];
+String -> String [label = "", arrowhead="vee", style="dashed"];
+ClassVisitor -> ClassVisitor [label = "", arrowhead="vee", style="dashed"];
+ClassVisitor -> String [label = "", arrowhead="vee", style="dashed"];
+ParsedDataStorage -> ParsedDataStorage [label = "",arrowhead="vee", style="solid"];
+AbstractData -> String [label = "",arrowhead="vee", style="solid"];
+AbstractExtendableClassRep -> String [label = "",arrowhead="vee", style="solid"];
+AbstractTypable -> String [label = "",arrowhead="vee", style="solid"];
+NamedRelationDecorator -> IRelation [label = "",arrowhead="vee", style="solid"];
+PatternTypeClassDecorator -> ClassRep [label = "",arrowhead="vee", style="solid"];
+AssociationRelation -> String [label = "",arrowhead="vee", style="solid"];
+MethodCall -> String [label = "",arrowhead="vee", style="solid"];
+UsesRelation -> String [label = "",arrowhead="vee", style="solid"];
+LookupKey -> VisitType [label = "",arrowhead="vee", style="solid"];
+VisitType -> VisitType [label = "",arrowhead="vee", style="solid"];
+SequenceOutputStream -> IVisitor [label = "",arrowhead="vee", style="solid"];
+UMLOutputStream -> IVisitor [label = "",arrowhead="vee", style="solid"];
+AbstractVisitorTemplate -> IVisitor [label = "",arrowhead="vee", style="solid"];
+SequenceClassMethodVisitor -> String [label = "",arrowhead="vee", style="solid"];
+UMLClassMethodVisitor -> String [label = "",arrowhead="vee", style="solid"];
+UMLMethodVisitor -> String [label = "",arrowhead="vee", style="solid"];
+FieldRep -> String [label = "\n\<\<adapts\>\>",arrowhead="vee", style="solid"];
+ClassDeclarationVisitor -> String [label = "\n\<\<adapts\>\>",arrowhead="vee", style="solid"];
+SingletonClass -> ClassRep [label = "\n\<\<adapts\>\>",arrowhead="vee", style="solid"];
+ClassFieldVisitor -> String [label = "\n\<\<adapts\>\>",arrowhead="vee", style="solid"];
 
 }
