@@ -15,6 +15,7 @@ IteratorToEnumerationAdapter -> Enumeration [arrowhead="onormal", style="dashed"
 App [
 shape = "record", color="black", fillcolor=white, style=filled,
 label = "{App\n|
+# lT : LinearTransformer\l
 |+ init : void\l
 + main : void\l
 }"];
@@ -41,8 +42,8 @@ label = "{\<\<interface\>\>\lEnumeration\n\<\<target\>\>\n||+ hasMoreElements : 
 + nextElement : Object\l
 }"];
 App -> IteratorToEnumerationAdapter [label = "", arrowhead="vee", style="dashed"];
-App -> LinearTransformer [label = "", arrowhead="vee", style="dashed"];
 Iterator -> Iterator [label = "", arrowhead="vee", style="dashed"];
+App -> LinearTransformer [label = "",arrowhead="vee", style="solid"];
 LinearTransformer -> Enumeration [label = "",arrowhead="vee", style="solid"];
 IteratorToEnumerationAdapter -> Iterator [label = "\n\<\<adapts\>\>",arrowhead="vee", style="solid"];
 
