@@ -2,10 +2,8 @@ package Visitors.OutputStreams;
 
 import DataStorage.DataStore.ParsedDataStorage;
 import DataStorage.ParseClasses.ClassTypes.*;
-import DataStorage.ParseClasses.Internals.AssociationRelation;
-import DataStorage.ParseClasses.Internals.FieldRep;
-import DataStorage.ParseClasses.Internals.MethodRep;
-import DataStorage.ParseClasses.Internals.UsesRelation;
+import DataStorage.ParseClasses.Decorators.NamedRelationDecorator;
+import DataStorage.ParseClasses.Internals.*;
 import Visitors.DefaultVisitors.ITraverser;
 import Visitors.DefaultVisitors.IVisitor;
 import Visitors.DefaultVisitors.VisitType;
@@ -177,11 +175,15 @@ public class UMLOutputStream extends FilterOutputStream {
     public void setupRelationVisit() {
         this.visitor.addVisit(VisitType.Visit, UsesRelation.class, (ITraverser t) -> {
             UsesRelation a = (UsesRelation) t;
-            this.write(cleanName(makeSlashes(a.getFrom())) + " -> " + cleanName(makeSlashes(a.getTo())) + " [arrowhead=\"vee\", style=\"dashed\"];\n");
+            this.write(cleanName(makeSlashes(a.getFrom())) + " -> " + cleanName(makeSlashes(a.getTo())) + " [label = \"" + a.getArrowName() + "\", arrowhead=\"vee\", style=\"dashed\"];\n");
         });
         this.visitor.addVisit(VisitType.Visit, AssociationRelation.class, (ITraverser t) -> {
-            AssociationRelation a = (AssociationRelation) t;
-            this.write(cleanName(makeSlashes(a.getFrom())) + " -> " + cleanName(makeSlashes(a.getTo())) + " [arrowhead=\"vee\", style=\"solid\"];\n");
+            IRelation a = (IRelation) t;
+            this.write(cleanName(makeSlashes(a.getFrom())) + " -> " + cleanName(makeSlashes(a.getTo())) + " [label = \"" + a.getArrowName() + "\",arrowhead=\"vee\", style=\"solid\"];\n");
+        });
+        this.visitor.addVisit(VisitType.Visit, NamedRelationDecorator.class, (ITraverser t) -> {
+            IRelation a = (IRelation) t;
+            this.write(cleanName(makeSlashes(a.getFrom())) + " -> " + cleanName(makeSlashes(a.getTo())) + " [label = \"" + a.getArrowName() + "\",arrowhead=\"vee\", style=\"solid\"];\n");
         });
     }
 

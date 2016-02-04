@@ -5,7 +5,9 @@ import DataStorage.DataStore.ParsedDataStorage;
 import DataStorage.ParseClasses.ClassTypes.AbstractData;
 import DataStorage.ParseClasses.ClassTypes.AbstractJavaClassRep;
 import DataStorage.ParseClasses.ClassTypes.ClassRep;
+import DataStorage.ParseClasses.Decorators.NamedRelationDecorator;
 import DataStorage.ParseClasses.Internals.FieldRep;
+import DataStorage.ParseClasses.Internals.IRelation;
 import DataStorage.ParseClasses.Internals.MethodRep;
 import DataStorage.ParseClasses.Internals.UsesRelation;
 import Visitors.ASMVisitors.ClassDeclarationVisitor;
@@ -48,6 +50,9 @@ public class AdaptorVisitor extends AbstractVisitorTemplate {
         for (AbstractJavaClassRep r : data.getClasses()) {
             if (r instanceof ClassRep) {
                 r.accept(visitor);
+                for (AbstractData m : r.getMethodsMap().values()) {
+                    m.accept(visitor);
+                }
             }
         }
     }
@@ -57,6 +62,7 @@ public class AdaptorVisitor extends AbstractVisitorTemplate {
     public void performAnalysis() {
         addNewClasses();
 
+        List<IRelation> newAssoc = new ArrayList<IRelation>();
         for (AdaptorNameSet s : adaptorSets) {
             ParsedDataStorage.getInstance().getNonSpecificJavaClass(s.adaptorName.replace("/", ".")).addToDisplayName("\\<\\<adaptor\\>\\>");
             ParsedDataStorage.getInstance().getNonSpecificJavaClass(s.adaptorName.replace("/", ".")).setColor("maroon");
@@ -64,6 +70,18 @@ public class AdaptorVisitor extends AbstractVisitorTemplate {
             ParsedDataStorage.getInstance().getNonSpecificJavaClass(s.adapteeName.replace("/", ".")).setColor("maroon");
             ParsedDataStorage.getInstance().getNonSpecificJavaClass(s.targetName.replace("/", ".")).addToDisplayName("\\<\\<target\\>\\>");
             ParsedDataStorage.getInstance().getNonSpecificJavaClass(s.targetName.replace("/", ".")).setColor("maroon");
+
+            for (IRelation r : ParsedDataStorage.getInstance().getAssociationRels()) {
+                if (r.getFrom().equals(s.adaptorName) && r.getTo().equals(s.adapteeName)) {
+                    System.out.println("|from| " + r.getFrom() + " |adaptorName| " + s.adaptorName + " |to| " + r.getTo() + " |adapteeName| " + s.adapteeName);
+                    ParsedDataStorage.getInstance().removeRelation(r);
+                    newAssoc.add(new NamedRelationDecorator(r, "\\<\\<adapts\\>\\>"));
+                }
+            }
+        }
+
+        for (IRelation newRel : newAssoc) {
+            ParsedDataStorage.getInstance().addAssociationRelation(newRel);
         }
     }
 
@@ -125,36 +143,55 @@ public class AdaptorVisitor extends AbstractVisitorTemplate {
 
                 tempSize += c.getImplementsList().size();
                 if (tempSize == 1) { //if adaptors is found do nothing
-                    return;
+
+                    FieldRep fr = (FieldRep) c.getFieldsMap().values().iterator().next();
+
+                    for (AbstractData d : c.getMethodsMap().values()) {
+                        if ((d.getAccessibility() & Opcodes.ACC_PRIVATE) == 0) {
+                            for (UsesRelation ur : ((MethodRep) d).getUsesRelations()) {
+                                //System.out.println("|to| " + ur.getTo() + " |from| " + ur.getFrom() + " |ftype| " + fr.getFullType());
+                                if (ur.getTo().equals(fr.getFullType()) || ur.getFrom().equals(fr.getFullType())) {
+                                    return;
+                                }
+                            }
+                        }
+                    }
                 }
+
             }
+
 
             this.adaptorsFound.possibleAdaptorSets.remove(c.getName());
         });
     }
 
     /*
-        for all private methods, check if there is a uses relation on the field type.
+        for all non-private methods, check if there is a uses relation on the field type.
      */
     private void setupMethodVisit() {
         this.visitor.addVisit(VisitType.Visit, MethodRep.class, (ITraverser t) -> {
             MethodRep m = (MethodRep) t;
-            if ((m.getAccessibility() & Opcodes.ACC_PRIVATE) != 0) {
+            if ((m.getAccessibility() & Opcodes.ACC_PRIVATE) == 0) {
                 Collection<AbstractData> possibleAdapteeType = data.getClass(m.getClassName()).getFieldsMap().values();
-                System.out.println(possibleAdapteeType.size());
                 if (possibleAdapteeType.size() != 1) {
-                    System.out.println("incorrect size caught");
                     this.adaptorsFound.possibleAdaptorSets.remove(m.getClassName());
                     return;
                 }
                 Iterator<AbstractData> iter = possibleAdapteeType.iterator();
-                String fieldName = iter.next().getName();
+                String fieldName = ((FieldRep) iter.next()).getFullType();
 
-                for (UsesRelation ur : m.getUsesRelations()) {
-                    if (!ur.getFrom().equals(fieldName) && !ur.getTo().equals(fieldName) && !ur.getClass().equals(fieldName)) {
-                        this.adaptorsFound.possibleAdaptorSets.remove(m.getClassName());
-                    }
+                if (m.getUsesRelations().size() == 0) {
+                    this.adaptorsFound.possibleAdaptorSets.remove(m.getClassName());
                 }
+//                for (UsesRelation ur : m.getUsesRelations()) {
+//                    if (ParsedDataStorage.getInstance().checkContains(ur.getTo()))
+//                    {
+//                        System.out.println("field " + fieldName + " from " + ur.getFrom() + " to " + ur.getTo());
+//                        if (!ur.getFrom().equals(fieldName) && !ur.getTo().equals(fieldName)) {
+//                            this.adaptorsFound.possibleAdaptorSets.remove(m.getClassName());
+//                        }
+//                    }
+//                }
             }
         });
     }

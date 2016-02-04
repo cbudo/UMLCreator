@@ -40,10 +40,10 @@ shape = "record", color="maroon", fillcolor=white, style=filled,
 label = "{\<\<interface\>\>\lEnumeration\n\<\<target\>\>\n||+ hasMoreElements : boolean\l
 + nextElement : Object\l
 }"];
-App -> IteratorToEnumerationAdapter [arrowhead="vee", style="dashed"];
-App -> LinearTransformer [arrowhead="vee", style="dashed"];
-Iterator -> Iterator [arrowhead="vee", style="dashed"];
-IteratorToEnumerationAdapter -> Iterator [arrowhead="vee", style="solid"];
-LinearTransformer -> Enumeration [arrowhead="vee", style="solid"];
+App -> IteratorToEnumerationAdapter [label = "", arrowhead="vee", style="dashed"];
+App -> LinearTransformer [label = "", arrowhead="vee", style="dashed"];
+Iterator -> Iterator [label = "", arrowhead="vee", style="dashed"];
+LinearTransformer -> Enumeration [label = "",arrowhead="vee", style="solid"];
+IteratorToEnumerationAdapter -> Iterator [label = "\n\<\<adapts\>\>",arrowhead="vee", style="solid"];
 
 }

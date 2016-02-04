@@ -23,6 +23,11 @@ public class AssociationRelation implements IRelation {
     }
 
     @Override
+    public String getArrowName() {
+        return "";
+    }
+
+    @Override
     public void accept(IVisitor v) {
         v.preVisit(this);
         v.visit(this);

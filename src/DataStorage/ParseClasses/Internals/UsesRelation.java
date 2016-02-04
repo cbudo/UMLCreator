@@ -22,6 +22,10 @@ public class UsesRelation implements IRelation {
         return from;
     }
 
+    public String getArrowName() {
+        return "";
+    }
+
     @Override
     public void accept(IVisitor v) {
         v.preVisit(this);

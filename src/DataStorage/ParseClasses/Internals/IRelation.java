@@ -11,4 +11,6 @@ public interface IRelation extends ITraverser {
 
     String getFrom();
 
+    String getArrowName();
+
 }

@@ -203,6 +203,16 @@ public class ParsedDataStorage implements IDataStorage, ITraverser {
         return null;
     }
 
+    public void removeRelation(IRelation rel) {
+        if (this.usesRels.contains(rel)) {
+            this.usesRels.remove(rel);
+        }
+
+        if (this.associationRels.contains(rel)) {
+            this.associationRels.remove(rel);
+        }
+    }
+
     @Override
     public void accept(IVisitor v) {
         v.preVisit(this);
