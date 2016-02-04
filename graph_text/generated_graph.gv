@@ -2,102 +2,48 @@ digraph UML_Diagram
 {
 rankdir=BT;
 
-ClassFieldVisitor [
-shape = "record", color="maroon", fillcolor=green, style=filled,
-label = "{ClassFieldVisitor\n\<\<adaptor\>\>\n\<\<decorator\>\>\n|
-# className : String\l
-|+ init : void\l
-+ visitField : FieldVisitor\l
-- getInnermostClass : String\l
-}"];
-ClassFieldVisitor -> ClassVisitor [arrowhead="onormal", style="solid"];
-
-ClassDeclarationVisitor [
-shape = "record", color="maroon", fillcolor=green, style=filled,
-label = "{ClassDeclarationVisitor\n\<\<adaptor\>\>\n\<\<decorator\>\>\n|
-# className : String\l
-|+ init : void\l
-+ visit : void\l
-}"];
-ClassDeclarationVisitor -> ClassVisitor [arrowhead="onormal", style="solid"];
-
-String [
+IteratorToEnumerationAdapter [
 shape = "record", color="maroon", fillcolor=white, style=filled,
-label = "{String\n\<\<adaptee\>\>\n\<\<adaptee\>\>\n|
-- serialPersistentFields : ObjectStreamField[]\l
-+ CASE_INSENSITIVE_ORDER : Comparator\l
-- serialVersionUID : long\l
-- value : char[]\l
-- hash : int\l
-|+ toCharArray : char[]\l
-+ codePointAt : int\l
-- indexOfSupplementary : int\l
-+ replace : String\l
-+ regionMatches : boolean\l
-+ replaceFirst : String\l
-+ compareTo : int\l
-+ replaceAll : String\l
-+ getBytes : byte[]\l
-+ substring : String\l
-+ split : String[]\l
-+ trim : String\l
-- checkBounds : void\l
-+ hashCode : int\l
-+ toUpperCase : String\l
-+ join : String\l
-+ codePointBefore : int\l
-+ equalsIgnoreCase : boolean\l
-# indexOf : int\l
-+ copyValueOf : String\l
-+ codePointCount : int\l
-+ compareToIgnoreCase : int\l
-- lastIndexOfSupplementary : int\l
-# init : void\l
-+ intern : String\l
-+ getChars : void\l
-+ valueOf : String\l
-+ contentEquals : boolean\l
-+ toLowerCase : String\l
-+ length : int\l
-+ isEmpty : boolean\l
-+ format : String\l
-# clinit : void\l
-+ subSequence : CharSequence\l
-+ concat : String\l
-+ matches : boolean\l
-# lastIndexOf : int\l
-+ contains : boolean\l
-+ equals : boolean\l
-+ endsWith : boolean\l
-- nonSyncContentEquals : boolean\l
-+ toString : String\l
-+ charAt : char\l
-+ offsetByCodePoints : int\l
-+ startsWith : boolean\l
+label = "{IteratorToEnumerationAdapter\n\<\<adaptor\>\>\n|
+- itr : Iterator\l
+|+ init : void\l
++ hasMoreElements : boolean\l
++ nextElement : Object\l
+}"];
+IteratorToEnumerationAdapter -> Enumeration [arrowhead="onormal", style="dashed"];
+
+App [
+shape = "record", color="black", fillcolor=white, style=filled,
+label = "{App\n|
+|+ init : void\l
++ main : void\l
 }"];
 
-ClassVisitor [
-shape = "record", color="maroon ", fillcolor=green, style=filled,
-label = "{ClassVisitor\n\<\<target\>\>\n\<\<target\>\>\n\<\<decorator\>\>\n|# cv : ClassVisitor\l
-# api : int\l
+LinearTransformer [
+shape = "record", color="black", fillcolor=white, style=filled,
+label = "{LinearTransformer\n|
+- enumTion : Enumeration\l
 |+ init : void\l
-+ visitField : FieldVisitor\l
-+ visitTypeAnnotation : AnnotationVisitor\l
-+ visitInnerClass : void\l
-+ visitEnd : void\l
-+ visitOuterClass : void\l
-+ visitAttribute : void\l
-+ visit : void\l
-+ visitAnnotation : AnnotationVisitor\l
-+ visitMethod : MethodVisitor\l
-+ visitSource : void\l
++ transform : void\l
 }"];
-ClassDeclarationVisitor -> ClassVisitor [arrowhead="vee", style="dashed"];
-ClassFieldVisitor -> ClassVisitor [arrowhead="vee", style="dashed"];
-ClassVisitor -> String [arrowhead="vee", style="dashed"];
-String -> String [arrowhead="vee", style="dashed"];
-ClassDeclarationVisitor -> String [arrowhead="vee", style="solid"];
-ClassFieldVisitor -> String [arrowhead="vee", style="solid"];
-ClassVisitor -> ClassVisitor [arrowhead="vee", style="solid"];
+
+Iterator [
+shape = "record", color="maroon", fillcolor=white, style=filled,
+label = "{\<\<interface\>\>\lIterator\n\<\<adaptee\>\>\n||+ next : Object\l
++ hasNext : boolean\l
++ forEachRemaining : void\l
++ remove : void\l
+}"];
+
+Enumeration [
+shape = "record", color="maroon", fillcolor=white, style=filled,
+label = "{\<\<interface\>\>\lEnumeration\n\<\<target\>\>\n||+ hasMoreElements : boolean\l
++ nextElement : Object\l
+}"];
+App -> IteratorToEnumerationAdapter [arrowhead="vee", style="dashed"];
+App -> LinearTransformer [arrowhead="vee", style="dashed"];
+Iterator -> Iterator [arrowhead="vee", style="dashed"];
+IteratorToEnumerationAdapter -> Iterator [arrowhead="vee", style="solid"];
+LinearTransformer -> Enumeration [arrowhead="vee", style="solid"];
 
 }

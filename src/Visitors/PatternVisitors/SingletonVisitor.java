@@ -1,12 +1,12 @@
 package Visitors.PatternVisitors;
 
-import DataStorage.IDataStorage;
+import DataStorage.DataStore.IDataStorage;
+import DataStorage.DataStore.ParsedDataStorage;
 import DataStorage.ParseClasses.ClassTypes.AbstractData;
 import DataStorage.ParseClasses.ClassTypes.AbstractJavaClassRep;
 import DataStorage.ParseClasses.ClassTypes.ClassRep;
 import DataStorage.ParseClasses.Internals.FieldRep;
 import DataStorage.ParseClasses.Internals.MethodRep;
-import DataStorage.ParsedDataStorage;
 import Visitors.DefaultVisitors.ITraverser;
 import Visitors.DefaultVisitors.VisitType;
 import org.objectweb.asm.Opcodes;

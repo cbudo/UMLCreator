@@ -1,6 +1,6 @@
 package Visitors.PatternVisitors;
 
-import DataStorage.IDataStorage;
+import DataStorage.DataStore.IDataStorage;
 import DataStorage.ParseClasses.ClassTypes.AbstractExtendableClassRep;
 import DataStorage.ParseClasses.ClassTypes.AbstractJavaClassRep;
 

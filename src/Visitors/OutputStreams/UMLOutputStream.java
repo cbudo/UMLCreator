@@ -1,11 +1,11 @@
 package Visitors.OutputStreams;
 
+import DataStorage.DataStore.ParsedDataStorage;
 import DataStorage.ParseClasses.ClassTypes.*;
 import DataStorage.ParseClasses.Internals.AssociationRelation;
 import DataStorage.ParseClasses.Internals.FieldRep;
 import DataStorage.ParseClasses.Internals.MethodRep;
 import DataStorage.ParseClasses.Internals.UsesRelation;
-import DataStorage.ParsedDataStorage;
 import Visitors.DefaultVisitors.ITraverser;
 import Visitors.DefaultVisitors.IVisitor;
 import Visitors.DefaultVisitors.VisitType;

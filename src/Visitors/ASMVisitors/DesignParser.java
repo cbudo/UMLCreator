@@ -1,6 +1,6 @@
 package Visitors.ASMVisitors;
 
-import DataStorage.ParsedDataStorage;
+import DataStorage.DataStore.ParsedDataStorage;
 import Generation.GeneratorFactory;
 import Generation.IGenerator;
 

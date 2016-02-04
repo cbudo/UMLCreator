@@ -1,7 +1,7 @@
 package Generation;
 
-import DataStorage.IDataStorage;
-import DataStorage.ParsedDataStorage;
+import DataStorage.DataStore.IDataStorage;
+import DataStorage.DataStore.ParsedDataStorage;
 import Visitors.ASMVisitors.ClassDeclarationVisitor;
 import Visitors.ASMVisitors.ClassFieldVisitor;
 import Visitors.OutputStreams.SequenceOutputStream;

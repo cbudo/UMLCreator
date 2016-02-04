@@ -1,6 +1,6 @@
 package DataStorage.ParseClasses.ClassTypes;
 
-import DataStorage.ParsedDataStorage;
+import DataStorage.DataStore.ParsedDataStorage;
 
 /**
  * Created by efronbs on 1/7/2016.

@@ -1,10 +1,10 @@
 package Visitors.ASMVisitors;
 
+import DataStorage.DataStore.ParsedDataStorage;
 import DataStorage.ParseClasses.ClassTypes.AbstractClassRep;
 import DataStorage.ParseClasses.ClassTypes.AbstractJavaClassRep;
 import DataStorage.ParseClasses.ClassTypes.ClassRep;
 import DataStorage.ParseClasses.ClassTypes.InterfaceRep;
-import DataStorage.ParsedDataStorage;
 import org.objectweb.asm.ClassVisitor;
 import org.objectweb.asm.Opcodes;
 

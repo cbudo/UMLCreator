@@ -1,7 +1,9 @@
 package Visitors.UMLVisitors;
 
+import DataStorage.DataStore.ParsedDataStorage;
+import DataStorage.ParseClasses.ClassTypes.ClassRep;
+import DataStorage.ParseClasses.Internals.MethodRep;
 import DataStorage.ParseClasses.Internals.UsesRelation;
-import DataStorage.ParsedDataStorage;
 import org.objectweb.asm.MethodVisitor;
 
 /**
@@ -10,16 +12,18 @@ import org.objectweb.asm.MethodVisitor;
 public class UMLMethodVisitor extends MethodVisitor {
     private String callingClassName;
     private String fullCallingClassName;
+    private String methodName;
 
     public UMLMethodVisitor(int i) {
         super(i);
     }
 
-    public UMLMethodVisitor(int i, MethodVisitor methodVisitor, String callingClassName) {
+    public UMLMethodVisitor(int i, MethodVisitor methodVisitor, String callingClassName, String methodName) {
         super(i, methodVisitor);
         this.fullCallingClassName = callingClassName;
         String[] ccNameSplit = callingClassName.split("[./]");
         this.callingClassName = ccNameSplit[ccNameSplit.length - 1];
+        this.methodName = methodName;
     }
 
     public void visitMethodInsn(int opcode, String owner, String name, String desc, boolean itf) {
@@ -28,6 +32,14 @@ public class UMLMethodVisitor extends MethodVisitor {
         String callingClass = this.callingClassName;
         UsesRelation newRel = new UsesRelation(owner.replace("/", "."), fullCallingClassName);//(calledClass, callingClass);
         ParsedDataStorage.getInstance().addUsesRelation(newRel);
+        ClassRep calledClassRep = (ClassRep) ParsedDataStorage.getInstance().getClass(calledClass);
+        if (calledClassRep != null) {
+            MethodRep mRep = (MethodRep) calledClassRep.getMethod(this.methodName);
+            if (mRep != null) {
+                mRep.addUsesRelation(newRel);
+            }
+        }
+
     }
 
 

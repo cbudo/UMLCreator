@@ -1,7 +1,7 @@
 package DataStorage.ParseClasses.ClassTypes;
 
+import DataStorage.DataStore.ParsedDataStorage;
 import DataStorage.ParseClasses.Internals.FieldRep;
-import DataStorage.ParsedDataStorage;
 
 import java.util.List;
 

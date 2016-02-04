@@ -1,7 +1,7 @@
 package Generation.Generation;
 
+import DataStorage.DataStore.ParsedDataStorage;
 import DataStorage.ParseClasses.Internals.MethodCall;
-import DataStorage.ParsedDataStorage;
 import Generation.GeneratorFactory;
 import Generation.IGenerator;
 import UMLTests.SingletonTests;

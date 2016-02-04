@@ -1,4 +1,4 @@
-package DataStorage;
+package DataStorage.DataStore;
 
 import DataStorage.ParseClasses.ClassTypes.AbstractData;
 import DataStorage.ParseClasses.ClassTypes.AbstractJavaClassRep;

@@ -1,7 +1,7 @@
 package Visitors.SequenceVisitors;
 
+import DataStorage.DataStore.ParsedDataStorage;
 import DataStorage.ParseClasses.Internals.MethodCall;
-import DataStorage.ParsedDataStorage;
 import Visitors.ASMVisitors.ClassDeclarationVisitor;
 import Visitors.ASMVisitors.ClassFieldVisitor;
 import jdk.nashorn.internal.codegen.types.Type;

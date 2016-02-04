@@ -36,7 +36,14 @@ public class UsesRelation implements IRelation {
 
         IRelation that = (IRelation) o;
 
-        return getFrom() != null ? getFrom().equals(that.getFrom()) : that.getFrom() == null && (getTo() != null ? getTo().equals(that.getTo()) : that.getTo() == null);
+        if (getFrom() != null && getFrom().equals(that.getFrom())) {
+            if (getTo() != null && getTo().equals(that.getTo())) {
+                return true;
+            }
+        }
+        return false;
+
+        //return getFrom() != null ? getFrom().equals(that.getFrom()) : that.getFrom() == null && (getTo() != null ? getTo().equals(that.getTo()) : that.getTo() == null);
 
     }
 

@@ -1,11 +1,13 @@
 package Visitors.PatternVisitors;
 
-import DataStorage.IDataStorage;
+import DataStorage.DataStore.IDataStorage;
+import DataStorage.DataStore.ParsedDataStorage;
+import DataStorage.ParseClasses.ClassTypes.AbstractData;
 import DataStorage.ParseClasses.ClassTypes.AbstractJavaClassRep;
 import DataStorage.ParseClasses.ClassTypes.ClassRep;
 import DataStorage.ParseClasses.Internals.FieldRep;
 import DataStorage.ParseClasses.Internals.MethodRep;
-import DataStorage.ParsedDataStorage;
+import DataStorage.ParseClasses.Internals.UsesRelation;
 import Visitors.ASMVisitors.ClassDeclarationVisitor;
 import Visitors.ASMVisitors.ClassFieldVisitor;
 import Visitors.DefaultVisitors.ITraverser;
@@ -17,6 +19,8 @@ import org.objectweb.asm.Opcodes;
 
 import java.io.IOException;
 import java.util.ArrayList;
+import java.util.Collection;
+import java.util.Iterator;
 import java.util.List;
 
 /**
@@ -24,16 +28,19 @@ import java.util.List;
  */
 public class AdaptorVisitor extends AbstractVisitorTemplate {
 
-    public List<AdaptorNameSet> adaptorsFound;
+    public PossibleAdaptorClasses adaptorsFound;
+    public List<AdaptorNameSet> adaptorSets;
 
     public AdaptorVisitor(IDataStorage data) {
         super(data);
-        adaptorsFound = new ArrayList<>();
+        adaptorsFound = new PossibleAdaptorClasses();
+        adaptorSets = new ArrayList<AdaptorNameSet>();
     }
 
     @Override
     public void performSetup() {
         setupClassVisit();
+        setupMethodVisit();
     }
 
     @Override
@@ -50,7 +57,7 @@ public class AdaptorVisitor extends AbstractVisitorTemplate {
     public void performAnalysis() {
         addNewClasses();
 
-        for (AdaptorNameSet s : adaptorsFound) {
+        for (AdaptorNameSet s : adaptorSets) {
             ParsedDataStorage.getInstance().getNonSpecificJavaClass(s.adaptorName.replace("/", ".")).addToDisplayName("\\<\\<adaptor\\>\\>");
             ParsedDataStorage.getInstance().getNonSpecificJavaClass(s.adaptorName.replace("/", ".")).setColor("maroon");
             ParsedDataStorage.getInstance().getNonSpecificJavaClass(s.adapteeName.replace("/", ".")).addToDisplayName("\\<\\<adaptee\\>\\>");
@@ -61,19 +68,31 @@ public class AdaptorVisitor extends AbstractVisitorTemplate {
     }
 
     private void addNewClasses() {
-        for (AdaptorNameSet s : adaptorsFound) {
+        for (String s : adaptorsFound.possibleAdaptorSets) {
+            s = s.replace("/", ".");
+            AbstractJavaClassRep cRep = data.getClass(s);
+            String adaptee = ((FieldRep) cRep.getFieldsMap().values().toArray()[0]).getFullType();
+            String target = !((ClassRep) cRep).getExtendedClassName().equals("java/lang/Object")
+                    ? ((ClassRep) cRep).getExtendedClassName() : cRep.getImplementsList().get(0);
+
+            AdaptorNameSet newAdaptorSet = new AdaptorNameSet(s, adaptee, target.replace("/", "."));
+            this.adaptorSets.add(newAdaptorSet);
+
             try {
-                if (!ParsedDataStorage.getInstance().checkContains(s.targetName)) {
-                    downTheRabbitHole(s.targetName);
+                if (!ParsedDataStorage.getInstance().checkContains(newAdaptorSet.targetName)) {
+                    downTheRabbitHole(newAdaptorSet.targetName);
                 }
-                if (!ParsedDataStorage.getInstance().checkContains(s.adapteeName)) {
-                    downTheRabbitHole(s.adapteeName);
+                if (!ParsedDataStorage.getInstance().checkContains(newAdaptorSet.adapteeName)) {
+                    downTheRabbitHole(newAdaptorSet.adapteeName);
                 }
-                if (!ParsedDataStorage.getInstance().checkContains(s.adaptorName)) {
-                    downTheRabbitHole(s.adaptorName);
+                if (!ParsedDataStorage.getInstance().checkContains(newAdaptorSet.adaptorName)) {
+                    downTheRabbitHole(newAdaptorSet.adaptorName);
                 }
             } catch (Exception e) {
                 System.out.println("YUH DUN FUCKED SON\n" + e);
+                System.out.println(newAdaptorSet.adaptorName);
+                System.out.println(newAdaptorSet.adapteeName);
+                System.out.println(newAdaptorSet.targetName);
             }
         }
     }
@@ -99,42 +118,69 @@ public class AdaptorVisitor extends AbstractVisitorTemplate {
     private void setupClassVisit() {
         this.visitor.addVisit(VisitType.Visit, ClassRep.class, (ITraverser t) -> {
             ClassRep c = (ClassRep) t;
-            if (c.getFieldsMap().values().size() == 1) {
+            if (c.getFieldsMap().size() == 1) {
                 int tempSize = 0;
                 if (!c.getExtendedClassName().equals("java/lang/Object"))
                     tempSize++;
 
                 tempSize += c.getImplementsList().size();
-                if (tempSize == 1) {
-                    AdaptorNameSet newSet = new AdaptorNameSet();
-                    newSet.adaptorName = c.getName();
-                    newSet.adapteeName = ((FieldRep) c.getFieldsMap().values().toArray()[0]).getFullType();
-                    if (c.getImplementsList().isEmpty()) {
-                        newSet.targetName = c.getExtendedClassName();
-                    } else {
-                        newSet.targetName = c.getImplementsList().get(0);
-                    }
-                    adaptorsFound.add(newSet);
+                if (tempSize == 1) { //if adaptors is found do nothing
+                    return;
                 }
             }
+
+            this.adaptorsFound.possibleAdaptorSets.remove(c.getName());
         });
     }
 
+    /*
+        for all private methods, check if there is a uses relation on the field type.
+     */
     private void setupMethodVisit() {
         this.visitor.addVisit(VisitType.Visit, MethodRep.class, (ITraverser t) -> {
             MethodRep m = (MethodRep) t;
-            if ((m.getAccessibility() & Opcodes.ACC_STATIC) != 0) {
-                if ((m.getSimpleClassName().equals(m.getType()))) {
-                    ClassRep cr = (ClassRep) ParsedDataStorage.getInstance().getClass(m.getClassName());
-                    cr.setPublicStaticGetInstance(true);
+            if ((m.getAccessibility() & Opcodes.ACC_PRIVATE) != 0) {
+                Collection<AbstractData> possibleAdapteeType = data.getClass(m.getClassName()).getFieldsMap().values();
+                System.out.println(possibleAdapteeType.size());
+                if (possibleAdapteeType.size() != 1) {
+                    System.out.println("incorrect size caught");
+                    this.adaptorsFound.possibleAdaptorSets.remove(m.getClassName());
+                    return;
+                }
+                Iterator<AbstractData> iter = possibleAdapteeType.iterator();
+                String fieldName = iter.next().getName();
+
+                for (UsesRelation ur : m.getUsesRelations()) {
+                    if (!ur.getFrom().equals(fieldName) && !ur.getTo().equals(fieldName) && !ur.getClass().equals(fieldName)) {
+                        this.adaptorsFound.possibleAdaptorSets.remove(m.getClassName());
+                    }
                 }
             }
         });
     }
 
+    public class PossibleAdaptorClasses {
+        public Collection<String> possibleAdaptorSets;
+
+        public PossibleAdaptorClasses() {
+            possibleAdaptorSets = new ArrayList<String>();
+
+            for (AbstractJavaClassRep c : data.getClasses()) {
+                this.possibleAdaptorSets.add(c.getName());
+            }
+        }
+
+    }
+
     public class AdaptorNameSet {
-        public String targetName;
         public String adaptorName;
         public String adapteeName;
+        public String targetName;
+
+        public AdaptorNameSet(String adaptor, String adaptee, String target) {
+            this.adaptorName = adaptor;
+            this.adapteeName = adaptee;
+            this.targetName = target;
+        }
     }
 }

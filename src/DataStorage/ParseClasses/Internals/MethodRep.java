@@ -10,7 +10,7 @@ import java.util.List;
  * Created by efronbs on 1/7/2016.
  */
 public class MethodRep extends AbstractTypable {
-    private List<String> usesRelations;
+    private List<UsesRelation> usesRelations;
     private String className;
 
     public MethodRep(String name, int accessibility, String type, String className) {
@@ -19,11 +19,11 @@ public class MethodRep extends AbstractTypable {
         this.className = className;
     }
 
-    public void addUsesRelation(String className) {
+    public void addUsesRelation(UsesRelation className) {
         this.usesRelations.add(className);
     }
 
-    public List<String> getUsesRelations() {
+    public List<UsesRelation> getUsesRelations() {
         return this.usesRelations;
     }
 

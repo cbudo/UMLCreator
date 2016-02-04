@@ -3,7 +3,7 @@ package UMLTests;
 //import DataStorage.GeneratorFactory;
 //import DataStorage.IGenerator;
 
-import DataStorage.ParsedDataStorage;
+import DataStorage.DataStore.ParsedDataStorage;
 import Generation.GeneratorFactory;
 import Generation.IGenerator;
 import org.junit.Test;

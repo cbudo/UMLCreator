@@ -1,9 +1,9 @@
 package Visitors.UMLVisitors;
 
+import DataStorage.DataStore.ParsedDataStorage;
 import DataStorage.ParseClasses.ClassTypes.AbstractData;
 import DataStorage.ParseClasses.Internals.MethodRep;
 import DataStorage.ParseClasses.Internals.UsesRelation;
-import DataStorage.ParsedDataStorage;
 import org.objectweb.asm.ClassVisitor;
 import org.objectweb.asm.MethodVisitor;
 import org.objectweb.asm.Opcodes;
@@ -45,15 +45,17 @@ public class UMLClassMethodVisitor extends ClassVisitor {
         AbstractData method = new MethodRep(innerName, access, innerRet, className);
 
         UsesRelation retUses = new UsesRelation(returnType.replace("/", "."), this.className);//innerRet, getInnermostClass(this.className));
+        ((MethodRep) method).addUsesRelation(retUses);
         ParsedDataStorage.getInstance().addUsesRelation(retUses);
         for (String rel : args) {
             UsesRelation newUses = new UsesRelation(rel.replace("/", "."), this.className);//getInnermostClass(rel), getInnermostClass(this.className));
             ParsedDataStorage.getInstance().addUsesRelation(newUses);
+            ((MethodRep) method).addUsesRelation(newUses);
         }
 
         ParsedDataStorage.getInstance().addMethod(className, method);
         //return new SequenceMethodVisitor(Opcodes.ASM5, toDecorate, depth, className);
-        return new UMLMethodVisitor(Opcodes.ASM5, toDecorate, className);
+        return new UMLMethodVisitor(Opcodes.ASM5, toDecorate, className, innerName);
     }
 
     String addReturnType(String desc) {

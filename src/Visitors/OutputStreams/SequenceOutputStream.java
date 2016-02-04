@@ -1,7 +1,7 @@
 package Visitors.OutputStreams;
 
+import DataStorage.DataStore.ParsedDataStorage;
 import DataStorage.ParseClasses.Internals.MethodCall;
-import DataStorage.ParsedDataStorage;
 import Visitors.DefaultVisitors.ITraverser;
 import Visitors.DefaultVisitors.IVisitor;
 import Visitors.DefaultVisitors.VisitType;

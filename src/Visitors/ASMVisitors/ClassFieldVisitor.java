@@ -1,9 +1,9 @@
 package Visitors.ASMVisitors;
 
+import DataStorage.DataStore.ParsedDataStorage;
 import DataStorage.ParseClasses.ClassTypes.AbstractData;
 import DataStorage.ParseClasses.Internals.AssociationRelation;
 import DataStorage.ParseClasses.Internals.FieldRep;
-import DataStorage.ParsedDataStorage;
 import org.objectweb.asm.ClassVisitor;
 import org.objectweb.asm.FieldVisitor;
 import org.objectweb.asm.Type;
