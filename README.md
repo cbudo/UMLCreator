@@ -27,7 +27,7 @@ We refactored our detection visitors to be more modular and easily expandable by
 We implemented the fundamental logic of our adaptor and decorator pattern recognition code. 
 
 ##Milestone 6
-![Milestone 6 updates](./Docs/MS6_Turning/...)
+![Milestone 6 updates](./Docs/MS6_Turnin/MS5_Fixes/MS5UML.jpg)
 We realized that we had to do a lot of refactoring from the previous milestone to make our detection code much more modular and easily usable by and potential user trying to add onto our code. We realized our adaptor and decorator detection logic was flawed and fixed them in this milestone, and implemented extensive testing on both patterns. 
 This milestone we were unable to implement our Composite pattern detection logic, however we set the stage for this through our refactoring. At this point we know how we want to implement this logic and have refactored our code base to make this logic a single file addition.
 
