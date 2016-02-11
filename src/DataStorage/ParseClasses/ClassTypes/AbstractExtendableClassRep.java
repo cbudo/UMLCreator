@@ -26,12 +26,6 @@ public abstract class AbstractExtendableClassRep extends AbstractJavaClassRep {
     public AbstractExtendableClassRep(String name, int accessibility, List<String> implementsNames, String extendedClassName) {
         super(name, accessibility, implementsNames);
         this.extendedClassName = extendedClassName;
-        AbstractJavaClassRep extending = ParsedDataStorage.getInstance().getClass(extendedClassName);
-        if (extending != null) {
-            if (extending.isDecorator()) {
-                this.isDecorator = true;
-            }
-        }
     }
 
     @Override
@@ -39,7 +33,7 @@ public abstract class AbstractExtendableClassRep extends AbstractJavaClassRep {
         String type = ((FieldRep) fieldRep).getType();
         if (this.extendedClassName.equals(type) || this.getImplementsList().contains(type) || this.getInnermostName().equals(type)) {
             //we've got a winner
-            this.isDecorator = true;
+            // TODO: convert to a decoratordecorator
             //set type to component
             try {
                 ParsedDataStorage.getInstance().getClass(((FieldRep) fieldRep).getFullType()).setComponent(true);

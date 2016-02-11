@@ -14,7 +14,6 @@ import java.util.Map;
 public abstract class AbstractJavaClassRep extends AbstractData {
     protected Map<String, AbstractData> methodsMap;
     protected Map<String, AbstractData> fieldsMap;
-    protected boolean isDecorator;
     private List<String> profileTags;
     private List<String> implementsNames;
     private String color;
@@ -30,7 +29,6 @@ public abstract class AbstractJavaClassRep extends AbstractData {
         this.methodsMap = new HashMap<>();
         this.fieldsMap = new HashMap<>();
         this.profileTags = new ArrayList<>();
-        this.isDecorator = false;
         this.color = "black";
         this.fillColor = "white";
     }
@@ -105,12 +103,8 @@ public abstract class AbstractJavaClassRep extends AbstractData {
         return this.profileTags;
     }
 
-    public boolean isDecorator() {
-        return isDecorator;
-    }
-
     public void setDecorator(boolean decorator) {
-        isDecorator = decorator;
+        // TODO: change this class into a decoratordecorator
         setFillColor("green");
     }
 

@@ -11,37 +11,17 @@ import java.util.Map;
 /**
  * Created by efronbs on 2/4/2016.
  */
-public class PatternTypeClassDecorator extends AbstractJavaClassRep {
+public abstract class PatternTypeClassDecorator extends AbstractJavaClassRep {
     private ClassRep classToDecorate;
-    private String patternName;
 
-    public PatternTypeClassDecorator(ClassRep c, String patternName) {
+    public PatternTypeClassDecorator(ClassRep c) {
         super(c.getName(), c.getAccessibility());
         this.classToDecorate = c;
-        this.patternName = patternName;
     }
 
     @Override
     public void accept(IVisitor v) {
-        v.preVisit(this);
-        v.visit(this);
-        v.postVisit(this);
-    }
-
-    public void setPublicStaticGetInstance(boolean inst) {
-        this.classToDecorate.setPublicStaticGetInstance(inst);
-    }
-
-    public void setPrivateSingletonInit(boolean inst) {
-        this.classToDecorate.setPrivateSingletonInit(inst);
-    }
-
-    public void setPrivateSingletonField(boolean inst) {
-        this.classToDecorate.setPrivateSingletonField(inst);
-    }
-
-    public boolean isSingleton() {
-        return this.classToDecorate.isSingleton();
+        classToDecorate.accept(v);
     }
 
     @Override
@@ -97,14 +77,6 @@ public class PatternTypeClassDecorator extends AbstractJavaClassRep {
         return this.classToDecorate.getProfileTags();
     }
 
-    public boolean isDecorator() {
-        return true;
-    }
-
-    public void setDecorator(boolean decorator) {
-        this.classToDecorate.setDecorator(decorator);
-    }
-
     public String getColor() {
         return this.classToDecorate.getColor();
     }
@@ -122,11 +94,11 @@ public class PatternTypeClassDecorator extends AbstractJavaClassRep {
     }
 
     public String getDisplayName() {
-        return classToDecorate.getDisplayName() + "\n" + this.patternName;
+        return classToDecorate.getDisplayName();
     }
 
     public void addToDisplayName(String textToAdd) {
-        return;
+        classToDecorate.addToDisplayName(textToAdd);
     }
 
     public int getAccessibility() {
@@ -137,11 +109,4 @@ public class PatternTypeClassDecorator extends AbstractJavaClassRep {
         return "";
     }
 
-    public boolean isComponent() {
-        return this.classToDecorate.isComponent();
-    }
-
-    public void setComponent(boolean component) {
-        this.classToDecorate.setComponent(component);
-    }
 }
