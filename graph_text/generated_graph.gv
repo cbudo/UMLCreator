@@ -2,49 +2,178 @@ digraph UML_Diagram
 {
 rankdir=BT;
 
-IteratorToEnumerationAdapter [
-shape = "record", color="maroon", fillcolor=white, style=filled,
-label = "{IteratorToEnumerationAdapter\n\<\<adaptor\>\>\n|
-- itr : Iterator\l
-|+ init : void\l
-+ hasMoreElements : boolean\l
-+ nextElement : Object\l
-}"];
-IteratorToEnumerationAdapter -> Enumeration [arrowhead="onormal", style="dashed"];
-
-App [
+RectangleSprite [
 shape = "record", color="black", fillcolor=white, style=filled,
-label = "{App\n|
-# lT : LinearTransformer\l
+label = "{RectangleSprite\n|
+|+ init : void\l
++ move : void\l
+}"];
+RectangleSprite -> AbstractSprite [arrowhead="onormal", style="solid"];
+
+CompositeSprite [
+shape = "record", color="yellow", fillcolor=white, style=filled,
+label = "{CompositeSprite\n\<\<composite\>\>\n|
+# children : List\l
+|+ add : void\l
++ init : void\l
++ iterator : Iterator\l
++ move : void\l
++ getChild : ISprite\l
++ remove : void\l
+}"];
+CompositeSprite -> AbstractSprite [arrowhead="onormal", style="solid"];
+
+SpriteFactory [
+shape = "record", color="black", fillcolor=white, style=filled,
+label = "{SpriteFactory\n|
+- random : Random\l
++ DX : double\l
++ DY : double\l
++ WIDTH : double\l
++ HEIGHT : double\l
+- sprites : List\l
+|+ createRandomSprite : ISprite\l
++ init : void\l
++ computeRandomLocation : Point2D\l
+# clinit : void\l
+}"];
+
+MainWindow [
+shape = "record", color="black", fillcolor=white, style=filled,
+label = "{MainWindow\n|
+- animationPanel : AnimationPanel\l
+- actionPanel : JPanel\l
+- createButton : JButton\l
+- moveButton : JButton\l
+- resetButton : JButton\l
+- frame : JFrame\l
+|+ init : void\l
+# access$200 : JButton\l
+# access$100 : JButton\l
+# access$000 : AnimationPanel\l
+- createWidgets : void\l
++ show : void\l
+- assignActions : void\l
+}"];
+
+NullSpriteIterator [
+shape = "record", color="black", fillcolor=white, style=filled,
+label = "{NullSpriteIterator\n|
+|+ next : Object\l
++ init : void\l
++ hasNext : boolean\l
++ remove : void\l
+}"];
+
+CompositeSpriteIterator [
+shape = "record", color="black", fillcolor=white, style=filled,
+label = "{CompositeSpriteIterator\n|
+- stack : Stack\l
+|+ next : Object\l
++ init : void\l
++ hasNext : boolean\l
++ remove : void\l
+}"];
+
+CrystalBall [
+shape = "record", color="black", fillcolor=white, style=filled,
+label = "{CrystalBall\n|
+|+ init : void\l
+}"];
+CrystalBall -> CompositeSprite [arrowhead="onormal", style="solid"];
+
+AnimationPanel [
+shape = "record", color="black", fillcolor=white, style=filled,
+label = "{AnimationPanel\n|
+- serialVersionUID : long\l
+- animating : boolean\l
+- sleepTime : long\l
+- sprites : List\l
+|+ add : void\l
++ init : void\l
++ getSize : Dimension\l
+# access$200 : long\l
+# access$100 : List\l
+# access$000 : boolean\l
+# paintComponent : void\l
++ reset : void\l
++ animate : void\l
+}"];
+
+CircleSprite [
+shape = "record", color="black", fillcolor=white, style=filled,
+label = "{CircleSprite\n|
+|+ init : void\l
++ move : void\l
+}"];
+CircleSprite -> AbstractSprite [arrowhead="onormal", style="solid"];
+
+RectangleTower [
+shape = "record", color="black", fillcolor=white, style=filled,
+label = "{RectangleTower\n|
+|+ init : void\l
+}"];
+RectangleTower -> CompositeSprite [arrowhead="onormal", style="solid"];
+
+AnimatorApp [
+shape = "record", color="black", fillcolor=white, style=filled,
+label = "{AnimatorApp\n|
 |+ init : void\l
 + main : void\l
 }"];
 
-LinearTransformer [
-shape = "record", color="black", fillcolor=white, style=filled,
-label = "{LinearTransformer\n|
-- enumTion : Enumeration\l
-|+ init : void\l
-+ transform : void\l
-}"];
-
-Iterator [
-shape = "record", color="maroon", fillcolor=white, style=filled,
-label = "{\<\<interface\>\>\lIterator\n\<\<adaptee\>\>\n||+ next : Object\l
-+ hasNext : boolean\l
-+ forEachRemaining : void\l
+ISprite [
+shape = "record", color="yellow", fillcolor=white, style=filled,
+label = "{\<\<interface\>\>\lISprite\n\<\<component\>\>\n||+ add : void\l
++ move : void\l
++ getChild : ISprite\l
++ getShape : Shape\l
 + remove : void\l
 }"];
 
-Enumeration [
-shape = "record", color="maroon", fillcolor=white, style=filled,
-label = "{\<\<interface\>\>\lEnumeration\n\<\<target\>\>\n||+ hasMoreElements : boolean\l
-+ nextElement : Object\l
+AbstractSprite [
+shape = "record", color="black ", fillcolor=white, style=filled,
+label = "{AbstractSprite\n|# dx : double\l
+# shape : Shape\l
+# dy : double\l
+|+ add : void\l
++ init : void\l
++ iterator : Iterator\l
++ move : void\l
+# computeNewBoundsAfterMoving : Rectangle2D\l
++ getChild : ISprite\l
++ getShape : Shape\l
++ remove : void\l
 }"];
-App -> IteratorToEnumerationAdapter [label = "", arrowhead="vee", style="dashed"];
-Iterator -> Iterator [label = "", arrowhead="vee", style="dashed"];
-App -> LinearTransformer [label = "",arrowhead="vee", style="solid"];
-LinearTransformer -> Enumeration [label = "",arrowhead="vee", style="solid"];
-IteratorToEnumerationAdapter -> Iterator [label = "\n\<\<adapts\>\>",arrowhead="vee", style="solid"];
+AbstractSprite -> ISprite [arrowhead="onormal", style="dashed"];
+AnimatorApp -> MainWindow [label = "", arrowhead="vee", style="dashed"];
+AnimationPanel -> ISprite [label = "", arrowhead="vee", style="dashed"];
+AnimationPanel -> AnimationPanel [label = "", arrowhead="vee", style="dashed"];
+AnimationPanel -> CompositeSpriteIterator [label = "", arrowhead="vee", style="dashed"];
+MainWindow -> MainWindow [label = "", arrowhead="vee", style="dashed"];
+MainWindow -> AnimationPanel [label = "", arrowhead="vee", style="dashed"];
+AbstractSprite -> ISprite [label = "", arrowhead="vee", style="dashed"];
+AbstractSprite -> NullSpriteIterator [label = "", arrowhead="vee", style="dashed"];
+CircleSprite -> AbstractSprite [label = "", arrowhead="vee", style="dashed"];
+CircleSprite -> CircleSprite [label = "", arrowhead="vee", style="dashed"];
+CompositeSprite -> AbstractSprite [label = "", arrowhead="vee", style="dashed"];
+CompositeSprite -> CompositeSpriteIterator [label = "", arrowhead="vee", style="dashed"];
+CompositeSprite -> ISprite [label = "", arrowhead="vee", style="dashed"];
+CompositeSpriteIterator -> CompositeSpriteIterator [label = "", arrowhead="vee", style="dashed"];
+CompositeSpriteIterator -> ISprite [label = "", arrowhead="vee", style="dashed"];
+CrystalBall -> CompositeSprite [label = "", arrowhead="vee", style="dashed"];
+CrystalBall -> RectangleTower [label = "", arrowhead="vee", style="dashed"];
+CrystalBall -> CrystalBall [label = "", arrowhead="vee", style="dashed"];
+CrystalBall -> CircleSprite [label = "", arrowhead="vee", style="dashed"];
+ISprite -> ISprite [label = "", arrowhead="vee", style="dashed"];
+NullSpriteIterator -> ISprite [label = "", arrowhead="vee", style="dashed"];
+NullSpriteIterator -> NullSpriteIterator [label = "", arrowhead="vee", style="dashed"];
+RectangleSprite -> AbstractSprite [label = "", arrowhead="vee", style="dashed"];
+RectangleSprite -> RectangleSprite [label = "", arrowhead="vee", style="dashed"];
+RectangleTower -> CompositeSprite [label = "", arrowhead="vee", style="dashed"];
+RectangleTower -> RectangleSprite [label = "", arrowhead="vee", style="dashed"];
+RectangleTower -> RectangleTower [label = "", arrowhead="vee", style="dashed"];
+SpriteFactory -> ISprite [label = "", arrowhead="vee", style="dashed"];
+SpriteFactory -> SpriteFactory [label = "", arrowhead="vee", style="dashed"];
 
 }

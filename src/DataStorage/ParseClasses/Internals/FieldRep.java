@@ -3,14 +3,14 @@ package DataStorage.ParseClasses.Internals;
 import DataStorage.ParseClasses.ClassTypes.AbstractTypable;
 import Visitors.DefaultVisitors.IVisitor;
 
-import java.util.Collection;
+import java.util.List;
 
 /**
  * Created by efronbs on 1/7/2016.
  */
 public class FieldRep extends AbstractTypable {
     private String className;
-    private Collection<String> compoundType;
+    private List<String> compoundType;
     private boolean isCompound;
 
 
@@ -20,7 +20,7 @@ public class FieldRep extends AbstractTypable {
         isCompound = false;
     }
 
-    public FieldRep(String name, int accessibility, String type, String className, Collection<String> compoundType) {
+    public FieldRep(String name, int accessibility, String type, String className, List<String> compoundType) {
         super(name, accessibility, type);
         this.className = className;
         isCompound = true;
@@ -45,8 +45,12 @@ public class FieldRep extends AbstractTypable {
         return isCompound;
     }
 
-    public Collection<String> getCompoundType() {
+    public List<String> getCompoundType() {
         return compoundType;
+    }
+
+    public String getInnerOfCompoundType() {
+        return compoundType.get(compoundType.size() - 1);
     }
 
 }
