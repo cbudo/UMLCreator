@@ -29,8 +29,7 @@ public class SingletonVisitor extends AbstractVisitorTemplate {
 
     @Override
     public void performVisits(IDataStorage data) {
-        for (AbstractJavaClassRep r :
-                data.getClasses()) {
+        for (AbstractJavaClassRep r : data.getClasses()) {
             for (AbstractData m :
                     r.getMethodsMap().values()) {
                 m.accept(visitor);
