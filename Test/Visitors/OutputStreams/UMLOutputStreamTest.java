@@ -1,8 +1,9 @@
 package Visitors.OutputStreams;
 
 import DataStorage.DataStore.ParsedDataStorage;
-import DataStorage.ParseClasses.ClassTypes.ClassRep;
+import DataStorage.ParseClasses.ClassTypes.AbstractJavaClassRep;
 import DataStorage.ParseClasses.ClassTypes.DataFactory;
+import DataStorage.ParseClasses.Decorators.ComponentDecorator;
 import DataStorage.ParseClasses.Decorators.DecoratorDecorator;
 import DataStorage.ParseClasses.Internals.FieldRep;
 import Visitors.PatternVisitors.DecoratorVisitor;
@@ -21,21 +22,20 @@ public class UMLOutputStreamTest {
     public void testExtendsDecorator() throws Exception {
         ParsedDataStorage parsedDataStorage = ParsedDataStorage.getInstance();
         DataFactory DF = new DataFactory();
-        ClassRep decorator = (ClassRep) DF.getClassRep("decorator", Opcodes.ACC_PUBLIC);
-        decorator.setDecorator(true);
-        ClassRep component = (ClassRep) DF.getClassRep("component", Opcodes.ACC_PUBLIC);
-        component.setComponent(true);
-        ClassRep decoratorExtension = (ClassRep) DF.getClassRep("should be decorator", Opcodes.ACC_PUBLIC, "decorator");
+        AbstractJavaClassRep decorator = DF.getClassRep("decorator", Opcodes.ACC_PUBLIC);
+        AbstractJavaClassRep component = DF.getComponent(DF.getClassRep("component", Opcodes.ACC_PUBLIC));
+        AbstractJavaClassRep decoratorExtension = DF.getClassRep("should be decorator", Opcodes.ACC_PUBLIC, "decorator");
         parsedDataStorage.addClass(component.getName(), component);
         parsedDataStorage.addClass(decorator.getName(), decorator);
         parsedDataStorage.addClass(decoratorExtension.getName(), decoratorExtension);
+        parsedDataStorage.getNonSpecificJavaClass(decorator.getName()).setDecorator(true);
 
         DecoratorVisitor DV = new DecoratorVisitor(parsedDataStorage);
         assertFalse(ParsedDataStorage.getInstance().getNonSpecificJavaClass("should be decorator") instanceof DecoratorDecorator);
         DV.doTheStuff();
 
         assertTrue(ParsedDataStorage.getInstance().getNonSpecificJavaClass("decorator") instanceof DecoratorDecorator);
-        assertTrue(ParsedDataStorage.getInstance().getNonSpecificJavaClass("component").isComponent());
+        assertTrue(ParsedDataStorage.getInstance().getNonSpecificJavaClass("component") instanceof ComponentDecorator);
         assertTrue(ParsedDataStorage.getInstance().getNonSpecificJavaClass("should be decorator") instanceof DecoratorDecorator);
     }
 
@@ -43,9 +43,9 @@ public class UMLOutputStreamTest {
     public void testTurnIntoDecorator() {
         ParsedDataStorage parsedDataStorage = ParsedDataStorage.getInstance();
         DataFactory DF = new DataFactory();
-        ClassRep decorator = (ClassRep) DF.getClassRep("decoratee", Opcodes.ACC_PUBLIC);
-        ClassRep component = (ClassRep) DF.getClassRep("component", Opcodes.ACC_PUBLIC);
-        ClassRep decoratorExtension = (ClassRep) DF.getClassRep("should be decorator", Opcodes.ACC_PUBLIC, "decoratee");
+        AbstractJavaClassRep decorator = DF.getClassRep("decoratee", Opcodes.ACC_PUBLIC);
+        AbstractJavaClassRep component = DF.getClassRep("component", Opcodes.ACC_PUBLIC);
+        AbstractJavaClassRep decoratorExtension = DF.getClassRep("should be decorator", Opcodes.ACC_PUBLIC, "decoratee");
         FieldRep fr = new FieldRep("hi", Opcodes.ACC_PUBLIC, "decoratee", "should be decorator");
         parsedDataStorage.addClass(component.getName(), component);
         parsedDataStorage.addClass(decorator.getName(), decorator);

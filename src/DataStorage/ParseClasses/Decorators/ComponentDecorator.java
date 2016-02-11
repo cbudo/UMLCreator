@@ -1,6 +1,6 @@
 package DataStorage.ParseClasses.Decorators;
 
-import DataStorage.ParseClasses.ClassTypes.ClassRep;
+import DataStorage.ParseClasses.ClassTypes.AbstractJavaClassRep;
 
 /**
  * Created by budocf on 2/10/2016.
@@ -8,9 +8,9 @@ import DataStorage.ParseClasses.ClassTypes.ClassRep;
 public class ComponentDecorator extends PatternTypeClassDecorator {
     boolean isComponent;
 
-    public ComponentDecorator(ClassRep rep) {
+    public ComponentDecorator(AbstractJavaClassRep rep) {
         super(rep);
-        isComponent = false;
+        isComponent = true;
     }
 
     public boolean isComponent() {

@@ -1,6 +1,6 @@
 package DataStorage.ParseClasses.Decorators;
 
-import DataStorage.ParseClasses.ClassTypes.ClassRep;
+import DataStorage.ParseClasses.ClassTypes.AbstractJavaClassRep;
 
 /**
  * Created by budocf on 2/2/2016.
@@ -9,7 +9,8 @@ public class SingletonClass extends PatternTypeClassDecorator {
     private boolean publicStaticGetInstance = false;
     private boolean privateSingletonInit = false;
     private boolean privateSingletonField = false;
-    public SingletonClass(ClassRep rep) {
+
+    public SingletonClass(AbstractJavaClassRep rep) {
         super(rep);
     }
 

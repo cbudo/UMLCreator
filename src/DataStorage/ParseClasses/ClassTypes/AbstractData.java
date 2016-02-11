@@ -10,16 +10,19 @@ public abstract class AbstractData implements ITraverser
 {
     private String name, displayName;
     private int accessibility;
-    private boolean isComponent;
+
+    public AbstractData() {
+
+    }
 
     public AbstractData(String name, int accessibility)
     {
         this.name = name;
+        if (this.name == null)
+            this.name = "";
         this.displayName = getInnermostName() + "\\n";
 
         this.accessibility = accessibility;
-
-        isComponent = false;
     }
 
     public String getName()
@@ -28,6 +31,7 @@ public abstract class AbstractData implements ITraverser
     }
 
     public String getInnermostName() {
+        if (this.name == null) return "";
         return this.name.substring(this.name.lastIndexOf("/") + 1);
     }
 
@@ -54,14 +58,4 @@ public abstract class AbstractData implements ITraverser
             return "#";
         }
     }
-
-    public boolean isComponent() {
-        return isComponent;
-    }
-
-    public void setComponent(boolean component) {
-        isComponent = component;
-    }
-
-
 }

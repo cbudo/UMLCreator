@@ -1,6 +1,5 @@
 package DataStorage.ParseClasses.ClassTypes;
 
-import DataStorage.DataStore.ParsedDataStorage;
 import DataStorage.ParseClasses.Internals.FieldRep;
 
 import java.util.List;
@@ -27,23 +26,19 @@ public abstract class AbstractExtendableClassRep extends AbstractJavaClassRep {
         super(name, accessibility, implementsNames);
         this.extendedClassName = extendedClassName;
     }
-
-    @Override
     public void addField(String fieldName, AbstractData fieldRep) {
         String type = ((FieldRep) fieldRep).getType();
-        if (this.extendedClassName.equals(type) || this.getImplementsList().contains(type) || this.getInnermostName().equals(type)) {
-            //we've got a winner
-            // TODO: convert to a decoratordecorator
-            //set type to component
+        if (getImplementsList().contains(type) || this.getInnermostName().equals(type) || this.getExtendedClassName().equals(type)) {
+            setDecorator(true);
+            //make field a component
             try {
-                ParsedDataStorage.getInstance().getClass(((FieldRep) fieldRep).getFullType()).setComponent(true);
+                convertToComponenet(((FieldRep) fieldRep).getFullType());
             } catch (Exception ignored) {
 
             }
         }
-        super.addField(fieldName, fieldRep);
+        this.fieldsMap.put(fieldName, fieldRep);
     }
-
     public String getExtendedClassName() {
         return this.extendedClassName;
     }

@@ -1,8 +1,8 @@
 package DataStorage.ParseClasses.ClassTypes;
 
 import DataStorage.DataStore.ParsedDataStorage;
+import DataStorage.ParseClasses.Decorators.ComponentDecorator;
 import DataStorage.ParseClasses.Decorators.DecoratorDecorator;
-import DataStorage.ParseClasses.Decorators.SingletonClass;
 
 import java.util.List;
 
@@ -14,7 +14,7 @@ public class DataFactory {
 
     }
 
-    public AbstractData getAbstractClassRep() {
+    public AbstractJavaClassRep getAbstractClassRep() {
         return null;
     }
 
@@ -26,40 +26,47 @@ public class DataFactory {
         if (extending != null) {
             if (extending instanceof DecoratorDecorator) {
                 // TODO: convert this to a decoratordecorator
-                rep = new SingletonClass((ClassRep) rep);
+                rep = new DecoratorDecorator(rep);
             }
         }
         return rep;
     }
 
-    public AbstractData getClassRep(String name, int accessibility, List<String> implementsNames) {
+    public AbstractJavaClassRep getClassRep(String name, int accessibility, List<String> implementsNames) {
         return getClassRep(name, accessibility, implementsNames, null);
     }
 
-    public AbstractData getClassRep(String name, int accessibility, String extendedClassName) {
+    public AbstractJavaClassRep getClassRep(String name, int accessibility, String extendedClassName) {
         return getClassRep(name, accessibility, null, extendedClassName);
     }
 
-    public AbstractData getClassRep(String name, int accessibility) {
+    public AbstractJavaClassRep getClassRep(String name, int accessibility) {
         return getClassRep(name, accessibility, null, null);
     }
 
-    public AbstractData getInterfaceRep() {
+    public AbstractJavaClassRep getInterfaceRep() {
         return null;
     }
 
-    public AbstractData getAbstractJavaClassRep(String name, int accessibility, List<String> implementsNames, String extendedClassName) {
+    public AbstractJavaClassRep getAbstractJavaClassRep(String name, int accessibility, List<String> implementsNames, String extendedClassName) {
         // create new AbstractJavaClassRep and if it is a decorator return a DecoratorDecorator
-        DataFactory DF = new DataFactory();
-        AbstractData rep = getClassRep(name, accessibility, implementsNames, extendedClassName);
+        AbstractJavaClassRep rep = getClassRep(name, accessibility, implementsNames, extendedClassName);
         AbstractJavaClassRep extending = ParsedDataStorage.getInstance().getClass(extendedClassName);
 
         if (extending != null) {
             if (extending instanceof DecoratorDecorator) {
-                // TODO: convert this to a decoratordecorator
-                rep = new SingletonClass((ClassRep) rep);
+                // DONE: convert this to a decoratordecorator
+                rep = new DecoratorDecorator(rep);
             }
         }
         return rep;
+    }
+
+    public AbstractJavaClassRep getComponent(AbstractJavaClassRep newComponent) {
+        return new ComponentDecorator(newComponent);
+    }
+
+    public DecoratorDecorator getDecorator(AbstractJavaClassRep abstractJavaClassRep) {
+        return new DecoratorDecorator(abstractJavaClassRep);
     }
 }

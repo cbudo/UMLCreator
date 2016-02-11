@@ -3,9 +3,11 @@ package Visitors.PatternVisitors;
 import DataStorage.DataStore.IDataStorage;
 import DataStorage.DataStore.ParsedDataStorage;
 import DataStorage.ParseClasses.ClassTypes.AbstractData;
+import DataStorage.ParseClasses.ClassTypes.AbstractExtendableClassRep;
 import DataStorage.ParseClasses.ClassTypes.AbstractJavaClassRep;
 import DataStorage.ParseClasses.ClassTypes.ClassRep;
 import DataStorage.ParseClasses.Decorators.NamedRelationDecorator;
+import DataStorage.ParseClasses.Decorators.PatternTypeClassDecorator;
 import DataStorage.ParseClasses.Internals.FieldRep;
 import DataStorage.ParseClasses.Internals.IRelation;
 import DataStorage.ParseClasses.Internals.MethodRep;
@@ -127,9 +129,14 @@ public class AdaptorVisitor extends AbstractVisitorTemplate {
             s = s.replace("/", ".");
             AbstractJavaClassRep cRep = data.getClass(s);
             String adaptee = ((FieldRep) cRep.getFieldsMap().values().toArray()[0]).getFullType();
-            String target = !((ClassRep) cRep).getExtendedClassName().equals("java/lang/Object")
-                    ? ((ClassRep) cRep).getExtendedClassName() : cRep.getImplementsList().get(0);
-
+            String target = "";
+            if (cRep instanceof PatternTypeClassDecorator) {
+//                target = !((PatternTypeClassDecorator) cRep).getExtendedClassName().equals("java/lang/Object")
+//                        ? ((PatternTypeClassDecorator) cRep).getExtendedClassName() : cRep.getImplementsList().get(0);
+            } else {
+                target = !((AbstractExtendableClassRep) cRep).getExtendedClassName().equals("java/lang/Object")
+                        ? ((ClassRep) cRep).getExtendedClassName() : cRep.getImplementsList().get(0);
+            }
             AdaptorNameSet newAdaptorSet = new AdaptorNameSet(s, adaptee, target.replace("/", "."));
             this.adaptorSets.add(newAdaptorSet);
 

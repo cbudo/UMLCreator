@@ -1,8 +1,8 @@
 package DataStorage.ParseClasses.Decorators;
 
 import DataStorage.ParseClasses.ClassTypes.AbstractData;
+import DataStorage.ParseClasses.ClassTypes.AbstractExtendableClassRep;
 import DataStorage.ParseClasses.ClassTypes.AbstractJavaClassRep;
-import DataStorage.ParseClasses.ClassTypes.ClassRep;
 import Visitors.DefaultVisitors.IVisitor;
 
 import java.util.List;
@@ -12,10 +12,10 @@ import java.util.Map;
  * Created by efronbs on 2/4/2016.
  */
 public abstract class PatternTypeClassDecorator extends AbstractJavaClassRep {
-    private ClassRep classToDecorate;
+    private AbstractJavaClassRep classToDecorate;
 
-    public PatternTypeClassDecorator(ClassRep c) {
-        super(c.getName(), c.getAccessibility());
+    public PatternTypeClassDecorator(AbstractJavaClassRep c) {
+        super();
         this.classToDecorate = c;
     }
 
@@ -30,7 +30,7 @@ public abstract class PatternTypeClassDecorator extends AbstractJavaClassRep {
     }
 
     public String getExtendedClassName() {
-        return this.classToDecorate.getExtendedClassName();
+        return ((AbstractExtendableClassRep) this.classToDecorate).getExtendedClassName();
     }
 
     public String getFillColor() {
@@ -50,7 +50,7 @@ public abstract class PatternTypeClassDecorator extends AbstractJavaClassRep {
     }
 
     public Map<String, AbstractData> getMethodsMap() {
-        return this.methodsMap;
+        return this.classToDecorate.getMethodsMap();
     }
 
     public AbstractData getField(String fieldName) {
@@ -106,7 +106,7 @@ public abstract class PatternTypeClassDecorator extends AbstractJavaClassRep {
     }
 
     public String getTranslatedAccessibility() {
-        return "";
+        return this.classToDecorate.getTranslatedAccessibility();
     }
 
 }

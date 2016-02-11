@@ -3,10 +3,7 @@ package DataStorage.ParseClasses.ClassTypes;
 import DataStorage.DataStore.ParsedDataStorage;
 import DataStorage.ParseClasses.Internals.FieldRep;
 
-import java.util.ArrayList;
-import java.util.HashMap;
-import java.util.List;
-import java.util.Map;
+import java.util.*;
 
 /**
  * Created by efronbs on 1/7/2016.
@@ -31,6 +28,10 @@ public abstract class AbstractJavaClassRep extends AbstractData {
         this.profileTags = new ArrayList<>();
         this.color = "black";
         this.fillColor = "white";
+    }
+
+    public AbstractJavaClassRep() {
+        super();
     }
 
 //    protected void addImplementsToStorage() {
@@ -65,15 +66,19 @@ public abstract class AbstractJavaClassRep extends AbstractData {
     public void addField(String fieldName, AbstractData fieldRep) {
         String type = ((FieldRep) fieldRep).getType();
         if (getImplementsList().contains(type) || this.getInnermostName().equals(type)) {
-            setDecorator(true);
             //make field a component
             try {
-                ParsedDataStorage.getInstance().getClass(((FieldRep) fieldRep).getFullType()).setComponent(true);
+                setDecorator(true);
+                convertToComponenet(((FieldRep) fieldRep).getFullType());
             } catch (Exception ignored) {
 
             }
         }
         this.fieldsMap.put(fieldName, fieldRep);
+    }
+
+    public void convertToComponenet(String toComponent) {
+        ParsedDataStorage.getInstance().setComponent(toComponent);
     }
 
     public AbstractData getField(String fieldName) {
@@ -92,6 +97,7 @@ public abstract class AbstractJavaClassRep extends AbstractData {
     }
 
     public List<String> getImplementsList() {
+        if (this.implementsNames == null) return Collections.emptyList();
         return this.implementsNames;
     }
 
@@ -104,7 +110,9 @@ public abstract class AbstractJavaClassRep extends AbstractData {
     }
 
     public void setDecorator(boolean decorator) {
-        // TODO: change this class into a decoratordecorator
+        // DONE: change this class into a decoratordecorator
+        String currentName = getName();
+        ParsedDataStorage.getInstance().setDecorator(currentName);
         setFillColor("green");
     }
 

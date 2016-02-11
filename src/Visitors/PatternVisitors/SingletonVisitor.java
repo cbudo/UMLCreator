@@ -45,7 +45,8 @@ public class SingletonVisitor extends AbstractVisitorTemplate {
     public void performAnalysis() {
         for (AbstractJavaClassRep r : data.getClasses()) {
             if (r instanceof SingletonClass) {
-                if (((SingletonClass) r).isSingleton()) {
+                SingletonClass s = (SingletonClass) r;
+                if (s.isSingleton()) {
                     r.addToDisplayName("\\<\\<Singleton\\>\\>");
                     r.setColor("blue");
                 }
@@ -60,7 +61,8 @@ public class SingletonVisitor extends AbstractVisitorTemplate {
                 if ((m.getSimpleClassName().equals(m.getType()))) {
                     AbstractJavaClassRep cr = ParsedDataStorage.getInstance().getClass(m.getClassName());
                     if (cr instanceof SingletonClass) {
-                        ((SingletonClass) cr).setPublicStaticGetInstance(true);
+                        SingletonClass s = (SingletonClass) cr;
+                        s.setPublicStaticGetInstance(true);
                     } else {
                         // TODO: replace cr in data storage with a singletonClass version of cr with static getinstance set to true
                     }
@@ -76,7 +78,8 @@ public class SingletonVisitor extends AbstractVisitorTemplate {
                 if ((m.getAccessibility() & Opcodes.ACC_PUBLIC) == 0) {
                     AbstractJavaClassRep cr = ParsedDataStorage.getInstance().getClass(m.getClassName());
                     if (cr instanceof SingletonClass) {
-                        ((SingletonClass) cr).setPrivateSingletonInit(true);
+                        SingletonClass s = (SingletonClass) cr;
+                        s.setPrivateSingletonInit(true);
                     } else {
                         // TODO: replace cr in data storage with a singletonClass version of cr with private init set to true
                     }
@@ -92,7 +95,8 @@ public class SingletonVisitor extends AbstractVisitorTemplate {
             if (((f.getAccessibility() & Opcodes.ACC_PRIVATE) != 0) && (f.getType().equals(f.getSimpleClassName()))) {
                 AbstractJavaClassRep cr = ParsedDataStorage.getInstance().getClass(f.getClassName());
                 if (cr instanceof SingletonClass) {
-                    ((SingletonClass) cr).setPrivateSingletonField(true);
+                    SingletonClass s = (SingletonClass) cr;
+                    s.setPrivateSingletonField(true);
                 }
             }
         });

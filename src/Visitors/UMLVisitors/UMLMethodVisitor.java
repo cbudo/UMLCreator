@@ -1,7 +1,7 @@
 package Visitors.UMLVisitors;
 
 import DataStorage.DataStore.ParsedDataStorage;
-import DataStorage.ParseClasses.ClassTypes.ClassRep;
+import DataStorage.ParseClasses.ClassTypes.AbstractJavaClassRep;
 import DataStorage.ParseClasses.Internals.MethodRep;
 import DataStorage.ParseClasses.Internals.UsesRelation;
 import org.objectweb.asm.MethodVisitor;
@@ -29,10 +29,9 @@ public class UMLMethodVisitor extends MethodVisitor {
     public void visitMethodInsn(int opcode, String owner, String name, String desc, boolean itf) {
         super.visitMethodInsn(opcode, owner, name, desc, itf);
         String calledClass = getCalledClass(owner);
-        String callingClass = this.callingClassName;
         UsesRelation newRel = new UsesRelation(owner.replace("/", "."), fullCallingClassName);//(calledClass, callingClass);
         ParsedDataStorage.getInstance().addUsesRelation(newRel);
-        ClassRep calledClassRep = (ClassRep) ParsedDataStorage.getInstance().getClass(calledClass);
+        AbstractJavaClassRep calledClassRep = ParsedDataStorage.getInstance().getClass(calledClass);
         if (calledClassRep != null) {
             MethodRep mRep = (MethodRep) calledClassRep.getMethod(this.methodName);
             if (mRep != null) {
