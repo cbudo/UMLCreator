@@ -85,15 +85,28 @@ public class AdaptorVisitor extends AbstractVisitorTemplate {
             ParsedDataStorage.getInstance().getNonSpecificJavaClass(s.adaptorName.replace("/", ".")).setColor("maroon");
             ParsedDataStorage.getInstance().getNonSpecificJavaClass(s.adapteeName.replace("/", ".")).setColor("maroon");
             ParsedDataStorage.getInstance().getNonSpecificJavaClass(s.targetName.replace("/", ".")).setColor("maroon");
-            ParsedDataStorage.getInstance().getNonSpecificJavaClass(s.adaptorName.replace("/", ".")).addToDisplayName("\\<\\<adaptor\\>\\>");
-            ParsedDataStorage.getInstance().getNonSpecificJavaClass(s.adapteeName.replace("/", ".")).addToDisplayName("\\<\\<adaptee\\>\\>");
-            ParsedDataStorage.getInstance().getNonSpecificJavaClass(s.targetName.replace("/", ".")).addToDisplayName("\\<\\<target\\>\\>");
+            if (!ParsedDataStorage.getInstance().getNonSpecificJavaClass(s.adaptorName.replace("/", ".")).getDisplayName().contains("\\<\\<adaptor\\>\\>"))
+                ParsedDataStorage.getInstance().getNonSpecificJavaClass(s.adaptorName.replace("/", ".")).addToDisplayName("\\<\\<adaptor\\>\\>");
+            if (!ParsedDataStorage.getInstance().getNonSpecificJavaClass(s.adapteeName.replace("/", ".")).getDisplayName().contains("\\<\\<adaptee\\>\\>"))
+                ParsedDataStorage.getInstance().getNonSpecificJavaClass(s.adapteeName.replace("/", ".")).addToDisplayName("\\<\\<adaptee\\>\\>");
+            if (!ParsedDataStorage.getInstance().getNonSpecificJavaClass(s.targetName.replace("/", ".")).getDisplayName().contains("\\<\\<target\\>\\>"))
+                ParsedDataStorage.getInstance().getNonSpecificJavaClass(s.targetName.replace("/", ".")).addToDisplayName("\\<\\<target\\>\\>");
 
-            for (IRelation r : ParsedDataStorage.getInstance().getAssociationRels()) {
+//            for (IRelation r : ParsedDataStorage.getInstance().getAssociationRels()) {
+//                if (r.getFrom().equals(s.adaptorName) && r.getTo().equals(s.adapteeName)) {
+//                    //System.out.println("|from| " + r.getFrom() + " |adaptorName| " + s.adaptorName + " |to| " + r.getTo() + " |adapteeName| " + s.adapteeName);
+//                    ParsedDataStorage.getInstance().removeRelation(r);
+//                    newAssoc.add(new NamedRelationDecorator(r, "\\<\\<adapts\\>\\>"));
+//                }
+//            }
+
+            for (int i = 0; i < ParsedDataStorage.getInstance().getAssociationRels().size(); i++) {
+                IRelation r = ParsedDataStorage.getInstance().getAssociationRels().get(i);
                 if (r.getFrom().equals(s.adaptorName) && r.getTo().equals(s.adapteeName)) {
                     //System.out.println("|from| " + r.getFrom() + " |adaptorName| " + s.adaptorName + " |to| " + r.getTo() + " |adapteeName| " + s.adapteeName);
                     ParsedDataStorage.getInstance().removeRelation(r);
                     newAssoc.add(new NamedRelationDecorator(r, "\\<\\<adapts\\>\\>"));
+                    i--;
                 }
             }
 

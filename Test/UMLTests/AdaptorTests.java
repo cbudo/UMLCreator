@@ -148,10 +148,10 @@ public class AdaptorTests {
 
         generator.parse(argList);
         generator.Generate();
-//
+
 //        System.out.println(ParsedDataStorage.getInstance()
 //                .getNonSpecificJavaClass("UMLTests.TestingDummyCode.AdapterTests.FakeAdaptor_NoUsesRelation").getDisplayName());
-
+//
 //        TestCase.assertFalse(ParsedDataStorage.getInstance()
 //                .getNonSpecificJavaClass("UMLTests.TestingDummyCode.AdapterTests.SampleTarget").getDisplayName().contains("target"));
 //        TestCase.assertFalse(ParsedDataStorage.getInstance()

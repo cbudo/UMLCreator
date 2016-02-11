@@ -8,6 +8,8 @@ import org.objectweb.asm.ClassVisitor;
 import org.objectweb.asm.FieldVisitor;
 import org.objectweb.asm.Type;
 
+import java.util.ArrayList;
+
 public class ClassFieldVisitor extends ClassVisitor {
 
     protected final String className;
@@ -24,9 +26,20 @@ public class ClassFieldVisitor extends ClassVisitor {
 
     public FieldVisitor visitField(int access, String name, String desc, String signature, Object value) {
         FieldVisitor toDecorate = super.visitField(access, name, desc, signature, value);
+        AbstractData field;
         String type = Type.getType(desc).getClassName();//.replace(".", "/");
+
+        //System.out.println(name + " " + Type.getType(signature).getClassName() + " " + value + " " + Type.getType(desc).getClassName());
+        //System.out.println(signature + " " + Type.getType(signature).getClassName());
         //type = getInnermostClass(type);
-        AbstractData field = new FieldRep(name, access, type, className);
+        if (signature != null) {
+            ArrayList<String> compoundType = new ArrayList<String>();
+            getCompoundType(signature, compoundType);
+            field = new FieldRep(name, access, type, className, compoundType);
+        } else {
+            field = new FieldRep(name, access, type, className);
+        }
+        
         AssociationRelation newAssoc = new AssociationRelation(type, this.className);//getInnermostClass(type), getInnermostClass(this.className));
         ParsedDataStorage.getInstance().addAssociationRelation(newAssoc);
         // DONE: add this field to your internal representation of the current class.
@@ -34,6 +47,14 @@ public class ClassFieldVisitor extends ClassVisitor {
         ParsedDataStorage.getInstance().addField(className, field);
         return toDecorate;
 	}
+
+    private void getCompoundType(String signature, ArrayList<String> compoundType) {
+        if (!signature.contains("<")) {
+            return;
+        } else {
+
+        }
+    }
 
     private String getInnermostClass(String someType) {
         String t = someType.replace(".java", "");
