@@ -2,16 +2,8 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="1b357d25-b641-458c-8a8c-24064c31616e" name="Default" comment="Some changes on adapter visitor + work on composite visitor. Added Inheritance visitor, which will grab the ineritance chain of a given class.">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/Visitors/UMLVisitors/BoundedInheritanceVisitor.java" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Test/UMLTests/ASMViewData.java" afterPath="$PROJECT_DIR$/Test/UMLTests/ASMViewData.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/graph_text/generated_graph.gv" afterPath="$PROJECT_DIR$/graph_text/generated_graph.gv" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/DataStorage/ParseClasses/Internals/FieldRep.java" afterPath="$PROJECT_DIR$/src/DataStorage/ParseClasses/Internals/FieldRep.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/Generation/GraphGenerator.java" afterPath="$PROJECT_DIR$/src/Generation/GraphGenerator.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/Visitors/ASMVisitors/ClassFieldVisitor.java" afterPath="$PROJECT_DIR$/src/Visitors/ASMVisitors/ClassFieldVisitor.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/Visitors/DefaultVisitors/IVisitMethod.java" afterPath="$PROJECT_DIR$/src/Visitors/DefaultVisitors/IVisitMethod.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/Visitors/DefaultVisitors/Visitor.java" afterPath="$PROJECT_DIR$/src/Visitors/DefaultVisitors/Visitor.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/Visitors/PatternVisitors/CompositeVisitor.java" afterPath="$PROJECT_DIR$/src/Visitors/PatternVisitors/CompositeVisitor.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Test/UMLTests/CompositeTest.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
     </list>
     <ignored path="UMLCreator.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -51,33 +43,24 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="375">
-      <file leaf-file-name="AbstractSprite.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/TestingProjects/Lab7-2-Solution/src/problem/sprites/AbstractSprite.java">
+      <file leaf-file-name="CompositeTest.java" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/Test/UMLTests/CompositeTest.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.0">
-              <caret line="19" column="4" selection-start-line="19" selection-start-column="4" selection-end-line="19" selection-end-column="4" />
-              <folding />
+            <state vertical-scroll-proportion="0.50993377">
+              <caret line="21" column="29" selection-start-line="21" selection-start-column="29" selection-end-line="21" selection-end-column="29" />
+              <folding>
+                <element signature="imports" expanded="true" />
+              </folding>
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="CompositeVisitor.java" pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/src/Visitors/PatternVisitors/CompositeVisitor.java">
+      <file leaf-file-name="AdaptorTests.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/Test/UMLTests/AdaptorTests.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.99598396">
-              <caret line="175" column="9" selection-start-line="175" selection-start-column="9" selection-end-line="175" selection-end-column="9" />
-              <folding>
-                <element signature="e#1839#1861#0" expanded="true" />
-                <element signature="e#3652#3674#0" expanded="true" />
-                <element signature="e#4144#4152#0" expanded="true" />
-                <element signature="e#5666#5688#0" expanded="true" />
-                <element signature="e#9842#9859#0" expanded="true" />
-                <element signature="e#9923#9931#0" expanded="true" />
-                <element signature="e#11089#11097#0" expanded="true" />
-                <element signature="e#11923#11940#0" expanded="true" />
-                <element signature="e#12004#12012#0" expanded="true" />
-                <element signature="e#13170#13178#0" expanded="true" />
-              </folding>
+            <state vertical-scroll-proportion="0.0">
+              <caret line="59" column="5" selection-start-line="59" selection-start-column="5" selection-end-line="59" selection-end-column="5" />
+              <folding />
             </state>
           </provider>
         </entry>
@@ -116,8 +99,6 @@
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/src/DataStorage/ParseClasses/Internals/MethodRep.java" />
-        <option value="$PROJECT_DIR$/src/TestingProjects/factory/pizzafm/Pizza.java" />
         <option value="$PROJECT_DIR$/Test/Generation/Generation/SequenceVisitorTest.java" />
         <option value="$PROJECT_DIR$/src/DataStorage/ParseClasses/Decorators/SingletonClass.java" />
         <option value="$PROJECT_DIR$/src/DataStorage/ParseClasses/ClassTypes/ClassRep.java" />
@@ -167,6 +148,8 @@
         <option value="$PROJECT_DIR$/Test/UMLTests/ASMViewData.java" />
         <option value="$PROJECT_DIR$/src/Generation/GraphGenerator.java" />
         <option value="$PROJECT_DIR$/src/Visitors/PatternVisitors/CompositeVisitor.java" />
+        <option value="$PROJECT_DIR$/Test/UMLTests/TestingDummyCode/CompositeTests/TestComponent.java" />
+        <option value="$PROJECT_DIR$/Test/UMLTests/CompositeTest.java" />
       </list>
     </option>
   </component>
@@ -430,44 +413,6 @@
             </PATH_ELEMENT>
             <PATH_ELEMENT>
               <option name="myItemId" value="problem" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="graphics" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="UMLCreator" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="UMLCreatorActual" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="src" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="TestingProjects" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="Lab7-2-Solution" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="src" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="problem" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="client" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
@@ -1097,7 +1042,7 @@
       <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea" />
       <option name="MAIN_CLASS_NAME" value="Visitors.ASMVisitors.DesignParser" />
       <option name="VM_PARAMETERS" value="" />
-      <option name="PROGRAM_PARAMETERS" value="U problem.client.AnimatorApp problem.graphics.AnimationPanel problem.graphics.MainWindow problem.sprites.AbstractSprite problem.sprites.CircleSprite problem.sprites.CompositeSprite problem.sprites.CompositeSpriteIterator problem.sprites.CrystalBall problem.sprites.ISprite problem.sprites.NullSpriteIterator problem.sprites.RectangleSprite problem.sprites.RectangleTower problem.sprites.SpriteFactory" />
+      <option name="PROGRAM_PARAMETERS" value="" />
       <option name="WORKING_DIRECTORY" value="file://$PROJECT_DIR$" />
       <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
       <option name="ALTERNATIVE_JRE_PATH" />
@@ -1241,13 +1186,7 @@
       <workItem from="1454614368198" duration="5069000" />
       <workItem from="1455072810204" duration="1207000" />
       <workItem from="1455117402972" duration="24598000" />
-      <workItem from="1455195769301" duration="22065000" />
-    </task>
-    <task id="LOCAL-00002" summary="added IClass which extracts methods and fields from classes interfaces and abstract classes&#10;added methods to parsedDataStorage to enable classes, methods and fields to be added&#10;made projectData global so it is able to be updated throughout the program (may need to change this later)">
-      <created>1451961603603</created>
-      <option name="number" value="00002" />
-      <option name="project" value="LOCAL" />
-      <updated>1451961603603</updated>
+      <workItem from="1455195769301" duration="23825000" />
     </task>
     <task id="LOCAL-00003" summary="added abstract classes to datastorage">
       <created>1451963292983</created>
@@ -1537,7 +1476,13 @@
       <option name="project" value="LOCAL" />
       <updated>1455169221535</updated>
     </task>
-    <option name="localTasksCounter" value="51" />
+    <task id="LOCAL-00051" summary="Some changes on adapter visitor + work on composite visitor. Added Inheritance visitor, which will grab the ineritance chain of a given class.">
+      <created>1455224570063</created>
+      <option name="number" value="00051" />
+      <option name="project" value="LOCAL" />
+      <updated>1455224570092</updated>
+    </task>
+    <option name="localTasksCounter" value="52" />
     <servers />
   </component>
   <component name="TestHistory">
@@ -1573,7 +1518,7 @@
     </history-entry>
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="314583000" />
+    <option name="totallyTimeSpent" value="316343000" />
   </component>
   <component name="TodoView" selected-index="1">
     <todo-panel id="selected-file">
@@ -1599,14 +1544,14 @@
       <window_info id="Coverage" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.329582" sideWeight="0.5" order="7" side_tool="true" content_ui="tabs" />
       <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.30190796" sideWeight="0.5" order="8" side_tool="false" content_ui="tabs" />
       <window_info id="Designer" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.16720258" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.27599144" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
       <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32995495" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
       <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33013844" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.35476956" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="UI Designer" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="true" content_ui="tabs" />
-      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.39616615" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
+      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.39616615" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
@@ -1704,12 +1649,6 @@
           <properties />
           <option name="timeStamp" value="143" />
         </line-breakpoint>
-        <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/src/Visitors/PatternVisitors/CompositeVisitor.java</url>
-          <line>168</line>
-          <properties />
-          <option name="timeStamp" value="164" />
-        </line-breakpoint>
       </breakpoints>
       <option name="time" value="165" />
     </breakpoint-manager>
@@ -1727,20 +1666,6 @@
     <option name="FILTER_TARGETS" value="false" />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/src/Visitors/SequenceVisitors/SequenceClassMethodVisitor.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="5" column="18" selection-start-line="5" selection-start-column="18" selection-end-line="5" selection-end-column="18" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Test/UMLTests/TestingDummyCode/AdapterTests/SimpleAdaptee.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="25" column="5" selection-start-line="25" selection-start-column="5" selection-end-line="25" selection-end-column="5" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/Test/UMLTests/SingletonTests.java">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
@@ -1954,14 +1879,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/Test/UMLTests/AdaptorTests.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.6513158">
-          <caret line="37" column="56" selection-start-line="37" selection-start-column="56" selection-end-line="37" selection-end-column="56" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/Visitors/UMLVisitors/UMLClassMethodVisitor.java">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="1.5921053">
@@ -2115,14 +2032,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/TestingProjects/Lab7-2-Solution/src/problem/client/AnimatorApp.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.09713025">
-          <caret line="4" column="13" selection-start-line="4" selection-start-column="13" selection-end-line="4" selection-end-column="13" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/TestingProjects/Lab7-2-Solution/src/problem/graphics/AnimationPanel.java">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.09713025">
@@ -2141,19 +2050,53 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/Visitors/PatternVisitors/CompositeVisitor.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.99598396">
-          <caret line="175" column="9" selection-start-line="175" selection-start-column="9" selection-end-line="175" selection-end-column="9" />
+        <state vertical-scroll-proportion="0.27152318">
+          <caret line="154" column="0" selection-start-line="154" selection-start-column="0" selection-end-line="154" selection-end-column="0" />
           <folding>
-            <element signature="e#1839#1861#0" expanded="true" />
-            <element signature="e#3652#3674#0" expanded="true" />
-            <element signature="e#4144#4152#0" expanded="true" />
-            <element signature="e#5666#5688#0" expanded="true" />
-            <element signature="e#9842#9859#0" expanded="true" />
-            <element signature="e#9923#9931#0" expanded="true" />
-            <element signature="e#11089#11097#0" expanded="true" />
-            <element signature="e#11923#11940#0" expanded="true" />
-            <element signature="e#12004#12012#0" expanded="true" />
-            <element signature="e#13170#13178#0" expanded="true" />
+            <element signature="e#1836#1858#0" expanded="true" />
+            <element signature="e#3515#3537#0" expanded="true" />
+            <element signature="e#4003#4011#0" expanded="true" />
+            <element signature="e#5683#5705#0" expanded="true" />
+            <element signature="e#9650#9667#0" expanded="true" />
+            <element signature="e#9731#9739#0" expanded="true" />
+            <element signature="e#10842#10850#0" expanded="true" />
+            <element signature="e#11660#11677#0" expanded="true" />
+            <element signature="e#11741#11749#0" expanded="true" />
+            <element signature="e#12852#12860#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Test/UMLTests/AdaptorTests.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="59" column="5" selection-start-line="59" selection-start-column="5" selection-end-line="59" selection-end-column="5" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Test/UMLTests/TestingDummyCode/LazySingletonExample.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.048565123">
+          <caret line="2" column="13" selection-start-line="2" selection-start-column="13" selection-end-line="2" selection-end-column="13" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/TestingProjects/Lab7-2-Solution/src/problem/client/AnimatorApp.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.09713025">
+          <caret line="4" column="13" selection-start-line="4" selection-start-column="13" selection-end-line="4" selection-end-column="13" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Test/UMLTests/CompositeTest.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.50993377">
+          <caret line="21" column="29" selection-start-line="21" selection-start-column="29" selection-end-line="21" selection-end-column="29" />
+          <folding>
+            <element signature="imports" expanded="true" />
           </folding>
         </state>
       </provider>
