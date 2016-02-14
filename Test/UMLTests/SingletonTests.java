@@ -67,7 +67,7 @@ public class SingletonTests {
 
 
         invokeDeclaredMethod();
-        //System.out.println(generatedText);
+        System.out.println(generatedText);
 
     }
 
@@ -120,6 +120,7 @@ public class SingletonTests {
         assertTrue(generatedText.contains("\\<\\<Singleton\\>\\>"));
 
         invokeDeclaredMethod();
+        System.out.println(generatedText);
     }
 
     @Test

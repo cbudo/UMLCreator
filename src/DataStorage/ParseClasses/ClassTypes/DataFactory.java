@@ -3,6 +3,7 @@ package DataStorage.ParseClasses.ClassTypes;
 import DataStorage.DataStore.ParsedDataStorage;
 import DataStorage.ParseClasses.Decorators.ComponentDecorator;
 import DataStorage.ParseClasses.Decorators.DecoratorDecorator;
+import DataStorage.ParseClasses.Decorators.SingletonClass;
 
 import java.util.List;
 
@@ -68,5 +69,9 @@ public class DataFactory {
 
     public DecoratorDecorator getDecorator(AbstractJavaClassRep abstractJavaClassRep) {
         return new DecoratorDecorator(abstractJavaClassRep);
+    }
+
+    public AbstractJavaClassRep getSingleton(AbstractJavaClassRep abstractJavaClassRep) {
+        return new SingletonClass(abstractJavaClassRep);
     }
 }

@@ -287,4 +287,13 @@ public class ParsedDataStorage implements IDataStorage, ITraverser {
             addClass(toComponent, DF.getComponent(newComponent));
         }
     }
+
+    public AbstractJavaClassRep setSingleton(String toSingleton) {
+        AbstractJavaClassRep component = (AbstractJavaClassRep) removeNonSpecificJavaClass(toSingleton);
+        if (component != null) {
+            DataFactory DF = new DataFactory();
+            addClass(toSingleton, DF.getSingleton(component));
+        }
+        return getNonSpecificJavaClass(toSingleton);
+    }
 }

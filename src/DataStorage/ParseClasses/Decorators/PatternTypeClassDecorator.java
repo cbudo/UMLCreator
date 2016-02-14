@@ -11,7 +11,7 @@ import java.util.Map;
 /**
  * Created by efronbs on 2/4/2016.
  */
-public abstract class PatternTypeClassDecorator extends AbstractJavaClassRep {
+public abstract class PatternTypeClassDecorator extends AbstractExtendableClassRep {
     private AbstractJavaClassRep classToDecorate;
 
     public PatternTypeClassDecorator(AbstractJavaClassRep c) {

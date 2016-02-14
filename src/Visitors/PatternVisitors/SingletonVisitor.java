@@ -64,7 +64,9 @@ public class SingletonVisitor extends AbstractVisitorTemplate {
                         SingletonClass s = (SingletonClass) cr;
                         s.setPublicStaticGetInstance(true);
                     } else {
-                        // TODO: replace cr in data storage with a singletonClass version of cr with static getinstance set to true
+                        cr = ParsedDataStorage.getInstance().setSingleton(m.getClassName());
+                        SingletonClass s = (SingletonClass) cr;
+                        s.setPublicStaticGetInstance(true);
                     }
                 }
             }
@@ -81,7 +83,9 @@ public class SingletonVisitor extends AbstractVisitorTemplate {
                         SingletonClass s = (SingletonClass) cr;
                         s.setPrivateSingletonInit(true);
                     } else {
-                        // TODO: replace cr in data storage with a singletonClass version of cr with private init set to true
+                        cr = ParsedDataStorage.getInstance().setSingleton(m.getClassName());
+                        SingletonClass s = (SingletonClass) cr;
+                        s.setPrivateSingletonInit(true);
                     }
                 }
             }
@@ -95,6 +99,10 @@ public class SingletonVisitor extends AbstractVisitorTemplate {
             if (((f.getAccessibility() & Opcodes.ACC_PRIVATE) != 0) && (f.getType().equals(f.getSimpleClassName()))) {
                 AbstractJavaClassRep cr = ParsedDataStorage.getInstance().getClass(f.getClassName());
                 if (cr instanceof SingletonClass) {
+                    SingletonClass s = (SingletonClass) cr;
+                    s.setPrivateSingletonField(true);
+                } else {
+                    cr = ParsedDataStorage.getInstance().setSingleton(f.getClassName());
                     SingletonClass s = (SingletonClass) cr;
                     s.setPrivateSingletonField(true);
                 }

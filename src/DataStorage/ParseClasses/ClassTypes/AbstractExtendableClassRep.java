@@ -10,6 +10,10 @@ import java.util.List;
 public abstract class AbstractExtendableClassRep extends AbstractJavaClassRep {
     private String extendedClassName;
 
+    public AbstractExtendableClassRep() {
+        super();
+    }
+
     public AbstractExtendableClassRep(String name, int accessibility) {
         this(name, accessibility, null, null);
     }
@@ -26,6 +30,7 @@ public abstract class AbstractExtendableClassRep extends AbstractJavaClassRep {
         super(name, accessibility, implementsNames);
         this.extendedClassName = extendedClassName;
     }
+
     public void addField(String fieldName, AbstractData fieldRep) {
         String type = ((FieldRep) fieldRep).getType();
         if (getImplementsList().contains(type) || this.getInnermostName().equals(type) || this.getExtendedClassName().equals(type)) {
@@ -39,6 +44,7 @@ public abstract class AbstractExtendableClassRep extends AbstractJavaClassRep {
         }
         this.fieldsMap.put(fieldName, fieldRep);
     }
+
     public String getExtendedClassName() {
         return this.extendedClassName;
     }

@@ -69,18 +69,18 @@ public class AdaptorVisitor extends AbstractVisitorTemplate {
 
         for (AdaptorNameSet s : adaptorSets) {
 
-            ParsedDataStorage.getInstance().getNonSpecificJavaClass(s.adaptorName.replace("/", ".")).setColor("maroon");
-            ParsedDataStorage.getInstance().getNonSpecificJavaClass(s.adapteeName.replace("/", ".")).setColor("maroon");
             try {
+                ParsedDataStorage.getInstance().getNonSpecificJavaClass(s.adaptorName.replace("/", ".")).setColor("maroon");
+                ParsedDataStorage.getInstance().getNonSpecificJavaClass(s.adapteeName.replace("/", ".")).setColor("maroon");
                 ParsedDataStorage.getInstance().getNonSpecificJavaClass(s.targetName.replace("/", ".")).setColor("maroon");
             } catch (Exception ignored) {
 
             }
-            if (!ParsedDataStorage.getInstance().getNonSpecificJavaClass(s.adaptorName.replace("/", ".")).getDisplayName().contains("\\<\\<adaptor\\>\\>"))
-                ParsedDataStorage.getInstance().getNonSpecificJavaClass(s.adaptorName.replace("/", ".")).addToDisplayName("\\<\\<adaptor\\>\\>");
-            if (!ParsedDataStorage.getInstance().getNonSpecificJavaClass(s.adapteeName.replace("/", ".")).getDisplayName().contains("\\<\\<adaptee\\>\\>"))
-                ParsedDataStorage.getInstance().getNonSpecificJavaClass(s.adapteeName.replace("/", ".")).addToDisplayName("\\<\\<adaptee\\>\\>");
             try {
+                if (!ParsedDataStorage.getInstance().getNonSpecificJavaClass(s.adaptorName.replace("/", ".")).getDisplayName().contains("\\<\\<adaptor\\>\\>"))
+                    ParsedDataStorage.getInstance().getNonSpecificJavaClass(s.adaptorName.replace("/", ".")).addToDisplayName("\\<\\<adaptor\\>\\>");
+                if (!ParsedDataStorage.getInstance().getNonSpecificJavaClass(s.adapteeName.replace("/", ".")).getDisplayName().contains("\\<\\<adaptee\\>\\>"))
+                    ParsedDataStorage.getInstance().getNonSpecificJavaClass(s.adapteeName.replace("/", ".")).addToDisplayName("\\<\\<adaptee\\>\\>");
                 if (!ParsedDataStorage.getInstance().getNonSpecificJavaClass(s.targetName.replace("/", ".")).getDisplayName().contains("\\<\\<target\\>\\>"))
                     ParsedDataStorage.getInstance().getNonSpecificJavaClass(s.targetName.replace("/", ".")).addToDisplayName("\\<\\<target\\>\\>");
             } catch (Exception ignored) {
