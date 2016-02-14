@@ -1,6 +1,7 @@
 package Visitors.PatternVisitors;
 
 import DataStorage.DataStore.IDataStorage;
+import DataStorage.DataStore.ParsedDataStorage;
 import DataStorage.ParseClasses.ClassTypes.AbstractExtendableClassRep;
 import DataStorage.ParseClasses.ClassTypes.AbstractJavaClassRep;
 import DataStorage.ParseClasses.Decorators.ComponentDecorator;
@@ -17,19 +18,21 @@ public class DecoratorVisitor extends AbstractVisitorTemplate {
     @Override
     public void performSetup() {
         //check if classes that classes extend are decorators if so, make class a decorator
-        for (AbstractJavaClassRep r : data.getClasses()) {
+        for (AbstractJavaClassRep r : data.getAbstractClasses()) {
             try {
                 if (data.getNonSpecificJavaClass(((AbstractExtendableClassRep) r).getExtendedClassName().replace('/', '.')) instanceof DecoratorDecorator) {
-                    r.setDecorator(true);
+                    String currentName = r.getName();
+                    ParsedDataStorage.getInstance().setDecorator(currentName);
                 }
             } catch (Exception ignored) {
 
             }
         }
-        for (AbstractJavaClassRep r : data.getAbstractClasses()) {
+        for (AbstractJavaClassRep r : data.getClasses()) {
             try {
                 if (data.getNonSpecificJavaClass(((AbstractExtendableClassRep) r).getExtendedClassName().replace('/', '.')) instanceof DecoratorDecorator) {
-                    r.setDecorator(true);
+                    String currentName = r.getName();
+                    ParsedDataStorage.getInstance().setDecorator(currentName);
                 }
             } catch (Exception ignored) {
 

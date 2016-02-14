@@ -68,8 +68,9 @@ public abstract class AbstractJavaClassRep extends AbstractData {
         if (getImplementsList().contains(type) || this.getInnermostName().equals(type)) {
             //make field a component
             try {
-                setDecorator(true);
-                convertToComponenet(((FieldRep) fieldRep).getFullType());
+                String currentName = getName();
+                ParsedDataStorage.getInstance().setDecorator(currentName);
+                ParsedDataStorage.getInstance().setComponent(((FieldRep) fieldRep).getFullType());
             } catch (Exception ignored) {
 
             }
@@ -77,9 +78,6 @@ public abstract class AbstractJavaClassRep extends AbstractData {
         this.fieldsMap.put(fieldName, fieldRep);
     }
 
-    public void convertToComponenet(String toComponent) {
-        ParsedDataStorage.getInstance().setComponent(toComponent);
-    }
 
     public AbstractData getField(String fieldName) {
         if (this.fieldsMap.containsKey(fieldName)) {
@@ -107,13 +105,6 @@ public abstract class AbstractJavaClassRep extends AbstractData {
 
     public List<String> getProfileTags() {
         return this.profileTags;
-    }
-
-    public void setDecorator(boolean decorator) {
-        // DONE: change this class into a decoratordecorator
-        String currentName = getName();
-        ParsedDataStorage.getInstance().setDecorator(currentName);
-        setFillColor("green");
     }
 
     public String getColor() {

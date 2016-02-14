@@ -28,7 +28,8 @@ public class UMLOutputStreamTest {
         parsedDataStorage.addClass(component.getName(), component);
         parsedDataStorage.addClass(decorator.getName(), decorator);
         parsedDataStorage.addClass(decoratorExtension.getName(), decoratorExtension);
-        parsedDataStorage.getNonSpecificJavaClass(decorator.getName()).setDecorator(true);
+        String currentName = decorator.getName();
+        ParsedDataStorage.getInstance().setDecorator(currentName);
 
         DecoratorVisitor DV = new DecoratorVisitor(parsedDataStorage);
         assertFalse(ParsedDataStorage.getInstance().getNonSpecificJavaClass("should be decorator") instanceof DecoratorDecorator);
@@ -43,14 +44,18 @@ public class UMLOutputStreamTest {
     public void testTurnIntoDecorator() {
         ParsedDataStorage parsedDataStorage = ParsedDataStorage.getInstance();
         DataFactory DF = new DataFactory();
-        AbstractJavaClassRep decorator = DF.getClassRep("decoratee", Opcodes.ACC_PUBLIC);
         AbstractJavaClassRep component = DF.getClassRep("component", Opcodes.ACC_PUBLIC);
+        AbstractJavaClassRep decorator = DF.getClassRep("decoratee", Opcodes.ACC_PUBLIC, "component");
         AbstractJavaClassRep decoratorExtension = DF.getClassRep("should be decorator", Opcodes.ACC_PUBLIC, "decoratee");
-        FieldRep fr = new FieldRep("hi", Opcodes.ACC_PUBLIC, "decoratee", "should be decorator");
+        FieldRep fr = new FieldRep("hi", Opcodes.ACC_PUBLIC, "component", "decoratee");
         parsedDataStorage.addClass(component.getName(), component);
         parsedDataStorage.addClass(decorator.getName(), decorator);
         parsedDataStorage.addClass(decoratorExtension.getName(), decoratorExtension);
-        parsedDataStorage.addField(decoratorExtension.getName(), fr);
+        parsedDataStorage.addField("decoratee", fr);
+
+        DecoratorVisitor DV = new DecoratorVisitor(parsedDataStorage);
+        assertFalse(ParsedDataStorage.getInstance().getNonSpecificJavaClass("should be decorator") instanceof DecoratorDecorator);
+        DV.doTheStuff();
         assertTrue(ParsedDataStorage.getInstance().getNonSpecificJavaClass(decoratorExtension.getName()) instanceof DecoratorDecorator);
     }
 }

@@ -40,6 +40,7 @@ public abstract class AbstractData implements ITraverser
     }
 
     public void addToDisplayName(String textToAdd) {
+        if (this.displayName.contains(textToAdd) && textToAdd.length() > 6) return;
         this.displayName += textToAdd + "\\n";
     }
 

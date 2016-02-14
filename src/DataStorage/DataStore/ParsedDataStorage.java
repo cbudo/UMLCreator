@@ -275,6 +275,8 @@ public class ParsedDataStorage implements IDataStorage, ITraverser {
         DataFactory DF = new DataFactory();
 
         if (newComponent != null) {
+            newComponent.addToDisplayName("\\<\\<decorator\\>\\>");
+            newComponent.setFillColor("green");
             addClass(currentName, DF.getDecorator(newComponent));
         }
     }
@@ -284,6 +286,8 @@ public class ParsedDataStorage implements IDataStorage, ITraverser {
         AbstractJavaClassRep newComponent = (AbstractJavaClassRep) ParsedDataStorage.getInstance().removeNonSpecificJavaClass(toComponent);
         if (newComponent != null) {
             DataFactory DF = new DataFactory();
+            newComponent.addToDisplayName("\\<\\<component\\>\\>");
+            newComponent.setFillColor("green");
             addClass(toComponent, DF.getComponent(newComponent));
         }
     }
