@@ -3,6 +3,9 @@ package DataStorage.ParseClasses.ClassTypes;
 import Visitors.DefaultVisitors.ITraverser;
 import org.objectweb.asm.Opcodes;
 
+import java.util.ArrayList;
+import java.util.List;
+
 /**
  * Created by efronbs on 1/7/2016.
  */
@@ -11,6 +14,7 @@ public abstract class AbstractData implements ITraverser
     private String name, displayName;
     private int accessibility;
     private boolean isComponent;
+    private List<Object> visitorParameters;
 
     public AbstractData(String name, int accessibility)
     {
@@ -20,6 +24,7 @@ public abstract class AbstractData implements ITraverser
         this.accessibility = accessibility;
 
         isComponent = false;
+        visitorParameters = new ArrayList<Object>();
     }
 
     public String getName()
@@ -63,5 +68,12 @@ public abstract class AbstractData implements ITraverser
         isComponent = component;
     }
 
+    public List<Object> getVisitorParameters() {
+        return visitorParameters;
+    }
+
+    public void setVisitorParameters(List<Object> visitParams) {
+        visitorParameters = visitParams;
+    }
 
 }

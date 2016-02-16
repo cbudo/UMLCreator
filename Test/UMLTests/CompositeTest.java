@@ -44,7 +44,7 @@ public class CompositeTest {
         argList.add("problem.sprites.AbstractSprite");
         argList.add("problem.sprites.CircleSprite");
         argList.add("problem.sprites.CompositeSprite");
-        argList.add("problem.sprites.problem.sprites.CrystalBall");
+        argList.add("problem.sprites.CrystalBall");
         argList.add("problem.sprites.ISprite");
         argList.add("problem.sprites.RectangleSprite");
         argList.add("problem.sprites.RectangleSprite");
@@ -84,7 +84,7 @@ public class CompositeTest {
         assertTrue(ParsedDataStorage.getInstance()
                 .getNonSpecificJavaClass("problem.sprites.RectangleTower").getDisplayName().contains("composite"));
         assertTrue(ParsedDataStorage.getInstance()
-                .getNonSpecificJavaClass("problem.sprites.CrystalBall").getDisplayName().contains("component"));
+                .getNonSpecificJavaClass("problem.sprites.CrystalBall").getDisplayName().contains("composite"));
     }
 
     @Test
@@ -92,7 +92,7 @@ public class CompositeTest {
 
         if (!isSetup)
             setup();
-        assertFalse(ParsedDataStorage.getInstance()
+        assertTrue(ParsedDataStorage.getInstance()
                 .getNonSpecificJavaClass("problem.sprites.AbstractSprite").getDisplayName().contains("component"));
     }
 

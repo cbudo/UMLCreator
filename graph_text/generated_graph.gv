@@ -3,148 +3,72 @@ digraph UML_Diagram
 rankdir=BT;
 
 RectangleSprite [
-shape = "record", color="black", fillcolor=white, style=filled,
-label = "{RectangleSprite\n|
-|+ init : void\l
-+ move : void\l
-}"];
+shape = "record", color="black", fillcolor=yellow, style=filled,
+label = "{RectangleSprite\n\<\<leaf\>\>\n|
+|}"];
 RectangleSprite -> AbstractSprite [arrowhead="onormal", style="solid"];
 
 CompositeSprite [
-shape = "record", color="yellow", fillcolor=white, style=filled,
+shape = "record", color="black", fillcolor=yellow, style=filled,
 label = "{CompositeSprite\n\<\<composite\>\>\n|
-# children : List\l
-|+ add : void\l
-+ init : void\l
-+ iterator : Iterator\l
-+ move : void\l
-+ getChild : ISprite\l
-+ remove : void\l
-}"];
+|}"];
 CompositeSprite -> AbstractSprite [arrowhead="onormal", style="solid"];
 
 SpriteFactory [
 shape = "record", color="black", fillcolor=white, style=filled,
 label = "{SpriteFactory\n|
-- random : Random\l
-+ DX : double\l
-+ DY : double\l
-+ WIDTH : double\l
-+ HEIGHT : double\l
-- sprites : List\l
-|+ createRandomSprite : ISprite\l
-+ init : void\l
-+ computeRandomLocation : Point2D\l
-# clinit : void\l
-}"];
+|}"];
 
 MainWindow [
 shape = "record", color="black", fillcolor=white, style=filled,
 label = "{MainWindow\n|
-- animationPanel : AnimationPanel\l
-- actionPanel : JPanel\l
-- createButton : JButton\l
-- moveButton : JButton\l
-- resetButton : JButton\l
-- frame : JFrame\l
-|+ init : void\l
-# access$200 : JButton\l
-# access$100 : JButton\l
-# access$000 : AnimationPanel\l
-- createWidgets : void\l
-+ show : void\l
-- assignActions : void\l
-}"];
+|}"];
 
 NullSpriteIterator [
 shape = "record", color="black", fillcolor=white, style=filled,
 label = "{NullSpriteIterator\n|
-|+ next : Object\l
-+ init : void\l
-+ hasNext : boolean\l
-+ remove : void\l
-}"];
+|}"];
 
 CompositeSpriteIterator [
 shape = "record", color="black", fillcolor=white, style=filled,
 label = "{CompositeSpriteIterator\n|
-- stack : Stack\l
-|+ next : Object\l
-+ init : void\l
-+ hasNext : boolean\l
-+ remove : void\l
-}"];
+|}"];
 
 CrystalBall [
-shape = "record", color="black", fillcolor=white, style=filled,
-label = "{CrystalBall\n|
-|+ init : void\l
-}"];
+shape = "record", color="black", fillcolor=yellow, style=filled,
+label = "{CrystalBall\n\<\<composite\>\>\n|
+|}"];
 CrystalBall -> CompositeSprite [arrowhead="onormal", style="solid"];
 
 AnimationPanel [
 shape = "record", color="black", fillcolor=white, style=filled,
 label = "{AnimationPanel\n|
-- serialVersionUID : long\l
-- animating : boolean\l
-- sleepTime : long\l
-- sprites : List\l
-|+ add : void\l
-+ init : void\l
-+ getSize : Dimension\l
-# access$200 : long\l
-# access$100 : List\l
-# access$000 : boolean\l
-# paintComponent : void\l
-+ reset : void\l
-+ animate : void\l
-}"];
+|}"];
 
 CircleSprite [
-shape = "record", color="black", fillcolor=white, style=filled,
-label = "{CircleSprite\n|
-|+ init : void\l
-+ move : void\l
-}"];
+shape = "record", color="black", fillcolor=yellow, style=filled,
+label = "{CircleSprite\n\<\<leaf\>\>\n|
+|}"];
 CircleSprite -> AbstractSprite [arrowhead="onormal", style="solid"];
 
 RectangleTower [
-shape = "record", color="black", fillcolor=white, style=filled,
-label = "{RectangleTower\n|
-|+ init : void\l
-}"];
+shape = "record", color="black", fillcolor=yellow, style=filled,
+label = "{RectangleTower\n\<\<composite\>\>\n|
+|}"];
 RectangleTower -> CompositeSprite [arrowhead="onormal", style="solid"];
 
 AnimatorApp [
 shape = "record", color="black", fillcolor=white, style=filled,
 label = "{AnimatorApp\n|
-|+ init : void\l
-+ main : void\l
-}"];
+|}"];
 
 ISprite [
-shape = "record", color="yellow", fillcolor=white, style=filled,
-label = "{\<\<interface\>\>\lISprite\n\<\<component\>\>\n||+ add : void\l
-+ move : void\l
-+ getChild : ISprite\l
-+ getShape : Shape\l
-+ remove : void\l
-}"];
+shape = "record", color="black", fillcolor=white, style=filled,
+label = "{\<\<interface\>\>\lISprite\n||}"];
 
 AbstractSprite [
-shape = "record", color="black ", fillcolor=white, style=filled,
-label = "{AbstractSprite\n|# dx : double\l
-# shape : Shape\l
-# dy : double\l
-|+ add : void\l
-+ init : void\l
-+ iterator : Iterator\l
-+ move : void\l
-# computeNewBoundsAfterMoving : Rectangle2D\l
-+ getChild : ISprite\l
-+ getShape : Shape\l
-+ remove : void\l
-}"];
+shape = "record", color="black ", fillcolor=yellow, style=filled,
+label = "{AbstractSprite\n\<\<component\>\>\n||}"];
 AbstractSprite -> ISprite [arrowhead="onormal", style="dashed"];
 AnimatorApp -> MainWindow [label = "", arrowhead="vee", style="dashed"];
 AnimationPanel -> ISprite [label = "", arrowhead="vee", style="dashed"];
