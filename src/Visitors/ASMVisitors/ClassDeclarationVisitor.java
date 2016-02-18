@@ -3,7 +3,7 @@ package Visitors.ASMVisitors;
 import DataStorage.DataStore.ParsedDataStorage;
 import DataStorage.ParseClasses.ClassTypes.AbstractClassRep;
 import DataStorage.ParseClasses.ClassTypes.AbstractJavaClassRep;
-import DataStorage.ParseClasses.ClassTypes.ClassRep;
+import DataStorage.ParseClasses.ClassTypes.DataFactory;
 import DataStorage.ParseClasses.ClassTypes.InterfaceRep;
 import org.objectweb.asm.ClassVisitor;
 import org.objectweb.asm.Opcodes;
@@ -30,7 +30,8 @@ public class ClassDeclarationVisitor extends ClassVisitor {
             AbstractJavaClassRep absClass = new AbstractClassRep(name, access, interfaceList, superName);
             ParsedDataStorage.getInstance().addAbstractClass(className, absClass);
         } else {
-            ParsedDataStorage.getInstance().addClass(className, new ClassRep(name, access, interfaceList, superName));
+            DataFactory DF = new DataFactory();
+            ParsedDataStorage.getInstance().addClass(className, DF.getClassRep(name, access, interfaceList, superName));
         }
         super.visit(version, access, name, signature, superName, interfaces);
 

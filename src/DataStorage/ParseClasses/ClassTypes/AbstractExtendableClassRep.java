@@ -11,6 +11,10 @@ import java.util.List;
 public abstract class AbstractExtendableClassRep extends AbstractJavaClassRep {
     private String extendedClassName;
 
+    public AbstractExtendableClassRep() {
+        super();
+    }
+
     public AbstractExtendableClassRep(String name, int accessibility) {
         this(name, accessibility, null, null);
     }
@@ -26,28 +30,21 @@ public abstract class AbstractExtendableClassRep extends AbstractJavaClassRep {
     public AbstractExtendableClassRep(String name, int accessibility, List<String> implementsNames, String extendedClassName) {
         super(name, accessibility, implementsNames);
         this.extendedClassName = extendedClassName;
-        AbstractJavaClassRep extending = ParsedDataStorage.getInstance().getClass(extendedClassName);
-        if (extending != null) {
-            if (extending.isDecorator()) {
-                this.isDecorator = true;
-            }
-        }
     }
 
-    @Override
     public void addField(String fieldName, AbstractData fieldRep) {
         String type = ((FieldRep) fieldRep).getType();
-        if (this.extendedClassName.equals(type) || this.getImplementsList().contains(type) || this.getInnermostName().equals(type)) {
-            //we've got a winner
-            this.isDecorator = true;
-            //set type to component
+        if (getImplementsList().contains(type) || this.getInnermostName().equals(type) || this.getExtendedClassName().equals(type)) {
+            String currentName = getName();
+            ParsedDataStorage.getInstance().setDecorator(currentName);
+            //make field a component
             try {
-                ParsedDataStorage.getInstance().getClass(((FieldRep) fieldRep).getFullType()).setComponent(true);
+                ParsedDataStorage.getInstance().setComponent(((FieldRep) fieldRep).getFullType());
             } catch (Exception ignored) {
 
             }
         }
-        super.addField(fieldName, fieldRep);
+        this.fieldsMap.put(fieldName, fieldRep);
     }
 
     public String getExtendedClassName() {

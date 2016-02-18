@@ -3,10 +3,7 @@ package DataStorage.ParseClasses.ClassTypes;
 import DataStorage.DataStore.ParsedDataStorage;
 import DataStorage.ParseClasses.Internals.FieldRep;
 
-import java.util.ArrayList;
-import java.util.HashMap;
-import java.util.List;
-import java.util.Map;
+import java.util.*;
 
 /**
  * Created by efronbs on 1/7/2016.
@@ -14,7 +11,6 @@ import java.util.Map;
 public abstract class AbstractJavaClassRep extends AbstractData {
     protected Map<String, AbstractData> methodsMap;
     protected Map<String, AbstractData> fieldsMap;
-    protected boolean isDecorator;
     private List<String> profileTags;
     private List<String> implementsNames;
     private String color;
@@ -30,9 +26,12 @@ public abstract class AbstractJavaClassRep extends AbstractData {
         this.methodsMap = new HashMap<>();
         this.fieldsMap = new HashMap<>();
         this.profileTags = new ArrayList<>();
-        this.isDecorator = false;
         this.color = "black";
         this.fillColor = "white";
+    }
+
+    public AbstractJavaClassRep() {
+        super();
     }
 
 //    protected void addImplementsToStorage() {
@@ -67,16 +66,18 @@ public abstract class AbstractJavaClassRep extends AbstractData {
     public void addField(String fieldName, AbstractData fieldRep) {
         String type = ((FieldRep) fieldRep).getType();
         if (getImplementsList().contains(type) || this.getInnermostName().equals(type)) {
-            setDecorator(true);
             //make field a component
             try {
-                ParsedDataStorage.getInstance().getClass(((FieldRep) fieldRep).getFullType()).setComponent(true);
+                String currentName = getName();
+                ParsedDataStorage.getInstance().setDecorator(currentName);
+                ParsedDataStorage.getInstance().setComponent(((FieldRep) fieldRep).getFullType());
             } catch (Exception ignored) {
 
             }
         }
         this.fieldsMap.put(fieldName, fieldRep);
     }
+
 
     public AbstractData getField(String fieldName) {
         if (this.fieldsMap.containsKey(fieldName)) {
@@ -94,6 +95,7 @@ public abstract class AbstractJavaClassRep extends AbstractData {
     }
 
     public List<String> getImplementsList() {
+        if (this.implementsNames == null) return Collections.emptyList();
         return this.implementsNames;
     }
 
@@ -103,15 +105,6 @@ public abstract class AbstractJavaClassRep extends AbstractData {
 
     public List<String> getProfileTags() {
         return this.profileTags;
-    }
-
-    public boolean isDecorator() {
-        return isDecorator;
-    }
-
-    public void setDecorator(boolean decorator) {
-        isDecorator = decorator;
-        setFillColor("green");
     }
 
     public String getColor() {

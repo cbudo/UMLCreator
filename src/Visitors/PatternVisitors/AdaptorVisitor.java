@@ -3,9 +3,11 @@ package Visitors.PatternVisitors;
 import DataStorage.DataStore.IDataStorage;
 import DataStorage.DataStore.ParsedDataStorage;
 import DataStorage.ParseClasses.ClassTypes.AbstractData;
+import DataStorage.ParseClasses.ClassTypes.AbstractExtendableClassRep;
 import DataStorage.ParseClasses.ClassTypes.AbstractJavaClassRep;
 import DataStorage.ParseClasses.ClassTypes.ClassRep;
 import DataStorage.ParseClasses.Decorators.NamedRelationDecorator;
+import DataStorage.ParseClasses.Decorators.PatternTypeClassDecorator;
 import DataStorage.ParseClasses.Internals.FieldRep;
 import DataStorage.ParseClasses.Internals.IRelation;
 import DataStorage.ParseClasses.Internals.MethodRep;
@@ -67,38 +69,23 @@ public class AdaptorVisitor extends AbstractVisitorTemplate {
 
         for (AdaptorNameSet s : adaptorSets) {
 
-            //replacing base classes with decorators
-//            AbstractJavaClassRep nadaptor = ParsedDataStorage.getInstance().getNonSpecificJavaClass(s.adaptorName.replace("/", "."));
-//            if (nadaptor instanceof ClassRep) {
-//                ParsedDataStorage.getInstance().removeNonSpecificJavaClass(nadaptor.getName());
-//                PatternTypeClassDecorator newP = new PatternTypeClassDecorator((ClassRep) nadaptor, "\\<\\<adaptor\\>\\>");
-//                newP.setColor("maroon");
-//            }
-//            } else if (nadaptor instanceof ClassRep)
-//            {
-//                //
-//            }
-//            else
-//            {
-//                //
-//            }
-            ParsedDataStorage.getInstance().getNonSpecificJavaClass(s.adaptorName.replace("/", ".")).setColor("maroon");
-            ParsedDataStorage.getInstance().getNonSpecificJavaClass(s.adapteeName.replace("/", ".")).setColor("maroon");
-            ParsedDataStorage.getInstance().getNonSpecificJavaClass(s.targetName.replace("/", ".")).setColor("maroon");
-            if (!ParsedDataStorage.getInstance().getNonSpecificJavaClass(s.adaptorName.replace("/", ".")).getDisplayName().contains("\\<\\<adaptor\\>\\>"))
-                ParsedDataStorage.getInstance().getNonSpecificJavaClass(s.adaptorName.replace("/", ".")).addToDisplayName("\\<\\<adaptor\\>\\>");
-            if (!ParsedDataStorage.getInstance().getNonSpecificJavaClass(s.adapteeName.replace("/", ".")).getDisplayName().contains("\\<\\<adaptee\\>\\>"))
-                ParsedDataStorage.getInstance().getNonSpecificJavaClass(s.adapteeName.replace("/", ".")).addToDisplayName("\\<\\<adaptee\\>\\>");
-            if (!ParsedDataStorage.getInstance().getNonSpecificJavaClass(s.targetName.replace("/", ".")).getDisplayName().contains("\\<\\<target\\>\\>"))
-                ParsedDataStorage.getInstance().getNonSpecificJavaClass(s.targetName.replace("/", ".")).addToDisplayName("\\<\\<target\\>\\>");
+            try {
+                ParsedDataStorage.getInstance().getNonSpecificJavaClass(s.adaptorName.replace("/", ".")).setColor("maroon");
+                ParsedDataStorage.getInstance().getNonSpecificJavaClass(s.adapteeName.replace("/", ".")).setColor("maroon");
+                ParsedDataStorage.getInstance().getNonSpecificJavaClass(s.targetName.replace("/", ".")).setColor("maroon");
+            } catch (Exception ignored) {
 
-//            for (IRelation r : ParsedDataStorage.getInstance().getAssociationRels()) {
-//                if (r.getFrom().equals(s.adaptorName) && r.getTo().equals(s.adapteeName)) {
-//                    //System.out.println("|from| " + r.getFrom() + " |adaptorName| " + s.adaptorName + " |to| " + r.getTo() + " |adapteeName| " + s.adapteeName);
-//                    ParsedDataStorage.getInstance().removeRelation(r);
-//                    newAssoc.add(new NamedRelationDecorator(r, "\\<\\<adapts\\>\\>"));
-//                }
-//            }
+            }
+            try {
+                if (!ParsedDataStorage.getInstance().getNonSpecificJavaClass(s.adaptorName.replace("/", ".")).getDisplayName().contains("\\<\\<adaptor\\>\\>"))
+                    ParsedDataStorage.getInstance().getNonSpecificJavaClass(s.adaptorName.replace("/", ".")).addToDisplayName("\\<\\<adaptor\\>\\>");
+                if (!ParsedDataStorage.getInstance().getNonSpecificJavaClass(s.adapteeName.replace("/", ".")).getDisplayName().contains("\\<\\<adaptee\\>\\>"))
+                    ParsedDataStorage.getInstance().getNonSpecificJavaClass(s.adapteeName.replace("/", ".")).addToDisplayName("\\<\\<adaptee\\>\\>");
+                if (!ParsedDataStorage.getInstance().getNonSpecificJavaClass(s.targetName.replace("/", ".")).getDisplayName().contains("\\<\\<target\\>\\>"))
+                    ParsedDataStorage.getInstance().getNonSpecificJavaClass(s.targetName.replace("/", ".")).addToDisplayName("\\<\\<target\\>\\>");
+            } catch (Exception ignored) {
+
+            }
 
             for (int i = 0; i < ParsedDataStorage.getInstance().getAssociationRels().size(); i++) {
                 IRelation r = ParsedDataStorage.getInstance().getAssociationRels().get(i);
@@ -112,11 +99,6 @@ public class AdaptorVisitor extends AbstractVisitorTemplate {
 
         }
 
-//        for (AbstractJavaClassRep r : newClasses )
-//        {
-//            ParsedDataStorage.getInstance().addNonSpecificJavaClass(r);
-//        }
-
         for (IRelation newRel : newAssoc) {
             ParsedDataStorage.getInstance().addAssociationRelation(newRel);
         }
@@ -127,9 +109,17 @@ public class AdaptorVisitor extends AbstractVisitorTemplate {
             s = s.replace("/", ".");
             AbstractJavaClassRep cRep = data.getClass(s);
             String adaptee = ((FieldRep) cRep.getFieldsMap().values().toArray()[0]).getFullType();
-            String target = !((ClassRep) cRep).getExtendedClassName().equals("java/lang/Object")
-                    ? ((ClassRep) cRep).getExtendedClassName() : cRep.getImplementsList().get(0);
-
+            String target = "";
+            if (cRep instanceof PatternTypeClassDecorator) {
+                target = !((PatternTypeClassDecorator) cRep).getExtendedClassName().equals("java/lang/Object")
+                        ? ((PatternTypeClassDecorator) cRep).getExtendedClassName() : "";
+                if (target.equals("")) {
+                    ((PatternTypeClassDecorator) cRep).getExtendedClassName();
+                }
+            } else {
+                target = !((AbstractExtendableClassRep) cRep).getExtendedClassName().equals("java/lang/Object")
+                        ? ((ClassRep) cRep).getExtendedClassName() : cRep.getImplementsList().get(0);
+            }
             AdaptorNameSet newAdaptorSet = new AdaptorNameSet(s, adaptee, target.replace("/", "."));
             this.adaptorSets.add(newAdaptorSet);
 
@@ -220,15 +210,6 @@ public class AdaptorVisitor extends AbstractVisitorTemplate {
                 if (m.getUsesRelations().size() == 0) {
                     this.adaptorsFound.possibleAdaptorSets.remove(m.getClassName());
                 }
-//                for (UsesRelation ur : m.getUsesRelations()) {
-//                    if (ParsedDataStorage.getInstance().checkContains(ur.getTo()))
-//                    {
-//                        System.out.println("field " + fieldName + " from " + ur.getFrom() + " to " + ur.getTo());
-//                        if (!ur.getFrom().equals(fieldName) && !ur.getTo().equals(fieldName)) {
-//                            this.adaptorsFound.possibleAdaptorSets.remove(m.getClassName());
-//                        }
-//                    }
-//                }
             }
         });
     }

@@ -4,7 +4,7 @@ import DataStorage.DataStore.IDataStorage;
 import DataStorage.DataStore.ParsedDataStorage;
 import DataStorage.ParseClasses.ClassTypes.AbstractData;
 import DataStorage.ParseClasses.ClassTypes.AbstractJavaClassRep;
-import DataStorage.ParseClasses.ClassTypes.ClassRep;
+import DataStorage.ParseClasses.Decorators.SingletonClass;
 import DataStorage.ParseClasses.Internals.FieldRep;
 import DataStorage.ParseClasses.Internals.MethodRep;
 import Visitors.DefaultVisitors.ITraverser;
@@ -44,9 +44,12 @@ public class SingletonVisitor extends AbstractVisitorTemplate {
     @Override
     public void performAnalysis() {
         for (AbstractJavaClassRep r : data.getClasses()) {
-            if (((ClassRep) r).isSingleton()) {
-                r.addToDisplayName("\\<\\<Singleton\\>\\>");
-                r.setColor("blue");
+            if (r instanceof SingletonClass) {
+                SingletonClass s = (SingletonClass) r;
+                if (s.isSingleton()) {
+                    r.addToDisplayName("\\<\\<Singleton\\>\\>");
+                    r.setColor("blue");
+                }
             }
         }
     }
@@ -56,8 +59,15 @@ public class SingletonVisitor extends AbstractVisitorTemplate {
             MethodRep m = (MethodRep) t;
             if ((m.getAccessibility() & Opcodes.ACC_STATIC) != 0) {
                 if ((m.getSimpleClassName().equals(m.getType()))) {
-                    ClassRep cr = (ClassRep) ParsedDataStorage.getInstance().getClass(m.getClassName());
-                    cr.setPublicStaticGetInstance(true);
+                    AbstractJavaClassRep cr = ParsedDataStorage.getInstance().getClass(m.getClassName());
+                    if (cr instanceof SingletonClass) {
+                        SingletonClass s = (SingletonClass) cr;
+                        s.setPublicStaticGetInstance(true);
+                    } else {
+                        cr = ParsedDataStorage.getInstance().setSingleton(m.getClassName());
+                        SingletonClass s = (SingletonClass) cr;
+                        s.setPublicStaticGetInstance(true);
+                    }
                 }
             }
         });
@@ -68,8 +78,15 @@ public class SingletonVisitor extends AbstractVisitorTemplate {
             MethodRep m = (MethodRep) t;
             if (m.getName().equals("init")) {
                 if ((m.getAccessibility() & Opcodes.ACC_PUBLIC) == 0) {
-                    ClassRep cr = (ClassRep) ParsedDataStorage.getInstance().getClass(m.getClassName());
-                    cr.setPrivateSingletonInit(true);
+                    AbstractJavaClassRep cr = ParsedDataStorage.getInstance().getClass(m.getClassName());
+                    if (cr instanceof SingletonClass) {
+                        SingletonClass s = (SingletonClass) cr;
+                        s.setPrivateSingletonInit(true);
+                    } else {
+                        cr = ParsedDataStorage.getInstance().setSingleton(m.getClassName());
+                        SingletonClass s = (SingletonClass) cr;
+                        s.setPrivateSingletonInit(true);
+                    }
                 }
             }
         });
@@ -80,8 +97,15 @@ public class SingletonVisitor extends AbstractVisitorTemplate {
         this.visitor.addVisit(VisitType.Visit, FieldRep.class, (ITraverser t) -> {
             FieldRep f = (FieldRep) t;
             if (((f.getAccessibility() & Opcodes.ACC_PRIVATE) != 0) && (f.getType().equals(f.getSimpleClassName()))) {
-                ClassRep cr = (ClassRep) ParsedDataStorage.getInstance().getClass(f.getClassName());
-                cr.setPrivateSingletonField(true);
+                AbstractJavaClassRep cr = ParsedDataStorage.getInstance().getClass(f.getClassName());
+                if (cr instanceof SingletonClass) {
+                    SingletonClass s = (SingletonClass) cr;
+                    s.setPrivateSingletonField(true);
+                } else {
+                    cr = ParsedDataStorage.getInstance().setSingleton(f.getClassName());
+                    SingletonClass s = (SingletonClass) cr;
+                    s.setPrivateSingletonField(true);
+                }
             }
         });
     }

@@ -1,8 +1,8 @@
 package DataStorage.ParseClasses.Decorators;
 
 import DataStorage.ParseClasses.ClassTypes.AbstractData;
+import DataStorage.ParseClasses.ClassTypes.AbstractExtendableClassRep;
 import DataStorage.ParseClasses.ClassTypes.AbstractJavaClassRep;
-import DataStorage.ParseClasses.ClassTypes.ClassRep;
 import Visitors.DefaultVisitors.IVisitor;
 
 import java.util.List;
@@ -11,37 +11,17 @@ import java.util.Map;
 /**
  * Created by efronbs on 2/4/2016.
  */
-public class PatternTypeClassDecorator extends AbstractJavaClassRep {
-    private ClassRep classToDecorate;
-    private String patternName;
+public abstract class PatternTypeClassDecorator extends AbstractExtendableClassRep {
+    private AbstractJavaClassRep classToDecorate;
 
-    public PatternTypeClassDecorator(ClassRep c, String patternName) {
-        super(c.getName(), c.getAccessibility());
+    public PatternTypeClassDecorator(AbstractJavaClassRep c) {
+        super();
         this.classToDecorate = c;
-        this.patternName = patternName;
     }
 
     @Override
     public void accept(IVisitor v) {
-        v.preVisit(this);
-        v.visit(this);
-        v.postVisit(this);
-    }
-
-    public void setPublicStaticGetInstance(boolean inst) {
-        this.classToDecorate.setPublicStaticGetInstance(inst);
-    }
-
-    public void setPrivateSingletonInit(boolean inst) {
-        this.classToDecorate.setPrivateSingletonInit(inst);
-    }
-
-    public void setPrivateSingletonField(boolean inst) {
-        this.classToDecorate.setPrivateSingletonField(inst);
-    }
-
-    public boolean isSingleton() {
-        return this.classToDecorate.isSingleton();
+        classToDecorate.accept(v);
     }
 
     @Override
@@ -50,7 +30,7 @@ public class PatternTypeClassDecorator extends AbstractJavaClassRep {
     }
 
     public String getExtendedClassName() {
-        return this.classToDecorate.getExtendedClassName();
+        return ((AbstractExtendableClassRep) this.classToDecorate).getExtendedClassName();
     }
 
     public String getFillColor() {
@@ -70,7 +50,7 @@ public class PatternTypeClassDecorator extends AbstractJavaClassRep {
     }
 
     public Map<String, AbstractData> getMethodsMap() {
-        return this.methodsMap;
+        return this.classToDecorate.getMethodsMap();
     }
 
     public AbstractData getField(String fieldName) {
@@ -97,14 +77,6 @@ public class PatternTypeClassDecorator extends AbstractJavaClassRep {
         return this.classToDecorate.getProfileTags();
     }
 
-    public boolean isDecorator() {
-        return true;
-    }
-
-    public void setDecorator(boolean decorator) {
-        this.classToDecorate.setDecorator(decorator);
-    }
-
     public String getColor() {
         return this.classToDecorate.getColor();
     }
@@ -122,11 +94,11 @@ public class PatternTypeClassDecorator extends AbstractJavaClassRep {
     }
 
     public String getDisplayName() {
-        return classToDecorate.getDisplayName() + "\n" + this.patternName;
+        return classToDecorate.getDisplayName();
     }
 
     public void addToDisplayName(String textToAdd) {
-        return;
+        classToDecorate.addToDisplayName(textToAdd);
     }
 
     public int getAccessibility() {
@@ -134,14 +106,7 @@ public class PatternTypeClassDecorator extends AbstractJavaClassRep {
     }
 
     public String getTranslatedAccessibility() {
-        return "";
+        return this.classToDecorate.getTranslatedAccessibility();
     }
 
-    public boolean isComponent() {
-        return this.classToDecorate.isComponent();
-    }
-
-    public void setComponent(boolean component) {
-        this.classToDecorate.setComponent(component);
-    }
 }

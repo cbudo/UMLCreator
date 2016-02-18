@@ -9,9 +9,6 @@ import java.util.List;
  */
 public class ClassRep extends AbstractExtendableClassRep
 {
-    private boolean publicStaticGetInstance = false;
-    private boolean privateSingletonInit = false;
-    private boolean privateSingletonField = false;
     public ClassRep(String name, int accessibility)
     {
         super(name, accessibility, null, null);
@@ -39,19 +36,4 @@ public class ClassRep extends AbstractExtendableClassRep
         v.postVisit(this);
     }
 
-    public void setPublicStaticGetInstance(boolean inst) {
-        this.publicStaticGetInstance = inst;
-    }
-
-    public void setPrivateSingletonInit(boolean inst) {
-        this.privateSingletonInit = inst;
-    }
-
-    public void setPrivateSingletonField(boolean inst) {
-        this.privateSingletonField = inst;
-    }
-
-    public boolean isSingleton() {
-        return privateSingletonField && privateSingletonInit && publicStaticGetInstance;
-    }
 }

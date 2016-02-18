@@ -16,9 +16,15 @@ public abstract class AbstractData implements ITraverser
     private boolean isComponent;
     private List<Object> visitorParameters;
 
+    public AbstractData() {
+
+    }
+
     public AbstractData(String name, int accessibility)
     {
         this.name = name;
+        if (this.name == null)
+            this.name = "";
         this.displayName = getInnermostName() + "\\n";
 
         this.accessibility = accessibility;
@@ -33,6 +39,7 @@ public abstract class AbstractData implements ITraverser
     }
 
     public String getInnermostName() {
+        if (this.name == null) return "";
         return this.name.substring(this.name.lastIndexOf("/") + 1);
     }
 
@@ -41,6 +48,7 @@ public abstract class AbstractData implements ITraverser
     }
 
     public void addToDisplayName(String textToAdd) {
+        if (this.displayName.contains(textToAdd) && textToAdd.length() > 6) return;
         this.displayName += textToAdd + "\\n";
     }
 

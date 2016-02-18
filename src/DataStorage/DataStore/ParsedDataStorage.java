@@ -109,7 +109,8 @@ public class ParsedDataStorage implements IDataStorage, ITraverser {
         AbstractJavaClassRep data = getNonSpecificJavaClass(cName);
         try {
             data.addField(fieldRep.getName(), fieldRep);
-        } catch (Exception ignored) {
+        } catch (Exception e) {
+            e.printStackTrace();
         }
     }
 
@@ -212,16 +213,17 @@ public class ParsedDataStorage implements IDataStorage, ITraverser {
         }
     }
 
-    public void removeNonSpecificJavaClass(String toRm) {
+    public AbstractData removeNonSpecificJavaClass(String toRm) {
         if (this.classes.containsKey(toRm)) {
-            this.classes.remove(toRm);
+            return this.classes.remove(toRm);
         }
         if (this.abstractClasses.containsKey(toRm)) {
-            this.abstractClasses.remove(toRm);
+            return this.abstractClasses.remove(toRm);
         }
         if (this.interfaces.containsKey(toRm)) {
-            this.interfaces.remove(toRm);
+            return this.interfaces.remove(toRm);
         }
+        return null;
     }
 
     public void addNonSpecificJavaClass(AbstractJavaClassRep toAdd) {
@@ -266,5 +268,36 @@ public class ParsedDataStorage implements IDataStorage, ITraverser {
             m.accept(v);
         }
         v.postVisit(this);
+    }
+
+    public void setDecorator(String currentName) {
+        AbstractJavaClassRep newComponent = (AbstractJavaClassRep) removeNonSpecificJavaClass(currentName);
+        DataFactory DF = new DataFactory();
+
+        if (newComponent != null) {
+            newComponent.addToDisplayName("\\<\\<decorator\\>\\>");
+            newComponent.setFillColor("green");
+            addClass(currentName, DF.getDecorator(newComponent));
+        }
+    }
+
+    public void setComponent(String toComponent) {
+
+        AbstractJavaClassRep newComponent = (AbstractJavaClassRep) ParsedDataStorage.getInstance().removeNonSpecificJavaClass(toComponent);
+        if (newComponent != null) {
+            DataFactory DF = new DataFactory();
+            newComponent.addToDisplayName("\\<\\<component\\>\\>");
+            newComponent.setFillColor("green");
+            addClass(toComponent, DF.getComponent(newComponent));
+        }
+    }
+
+    public AbstractJavaClassRep setSingleton(String toSingleton) {
+        AbstractJavaClassRep component = (AbstractJavaClassRep) removeNonSpecificJavaClass(toSingleton);
+        if (component != null) {
+            DataFactory DF = new DataFactory();
+            addClass(toSingleton, DF.getSingleton(component));
+        }
+        return getNonSpecificJavaClass(toSingleton);
     }
 }
