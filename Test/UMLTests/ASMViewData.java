@@ -39,7 +39,25 @@ public class ASMViewData {
 
         reader.accept(v, ClassReader.EXPAND_FRAMES);
         for (String n : inheritsNames) {
-            System.out.println(n);
+            //System.out.println(n);
         }
+
+        //System.out.println("******************************************************");
     }
+
+//    @Test
+//    public void checkBoundingInheritanceVisitorOutput() throws IOException {
+//        ClassReader reader = new ClassReader("javax.swing.JTextField");
+//        Collection<String> inheritsNames = new ArrayList<String>();
+//        // make class declaration visitor to get superclass and interfaces
+//        String name = "javax.swing.JTextField";
+//        String bounds = "javax.swing.JComponent";
+//        ClassVisitor v = new BoundedInheritanceVisitor(Opcodes.ASM5, name, bounds, inheritsNames);
+//
+//        reader.accept(v, ClassReader.EXPAND_FRAMES);
+//        for (String n : inheritsNames)
+//        {
+//           System.out.println(n);
+//        }
+//    }
 }

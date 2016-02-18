@@ -1,5 +1,6 @@
 package Visitors.DefaultVisitors;
 
+import java.io.IOException;
 import java.util.HashMap;
 import java.util.Map;
 
@@ -17,7 +18,11 @@ public class Visitor implements IVisitor {
         LookupKey key = new LookupKey(vType, t.getClass());
         IVisitMethod m = this.keyToVisitMethodMap.get(key);
         if (m != null)
-            m.execute(t);
+            try {
+                m.execute(t);
+            } catch (IOException e) {
+                System.out.println(e);
+            }
     }
 
     @Override

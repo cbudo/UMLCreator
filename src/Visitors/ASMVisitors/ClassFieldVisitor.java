@@ -49,10 +49,9 @@ public class ClassFieldVisitor extends ClassVisitor {
 	}
 
     private void getCompoundType(String signature, ArrayList<String> compoundType) {
-        if (!signature.contains("<")) {
-            return;
-        } else {
-
+        String[] splitSig = signature.replace(";>", "").split("<");
+        for (String s : splitSig) {
+            compoundType.add(s.substring(1).replace("/", ".").replace(";", ""));
         }
     }
 
