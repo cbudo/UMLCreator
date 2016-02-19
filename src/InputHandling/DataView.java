@@ -118,8 +118,7 @@ public class DataView implements IParserViewer {
 
     @Override
     public void Analyze() throws IOException {
-        runPhases();
-        System.out.println(generator.Generate());
+        phasesToMethods.get("DOT-Generation").execute();
     }
 
     @Override
@@ -158,8 +157,10 @@ public class DataView implements IParserViewer {
     @Override
     public void getSupplementaryClasses() {
         String[] suppClasses = getSupplementaryClassesFromProperties();
-        for (String suppClassName : suppClasses)
+        for (String suppClassName : suppClasses) {
             supplementaryClasses.add(suppClassName);
+            ParsedDataStorage.getInstance().addToDisplayClasses(suppClassName);
+        }
     }
 
     private String getDotExecutionPath() {

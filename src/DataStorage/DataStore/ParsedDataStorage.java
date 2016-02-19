@@ -264,15 +264,19 @@ public class ParsedDataStorage implements IDataStorage, ITraverser {
     @Override
     public void accept(IVisitor v) {
         v.preVisit(this);
-        for (AbstractJavaClassRep ajc :
-                classes.values()) {
+        for (AbstractJavaClassRep ajc : classes.values()) {
+            if (!getDisplayClasses().contains(ajc.getName()))
+                continue;
             ajc.accept(v);
         }
-        for (AbstractJavaClassRep inter :
-                interfaces.values()) {
+        for (AbstractJavaClassRep inter : interfaces.values()) {
+            if (!getDisplayClasses().contains(inter.getName()))
+                continue;
             inter.accept(v);
         }
         for (AbstractJavaClassRep abstractClass : abstractClasses.values()) {
+            if (!getDisplayClasses().contains(abstractClass.getName()))
+                continue;
             abstractClass.accept(v);
         }
         for (IRelation r : usesRels) {

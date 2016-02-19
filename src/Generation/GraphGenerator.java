@@ -27,10 +27,6 @@ public class GraphGenerator implements IGenerator {
     public static String buildUMLClassDiagram() {
         ParsedDataStorage data = ParsedDataStorage.getInstance();
         AbstractVisitorTemplate visitSingle = new SingletonVisitor(data);
-        //       AbstractVisitorTemplate visitAdapt = new AdaptorVisitor(data);
-//        AbstractVisitorTemplate visitComposite = new CompositeVisitor(data);
-//        visitAdapt.doTheStuff();
-//        visitComposite.doTheStuff();
         visitSingle.doTheStuff();
         OutputStream os = null;
         UMLOutputStream fos;
@@ -104,7 +100,7 @@ public class GraphGenerator implements IGenerator {
 //                    return;
 //                }
                 String n = namePtr.get(0).replace("/", ".");
-                //String n = "";
+                ParsedDataStorage.getInstance().addToDisplayClasses(n);
 
 
                 // make class declaration visitor to get superclass and interfaces
