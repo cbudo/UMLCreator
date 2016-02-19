@@ -39,7 +39,7 @@ public abstract class AbstractExtendableClassRep extends AbstractJavaClassRep {
             ParsedDataStorage.getInstance().setDecorator(currentName);
             //make field a component
             try {
-                ParsedDataStorage.getInstance().setComponent(((FieldRep) fieldRep).getFullType());
+                //ParsedDataStorage.getInstance().setComponent(((FieldRep) fieldRep).getFullType());
             } catch (Exception ignored) {
 
             }

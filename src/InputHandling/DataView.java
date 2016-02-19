@@ -5,9 +5,7 @@ import Generation.GeneratorFactory;
 import Generation.IGenerator;
 
 import java.io.*;
-import java.util.HashMap;
-import java.util.Map;
-import java.util.Properties;
+import java.util.*;
 
 /**
  * Created by efronbs on 2/18/2016.
@@ -19,6 +17,7 @@ public class DataView implements IParserViewer {
     private IGenerator generator;
     private PhaseHandler phaseHandler;
 
+    private List<String> supplementaryClasses;
     private Map<String, FileInputStream> classesToLoad;
     private Map<String, PhaseExecution> phasesToMethods;
 
@@ -29,6 +28,7 @@ public class DataView implements IParserViewer {
             e.printStackTrace();
         }
 
+        supplementaryClasses = new ArrayList<>();
         generatorFactory = new GeneratorFactory();
         generator = generatorFactory.getGenerator("UML");
         phasesToMethods = new HashMap<String, PhaseExecution>();
@@ -79,14 +79,6 @@ public class DataView implements IParserViewer {
         return prop.getProperty("PhaseClasses").split(",");
     }
 
-//    private void setupPhases() {
-//        try {
-//            phaseHandler.setupClassLoadingPhase(DataView.class.getDeclaredMethod("parseASM"));
-//        } catch (NoSuchMethodException e) {
-//            e.printStackTrace();
-//        }
-//    }
-
     private void addBasicPhases() {
         phasesToMethods.put("Class-Loading", () -> {
             parseASM();
@@ -108,21 +100,25 @@ public class DataView implements IParserViewer {
         getSupplementaryClasses();
         phaseHandler.generateAllPhaseClasses();
 
-        generator.parseFromStream(classesToLoad);
+        try {
+            generator.parse(supplementaryClasses);
+        } catch (IOException e) {
+            e.printStackTrace();
+        }
+        if (classesToLoad.size() > 0) {
+            generator.parseFromStream(classesToLoad);
+        }
         runPhases();
         System.out.println(generator.Generate());
-//        if (true)
-//            return;
-//        for (String s : ParsedDataStorage.getInstance())
-//            System.out.println(s);
-//        parseASM();
-//        setupPhases();
     }
 
     @Override
     public void getClassesFromInputFile() {
         String path = getInputFolderPath();
         classesToLoad = new HashMap<String, FileInputStream>();
+        if (path.equals("")) {
+            return;
+        }
         File folder = new File(path);
         try {
             FileHandler.listFilesForFolder(folder, path, classesToLoad);
@@ -135,7 +131,7 @@ public class DataView implements IParserViewer {
     public void getSupplementaryClasses() {
         String[] suppClasses = getSupplementaryClassesFromProperties();
         for (String suppClassName : suppClasses)
-            ParsedDataStorage.getInstance().addToDisplayClasses(suppClassName);
+            supplementaryClasses.add(suppClassName);
     }
 
     private String getDotExecutionPath() {

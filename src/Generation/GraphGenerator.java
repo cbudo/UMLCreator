@@ -4,7 +4,6 @@ import DataStorage.DataStore.ParsedDataStorage;
 import Visitors.ASMVisitors.ClassDeclarationVisitor;
 import Visitors.ASMVisitors.ClassFieldVisitor;
 import Visitors.OutputStreams.UMLOutputStream;
-import Visitors.PatternVisitors.*;
 import Visitors.UMLVisitors.UMLClassMethodVisitor;
 import com.sun.xml.internal.messaging.saaj.util.ByteOutputStream;
 import org.objectweb.asm.ClassReader;
@@ -23,19 +22,19 @@ import java.util.Map;
 public class GraphGenerator implements IGenerator {
     public static String buildUMLClassDiagram() {
         ParsedDataStorage data = ParsedDataStorage.getInstance();
-        AbstractVisitorTemplate visitS = new SingletonVisitor(data);
-        AbstractVisitorTemplate visitAdapt = new AdaptorVisitor(data);
-        AbstractVisitorTemplate visitComposite = new CompositeVisitor(data);
-        visitS.doTheStuff();
-        visitAdapt.doTheStuff();
-        visitComposite.doTheStuff();
+//        AbstractVisitorTemplate visitS = new SingletonVisitor(data);
+//        AbstractVisitorTemplate visitAdapt = new AdaptorVisitor(data);
+//        AbstractVisitorTemplate visitComposite = new CompositeVisitor(data);
+//        visitS.doTheStuff();
+//        visitAdapt.doTheStuff();
+//        visitComposite.doTheStuff();
         OutputStream os = null;
         UMLOutputStream fos;
         try {
             os = new ByteOutputStream();
             fos = new UMLOutputStream(os);
-            DecoratorVisitor DV = new DecoratorVisitor(data);
-            DV.doTheStuff();
+//            DecoratorVisitor DV = new DecoratorVisitor(data);
+//            DV.doTheStuff();
             fos.write(data);
         } catch (IOException e) {
             e.printStackTrace();
