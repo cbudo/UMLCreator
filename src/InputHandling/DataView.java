@@ -85,13 +85,14 @@ public class DataView implements IParserViewer {
         });
         phasesToMethods.put("DOT-Generation", () -> {
             try {
-                try (Writer writer = new BufferedWriter(new OutputStreamWriter(new FileOutputStream("outputGraph.png")))) {
+                try (Writer writer = new BufferedWriter(new OutputStreamWriter(new FileOutputStream(getOutputDirectory()+"\\outputGraph.png")))) {
                     writer.write("temp write");
                 } catch (IOException ex) {
                     // handle me
                 }
-                final Process p = Runtime.getRuntime().exec("\"" + prop.getProperty("Dot-Path") + "\" -Tpng \"" + prop.getProperty("Output-Directory") + "generatedGraph.dot\" -o \"" + prop.getProperty("Output-Directory") + "outputGraph.png\"");
-            } catch (IOException e) {
+                final Process p = Runtime.getRuntime().exec("\"" + prop.getProperty("Dot-Path") + "\" -Tpng \"" + prop.getProperty("Output-Directory") + "\\generatedGraph.dot\" -o \"" + prop.getProperty("Output-Directory") + "\\outputGraph.png\"");
+                p.waitFor();
+            } catch (IOException | InterruptedException e) {
                 e.printStackTrace();
             }
         });
@@ -102,10 +103,16 @@ public class DataView implements IParserViewer {
     public  Iterator<String> getDecorators(){
         return ParsedDataStorage.getInstance().getDecoratorClasses().iterator();
     }
-    public Iterator<String> getComponent(){
+    public Iterator<String> getComponents(){
         return ParsedDataStorage.getInstance().getComponentClasses().iterator();
     }
-    public Iterator<String> getSingleton(){
+
+    @Override
+    public String getOutputDirectory() {
+        return prop.getProperty("Output-Directory");
+    }
+
+    public Iterator<String> getSingletons(){
         return ParsedDataStorage.getInstance().getSingletonClasses().iterator();
     }
 
@@ -156,7 +163,7 @@ public class DataView implements IParserViewer {
     }
 
     private String getDotExecutionPath() {
-        return "";
+        return prop.getProperty("Dot-Path");
     }
 
     @Override

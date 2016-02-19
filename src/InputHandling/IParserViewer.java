@@ -2,6 +2,7 @@ package InputHandling;
 
 import java.io.File;
 import java.io.IOException;
+import java.util.Iterator;
 
 /**
  * Created by efronbs on 2/17/2016.
@@ -22,4 +23,9 @@ public interface IParserViewer {
     void exit();
 
     void setPropertiesFile(String filePath) throws IOException;
+    Iterator<String> getDecorators();
+    Iterator<String> getSingletons();
+    Iterator<String> getComponents();
+
+    String getOutputDirectory();
 }

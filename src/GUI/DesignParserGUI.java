@@ -3,6 +3,9 @@ package GUI;
 import InputHandling.DataView;
 import InputHandling.IParserViewer;
 import javafx.application.Application;
+import javafx.beans.value.ChangeListener;
+import javafx.beans.value.ObservableValue;
+import javafx.collections.ObservableList;
 import javafx.event.ActionEvent;
 import javafx.event.EventHandler;
 import javafx.geometry.HPos;
@@ -10,6 +13,10 @@ import javafx.geometry.Insets;
 import javafx.geometry.Orientation;
 import javafx.scene.Scene;
 import javafx.scene.control.*;
+import javafx.scene.control.Button;
+import javafx.scene.control.Menu;
+import javafx.scene.control.MenuBar;
+import javafx.scene.control.MenuItem;
 import javafx.scene.control.cell.CheckBoxTreeCell;
 import javafx.scene.image.Image;
 import javafx.scene.image.ImageView;
@@ -21,9 +28,16 @@ import javafx.scene.text.Text;
 import javafx.stage.FileChooser;
 import javafx.stage.Stage;
 
+import java.awt.*;
 import java.io.File;
 import java.io.IOException;
-import java.util.*;
+import java.io.RandomAccessFile;
+import java.net.URI;
+import java.net.URISyntaxException;
+import java.util.HashMap;
+import java.util.Iterator;
+import java.util.Map;
+import java.util.Properties;
 
 /**
  * Created by budocf on 2/17/2016.
@@ -37,6 +51,7 @@ public class DesignParserGUI extends Application {
     final Button analyze = new Button("Analyze");
     final ProgressBar progressBar = new ProgressBar(0);
     final Text text = new Text("Waiting for user input...");
+    final ImageView img = new ImageView("file:.\\inputoutput\\ChandanHat.jpg");
 
     public static void main(String[] args) {
         launch(args);
@@ -102,7 +117,7 @@ public class DesignParserGUI extends Application {
 
         // get phases from dataview
         // set value to increment progress bar by (1.00-.10)/size(phases)
-
+        parserViewer.runPhases();
         // iterate over phases and increment progress bar as you go
 
         // after all phases are over
@@ -115,14 +130,7 @@ public class DesignParserGUI extends Application {
     }
 
     private void initResults() {
-        MenuBar menuBar = new MenuBar();
-        Menu file = new Menu("File");
-        MenuItem restart = new MenuItem("Restart");
-        restart.setOnAction(event -> initStartPage());
-        MenuItem export = new MenuItem("Export");
-        export.setOnAction(event -> exportImage());
-        file.getItems().addAll(restart);
-        menuBar.getMenus().add(file);
+        MenuBar menuBar = getMenu();
         result = new VBox(12);
         SplitPane pane = new SplitPane();
         TreeItem<String> dummyNode = new CheckBoxTreeItem<>();
@@ -130,16 +138,22 @@ public class DesignParserGUI extends Application {
         TreeView tree = new TreeView(dummyNode);
         tree.setEditable(true);
         tree.setShowRoot(false);
-        Map<String, List<String>> data = getPatternClasses();
+        Map<String, Iterator<String>> data = getPatternClasses();
         for (String pattern : data.keySet()) {
             // create root
             CheckBoxTreeItem<String> node = new CheckBoxTreeItem<>(pattern);
-            for (String clazz :
-                    data.get(pattern)) {
-                // create item
-                CheckBoxTreeItem<String> checkBoxTreeItem = new CheckBoxTreeItem<>(clazz);
+            Iterator<String> it = data.get(pattern);
+            it.forEachRemaining(s -> {
+                CheckBoxTreeItem<String> checkBoxTreeItem = new CheckBoxTreeItem<>(s);
+                checkBoxTreeItem.setSelected(true);
+                checkBoxTreeItem.selectedProperty().addListener(new ChangeListener<Boolean>() {
+                    @Override
+                    public void changed(ObservableValue<? extends Boolean> observable, Boolean oldValue, Boolean newValue) {
+                        updateImage(tree.getSelectionModel().getSelectedItems());
+                    }
+                });
                 node.getChildren().add(checkBoxTreeItem);
-            }
+            });
             node.setExpanded(true);
             // add root to tree
             dummyNode.getChildren().add(node);
@@ -147,8 +161,10 @@ public class DesignParserGUI extends Application {
         tree.setCellFactory(CheckBoxTreeCell.forTreeView());
 
         tree.setRoot(dummyNode);
-//        Image image = new Image("C:\\Users\\budocf\\Downloads\\1.jpg");
-        ImageView img = new ImageView("file:C:\\Users\\budocf\\Downloads\\1.jpg");
+
+//        Image image = new Image("file:C:\\Users\\budocf\\Downloads\\1.jpg");
+        img.setFitHeight(500);
+        img.setFitWidth(500);
         pane.getItems().addAll(tree, img);
         result.getChildren().add(pane);
         BorderPane borderPane = new BorderPane(result, menuBar, null, null, null);
@@ -157,14 +173,84 @@ public class DesignParserGUI extends Application {
         primaryStage.show();
     }
 
-    private Map<String, List<String>> getPatternClasses() {
-        Map<String, List<String>> patternClasses = new HashMap<>();
-        List<String> stuff = new ArrayList<>();
-        stuff.add("UMLCreator.DataStorage.DataStore.ParsedDataStorage");
-        patternClasses.put("Singleton", stuff);
-        List<String> otherStuff = new ArrayList<>();
-        otherStuff.add("UMLCreator.DataStorage.ParseClasses.Decorators.SingletonClass");
-        patternClasses.put("Decorators", otherStuff);
+    private void updateImage(ObservableList selectedItems) {
+        //update image
+
+
+        //wait for image to be updated
+        String imagePath = parserViewer.getOutputDirectory() + "\\outputGraph.png";
+        File toWrite = new File(imagePath);
+
+        while (!isCompletelyWritten(toWrite)) ;
+
+        Image image = new Image("file:" + imagePath);
+
+        img.setImage(image);
+    }
+
+    private boolean isCompletelyWritten(File file) {
+        RandomAccessFile stream = null;
+        try {
+            stream = new RandomAccessFile(file, "rw");
+            return true;
+        } catch (Exception e) {
+            System.out.println("Skipping file " + file.getName() + " for this iteration due it's not completely written");
+        } finally {
+            if (stream != null) {
+                try {
+                    stream.close();
+                } catch (IOException e) {
+                    System.out.println("Exception during closing file " + file.getName());
+                }
+            }
+        }
+        return false;
+    }
+
+    private MenuBar getMenu() {
+        MenuBar menuBar = new MenuBar();
+
+        Menu file = new Menu("File");
+        MenuItem restart = new MenuItem("Restart");
+        restart.setOnAction(event -> initStartPage());
+        MenuItem export = new MenuItem("Export");
+        export.setOnAction(event -> exportImage());
+        file.getItems().addAll(restart, export);
+
+
+        Menu help = new Menu("Help");
+        MenuItem howto = new MenuItem("How to use");
+        MenuItem about = new MenuItem("About");
+
+        howto.setOnAction(event -> {
+            try {
+                openWebpage(new URI("https://github.com/cbudo/UMLCreator"));
+            } catch (URISyntaxException e) {
+                e.printStackTrace();
+            }
+        });
+        about.setOnAction(event -> {
+            Alert alert = new Alert(Alert.AlertType.INFORMATION);
+            alert.setTitle("Design Parser");
+            alert.setHeaderText(null);
+            alert.setContentText("Design Parser\nv7.627.374\nCreated by: Chris Budo and Benjamin Efron");
+            alert.show();
+
+        });
+        help.getItems().addAll(howto, about);
+
+        menuBar.getMenus().addAll(file, help);
+        return menuBar;
+    }
+
+    private Map<String, Iterator<String>> getPatternClasses() {
+        Map<String, Iterator<String>> patternClasses = new HashMap<>();
+        if (parserViewer.getSingletons().hasNext())
+            patternClasses.put("Singleton", parserViewer.getSingletons());
+        if (parserViewer.getDecorators().hasNext())
+            patternClasses.put("Decorators", parserViewer.getDecorators());
+        if (parserViewer.getComponents().hasNext())
+            patternClasses.put("Components", parserViewer.getComponents());
         return patternClasses;
     }
 
@@ -188,7 +274,19 @@ public class DesignParserGUI extends Application {
         this.primaryStage.setTitle("Design Parser");
         parserViewer = new DataView();
 
-        //initStartPage();
-        initResults();
+        initStartPage();
+        //initResults();
     }
+
+    public static void openWebpage(URI uri) {
+        Desktop desktop = Desktop.isDesktopSupported() ? Desktop.getDesktop() : null;
+        if (desktop != null && desktop.isSupported(Desktop.Action.BROWSE)) {
+            try {
+                desktop.browse(uri);
+            } catch (Exception e) {
+                e.printStackTrace();
+            }
+        }
+    }
+
 }
