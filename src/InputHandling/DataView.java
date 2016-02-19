@@ -20,6 +20,8 @@ public class DataView implements IParserViewer {
     private List<String> supplementaryClasses;
     private Map<String, FileInputStream> classesToLoad;
     private Map<String, PhaseExecution> phasesToMethods;
+    private Map<String, PhaseExecution> beginPhases;
+    private Map<String, PhaseExecution> endPhases;
     private boolean initialized;
 
     public DataView() {
@@ -28,6 +30,8 @@ public class DataView implements IParserViewer {
         generatorFactory = new GeneratorFactory();
         generator = generatorFactory.getGenerator("UML");
         phasesToMethods = new HashMap<String, PhaseExecution>();
+        beginPhases = new HashMap<String, PhaseExecution>();
+        endPhases = new HashMap<String, PhaseExecution>();
 //        runPhases();
 //        System.out.println(generator.Generate());
     }
@@ -68,10 +72,10 @@ public class DataView implements IParserViewer {
     }
 
     private void addBasicPhases() {
-        phasesToMethods.put("Class-Loading", () -> {
+        beginPhases.put("Class-Loading", () -> {
             parseASM();
         });
-        phasesToMethods.put("DOT-Generation", () -> {
+        endPhases.put("DOT-Generation", () -> {
             try {
                 //GraphGenerator generator = new GraphGenerator();
 
@@ -129,7 +133,7 @@ public class DataView implements IParserViewer {
             performSetup();
             initialized = true;
         }
-        phasesToMethods.get("DOT-Generation").execute();
+        endPhases.get("DOT-Generation").execute();
     }
 
     @Override
@@ -194,7 +198,13 @@ public class DataView implements IParserViewer {
 
     @Override
     public void runPhases() {
+        for (PhaseExecution pe : beginPhases.values()) {
+            pe.execute();
+        }
         for (PhaseExecution pe : phasesToMethods.values()) {
+            pe.execute();
+        }
+        for (PhaseExecution pe : endPhases.values()) {
             pe.execute();
         }
     }

@@ -116,7 +116,7 @@ public class CompositeVisitor extends AbstractVisitorTemplate {
 
 //        if (true)
 //            return;
-
+        //System.out.println("COMPOSITES FOUND: " + csets.size());
         for (CompositeSet cs : csets.values()) {
             data.getNonSpecificJavaClass(cs.component.replace("/", ".")).addToDisplayName("\\<\\<component\\>\\>");
             data.getNonSpecificJavaClass(cs.component.replace("/", ".")).setFillColor("yellow");
