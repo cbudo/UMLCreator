@@ -45,7 +45,7 @@ public class GraphGenerator implements IGenerator {
 
     @Override
     public String getOutputType() {
-        return "gv";
+        return "dot";
     }
 
     @Override

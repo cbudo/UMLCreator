@@ -2,6 +2,7 @@ package InputHandling;
 
 import DataStorage.DataStore.ParsedDataStorage;
 import Generation.GeneratorFactory;
+import Generation.GraphGenerator;
 import Generation.IGenerator;
 
 import java.io.*;
@@ -85,12 +86,24 @@ public class DataView implements IParserViewer {
         });
         phasesToMethods.put("DOT-Generation", () -> {
             try {
+                GraphGenerator generator = new GraphGenerator();
+                System.out.println(generator.Generate());
+                try (Writer writer = new BufferedWriter(new OutputStreamWriter(new FileOutputStream(getOutputDirectory()+"\\generated_graph.dot")))) {
+                    writer.write("temp write");
+                } catch (IOException ex) {
+                    // handle me
+                }
+                FileWriter writer2 = new FileWriter(prop.getProperty("Output-Directory") + "\\generated_graph.dot");
+                writer2.write(generator.Generate());
+                writer2.close();
                 try (Writer writer = new BufferedWriter(new OutputStreamWriter(new FileOutputStream(getOutputDirectory()+"\\outputGraph.png")))) {
                     writer.write("temp write");
                 } catch (IOException ex) {
                     // handle me
                 }
-                final Process p = Runtime.getRuntime().exec("\"" + prop.getProperty("Dot-Path") + "\" -Tpng \"" + prop.getProperty("Output-Directory") + "\\generatedGraph.dot\" -o \"" + prop.getProperty("Output-Directory") + "\\outputGraph.png\"");
+                String command = "\"" + prop.getProperty("Dot-Path") + "\" -Tpng \"" + prop.getProperty("Output-Directory") + "\\generated_graph.dot\" -o \"" + prop.getProperty("Output-Directory") + "\\outputGraph.png\"";
+                System.out.println("Command: " + command);
+                final Process p = Runtime.getRuntime().exec(command);
                 p.waitFor();
             } catch (IOException | InterruptedException e) {
                 e.printStackTrace();
@@ -110,6 +123,11 @@ public class DataView implements IParserViewer {
     @Override
     public String getOutputDirectory() {
         return prop.getProperty("Output-Directory");
+    }
+
+    @Override
+    public void setClassesToShow(List<String> classesToShow) {
+        ParsedDataStorage.getInstance().setToDisplayClasses(classesToShow);
     }
 
     public Iterator<String> getSingletons(){

@@ -6,6 +6,7 @@ import javafx.application.Application;
 import javafx.beans.value.ChangeListener;
 import javafx.beans.value.ObservableValue;
 import javafx.collections.ObservableList;
+import javafx.concurrent.Task;
 import javafx.event.ActionEvent;
 import javafx.event.EventHandler;
 import javafx.geometry.HPos;
@@ -29,15 +30,13 @@ import javafx.stage.FileChooser;
 import javafx.stage.Stage;
 
 import java.awt.*;
+import java.awt.List;
 import java.io.File;
 import java.io.IOException;
 import java.io.RandomAccessFile;
 import java.net.URI;
 import java.net.URISyntaxException;
-import java.util.HashMap;
-import java.util.Iterator;
-import java.util.Map;
-import java.util.Properties;
+import java.util.*;
 
 /**
  * Created by budocf on 2/17/2016.
@@ -117,7 +116,11 @@ public class DesignParserGUI extends Application {
 
         // get phases from dataview
         // set value to increment progress bar by (1.00-.10)/size(phases)
-        parserViewer.runPhases();
+        try {
+            parserViewer.Analyze();
+        } catch (IOException e) {
+            e.printStackTrace();
+        }
         // iterate over phases and increment progress bar as you go
 
         // after all phases are over
@@ -163,6 +166,7 @@ public class DesignParserGUI extends Application {
         tree.setRoot(dummyNode);
 
 //        Image image = new Image("file:C:\\Users\\budocf\\Downloads\\1.jpg");
+        updateImage(tree.getSelectionModel().getSelectedItems());
         img.setFitHeight(500);
         img.setFitWidth(500);
         pane.getItems().addAll(tree, img);
@@ -175,13 +179,17 @@ public class DesignParserGUI extends Application {
 
     private void updateImage(ObservableList selectedItems) {
         //update image
-
+        java.util.List<String> classnames = new ArrayList<>();
+        classnames.addAll(selectedItems);
+        parserViewer.setClassesToShow(classnames);
 
         //wait for image to be updated
         String imagePath = parserViewer.getOutputDirectory() + "\\outputGraph.png";
         File toWrite = new File(imagePath);
 
-        while (!isCompletelyWritten(toWrite)) ;
+//        while (!isCompletelyWritten(toWrite)) {
+//
+//        }
 
         Image image = new Image("file:" + imagePath);
 
