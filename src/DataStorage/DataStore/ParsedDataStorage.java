@@ -24,6 +24,7 @@ public class ParsedDataStorage implements IDataStorage, ITraverser {
     private List<IRelation> usesRels;
     private List<IRelation> associationRels;
     private List<MethodCall> methodCalls;
+    private List<String> classesToGenerate;
     private int max_depth = 5;
 
     private ParsedDataStorage() {
@@ -35,7 +36,7 @@ public class ParsedDataStorage implements IDataStorage, ITraverser {
         this.associationRels = new ArrayList<>();
         this.methodCalls = new LinkedList<>();
         this.includedClasses = new ArrayList<>();
-
+        this.classesToGenerate = new ArrayList<>();
     }
 
     public static ParsedDataStorage getInstance() {
@@ -356,5 +357,16 @@ public class ParsedDataStorage implements IDataStorage, ITraverser {
         interfaces.values().stream().filter(p -> p instanceof ComponentDecorator).forEach(p -> results.add(p.getName()));
         abstractClasses.values().stream().filter(p -> p instanceof ComponentDecorator).forEach(p -> results.add(p.getName()));
         return results;
+    }
+    public void setToDisplayClasses(){
+        this.classesToGenerate.clear();
+        this.classesToGenerate.addAll(getComponentClasses());
+        this.classesToGenerate.addAll(getDecoratorClasses());
+        this.classesToGenerate.addAll(getSingletonClasses());
+    }
+    public void setToDisplayClasses(Collection<String> classes){
+        this.classesToGenerate.clear();
+        classes.removeIf(clazz->getNonSpecificJavaClass(clazz)==null);
+        this.classesToGenerate.addAll(classes);
     }
 }
