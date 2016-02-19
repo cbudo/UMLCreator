@@ -4,6 +4,7 @@ import DataStorage.DataStore.ParsedDataStorage;
 import Generation.GeneratorFactory;
 import Generation.GraphGenerator;
 import Generation.IGenerator;
+import javafx.scene.control.ProgressBar;
 
 import java.io.*;
 import java.util.*;
@@ -21,36 +22,24 @@ public class DataView implements IParserViewer {
     private List<String> supplementaryClasses;
     private Map<String, FileInputStream> classesToLoad;
     private Map<String, PhaseExecution> phasesToMethods;
+    private boolean initialized;
 
     public DataView() {
-        try {
-            openConfigFile();
-        } catch (IOException e) {
-            e.printStackTrace();
-        }
-
+        initialized = false;
         supplementaryClasses = new ArrayList<>();
         generatorFactory = new GeneratorFactory();
         generator = generatorFactory.getGenerator("UML");
         phasesToMethods = new HashMap<String, PhaseExecution>();
-        phaseHandler = new PhaseHandler(getPhases(), getPhaseClasses(), phasesToMethods);
-        addBasicPhases();
 //        runPhases();
 //        System.out.println(generator.Generate());
     }
 
-    private void openConfigFile() throws IOException {
+    public void openConfigFile(String filePath) throws IOException {
 
         try {
             prop = new Properties();
-            String propFileName = "config.properties";
-            propertiesInput = getClass().getClassLoader().getResourceAsStream(propFileName);
-
-            if (propertiesInput != null) {
-                prop.load(propertiesInput);
-            } else {
-                throw new FileNotFoundException("property file '" + propFileName + "' not found in the classpath");
-            }
+            InputStream inputStream = new FileInputStream(filePath);
+            prop.load(inputStream);
 
             //System.out.println("PATH FROM CONFIG: " + prop.getProperty("Input-Folder"));
         } catch (Exception e) {
@@ -87,7 +76,7 @@ public class DataView implements IParserViewer {
         phasesToMethods.put("DOT-Generation", () -> {
             try {
                 GraphGenerator generator = new GraphGenerator();
-                System.out.println(generator.Generate());
+
                 try (Writer writer = new BufferedWriter(new OutputStreamWriter(new FileOutputStream(getOutputDirectory()+"\\generated_graph.dot")))) {
                     writer.write("temp write");
                 } catch (IOException ex) {
@@ -136,6 +125,10 @@ public class DataView implements IParserViewer {
 
     @Override
     public void Analyze() throws IOException {
+        if(!initialized){
+            performSetup();
+            initialized = true;
+        }
         phasesToMethods.get("DOT-Generation").execute();
     }
 
@@ -143,10 +136,15 @@ public class DataView implements IParserViewer {
     public void performSetup() {
         getClassesFromInputFile();
         getSupplementaryClasses();
-        phaseHandler.generateAllPhaseClasses();
+        phaseHandler = new PhaseHandler(getPhases(), getPhaseClasses(), phasesToMethods);
 
+        phaseHandler.generateAllPhaseClasses();
+        addBasicPhases();
         try {
             generator.parse(supplementaryClasses);
+            System.out.println("Display classes: " + ParsedDataStorage.getInstance().getDisplayClasses().size());
+            System.out.println("suplementary classes: " + supplementaryClasses.size());
+            System.out.println("to load classes: " + classesToLoad.size());
         } catch (IOException e) {
             e.printStackTrace();
         }

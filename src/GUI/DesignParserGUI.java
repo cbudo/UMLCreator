@@ -71,7 +71,7 @@ public class DesignParserGUI extends Application {
                 File file = fileChooser.showOpenDialog(primaryStage);
                 if (file != null) {
                     try {
-                        parserViewer.setPropertiesFile(file.getAbsolutePath());
+                        parserViewer.openConfigFile(file.getAbsolutePath());
                         text.setText("Config file read!");
                         analyze.setOnAction(new EventHandler<ActionEvent>() {
                             @Override
@@ -117,6 +117,7 @@ public class DesignParserGUI extends Application {
         // get phases from dataview
         // set value to increment progress bar by (1.00-.10)/size(phases)
         try {
+            parserViewer.runPhases();
             parserViewer.Analyze();
         } catch (IOException e) {
             e.printStackTrace();

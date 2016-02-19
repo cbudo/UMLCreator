@@ -11,6 +11,8 @@ import java.util.List;
 public interface IParserViewer {
     void Analyze() throws IOException;
 
+    void openConfigFile(String filePath) throws IOException;
+
     void performSetup();
 
     void getClassesFromInputFile();
