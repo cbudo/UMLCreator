@@ -3,11 +3,9 @@ package InputHandling;
 import DataStorage.DataStore.ParsedDataStorage;
 import Generation.GeneratorFactory;
 import Generation.IGenerator;
+import jdk.internal.util.xml.impl.Input;
 
-import java.io.File;
-import java.io.FileNotFoundException;
-import java.io.IOException;
-import java.io.InputStream;
+import java.io.*;
 import java.lang.reflect.InvocationTargetException;
 import java.util.Properties;
 
@@ -90,8 +88,8 @@ public class DataView implements IParserViewer {
     public void performSetup() {
         getClassesFromInputFile();
         getSupplementaryClasses();
-        for (String s : ParsedDataStorage.getInstance())
-            System.out.println(s);
+//        for (String s : ParsedDataStorage.getInstance())
+//            System.out.println(s);
         //parseASM();
         setupPhases();
     }
@@ -100,7 +98,7 @@ public class DataView implements IParserViewer {
     public void getClassesFromInputFile() {
         String path = getInputFolderPath();
         File folder = new File(path);
-        FileHandler.listFilesForFolder(folder, path);
+//        FileHandler.listFilesForFolder(folder, path);
     }
 
     @Override
@@ -137,6 +135,13 @@ public class DataView implements IParserViewer {
         } catch (IOException e) {
             e.printStackTrace();
         }
+    }
+
+    @Override
+    public void setPropertiesFile(String filePath) throws IOException{
+        prop = new Properties();
+        InputStream inputStream = new FileInputStream(filePath);
+        prop.load(inputStream);
     }
 
 

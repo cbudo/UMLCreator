@@ -1,5 +1,6 @@
 package InputHandling;
 
+import java.io.File;
 import java.io.IOException;
 
 /**
@@ -20,4 +21,5 @@ public interface IParserViewer {
 
     void exit();
 
+    void setPropertiesFile(String filePath) throws IOException;
 }
