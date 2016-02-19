@@ -73,6 +73,9 @@ public class AdaptorVisitor extends AbstractVisitorTemplate {
                 ParsedDataStorage.getInstance().getNonSpecificJavaClass(s.adaptorName.replace("/", ".")).setColor("maroon");
                 ParsedDataStorage.getInstance().getNonSpecificJavaClass(s.adapteeName.replace("/", ".")).setColor("maroon");
                 ParsedDataStorage.getInstance().getNonSpecificJavaClass(s.targetName.replace("/", ".")).setColor("maroon");
+                ParsedDataStorage.getInstance().getNonSpecificJavaClass(s.adaptorName.replace("/", ".")).setPatternGroup("adaptor");
+                ParsedDataStorage.getInstance().getNonSpecificJavaClass(s.adapteeName.replace("/", ".")).setPatternGroup("adaptor");
+                ParsedDataStorage.getInstance().getNonSpecificJavaClass(s.targetName.replace("/", ".")).setPatternGroup("adaptor");
             } catch (Exception ignored) {
 
             }

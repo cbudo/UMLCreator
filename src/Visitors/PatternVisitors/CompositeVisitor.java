@@ -120,13 +120,17 @@ public class CompositeVisitor extends AbstractVisitorTemplate {
         for (CompositeSet cs : csets.values()) {
             data.getNonSpecificJavaClass(cs.component.replace("/", ".")).addToDisplayName("\\<\\<component\\>\\>");
             data.getNonSpecificJavaClass(cs.component.replace("/", ".")).setFillColor("yellow");
+            data.getNonSpecificJavaClass(cs.component.replace("/", ".")).setPatternGroup("composite");
+
             for (String compName : cs.composites) {
                 data.getNonSpecificJavaClass(compName.replace("/", ".")).addToDisplayName("\\<\\<composite\\>\\>");
                 data.getNonSpecificJavaClass(compName.replace("/", ".")).setFillColor("yellow");
+                data.getNonSpecificJavaClass(compName.replace("/", ".")).setPatternGroup("composite");
             }
             for (String leafName : cs.leaves) {
                 data.getNonSpecificJavaClass(leafName.replace("/", ".")).addToDisplayName("\\<\\<leaf\\>\\>");
                 data.getNonSpecificJavaClass(leafName.replace("/", ".")).setFillColor("yellow");
+                data.getNonSpecificJavaClass(leafName.replace("/", ".")).setPatternGroup("composite");
             }
         }
     }

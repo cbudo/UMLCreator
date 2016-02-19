@@ -50,6 +50,7 @@ public class SingletonVisitor extends AbstractVisitorTemplate {
         for (SingletonCheck sc : possibleSingletons) {
             if (sc.isSingleton()) {
                 ParsedDataStorage.getInstance().setSingleton(sc.name.replace("/", "."));
+                ParsedDataStorage.getInstance().getNonSpecificJavaClass(sc.name.replace("/", ".")).setPatternGroup("singleton");
             }
         }
     }

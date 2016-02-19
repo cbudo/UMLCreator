@@ -46,17 +46,21 @@ public class DecoratorVisitor extends AbstractVisitorTemplate {
         for (AbstractJavaClassRep r : data.getClasses()) {
             if (r instanceof DecoratorDecorator) {
                 r.addToDisplayName("\\<\\<decorator\\>\\>");
+                r.setPatternGroup("decorator");
             }
             if (r instanceof ComponentDecorator) {
                 r.addToDisplayName("\\<\\<component\\>\\>");
+                r.setPatternGroup("decorator");
             }
         }
         for (AbstractJavaClassRep r : data.getAbstractClasses()) {
             if (r instanceof DecoratorDecorator) {
                 r.addToDisplayName("\\<\\<decorator\\>\\>");
+                r.setPatternGroup("decorator");
             }
             if (r instanceof ComponentDecorator) {
                 r.addToDisplayName("\\<\\<component\\>\\>");
+                r.setPatternGroup("decorator");
             }
         }
     }

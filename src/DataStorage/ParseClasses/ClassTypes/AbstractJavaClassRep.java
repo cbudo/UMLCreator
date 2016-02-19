@@ -15,6 +15,7 @@ public abstract class AbstractJavaClassRep extends AbstractData {
     private List<String> implementsNames;
     private String color;
     private String fillColor;
+    private String patternGroup;
 
     public AbstractJavaClassRep(String name, int accessibility) {
         this(name, accessibility, null);
@@ -28,6 +29,7 @@ public abstract class AbstractJavaClassRep extends AbstractData {
         this.profileTags = new ArrayList<>();
         this.color = "black";
         this.fillColor = "white";
+        this.patternGroup = "standard";
     }
 
     public AbstractJavaClassRep() {
@@ -46,6 +48,14 @@ public abstract class AbstractJavaClassRep extends AbstractData {
 
     public void setFillColor(String color) {
         this.fillColor = color;
+    }
+
+    public String getPatternGroup() {
+        return patternGroup;
+    }
+
+    public void setPatternGroup(String pg) {
+        patternGroup = pg;
     }
 
     public void addMethod(String methodName, AbstractData methodStructure) {
