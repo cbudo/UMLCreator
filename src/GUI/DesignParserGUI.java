@@ -1,5 +1,6 @@
 package GUI;
 
+import DataStorage.DataStore.ParsedDataStorage;
 import InputHandling.DataView;
 import InputHandling.IParserViewer;
 import javafx.application.Application;
@@ -34,7 +35,10 @@ import java.io.IOException;
 import java.io.RandomAccessFile;
 import java.net.URI;
 import java.net.URISyntaxException;
-import java.util.*;
+import java.util.ArrayList;
+import java.util.Iterator;
+import java.util.Map;
+import java.util.Properties;
 
 /**
  * Created by budocf on 2/17/2016.
@@ -146,6 +150,7 @@ public class DesignParserGUI extends Application {
         MenuBar menuBar = getMenu();
         result = new VBox(12);
         SplitPane pane = new SplitPane();
+        //ScrollPane spane = new ScrollPane();
         TreeItem<String> dummyNode = new CheckBoxTreeItem<>();
         pane.setOrientation(Orientation.HORIZONTAL);
         TreeView tree = new TreeView(dummyNode);
@@ -163,6 +168,8 @@ public class DesignParserGUI extends Application {
                     @Override
                     public void changed(ObservableValue<? extends Boolean> observable, Boolean oldValue, Boolean newValue) {
                         updateImage(tree.getSelectionModel().getSelectedItems());
+                        pane.getItems().set(1, img);
+                        //pane.getItems().addAll(tree, img);
                     }
                 });
                 node.getChildren().add(checkBoxTreeItem);
@@ -197,6 +204,8 @@ public class DesignParserGUI extends Application {
 
         Image image = new Image("file:" + imagePath);
 
+//        img.setFitHeight(image.getHeight());
+//        img.setFitWidth(image.getWidth());
         img.setImage(image);
     }
 
@@ -256,14 +265,15 @@ public class DesignParserGUI extends Application {
     }
 
     private Map<String, Iterator<String>> getPatternClasses() {
-        Map<String, Iterator<String>> patternClasses = new HashMap<>();
-        if (parserViewer.getSingletons().hasNext())
-            patternClasses.put("Singleton", parserViewer.getSingletons());
-        if (parserViewer.getDecorators().hasNext())
-            patternClasses.put("Decorators", parserViewer.getDecorators());
-        if (parserViewer.getComponents().hasNext())
-            patternClasses.put("Components", parserViewer.getComponents());
-        return patternClasses;
+//        Map<String, Iterator<String>> patternClasses = new HashMap<>();
+//        if (parserViewer.getSingletons().hasNext())
+//            patternClasses.put("Singleton", parserViewer.getSingletons());
+//        if (parserViewer.getDecorators().hasNext())
+//            patternClasses.put("Decorators", parserViewer.getDecorators());
+//        if (parserViewer.getComponents().hasNext())
+//            patternClasses.put("Components", parserViewer.getComponents());
+//        return patternClasses;
+        return ParsedDataStorage.getInstance().generatePatternGroups();
     }
 
     private void exportImage() {

@@ -46,6 +46,26 @@ public class ParsedDataStorage implements IDataStorage, ITraverser {
         return storage;
     }
 
+    public Map<String, Iterator<String>> generatePatternGroups() {
+        Map<String, List<String>> patternGroups = new HashMap<>();
+        for (AbstractJavaClassRep ajcr : this.getClasses()) {
+            if (!patternGroups.keySet().contains(ajcr.getPatternGroup())) {
+                patternGroups.put(ajcr.getPatternGroup(), new ArrayList<String>() {{
+                    add(ajcr.getName());
+                }});
+            } else {
+                patternGroups.get(ajcr.getPatternGroup()).add(ajcr.getName());
+            }
+        }
+
+        Map<String, Iterator<String>> toRet = new HashMap<>();
+        for (String pgroup : patternGroups.keySet()) {
+            toRet.put(pgroup, patternGroups.get(pgroup).iterator());
+        }
+
+        return toRet;
+    }
+
     //This should almost definitely NEVER be called, only to be used for testing. The only time this should ever
     //be accessed is through reflection when reseting between tests
     private void destroySelf() {
