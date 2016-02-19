@@ -67,4 +67,6 @@ The final argument is optional and only matters if you are making a sequence dia
 | 6 | heavily restructured packages | wrote testing code for Adaptor |
 | 6 | fixes on decorator | fixes on adaptor |
 | 6 | testing code on decorator | refactoring on pattern detection visitor |
+| 7 | Created GUI | Work on API for connecting GUI to framework |
+| 7 | Dot integration | cleaning up the framework |
 
