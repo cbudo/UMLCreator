@@ -21,6 +21,7 @@ public class FileHandler {
                 String[] dirs = basePath.split("/");
                 String lastDir = dirs[dirs.length - 1];
                 name = name.replace(".class", "");
+                //name = name.substring(1);
                 name = lastDir + name;
                 //System.out.println(name);
                 classesToParse.put(name, iostream);

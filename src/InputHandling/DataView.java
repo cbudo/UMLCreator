@@ -118,8 +118,8 @@ public class DataView implements IParserViewer {
 
     @Override
     public void Analyze() throws IOException {
-        //runPhases();
-        //System.out.println(generator.Generate());
+        runPhases();
+        System.out.println(generator.Generate());
     }
 
     @Override
@@ -137,7 +137,7 @@ public class DataView implements IParserViewer {
             generator.parseFromStream(classesToLoad);
         }
         runPhases();
-        System.out.println(generator.Generate());
+        System.out.println(generator.Generate().replace("$", ""));
     }
 
     @Override

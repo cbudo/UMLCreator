@@ -35,7 +35,7 @@ public class PhaseHandler {
                     phasesToActions.put(phaseName, () -> {
                         avt.doTheStuff();
                     });
-                    //phases.remove(phaseName);
+                    //phasesToActions.put(phaseName, avt);
                 }
 
             } catch (InstantiationException e) {
