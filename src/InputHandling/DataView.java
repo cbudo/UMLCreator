@@ -2,9 +2,7 @@ package InputHandling;
 
 import DataStorage.DataStore.ParsedDataStorage;
 import Generation.GeneratorFactory;
-import Generation.GraphGenerator;
 import Generation.IGenerator;
-import javafx.scene.control.ProgressBar;
 
 import java.io.*;
 import java.util.*;
@@ -75,22 +73,24 @@ public class DataView implements IParserViewer {
         });
         phasesToMethods.put("DOT-Generation", () -> {
             try {
-                GraphGenerator generator = new GraphGenerator();
+                //GraphGenerator generator = new GraphGenerator();
 
-                try (Writer writer = new BufferedWriter(new OutputStreamWriter(new FileOutputStream(getOutputDirectory()+"\\generated_graph.dot")))) {
-                    writer.write("temp write");
+                try (Writer writer = new BufferedWriter(new OutputStreamWriter(new FileOutputStream(getOutputDirectory() + "\\generated_graph.gv")))) {
+                    // writer.write("temp write");
+                    writer.write(generator.Generate());
                 } catch (IOException ex) {
                     // handle me
                 }
-                FileWriter writer2 = new FileWriter(prop.getProperty("Output-Directory") + "\\generated_graph.dot");
-                writer2.write(generator.Generate());
-                writer2.close();
+//                FileWriter writer2 = new FileWriter(new File(prop.getProperty("Output-Directory") + "/generated_graph.dot"));
+//                FileOutputStream writer2 = new FileOutputStream(prop.getProperty("Output-Directory") + "/generated_graph.dot");
+//                writer2.write(generator.Generate().getBytes());
+//                writer2.close();
                 try (Writer writer = new BufferedWriter(new OutputStreamWriter(new FileOutputStream(getOutputDirectory()+"\\outputGraph.png")))) {
                     writer.write("temp write");
                 } catch (IOException ex) {
                     // handle me
                 }
-                String command = "\"" + prop.getProperty("Dot-Path") + "\" -Tpng \"" + prop.getProperty("Output-Directory") + "\\generated_graph.dot\" -o \"" + prop.getProperty("Output-Directory") + "\\outputGraph.png\"";
+                String command = "\"" + prop.getProperty("Dot-Path") + "\" -Tpng \"" + prop.getProperty("Output-Directory") + "\\generated_graph.gv\" -o \"" + prop.getProperty("Output-Directory") + "\\outputGraph.png\"";
                 System.out.println("Command: " + command);
                 final Process p = Runtime.getRuntime().exec(command);
                 p.waitFor();

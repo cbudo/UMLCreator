@@ -6,15 +6,14 @@ import javafx.application.Application;
 import javafx.beans.value.ChangeListener;
 import javafx.beans.value.ObservableValue;
 import javafx.collections.ObservableList;
-import javafx.concurrent.Task;
 import javafx.event.ActionEvent;
 import javafx.event.EventHandler;
 import javafx.geometry.HPos;
 import javafx.geometry.Insets;
 import javafx.geometry.Orientation;
 import javafx.scene.Scene;
-import javafx.scene.control.*;
 import javafx.scene.control.Button;
+import javafx.scene.control.*;
 import javafx.scene.control.Menu;
 import javafx.scene.control.MenuBar;
 import javafx.scene.control.MenuItem;
@@ -30,7 +29,6 @@ import javafx.stage.FileChooser;
 import javafx.stage.Stage;
 
 import java.awt.*;
-import java.awt.List;
 import java.io.File;
 import java.io.IOException;
 import java.io.RandomAccessFile;
@@ -42,18 +40,29 @@ import java.util.*;
  * Created by budocf on 2/17/2016.
  */
 public class DesignParserGUI extends Application {
-    private Stage primaryStage;
-    private Pane result;
-    private IParserViewer parserViewer;
-    private final Properties properties = new Properties();
     final Button config = new Button("Load Config");
     final Button analyze = new Button("Analyze");
     final ProgressBar progressBar = new ProgressBar(0);
     final Text text = new Text("Waiting for user input...");
     final ImageView img = new ImageView("file:.\\inputoutput\\ChandanHat.jpg");
+    private final Properties properties = new Properties();
+    private Stage primaryStage;
+    private Pane result;
+    private IParserViewer parserViewer;
 
     public static void main(String[] args) {
         launch(args);
+    }
+
+    public static void openWebpage(URI uri) {
+        Desktop desktop = Desktop.isDesktopSupported() ? Desktop.getDesktop() : null;
+        if (desktop != null && desktop.isSupported(Desktop.Action.BROWSE)) {
+            try {
+                desktop.browse(uri);
+            } catch (Exception e) {
+                e.printStackTrace();
+            }
+        }
     }
 
     /**
@@ -179,18 +188,12 @@ public class DesignParserGUI extends Application {
     }
 
     private void updateImage(ObservableList selectedItems) {
-        //update image
         java.util.List<String> classnames = new ArrayList<>();
         classnames.addAll(selectedItems);
         parserViewer.setClassesToShow(classnames);
 
-        //wait for image to be updated
         String imagePath = parserViewer.getOutputDirectory() + "\\outputGraph.png";
         File toWrite = new File(imagePath);
-
-//        while (!isCompletelyWritten(toWrite)) {
-//
-//        }
 
         Image image = new Image("file:" + imagePath);
 
@@ -238,14 +241,14 @@ public class DesignParserGUI extends Application {
                 e.printStackTrace();
             }
         });
-        about.setOnAction(event -> {
-            Alert alert = new Alert(Alert.AlertType.INFORMATION);
-            alert.setTitle("Design Parser");
-            alert.setHeaderText(null);
-            alert.setContentText("Design Parser\nv7.627.374\nCreated by: Chris Budo and Benjamin Efron");
-            alert.show();
-
-        });
+//        about.setOnAction(event -> {
+//            Alert alert = new Alert(Alert.AlertType.INFORMATION);
+//            alert.setTitle("Design Parser");
+//            alert.setHeaderText(null);
+//            alert.setContentText("Design Parser\nv7.627.374\nCreated by: Chris Budo and Benjamin Efron");
+//            alert.show();
+//
+//        });
         help.getItems().addAll(howto, about);
 
         menuBar.getMenus().addAll(file, help);
@@ -267,7 +270,6 @@ public class DesignParserGUI extends Application {
         // export image - to user specified directory?
     }
 
-
     /**
      * Returns the main stage.
      *
@@ -285,17 +287,6 @@ public class DesignParserGUI extends Application {
 
         initStartPage();
         //initResults();
-    }
-
-    public static void openWebpage(URI uri) {
-        Desktop desktop = Desktop.isDesktopSupported() ? Desktop.getDesktop() : null;
-        if (desktop != null && desktop.isSupported(Desktop.Action.BROWSE)) {
-            try {
-                desktop.browse(uri);
-            } catch (Exception e) {
-                e.printStackTrace();
-            }
-        }
     }
 
 }
