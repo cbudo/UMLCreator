@@ -13,14 +13,17 @@ import javafx.geometry.HPos;
 import javafx.geometry.Insets;
 import javafx.geometry.Orientation;
 import javafx.scene.Scene;
+import javafx.scene.SnapshotParameters;
 import javafx.scene.control.Button;
 import javafx.scene.control.*;
 import javafx.scene.control.Menu;
 import javafx.scene.control.MenuBar;
 import javafx.scene.control.MenuItem;
+import javafx.scene.control.ScrollPane;
 import javafx.scene.control.cell.CheckBoxTreeCell;
 import javafx.scene.image.Image;
 import javafx.scene.image.ImageView;
+import javafx.scene.image.WritableImage;
 import javafx.scene.layout.BorderPane;
 import javafx.scene.layout.GridPane;
 import javafx.scene.layout.Pane;
@@ -150,7 +153,7 @@ public class DesignParserGUI extends Application {
         MenuBar menuBar = getMenu();
         result = new VBox(12);
         SplitPane pane = new SplitPane();
-        //ScrollPane spane = new ScrollPane();
+        ScrollPane spane = new ScrollPane();
         TreeItem<String> dummyNode = new CheckBoxTreeItem<>();
         pane.setOrientation(Orientation.HORIZONTAL);
         TreeView tree = new TreeView(dummyNode);
@@ -167,9 +170,17 @@ public class DesignParserGUI extends Application {
                 checkBoxTreeItem.selectedProperty().addListener(new ChangeListener<Boolean>() {
                     @Override
                     public void changed(ObservableValue<? extends Boolean> observable, Boolean oldValue, Boolean newValue) {
-                        updateImage(tree.getSelectionModel().getSelectedItems());
-                        pane.getItems().set(1, img);
-                        //pane.getItems().addAll(tree, img);
+                        //System.out.println(((CheckBoxTreeItem) observable.this).getValue());
+                        updateImage(s, newValue);
+
+                        try {
+                            parserViewer.Analyze();
+                        } catch (IOException e) {
+                            e.printStackTrace();
+                        }
+                        spane.setContent(img);
+                        pane.getItems().set(1, spane);
+                        //ParsedDataStorage.getInstance().removeFromDisplayClasses();
                     }
                 });
                 node.getChildren().add(checkBoxTreeItem);
@@ -184,9 +195,15 @@ public class DesignParserGUI extends Application {
 
 //        Image image = new Image("file:C:\\Users\\budocf\\Downloads\\1.jpg");
         updateImage(tree.getSelectionModel().getSelectedItems());
-        img.setFitHeight(500);
-        img.setFitWidth(500);
-        pane.getItems().addAll(tree, img);
+//        img.setFitHeight(500);
+//        img.setFitWidth(500);
+        spane.setMinHeight(500);
+        spane.setMaxHeight(500);
+        spane.setMinWidth(500);
+        spane.setMaxWidth(500);
+        spane.setContent(img);
+        pane.getItems().addAll(tree, spane);
+        //pane.getItems().addAll(tree, img);
         result.getChildren().add(pane);
         BorderPane borderPane = new BorderPane(result, menuBar, null, null, null);
         Scene scene = new Scene(borderPane);
@@ -207,6 +224,28 @@ public class DesignParserGUI extends Application {
 //        img.setFitHeight(image.getHeight());
 //        img.setFitWidth(image.getWidth());
         img.setImage(image);
+        img.snapshot(new SnapshotParameters(), new WritableImage(1, 1));
+    }
+
+    /***
+     * @param selectedItem item to add or remove from the display
+     * @param addRemove    TRUE if adding, FALSE if removing
+     */
+    private void updateImage(String selectedItem, boolean addRemove) {
+        if (addRemove)
+            parserViewer.addClassToDisplay(selectedItem.replace("/", "."));
+        else
+            parserViewer.removeClassFromDisplay(selectedItem.replace("/", "."));
+
+        String imagePath = parserViewer.getOutputDirectory() + "\\outputGraph.png";
+        File toWrite = new File(imagePath);
+
+        Image image = new Image("file:" + imagePath);
+
+//        img.setFitHeight(image.getHeight());
+//        img.setFitWidth(image.getWidth());
+        img.setImage(image);
+        img.snapshot(new SnapshotParameters(), new WritableImage(1, 1));
     }
 
     private boolean isCompletelyWritten(File file) {

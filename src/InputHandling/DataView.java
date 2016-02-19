@@ -123,6 +123,16 @@ public class DataView implements IParserViewer {
         ParsedDataStorage.getInstance().setToDisplayClasses(classesToShow);
     }
 
+    @Override
+    public void removeClassFromDisplay(String clazzName) {
+        ParsedDataStorage.getInstance().removeFromDisplayClasses(clazzName);
+    }
+
+    @Override
+    public void addClassToDisplay(String clazzName) {
+        ParsedDataStorage.getInstance().addToDisplayClasses(clazzName);
+    }
+
     public Iterator<String> getSingletons(){
         return ParsedDataStorage.getInstance().getSingletonClasses().iterator();
     }

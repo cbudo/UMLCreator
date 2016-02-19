@@ -351,31 +351,31 @@ public class ParsedDataStorage implements IDataStorage, ITraverser {
 
     public Collection<String> getSingletonClasses() {
         List<String> results = new ArrayList<>();
-        classes.values().stream().filter(p -> p instanceof SingletonClass && ((SingletonClass) p).isSingleton()).forEach(p -> results.add(p.getName()));
+        classes.values().stream().filter(p -> p instanceof SingletonClass && ((SingletonClass) p).isSingleton()).forEach(p -> results.add(p.getName().replace("/", ".")));
 
-        interfaces.values().stream().filter(p -> p instanceof SingletonClass && ((SingletonClass) p).isSingleton()).forEach(p -> results.add(p.getName()));
+        interfaces.values().stream().filter(p -> p instanceof SingletonClass && ((SingletonClass) p).isSingleton()).forEach(p -> results.add(p.getName().replace("/", ".")));
 
-        abstractClasses.values().stream().filter(p -> p instanceof SingletonClass && ((SingletonClass) p).isSingleton()).forEach(p -> results.add(p.getName()));
+        abstractClasses.values().stream().filter(p -> p instanceof SingletonClass && ((SingletonClass) p).isSingleton()).forEach(p -> results.add(p.getName().replace("/", ".")));
 
         return results;
     }
 
     public Collection<String> getDecoratorClasses() {
         List<String> results = new ArrayList<>();
-        classes.values().stream().filter(p -> p instanceof DecoratorDecorator).forEach(p -> results.add(p.getName()));
+        classes.values().stream().filter(p -> p instanceof DecoratorDecorator).forEach(p -> results.add(p.getName().replace("/", ".")));
 
-        interfaces.values().stream().filter(p -> p instanceof DecoratorDecorator).forEach(p -> results.add(p.getName()));
+        interfaces.values().stream().filter(p -> p instanceof DecoratorDecorator).forEach(p -> results.add(p.getName().replace("/", ".")));
 
-        abstractClasses.values().stream().filter(p -> p instanceof DecoratorDecorator).forEach(p -> results.add(p.getName()));
+        abstractClasses.values().stream().filter(p -> p instanceof DecoratorDecorator).forEach(p -> results.add(p.getName().replace("/", ".")));
 
         return results;
     }
 
     public Collection<String> getComponentClasses() {
         List<String> results = new ArrayList<>();
-        classes.values().stream().filter(p -> p instanceof ComponentDecorator).forEach(p -> results.add(p.getName()));
-        interfaces.values().stream().filter(p -> p instanceof ComponentDecorator).forEach(p -> results.add(p.getName()));
-        abstractClasses.values().stream().filter(p -> p instanceof ComponentDecorator).forEach(p -> results.add(p.getName()));
+        classes.values().stream().filter(p -> p instanceof ComponentDecorator).forEach(p -> results.add(p.getName().replace("/", ".")));
+        interfaces.values().stream().filter(p -> p instanceof ComponentDecorator).forEach(p -> results.add(p.getName().replace("/", ".")));
+        abstractClasses.values().stream().filter(p -> p instanceof ComponentDecorator).forEach(p -> results.add(p.getName().replace("/", ".")));
         return results;
     }
     public void setToDisplayClasses(){
@@ -388,5 +388,13 @@ public class ParsedDataStorage implements IDataStorage, ITraverser {
         this.classesToGenerate.clear();
         classes.removeIf(clazz->getNonSpecificJavaClass(clazz)==null);
         this.classesToGenerate.addAll(classes);
+    }
+
+    public void removeClassFromDisplay(String clazz) {
+        this.classesToGenerate.remove(clazz);
+    }
+
+    public void addClassToDisplay(String clazz) {
+        this.classesToGenerate.add(clazz);
     }
 }
