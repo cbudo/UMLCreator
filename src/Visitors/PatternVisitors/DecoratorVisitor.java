@@ -66,4 +66,9 @@ public class DecoratorVisitor extends AbstractVisitorTemplate {
         // pushes up glasses, sniffs
         // don't think we've got anything to do here boss
     }
+
+    @Override
+    public String getPhaseName() {
+        return "Decorator-Detection";
+    }
 }

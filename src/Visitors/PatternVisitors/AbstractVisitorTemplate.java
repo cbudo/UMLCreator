@@ -28,4 +28,6 @@ public abstract class AbstractVisitorTemplate {
 
     public abstract void performAnalysis();
 
+    public abstract String getPhaseName();
+
 }

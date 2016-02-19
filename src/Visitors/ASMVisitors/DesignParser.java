@@ -23,7 +23,7 @@ public class DesignParser {
      */
     public static void main(String[] args) throws IOException {
         IParserViewer viewer = new DataView();
-        viewer.Analyze();
+        viewer.performSetup();
         for (String classFile : ParsedDataStorage.getInstance().getDisplayClasses())
             System.out.println(classFile);
         if (true)

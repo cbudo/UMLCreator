@@ -3,10 +3,10 @@ package InputHandling;
 import DataStorage.DataStore.ParsedDataStorage;
 import Generation.GeneratorFactory;
 import Generation.IGenerator;
-import jdk.internal.util.xml.impl.Input;
 
 import java.io.*;
-import java.lang.reflect.InvocationTargetException;
+import java.util.HashMap;
+import java.util.Map;
 import java.util.Properties;
 
 /**
@@ -19,6 +19,8 @@ public class DataView implements IParserViewer {
     private IGenerator generator;
     private PhaseHandler phaseHandler;
 
+    private Map<String, FileInputStream> classesToLoad;
+    private Map<String, PhaseExecution> phasesToMethods;
 
     public DataView() {
         try {
@@ -29,8 +31,11 @@ public class DataView implements IParserViewer {
 
         generatorFactory = new GeneratorFactory();
         generator = generatorFactory.getGenerator("UML");
-        phaseHandler = new PhaseHandler(getPhases());
-
+        phasesToMethods = new HashMap<String, PhaseExecution>();
+        phaseHandler = new PhaseHandler(getPhases(), getPhaseClasses(), phasesToMethods);
+        addBasicPhases();
+//        runPhases();
+//        System.out.println(generator.Generate());
     }
 
     private void openConfigFile() throws IOException {
@@ -70,35 +75,60 @@ public class DataView implements IParserViewer {
         return prop.getProperty("Phases").split(",");
     }
 
-    private void setupPhases() {
-        try {
-            phaseHandler.setupClassLoadingPhase(DataView.class.getDeclaredMethod("parseASM"));
-        } catch (NoSuchMethodException e) {
-            e.printStackTrace();
-        }
+    private String[] getPhaseClasses() {
+        return prop.getProperty("PhaseClasses").split(",");
+    }
+
+//    private void setupPhases() {
+//        try {
+//            phaseHandler.setupClassLoadingPhase(DataView.class.getDeclaredMethod("parseASM"));
+//        } catch (NoSuchMethodException e) {
+//            e.printStackTrace();
+//        }
+//    }
+
+    private void addBasicPhases() {
+        phasesToMethods.put("Class-Loading", () -> {
+            parseASM();
+        });
+        phasesToMethods.put("DOT-Generation", () -> {
+        });
+
     }
 
     @Override
     public void Analyze() throws IOException {
-        runPhases();
-        System.out.println(generator.Generate());
+        //runPhases();
+        //System.out.println(generator.Generate());
     }
 
     @Override
     public void performSetup() {
         getClassesFromInputFile();
         getSupplementaryClasses();
+        phaseHandler.generateAllPhaseClasses();
+
+        generator.parseFromStream(classesToLoad);
+        runPhases();
+        System.out.println(generator.Generate());
+//        if (true)
+//            return;
 //        for (String s : ParsedDataStorage.getInstance())
 //            System.out.println(s);
-        //parseASM();
-        setupPhases();
+//        parseASM();
+//        setupPhases();
     }
 
     @Override
     public void getClassesFromInputFile() {
         String path = getInputFolderPath();
+        classesToLoad = new HashMap<String, FileInputStream>();
         File folder = new File(path);
-//        FileHandler.listFilesForFolder(folder, path);
+        try {
+            FileHandler.listFilesForFolder(folder, path, classesToLoad);
+        } catch (FileNotFoundException e) {
+            System.out.println("error opening file paths from input directory " + e);
+        }
     }
 
     @Override
@@ -106,6 +136,10 @@ public class DataView implements IParserViewer {
         String[] suppClasses = getSupplementaryClassesFromProperties();
         for (String suppClassName : suppClasses)
             ParsedDataStorage.getInstance().addToDisplayClasses(suppClassName);
+    }
+
+    private String getDotExecutionPath() {
+        return "";
     }
 
     @Override
@@ -119,12 +153,8 @@ public class DataView implements IParserViewer {
 
     @Override
     public void runPhases() {
-        try {
-            phaseHandler.runTheTrap();
-        } catch (InvocationTargetException e) {
-            e.printStackTrace();
-        } catch (IllegalAccessException e) {
-            e.printStackTrace();
+        for (PhaseExecution pe : phasesToMethods.values()) {
+            pe.execute();
         }
     }
 

@@ -11,9 +11,11 @@ import org.objectweb.asm.ClassReader;
 import org.objectweb.asm.ClassVisitor;
 import org.objectweb.asm.Opcodes;
 
+import java.io.FileInputStream;
 import java.io.IOException;
 import java.io.OutputStream;
 import java.util.List;
+import java.util.Map;
 
 /**
  * Created by budocf on 1/13/2016.
@@ -66,6 +68,11 @@ public class SequenceGenerator implements IGenerator {
             // Tell the Reader to use our (heavily decorated) ClassVisitor to visit the class
             reader.accept(methodVisitor, ClassReader.EXPAND_FRAMES);
         }
+    }
+
+    @Override
+    public void parseFromStream(Map<String, FileInputStream> filesToParse) {
+        return; //intentionally null
     }
 
 }

@@ -131,6 +131,11 @@ public class CompositeVisitor extends AbstractVisitorTemplate {
         }
     }
 
+    @Override
+    public String getPhaseName() {
+        return "Composite-Detection";
+    }
+
     /*
     adds any new classes that may have been found
      */

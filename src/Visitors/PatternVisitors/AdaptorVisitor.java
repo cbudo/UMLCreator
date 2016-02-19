@@ -104,6 +104,11 @@ public class AdaptorVisitor extends AbstractVisitorTemplate {
         }
     }
 
+    @Override
+    public String getPhaseName() {
+        return "Adaptor-Detection";
+    }
+
     private void addNewClasses() {
         for (String s : adaptorsFound.possibleAdaptorSets) {
             s = s.replace("/", ".");

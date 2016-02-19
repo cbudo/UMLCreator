@@ -54,6 +54,11 @@ public class SingletonVisitor extends AbstractVisitorTemplate {
         }
     }
 
+    @Override
+    public String getPhaseName() {
+        return "Singleton-Detection";
+    }
+
     private void setupMethodVisit() {
         this.visitor.addVisit(VisitType.Visit, MethodRep.class, (ITraverser t) -> {
             MethodRep m = (MethodRep) t;

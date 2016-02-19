@@ -1,34 +1,30 @@
 package InputHandling;
 
-import DataStorage.DataStore.ParsedDataStorage;
-
 import java.io.File;
-import java.io.InputStream;
-import java.util.List;
+import java.io.FileInputStream;
+import java.io.FileNotFoundException;
+import java.util.Map;
 
 /**
  * Created by efronbs on 2/17/2016.
  */
 public class FileHandler {
-    public static void listFilesForFolder(final File folder, String basePath, List<InputStream> classesToParse) {
+    public static void listFilesForFolder(final File folder, String basePath, Map<String, FileInputStream> classesToParse) throws FileNotFoundException {
         for (final File fileEntry : folder.listFiles()) {
             if (fileEntry.isDirectory()) {
                 FileHandler.listFilesForFolder(fileEntry, basePath, classesToParse);
-            } else {
-                ParsedDataStorage.getInstance().addToDisplayClasses(parseForPackage(fileEntry.getPath(), basePath));
+            } else if (fileEntry.getPath().endsWith(".class")) {
+                String fullFPath = fileEntry.getPath().replace("\\", "/");
+                FileInputStream iostream = new FileInputStream(fullFPath);
+                int startingPoint = fullFPath.indexOf(basePath);
+                String name = fullFPath.substring(startingPoint + basePath.length()).replace("/", ".");
+                String[] dirs = basePath.split("/");
+                String lastDir = dirs[dirs.length - 1];
+                name = name.replace(".class", "");
+                name = lastDir + name;
+                //System.out.println(name);
+                classesToParse.put(name, iostream);
             }
         }
-    }
-
-    private static String parseForPackage(String fullFPath, String basePath) {
-        fullFPath = fullFPath.replace("\\", "/");
-        int pathLoc = fullFPath.indexOf(basePath);
-        String packageName = fullFPath.substring(pathLoc + basePath.length());
-        packageName = packageName.substring(1);
-        packageName = packageName.replace("/", ".");
-        packageName = packageName.replace(".java", "");
-        String[] packageHeader = basePath.split("/");
-        packageName = packageHeader[packageHeader.length - 1] + "." + packageName;
-        return packageName;
     }
 }
