@@ -35,9 +35,9 @@ public class UMLOutputStream extends FilterOutputStream {
         setupPrevisit();
         setupVisitAbstractClass();
         setupVisitClass();
-        //setupVisitField();
+        setupVisitField();
         setupVisitInterface();
-        //setupVisitMethod();
+        setupVisitMethod();
         setupRelationVisit();
     }
 

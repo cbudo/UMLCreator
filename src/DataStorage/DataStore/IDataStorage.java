@@ -5,6 +5,7 @@ import DataStorage.ParseClasses.ClassTypes.AbstractJavaClassRep;
 import DataStorage.ParseClasses.Internals.MethodCall;
 
 import java.util.Collection;
+import java.util.List;
 
 /**
  * Created by budocf on 12/17/2015.
@@ -34,5 +35,11 @@ public interface IDataStorage {
     MethodCall[] getMethods();
 
     AbstractJavaClassRep getNonSpecificJavaClass(String name);
+
+    void addToDisplayClasses(String className);
+
+    void removeFromDisplayClasses(String className);
+
+    List<String> getDisplayClasses();
 
 }

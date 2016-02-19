@@ -3,6 +3,8 @@ package Visitors.ASMVisitors;
 import DataStorage.DataStore.ParsedDataStorage;
 import Generation.GeneratorFactory;
 import Generation.IGenerator;
+import InputHandling.DataView;
+import InputHandling.IParserViewer;
 
 import java.io.FileOutputStream;
 import java.io.IOException;
@@ -20,6 +22,12 @@ public class DesignParser {
      * @throws IOException
      */
     public static void main(String[] args) throws IOException {
+        IParserViewer viewer = new DataView();
+        viewer.Analyze();
+        for (String classFile : ParsedDataStorage.getInstance().getDisplayClasses())
+            System.out.println(classFile);
+        if (true)
+            return;
         List<String> argList = new ArrayList<>();
         Collections.addAll(argList, args);
         String generationType = getGenerationType(argList.remove(0));

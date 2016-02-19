@@ -13,6 +13,7 @@ import java.util.*;
  */
 public class ParsedDataStorage implements IDataStorage, ITraverser {
     private static ParsedDataStorage storage;
+    private List<String> displayableClasses;
     private Map<String, AbstractJavaClassRep> classes;
     private Map<String, AbstractJavaClassRep> interfaces;
     private Map<String, AbstractJavaClassRep> abstractClasses;
@@ -23,6 +24,7 @@ public class ParsedDataStorage implements IDataStorage, ITraverser {
     private int max_depth = 5;
 
     private ParsedDataStorage() {
+        this.displayableClasses = new ArrayList<String>();
         this.classes = new HashMap<>();
         this.interfaces = new HashMap<>();
         this.abstractClasses = new HashMap<>();
@@ -30,6 +32,7 @@ public class ParsedDataStorage implements IDataStorage, ITraverser {
         this.associationRels = new ArrayList<>();
         this.methodCalls = new LinkedList<>();
         this.includedClasses = new ArrayList<>();
+
     }
 
     public static ParsedDataStorage getInstance() {
@@ -201,6 +204,21 @@ public class ParsedDataStorage implements IDataStorage, ITraverser {
         }
 
         return null;
+    }
+
+    @Override
+    public void addToDisplayClasses(String className) {
+        displayableClasses.add(className);
+    }
+
+    @Override
+    public void removeFromDisplayClasses(String className) {
+        displayableClasses.remove(className);
+    }
+
+    @Override
+    public List<String> getDisplayClasses() {
+        return displayableClasses;
     }
 
     public void removeRelation(IRelation rel) {
