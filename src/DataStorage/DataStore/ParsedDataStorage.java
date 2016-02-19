@@ -1,6 +1,9 @@
 package DataStorage.DataStore;
 
 import DataStorage.ParseClasses.ClassTypes.*;
+import DataStorage.ParseClasses.Decorators.ComponentDecorator;
+import DataStorage.ParseClasses.Decorators.DecoratorDecorator;
+import DataStorage.ParseClasses.Decorators.SingletonClass;
 import DataStorage.ParseClasses.Internals.IRelation;
 import DataStorage.ParseClasses.Internals.MethodCall;
 import Visitors.DefaultVisitors.ITraverser;
@@ -319,5 +322,35 @@ public class ParsedDataStorage implements IDataStorage, ITraverser {
             addClass(toSingleton, DF.getSingleton(component));
         }
         return getNonSpecificJavaClass(toSingleton);
+    }
+
+    public Collection<String> getSingletonClasses() {
+        List<String> results = new ArrayList<>();
+        classes.values().stream().filter(p -> p instanceof SingletonClass && ((SingletonClass) p).isSingleton()).forEach(p -> results.add(p.getName()));
+
+        interfaces.values().stream().filter(p -> p instanceof SingletonClass && ((SingletonClass) p).isSingleton()).forEach(p -> results.add(p.getName()));
+
+        abstractClasses.values().stream().filter(p -> p instanceof SingletonClass && ((SingletonClass) p).isSingleton()).forEach(p -> results.add(p.getName()));
+
+        return results;
+    }
+
+    public Collection<String> getDecoratorClasses() {
+        List<String> results = new ArrayList<>();
+        classes.values().stream().filter(p -> p instanceof DecoratorDecorator).forEach(p -> results.add(p.getName()));
+
+        interfaces.values().stream().filter(p -> p instanceof DecoratorDecorator).forEach(p -> results.add(p.getName()));
+
+        abstractClasses.values().stream().filter(p -> p instanceof DecoratorDecorator).forEach(p -> results.add(p.getName()));
+
+        return results;
+    }
+
+    public Collection<String> getComponentClasses() {
+        List<String> results = new ArrayList<>();
+        classes.values().stream().filter(p -> p instanceof ComponentDecorator).forEach(p -> results.add(p.getName()));
+        interfaces.values().stream().filter(p -> p instanceof ComponentDecorator).forEach(p -> results.add(p.getName()));
+        abstractClasses.values().stream().filter(p -> p instanceof ComponentDecorator).forEach(p -> results.add(p.getName()));
+        return results;
     }
 }

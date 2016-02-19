@@ -5,7 +5,6 @@ import InputHandling.IParserViewer;
 import javafx.application.Application;
 import javafx.event.ActionEvent;
 import javafx.event.EventHandler;
-import javafx.event.EventType;
 import javafx.geometry.HPos;
 import javafx.geometry.Insets;
 import javafx.geometry.Orientation;
@@ -119,7 +118,7 @@ public class DesignParserGUI extends Application {
         MenuBar menuBar = new MenuBar();
         Menu file = new Menu("File");
         MenuItem restart = new MenuItem("Restart");
-        restart.setOnAction( event -> initStartPage());
+        restart.setOnAction(event -> initStartPage());
         MenuItem export = new MenuItem("Export");
         export.setOnAction(event -> exportImage());
         file.getItems().addAll(restart);
@@ -128,28 +127,28 @@ public class DesignParserGUI extends Application {
         SplitPane pane = new SplitPane();
         TreeItem<String> dummyNode = new CheckBoxTreeItem<>();
         pane.setOrientation(Orientation.HORIZONTAL);
-        CheckBoxTreeItem<String> rootItem = new CheckBoxTreeItem<>("1");
-        rootItem.setExpanded(true);
-
-        CheckBoxTreeItem<String> otherRootItem = new CheckBoxTreeItem<>("2");
-        otherRootItem.setExpanded(true);
-        dummyNode.getChildren().addAll(rootItem, otherRootItem);
         TreeView tree = new TreeView(dummyNode);
         tree.setEditable(true);
         tree.setShowRoot(false);
-
+        Map<String, List<String>> data = getPatternClasses();
+        for (String pattern : data.keySet()) {
+            // create root
+            CheckBoxTreeItem<String> node = new CheckBoxTreeItem<>(pattern);
+            for (String clazz :
+                    data.get(pattern)) {
+                // create item
+                CheckBoxTreeItem<String> checkBoxTreeItem = new CheckBoxTreeItem<>(clazz);
+                node.getChildren().add(checkBoxTreeItem);
+            }
+            node.setExpanded(true);
+            // add root to tree
+            dummyNode.getChildren().add(node);
+        }
         tree.setCellFactory(CheckBoxTreeCell.forTreeView());
 
-        CheckBoxTreeItem<String> checkBoxTreeItem = new CheckBoxTreeItem<>("a");
-        rootItem.getChildren().add(checkBoxTreeItem);
-        otherRootItem.getChildren().add(checkBoxTreeItem);
-        checkBoxTreeItem = new CheckBoxTreeItem<>("b");
-        rootItem.getChildren().add(checkBoxTreeItem);
-        otherRootItem.getChildren().add(checkBoxTreeItem);
-
         tree.setRoot(dummyNode);
-        Image image = new Image("https://scontent-ord1-1.xx.fbcdn.net/hphotos-xft1/v/t1.0-9/12540763_886543088597_7920897415091937587_n.jpg?oh=6f9e7f688cd651de2b14af2c9b91b4f3&oe=5758BC81");
-        ImageView img = new ImageView(image);
+//        Image image = new Image("C:\\Users\\budocf\\Downloads\\1.jpg");
+        ImageView img = new ImageView("file:C:\\Users\\budocf\\Downloads\\1.jpg");
         pane.getItems().addAll(tree, img);
         result.getChildren().add(pane);
         BorderPane borderPane = new BorderPane(result, menuBar, null, null, null);
@@ -158,11 +157,14 @@ public class DesignParserGUI extends Application {
         primaryStage.show();
     }
 
-    private Map<String,List<String>> getPatternClasses(){
+    private Map<String, List<String>> getPatternClasses() {
         Map<String, List<String>> patternClasses = new HashMap<>();
-        List stuff = new ArrayList<>();
+        List<String> stuff = new ArrayList<>();
         stuff.add("UMLCreator.DataStorage.DataStore.ParsedDataStorage");
-        patternClasses.put("Singleton",stuff);
+        patternClasses.put("Singleton", stuff);
+        List<String> otherStuff = new ArrayList<>();
+        otherStuff.add("UMLCreator.DataStorage.ParseClasses.Decorators.SingletonClass");
+        patternClasses.put("Decorators", otherStuff);
         return patternClasses;
     }
 

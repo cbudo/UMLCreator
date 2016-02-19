@@ -84,8 +84,29 @@ public class DataView implements IParserViewer {
             parseASM();
         });
         phasesToMethods.put("DOT-Generation", () -> {
+            try {
+                try (Writer writer = new BufferedWriter(new OutputStreamWriter(new FileOutputStream("outputGraph.png")))) {
+                    writer.write("temp write");
+                } catch (IOException ex) {
+                    // handle me
+                }
+                final Process p = Runtime.getRuntime().exec("\"" + prop.getProperty("Dot-Path") + "\" -Tpng \"" + prop.getProperty("Output-Directory") + "generatedGraph.dot\" -o \"" + prop.getProperty("Output-Directory") + "outputGraph.png\"");
+            } catch (IOException e) {
+                e.printStackTrace();
+            }
         });
 
+    }
+
+
+    public  Iterator<String> getDecorators(){
+        return ParsedDataStorage.getInstance().getDecoratorClasses().iterator();
+    }
+    public Iterator<String> getComponent(){
+        return ParsedDataStorage.getInstance().getComponentClasses().iterator();
+    }
+    public Iterator<String> getSingleton(){
+        return ParsedDataStorage.getInstance().getSingletonClasses().iterator();
     }
 
     @Override
@@ -164,7 +185,7 @@ public class DataView implements IParserViewer {
     }
 
     @Override
-    public void setPropertiesFile(String filePath) throws IOException{
+    public void setPropertiesFile(String filePath) throws IOException {
         prop = new Properties();
         InputStream inputStream = new FileInputStream(filePath);
         prop.load(inputStream);
